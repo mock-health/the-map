@@ -1,0 +1,48 @@
+# --- secrets ---
+.tokens/
+.env
+.env.local
+.env.*.local
+*.pem
+.secrets/
+# HAR captures from auth flows can carry headers/nonces/session ids — keep
+# them out by default. If a specific HAR is intentionally cited as evidence,
+# scrub it and add an explicit allow-line below.
+*.har
+
+# --- python build artefacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+build/
+dist/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+CLAUDE.md
+
+# --- render output (regenerable from ehrs/ + us-core/baseline.json) ---
+reports/*/html/
+
+# --- tooling state ---
+.gstack/
+.DS_Store
+
+# --- LLM disambiguation cache (regenerable; one Anthropic API call per row) ---
+data/hospital-overrides/.cache/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- Git LFS placeholder ---
+# Remove the next line AFTER `git lfs install && git lfs track 'tests/golden/production-fleet/**'`.
+# .gitattributes already has the LFS pattern; this line just keeps the 380MB
+# subtree out of the first commit, which lands before LFS is set up on the remote.
+tests/golden/production-fleet/
