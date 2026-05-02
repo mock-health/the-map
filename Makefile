@@ -4,7 +4,11 @@
 # Python pipeline (Phases A-F) so contributors don't need to memorize CLI
 # invocations.
 
-PY := .venv/bin/python
+# Prefer the project's .venv for local dev; fall back to whatever python is on
+# PATH so CI runners (which install Python via setup-python and skip the venv)
+# can `make export` without an extra activation step. Override with `PY=...`
+# if you keep your interpreter somewhere unusual.
+PY ?= $(shell test -x .venv/bin/python && echo .venv/bin/python || command -v python3 || echo python)
 EHRS := $(notdir $(wildcard ehrs/*))
 QUARTER := $(shell date +%Y)-q$(shell echo $$(( ($$(date +%-m) - 1) / 3 + 1 )))
 EXPORT_DIR := dist/data/the-map
