@@ -8,7 +8,7 @@ This repo is that documentation. Per-vendor, per-deployment, per-element. With c
 
 ---
 
-## Headlines (v1.0 — 2026-Q2)
+## Headlines (0.0.1 — 2026-Q2)
 
 Real findings from the data shipped in this commit. Every number links to the row that proves it.
 
