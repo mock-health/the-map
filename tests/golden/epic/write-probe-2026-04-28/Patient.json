@@ -1,0 +1,234 @@
+{
+  "_canonical_submitted": {
+    "resourceType": "Patient",
+    "identifier": [
+      {
+        "use": "official",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "927-80-3287"
+      }
+    ],
+    "name": [
+      {
+        "use": "official",
+        "family": "Kanter",
+        "given": [
+          "Adalberto"
+        ],
+        "prefix": [
+          "Mr."
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "555-513-1682",
+        "use": "home"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1942-07-04",
+    "address": [
+      {
+        "line": [
+          "496 Mahone Fort Suite 32"
+        ],
+        "city": "Jackson",
+        "state": "TN",
+        "postalCode": "38301",
+        "country": "US"
+      }
+    ],
+    "active": true
+  },
+  "_epic_returned_create": {},
+  "_epic_returned_get": {
+    "resourceType": "Patient",
+    "id": "eaM4VA34Ohk.Q5fJQHxxc0w3",
+    "meta": {
+      "security": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+          "code": "PATRPT",
+          "display": "patient reported"
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+          "code": "UNCERTREL",
+          "display": "uncertain reliability"
+        }
+      ]
+    },
+    "extension": [
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+              "code": "male",
+              "display": "male"
+            }
+          ],
+          "text": "Male"
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+              "code": "male",
+              "display": "male"
+            }
+          ]
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/sex-for-clinical-use"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+              "code": "UNK",
+              "display": "Unknown"
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Unknown",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension": [
+          {
+            "valueString": "Unknown",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "valueCode": "248153007",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA29518-0",
+              "display": "he/him/his/his/himself"
+            }
+          ]
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/calculated-pronouns-to-use-for-text"
+      }
+    ],
+    "identifier": [
+      {
+        "use": "usual",
+        "type": {
+          "text": "CEID"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100",
+        "value": "FHRVJTX3Q2B6V9G"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "EPIC"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.0",
+        "value": "E16985"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code": "um"
+            }
+          ],
+          "text": "EXTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+        "value": "Z6302"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "FHIR"
+        },
+        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-dstu2-fhir-id",
+        "value": "Tq6EMV4U52Fjai9JE4LJb9aPbg65pvKijIxG.G4Tq3GIB"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "FHIR STU3"
+        },
+        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-fhir-id",
+        "value": "eaM4VA34Ohk.Q5fJQHxxc0w3"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "INTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+        "value": "     Z6302"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "official",
+        "text": "Mr. Adalberto Kanter",
+        "family": "Kanter",
+        "given": [
+          "Adalberto"
+        ],
+        "prefix": [
+          "MR."
+        ]
+      },
+      {
+        "use": "usual",
+        "text": "Mr. Adalberto Kanter",
+        "family": "Kanter",
+        "given": [
+          "Adalberto"
+        ],
+        "prefix": [
+          "MR."
+        ]
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1942-07-04",
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "use": "home",
+        "text": "496 Mahone Ft Ste 32\r\nJackson TN 38301\r\nUnited States of America",
+        "line": [
+          "496 Mahone Fort Suite 32"
+        ],
+        "city": "Jackson",
+        "state": "TN",
+        "postalCode": "38301",
+        "country": "US",
+        "period": {
+          "start": "2026-04-28"
+        }
+      }
+    ]
+  },
+  "_iters": 1
+}

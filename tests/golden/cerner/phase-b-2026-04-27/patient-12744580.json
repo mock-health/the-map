@@ -1,0 +1,413 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12744580",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:49:40.228890+00:00",
+  "_probe": "Patient",
+  "_patient_id": "12744580",
+  "body": {
+    "resourceType": "Patient",
+    "id": "12744580",
+    "meta": {
+      "versionId": "23",
+      "lastUpdated": "2023-11-16T21:12:31.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Patient</b></p><p><b>Name</b>: JOHN, SMART</p><p><b>Status</b>: Active</p><p><b>DOB</b>: Sep 16, 1990</p><p><b>Administrative Gender</b>: Male</p><p><b>Marital Status</b>: Married</p></div>"
+    },
+    "extension": [
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "1002-5",
+              "display": "American Indian or Alaska Native",
+              "userSelected": false
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "1741-8",
+              "display": "Alatna",
+              "userSelected": false
+            },
+            "url": "detailed"
+          },
+          {
+            "valueString": "Alatna",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "userSelected": false
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Hispanic, Latino, or Spanish Origin",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "valueCode": "248153007",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex"
+      }
+    ],
+    "identifier": [
+      {
+        "id": "CI-490101863-0",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2",
+              "display": "Community Medical Record Number",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "Community Medical Record Number"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.787.0.0",
+        "value": "206",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "206",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2020-10-02T19:33:59.000Z"
+        }
+      },
+      {
+        "id": "CI-490101865-1",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:2.16.840.1.113883.6.1000",
+        "value": "8230",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "00000008230",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2020-10-02T19:33:59.000Z"
+        }
+      },
+      {
+        "id": "CI-491922753-2",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2553236771",
+              "display": "Federated Person Principal",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "AN",
+              "display": "Account number",
+              "userSelected": false
+            }
+          ],
+          "text": "Federated Person Principal"
+        },
+        "_system": {
+          "extension": [
+            {
+              "valueCode": "unknown",
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            }
+          ]
+        },
+        "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:EC2458F2-1E24-41C8-B71B-0E701AF7583D-CH:PRINCIPAL:ABC123DEF456",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:EC2458F2-1E24-41C8-B71B-0E701AF7583D-CH:PRINCIPAL:ABC123DEF456",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2016-01-02T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490160707-3",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2553236785",
+              "display": "MIllennium Person Identifier",
+              "userSelected": true
+            }
+          ],
+          "text": "MIllennium Person Identifier"
+        },
+        "_system": {
+          "extension": [
+            {
+              "valueCode": "unknown",
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            }
+          ]
+        },
+        "value": "15360",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "15360",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2020-12-18T19:15:40.000Z"
+        }
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "id": "CI-12744580-0",
+        "use": "official",
+        "text": "JOHN, SMART",
+        "family": "JOHN",
+        "given": [
+          "SMART"
+        ]
+      },
+      {
+        "id": "CI-491936721-0",
+        "use": "old",
+        "text": "John, Smart",
+        "family": "John",
+        "given": [
+          "Smart"
+        ],
+        "period": {
+          "end": "2023-10-17T20:24:35.000Z"
+        }
+      }
+    ],
+    "telecom": [
+      {
+        "id": "CI-PH-30068223-0",
+        "extension": [
+          {
+            "valueUrl": "913-555-2565",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "913-555-2565",
+        "use": "work",
+        "rank": 1
+      },
+      {
+        "id": "CI-PH-30066812-1",
+        "extension": [
+          {
+            "valueUrl": "(816)501-0580",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "8165010580",
+        "use": "home",
+        "rank": 1,
+        "period": {
+          "start": "2023-10-17T20:24:35.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-30068217-2",
+        "extension": [
+          {
+            "valueUrl": "2222222222",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "2222222222",
+        "use": "mobile",
+        "rank": 1
+      },
+      {
+        "id": "CI-PH-30068221-3",
+        "extension": [
+          {
+            "valueUrl": "2222222222",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "2222222222",
+        "use": "mobile",
+        "rank": 1
+      },
+      {
+        "id": "CI-EM-30066814-0",
+        "system": "email",
+        "value": "iqhtomas4@gmail.com",
+        "use": "home",
+        "rank": 1,
+        "period": {
+          "start": "2023-10-17T20:24:35.000Z"
+        }
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1990-09-16",
+    "address": [
+      {
+        "id": "CI-24584619-0",
+        "use": "home",
+        "text": "1212 FAIRCASTLE DRIVE\nAPARTMENT 406\nKC, KS 64199\nUS",
+        "line": [
+          "1212 FAIRCASTLE DRIVE",
+          "APARTMENT 406"
+        ],
+        "city": "KC",
+        "district": "Jackson",
+        "state": "KS",
+        "postalCode": "64199",
+        "country": "US",
+        "period": {
+          "start": "2023-10-09T15:33:18.000Z"
+        }
+      }
+    ],
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/38",
+          "code": "309237",
+          "display": "Married",
+          "userSelected": true
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married",
+          "userSelected": false
+        }
+      ],
+      "text": "Married"
+    },
+    "contact": [
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12754885-12744580"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12754885-0",
+          "use": "official",
+          "text": "SMART, STEPHEN"
+        }
+      }
+    ],
+    "communication": [
+      {
+        "language": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/36",
+              "code": "2553237401",
+              "display": "Spanish",
+              "userSelected": true
+            },
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "es",
+              "display": "Spanish",
+              "userSelected": false
+            }
+          ],
+          "text": "Spanish"
+        },
+        "preferred": true
+      }
+    ],
+    "generalPractitioner": [
+      {
+        "id": "CI-491936735-0",
+        "reference": "Practitioner/12744840",
+        "display": "Lara, Tomas"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1037 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:04.497899+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      },
+      {
+        "relation": "next",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=B76C6745-B501-4D63-8DE2-12CE8A81F0A3"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/e611f8f8-7461-57fe-8001-450240778dec",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e611f8f8-7461-57fe-8001-450240778dec",
+          "status": "in-progress",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "387713003",
+                "display": "Surgical procedure"
+              }
+            ],
+            "text": "Surgical procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "63513005",
+                "display": "Fusion of right ankle"
+              }
+            ],
+            "text": "Fusion of right ankle"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/b723f1ef-f11f-5e14-976c-97c4678e2907",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "304292004",
+                    "display": "Surgeon"
+                  }
+                ],
+                "text": "Surgeon"
+              },
+              "actor": {
+                "reference": "Practitioner/d638ec04-bfac-5075-b2ed-595afd2988a6",
+                "display": "Marc Belanger",
+                "type": "Practitioner"
+              },
+              "onBehalfOf": {
+                "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+                "display": "Canton Medical Center",
+                "type": "Organization"
+              }
+            },
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "304292004",
+                    "display": "Surgeon"
+                  }
+                ],
+                "text": "Surgeon"
+              },
+              "actor": {
+                "reference": "Practitioner/a39354a3-f838-506e-9493-95b081d3cbf5",
+                "display": "Kirk Benson",
+                "type": "Practitioner"
+              },
+              "onBehalfOf": {
+                "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+                "display": "Canton Medical Center",
+                "type": "Organization"
+              }
+            }
+          ],
+          "performedDateTime": "2023-10-25T13:15:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/c6a47eb7-d80a-5ad5-80da-776572bea19a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "c6a47eb7-d80a-5ad5-80da-776572bea19a",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/c6a47eb7-d80a-5ad5-80da-776572bea19a",
+              "display": "Resuscitation Status* Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "preparation",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "text": "Resuscitation Status*"
+          },
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/7fefb0db-32c6-597d-b70e-eff26b655b48",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "7fefb0db-32c6-597d-b70e-eff26b655b48",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/7fefb0db-32c6-597d-b70e-eff26b655b48",
+              "display": "XR chest 2V Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "399208008",
+                "display": "X-ray of chest, two views"
+              }
+            ],
+            "text": "X-ray of chest, two views"
+          },
+          "performedDateTime": "2023-05-10T07:00:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/0592c021-69d6-53fd-9645-7206a33ed41d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "0592c021-69d6-53fd-9645-7206a33ed41d",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/0592c021-69d6-53fd-9645-7206a33ed41d",
+              "display": "ECG 12 lead EKG Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "268400002",
+                "display": "12-lead electrocardiogram"
+              }
+            ],
+            "text": "12-lead electrocardiogram"
+          },
+          "performedDateTime": "2023-05-10T07:00:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/2f125f75-39be-561b-95d3-b189326c8ad4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "2f125f75-39be-561b-95d3-b189326c8ad4",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/2f125f75-39be-561b-95d3-b189326c8ad4",
+              "display": "Basic Metabolic Panel Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic metabolic panel"
+          },
+          "performedDateTime": "2023-05-10T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/d8038781-3285-5003-911e-484e06ebf62e",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "d8038781-3285-5003-911e-484e06ebf62e",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/d8038781-3285-5003-911e-484e06ebf62e",
+              "display": "B-Type Natriuretic Peptide Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-type natriuretic peptide"
+          },
+          "performedDateTime": "2023-05-10T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/e60c81aa-0a3b-5288-9e14-a7f632fd7a52",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e60c81aa-0a3b-5288-9e14-a7f632fd7a52",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/e60c81aa-0a3b-5288-9e14-a7f632fd7a52",
+              "display": "Complete Blood Count Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete blood count (CBC)"
+          },
+          "performedDateTime": "2023-05-10T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/e12f565d-919d-51c8-8736-53bd2f343b64",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e12f565d-919d-51c8-8736-53bd2f343b64",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/e12f565d-919d-51c8-8736-53bd2f343b64",
+              "display": "Urinalysis Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "performedDateTime": "2023-05-10T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/e909d144-e855-5458-91be-fe3f9cb09358",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e909d144-e855-5458-91be-fe3f9cb09358",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/e909d144-e855-5458-91be-fe3f9cb09358",
+              "display": "Creatinine Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "text": "Creatinine"
+          },
+          "performedDateTime": "2023-05-11T13:16:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/b0069e00-b02e-55d8-8876-1beafae0d5d4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b0069e00-b02e-55d8-8876-1beafae0d5d4",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/b0069e00-b02e-55d8-8876-1beafae0d5d4",
+              "display": "Potassium Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+          },
+          "performedDateTime": "2023-05-11T13:16:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/4f5c390d-46d2-579c-82fa-261ece620851",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "4f5c390d-46d2-579c-82fa-261ece620851",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/4f5c390d-46d2-579c-82fa-261ece620851",
+              "display": "Cholesterol Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "text": "Cholesterol"
+          },
+          "performedDateTime": "2023-05-11T13:16:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/83d6bfed-c7b2-5296-8249-fad16a7c5a61",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "83d6bfed-c7b2-5296-8249-fad16a7c5a61",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/83d6bfed-c7b2-5296-8249-fad16a7c5a61",
+              "display": "Creatinine Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "text": "Creatinine"
+          },
+          "performedDateTime": "2024-09-17T13:09:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/d305676d-4e43-524e-bfcc-d9b81d573e0d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "d305676d-4e43-524e-bfcc-d9b81d573e0d",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/d305676d-4e43-524e-bfcc-d9b81d573e0d",
+              "display": "Potassium Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+          },
+          "performedDateTime": "2024-09-17T13:09:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/95c715eb-d19c-5109-8066-29a65e76ec4a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "95c715eb-d19c-5109-8066-29a65e76ec4a",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/95c715eb-d19c-5109-8066-29a65e76ec4a",
+              "display": "Resuscitation Status* Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "preparation",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "text": "Resuscitation Status*"
+          },
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/20ecddf4-93ca-5f9e-a96d-2b7aefc60ae5",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "20ecddf4-93ca-5f9e-a96d-2b7aefc60ae5",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/20ecddf4-93ca-5f9e-a96d-2b7aefc60ae5",
+              "display": "XR chest 2V Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "399208008",
+                "display": "X-ray of chest, two views"
+              }
+            ],
+            "text": "X-ray of chest, two views"
+          },
+          "performedDateTime": "2024-03-22T07:00:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/bb7e93da-c4fb-55b1-8ac3-bb7908af059d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "bb7e93da-c4fb-55b1-8ac3-bb7908af059d",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/bb7e93da-c4fb-55b1-8ac3-bb7908af059d",
+              "display": "ECG 12 lead EKG Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "268400002",
+                "display": "12-lead electrocardiogram"
+              }
+            ],
+            "text": "12-lead electrocardiogram"
+          },
+          "performedDateTime": "2024-03-22T07:00:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/8acce561-866f-54ec-9b29-81fbabb6cb31",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "8acce561-866f-54ec-9b29-81fbabb6cb31",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/8acce561-866f-54ec-9b29-81fbabb6cb31",
+              "display": "Basic Metabolic Panel Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic metabolic panel"
+          },
+          "performedDateTime": "2024-03-22T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/dab6dde1-50e5-510b-8cb8-5cbbc00d4b70",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "dab6dde1-50e5-510b-8cb8-5cbbc00d4b70",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/dab6dde1-50e5-510b-8cb8-5cbbc00d4b70",
+              "display": "B-Type Natriuretic Peptide Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-type natriuretic peptide"
+          },
+          "performedDateTime": "2024-03-22T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/d36a83af-fa08-581b-9750-3cb2e9589cb0",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "d36a83af-fa08-581b-9750-3cb2e9589cb0",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/d36a83af-fa08-581b-9750-3cb2e9589cb0",
+              "display": "Complete Blood Count Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete blood count (CBC)"
+          },
+          "performedDateTime": "2024-03-22T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure/86b6f9e8-2214-56b6-9068-66cf91864077",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "86b6f9e8-2214-56b6-9068-66cf91864077",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/86b6f9e8-2214-56b6-9068-66cf91864077",
+              "display": "Urinalysis Routine",
+              "type": "ServiceRequest"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Diagnostic procedure"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "performedDateTime": "2024-03-22T04:30:00+00:00",
+          "resourceType": "Procedure"
+        }
+      }
+    ],
+    "total": 20,
+    "resourceType": "Bundle"
+  }
+}

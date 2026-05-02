@@ -1,0 +1,250 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.vaccineCode, Line[1] Col[367]]</td><td>ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6' not found</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.vaccineCode, Line[1] Col[367]]</td><td>CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/cvx for 'http://hl7.org/fhir/sid/cvx#115'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.vaccineCode, Line[1] Col[367]]</td><td>CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/ndc for 'http://hl7.org/fhir/sid/ndc#58160-842-11'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.site, Line[1] Col[979]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4040 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4040#7'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.route, Line[1] Col[1132]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4030 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4030#2'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization, Line[1] Col[1576]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization, Line[1] Col[1576]]</td><td>Constraint failed: us-core-5: 'SHOULD have a translation to the NDC value set' (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 367
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_ValueSet_NotFound"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_ValueSet_NotFound"
+            }
+          ]
+        },
+        "diagnostics": "ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6' not found",
+        "location": [
+          "Immunization.vaccineCode",
+          "Line[1] Col[367]"
+        ],
+        "expression": [
+          "Immunization.vaccineCode"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 367
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/cvx for 'http://hl7.org/fhir/sid/cvx#115'",
+        "location": [
+          "Immunization.vaccineCode",
+          "Line[1] Col[367]"
+        ],
+        "expression": [
+          "Immunization.vaccineCode"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 367
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/ndc for 'http://hl7.org/fhir/sid/ndc#58160-842-11'",
+        "location": [
+          "Immunization.vaccineCode",
+          "Line[1] Col[367]"
+        ],
+        "expression": [
+          "Immunization.vaccineCode"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 979
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4040 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4040#7'",
+        "location": [
+          "Immunization.site",
+          "Line[1] Col[979]"
+        ],
+        "expression": [
+          "Immunization.site"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1132
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4030 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.768076.4030#2'",
+        "location": [
+          "Immunization.route",
+          "Line[1] Col[1132]"
+        ],
+        "expression": [
+          "Immunization.route"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1576
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "Immunization",
+          "Line[1] Col[1576]"
+        ],
+        "expression": [
+          "Immunization"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1576
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization#us-core-5"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization#us-core-5"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: us-core-5: 'SHOULD have a translation to the NDC value set' (Best Practice Recommendation)",
+        "location": [
+          "Immunization",
+          "Line[1] Col[1576]"
+        ],
+        "expression": [
+          "Immunization"
+        ]
+      }
+    ]
+  }
+}

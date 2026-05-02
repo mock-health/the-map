@@ -1,0 +1,1992 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12742399",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:54.710270+00:00",
+  "_probe": "Procedure",
+  "_patient_id": "12742399",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "c22d7ac0-e3c4-43dc-ac11-396f1a45dbd5",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12742399"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447995",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447995",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-27T16:49:21Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Portal, Portal</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447987",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447987",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-27T16:26:59Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Portal, Portal</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447979",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447979",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-27T16:18:33Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Portal, Portal</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447971",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447971",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-27T16:16:26Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Portal, Portal</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447929",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447929",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-27T15:19:52Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Portal, Portal</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12742069",
+                "display": "Portal, Portal"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447475",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447475",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T20:01:13Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447467",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447467",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T20:01:06Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447459",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447459",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T20:00:54Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447451",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447451",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T19:57:52Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447443",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447443",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T19:47:02Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447435",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447435",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T19:35:41Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447379",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447379",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T18:56:54Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447371",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447371",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T18:56:02Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447363",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447363",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T18:55:43Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575447355",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575447355",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-26T18:54:53Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: 97597</p><p><b>Date</b>: Mar  5, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>PWDentrix, Dentalprofessional</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "97597",
+                "display": "Removal of devitalized tissue from wound(s), selective debridement, without anesthesia (eg, high pressure waterjet with/without suction, sharp selective debridement with scissors, scalpel and forceps), with or without topical application(s), wound assessment, and instruction(s) for ongoing care, may include use of a whirlpool, per session; total wound(s) surface area less than or equal to 20 square centimeters",
+                "userSelected": true
+              }
+            ],
+            "text": "97597"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-03-05T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/12744688",
+                "display": "PWDentrix, Dentalprofessional"
+              },
+              "time": "2024-03-22T23:38:03Z",
+              "text": "Correct patient verified using two patient identifiers. Correct equipment verified. Patient positioned appropriately."
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575394069",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575394069",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-02-26T14:53:31Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision</p><p><b>Date</b>: Feb 24, 2024  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2024-02-24T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575393999",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575393999",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-02-26T09:34:44Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision</p><p><b>Date</b>: Feb 24, 2024  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2024-02-24T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575378493",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575378493",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-01-22T14:02:11Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision</p><p><b>Date</b>: Nov 30, 2023  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2023-11-30T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2572762989",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2572762989",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2020-12-16T18:12:44Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Date</b>: Dec 15, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Location</b>: Baseline East</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Cerner Test, Physician - Women&#39;s Health Cerner</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-12-15T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              }
+            }
+          ],
+          "location": {
+            "display": "Baseline East"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              },
+              "time": "2019-04-05T20:21:46Z",
+              "text": "Procedure comment"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2572762981",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2572762981",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2020-12-16T18:09:50Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Date</b>: Dec 15, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Location</b>: Baseline East</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Cerner Test, Physician - Women&#39;s Health Cerner</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-12-15T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              }
+            }
+          ],
+          "location": {
+            "display": "Baseline East"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              },
+              "time": "2019-04-05T20:21:46Z",
+              "text": "Procedure comment"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2572762973",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2572762973",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2020-12-16T16:35:02Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Date</b>: Dec 15, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Location</b>: Baseline East</p><p><b>Recorder</b>: Portal, Portal</p><p><b>Performer</b>:</p><ul><li>Cerner Test, Physician - Women&#39;s Health Cerner</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-12-15T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              }
+            }
+          ],
+          "location": {
+            "display": "Baseline East"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              },
+              "time": "2019-04-05T20:21:46Z",
+              "text": "Procedure comment"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2572762967",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2572762967",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2020-12-16T16:30:01Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Date</b>: Dec 15, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Location</b>: Baseline East</p><p><b>Recorder</b>: Portal, Portal</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-12-15T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "location": {
+            "display": "Baseline East"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2574693475",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2574693475",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-09-22T15:57:34Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "_performedDateTime": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2574693469",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2574693469",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-09-22T15:56:39Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "_performedDateTime": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              },
+              "time": "2019-04-05T20:21:46Z",
+              "text": "Procedure comment"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2574693461",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2574693461",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-09-22T15:54:01Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Period Start Date</b>: Apr  5, 2021  8:21 P.M. UTC</p><p><b>Period End Date</b>: Apr  5, 2021  9:21 P.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Location</b>: Baseline East</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p><p><b>Performer</b>:</p><ul><li>Cerner Test, Physician - Women&#39;s Health Cerner</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "performedPeriod": {
+            "start": "2021-04-05T20:21:46Z",
+            "end": "2021-04-05T21:21:46Z"
+          },
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              }
+            }
+          ],
+          "location": {
+            "display": "Baseline East"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              },
+              "time": "2019-04-05T20:21:46Z",
+              "text": "Procedure comment"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2574690547",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2574690547",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-09-20T20:23:04Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Adenoid excision (text)</p><p><b>Period Start Date</b>: Apr  5, 2021  8:21 P.M. UTC</p><p><b>Period End Date</b>: Apr  5, 2021  9:21 P.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Location</b>: Baseline East</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p><p><b>Performer</b>:</p><ul><li>Cerner Test, Physician - Women&#39;s Health Cerner</li></ul></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "119954001",
+                "display": "Adenoid excision (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Adenoid excision (text)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "performedPeriod": {
+            "start": "2021-04-05T20:21:46Z",
+            "end": "2021-04-05T21:21:46Z"
+          },
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              }
+            }
+          ],
+          "location": {
+            "display": "Baseline East"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/4122630",
+                "display": "Cerner Test, Physician - Women's Health Cerner"
+              },
+              "time": "2019-04-05T20:21:46Z",
+              "text": "Procedure comment"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575268065",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575268065",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-14T11:26:08Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Division of nerve ganglion</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "245002",
+                "display": "Division of nerve ganglion (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Division of nerve ganglion"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "_performedDateTime": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575394075",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575394075",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-02-26T14:53:32Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Feb  7, 2024  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2024-02-07T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575270269",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575270269",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T14:15:57Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Dec 10, 2023  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2023-12-10T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575269895",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575269895",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T06:21:45Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Dec 10, 2023  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2023-12-10T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575268071",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575268071",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-14T11:30:44Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Dec 10, 2023  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2023-12-10T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575270225",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575270225",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T13:56:12Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Dec 30, 2022  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2022-12-30T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575270263",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575270263",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T14:15:28Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Apr  5, 2021  5:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2021-04-05T05:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575269893",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575269893",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T06:21:45Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Apr  5, 2021  5:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2021-04-05T05:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575270257",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575270257",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T14:15:25Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Dec 15, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-12-15T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575269887",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575269887",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-19T06:21:44Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Dec 15, 2020  6:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2020-12-15T06:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure/2575352599",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "2575352599",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-12-20T10:07:01Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Procedure</b></p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Procedure</b>: Mold to yeast conversion test</p><p><b>Date</b>: Oct 10, 2011  5:00 A.M. UTC</p><p><b>Status</b>: Completed</p><p><b>Recorder</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "status": "completed",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "197002",
+                "display": "Mold to yeast conversion test (procedure)",
+                "userSelected": true
+              }
+            ],
+            "text": "Mold to yeast conversion test"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "performedDateTime": "2011-10-10T05:00:00Z",
+          "recorder": {
+            "reference": "Practitioner/1",
+            "display": "SYSTEM, SYSTEM Cerner"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

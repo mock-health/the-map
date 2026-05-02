@@ -1,0 +1,103 @@
+{
+  "_canonical_submitted": {
+    "resourceType": "Condition",
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code": "active"
+        }
+      ]
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code": "provisional"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "encounter-diagnosis",
+            "display": "Encounter Diagnosis"
+          }
+        ]
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "41652007",
+          "display": "Eye pain"
+        }
+      ],
+      "text": "Eye pain"
+    },
+    "subject": {
+      "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3"
+    },
+    "encounter": {
+      "reference": "Encounter/e6kBx6PwnxIv.5kCifScsWg3"
+    },
+    "onsetDateTime": "1966-04-09T13:56:40-05:00",
+    "recordedDate": "1966-04-09T13:56:40-05:00"
+  },
+  "_epic_returned_create": {},
+  "_epic_returned_get": {
+    "resourceType": "Condition",
+    "id": "O.kP2.jn3CPARNu6.n.drnNncHOgDtYU02U6td4wmbEujWrdMRBadAKLU6.bP1KN",
+    "clinicalStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "version": "4.0.0",
+          "code": "active",
+          "display": "Active"
+        }
+      ],
+      "text": "Active"
+    },
+    "verificationStatus": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "version": "4.0.0",
+          "code": "provisional",
+          "display": "Provisional"
+        }
+      ],
+      "text": "Provisional"
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+            "code": "problem-list-item",
+            "display": "Problem List Item"
+          }
+        ],
+        "text": "Problem List Item"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "41652007",
+          "display": "Eye pain"
+        }
+      ]
+    },
+    "subject": {
+      "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+      "display": "Lin, Derrick"
+    }
+  },
+  "_iters": 2
+}

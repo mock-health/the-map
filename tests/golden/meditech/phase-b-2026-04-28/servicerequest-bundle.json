@@ -1,0 +1,2210 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/ServiceRequest?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:07.128478+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/c6a47eb7-d80a-5ad5-80da-776572bea19a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "c6a47eb7-d80a-5ad5-80da-776572bea19a",
+          "status": "draft",
+          "intent": "directive",
+          "priority": "routine",
+          "code": {
+            "text": "Resuscitation Status*"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-05-10T16:11:00+00:00",
+          "authoredOn": "2023-05-10T16:11:32+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/7fefb0db-32c6-597d-b70e-eff26b655b48",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "7fefb0db-32c6-597d-b70e-eff26b655b48",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "363679005",
+                  "display": "Imaging"
+                }
+              ],
+              "text": "Imaging"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "399208008",
+                "display": "X-ray of chest, two views"
+              }
+            ],
+            "text": "XR chest 2V"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-05-10T07:00:00+00:00",
+          "authoredOn": "2023-05-10T16:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/0592c021-69d6-53fd-9645-7206a33ed41d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "0592c021-69d6-53fd-9645-7206a33ed41d",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "386053000",
+                  "display": "Evaluation procedure (procedure)"
+                }
+              ],
+              "text": "Evaluation procedure (procedure)"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "268400002",
+                "display": "12-lead electrocardiogram"
+              }
+            ],
+            "text": "ECG 12 lead EKG"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-05-10T07:00:00+00:00",
+          "authoredOn": "2023-05-10T16:24:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/2f125f75-39be-561b-95d3-b189326c8ad4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "2f125f75-39be-561b-95d3-b189326c8ad4",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic Metabolic Panel"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-10T04:30:00+00:00",
+            "end": "2023-05-10T16:40:25+00:00"
+          },
+          "authoredOn": "2023-05-10T16:33:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/d8038781-3285-5003-911e-484e06ebf62e",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "d8038781-3285-5003-911e-484e06ebf62e",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-Type Natriuretic Peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-10T04:30:00+00:00",
+            "end": "2023-05-10T16:40:25+00:00"
+          },
+          "authoredOn": "2023-05-10T16:33:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/e60c81aa-0a3b-5288-9e14-a7f632fd7a52",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e60c81aa-0a3b-5288-9e14-a7f632fd7a52",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete Blood Count"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-10T04:30:00+00:00",
+            "end": "2023-05-10T16:40:56+00:00"
+          },
+          "authoredOn": "2023-05-10T16:33:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/e12f565d-919d-51c8-8736-53bd2f343b64",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e12f565d-919d-51c8-8736-53bd2f343b64",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-10T04:30:00+00:00",
+            "end": "2023-05-10T16:41:57+00:00"
+          },
+          "authoredOn": "2023-05-10T16:33:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/e909d144-e855-5458-91be-fe3f9cb09358",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e909d144-e855-5458-91be-fe3f9cb09358",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Creatinine"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-11T13:16:00+00:00",
+            "end": "2023-05-11T13:20:19+00:00"
+          },
+          "authoredOn": "2023-05-11T13:19:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/b0069e00-b02e-55d8-8876-1beafae0d5d4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b0069e00-b02e-55d8-8876-1beafae0d5d4",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-11T13:16:00+00:00",
+            "end": "2023-05-11T13:20:19+00:00"
+          },
+          "authoredOn": "2023-05-11T13:19:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/4f5c390d-46d2-579c-82fa-261ece620851",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "4f5c390d-46d2-579c-82fa-261ece620851",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Cholesterol"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-05-11T13:16:00+00:00",
+            "end": "2023-05-11T13:20:19+00:00"
+          },
+          "authoredOn": "2023-05-11T13:19:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/83d6bfed-c7b2-5296-8249-fad16a7c5a61",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "83d6bfed-c7b2-5296-8249-fad16a7c5a61",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Creatinine"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-09-17T13:09:00+00:00",
+          "authoredOn": "2024-09-17T13:09:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/d305676d-4e43-524e-bfcc-d9b81d573e0d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "d305676d-4e43-524e-bfcc-d9b81d573e0d",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-09-17T13:09:00+00:00",
+          "authoredOn": "2024-09-17T13:09:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/95c715eb-d19c-5109-8066-29a65e76ec4a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "95c715eb-d19c-5109-8066-29a65e76ec4a",
+          "status": "draft",
+          "intent": "directive",
+          "priority": "routine",
+          "code": {
+            "text": "Resuscitation Status*"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-03-22T11:40:00+00:00",
+          "authoredOn": "2024-03-22T11:40:37+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/20ecddf4-93ca-5f9e-a96d-2b7aefc60ae5",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "20ecddf4-93ca-5f9e-a96d-2b7aefc60ae5",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "363679005",
+                  "display": "Imaging"
+                }
+              ],
+              "text": "Imaging"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "399208008",
+                "display": "X-ray of chest, two views"
+              }
+            ],
+            "text": "XR chest 2V"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-03-22T07:00:00+00:00",
+          "authoredOn": "2024-03-22T11:47:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/bb7e93da-c4fb-55b1-8ac3-bb7908af059d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "bb7e93da-c4fb-55b1-8ac3-bb7908af059d",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "386053000",
+                  "display": "Evaluation procedure (procedure)"
+                }
+              ],
+              "text": "Evaluation procedure (procedure)"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "268400002",
+                "display": "12-lead electrocardiogram"
+              }
+            ],
+            "text": "ECG 12 lead EKG"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-03-22T07:00:00+00:00",
+          "authoredOn": "2024-03-22T11:55:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/8acce561-866f-54ec-9b29-81fbabb6cb31",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "8acce561-866f-54ec-9b29-81fbabb6cb31",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic Metabolic Panel"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2024-03-22T04:30:00+00:00",
+            "end": "2024-03-22T12:07:51+00:00"
+          },
+          "authoredOn": "2024-03-22T12:04:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/dab6dde1-50e5-510b-8cb8-5cbbc00d4b70",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "dab6dde1-50e5-510b-8cb8-5cbbc00d4b70",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-Type Natriuretic Peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2024-03-22T04:30:00+00:00",
+            "end": "2024-03-22T12:07:51+00:00"
+          },
+          "authoredOn": "2024-03-22T12:04:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/d36a83af-fa08-581b-9750-3cb2e9589cb0",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "d36a83af-fa08-581b-9750-3cb2e9589cb0",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete Blood Count"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2024-03-22T04:30:00+00:00",
+            "end": "2024-03-22T12:08:21+00:00"
+          },
+          "authoredOn": "2024-03-22T12:04:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/86b6f9e8-2214-56b6-9068-66cf91864077",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "86b6f9e8-2214-56b6-9068-66cf91864077",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2024-03-22T04:30:00+00:00",
+            "end": "2024-03-22T12:09:23+00:00"
+          },
+          "authoredOn": "2024-03-22T12:04:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/b52d28b5-1a7b-50a1-90d8-395300580a0f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b52d28b5-1a7b-50a1-90d8-395300580a0f",
+          "status": "active",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete Blood Count"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-09-10T14:29:00+00:00",
+          "authoredOn": "2024-09-10T14:35:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/a7ceba1c-33ed-5083-946d-7d2e9b9fee1d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "a7ceba1c-33ed-5083-946d-7d2e9b9fee1d",
+          "status": "active",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete Blood Count"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-09-23T17:26:00+00:00",
+          "authoredOn": "2024-09-23T17:27:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/964a9339-efe1-5676-98c0-5bc0596cec19",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "964a9339-efe1-5676-98c0-5bc0596cec19",
+          "status": "active",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Glucose,Urine Random"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2024-09-23T17:26:00+00:00",
+          "authoredOn": "2024-09-23T17:27:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/61e852b8-ffaf-50f8-871c-637f0b1fec7f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "61e852b8-ffaf-50f8-871c-637f0b1fec7f",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Creatinine"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2024-09-23T17:26:00+00:00",
+            "end": "2024-09-23T17:28:24+00:00"
+          },
+          "authoredOn": "2024-09-23T17:27:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/9f299f8f-955e-53a7-873a-70bf3978caeb",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "9f299f8f-955e-53a7-873a-70bf3978caeb",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2024-09-23T17:26:00+00:00",
+            "end": "2024-09-23T17:28:24+00:00"
+          },
+          "authoredOn": "2024-09-23T17:27:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/3a454450-3125-5430-8c62-1b6ed3cdf81d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "3a454450-3125-5430-8c62-1b6ed3cdf81d",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Creatinine"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2025-04-24T18:30:00+00:00",
+            "end": "2025-04-24T18:32:25+00:00"
+          },
+          "authoredOn": "2025-04-24T18:31:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/b7d6c75b-5a88-50d0-9dee-ab805d01a1dc",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b7d6c75b-5a88-50d0-9dee-ab805d01a1dc",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2025-04-24T18:30:00+00:00",
+            "end": "2025-04-24T18:32:25+00:00"
+          },
+          "authoredOn": "2025-04-24T18:31:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/af7d56ba-e2c6-533e-8068-63b4ff342737",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "af7d56ba-e2c6-533e-8068-63b4ff342737",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Troponin I"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2025-04-24T18:30:00+00:00",
+            "end": "2025-04-24T18:32:25+00:00"
+          },
+          "authoredOn": "2025-04-24T18:31:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/6182a540-17fa-52ec-9355-c6aeb5dda86e",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "6182a540-17fa-52ec-9355-c6aeb5dda86e",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "386053000",
+                  "display": "Evaluation procedure (procedure)"
+                }
+              ],
+              "text": "Evaluation procedure (procedure)"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "40701008",
+                "display": "Complete Doppler echocardiography"
+              }
+            ],
+            "text": "CA echo doppler complete"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/179c004a-d0fb-5f70-8ec4-b7a312b7516b",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-02-03T17:00:00+00:00",
+          "authoredOn": "2023-05-04T18:20:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/eece29bc-e8a6-5f1c-a591-273c9bf3d455",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "eece29bc-e8a6-5f1c-a591-273c9bf3d455",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-Type Natriuretic Peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/681e2d1f-0c5a-50f0-9429-ffddb5f2ae21",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-02-02T13:00:00+00:00",
+            "end": "2023-05-05T11:45:26+00:00"
+          },
+          "authoredOn": "2023-05-04T18:33:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/f8ae9365-30e3-5b6c-81b2-3c45c9930c6b",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "f8ae9365-30e3-5b6c-81b2-3c45c9930c6b",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "363679005",
+                  "display": "Imaging"
+                }
+              ],
+              "text": "Imaging"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "399208008",
+                "display": "X-ray of chest, two views"
+              }
+            ],
+            "text": "XR chest 2V"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-08-15T07:00:00+00:00",
+          "authoredOn": "2023-08-15T14:57:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/bef13e8f-7d19-5158-95eb-8951b300ef39",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "bef13e8f-7d19-5158-95eb-8951b300ef39",
+          "status": "completed",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "386053000",
+                  "display": "Evaluation procedure (procedure)"
+                }
+              ],
+              "text": "Evaluation procedure (procedure)"
+            }
+          ],
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "268400002",
+                "display": "12-lead electrocardiogram"
+              }
+            ],
+            "text": "ECG 12 lead EKG"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-08-15T07:00:00+00:00",
+          "authoredOn": "2023-08-15T15:05:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/a448a2ce-cf17-51cf-9182-ede0d1a17860",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "a448a2ce-cf17-51cf-9182-ede0d1a17860",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic Metabolic Panel"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-15T04:30:00+00:00",
+            "end": "2023-08-15T16:00:19+00:00"
+          },
+          "authoredOn": "2023-08-15T15:14:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/334650ea-d50b-531e-81e5-af2e1d77183f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "334650ea-d50b-531e-81e5-af2e1d77183f",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-Type Natriuretic Peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-15T04:30:00+00:00",
+            "end": "2023-08-15T16:00:19+00:00"
+          },
+          "authoredOn": "2023-08-15T15:14:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/6a29ac29-422f-5292-8adb-c131ec0fedb8",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "6a29ac29-422f-5292-8adb-c131ec0fedb8",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete Blood Count"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-15T04:30:00+00:00",
+            "end": "2023-08-15T16:04:24+00:00"
+          },
+          "authoredOn": "2023-08-15T15:14:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/76ffe0e4-fa00-5062-93cf-45883778b4f6",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "76ffe0e4-fa00-5062-93cf-45883778b4f6",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-15T04:30:00+00:00",
+            "end": "2023-08-15T16:04:55+00:00"
+          },
+          "authoredOn": "2023-08-15T15:14:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/654795c9-b279-5118-ac5b-642e0ad77ac0",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "654795c9-b279-5118-ac5b-642e0ad77ac0",
+          "status": "active",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete Blood Count"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-08-16T13:13:00+00:00",
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/f74f10f3-3001-5628-8f09-0d7a99739635",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "f74f10f3-3001-5628-8f09-0d7a99739635",
+          "status": "active",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Hemophilic DNA Mutation Screen"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-08-16T13:13:00+00:00",
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/49d67351-5a2a-56c9-85b8-bedbdb15ea7b",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "49d67351-5a2a-56c9-85b8-bedbdb15ea7b",
+          "status": "active",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrenceDateTime": "2023-08-16T13:13:00+00:00",
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/5003e699-35e2-508f-87ab-e9c71e03c614",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "5003e699-35e2-508f-87ab-e9c71e03c614",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Creatinine"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-16T13:13:00+00:00",
+            "end": "2023-08-16T13:18:23+00:00"
+          },
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/f896c7b3-5281-50d3-8f64-b77a9b3ac061",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "f896c7b3-5281-50d3-8f64-b77a9b3ac061",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "HDL Cholesterol"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-16T13:13:00+00:00",
+            "end": "2023-08-16T13:18:23+00:00"
+          },
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/487d8434-4c47-5fab-afcc-727417bb3898",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "487d8434-4c47-5fab-afcc-727417bb3898",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-16T13:13:00+00:00",
+            "end": "2023-08-16T13:18:23+00:00"
+          },
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/51a3a3eb-87a0-5bec-9d31-516d20a38d54",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "51a3a3eb-87a0-5bec-9d31-516d20a38d54",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Triglycerides"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-16T13:13:00+00:00",
+            "end": "2023-08-16T13:18:23+00:00"
+          },
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/26a0b564-4ce5-5e66-84ad-c2a5e6cbaba3",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "26a0b564-4ce5-5e66-84ad-c2a5e6cbaba3",
+          "status": "completed",
+          "intent": "order",
+          "priority": "routine",
+          "code": {
+            "text": "Troponin I"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+            "type": "Practitioner",
+            "display": "E Tucker"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-16T13:13:00+00:00",
+            "end": "2023-08-16T13:18:23+00:00"
+          },
+          "authoredOn": "2023-08-16T13:17:00+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest/c128b7fe-1b34-5b34-b6c5-53e50b6b03d7",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "c128b7fe-1b34-5b34-b6c5-53e50b6b03d7",
+          "status": "completed",
+          "intent": "directive",
+          "priority": "routine",
+          "code": {
+            "text": "Resuscitation Status*"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "requester": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "insurance": [
+            {
+              "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+              "type": "Coverage",
+              "display": "Blue Cross"
+            }
+          ],
+          "occurrencePeriod": {
+            "start": "2023-08-15T14:51:00+00:00",
+            "end": "2023-10-13T15:30:17+00:00"
+          },
+          "authoredOn": "2023-08-15T14:51:36+00:00",
+          "resourceType": "ServiceRequest"
+        }
+      }
+    ],
+    "total": 44,
+    "resourceType": "Bundle"
+  }
+}

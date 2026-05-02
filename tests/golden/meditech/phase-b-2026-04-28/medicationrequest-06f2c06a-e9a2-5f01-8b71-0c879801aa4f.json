@@ -1,0 +1,130 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/MedicationRequest/06f2c06a-e9a2-5f01-8b71-0c879801aa4f",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:58.037678+00:00",
+  "body": {
+    "id": "06f2c06a-e9a2-5f01-8b71-0c879801aa4f",
+    "status": "active",
+    "intent": "order",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+            "code": "community",
+            "display": "Community"
+          }
+        ],
+        "text": "Community"
+      },
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+            "code": "discharge",
+            "display": "Discharge"
+          }
+        ],
+        "text": "Discharge"
+      }
+    ],
+    "priority": "routine",
+    "doNotPerform": false,
+    "reportedBoolean": false,
+    "medicationReference": {
+      "reference": "Medication/84a1f03a-aaa6-5c4b-868d-2ddd53e5bdc6",
+      "type": "Medication",
+      "display": "metoprolol succinate ER 25 mg tablet,extended release 24 hr"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "encounter": {
+      "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+      "type": "Encounter"
+    },
+    "requester": {
+      "reference": "Practitioner/36c724f7-bde5-50b9-a050-e8e3843ec302",
+      "type": "Practitioner",
+      "display": "Meditech Mt"
+    },
+    "recorder": {
+      "reference": "Practitioner/36c724f7-bde5-50b9-a050-e8e3843ec302",
+      "type": "Practitioner",
+      "display": "Meditech Mt"
+    },
+    "substitution": {
+      "allowedBoolean": true
+    },
+    "dispenseRequest": {
+      "initialFill": {
+        "quantity": {
+          "unit": "tabs",
+          "value": 30,
+          "code": "tab",
+          "system": "http://unitsofmeasure.org"
+        }
+      },
+      "validityPeriod": {
+        "start": "2023-10-12"
+      },
+      "numberOfRepeatsAllowed": 0,
+      "quantity": {
+        "unit": "tabs",
+        "value": 30,
+        "code": "tab",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    "dosageInstruction": [
+      {
+        "sequence": 1,
+        "text": "25 mg orally every day, start: 2023-10-12",
+        "timing": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2023-10-12"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          },
+          "code": {
+            "text": "every day"
+          }
+        },
+        "asNeededBoolean": false,
+        "route": {
+          "text": "PO"
+        },
+        "doseAndRate": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                  "code": "ordered",
+                  "display": "Ordered"
+                }
+              ],
+              "text": "Ordered"
+            },
+            "doseQuantity": {
+              "unit": "mg",
+              "value": 25,
+              "code": "mg",
+              "system": "http://unitsofmeasure.org"
+            }
+          }
+        ]
+      }
+    ],
+    "authoredOn": "2023-10-12T19:05:17+00:00",
+    "resourceType": "MedicationRequest"
+  }
+}

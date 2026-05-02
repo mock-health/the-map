@@ -1,0 +1,80 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+The Map — US Core Deviation Catalog
+Copyright 2026 Mock Health, Inc.
+
+You are free to:
+
+  Share — copy and redistribute the material in any medium or format
+          for any purpose, even commercially.
+
+  Adapt — remix, transform, and build upon the material
+          for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the
+license terms.
+
+Under the following terms:
+
+  Attribution — You must give appropriate credit, provide a link to
+  the license, and indicate if changes were made. You may do so in
+  any reasonable manner, but not in any way that suggests the
+  licensor endorses you or your use.
+
+  No additional restrictions — You may not apply legal terms or
+  technological measures that legally restrict others from doing
+  anything the license permits.
+
+Notices:
+
+  You do not have to comply with the license for elements of the
+  material in the public domain or where your use is permitted by
+  an applicable exception or limitation.
+
+  No warranties are given. The license may not give you all of the
+  permissions necessary for your intended use. For example, other
+  rights such as publicity, privacy, or moral rights may limit how
+  you use the material.
+
+----------------------------------------------------------------------
+
+Scope of this license:
+
+  This CC BY 4.0 license applies to the data content of this
+  repository — specifically the JSON files under `ehrs/`, `us-core/`,
+  `uscdi/`, `schema/`, and `reports/`, and the prose content of
+  Markdown documentation files.
+
+  The Python tooling under `tools/` and the test code under `tests/`
+  are licensed separately under the Apache License 2.0 — see
+  LICENSE-CODE.
+
+  EHR vendor names referenced in the data (Epic, Oracle Health,
+  Cerner, MEDITECH, eCW, Veradigm, NextGen, etc.) are
+  trademarks of their respective owners and are used here for
+  identification only. This project is not affiliated with or
+  endorsed by any of those vendors.
+
+  CapabilityStatement files captured under `ehrs/{ehr}/CapabilityStatement.json`
+  and `tests/golden/production-fleet/` are unmodified responses from
+  vendor-published `/metadata` and `.well-known/smart-configuration`
+  endpoints, which are anonymously readable per ONC HTI-1 §170.404,
+  FHIR R4 §C.0.0, and SMART App Launch STU 2.2. Captures are dated
+  and attributed to their source URLs in the repository.
+
+----------------------------------------------------------------------
+
+How to attribute:
+
+  When citing or redistributing the data, include:
+
+    "The Map (US Core Deviation Catalog) by Mock Health, Inc.,
+     licensed CC BY 4.0 — https://github.com/mock-health/the-map"
+
+  When citing a specific finding, include the verification block's
+  source_url and verified_date alongside this attribution.
+
+----------------------------------------------------------------------
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/

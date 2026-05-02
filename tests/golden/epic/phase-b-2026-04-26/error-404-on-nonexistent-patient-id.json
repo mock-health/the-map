@@ -1,0 +1,34 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Patient/this-id-definitely-does-not-exist-c2f4692e",
+    "status": 404
+  },
+  "_captured_at": "2026-04-26T21:48:46.819856+00:00",
+  "body": {
+    "resourceType": "OperationOutcome",
+    "issue": [
+      {
+        "severity": "fatal",
+        "code": "not-found",
+        "details": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+              "code": "59008",
+              "display": "The FHIR ID provided was not found."
+            }
+          ],
+          "text": "The FHIR ID provided was not found."
+        },
+        "diagnostics": "Invalid FHIR ID provided",
+        "location": [
+          "/f:id"
+        ],
+        "expression": [
+          "id"
+        ]
+      }
+    ]
+  }
+}

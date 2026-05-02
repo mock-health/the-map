@@ -1,0 +1,167 @@
+{
+  "ehr": "epic",
+  "captured_date": "2026-04-26",
+  "max_patients_attempted": 20,
+  "user_agent": "mockhealth-map/0.1 (+https://mock.health) sandbox-patient-enumerator",
+  "unfiltered_patient_search_diagnostics": {
+    "first_page_status": 400,
+    "first_page_error": "{\"resourceType\":\"OperationOutcome\",\"issue\":[{\"severity\":\"fatal\",\"code\":\"business-rule\",\"details\":{\"coding\":[{\"system\":\"urn:oid:1.2.840.114350.1.13.0.1.7.2.657369\",\"code\":\"59159\",\"display\":\"The content/operation failed to pass a business rule, and so could not proceed.\"}],\"text\":\"The content/operatio",
+    "pages_walked": 0
+  },
+  "patients": [
+    {
+      "id": "eq081-VQEgP8drUUqCWzHfw3",
+      "display_name": "Derrick Lin",
+      "gender": "male",
+      "birthDate": "1973-06-03",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 1,
+        "Condition-problems": 1,
+        "Condition-encounter-diag": 1,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 1000,
+        "MedicationRequest": 1,
+        "Encounter": 1,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 20
+      }
+    },
+    {
+      "id": "erXuFYUfucBZaryVksYEcMg3",
+      "display_name": "Camila Maria Lopez",
+      "gender": "female",
+      "birthDate": "1987-09-12",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 1,
+        "Condition-problems": 1,
+        "Condition-encounter-diag": 6,
+        "Condition-health-concern": 0,
+        "Observation-lab": 5,
+        "Observation-vital-signs": 245,
+        "MedicationRequest": 1,
+        "Encounter": 10,
+        "Procedure": 2,
+        "DiagnosticReport-lab": 4,
+        "Immunization": 1,
+        "DocumentReference": 70
+      }
+    },
+    {
+      "id": "eD.LxhDyX35TntF77l7etUA3",
+      "display_name": "Jason Argonaut",
+      "gender": "male",
+      "birthDate": "1985-08-01",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 3,
+        "Condition-problems": 7,
+        "Condition-encounter-diag": 1,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 0,
+        "MedicationRequest": 9,
+        "Encounter": 3,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 2,
+        "DocumentReference": 12
+      }
+    },
+    {
+      "id": "evYS76EX6LLeCX2PlRLhvwg3",
+      "display_name": "Jessica Argonaut",
+      "gender": "female",
+      "birthDate": "1985-08-01",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 1,
+        "Condition-problems": 4,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 0,
+        "MedicationRequest": 5,
+        "Encounter": 1,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 2
+      }
+    },
+    {
+      "id": "eAB3mDIBBcyUKviyzrxsnAw3",
+      "display_name": "Desiree Caroline Powell",
+      "gender": "female",
+      "birthDate": "2014-11-14",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 1,
+        "Condition-problems": 0,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 388,
+        "MedicationRequest": 2,
+        "Encounter": 1,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 7,
+        "DocumentReference": 13
+      }
+    },
+    {
+      "id": "eIXesllypH3M9tAA5WdJftQ3",
+      "display_name": "Linda Jane Ross",
+      "gender": "female",
+      "birthDate": "1969-04-27",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 1,
+        "Condition-problems": 2,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 9,
+        "MedicationRequest": 2,
+        "Encounter": 1,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 14
+      }
+    },
+    {
+      "id": "e0w0LEDCYtfckT6N.CkJKCw3",
+      "display_name": "Warren James McGinnis",
+      "gender": "male",
+      "birthDate": "1952-05-24",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 2,
+        "Condition-problems": 2,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 1,
+        "Observation-vital-signs": 76,
+        "MedicationRequest": 0,
+        "Encounter": 1,
+        "Procedure": 1,
+        "DiagnosticReport-lab": 1,
+        "Immunization": 0,
+        "DocumentReference": 18
+      }
+    }
+  ]
+}

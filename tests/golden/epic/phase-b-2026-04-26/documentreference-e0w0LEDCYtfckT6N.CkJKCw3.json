@@ -1,0 +1,1918 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:46.423163+00:00",
+  "_probe": "DocumentReference",
+  "_patient_id": "e0w0LEDCYtfckT6N.CkJKCw3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 18,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=e0w0LEDCYtfckT6N.CkJKCw3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/exPCwVZNInDXhMrFk9vkDqA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/exPCwVZNInDXhMrFk9vkDqA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "exPCwVZNInDXhMrFk9vkDqA3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "197395"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.3.15",
+              "value": "1.2.840.114350.1.13.0.1.7.2.727879_197395"
+            }
+          ],
+          "status": "current",
+          "docStatus": "preliminary",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "2",
+                "display": "Consults"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+                "code": "2",
+                "display": "Consults"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11488-4",
+                "display": "Consult note",
+                "userSelected": true
+              }
+            ],
+            "text": "Consults"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2026-04-26T14:25:37Z",
+          "author": [
+            {
+              "reference": "Practitioner/e3MBXCOmcoLKl7ayLD51AWA3",
+              "type": "Practitioner",
+              "display": "Provider Fhirtwo, MD"
+            }
+          ],
+          "custodian": {
+            "identifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+            },
+            "display": "FHIR Sandbox"
+          },
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "NOPAT",
+                  "display": "no disclosure to patient, family or caregivers without attending provider's authorization"
+                }
+              ],
+              "text": "no disclosure to patient, family or caregivers without attending provider's authorization"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/evnYG4h4ujlzYmls9SaaMsw3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/rtf",
+                "url": "Binary/fcSuECrYNW4sMSmjJz-mzjmee.YUD8j-.GN5gflBpP3g4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "extension": [
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                      "code": "1",
+                      "display": "Physician"
+                    },
+                    {
+                      "system": "urn:oid:2.16.840.1.113883.11.19465",
+                      "code": "207Q00000X",
+                      "display": "Family Medicine Physician"
+                    }
+                  ],
+                  "text": "Physician"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+              }
+            ],
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2026-04-26T14:25:37Z"
+            },
+            "practiceSetting": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050",
+                  "code": "9",
+                  "display": "Family Medicine"
+                }
+              ],
+              "text": "Family Medicine"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ewbHjBDB7KFwiZ1B.73wAkA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ewbHjBDB7KFwiZ1B.73wAkA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ewbHjBDB7KFwiZ1B.73wAkA3",
+          "extension": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.72072",
+                        "code": "1",
+                        "display": "Signer"
+                      }
+                    ],
+                    "text": "Signer"
+                  },
+                  "url": "mode"
+                },
+                {
+                  "valueDateTime": "2021-01-29T20:27:23Z",
+                  "url": "time"
+                },
+                {
+                  "valueReference": {
+                    "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+                    "display": "User Epic"
+                  },
+                  "url": "party"
+                }
+              ],
+              "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195630"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.3.15",
+              "value": "1.2.840.114350.1.13.0.1.7.2.727879_195630"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+                "code": "1",
+                "display": "Progress Notes"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Progress note",
+                "userSelected": true
+              }
+            ],
+            "text": "Progress Notes"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2021-01-29T20:27:23Z",
+          "author": [
+            {
+              "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "type": "Practitioner",
+              "display": "User Epic"
+            }
+          ],
+          "authenticator": {
+            "extension": [
+              {
+                "valueDateTime": "2021-01-29T20:27:23Z",
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-authentication-instant"
+              }
+            ],
+            "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+            "type": "Practitioner",
+            "display": "User Epic"
+          },
+          "custodian": {
+            "identifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+            },
+            "display": "FHIR Sandbox"
+          },
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "NOPAT",
+                  "display": "no disclosure to patient, family or caregivers without attending provider's authorization"
+                }
+              ],
+              "text": "no disclosure to patient, family or caregivers without attending provider's authorization"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/eb-PZ4-0fovIxH5FlYiZuIw3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/rtf",
+                "url": "Binary/fR6WwTajjwDTabOU1VDt6G1pav7PJM4Kvp1UFJn4oFXY4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "extension": [
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                      "code": "3",
+                      "display": "Registered Nurse"
+                    }
+                  ],
+                  "text": "Registered Nurse"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+              }
+            ],
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2021-01-29T20:27:23Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/e2LI3pMSHJ-BZ7qKifTmlhw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/e2LI3pMSHJ-BZ7qKifTmlhw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "e2LI3pMSHJ-BZ7qKifTmlhw3",
+          "extension": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.72072",
+                        "code": "1",
+                        "display": "Signer"
+                      }
+                    ],
+                    "text": "Signer"
+                  },
+                  "url": "mode"
+                },
+                {
+                  "valueDateTime": "2021-01-29T20:01:32Z",
+                  "url": "time"
+                },
+                {
+                  "valueReference": {
+                    "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+                    "display": "User Epic"
+                  },
+                  "url": "party"
+                }
+              ],
+              "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195629"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.3.15",
+              "value": "1.2.840.114350.1.13.0.1.7.2.727879_195629"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "1",
+                "display": "Progress Notes"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+                "code": "1",
+                "display": "Progress Notes"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Progress note",
+                "userSelected": true
+              }
+            ],
+            "text": "Progress Notes"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2021-01-29T20:01:32Z",
+          "author": [
+            {
+              "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "type": "Practitioner",
+              "display": "User Epic"
+            }
+          ],
+          "authenticator": {
+            "extension": [
+              {
+                "valueDateTime": "2021-01-29T20:01:32Z",
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-authentication-instant"
+              }
+            ],
+            "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+            "type": "Practitioner",
+            "display": "User Epic"
+          },
+          "custodian": {
+            "identifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+            },
+            "display": "FHIR Sandbox"
+          },
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "NOPAT",
+                  "display": "no disclosure to patient, family or caregivers without attending provider's authorization"
+                }
+              ],
+              "text": "no disclosure to patient, family or caregivers without attending provider's authorization"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/eocCwzv45f51oacqX93jBYA3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/rtf",
+                "url": "Binary/fQGkgKzWOgz9bH2uQrFzhR4-QefLB16i4y6fjKhMI3PM4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "extension": [
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                      "code": "3",
+                      "display": "Registered Nurse"
+                    }
+                  ],
+                  "text": "Registered Nurse"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+              }
+            ],
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2021-01-29T20:01:32Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ejQPRy7XA9sgOPZmWi2aR3g3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ejQPRy7XA9sgOPZmWi2aR3g3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ejQPRy7XA9sgOPZmWi2aR3g3",
+          "extension": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.72072",
+                        "code": "1",
+                        "display": "Signer"
+                      }
+                    ],
+                    "text": "Signer"
+                  },
+                  "url": "mode"
+                },
+                {
+                  "valueDateTime": "2019-05-28T15:34:14Z",
+                  "url": "time"
+                },
+                {
+                  "valueReference": {
+                    "reference": "Practitioner/eLFLR2Jzap4gBXtU5dFBMlw3",
+                    "display": "Physician One Cardiology, MD"
+                  },
+                  "url": "party"
+                }
+              ],
+              "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195475"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.3.15",
+              "value": "1.2.840.114350.1.13.0.1.7.2.727879_195475"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "4",
+                "display": "H&P"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+                "code": "4",
+                "display": "H&P"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "34117-2",
+                "display": "History and physical note",
+                "userSelected": true
+              }
+            ],
+            "text": "H&P"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2019-05-28T15:32:14Z",
+          "author": [
+            {
+              "reference": "Practitioner/eLFLR2Jzap4gBXtU5dFBMlw3",
+              "type": "Practitioner",
+              "display": "Physician One Cardiology, MD"
+            }
+          ],
+          "authenticator": {
+            "extension": [
+              {
+                "valueDateTime": "2019-05-28T15:34:14Z",
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-authentication-instant"
+              }
+            ],
+            "reference": "Practitioner/eLFLR2Jzap4gBXtU5dFBMlw3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "custodian": {
+            "identifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+            },
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/ejYu9Akyg9iI0nfbfqB0svA3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/rtf",
+                "url": "Binary/fb4rWHup0xAuToxOylEsEv9o8KDqbCgDWmSjY7VpPoSs4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "extension": [
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                      "code": "1",
+                      "display": "Physician"
+                    }
+                  ],
+                  "text": "Physician"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+              },
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.696784.34886",
+                      "code": "104",
+                      "display": "Cardiology"
+                    }
+                  ],
+                  "text": "Cardiology"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-service"
+              }
+            ],
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2019-05-28T15:32:14Z"
+            },
+            "practiceSetting": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050",
+                  "code": "4",
+                  "display": "Cardiology"
+                }
+              ],
+              "text": "Cardiology"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eEBiTuPQOVIQJmvSh-UuuPA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eEBiTuPQOVIQJmvSh-UuuPA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eEBiTuPQOVIQJmvSh-UuuPA3",
+          "extension": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.72072",
+                        "code": "1",
+                        "display": "Signer"
+                      }
+                    ],
+                    "text": "Signer"
+                  },
+                  "url": "mode"
+                },
+                {
+                  "valueDateTime": "2019-05-28T15:32:01Z",
+                  "url": "time"
+                },
+                {
+                  "valueReference": {
+                    "reference": "Practitioner/eLFLR2Jzap4gBXtU5dFBMlw3",
+                    "display": "Physician One Cardiology, MD"
+                  },
+                  "url": "party"
+                }
+              ],
+              "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
+            }
+          ],
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195474"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.3.15",
+              "value": "1.2.840.114350.1.13.0.1.7.2.727879_195474"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "3",
+                "display": "Procedures"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+                "code": "3",
+                "display": "Procedures"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "28570-0",
+                "display": "Procedure note",
+                "userSelected": true
+              }
+            ],
+            "text": "Procedures"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2019-05-28T15:29:23Z",
+          "author": [
+            {
+              "reference": "Practitioner/eLFLR2Jzap4gBXtU5dFBMlw3",
+              "type": "Practitioner",
+              "display": "Physician One Cardiology, MD"
+            }
+          ],
+          "authenticator": {
+            "extension": [
+              {
+                "valueDateTime": "2019-05-28T15:32:01Z",
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-authentication-instant"
+              }
+            ],
+            "reference": "Practitioner/eLFLR2Jzap4gBXtU5dFBMlw3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "custodian": {
+            "identifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+            },
+            "display": "FHIR Sandbox"
+          },
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "NOPAT",
+                  "display": "no disclosure to patient, family or caregivers without attending provider's authorization"
+                }
+              ],
+              "text": "no disclosure to patient, family or caregivers without attending provider's authorization"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/en.o5yNkoLYGeiNWVj2HWUw3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/rtf",
+                "url": "Binary/flVFUsfuKNhZSiy2AyKJd3GB2kMvSzfP4W-mcGRc-PPE4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "extension": [
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                      "code": "1",
+                      "display": "Physician"
+                    }
+                  ],
+                  "text": "Physician"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+              },
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.696784.34886",
+                      "code": "104",
+                      "display": "Cardiology"
+                    }
+                  ],
+                  "text": "Cardiology"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-service"
+              }
+            ],
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2019-05-28T15:29:23Z"
+            },
+            "practiceSetting": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050",
+                  "code": "4",
+                  "display": "Cardiology"
+                }
+              ],
+              "text": "Cardiology"
+            },
+            "related": [
+              {
+                "reference": "ServiceRequest/ehD1rMGm0zaL2F3AXMUDtWwj.xhge6RdXOA3JTEAqU5s3",
+                "type": "ServiceRequest",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+                  "value": "1066928"
+                },
+                "display": "Stress test"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eQv2ufzFBnFNZPnOD0f8B-Q3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eQv2ufzFBnFNZPnOD0f8B-Q3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eQv2ufzFBnFNZPnOD0f8B-Q3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730104"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "12",
+                "display": "HIPAA Notice of Privacy"
+              }
+            ],
+            "text": "HIPAA Notice of Privacy"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eoYD49ybZgCfqLYZ9nrclnQ3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eoYD49ybZgCfqLYZ9nrclnQ3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eoYD49ybZgCfqLYZ9nrclnQ3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730105"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201016",
+                "display": "Hospital Consent for Treatment"
+              }
+            ],
+            "text": "Hospital Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eDWqwAhyeXpU4mWkDJu7Y7A3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27549"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ekrL7.hT3snMoJ.C5Entxhw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ekrL7.hT3snMoJ.C5Entxhw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ekrL7.hT3snMoJ.C5Entxhw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730106"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201017",
+                "display": "Physician Office Consent for Treatment"
+              }
+            ],
+            "text": "Physician Office Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eexpkLwne6oUQhSdEBAlNAg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eexpkLwne6oUQhSdEBAlNAg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eexpkLwne6oUQhSdEBAlNAg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730107"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "10",
+                "display": "Advance Directives and Living Will"
+              }
+            ],
+            "text": "Advance Directives and Living Will"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eeRw5qJWP.StxDHjnNkQKCg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eeRw5qJWP.StxDHjnNkQKCg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eeRw5qJWP.StxDHjnNkQKCg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730108"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "11",
+                "display": "Power of Attorney"
+              }
+            ],
+            "text": "Power of Attorney"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eAuJkGrHn0io98pwRq4Iyew3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eAuJkGrHn0io98pwRq4Iyew3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eAuJkGrHn0io98pwRq4Iyew3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730109"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201007",
+                "display": "Hospital Financial Release of Information"
+              }
+            ],
+            "text": "Hospital Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eDWqwAhyeXpU4mWkDJu7Y7A3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27549"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eBn2dTFZrziHkguk1bA5cBg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eBn2dTFZrziHkguk1bA5cBg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eBn2dTFZrziHkguk1bA5cBg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730110"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201015",
+                "display": "Physician Office Financial Release of Information"
+              }
+            ],
+            "text": "Physician Office Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ezHxeJot4gfVOhiD3qyom7Q3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ezHxeJot4gfVOhiD3qyom7Q3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ezHxeJot4gfVOhiD3qyom7Q3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730111"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201000",
+                "display": "Photo ID"
+              }
+            ],
+            "text": "Photo ID"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/epI9NN1OPVPFo0XTIJ-Ynxg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/epI9NN1OPVPFo0XTIJ-Ynxg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "epI9NN1OPVPFo0XTIJ-Ynxg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730112"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201003",
+                "display": "Insurance Card"
+              }
+            ],
+            "text": "Insurance Card"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70Uafn8NvSmpv0Lc.vDGLKPsg4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70Uafn8NvSmpv0Lc.vDGLKPsg4",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ff4TK0R1fHwoJO-XKhI70Uafn8NvSmpv0Lc.vDGLKPsg4",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.8.688883.161"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3"
+              }
+            ],
+            "text": "Encounter Summary"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/document-reference-category",
+                  "code": "summary-document",
+                  "display": "Summary Document"
+                }
+              ],
+              "text": "Summary Document"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2019-10-24T15:18:20Z",
+          "author": [
+            {
+              "display": "FHIR Sandbox"
+            }
+          ],
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "Binary/fMx3jGctXpu4WmCzzoRKrs7jF-VdCyikb2J0DXFn97Ks4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:hl7-org:sdwg:ccda-structuredBody:2.1",
+                "display": "Structured Body C-CDA 2.1"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2019-05-28"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70UWqWtzjUNmJaWwGxuGNUUHg4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70UWqWtzjUNmJaWwGxuGNUUHg4",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ff4TK0R1fHwoJO-XKhI70UWqWtzjUNmJaWwGxuGNUUHg4",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.8.688883.160"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "34133-9"
+              }
+            ],
+            "text": "Patient Summary"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/document-reference-category",
+                  "code": "summary-document",
+                  "display": "Summary Document"
+                }
+              ],
+              "text": "Summary Document"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2019-10-24T15:18:20Z",
+          "author": [
+            {
+              "display": "FHIR Sandbox"
+            }
+          ],
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "Binary/fMx3jGctXpu4WmCzzoRKrs9AMCB9Y-Yc4iFC9XQfAOGM4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:hl7-org:sdwg:ccda-structuredBody:2.1",
+                "display": "Structured Body C-CDA 2.1"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/f6ZFwYAwWwVPKGC.pvyi1iedhMu6qOhTqMKIV1xZCtsQ4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/f6ZFwYAwWwVPKGC.pvyi1iedhMu6qOhTqMKIV1xZCtsQ4",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "f6ZFwYAwWwVPKGC.pvyi1iedhMu6qOhTqMKIV1xZCtsQ4",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066928"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18748-4",
+                "display": "Diagnostic imaging study"
+              }
+            ],
+            "text": "Diagnostic imaging study"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "date": "2019-05-28T15:29:23Z",
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/fuBtbCGuEFiDypehOaYedj9Z6kuNj1HR8d9N8mdLtJFk4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27561"
+                },
+                "display": "Hospital Encounter"
+              }
+            ],
+            "period": {
+              "start": "2019-05-28T15:29:23Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/e6ZFwYAwWwVPKGC.pvyi1icp0nvVf1PkVSDrdOMrpCHU3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/e6ZFwYAwWwVPKGC.pvyi1icp0nvVf1PkVSDrdOMrpCHU3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "e6ZFwYAwWwVPKGC.pvyi1icp0nvVf1PkVSDrdOMrpCHU3",
+          "masterIdentifier": {
+            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+            "value": "1066928"
+          },
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066928"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "text": "Stress test"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/document-reference-class",
+                  "code": "imaging-result",
+                  "display": "Imaging Result"
+                }
+              ],
+              "text": "Imaging Result"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "description": "STRESS TEST ONLY",
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "Binary/euBtbCGuEFiDypehOaYedj59pZYdyXEQNzG29.3JxKFo3"
+              }
+            }
+          ],
+          "context": {
+            "period": {
+              "start": "2019-05-28T15:29:23Z",
+              "end": "2019-05-28T15:29:23Z"
+            },
+            "practiceSetting": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.686980.110",
+                  "code": "4",
+                  "display": "Cardiology"
+                }
+              ],
+              "text": "Cardiology"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

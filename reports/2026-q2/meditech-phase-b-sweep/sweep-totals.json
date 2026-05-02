@@ -1,0 +1,54 @@
+{
+  "AllergyIntolerance": [
+    1,
+    1
+  ],
+  "CarePlan": [
+    2,
+    2
+  ],
+  "CareTeam": [
+    1,
+    1
+  ],
+  "Condition": [
+    10,
+    10
+  ],
+  "DiagnosticReport": [
+    17,
+    17
+  ],
+  "DocumentReference": [
+    2,
+    2
+  ],
+  "Encounter": [
+    4,
+    4
+  ],
+  "Goal": [
+    1,
+    1
+  ],
+  "Immunization": [
+    2,
+    2
+  ],
+  "MedicationRequest": [
+    10,
+    10
+  ],
+  "Observation": [
+    20,
+    20
+  ],
+  "Procedure": [
+    15,
+    15
+  ],
+  "ServiceRequest": [
+    15,
+    15
+  ]
+}

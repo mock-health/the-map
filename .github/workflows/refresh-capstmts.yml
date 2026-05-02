@@ -1,0 +1,94 @@
+name: refresh-capstmts
+
+on:
+  schedule:
+    # Mondays at 14:00 UTC — early enough that any drift PR lands before the
+    # week's editorial review window.
+    - cron: "0 14 * * 1"
+  workflow_dispatch:
+    inputs:
+      ehr:
+        description: 'Single EHR slug to refresh (default: all)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    name: refresh ${{ matrix.ehr }} CapStmt + brands
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Anonymous Phase A endpoints. These are guaranteed-public per
+        # ONC HTI-1 §170.404 + FHIR R4 §C.0.0 + SMART STU 2.2.
+        ehr: [epic, cerner, meditech, meditech-greenfield]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+          # Need a real branch we can push from
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: filter by ehr input
+        if: ${{ inputs.ehr != '' && inputs.ehr != matrix.ehr }}
+        run: echo "skipping ${{ matrix.ehr }} — manual run targets ${{ inputs.ehr }}" && exit 0
+
+      - name: re-fetch CapStmt (anonymous)
+        id: fetch
+        continue-on-error: true
+        run: |
+          python -m tools.fetch_capability ${{ matrix.ehr }}
+          echo "fetched=true" >> "$GITHUB_OUTPUT"
+
+      - name: detect drift
+        id: drift
+        if: steps.fetch.outputs.fetched == 'true'
+        run: |
+          if git diff --quiet -- ehrs/${{ matrix.ehr }}/CapabilityStatement.json; then
+            echo "drift=false" >> "$GITHUB_OUTPUT"
+            echo "no drift detected for ${{ matrix.ehr }}"
+          else
+            echo "drift=true" >> "$GITHUB_OUTPUT"
+            # Capture a short summary for the PR body
+            git --no-pager diff --stat -- ehrs/${{ matrix.ehr }}/ > /tmp/drift-stat.txt
+            git --no-pager diff -- ehrs/${{ matrix.ehr }}/CapabilityStatement.json | head -200 > /tmp/drift-head.txt
+          fi
+
+      - name: open drift PR
+        if: steps.drift.outputs.drift == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: capstmt-drift/${{ matrix.ehr }}
+          delete-branch: true
+          commit-message: "chore: refresh ${{ matrix.ehr }} CapStmt (auto-detected drift)"
+          title: "CapStmt drift detected: ${{ matrix.ehr }}"
+          body: |
+            Auto-detected change in `ehrs/${{ matrix.ehr }}/CapabilityStatement.json`.
+
+            The Phase A anonymous re-fetch returned a different shape than what's
+            currently checked in. This is the canonical signal that a vendor
+            updated their sandbox `/metadata` endpoint.
+
+            **Review checklist:**
+            - [ ] Diff is intentional (vendor really shipped a change)?
+            - [ ] Element deviations in `overlay.json` still apply?
+            - [ ] Run `python -m tools.measure_phase_b ${{ matrix.ehr }}` to refresh per-element evidence (requires sandbox creds)?
+            - [ ] Update `CHANGELOG.md` with the finding?
+
+            Triggered by `.github/workflows/refresh-capstmts.yml` on a weekly cron.
+          labels: capstmt-drift,${{ matrix.ehr }}

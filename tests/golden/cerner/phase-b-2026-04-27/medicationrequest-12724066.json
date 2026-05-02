@@ -1,0 +1,4245 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724066",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:35.382251+00:00",
+  "_probe": "MedicationRequest",
+  "_patient_id": "12724066",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "b139ac4f-ad61-4bde-8bdf-ebcdaaf346f0",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724066"
+      },
+      {
+        "relation": "next",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724066&-pageContext=T3BlblBsYXRmb3JtRmhpckNvbnRleHQ9dHJ1ZSZwYWdlQ29udGV4dD04MDUxOTA2OTNfODA1MTkwNjk0XzEyNzI0MDY2XzFfMSZjb25jZXB0PWNoYXJ0ZWQ%3D&-pageDirection=NEXT"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/332682525",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "332682525",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2021-07-29T01:00:38Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: NS drip 0.9 %</p><p><b>Dosage Instructions</b>: 200 mL/hr, IV</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 14, 2021  1:36 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Needs pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "inpatient",
+                  "display": "Inpatient",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1807627",
+                "display": "150 ML Sodium Chloride 9 MG/ML Injection",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "40284513",
+                "display": "NS drip 0.9 %",
+                "userSelected": true
+              }
+            ],
+            "text": "NS drip 0.9 %"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "authoredOn": "2021-07-14T13:36:53Z",
+          "requester": {
+            "reference": "Practitioner/12744819",
+            "display": "Test, ASD Physcian 3"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Total Volume (mL): 1,000, Soln-IV, IV, 200 mL/hr, Start Date: 07/14/21 8:36:00 CDT, Populate Charting Weight From Order",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "200 mL/hr, IV",
+              "patientInstruction": "200 Milliliters/hour Intravenous. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2021-07-14T13:36:00Z"
+                  },
+                  "duration": 5.0,
+                  "durationUnit": "h"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318170",
+                    "display": "IV",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "47625008",
+                    "display": "Intravenous route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "IV"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 0.9,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                  },
+                  "rateQuantity": {
+                    "value": 200.0,
+                    "unit": "mL/hr",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mL/h"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2021-07-14T13:36:53Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/313764715",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "313764715",
+          "meta": {
+            "versionId": "3",
+            "lastUpdated": "2020-07-21T01:00:49Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: acetaminophen</p><p><b>Dosage Instructions</b>: 650 mg = 2 tab, Oral, every 4 hr, PRN: other (see comment)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul  6, 2020  9:00 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "inpatient",
+                  "display": "Inpatient",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "161",
+                "display": "Acetaminophen",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748023",
+                "display": "acetaminophen",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "authoredOn": "2020-07-06T21:00:38Z",
+          "requester": {
+            "reference": "Practitioner/2",
+            "display": "CERNER, CERNER CERNER"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "650 mg = 2 tab, Oral, Tab, every 4 hr, PRN other (see comment), First Dose: 07/06/20 16:00:00 CDT",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "650 mg = 2 tab, Oral, every 4 hr, PRN: other (see comment)",
+              "patientInstruction": "650 Milligrams Oral (given by mouth) every 4 hours as needed other (see comment). Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2020-07-06T21:00:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696547",
+                      "display": "every 4 hr",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "Q4H",
+                      "display": "Q4H",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "225756002",
+                      "display": "Every four hours (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every 4 hr"
+                }
+              },
+              "asNeededCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4005",
+                    "code": "664916",
+                    "display": "other (see comment)",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "74964007",
+                    "display": "Other (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "other (see comment)"
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 650.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2020-07-06T21:00:38Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/450338903",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "450338903",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-02-11T13:19:18Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (Tylenol)</p><p><b>Dosage Instructions</b>: 1*2 perday, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Feb 11, 2025  1:19 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "202433",
+                "display": "Tylenol",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748038",
+                "display": "Tylenol",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (Tylenol)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/98209884"
+          },
+          "authoredOn": "2025-02-11T13:19:17Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "1*2 perday, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "1*2 perday, 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "1*2 perday"
+                }
+              ],
+              "patientInstruction": "1*2 perday.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-02-11T13:19:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-02-11T13:19:17Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/479696803",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "479696803",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-12-10T11:26:31Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Dec 10, 2025 11:26 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/100049405"
+          },
+          "authoredOn": "2025-12-10T11:26:30Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-12-10T11:26:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-12-10T11:26:30Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/479696823",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "479696823",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-12-10T11:28:32Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Dec 10, 2025 11:28 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/100049405"
+          },
+          "authoredOn": "2025-12-10T11:28:31Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-12-10T11:28:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-12-10T11:28:31Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/479696843",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "479696843",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-12-10T11:30:51Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Dec 10, 2025 11:30 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/100049405"
+          },
+          "authoredOn": "2025-12-10T11:30:51Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-12-10T11:30:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-12-10T11:30:51Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/479696863",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "479696863",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-12-10T11:33:09Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Dec 10, 2025 11:33 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "authoredOn": "2025-12-10T11:33:09Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-12-10T11:33:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-12-10T11:33:09Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/479696873",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "479696873",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-12-10T11:35:11Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Dec 10, 2025 11:35 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/100049405"
+          },
+          "authoredOn": "2025-12-10T11:35:11Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-12-10T11:35:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-12-10T11:35:11Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/485275743",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "485275743",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2026-02-09T09:59:38Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Feb  9, 2026  9:59 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/100082634"
+          },
+          "authoredOn": "2026-02-09T09:59:37Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2026-02-09T09:59:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2026-02-09T09:59:37Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/485301429",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "485301429",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2026-02-09T11:01:40Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: acetaminophen (acetaminophen 500 mg oral tablet)</p><p><b>Dosage Instructions</b>: 500 mg, Oral, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Feb  9, 2026 11:01 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1293942",
+                "display": "acetaminophen 500 MG Oral Tablet [Pharbetol]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2748058",
+                "display": "acetaminophen 500 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen (acetaminophen 500 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/100082634"
+          },
+          "authoredOn": "2026-02-09T11:01:39Z",
+          "requester": {
+            "reference": "Practitioner/12724064",
+            "display": "Spence, Open Platform IA, Stephen"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "500 mg, Oral, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "500 mg, Oral, 0 Refill(s)",
+              "patientInstruction": "500 Milligrams Oral (given by mouth).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2026-02-09T11:01:00Z"
+                  }
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 500.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2026-02-09T11:01:39Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/332398207",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "332398207",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2021-07-24T01:00:50Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: acetaminophen/aspirin/caffeine (Excedrin)</p><p><b>Dosage Instructions</b>: 1 tab, Oral, every 6 hr, PRN: headache</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul  9, 2021  8:45 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Needs pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "inpatient",
+                  "display": "Inpatient",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "217020",
+                "display": "Excedrin",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2749484",
+                "display": "Excedrin",
+                "userSelected": true
+              }
+            ],
+            "text": "acetaminophen/aspirin/caffeine (Excedrin)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "authoredOn": "2021-07-09T20:45:48Z",
+          "requester": {
+            "reference": "Practitioner/12744819",
+            "display": "Test, ASD Physcian 3"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "1 tab, Oral, Tab, every 6 hr, PRN headache, First Dose: 07/09/21 15:45:00 CDT",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "1 tab, Oral, every 6 hr, PRN: headache",
+              "patientInstruction": "1 tab Oral (given by mouth) every 6 hours as needed for headache. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2021-07-09T20:45:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696553",
+                      "display": "every 6 hr",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "Q6H",
+                      "display": "Q6H",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "307468000",
+                      "display": "Every six hours (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every 6 hr"
+                }
+              },
+              "asNeededCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4005",
+                    "code": "2820819",
+                    "display": "headache",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "25064002",
+                    "display": "Headache (finding)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "headache"
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 1.0,
+                    "unit": "tab",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2021-07-09T20:45:48Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/359878803",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "359878803",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-07-26T18:06:45Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: amLODIPine</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 26, 2022  6:06 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "17767",
+                "display": "Amlodipine",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2749067",
+                "display": "amLODIPine",
+                "userSelected": true
+              }
+            ],
+            "text": "amLODIPine"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97978505"
+          },
+          "authoredOn": "2022-07-26T18:06:45Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2022-07-26T18:06:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2022-07-26T18:06:45Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/352882757",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "352882757",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-04-22T21:53:01Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: aspirin (aspirin 81 mg oral tablet, chewable)</p><p><b>Dosage Instructions</b>: 10 g, Oral, every day at bedtime, PRN: pain</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Apr 22, 2022  9:50 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Needs pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "inpatient",
+                  "display": "Inpatient",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "318272",
+                "display": "Aspirin 81 MG Chewable Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2750118",
+                "display": "aspirin 81 mg oral tablet, chewable",
+                "userSelected": true
+              }
+            ],
+            "text": "aspirin (aspirin 81 mg oral tablet, chewable)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97973366"
+          },
+          "authoredOn": "2022-04-22T21:50:56Z",
+          "requester": {
+            "reference": "Practitioner/2",
+            "display": "CERNER, CERNER CERNER"
+          },
+          "note": [
+            {
+              "text": "---\r\nAt home, patient was taking medication with the following details:\r\nSpecial Instructions: 81 mg Tab,Standing\r\nComments: Patient Additional Note - Jan 14, 2022 10:13 P.M. UTC - Standing\r\n---"
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "10 g, Oral, Tab-Chew, every day at bedtime, PRN pain, First Dose: 04/22/22 16:50:00 CDT",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "10 g, Oral, every day at bedtime, PRN: pain",
+              "patientInstruction": "10 Gram Oral (given by mouth) every day at bedtime as needed for pain. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2022-04-22T21:50:00Z"
+                  },
+                  "when": [
+                    "HS"
+                  ]
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696560",
+                      "display": "every day at bedtime",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "396142006",
+                      "display": "Once a day, at bedtime (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "BED",
+                      "display": "at bedtime",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every day at bedtime"
+                }
+              },
+              "asNeededCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4005",
+                    "code": "614498",
+                    "display": "pain",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "22253000",
+                    "display": "Pain (finding)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "pain"
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 10.0,
+                    "unit": "g",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "g"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2022-04-22T21:50:56Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/377549095",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "377549095",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-02-10T06:23:01Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: atorvastatin (Lipitor 80 mg oral tablet)</p><p><b>Dosage Instructions</b>: 80 mg = 1 tab, Oral, Daily, 90 tab, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Feb 10, 2023  6:21 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "discharge",
+                  "display": "Discharge",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "262095",
+                "display": "atorvastatin 80 MG Oral Tablet [Lipitor]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2750282",
+                "display": "Lipitor 80 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "atorvastatin (Lipitor 80 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97954484"
+          },
+          "authoredOn": "2023-02-10T06:21:55Z",
+          "requester": {
+            "reference": "Practitioner/12742905",
+            "display": "PWGroove, MDHosp"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Maintenance"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "80 mg = 1 tab, Oral, Daily, # 90 tab, 0 Refill(s), called to pharmacy (Rx)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "80 mg = 1 tab, Oral, Daily, 90 tab, 0 Refill(s)",
+              "patientInstruction": "1 tab Oral (given by mouth) every day. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2023-02-10T06:21:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 1.0,
+                    "unit": "tab",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2023-02-10T06:21:55Z"
+            },
+            "numberOfRepeatsAllowed": 0,
+            "quantity": {
+              "value": 90.0,
+              "unit": "tab",
+              "system": "http://unitsofmeasure.org",
+              "code": "{tbl}"
+            }
+          },
+          "substitution": {
+            "allowedBoolean": true
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/402109995",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "402109995",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2023-10-18T11:51:36Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: atorvastatin (Lipitor 10 mg oral tablet)</p><p><b>Dosage Instructions</b>: 10 mg = 1 tab, Oral, Daily, 30 tab, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Oct 18, 2023 11:51 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "617314",
+                "display": "atorvastatin 10 MG Oral Tablet [Lipitor]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2750279",
+                "display": "Lipitor 10 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "atorvastatin (Lipitor 10 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97954484"
+          },
+          "authoredOn": "2023-10-18T11:51:29Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Maintenance"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "10 mg = 1 tab, Oral, Daily, # 30 tab, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "10 mg = 1 tab, Oral, Daily, 30 tab, 0 Refill(s)",
+              "patientInstruction": "1 tab Oral (given by mouth) every day.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2023-10-18T11:51:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 1.0,
+                    "unit": "tab",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2023-10-18T11:51:29Z"
+            },
+            "numberOfRepeatsAllowed": 0,
+            "quantity": {
+              "value": 30.0,
+              "unit": "tab",
+              "system": "http://unitsofmeasure.org",
+              "code": "{tbl}"
+            }
+          },
+          "substitution": {
+            "allowedBoolean": true
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/359878793",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "359878793",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-07-26T16:39:09Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: chlorothiazide</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 26, 2022  4:39 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2396",
+                "display": "Chlorothiazide",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2753129",
+                "display": "chlorothiazide",
+                "userSelected": true
+              }
+            ],
+            "text": "chlorothiazide"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97978505"
+          },
+          "authoredOn": "2022-07-26T16:39:09Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2022-07-26T16:39:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2022-07-26T16:39:09Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/360959433",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "360959433",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-08-10T19:49:28Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: chlorothiazide</p><p><b>Dosage Instructions</b>: 20 mg, for 2 months, Give 1 dose every 1 day for 2 months., 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Aug 10, 2022  7:49 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2396",
+                "display": "Chlorothiazide",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2753129",
+                "display": "chlorothiazide",
+                "userSelected": true
+              }
+            ],
+            "text": "chlorothiazide"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97978505"
+          },
+          "authoredOn": "2022-08-10T19:49:28Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "20 mg, Give 1 dose every 1 day for 2 months., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "20 mg, for 2 months, Give 1 dose every 1 day for 2 months., 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "Give 1 dose every 1 day for 2 months."
+                }
+              ],
+              "patientInstruction": "20 Milligrams for 2 Months. Give 1 dose every 1 day for 2 months..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2022-08-10T19:49:00Z"
+                  }
+                }
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 20.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2022-08-10T19:49:28Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/360959453",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "360959453",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-08-10T19:50:11Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: chlorothiazide</p><p><b>Dosage Instructions</b>: 20 mg, for 2 months, Give 1 dose every 1 day for 2 months., 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Aug 10, 2022  7:50 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2396",
+                "display": "Chlorothiazide",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2753129",
+                "display": "chlorothiazide",
+                "userSelected": true
+              }
+            ],
+            "text": "chlorothiazide"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97978505"
+          },
+          "authoredOn": "2022-08-10T19:50:11Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "20 mg, Give 1 dose every 1 day for 2 months., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "20 mg, for 2 months, Give 1 dose every 1 day for 2 months., 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "Give 1 dose every 1 day for 2 months."
+                }
+              ],
+              "patientInstruction": "20 Milligrams for 2 Months. Give 1 dose every 1 day for 2 months..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2022-08-10T19:50:00Z"
+                  }
+                }
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 20.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2022-08-10T19:50:11Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/358497179",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "358497179",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2022-07-07T10:42:46Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: cloNIDine</p><p><b>Dosage Instructions</b>: 0.1 mg, Oral, every 8 hr, PRN: hypertension</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul  7, 2022 10:41 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "outpatient",
+                  "display": "Outpatient",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2599",
+                "display": "Clonidine",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2754120",
+                "display": "cloNIDine",
+                "userSelected": true
+              }
+            ],
+            "text": "cloNIDine"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97954484"
+          },
+          "authoredOn": "2022-07-07T10:41:10Z",
+          "requester": {
+            "reference": "Practitioner/12742905",
+            "display": "PWGroove, MDHosp"
+          },
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                  "code": "R50.9",
+                  "display": "Fever, unspecified",
+                  "userSelected": true
+                }
+              ],
+              "text": "Fever"
+            }
+          ],
+          "note": [
+            {
+              "text": "PRN SBP greater than 180 mmHg"
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0.1 mg, Oral, Tab, every 8 hr, PRN hypertension, First Dose: 07/07/22 5:41:00 CDT",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0.1 mg, Oral, every 8 hr, PRN: hypertension",
+              "patientInstruction": "0.1 Milligrams Oral (given by mouth) every 8 hours as needed for hypertension. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2022-07-07T10:41:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696555",
+                      "display": "every 8 hr",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "Q8H",
+                      "display": "every 8 hours",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "307469008",
+                      "display": "Every eight hours (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every 8 hr"
+                }
+              },
+              "asNeededCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4005",
+                    "code": "23675269",
+                    "display": "hypertension",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "38341003",
+                    "display": "Hypertensive disorder, systemic arterial (disorder)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "hypertension"
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 0.1,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2022-07-07T10:41:10Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/466208205",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "466208205",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-07-17T06:42:48Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 17, 2025  6:42 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049630",
+                "display": "Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2756087",
+                "display": "diphenhydrAMINE 25 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/99836552"
+          },
+          "authoredOn": "2025-07-17T06:42:48Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-07-17T06:42:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-07-17T06:42:48Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/466208213",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "466208213",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-07-17T06:48:19Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)</p><p><b>Dosage Instructions</b>: 10 g, Oral, every day at bedtime, PRN: pain, 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 17, 2025  6:48 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049630",
+                "display": "Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2756087",
+                "display": "diphenhydrAMINE 25 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/99836552"
+          },
+          "authoredOn": "2025-07-17T06:48:19Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "10 g, Oral, every day at bedtime, PRN: pain, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "10 g, Oral, every day at bedtime, PRN: pain, 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "10 g, Oral, every day at bedtime, PRN: pain"
+                }
+              ],
+              "patientInstruction": "10 g, Oral, every day at bedtime, PRN: pain.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-07-17T06:48:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-07-17T06:48:19Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/466208241",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "466208241",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-07-17T07:04:54Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)</p><p><b>Dosage Instructions</b>: 5 mL, Oral, Daily. Take with food., 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 17, 2025  7:04 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049630",
+                "display": "Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2756087",
+                "display": "diphenhydrAMINE 25 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/99836552"
+          },
+          "authoredOn": "2025-07-17T07:04:54Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "5 mL, Oral, Daily.\nTake with food., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "5 mL, Oral, Daily. Take with food., 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "5 mL, Oral, Daily.\nTake with food."
+                }
+              ],
+              "patientInstruction": "5 mL, Oral, Daily.\nTake with food..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-07-17T07:04:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-07-17T07:04:54Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/466208259",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "466208259",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-07-17T07:13:21Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)</p><p><b>Dosage Instructions</b>: every 4 hr, 5 mL, Oral, Daily. Take with food., 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 17, 2025  7:13 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049630",
+                "display": "Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2756087",
+                "display": "diphenhydrAMINE 25 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/99836552"
+          },
+          "authoredOn": "2025-07-17T07:13:21Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "every 4 hr, 5 mL, Oral, Daily.\nTake with food., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "every 4 hr, 5 mL, Oral, Daily. Take with food., 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "5 mL, Oral, Daily.\nTake with food."
+                }
+              ],
+              "patientInstruction": "every 4 hours. 5 mL, Oral, Daily.\nTake with food..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2020-07-06T21:00:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696547",
+                      "display": "every 4 hr",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "Q4H",
+                      "display": "Q4H",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "225756002",
+                      "display": "Every four hours (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every 4 hr"
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-07-17T07:13:21Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/466208267",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "466208267",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-07-17T07:23:55Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Jul 17, 2025  7:23 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049630",
+                "display": "Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2756087",
+                "display": "diphenhydrAMINE 25 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/99836552"
+          },
+          "authoredOn": "2025-07-17T07:23:55Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-07-17T07:23:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-07-17T07:23:55Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/468110603",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "468110603",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2025-08-07T02:51:46Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s), 0 Refill(s)</p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Authored On</b>: Aug  7, 2025  2:51 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1049630",
+                "display": "Diphenhydramine Hydrochloride 25 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2756087",
+                "display": "diphenhydrAMINE 25 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "diphenhydrAMINE (diphenhydrAMINE 25 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/99836552"
+          },
+          "authoredOn": "2025-08-07T02:51:46Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s), 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s), 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "0 Refill(s)"
+                }
+              ],
+              "patientInstruction": "0 Refill(s).",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2025-07-17T06:42:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2025-08-07T02:51:46Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

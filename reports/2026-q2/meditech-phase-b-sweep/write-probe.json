@@ -1,0 +1,21 @@
+{
+  "probed_at": "2026-04-28T20:38:45.480455+00:00",
+  "patient": "9bec5771-4796-5189-a54e-352c571a44c8",
+  "scope": "fhirUser launch/patient offline_access openid patient/*.read",
+  "results": {
+    "Communication": {
+      "verdict": "auth-rejected",
+      "http_status": 403,
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "body_snippet": "{\"detail\":\"token with scopes [fhirUser, launch/patient, offline_access, openid, patient/*.read] does not have access to the requested API\",\"resource\":\"v1/resource/error/_version/1/\"}"
+    },
+    "QuestionnaireResponse": {
+      "verdict": "auth-rejected",
+      "http_status": 403,
+      "content_type": "application/json; charset=utf-8",
+      "location": null,
+      "body_snippet": "{\"detail\":\"token with scopes [fhirUser, launch/patient, offline_access, openid, patient/*.read] does not have access to the requested API\",\"resource\":\"v1/resource/error/_version/1/\"}"
+    }
+  }
+}

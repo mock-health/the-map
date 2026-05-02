@@ -1,0 +1,433 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport?patient=12724066&category=LAB",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:56.901698+00:00",
+  "_probe": "DiagnosticReport-lab",
+  "_patient_id": "12724066",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "c881bd17-dc47-4424-b785-34ae9b3fc452",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport?patient=12724066&category=LAB"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport/206908407",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "206908407",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-26T12:26:22.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Diagnostic Report</b></p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Document Category</b>: Laboratory</p><p><b>Document Title</b>: Scanner reading</p><p><b>Status</b>: Final</p><p><b>Code</b>: Potassium Level</p><p><b>Effective Start Date</b>: Sep 26, 2024 12:25 P.M. UTC</p><p><b>Effective End Date</b>: Sep 26, 2024 12:25 P.M. UTC</p><p><b>Verifying Provider</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206908407-2024092612262300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory",
+                  "userSelected": true
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP75011-4",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectivePeriod": {
+            "start": "2024-09-26T12:25:38.000Z",
+            "end": "2024-09-26T12:25:38.000Z"
+          },
+          "issued": "2024-09-26T12:26:22Z",
+          "performer": [
+            {
+              "reference": "Practitioner/1",
+              "display": "SYSTEM, SYSTEM Cerner"
+            }
+          ],
+          "resultsInterpreter": [
+            {
+              "reference": "Practitioner/1",
+              "display": "SYSTEM, SYSTEM Cerner"
+            }
+          ],
+          "presentedForm": [
+            {
+              "contentType": "text/plain",
+              "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/R-206908407",
+              "title": "Scanner reading",
+              "creation": "2024-09-26T12:25:38.000Z"
+            },
+            {
+              "contentType": "application/xml",
+              "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-206908407",
+              "title": "Scanner reading",
+              "creation": "2024-09-26T12:25:38.000Z"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport/206819846",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "206819846",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T12:32:33.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Diagnostic Report</b></p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Document Category</b>: Laboratory</p><p><b>Document Title</b>: Scanner reading</p><p><b>Status</b>: Final</p><p><b>Code</b>: Potassium Level</p><p><b>Effective Start Date</b>: Sep  5, 2024 11:50 A.M. UTC</p><p><b>Effective End Date</b>: Sep  5, 2024 11:50 A.M. UTC</p><p><b>Verifying Provider</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819846-2024090512323400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory",
+                  "userSelected": true
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP75011-4",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectivePeriod": {
+            "start": "2024-09-05T11:50:04.000Z",
+            "end": "2024-09-05T11:50:04.000Z"
+          },
+          "issued": "2024-09-05T12:32:33Z",
+          "performer": [
+            {
+              "reference": "Practitioner/1",
+              "display": "SYSTEM, SYSTEM Cerner"
+            }
+          ],
+          "resultsInterpreter": [
+            {
+              "reference": "Practitioner/1",
+              "display": "SYSTEM, SYSTEM Cerner"
+            }
+          ],
+          "presentedForm": [
+            {
+              "contentType": "text/plain",
+              "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/R-206819846",
+              "title": "Scanner reading",
+              "creation": "2024-09-05T11:50:04.000Z"
+            },
+            {
+              "contentType": "application/xml",
+              "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-206819846",
+              "title": "Scanner reading",
+              "creation": "2024-09-05T11:50:04.000Z"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport/206417086",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "206417086",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-05-16T10:47:04.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Diagnostic Report</b></p><p><b>Patient</b>: SMARTS SR., NANCYS II</p><p><b>Document Category</b>: Laboratory</p><p><b>Document Title</b>: Scanner reading</p><p><b>Status</b>: Final</p><p><b>Code</b>: Potassium Level</p><p><b>Effective Start Date</b>: May 16, 2024 10:40 A.M. UTC</p><p><b>Effective End Date</b>: May 16, 2024 10:40 A.M. UTC</p><p><b>Verifying Provider</b>: SYSTEM, SYSTEM Cerner</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206417086-2024051610470400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory",
+                  "userSelected": true
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "LP75011-4",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectivePeriod": {
+            "start": "2024-05-16T10:40:02.000Z",
+            "end": "2024-05-16T10:40:02.000Z"
+          },
+          "issued": "2024-05-16T10:47:04Z",
+          "performer": [
+            {
+              "reference": "Practitioner/1",
+              "display": "SYSTEM, SYSTEM Cerner"
+            }
+          ],
+          "resultsInterpreter": [
+            {
+              "reference": "Practitioner/1",
+              "display": "SYSTEM, SYSTEM Cerner"
+            }
+          ],
+          "presentedForm": [
+            {
+              "contentType": "text/plain",
+              "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/R-206417086",
+              "title": "Scanner reading",
+              "creation": "2024-05-16T10:40:02.000Z"
+            },
+            {
+              "contentType": "application/xml",
+              "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-206417086",
+              "title": "Scanner reading",
+              "creation": "2024-05-16T10:40:02.000Z"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport/197281672",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "197281672",
+          "meta": {
+            "versionId": "8",
+            "lastUpdated": "2025-01-13T06:47:00Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Diagnostic Report</b></p><p><b>Document Category</b>: Laboratory</p><p><b>Status</b>: Amended</p><p><b>Code</b>: Lipid Panel</p><p><b>Effective Date</b>: Mar 13, 2020  4:20 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197281672-2020031316234900"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/310033309"
+            }
+          ],
+          "status": "amended",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "23256957",
+                "display": "Lipid Panel",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24331-1",
+                "userSelected": false
+              }
+            ],
+            "text": "Lipid Panel"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "effectiveDateTime": "2020-03-13T16:20:00Z",
+          "issued": "2025-01-13T06:46:59Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Organization/675844"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/L-197281678"
+            },
+            {
+              "reference": "Observation/L-197281680"
+            },
+            {
+              "reference": "Observation/L-197281674"
+            },
+            {
+              "reference": "Observation/L-197281682"
+            },
+            {
+              "reference": "Observation/L-197281676"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

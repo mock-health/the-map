@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mock-health/us-core-deviation-map/schema/overlay.schema.json",
+  "title": "EHR Overlay — Phase B observations not present in CapabilityStatement",
+  "description": "Per-EHR overlay file. The CapabilityStatement is the authoritative spec source (fetched verbatim from each EHR's sandbox, stored alongside this file). The overlay captures ONLY the things a CapabilityStatement cannot tell you: per-element value-set deviations observed in real responses, OperationOutcome shapes triggered in error paths, pagination behavior measured by walking results, auth flow specifics not in the security extension. Every overlay claim carries a citation + verified date + verification method. The pipeline reads CapabilityStatement (authoritative spec) + overlay (measured behavior) and synthesizes the Map at render time — no intermediate file.",
+  "type": "object",
+  "required": [
+    "ehr",
+    "ehr_display_name",
+    "capability_statement_fetched_date",
+    "capability_statement_url",
+    "compatibility_statement",
+    "ehr_version_validated"
+  ],
+  "properties": {
+    "ehr": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$",
+      "description": "Lowercase identifier; matches directory name (e.g., 'epic')"
+    },
+    "ehr_display_name": {
+      "type": "string"
+    },
+    "ehr_version_validated": {
+      "type": "string",
+      "description": "Specific EHR version measured (e.g., 'Epic February 2026'). Source: CapabilityStatement.software.version when present."
+    },
+    "capability_statement_fetched_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date the sibling CapabilityStatement.json was fetched."
+    },
+    "capability_statement_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Live URL of the metadata endpoint the CapabilityStatement was fetched from."
+    },
+    "sandbox_base_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sandbox_canonical_patient_id": {
+      "type": "string"
+    },
+    "compatibility_statement": {
+      "type": "string",
+      "description": "Legal-safe compatibility claim. MUST avoid trademark; MUST disclaim affiliation."
+    },
+    "auth_overlay": {
+      "type": "object",
+      "description": "Auth specifics NOT captured in CapabilityStatement.rest.security. Things like JWT signing alg, JWKS hosting requirements, scope format version, client-registration mechanics.",
+      "properties": {
+        "client_credentials_jwt_alg": { "type": "string" },
+        "jwks_required": { "type": "boolean" },
+        "jwks_hosted_or_embedded": { "type": "string", "enum": ["hosted", "embedded", "either"] },
+        "scopes_format": { "type": "string", "enum": ["v1", "v2", "custom"] },
+        "client_registration_url": { "type": "string", "format": "uri" },
+        "notes": { "type": "string" },
+        "verification": { "$ref": "#/$defs/verification" }
+      }
+    },
+    "operation_outcome_overlay": {
+      "type": "object",
+      "description": "OperationOutcome shape observed when triggering errors. Not in CapabilityStatement.",
+      "properties": {
+        "shape": { "type": "string", "enum": ["fhir-standard", "fhir-standard-with-vendor-extensions", "vendor-custom"] },
+        "common_extensions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["url", "purpose"],
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "purpose": { "type": "string" }
+            }
+          }
+        },
+        "common_codes": { "type": "array", "items": { "type": "string" } },
+        "examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["trigger", "response_body"],
+            "properties": {
+              "trigger": { "type": "string", "description": "What request triggered this OperationOutcome (HTTP verb + URL + headers)" },
+              "response_body": { "type": "string", "description": "Verbatim OperationOutcome JSON returned" }
+            }
+          }
+        },
+        "verification": { "$ref": "#/$defs/verification" }
+      }
+    },
+    "pagination_overlay": {
+      "type": "object",
+      "description": "Pagination behavior observed by walking real results. Not in CapabilityStatement. Numeric fields nullable until Phase B verification is complete.",
+      "properties": {
+        "default_count": { "type": ["integer", "null"] },
+        "max_count": { "type": ["integer", "null"] },
+        "behavior_at_max_plus_one": { "type": "string" },
+        "link_relations_observed": { "type": "array", "items": { "type": "string", "enum": ["self", "next", "previous", "first", "last"] } },
+        "next_token_format": { "type": "string", "enum": ["opaque-base64", "parseable-query-string", "vendor-custom", "unknown"] },
+        "next_token_stable_across_pages": { "type": ["boolean", "null"] },
+        "notes": { "type": "string" },
+        "verification": { "$ref": "#/$defs/verification" }
+      }
+    },
+    "element_deviations": {
+      "type": "array",
+      "description": "Per-element observed deviations from US Core MUST-SUPPORT, OBSERVED in sandbox responses. Each entry is a Phase B finding the CapabilityStatement does not declare.",
+      "items": {
+        "type": "object",
+        "required": ["row_id", "profile_id", "path", "deviation_category", "verification"],
+        "properties": {
+          "row_id": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{12}$",
+            "description": "Stable 12-hex-char identifier derived deterministically from (profile_id, path, deviation_category). Citation anchor — external essays/blog posts link to this id, not the array index. See tools/row_id.py."
+          },
+          "previous_row_ids": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^[a-f0-9]{12}$" },
+            "description": "Prior row_ids this row replaced (e.g. when deviation_category was re-categorized). Used to 301-redirect stale external citations."
+          },
+          "profile_id": { "type": "string", "pattern": "^us-core-[a-z][a-z0-9-]*$" },
+          "path": { "type": "string", "description": "FHIRPath (e.g., 'Patient.name.use')" },
+          "deviation_category": {
+            "type": "string",
+            "enum": [
+              "matches", "missing", "extra-extension",
+              "value-set-narrowed", "value-set-mismatch", "value-set-unverified-locally",
+              "cardinality-deviation", "cardinality-min-violated", "cardinality-max-violated",
+              "format-deviation", "format-violation", "type-mismatch",
+              "bug"
+            ]
+          },
+          "patient_id": { "type": "string" },
+          "multi_patient_evidence": {
+            "type": "object",
+            "additionalProperties": true,
+            "properties": {
+              "category": { "type": "string" },
+              "patients_swept": { "type": "array", "items": { "type": "string" } },
+              "patients_present_in": { "type": "array", "items": { "type": "string" } },
+              "patients_absent_in": { "type": "array", "items": { "type": "string" } },
+              "patients_with_this_category": { "type": "array", "items": { "type": "string" } }
+            }
+          },
+          "expected_per_us_core": { "type": "string", "description": "Verbatim US Core requirement (allowed values, cardinality, format)" },
+          "observed_in_ehr": { "type": "string", "description": "Verbatim what the EHR actually returned" },
+          "deviation": { "type": "string", "description": "Human-readable description of the gap" },
+          "extension_urls_observed": { "type": "array", "items": { "type": "string", "format": "uri" } },
+          "vendor_workaround": { "type": "string" },
+          "notes": { "type": "string" },
+          "verification": { "$ref": "#/$defs/verification" }
+        }
+      }
+    },
+    "phase_b_findings": {
+      "type": "object",
+      "description": "Editorial summary of the most consequential behaviors observed during Phase B. Populated by hand from sweep results; preserved across re-sweeps unless explicitly contradicted.",
+      "properties": {
+        "description": { "type": "string" },
+        "headlines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["finding", "evidence", "verified_via"],
+            "properties": {
+              "finding": { "type": "string" },
+              "evidence": { "type": "string" },
+              "integrator_impact": { "type": "string" },
+              "verified_via": { "type": "string" }
+            }
+          }
+        },
+        "verification": { "$ref": "#/$defs/verification" }
+      }
+    },
+    "multi_patient_coverage": {
+      "type": "object",
+      "description": "Per-(profile, path) summary of how many sandbox patients each element was tested against. Populated by tools.measure_phase_b multi-patient driver.",
+      "properties": {
+        "captured_date": { "type": "string", "format": "date" },
+        "patients_swept_per_probe": { "type": "object", "additionalProperties": true },
+        "per_path_coverage": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["profile_id", "path", "patients_swept", "category_counts"],
+            "properties": {
+              "profile_id": { "type": "string" },
+              "path": { "type": "string" },
+              "patients_swept": { "type": "array", "items": { "type": "string" } },
+              "category_counts": { "type": "object", "additionalProperties": { "type": "integer" } }
+            }
+          }
+        },
+        "verification": { "$ref": "#/$defs/verification" }
+      }
+    },
+    "access_scope_notes": {
+      "type": "object",
+      "description": "For vendors that publish more than one host front fronting the same backend (e.g., Oracle Health's fhir-ehr.cerner.com provider tier vs fhir-myrecord.cerner.com patient tier). Captures the deltas between scopes — hosts, resource subsets, SMART context differences — without forcing parallel ehrs/{ehr}-patient/ directories.",
+      "properties": {
+        "description": { "type": "string", "description": "One-paragraph framing of the scopes this vendor publishes." },
+        "scopes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "host_front"],
+            "properties": {
+              "name": { "type": "string", "enum": ["provider", "patient"] },
+              "host_front": { "type": "string", "format": "uri", "description": "Base URL or hostname for this scope." },
+              "smart_context": { "type": "string", "description": "Primary SMART launch context this scope advertises (e.g., context-ehr-encounter, context-standalone-patient)." },
+              "resources_present": { "type": "array", "items": { "type": "string" }, "description": "Resources advertised on this scope but not on every other scope. Empty = no scope-only resources." }
+            }
+          }
+        },
+        "verification": { "$ref": "#/$defs/verification" }
+      }
+    },
+    "vendor_stack_findings": { "type": "object", "additionalProperties": true },
+    "implementation_leaks": { "type": "object", "additionalProperties": true },
+    "transport_findings": { "type": "object", "additionalProperties": true },
+    "bulk_export_overlay": { "type": "object", "additionalProperties": true },
+    "reference_resolution_overlay": { "type": "object", "additionalProperties": true },
+    "inferno_cross_validation": { "type": "object", "additionalProperties": true },
+    "cross_validation_disagreements": { "type": "object", "additionalProperties": true },
+    "search_param_observations": {
+      "type": "object",
+      "description": "Per-resource search behavior verified beyond what CapStmt declares (e.g., silently-ignored params, value-set restrictions on token searches).",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "params_silently_ignored": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Search params accepted by HTTP but with no filtering effect — the worst kind of bug, never declared in CapStmt"
+          },
+          "params_with_value_restrictions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["param", "restriction"],
+              "properties": {
+                "param": { "type": "string" },
+                "restriction": { "type": "string", "description": "e.g., 'category only accepts [laboratory, vital-signs]; rejects social-history with OperationOutcome'" }
+              }
+            }
+          },
+          "notes": { "type": "string" },
+          "verification": { "$ref": "#/$defs/verification" }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "verification": {
+      "type": "object",
+      "required": ["source_url", "source_quote", "verified_via", "verified_date"],
+      "properties": {
+        "source_url": { "type": "string" },
+        "source_quote": { "type": "string", "description": "Verbatim evidence excerpt (URL response body snippet, doc quote)" },
+        "verified_via": {
+          "type": "string",
+          "enum": [
+            "vendor_official_docs",
+            "epic_public_sandbox",
+            "cerner_public_sandbox",
+            "ecw_public_sandbox",
+            "veradigm_public_sandbox",
+            "nextgen_public_sandbox",
+            "meditech_public_sandbox",
+            "customer_evidence",
+            "community_report",
+            "vendor_pr"
+          ]
+        },
+        "verified_query": { "type": "string", "description": "If sandbox: full HTTP request that produced the evidence" },
+        "verified_date": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

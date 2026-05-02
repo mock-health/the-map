@@ -1,0 +1,3454 @@
+{
+  "ehr": "meditech",
+  "captured_date": "2026-04-27",
+  "brands_bundle_source_url": "tests/golden/cross-vendor/meditech-brands-2026-04-27.json",
+  "brands_bundle_total_endpoints": 542,
+  "harvest_summary": {
+    "endpoints_attempted": 542,
+    "capstmt_fetched_ok": 352,
+    "capstmt_fetch_failed": 190,
+    "smart_config_fetched_ok": 355,
+    "smart_config_fetch_failed": 187,
+    "failure_categories": {
+      "connection": 146,
+      "dns": 94,
+      "tls": 55,
+      "http_4xx_403": 33,
+      "http_5xx_500": 15,
+      "http_4xx_400": 12,
+      "http_5xx_503": 9,
+      "timeout": 4,
+      "http_4xx_404": 2,
+      "http_5xx_525": 2,
+      "http_5xx_526": 2,
+      "non_json": 1
+    },
+    "wall_clock_seconds": 212.9,
+    "concurrency": 20
+  },
+  "software_distribution": {
+    "Interoperability Services: US Core FHIR R4 1.0.0": 322,
+    "Interoperability Services: US Core FHIR R4 1.0": 12
+  },
+  "fhir_version_distribution": {
+    "4.0.1": 334
+  },
+  "capstmt_shape_clusters": [
+    {
+      "cluster_id": "meditech-cluster-A",
+      "modal": true,
+      "endpoint_count": 220,
+      "shape_hash": "sha256:401d772a1b3570e9",
+      "resources_advertised": [
+        "AllergyIntolerance",
+        "CarePlan",
+        "CareTeam",
+        "Condition",
+        "Device",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Goal",
+        "Group",
+        "Immunization",
+        "Location",
+        "MedicationRequest",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 36,
+      "supported_profiles": [
+        "bmi",
+        "bodyheight",
+        "bodytemp",
+        "bodyweight",
+        "bp",
+        "headcircum",
+        "heartrate",
+        "oxygensat",
+        "resprate",
+        "shareablevalueset",
+        "vitalspanel",
+        "head-occipital-frontal-circumference-percentile",
+        "pediatric-bmi-for-age",
+        "pediatric-weight-for-height",
+        "us-core-allergyintolerance",
+        "us-core-careplan",
+        "us-core-careteam",
+        "us-core-condition",
+        "us-core-diagnosticreport-lab",
+        "us-core-diagnosticreport-note",
+        "us-core-documentreference",
+        "us-core-encounter",
+        "us-core-goal",
+        "us-core-immunization",
+        "us-core-implantable-device",
+        "us-core-location",
+        "us-core-medicationrequest",
+        "us-core-observation-lab",
+        "us-core-organization",
+        "us-core-patient",
+        "us-core-practitioner",
+        "us-core-practitionerrole",
+        "us-core-procedure",
+        "us-core-provenance",
+        "us-core-pulse-oximetry",
+        "us-core-smokingstatus"
+      ],
+      "example_endpoint_id": "achospitalapi.meditech.cloud_v1_uscore_R4",
+      "example_endpoint_address": "https://achospitalapi.meditech.cloud:443/v1/uscore/R4",
+      "endpoints": [
+        {
+          "endpoint_id": "achospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://achospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "alhambrnetapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://alhambrnetapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "api-live01.hhc.org_v1_uscore_R4",
+          "address": "https://api-live01.hhc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "api01.myfhn.org_v1_uscore_R4",
+          "address": "https://api01.myfhn.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "applinghospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://applinghospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "avemapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://avemapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bbghapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bbghapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bcchospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bcchospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bcmedapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bcmedapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bcmedsvcsapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bcmedsvcsapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bellmtrestapis-live01.lifepointhealth.net_v1_uscore_R4",
+          "address": "https://bellmtrestapis-live01.lifepointhealth.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bethanychildrensapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bethanychildrensapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "binghamhealthcareapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://binghamhealthcareapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bonsconnectapi.meditech-ie.cloud_v1_uscore_R4",
+          "address": "https://bonsconnectapi.meditech-ie.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "booneapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://booneapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "brattlebororetreatapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://brattlebororetreatapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "bwwmhapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bwwmhapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "cascademedicalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://cascademedicalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "cchdwaapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://cchdwaapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "ccmcapi.meditech.global_v1_uscore_R4",
+          "address": "https://ccmcapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "chcrestapilive.carterethealth.org_v1_uscore_R4",
+          "address": "https://chcrestapilive.carterethealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "chmc-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://chmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "cookhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://cookhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "copiahhealthapi.meditech.global_v1_uscore_R4",
+          "address": "https://copiahhealthapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "cvmc-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://cvmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "dvh-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://dvh-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "ehimtrestapi-live.hhsc.org_v1_uscore_R4",
+          "address": "https://ehimtrestapi-live.hhsc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "eloh-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://eloh-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "expanseliveapi.swmedcenter.com_v1_uscore_R4",
+          "address": "https://expanseliveapi.swmedcenter.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "fcmhospapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://fcmhospapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "fcphdapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://fcphdapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "franklinhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://franklinhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "gibsonhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://gibsonhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "giffordhealthcareapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://giffordhealthcareapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "glacialridgeapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://glacialridgeapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "gmhapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://gmhapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hcahealthcareapi.meditech-uk.cloud_v1_uscore_R4",
+          "address": "https://hcahealthcareapi.meditech-uk.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hcchospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://hcchospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hchs-mtrestapis-live.phelpsmemorial.com_v1_uscore_R4",
+          "address": "https://hchs-mtrestapis-live.phelpsmemorial.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hmc-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://hmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hospitaldamasapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://hospitaldamasapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "houltonregionalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://houltonregionalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hphsmtrestapis-live01.lpnt.net_v1_uscore_R4",
+          "address": "https://hphsmtrestapis-live01.lpnt.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hryderapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://hryderapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hugginshospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://hugginshospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "khapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://khapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "kvhealthapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://kvhealthapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "lapazhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://lapazhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "lorettohospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://lorettohospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "manhattansurgicalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://manhattansurgicalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mccurtapi.meditech.global_v1_uscore_R4",
+          "address": "https://mccurtapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mchcaresapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mchcaresapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mchdapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mchdapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mchstaffapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mchstaffapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "medinahospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://medinahospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "meditech-api.citizensmemorial.com_v1_uscore_R4",
+          "address": "https://meditech-api.citizensmemorial.com/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "meditech-api.nmcinc.org_v1_uscore_R4",
+          "address": "https://meditech-api.nmcinc.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mh-mapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mh-mapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "moabrmcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://moabrmcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "morganmedicalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://morganmedicalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mrhmeapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mrhmeapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mrtx-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://mrtx-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtapi-live01.pellahealth.org_v1_uscore_R4",
+          "address": "https://mtapi-live01.pellahealth.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtapi-live01.southwoodshealth.com_v1_uscore_R4",
+          "address": "https://mtapi-live01.southwoodshealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtexprestapis-live.nmchbr.com_v1_uscore_R4",
+          "address": "https://mtexprestapis-live.nmchbr.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtmc-mtrestapis-live01.dignityhealth.org_v1_uscore_R4",
+          "address": "https://mtmc-mtrestapis-live01.dignityhealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi-l1.ozarksmedicalcenter.com_v1_uscore_R4",
+          "address": "https://mtrestapi-l1.ozarksmedicalcenter.com/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi-live01.upmc.edu_v1_uscore_R4",
+          "address": "https://mtrestapi-live01.upmc.edu:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi.southcountyhealth.org_v1_uscore_R4",
+          "address": "https://mtrestapi.southcountyhealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapilive.mgh.net_v1_uscore_R4",
+          "address": "https://mtrestapilive.mgh.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-exp-live01.cuerohospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-exp-live01.cuerohospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-expanselive.duncanregional.com_v1_uscore_R4",
+          "address": "https://mtrestapis-expanselive.duncanregional.com/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-expanselive.witham.org_v1_uscore_R4",
+          "address": "https://mtrestapis-expanselive.witham.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive.milreg.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive.milreg.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.cmcvtx.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.cmcvtx.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.jcmh.com_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.jcmh.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.nhsc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.nhsc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.warnerhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.warnerhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live-e.grmedcenter.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live-e.grmedcenter.com/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live-exp01.conwayregional.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live-exp01.conwayregional.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live.bmcf.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live.bmcf.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live.whiteriverhealthsystem.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live.whiteriverhealthsystem.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live001.holyokehealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live001.holyokehealth.com/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.amccares.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.amccares.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.azkrmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.azkrmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.bchsi.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.bchsi.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.beauregard.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.beauregard.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.bmhsc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.bmhsc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.boonehospital.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.boonehospital.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.brhc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.brhc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.broadlawns.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.broadlawns.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.bvhpr.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.bvhpr.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.cccupr.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.cccupr.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.cchwyo.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.cchwyo.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.chc.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.chc.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.cmcvtx.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.cmcvtx.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.cmhlink.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.cmhlink.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.crmcinc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.crmcinc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.dcmh.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.dcmh.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.deltaregional.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.deltaregional.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.dh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.dh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.dunessurgicalhospital.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.dunessurgicalhospital.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.emanatehealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.emanatehealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.emersonhosp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.emersonhosp.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.ermchealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.ermchealth.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.fauquierhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.fauquierhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.fcmcpa.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.fcmcpa.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.fmdh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.fmdh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.granvillemedical.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.granvillemedical.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.grhd.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.grhd.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.griffinhealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.griffinhealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.grmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.grmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.gvmh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.gvmh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.hancockregional.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.hancockregional.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.hcmc.us.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.hcmc.us.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.henrymayo.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.henrymayo.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.heywood.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.heywood.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.hollandbloorview.ca_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.hollandbloorview.ca/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.hospitalconcepcion.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.hospitalconcepcion.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.hscbpr.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.hscbpr.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.interiorhealth.ca_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.interiorhealth.ca:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.jchca.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.jchca.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.kdmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.kdmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.kirbyhealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.kirbyhealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.lakeregional.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.lakeregional.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.lanermc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.lanermc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.lawrencegeneral.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.lawrencegeneral.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.lecomhealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.lecomhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.lincolnsurgery.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.lincolnsurgery.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.matagordaregional.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.matagordaregional.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mbhdq.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mbhdq.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mghpr.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mghpr.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mhcs.us_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mhcs.us:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mmchs.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mmchs.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mrhc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mrhc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mt.uabmw.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mt.uabmw.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mychamp.ca_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mychamp.ca:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.natividad.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.natividad.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.noch.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.noch.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.northbrookbhh.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.northbrookbhh.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.nvrh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.nvrh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.oasishospital.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.oasishospital.com/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.oncologicopr.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.oncologicopr.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.orthoindy.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.orthoindy.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.othellocommunityhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.othellocommunityhospital.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.ovhd.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.ovhd.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.permianregional.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.permianregional.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.petersonhealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.petersonhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.ppgh.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.ppgh.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.redlandshospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.redlandshospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.rmlsh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.rmlsh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.sbrmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.sbrmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.semedicalcenter.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.semedicalcenter.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.sierra-view.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.sierra-view.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.signature-healthcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.signature-healthcare.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.slvrmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.slvrmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.srhca.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.srhca.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.stanthonyhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.stanthonyhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.svhealthcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.svhealthcare.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.trhosp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.trhosp.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.united-medicalcenter.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.united-medicalcenter.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.unity-health.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.unity-health.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.urmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.urmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.valleyhealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.valleyhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.valleypres.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.valleypres.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.vvrmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.vvrmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.warnerhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.warnerhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.wchosp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.wchosp.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.whidbeyhealth.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.whidbeyhealth.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.wkhs.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.wkhs.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.andersonhealthcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.andersonhealthcare.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.avhnh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.avhnh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.hollandbloorview.ca_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.hollandbloorview.ca/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.hph.care_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.hph.care:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.lecomhealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.lecomhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.mmc-pr.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.mmc-pr.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.mrhcok.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.mrhcok.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.smha.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.smha.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.thibodaux.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.thibodaux.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-vab.app.medcity.net_v1_uscore_R4",
+          "address": "https://mtrestapis-vab.app.medcity.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis.myhcchart.org_v1_uscore_R4",
+          "address": "https://mtrestapis.myhcchart.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestexpapis-live01.nlh.org_v1_uscore_R4",
+          "address": "https://mtrestexpapis-live01.nlh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "myrghapi.meditech.global_v1_uscore_R4",
+          "address": "https://myrghapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "neuroskillsapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://neuroskillsapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "npvmcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://npvmcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "nspmv-mtrestapis-live01.nshinc.com_v1_uscore_R4",
+          "address": "https://nspmv-mtrestapis-live01.nshinc.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "nspox-mtrestapis-live01.nshinc.com_v1_uscore_R4",
+          "address": "https://nspox-mtrestapis-live01.nshinc.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "ochcaresapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://ochcaresapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "ohh-mtapislive.trinityhealth.com_v1_uscore_R4",
+          "address": "https://ohh-mtapislive.trinityhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "phmimtrestapis-live01.lifepointhealth.net_v1_uscore_R4",
+          "address": "https://phmimtrestapis-live01.lifepointhealth.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pioneershospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://pioneershospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pmcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://pmcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pmhc-mtrestapis-live.phelpsmemorial.com_v1_uscore_R4",
+          "address": "https://pmhc-mtrestapis-live.phelpsmemorial.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pvillehospapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://pvillehospapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "rchapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://rchapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "riverhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://riverhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "rookscountyhealthcenterapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://rookscountyhealthcenterapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "russellmedcenterapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://russellmedcenterapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sacentreapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sacentreapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sahchicagoapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sahchicagoapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "scahealthapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://scahealthapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "schhsapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://schhsapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sgcmhapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sgcmhapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sharemedapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sharemedapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sjchapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sjchapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "slr-facamtrestapis-01.srhc.net_v1_uscore_R4",
+          "address": "https://slr-facamtrestapis-01.srhc.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "southsunflowerapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://southsunflowerapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "spearehospapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://spearehospapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "spmed-mtrestapis-live01.nshinc.com_v1_uscore_R4",
+          "address": "https://spmed-mtrestapis-live01.nshinc.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "srmc-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://srmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "stbhapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://stbhapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "thebellevuehospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://thebellevuehospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "thorekapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://thorekapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "touchetteapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://touchetteapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "townsenhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://townsenhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "warmmtrestapis-live01.lifepointhealth.net_v1_uscore_R4",
+          "address": "https://warmmtrestapis-live01.lifepointhealth.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "wbrhelyapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://wbrhelyapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "wchsapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://wchsapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "windbercareapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://windbercareapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "wmcxmtrestapis-live01.lifepointhealth.net_v1_uscore_R4",
+          "address": "https://wmcxmtrestapis-live01.lifepointhealth.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        }
+      ]
+    },
+    {
+      "cluster_id": "meditech-cluster-B",
+      "modal": false,
+      "endpoint_count": 95,
+      "shape_hash": "sha256:e0b59cee6ff82efd",
+      "resources_advertised": [
+        "AllergyIntolerance",
+        "CarePlan",
+        "CareTeam",
+        "Condition",
+        "Device",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Goal",
+        "Group",
+        "Immunization",
+        "Location",
+        "MedicationRequest",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 36,
+      "supported_profiles": [
+        "bmi",
+        "bodyheight",
+        "bodytemp",
+        "bodyweight",
+        "bp",
+        "headcircum",
+        "heartrate",
+        "oxygensat",
+        "resprate",
+        "shareablevalueset",
+        "vitalspanel",
+        "head-occipital-frontal-circumference-percentile",
+        "pediatric-bmi-for-age",
+        "pediatric-weight-for-height",
+        "us-core-allergyintolerance",
+        "us-core-careplan",
+        "us-core-careteam",
+        "us-core-condition",
+        "us-core-diagnosticreport-lab",
+        "us-core-diagnosticreport-note",
+        "us-core-documentreference",
+        "us-core-encounter",
+        "us-core-goal",
+        "us-core-immunization",
+        "us-core-implantable-device",
+        "us-core-location",
+        "us-core-medicationrequest",
+        "us-core-observation-lab",
+        "us-core-organization",
+        "us-core-patient",
+        "us-core-practitioner",
+        "us-core-practitionerrole",
+        "us-core-procedure",
+        "us-core-provenance",
+        "us-core-pulse-oximetry",
+        "us-core-smokingstatus"
+      ],
+      "example_endpoint_id": "cmhecuapi.meditech.cloud_v1_uscore_R4",
+      "example_endpoint_address": "https://cmhecuapi.meditech.cloud:443/v1/uscore/R4",
+      "endpoints": [
+        {
+          "endpoint_id": "cmhecuapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://cmhecuapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "coonmemapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://coonmemapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "frdrestapis-live01.fmh.org_v1_uscore_R4",
+          "address": "https://frdrestapis-live01.fmh.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "georgeregionalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://georgeregionalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "ghcaresapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://ghcaresapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "gprmcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://gprmcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "grmfapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://grmfapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "henrycountyhospitalapi.meditech.global_v1_uscore_R4",
+          "address": "https://henrycountyhospitalapi.meditech.global/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hsahospitalsapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://hsahospitalsapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "hsahospitalsapi2.meditech.cloud_v1_uscore_R4",
+          "address": "https://hsahospitalsapi2.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "iinnapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://iinnapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "ksspineapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://ksspineapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "labettehealthapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://labettehealthapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "lsshapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://lsshapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "luhapi.meditech.global_v1_uscore_R4",
+          "address": "https://luhapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mbmcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mbmcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mcchapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://mcchapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mghwvapi.meditech.global_v1_uscore_R4",
+          "address": "https://mghwvapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtapi-live01.oswegohealth.org_v1_uscore_R4",
+          "address": "https://mtapi-live01.oswegohealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi-live.stillwater-medical.org_v1_uscore_R4",
+          "address": "https://mtrestapi-live.stillwater-medical.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi-live01.bartletthospital.org_v1_uscore_R4",
+          "address": "https://mtrestapi-live01.bartletthospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi-live01.dmh.org_v1_uscore_R4",
+          "address": "https://mtrestapi-live01.dmh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi-live01.newberryhospital.net_v1_uscore_R4",
+          "address": "https://mtrestapi-live01.newberryhospital.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapi.haysmed.com_v1_uscore_R4",
+          "address": "https://mtrestapi.haysmed.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-cas.app.medcity.net_v1_uscore_R4",
+          "address": "https://mtrestapis-cas.app.medcity.net/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-expanselive.cvrmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-expanselive.cvrmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.cchospital.net_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.cchospital.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.gjhosp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.gjhosp.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.hamptonregional.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.hamptonregional.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.morrishospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.morrishospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-explive01.searhc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-explive01.searhc.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live-uvm.teknicorhosting.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live-uvm.teknicorhosting.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.arh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.arh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.atchhosp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.atchhosp.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.avrmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.avrmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.bhs1.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.bhs1.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.bristolhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.bristolhospital.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.brookshealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.brookshealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.cardiovascular.pr.gov_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.cardiovascular.pr.gov:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.casacolina.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.casacolina.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.colquittregional.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.colquittregional.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.connallymmc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.connallymmc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.deborah.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.deborah.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.echn.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.echn.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.ecmc.edu_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.ecmc.edu:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.gaylord.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.gaylord.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.goshenhealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.goshenhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.grahamhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.grahamhospital.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.hmhosp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.hmhosp.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.islandhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.islandhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.krh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.krh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.lcgh.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.lcgh.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.limamemorial.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.limamemorial.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.maryrutan.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.maryrutan.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.memorialhealthcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.memorialhealthcare.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mhsystem.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mhsystem.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mtgraham.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mtgraham.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mwph.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mwph.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mymhp.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mymhp.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mynmchealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mynmchealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.newmanrh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.newmanrh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.nmhcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.nmhcare.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.nrh-ok.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.nrh-ok.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.ohow.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.ohow.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.onslow.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.onslow.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.rfgh.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.rfgh.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.richlandhospital.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.richlandhospital.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.salemregional.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.salemregional.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.saukprairiehealthcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.saukprairiehealthcare.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.smedok.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.smedok.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.somc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.somc.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.stlukehealthcare.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.stlukehealthcare.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.trivalleyhealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.trivalleyhealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.tsmh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.tsmh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.wmed.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.wmed.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.wmh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.wmh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.newmanrh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.newmanrh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.schneckmed.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.schneckmed.org/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-mmh.app.medcity.net_v1_uscore_R4",
+          "address": "https://mtrestapis-mmh.app.medcity.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis02.myovmc.com_v1_uscore_R4",
+          "address": "https://mtrestapis02.myovmc.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "muensterapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://muensterapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "narmcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://narmcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "northfieldhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://northfieldhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "nwshapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://nwshapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pchneapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://pchneapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pvalleyapi.meditech.global_v1_uscore_R4",
+          "address": "https://pvalleyapi.meditech.global/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pvh-mapilive.primehealthcare.com_v1_uscore_R4",
+          "address": "https://pvh-mapilive.primehealthcare.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "restapi-live.sjchs.org_v1_uscore_R4",
+          "address": "https://restapi-live.sjchs.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "restapi-live01.firelands.com_v1_uscore_R4",
+          "address": "https://restapi-live01.firelands.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sagememorialapi.meditech.global_v1_uscore_R4",
+          "address": "https://sagememorialapi.meditech.global:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "seviercountymedicalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://seviercountymedicalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "shdprapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://shdprapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "silverhillhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://silverhillhospitalapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "sprhcapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sprhcapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "wagonerhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://wagonerhospitalapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": null
+        }
+      ]
+    },
+    {
+      "cluster_id": "meditech-cluster-C",
+      "modal": false,
+      "endpoint_count": 12,
+      "shape_hash": "sha256:886ba674fdcf07ab",
+      "resources_advertised": [
+        "AllergyIntolerance",
+        "CarePlan",
+        "CareTeam",
+        "Condition",
+        "Device",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Goal",
+        "Group",
+        "Immunization",
+        "Location",
+        "MedicationRequest",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 0,
+      "supported_profiles": [],
+      "example_endpoint_id": "mtrestapis-live.wgh.org_v1_uscore_R4",
+      "example_endpoint_address": "https://mtrestapis-live.wgh.org:443/v1/uscore/R4",
+      "endpoints": [
+        {
+          "endpoint_id": "mtrestapis-live.wgh.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live.wgh.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.augustahealth.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.augustahealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.gradymem.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.gradymem.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.halifaxhealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.halifaxhealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.huntregional.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.huntregional.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.mountnittany.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.mountnittany.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.murrayhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.murrayhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.russellmedcenter.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.russellmedcenter.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.wilsonhealth.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.wilsonhealth.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.wmhospital.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.wmhospital.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.womans.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.womans.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live02.via-christi.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live02.via-christi.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        }
+      ]
+    },
+    {
+      "cluster_id": "meditech-cluster-D",
+      "modal": false,
+      "endpoint_count": 4,
+      "shape_hash": "sha256:ddfad6b7f537e411",
+      "resources_advertised": [
+        "AllergyIntolerance",
+        "CarePlan",
+        "CareTeam",
+        "Condition",
+        "Device",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Goal",
+        "Group",
+        "Immunization",
+        "Location",
+        "MedicationRequest",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 36,
+      "supported_profiles": [
+        "bmi",
+        "bodyheight",
+        "bodytemp",
+        "bodyweight",
+        "bp",
+        "headcircum",
+        "heartrate",
+        "oxygensat",
+        "resprate",
+        "shareablevalueset",
+        "vitalspanel",
+        "head-occipital-frontal-circumference-percentile",
+        "pediatric-bmi-for-age",
+        "pediatric-weight-for-height",
+        "us-core-allergyintolerance",
+        "us-core-careplan",
+        "us-core-careteam",
+        "us-core-condition",
+        "us-core-diagnosticreport-lab",
+        "us-core-diagnosticreport-note",
+        "us-core-documentreference",
+        "us-core-encounter",
+        "us-core-goal",
+        "us-core-immunization",
+        "us-core-implantable-device",
+        "us-core-location",
+        "us-core-medicationrequest",
+        "us-core-observation-lab",
+        "us-core-organization",
+        "us-core-patient",
+        "us-core-practitioner",
+        "us-core-practitionerrole",
+        "us-core-procedure",
+        "us-core-provenance",
+        "us-core-pulse-oximetry",
+        "us-core-smokingstatus"
+      ],
+      "example_endpoint_id": "mtrestapis-cap.app.medcity.net_v1_uscore_R4",
+      "example_endpoint_address": "https://mtrestapis-cap.app.medcity.net/v1/uscore/R4",
+      "endpoints": [
+        {
+          "endpoint_id": "mtrestapis-cap.app.medcity.net_v1_uscore_R4",
+          "address": "https://mtrestapis-cap.app.medcity.net/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.rumcsi.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.rumcsi.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-np.app.medcity.net_v1_uscore_R4",
+          "address": "https://mtrestapis-np.app.medcity.net:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "pprestapis-live01.phoebehealth.com_v1_uscore_R4",
+          "address": "https://pprestapis-live01.phoebehealth.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        }
+      ]
+    },
+    {
+      "cluster_id": "meditech-cluster-E",
+      "modal": false,
+      "endpoint_count": 2,
+      "shape_hash": "sha256:27dc0699837ed486",
+      "resources_advertised": [
+        "AllergyIntolerance",
+        "CarePlan",
+        "CareTeam",
+        "Condition",
+        "Device",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Goal",
+        "Group",
+        "Immunization",
+        "Location",
+        "MedicationRequest",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 36,
+      "supported_profiles": [
+        "bmi",
+        "bodyheight",
+        "bodytemp",
+        "bodyweight",
+        "bp",
+        "headcircum",
+        "heartrate",
+        "oxygensat",
+        "resprate",
+        "shareablevalueset",
+        "vitalspanel",
+        "head-occipital-frontal-circumference-percentile",
+        "pediatric-bmi-for-age",
+        "pediatric-weight-for-height",
+        "us-core-allergyintolerance",
+        "us-core-careplan",
+        "us-core-careteam",
+        "us-core-condition",
+        "us-core-diagnosticreport-lab",
+        "us-core-diagnosticreport-note",
+        "us-core-documentreference",
+        "us-core-encounter",
+        "us-core-goal",
+        "us-core-immunization",
+        "us-core-implantable-device",
+        "us-core-location",
+        "us-core-medicationrequest",
+        "us-core-observation-lab",
+        "us-core-organization",
+        "us-core-patient",
+        "us-core-practitioner",
+        "us-core-practitionerrole",
+        "us-core-procedure",
+        "us-core-provenance",
+        "us-core-pulse-oximetry",
+        "us-core-smokingstatus"
+      ],
+      "example_endpoint_id": "mtrestapis-exp-live01.dchsystem.com_v1_uscore_R4",
+      "example_endpoint_address": "https://mtrestapis-exp-live01.dchsystem.com:443/v1/uscore/R4",
+      "endpoints": [
+        {
+          "endpoint_id": "mtrestapis-exp-live01.dchsystem.com_v1_uscore_R4",
+          "address": "https://mtrestapis-exp-live01.dchsystem.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        },
+        {
+          "endpoint_id": "mtrestapis-live01.etch.com_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.etch.com:443/v1/uscore/R4",
+          "managing_organization_name": null
+        }
+      ]
+    },
+    {
+      "cluster_id": "meditech-cluster-F",
+      "modal": false,
+      "endpoint_count": 1,
+      "shape_hash": "sha256:02fe59ea33145b82",
+      "resources_advertised": [
+        "AllergyIntolerance",
+        "CarePlan",
+        "CareTeam",
+        "Condition",
+        "Device",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Goal",
+        "Group",
+        "Immunization",
+        "Location",
+        "MedicationRequest",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 36,
+      "supported_profiles": [
+        "bmi",
+        "bodyheight",
+        "bodytemp",
+        "bodyweight",
+        "bp",
+        "headcircum",
+        "heartrate",
+        "oxygensat",
+        "resprate",
+        "shareablevalueset",
+        "vitalspanel",
+        "head-occipital-frontal-circumference-percentile",
+        "pediatric-bmi-for-age",
+        "pediatric-weight-for-height",
+        "us-core-allergyintolerance",
+        "us-core-careplan",
+        "us-core-careteam",
+        "us-core-condition",
+        "us-core-diagnosticreport-lab",
+        "us-core-diagnosticreport-note",
+        "us-core-documentreference",
+        "us-core-encounter",
+        "us-core-goal",
+        "us-core-immunization",
+        "us-core-implantable-device",
+        "us-core-location",
+        "us-core-medicationrequest",
+        "us-core-observation-lab",
+        "us-core-organization",
+        "us-core-patient",
+        "us-core-practitioner",
+        "us-core-practitionerrole",
+        "us-core-procedure",
+        "us-core-provenance",
+        "us-core-pulse-oximetry",
+        "us-core-smokingstatus"
+      ],
+      "example_endpoint_id": "mtrestapis-live01.ehr.org_v1_uscore_R4",
+      "example_endpoint_address": "https://mtrestapis-live01.ehr.org:443/v1/uscore/R4",
+      "endpoints": [
+        {
+          "endpoint_id": "mtrestapis-live01.ehr.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.ehr.org:443/v1/uscore/R4",
+          "managing_organization_name": null
+        }
+      ]
+    }
+  ],
+  "smart_config_drift": {
+    "grant_types_supported_distribution": {
+      "[\"authorization_code\", \"client_credentials\", \"refresh_token\"]": 337
+    },
+    "capabilities_modal_set": [
+      "authorize-post",
+      "client-confidential-asymmetric",
+      "client-confidential-symmetric",
+      "client-public",
+      "context-banner",
+      "context-ehr-encounter",
+      "context-ehr-patient",
+      "context-standalone-encounter",
+      "context-standalone-patient",
+      "context-style",
+      "launch-ehr",
+      "launch-standalone",
+      "permission-offline",
+      "permission-patient",
+      "permission-user",
+      "permission-v1",
+      "permission-v2",
+      "sso-openid-connect"
+    ],
+    "capabilities_distribution": {
+      "launch-standalone": 337,
+      "launch-ehr": 337,
+      "client-public": 337,
+      "client-confidential-symmetric": 337,
+      "client-confidential-asymmetric": 337,
+      "sso-openid-connect": 337,
+      "context-banner": 337,
+      "context-style": 337,
+      "context-standalone-encounter": 337,
+      "context-standalone-patient": 337,
+      "context-ehr-encounter": 337,
+      "context-ehr-patient": 337,
+      "permission-offline": 337,
+      "permission-patient": 337,
+      "permission-user": 337,
+      "authorize-post": 315,
+      "permission-v1": 315,
+      "permission-v2": 315
+    },
+    "scope_count_distribution": {
+      "400-599": 315,
+      "0": 22
+    },
+    "token_endpoint_auth_methods_distribution": {
+      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 337
+    },
+    "code_challenge_methods_distribution": {
+      "[\"S256\"]": 337
+    }
+  },
+  "us_core_profile_support_rate": [
+    {
+      "profile_id": "us-core-allergyintolerance",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-careplan",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-careteam",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-diagnosticreport-lab",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-diagnosticreport-note",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-documentreference",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-encounter",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-goal",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-immunization",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-implantable-device",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-location",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-medicationrequest",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-observation-lab",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-organization",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-patient",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-practitioner",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-practitionerrole",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-procedure",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-provenance",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-pulse-oximetry",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-smokingstatus",
+      "in_us_core_baseline": true,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-blood-pressure",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-bmi",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-body-height",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-body-temperature",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-body-weight",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-condition-encounter-diagnosis",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-coverage",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-head-circumference",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-heart-rate",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-medication",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-medicationdispense",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-observation-clinical-result",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-observation-occupation",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-observation-pregnancyintent",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-observation-pregnancystatus",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-observation-screening-assessment",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-observation-sexual-orientation",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-questionnaireresponse",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-relatedperson",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-respiratory-rate",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-servicerequest",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-simple-observation",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-specimen",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "us-core-vital-signs",
+      "in_us_core_baseline": true,
+      "customers_advertising": 0,
+      "customers_with_capstmt": 334,
+      "fraction": 0.0,
+      "absent_in_modal_cluster": true
+    },
+    {
+      "profile_id": "bmi",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "bodyheight",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "bodytemp",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "bodyweight",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "bp",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "head-occipital-frontal-circumference-percentile",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "headcircum",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "heartrate",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "oxygensat",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "pediatric-bmi-for-age",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "pediatric-weight-for-height",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "resprate",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "shareablevalueset",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "us-core-condition",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    },
+    {
+      "profile_id": "vitalspanel",
+      "in_us_core_baseline": false,
+      "customers_advertising": 322,
+      "customers_with_capstmt": 334,
+      "fraction": 0.9641,
+      "absent_in_modal_cluster": false
+    }
+  ],
+  "outlier_endpoints": [
+    {
+      "endpoint_id": "cmhecuapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://cmhecuapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "coonmemapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://coonmemapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "frdrestapis-live01.fmh.org_v1_uscore_R4",
+      "address": "https://frdrestapis-live01.fmh.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "georgeregionalapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://georgeregionalapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "ghcaresapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://ghcaresapi.meditech.cloud/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "gprmcapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://gprmcapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "grmfapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://grmfapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "henrycountyhospitalapi.meditech.global_v1_uscore_R4",
+      "address": "https://henrycountyhospitalapi.meditech.global/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "hsahospitalsapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://hsahospitalsapi.meditech.cloud/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "hsahospitalsapi2.meditech.cloud_v1_uscore_R4",
+      "address": "https://hsahospitalsapi2.meditech.cloud/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "iinnapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://iinnapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "ksspineapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://ksspineapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "labettehealthapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://labettehealthapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "lsshapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://lsshapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "luhapi.meditech.global_v1_uscore_R4",
+      "address": "https://luhapi.meditech.global:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mbmcapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://mbmcapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mcchapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://mcchapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mghwvapi.meditech.global_v1_uscore_R4",
+      "address": "https://mghwvapi.meditech.global:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtapi-live01.oswegohealth.org_v1_uscore_R4",
+      "address": "https://mtapi-live01.oswegohealth.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapi-live.stillwater-medical.org_v1_uscore_R4",
+      "address": "https://mtrestapi-live.stillwater-medical.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapi-live01.bartletthospital.org_v1_uscore_R4",
+      "address": "https://mtrestapi-live01.bartletthospital.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapi-live01.dmh.org_v1_uscore_R4",
+      "address": "https://mtrestapi-live01.dmh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapi-live01.newberryhospital.net_v1_uscore_R4",
+      "address": "https://mtrestapi-live01.newberryhospital.net:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapi.haysmed.com_v1_uscore_R4",
+      "address": "https://mtrestapi.haysmed.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-cas.app.medcity.net_v1_uscore_R4",
+      "address": "https://mtrestapis-cas.app.medcity.net/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-expanselive.cvrmc.org_v1_uscore_R4",
+      "address": "https://mtrestapis-expanselive.cvrmc.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-explive01.cchospital.net_v1_uscore_R4",
+      "address": "https://mtrestapis-explive01.cchospital.net:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-explive01.gjhosp.org_v1_uscore_R4",
+      "address": "https://mtrestapis-explive01.gjhosp.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-explive01.hamptonregional.org_v1_uscore_R4",
+      "address": "https://mtrestapis-explive01.hamptonregional.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-explive01.morrishospital.org_v1_uscore_R4",
+      "address": "https://mtrestapis-explive01.morrishospital.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-explive01.searhc.org_v1_uscore_R4",
+      "address": "https://mtrestapis-explive01.searhc.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live-uvm.teknicorhosting.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live-uvm.teknicorhosting.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.arh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.arh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.atchhosp.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.atchhosp.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.avrmc.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.avrmc.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.bhs1.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.bhs1.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.bristolhospital.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.bristolhospital.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.brookshealth.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.brookshealth.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.cardiovascular.pr.gov_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.cardiovascular.pr.gov:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.casacolina.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.casacolina.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.colquittregional.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.colquittregional.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.connallymmc.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.connallymmc.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.deborah.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.deborah.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.echn.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.echn.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.ecmc.edu_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.ecmc.edu:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.gaylord.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.gaylord.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.goshenhealth.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.goshenhealth.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.grahamhospital.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.grahamhospital.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.hmhosp.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.hmhosp.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.islandhospital.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.islandhospital.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.krh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.krh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.lcgh.net_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.lcgh.net:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.limamemorial.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.limamemorial.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.maryrutan.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.maryrutan.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.memorialhealthcare.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.memorialhealthcare.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.mhsystem.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.mhsystem.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.mtgraham.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.mtgraham.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.mwph.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.mwph.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.mymhp.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.mymhp.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.mynmchealth.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.mynmchealth.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.newmanrh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.newmanrh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.nmhcare.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.nmhcare.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.nrh-ok.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.nrh-ok.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.ohow.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.ohow.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.onslow.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.onslow.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.rfgh.net_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.rfgh.net:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.richlandhospital.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.richlandhospital.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.salemregional.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.salemregional.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.saukprairiehealthcare.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.saukprairiehealthcare.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.smedok.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.smedok.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.somc.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.somc.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.stlukehealthcare.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.stlukehealthcare.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.trivalleyhealth.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.trivalleyhealth.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.tsmh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.tsmh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.wmed.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.wmed.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.wmh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.wmh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live02.newmanrh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live02.newmanrh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live02.schneckmed.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live02.schneckmed.org/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-mmh.app.medcity.net_v1_uscore_R4",
+      "address": "https://mtrestapis-mmh.app.medcity.net:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis02.myovmc.com_v1_uscore_R4",
+      "address": "https://mtrestapis02.myovmc.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "muensterapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://muensterapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "narmcapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://narmcapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "northfieldhospitalapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://northfieldhospitalapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "nwshapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://nwshapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "pchneapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://pchneapi.meditech.cloud/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "pvalleyapi.meditech.global_v1_uscore_R4",
+      "address": "https://pvalleyapi.meditech.global/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "pvh-mapilive.primehealthcare.com_v1_uscore_R4",
+      "address": "https://pvh-mapilive.primehealthcare.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "restapi-live.sjchs.org_v1_uscore_R4",
+      "address": "https://restapi-live.sjchs.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "restapi-live01.firelands.com_v1_uscore_R4",
+      "address": "https://restapi-live01.firelands.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "sagememorialapi.meditech.global_v1_uscore_R4",
+      "address": "https://sagememorialapi.meditech.global:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "seviercountymedicalapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://seviercountymedicalapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "shdprapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://shdprapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "silverhillhospitalapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://silverhillhospitalapi.meditech.cloud/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "sprhcapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://sprhcapi.meditech.cloud:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "wagonerhospitalapi.meditech.cloud_v1_uscore_R4",
+      "address": "https://wagonerhospitalapi.meditech.cloud/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live.wgh.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live.wgh.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.augustahealth.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.augustahealth.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.gradymem.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.gradymem.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.halifaxhealth.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.halifaxhealth.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.huntregional.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.huntregional.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.mountnittany.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.mountnittany.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.murrayhospital.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.murrayhospital.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.russellmedcenter.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.russellmedcenter.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.wilsonhealth.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.wilsonhealth.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.wmhospital.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.wmhospital.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.womans.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.womans.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-live02.via-christi.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live02.via-christi.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "missing 36: bmi, bodyheight, bodytemp\u2026"
+    },
+    {
+      "endpoint_id": "mtrestapis-cap.app.medcity.net_v1_uscore_R4",
+      "address": "https://mtrestapis-cap.app.medcity.net/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-D",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.rumcsi.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.rumcsi.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-D",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-np.app.medcity.net_v1_uscore_R4",
+      "address": "https://mtrestapis-np.app.medcity.net:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-D",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "pprestapis-live01.phoebehealth.com_v1_uscore_R4",
+      "address": "https://pprestapis-live01.phoebehealth.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-D",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-exp-live01.dchsystem.com_v1_uscore_R4",
+      "address": "https://mtrestapis-exp-live01.dchsystem.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-E",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.etch.com_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.etch.com:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-E",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapis-live01.ehr.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.ehr.org:443/v1/uscore/R4",
+      "managing_organization_name": null,
+      "cluster_id": "meditech-cluster-F",
+      "deviation_summary": "shape differs but profile sets match"
+    }
+  ],
+  "verification": {
+    "source_url": "tests/golden/production-fleet/meditech/2026-04-27",
+    "source_quote": "Aggregated from 334 CapabilityStatements harvested under tests/golden/production-fleet/meditech/2026-04-27/",
+    "verified_via": "meditech_production_fleet",
+    "verified_date": "2026-04-27"
+  }
+}

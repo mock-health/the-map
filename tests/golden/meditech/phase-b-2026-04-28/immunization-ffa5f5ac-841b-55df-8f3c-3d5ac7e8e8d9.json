@@ -1,0 +1,33 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Immunization/ffa5f5ac-841b-55df-8f3c-3d5ac7e8e8d9",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:56.526985+00:00",
+  "body": {
+    "id": "ffa5f5ac-841b-55df-8f3c-3d5ac7e8e8d9",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "207"
+        }
+      ],
+      "text": "COVID-19 Vaccine (Moderna)"
+    },
+    "patient": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "occurrenceDateTime": "2021-03-01",
+    "recorded": "2023-05-05",
+    "primarySource": false,
+    "reportOrigin": {
+      "text": "Immunization Report"
+    },
+    "resourceType": "Immunization"
+  }
+}

@@ -1,0 +1,4469 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=laboratory",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:16.221268+00:00",
+  "_probe": "Observation-lab",
+  "_patient_id": "12724066",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "3b9b25a8-e2c5-4a8c-adb4-ccae60214d8e",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=laboratory"
+      },
+      {
+        "relation": "next",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=laboratory&-pageContext=eJxljc0KgkAURt_lbp2BRsdfaFNtXNSmB5CrzlVkGGN-KBLfPWsltPw-zuEs0M3BeKjSA4NeEQa9jQW6YN1soYLzNZvecX0_PadBRNHNXOojMBjRNUa9NtbboBg8cFBNNxv_-6BNyyQhJJ7lRFwKoXhBWPCSpBJ5KWNMe1gZOL95faOx3UdN0HqfINTur_GF1vUDOEQ_XQ%3D%3D&-pageDirection=NEXT"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-209014902",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-209014902",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-03-18T14:58:56.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Estimated Creatinine Clearance</p><p><b>Result</b>: 256.83 mL/min</p><p><b>Effective Date</b>: Mar 18, 2026  2:58 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209014902-2026031814585600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "20004425",
+                "display": "Estimated Creatinine Clearance",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "35592-5",
+                "display": "Creatinine renal clearance/1.73 sq M.predicted by Cockcroft-Gault formula, BSA formula",
+                "userSelected": false
+              }
+            ],
+            "text": "Estimated Creatinine Clearance"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/100255815"
+          },
+          "effectiveDateTime": "2026-03-18T14:58:56.000Z",
+          "issued": "2026-03-18T14:58:56.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                },
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "PPRF",
+                        "display": "primary performer"
+                      }
+                    ],
+                    "text": "primary performer"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/1"
+            }
+          ],
+          "valueQuantity": {
+            "value": 256.83,
+            "unit": "mL/min",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-209010937",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-209010937",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-03-07T17:58:49.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Estimated Creatinine Clearance</p><p><b>Result</b>: 256.83 mL/min</p><p><b>Effective Date</b>: Mar  7, 2026  5:58 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209010937-2026030717584900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "20004425",
+                "display": "Estimated Creatinine Clearance",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "35592-5",
+                "display": "Creatinine renal clearance/1.73 sq M.predicted by Cockcroft-Gault formula, BSA formula",
+                "userSelected": false
+              }
+            ],
+            "text": "Estimated Creatinine Clearance"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "effectiveDateTime": "2026-03-07T17:58:49.000Z",
+          "issued": "2026-03-07T17:58:49.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                },
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "PPRF",
+                        "display": "primary performer"
+                      }
+                    ],
+                    "text": "primary performer"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/1"
+            }
+          ],
+          "valueQuantity": {
+            "value": 256.83,
+            "unit": "mL/min",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-209002491",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-209002491",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-02-01T07:06:09.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Estimated Creatinine Clearance</p><p><b>Result</b>: 256.83 mL/min</p><p><b>Effective Date</b>: Feb  1, 2026  7:06 A.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209002491-2026020107060900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "20004425",
+                "display": "Estimated Creatinine Clearance",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "35592-5",
+                "display": "Creatinine renal clearance/1.73 sq M.predicted by Cockcroft-Gault formula, BSA formula",
+                "userSelected": false
+              }
+            ],
+            "text": "Estimated Creatinine Clearance"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/100082634"
+          },
+          "effectiveDateTime": "2026-02-01T07:06:09.000Z",
+          "issued": "2026-02-01T07:06:09.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                },
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "PPRF",
+                        "display": "primary performer"
+                      }
+                    ],
+                    "text": "primary performer"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/1"
+            }
+          ],
+          "valueQuantity": {
+            "value": 256.83,
+            "unit": "mL/min",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-208966471",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-208966471",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-11-12T06:50:30.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Estimated Creatinine Clearance</p><p><b>Result</b>: 256.83 mL/min</p><p><b>Effective Date</b>: Nov 12, 2025  6:50 A.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-208966471-2025111206503100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "20004425",
+                "display": "Estimated Creatinine Clearance",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "35592-5",
+                "display": "Creatinine renal clearance/1.73 sq M.predicted by Cockcroft-Gault formula, BSA formula",
+                "userSelected": false
+              }
+            ],
+            "text": "Estimated Creatinine Clearance"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97939518"
+          },
+          "effectiveDateTime": "2025-11-12T06:50:30.000Z",
+          "issued": "2025-11-12T06:50:30.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                },
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "PPRF",
+                        "display": "primary performer"
+                      }
+                    ],
+                    "text": "primary performer"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/1"
+            }
+          ],
+          "valueQuantity": {
+            "value": 256.83,
+            "unit": "mL/min",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-208846149",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-208846149",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-06-06T18:06:19.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Estimated Creatinine Clearance</p><p><b>Result</b>: 305.03 mL/min</p><p><b>Effective Date</b>: Jun  6, 2025  6:06 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-208846149-2025060618062000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "20004425",
+                "display": "Estimated Creatinine Clearance",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "35592-5",
+                "display": "Creatinine renal clearance/1.73 sq M.predicted by Cockcroft-Gault formula, BSA formula",
+                "userSelected": false
+              }
+            ],
+            "text": "Estimated Creatinine Clearance"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "effectiveDateTime": "2025-06-06T18:06:19.000Z",
+          "issued": "2025-06-06T18:06:19.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                },
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "PPRF",
+                        "display": "primary performer"
+                      }
+                    ],
+                    "text": "primary performer"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/1"
+            }
+          ],
+          "valueQuantity": {
+            "value": 305.03,
+            "unit": "mL/min",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL/min"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207035434",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207035434",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-16T14:00:43.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.7 g/dL</p><p><b>Effective Date</b>: Dec 16, 2024  1:59 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207035434-2024121614004300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-12-16T13:59:38.000Z",
+          "valueQuantity": {
+            "value": 0.7,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207035432",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207035432",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-16T14:00:42.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.7 g/dL</p><p><b>Effective Date</b>: Dec 16, 2024  1:59 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207035432-2024121614004200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-12-16T13:59:38.000Z",
+          "valueQuantity": {
+            "value": 0.7,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207035430",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207035430",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-16T14:00:37.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.7 g/dL</p><p><b>Effective Date</b>: Dec 16, 2024  1:59 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207035430-2024121614003800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-12-16T13:59:38.000Z",
+          "valueQuantity": {
+            "value": 0.7,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206974025",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206974025",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-11-15T11:43:07.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Creatinine Level</p><p><b>Result</b>: 32 mcmol/L</p><p><b>Effective Date</b>: Nov 15, 2024 10:41 A.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206974025-2024111511430700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2700655",
+                "display": "Creatinine Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2160-0",
+                "display": "Creatinine [Mass/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Creatinine Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "effectiveDateTime": "2024-11-15T10:41:30.000Z",
+          "issued": "2024-11-15T11:43:07.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/12742069"
+            }
+          ],
+          "valueQuantity": {
+            "value": 32,
+            "unit": "mcmol/L",
+            "system": "http://unitsofmeasure.org",
+            "code": "umol/L"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206974023",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206974023",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-11-15T11:42:18.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Hgb</p><p><b>Result</b>: 32 mcmol/L</p><p><b>Effective Date</b>: Nov 15, 2024 10:41 A.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206974023-2024111511421800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21705368",
+                "display": "Hgb",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "718-7",
+                "display": "Hemoglobin [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Hgb"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "effectiveDateTime": "2024-11-15T10:41:30.000Z",
+          "issued": "2024-11-15T11:42:18.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/12742069"
+            }
+          ],
+          "valueQuantity": {
+            "value": 32,
+            "unit": "mcmol/L",
+            "system": "http://unitsofmeasure.org",
+            "code": "umol/L"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206974009",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206974009",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-11-15T11:38:38.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Hgb</p><p><b>Result</b>: 32 mcmol/L</p><p><b>Effective Date</b>: Nov 15, 2024 10:41 A.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206974009-2024111511383800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21705368",
+                "display": "Hgb",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "718-7",
+                "display": "Hemoglobin [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Hgb"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97953477"
+          },
+          "effectiveDateTime": "2024-11-15T10:41:30.000Z",
+          "issued": "2024-11-15T11:38:38.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/12742069"
+            }
+          ],
+          "valueQuantity": {
+            "value": 32,
+            "unit": "mcmol/L",
+            "system": "http://unitsofmeasure.org",
+            "code": "umol/L"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206941243",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206941243",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-18T12:45:09.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Oct 18, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206941243-2024101812450900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-18T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206941241",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206941241",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-18T12:45:08.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Oct 18, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206941241-2024101812450800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-18T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206941239",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206941239",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-18T12:45:04.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Oct 18, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206941239-2024101812450500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-18T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206940301",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206940301",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-17T12:37:32.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Oct 17, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206940301-2024101712373200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-17T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206940299",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206940299",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-17T12:37:30.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Oct 17, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206940299-2024101712373000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-17T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206940297",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206940297",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-17T12:37:27.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Oct 17, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206940297-2024101712372800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-17T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206934022",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206934022",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-08T12:12:22.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Oct  8, 2024 12:05 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206934022-2024100812122200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-08T12:05:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206934020",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206934020",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-08T12:12:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Oct  8, 2024 12:05 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206934020-2024100812122000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-08T12:05:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206934018",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206934018",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-08T12:12:13.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Oct  8, 2024 12:05 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206934018-2024100812121300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-08T12:05:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206918744",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206918744",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-04T12:17:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Oct  4, 2024 12:10 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206918744-2024100412172000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-04T12:10:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206918742",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206918742",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-04T12:17:18.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Oct  4, 2024 12:10 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206918742-2024100412171800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-04T12:10:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206918740",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206918740",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-04T12:17:14.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Oct  4, 2024 12:10 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206918740-2024100412171500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-04T12:10:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206918187",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206918187",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-03T13:02:39.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.6 g/dL</p><p><b>Effective Date</b>: Oct  3, 2024  1:00 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206918187-2024100313023900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-03T13:00:00.000Z",
+          "valueQuantity": {
+            "value": 0.6,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206918185",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206918185",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-03T13:02:37.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.6 g/dL</p><p><b>Effective Date</b>: Oct  3, 2024  1:00 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206918185-2024100313023700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-03T13:00:00.000Z",
+          "valueQuantity": {
+            "value": 0.6,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206918183",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206918183",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-03T13:02:33.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.6 g/dL</p><p><b>Effective Date</b>: Oct  3, 2024  1:00 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206918183-2024100313023400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-03T13:00:00.000Z",
+          "valueQuantity": {
+            "value": 0.6,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206913085",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206913085",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-01T12:06:27.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.7 g/dL</p><p><b>Effective Date</b>: Oct  1, 2024 12:05 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206913085-2024100112062700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-01T12:05:21.000Z",
+          "valueQuantity": {
+            "value": 0.7,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206913083",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206913083",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-01T12:06:25.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.7 g/dL</p><p><b>Effective Date</b>: Oct  1, 2024 12:05 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206913083-2024100112062500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-01T12:05:21.000Z",
+          "valueQuantity": {
+            "value": 0.7,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206913081",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206913081",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-01T12:06:21.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.7 g/dL</p><p><b>Effective Date</b>: Oct  1, 2024 12:05 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206913081-2024100112062200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-10-01T12:05:21.000Z",
+          "valueQuantity": {
+            "value": 0.7,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206908415",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206908415",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-26T12:29:25.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Sep 26, 2024 12:28 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206908415-2024092612292500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-26T12:28:39.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206908413",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206908413",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-26T12:29:24.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Sep 26, 2024 12:28 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206908413-2024092612292400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-26T12:28:39.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206908411",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206908411",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-26T12:29:22.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Sep 26, 2024 12:28 P.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206908411-2024092612292200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-26T12:28:39.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206845134",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206845134",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-25T09:53:33.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.3 g/dL</p><p><b>Effective Date</b>: Sep 25, 2024  9:53 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206845134-2024092509533300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-25T09:53:00.000Z",
+          "valueQuantity": {
+            "value": 0.3,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206845132",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206845132",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-25T09:53:31.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.3 g/dL</p><p><b>Effective Date</b>: Sep 25, 2024  9:53 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206845132-2024092509533100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-25T09:53:00.000Z",
+          "valueQuantity": {
+            "value": 0.3,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206845130",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206845130",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-25T09:53:29.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.3 g/dL</p><p><b>Effective Date</b>: Sep 25, 2024  9:53 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206845130-2024092509532900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-25T09:53:00.000Z",
+          "valueQuantity": {
+            "value": 0.3,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206821004",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206821004",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-06T09:20:25.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Sep  6, 2024  9:13 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206821004-2024090609202500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-06T09:13:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206821002",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206821002",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-06T09:20:24.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Sep  6, 2024  9:13 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206821002-2024090609202500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-06T09:13:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206821000",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206821000",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-06T09:20:23.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Sep  6, 2024  9:13 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206821000-2024090609202300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-06T09:13:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819820",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819820",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:33:55.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.1 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819820-2024090511335500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819818",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819818",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:33:54.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: -0.2 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819818-2024090511335400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T11:30:04.000Z",
+          "valueQuantity": {
+            "value": -0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819816",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819816",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:33:53.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 11:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819816-2024090511335300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T11:30:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819814",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819814",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:30:05.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.1 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 11:25 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819814-2024090511300400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T11:25:04.000Z",
+          "valueQuantity": {
+            "value": 0.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819812",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819812",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:30:04.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: Blank</p><p><b>Effective Date</b>: Sep  5, 2024 11:25 A.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819812-2024090511300400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T11:25:04.000Z",
+          "valueString": "Blank"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819810",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819810",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:30:03.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 11:25 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819810-2024090511300300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T11:25:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819808",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819808",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:28:21.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 10:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819808-2024090511282100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T10:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819806",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819806",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:28:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 10:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819806-2024090511282000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T10:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819804",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819804",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:28:19.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 10:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819804-2024090511281900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T10:30:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819794",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819794",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:10:48.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.0 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 10:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819794-2024090511104800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T10:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.0,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819792",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819792",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:10:47.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 0.2 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 10:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819792-2024090511104700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T10:30:04.000Z",
+          "valueQuantity": {
+            "value": 0.2,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-206819790",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-206819790",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-09-05T11:10:45.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12724066</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Potassium Level</p><p><b>Result</b>: 1.1 g/dL</p><p><b>Effective Date</b>: Sep  5, 2024 10:30 A.M. UTC</p><p><b>Reference Range</b>: &lt;=0.6 g/dL</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206819790-2024090511104600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "21704910",
+                "display": "Potassium Level",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2823-3",
+                "display": "Potassium [Moles/volume] in Serum or Plasma",
+                "userSelected": false
+              }
+            ],
+            "text": "Potassium Level"
+          },
+          "subject": {
+            "reference": "Patient/12724066"
+          },
+          "encounter": {
+            "reference": "Encounter/97954225"
+          },
+          "effectiveDateTime": "2024-09-05T10:30:04.000Z",
+          "valueQuantity": {
+            "value": 1.1,
+            "unit": "g/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "g/dL"
+          },
+          "referenceRange": [
+            {
+              "high": {
+                "value": 0.6,
+                "unit": "g/dL",
+                "system": "http://unitsofmeasure.org",
+                "code": "g/dL"
+              },
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+                    "code": "normal",
+                    "display": "Normal Range"
+                  }
+                ],
+                "text": "Normal Range"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

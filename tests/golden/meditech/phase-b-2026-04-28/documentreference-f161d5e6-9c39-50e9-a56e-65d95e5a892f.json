@@ -1,0 +1,107 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DocumentReference/f161d5e6-9c39-50e9-a56e-65d95e5a892f",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:54.851777+00:00",
+  "body": {
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:b49d2416-c671-40a2-6689-a15b384f9638"
+      },
+      {
+        "use": "secondary",
+        "value": "34"
+      }
+    ],
+    "id": "f161d5e6-9c39-50e9-a56e-65d95e5a892f",
+    "masterIdentifier": {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:uuid:b49d2416-c671-40a2-6689-a15b384f9638"
+    },
+    "status": "current",
+    "type": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "18748-4",
+          "display": "Imaging Narrative"
+        }
+      ],
+      "text": "Imaging Narrative"
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        ],
+        "text": "Clinical Note"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "author": [
+      {
+        "reference": "Practitioner/a1497d50-1976-5183-86ac-92400fb92da6",
+        "type": "Practitioner",
+        "display": "Daniel Symes"
+      }
+    ],
+    "custodian": {
+      "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+      "type": "Organization",
+      "display": "Canton Medical Center"
+    },
+    "context": {
+      "encounter": [
+        {
+          "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+          "type": "Encounter"
+        }
+      ],
+      "period": {
+        "start": "2023-05-10T07:00:00+00:00",
+        "end": "2023-05-10T16:22:00+00:00"
+      }
+    },
+    "content": [
+      {
+        "attachment": {
+          "contentType": "text/plain",
+          "language": "en-US",
+          "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBYUmF5IFJlcG9ydCANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaWduZWQNCg0KUGF0aWVudDogQm9uZCxQYXVsYSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1SIzogSUEwMDAwMDANCjMwICAgICAgDQpET0I6IDA2LzE0LzE5NTggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBY2N0OkVCMDAwMDAwMDA3Nw0KICAgICAgDQpBZ2UvU2V4OiA2NCAvIEYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBRE0gRGF0ZTogMDUvMTAvMg0KMyAgICAgIA0KTG9jOiBFRCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpBdHRlbmRpbmcgRHI6IA0KDQoNCk9yZGVyaW5nIFBoeXNpY2lhbjogRS4gVHVja2VyLCBNRA0KRGF0ZSBvZiBTZXJ2aWNlOiAwNS8xMC8yMw0KUHJvY2VkdXJlKHMpOiBYUiBjaGVzdCAyVg0KQWNjZXNzaW9uIE51bWJlcihzKTogQTAwMDAwMDAwMTcNCg0KY2M6IH4NCg0KDQpDaGVzdCBYLXJheQ0KDQpGaW5kaW5nczoNCi0gSW1hZ2luZyBkZW1vbnN0cmF0ZXMgY2FyZGlvbWVnYWx5IHdpdGggaW50ZXJzdGl0aWFsIGVkZW1hIGFuZCBwbGV1cmFsIGVmZnVzaW9ucy4NCi0gQmx1bnRpbmcgb2YgY29zdG9waHJlbmljIGFuZ2xlcw0KDQpJbXByZXNzaW9uOg0KLSBTdWdnZXN0aXZlIG9mIGNvbmdlc3RpdmUgaGVhcnQgZmFpbHVyZQ0KDQoNCg0KDQoNCkRpY3RhdGVkIEJ5OiAgICBEYW5pZWwgU3ltZXMsIE1EICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANClNpZ25lZCBCeTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwNS8xMC8yMyAxMjIyDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCg0KREQvRFQ6IDA1LzEwLzIzIDAzMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpURC9UVDogMDUvMTAvMjMgMDMwMFRyYW5zY3JpcHRpb25pc3Q6IFdQQiAgICAgICAgICAgICAgICAgICAgDQo="
+        },
+        "format": {
+          "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+          "userSelected": false,
+          "display": "mimeType Sufficient",
+          "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+        }
+      }
+    ],
+    "date": "2023-05-10T16:22:00+00:00",
+    "securityLabel": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+            "code": "N",
+            "display": "normal"
+          }
+        ],
+        "text": "normal"
+      }
+    ],
+    "resourceType": "DocumentReference"
+  }
+}

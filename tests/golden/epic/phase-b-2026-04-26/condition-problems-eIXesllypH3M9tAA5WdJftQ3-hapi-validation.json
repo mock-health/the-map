@@ -1,0 +1,284 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>Unable to expand ValueSet because CodeSystem could not be found: http://hl7.org/fhir/sid/icd-10-cm</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/icd-10-cm for 'http://hl7.org/fhir/sid/icd-10-cm#J45.40'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>Unable to expand ValueSet: cannot apply filters '[org.hl7.fhir.r5.model.ValueSet$ConceptSetFilterComponent@26bc649c]' because CodeSystem 'http://snomed.info/sct' is ignored/not-present</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>Unable to expand ValueSet because CodeSystem could not be found: http://hl7.org/fhir/sid/icd-9-cm</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/icd-9-cm for 'http://hl7.org/fhir/sid/icd-9-cm#493.90'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.3.247.1.1 for 'urn:oid:2.16.840.1.113883.3.247.1.1#513862'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition.code, Line[1] Col[1162]]</td><td>None of the codings provided are in the value set 'US Core Condition Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|6.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/sid/icd-10-cm#J45.40, http://snomed.info/sct#427295004, http://hl7.org/fhir/sid/icd-9-cm#493.90, urn:oid:2.16.840.1.113883.3.247.1.1#513862)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Condition, Line[1] Col[1317]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet because CodeSystem could not be found: http://hl7.org/fhir/sid/icd-10-cm",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/icd-10-cm for 'http://hl7.org/fhir/sid/icd-10-cm#J45.40'",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet: cannot apply filters '[org.hl7.fhir.r5.model.ValueSet$ConceptSetFilterComponent@26bc649c]' because CodeSystem 'http://snomed.info/sct' is ignored/not-present",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet because CodeSystem could not be found: http://hl7.org/fhir/sid/icd-9-cm",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/icd-9-cm for 'http://hl7.org/fhir/sid/icd-9-cm#493.90'",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.3.247.1.1 for 'urn:oid:2.16.840.1.113883.3.247.1.1#513862'",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1162
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_2_CC"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_2_CC"
+            }
+          ]
+        },
+        "diagnostics": "None of the codings provided are in the value set 'US Core Condition Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code|6.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/sid/icd-10-cm#J45.40, http://snomed.info/sct#427295004, http://hl7.org/fhir/sid/icd-9-cm#493.90, urn:oid:2.16.840.1.113883.3.247.1.1#513862)",
+        "location": [
+          "Condition.code",
+          "Line[1] Col[1162]"
+        ],
+        "expression": [
+          "Condition.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1317
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "Condition",
+          "Line[1] Col[1317]"
+        ],
+        "expression": [
+          "Condition"
+        ]
+      }
+    ]
+  }
+}

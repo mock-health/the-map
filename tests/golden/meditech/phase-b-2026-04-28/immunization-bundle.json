@@ -1,0 +1,83 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Immunization?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:56.526809+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Immunization?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Immunization/ffa5f5ac-841b-55df-8f3c-3d5ac7e8e8d9",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "ffa5f5ac-841b-55df-8f3c-3d5ac7e8e8d9",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207"
+              }
+            ],
+            "text": "COVID-19 Vaccine (Moderna)"
+          },
+          "patient": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "occurrenceDateTime": "2021-03-01",
+          "recorded": "2023-05-05",
+          "primarySource": false,
+          "reportOrigin": {
+            "text": "Immunization Report"
+          },
+          "resourceType": "Immunization"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Immunization/0aee88c1-0a9b-5a89-bf0d-ce58e5ebee9a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "0aee88c1-0a9b-5a89-bf0d-ce58e5ebee9a",
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207"
+              }
+            ],
+            "text": "COVID-19 Vaccine (Moderna)"
+          },
+          "patient": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "occurrenceDateTime": "2021-03-31",
+          "recorded": "2023-05-05",
+          "primarySource": false,
+          "reportOrigin": {
+            "text": "Immunization Report"
+          },
+          "resourceType": "Immunization"
+        }
+      }
+    ],
+    "total": 2,
+    "resourceType": "Bundle"
+  }
+}

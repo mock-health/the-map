@@ -1,0 +1,156 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:41.964967+00:00",
+  "_probe": "Procedure",
+  "_patient_id": "e0w0LEDCYtfckT6N.CkJKCw3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 1,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=e0w0LEDCYtfckT6N.CkJKCw3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure/fIw19b9tDNbDLlRVYFvV2YEgN9LDbjUSgPDJ42eliQJo4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure/fIw19b9tDNbDLlRVYFvV2YEgN9LDbjUSgPDJ42eliQJo4",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "fIw19b9tDNbDLlRVYFvV2YEgN9LDbjUSgPDJ42eliQJo4",
+          "identifier": [
+            {
+              "use": "usual",
+              "type": {
+                "text": "ORD"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066928"
+            },
+            {
+              "use": "usual",
+              "type": {
+                "text": "EAP"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696580",
+              "value": "89930"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/ehD1rMGm0zaL2F3AXMUDtWwj.xhge6RdXOA3JTEAqU5s3",
+              "display": "Stress test"
+            }
+          ],
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Ordered Procedures"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696580",
+                "code": "89930",
+                "display": "STRESS TEST ONLY"
+              }
+            ],
+            "text": "STRESS TEST ONLY"
+          },
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "encounter": {
+            "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27561"
+            },
+            "display": "Hospital Encounter"
+          },
+          "performedDateTime": "2019-05-28T15:29:23Z",
+          "recorder": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "asserter": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "report": [
+            {
+              "reference": "DiagnosticReport/eOEFQea79JpqVmBUCnlHcUVXpHHU4pvvYzpqin9Cc2h03",
+              "type": "DiagnosticReport",
+              "display": "Stress test"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:3e7eddd9-b9b0-4229-a639-739e9981952e",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59205",
+                    "display": "The authenticated user's search request applies to a sub-resource that the user is not authorized to view. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated user's search request applies to a sub-resource that the user is not authorized to view. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "User not authorized for Procedure - External Radiotherapy Summary. Search results of this type have not been included."
+            },
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Procedure - Outside Record. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

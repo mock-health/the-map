@@ -1,0 +1,99 @@
+name: validate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # One run per PR; cancel in-flight when new commits land.
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # LFS pointers only — production-fleet evidence isn't needed for
+          # the test suite. Cuts checkout time ~5x.
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: ruff
+        run: ruff check tools tests
+
+      - name: mypy (advisory; not blocking in v1.0)
+        run: mypy tools || true
+
+      - name: pytest
+        run: pytest -v
+
+      - name: tools.validate (every shipped overlay)
+        # On push to main, activate the launch gate: production_fleet.captured_date
+        # must be within 14 days. Pull requests don't trigger the gate so a stale
+        # fleet doesn't block unrelated PRs.
+        env:
+          THE_MAP_LAUNCH_GATE: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && '1' || '' }}
+        run: python -m tools.validate
+
+      - name: tools.synthesize (every EHR)
+        run: |
+          for ehr in $(ls ehrs); do
+            python -m tools.synthesize "$ehr" > /dev/null
+          done
+
+      - name: render one EHR (smoke)
+        run: python -m tools.render_html epic
+
+      - name: make export (consumer subset builds clean)
+        run: make export
+
+  fresh-clone-smoke:
+    name: fresh-clone smoke (decoupling test)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: install runtime only
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Phase A — anonymous CapStmt fetch (no .env required)
+        # Confirms the env-override refactor (tools/_env.py) is real:
+        # Phase A must work on a fresh clone with zero credentials.
+        # Network-dependent; allow failure on flaky vendor sandboxes.
+        run: |
+          python -m tools.fetch_capability epic || echo "epic /metadata unreachable in CI; not a blocker"
+          python -m tools.fetch_capability meditech || echo "meditech /metadata unreachable in CI; not a blocker"
+
+      - name: Phase F.1 — anonymous brands harvest (no .env required)
+        run: python -m tools.fetch_brands --all || echo "brands harvest unreachable in CI; not a blocker"

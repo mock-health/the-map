@@ -1,0 +1,41 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/ServiceRequest/c6a47eb7-d80a-5ad5-80da-776572bea19a",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:07.128842+00:00",
+  "body": {
+    "id": "c6a47eb7-d80a-5ad5-80da-776572bea19a",
+    "status": "draft",
+    "intent": "directive",
+    "priority": "routine",
+    "code": {
+      "text": "Resuscitation Status*"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "encounter": {
+      "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+      "type": "Encounter"
+    },
+    "requester": {
+      "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+      "type": "Practitioner",
+      "display": "William Butler"
+    },
+    "insurance": [
+      {
+        "reference": "Coverage/bb0ade8b-69d4-5155-9c42-ad066a0494da",
+        "type": "Coverage",
+        "display": "Blue Cross"
+      }
+    ],
+    "occurrenceDateTime": "2023-05-10T16:11:00+00:00",
+    "authoredOn": "2023-05-10T16:11:32+00:00",
+    "resourceType": "ServiceRequest"
+  }
+}

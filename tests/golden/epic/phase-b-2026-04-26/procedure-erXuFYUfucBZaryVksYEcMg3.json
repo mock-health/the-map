@@ -1,0 +1,320 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=erXuFYUfucBZaryVksYEcMg3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:41.534539+00:00",
+  "_probe": "Procedure",
+  "_patient_id": "erXuFYUfucBZaryVksYEcMg3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 2,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=erXuFYUfucBZaryVksYEcMg3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure/fr.sjLP3MMJXInJGqYSnby2M1-0YueLLvqRFm9Vjy3ZE4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure/fr.sjLP3MMJXInJGqYSnby2M1-0YueLLvqRFm9Vjy3ZE4",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "fr.sjLP3MMJXInJGqYSnby2M1-0YueLLvqRFm9Vjy3ZE4",
+          "identifier": [
+            {
+              "use": "usual",
+              "type": {
+                "text": "ORD"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066915"
+            },
+            {
+              "use": "usual",
+              "type": {
+                "text": "EAP"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696580",
+              "value": "104443"
+            },
+            {
+              "use": "usual",
+              "type": {
+                "text": "OPE"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798069",
+              "value": "88"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/e6t1HtRj0Za8M9Y0u5nU2tu3idJ7P66B2HzlMtddZ6Wc3",
+              "display": "Transthoracic Echo (TTE) Complete"
+            }
+          ],
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "103693007",
+                "display": "Diagnostic procedure"
+              }
+            ],
+            "text": "Ordered Procedures"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "93306",
+                "display": "HC TRANSTHORACIC ECHO"
+              }
+            ],
+            "text": "TRANSTHORACIC ECHO (TTE) COMPLETE"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/ej567ARSFdaF4ooZVunIlIg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "29542"
+            },
+            "display": "Hospital Encounter"
+          },
+          "performedDateTime": "2023-06-02T20:50:25Z",
+          "asserter": {
+            "reference": "Practitioner/elpRiy0AYgjhdjAhTBJ3Aiw3",
+            "type": "Practitioner",
+            "display": "Np Family Medicine, NP"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Practitioner/eM5CWtq15N0WJeuCet5bJlQ3",
+                "type": "Practitioner",
+                "display": "Physician Family Medicine, MD"
+              },
+              "onBehalfOf": {
+                "reference": "Organization/f53olaSJ-Vb0nkvKdJtHMoA4",
+                "type": "Organization",
+                "display": "CPACS"
+              }
+            }
+          ],
+          "reasonCode": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                  "code": "786.50",
+                  "display": "Ischemic chest pain (CMS/HCC)"
+                }
+              ],
+              "text": "Ischemic chest pain (CMS/HCC)"
+            }
+          ],
+          "report": [
+            {
+              "reference": "DiagnosticReport/ejRFFAyoWd-DvE0lHi4UEUVA9qTH9PxfCLhEetlq04Ck3",
+              "type": "DiagnosticReport",
+              "display": "Transthoracic Echo (TTE) Complete"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure/fk.zJIdWllxwRyg-l6jzB.zPOIOIihMD4Qu4EerFVgSg4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure/fk.zJIdWllxwRyg-l6jzB.zPOIOIihMD4Qu4EerFVgSg4",
+        "resource": {
+          "resourceType": "Procedure",
+          "id": "fk.zJIdWllxwRyg-l6jzB.zPOIOIihMD4Qu4EerFVgSg4",
+          "identifier": [
+            {
+              "use": "usual",
+              "type": {
+                "text": "ORL"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798276",
+              "value": "1505"
+            },
+            {
+              "use": "usual",
+              "type": {
+                "text": "EAP"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696580",
+              "value": "14493"
+            },
+            {
+              "use": "usual",
+              "type": {
+                "text": "OPE"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798069",
+              "value": "90"
+            }
+          ],
+          "status": "completed",
+          "category": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "387713003",
+                "display": "Surgical procedure"
+              }
+            ],
+            "text": "Surgical Procedures"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "44950",
+                "display": "PR APPENDECTOMY"
+              }
+            ],
+            "text": "PR APPENDECTOMY"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/eGmO0h.1.UQQrExl4bfM7OQ3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "29545"
+            },
+            "display": "Surgery"
+          },
+          "performedPeriod": {
+            "start": "2023-06-06T13:56:00Z",
+            "end": "2023-06-06T14:56:00Z"
+          },
+          "recorder": {
+            "reference": "Practitioner/eHP1iZcoohQAKIcKyP6CDvA3",
+            "type": "Practitioner",
+            "display": "Robert Zorko"
+          },
+          "location": {
+            "reference": "Location/el.Nc4rfzXa7Ml9v6gin1Pw3",
+            "display": "EHS Hospital"
+          },
+          "reasonCode": [
+            {
+              "text": "Testing"
+            }
+          ],
+          "bodySite": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798276.2010",
+                        "code": "4",
+                        "display": "N/A"
+                      }
+                    ],
+                    "text": "N/A"
+                  },
+                  "url": "http://nictiz.nl/fhir/StructureDefinition/BodySite-Qualifier"
+                }
+              ],
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798276.2015",
+                  "code": "10",
+                  "display": "Abdomen"
+                }
+              ],
+              "text": "Abdomen"
+            }
+          ],
+          "report": [
+            {
+              "reference": "DocumentReference/fcD69ui69mUYpUpmvx15F5A4"
+            },
+            {
+              "reference": "DocumentReference/fHPIuby-.V2XrnO7JXf1qjw4"
+            },
+            {
+              "reference": "DocumentReference/fpgqjyC21qxnzfnjWAsr7Fw4"
+            },
+            {
+              "reference": "DocumentReference/fF7PzG7KUEJuTL0ApfGDTQQ4"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:acef7902-0823-4d85-be77-ff7c5255063b",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59205",
+                    "display": "The authenticated user's search request applies to a sub-resource that the user is not authorized to view. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated user's search request applies to a sub-resource that the user is not authorized to view. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "User not authorized for Procedure - External Radiotherapy Summary. Search results of this type have not been included."
+            },
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Procedure - Outside Record. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

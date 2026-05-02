@@ -1,0 +1,461 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?patient=erXuFYUfucBZaryVksYEcMg3&category=LAB",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:42.439261+00:00",
+  "_probe": "DiagnosticReport-lab",
+  "_patient_id": "erXuFYUfucBZaryVksYEcMg3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 4,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?category=LAB&patient=erXuFYUfucBZaryVksYEcMg3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/elx1Jshr9qLOD4ufQ74qBMUFrwtMOcB1Xr9An7ASZR-83"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/elx1Jshr9qLOD4ufQ74qBMUFrwtMOcB1Xr9An7ASZR-83",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "elx1Jshr9qLOD4ufQ74qBMUFrwtMOcB1Xr9An7ASZR-83",
+          "identifier": [
+            {
+              "use": "official",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC",
+                    "display": "Placer Identifier"
+                  }
+                ],
+                "text": "Placer Identifier"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066900"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/eK6sCsSKqfbW3Mps-9UTttzTXimr.hD8JVMCVQTY8yMo3",
+              "display": "CBC and differential"
+            }
+          ],
+          "status": "amended",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab"
+                }
+              ],
+              "text": "Lab"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.696580",
+                "code": "1696",
+                "display": "CBC AND DIFFERENTIAL"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.96",
+                "code": "9564003",
+                "display": "CBC AND DIFFERENTIAL"
+              }
+            ],
+            "text": "CBC and differential"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2019-05-28T14:21:00Z",
+          "issued": "2019-05-28T14:21:00Z",
+          "performer": [
+            {
+              "reference": "Practitioner/eM5CWtq15N0WJeuCet5bJlQ3",
+              "type": "Practitioner",
+              "display": "Physician Family Medicine, MD"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/fpQa5EAB1kLhFOWFQGycwZXEG-VEWbu.7fAr88rCXwBM4",
+              "display": "Component (1): LEUKOCYTES(10*3/UL) IN BLOOD BY AUTOMATED COUNT"
+            },
+            {
+              "reference": "Observation/fpQa5EAB1kLhFOWFQGycwZQM.-iqN-wv4PE222RBLFfs4",
+              "display": "Component (1): ERYTHROCYTES (10*6/UL) IN BLOOD BY AUTOMATED COUNT"
+            },
+            {
+              "reference": "Observation/fpQa5EAB1kLhFOWFQGycwZYltlIO5pmaUpDF5a1-phu44",
+              "display": "Component (1): PLATELETS (10*3/UL) IN BLOOD AUTOMATED COUNT"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/ebLG6RMUaZyb2xk2DuX.kd4g8mNRffn9ftcwqSmnhrwM3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/ebLG6RMUaZyb2xk2DuX.kd4g8mNRffn9ftcwqSmnhrwM3",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "ebLG6RMUaZyb2xk2DuX.kd4g8mNRffn9ftcwqSmnhrwM3",
+          "identifier": [
+            {
+              "use": "official",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC",
+                    "display": "Placer Identifier"
+                  }
+                ],
+                "text": "Placer Identifier"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066905"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/egf4KkhXmgeVWImXEEYH.CEE1ZgJG5SQy2vBX1HgvBCs3",
+              "display": "Hemoglobin A1c"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab"
+                }
+              ],
+              "text": "Lab"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "4548-4"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.12",
+                "code": "83036",
+                "display": "PR GLYCOSYLATED HEMOGLOBIN TEST"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.96",
+                "code": "43396009",
+                "display": "HEMOGLOBIN A1C"
+              }
+            ],
+            "text": "Hemoglobin A1c"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2019-05-28T14:22:00Z",
+          "issued": "2019-05-28T14:22:00Z",
+          "performer": [
+            {
+              "reference": "Practitioner/eM5CWtq15N0WJeuCet5bJlQ3",
+              "type": "Practitioner",
+              "display": "Physician Family Medicine, MD"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/faSpwWfVCMbN46Z9NPBBlfcprMmq.3qSsXKb23FkXdcw4",
+              "display": "Component (1): HEMOGLOBIN A1C, POC"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/eH7uO.T7OPCIuALe7p47ChPK3TH5CVepY16FOxdmht6U3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/eH7uO.T7OPCIuALe7p47ChPK3TH5CVepY16FOxdmht6U3",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "eH7uO.T7OPCIuALe7p47ChPK3TH5CVepY16FOxdmht6U3",
+          "identifier": [
+            {
+              "use": "official",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC",
+                    "display": "Placer Identifier"
+                  }
+                ],
+                "text": "Placer Identifier"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066906"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/eikKnNjBSfWHmf2MZw5cvxvZudUUagi02jRCL-GG9YXA3",
+              "display": "Pharmacogenomic Panel"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab"
+                }
+              ],
+              "text": "Lab"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.12",
+                "code": "LAB10052",
+                "display": "PHARMACOGENOMICS PANEL"
+              }
+            ],
+            "text": "Pharmacogenomic Panel"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2023-03-21T21:42:00Z",
+          "issued": "2023-03-21T21:42:00Z",
+          "performer": [
+            {
+              "reference": "Practitioner/e9s-IdXQOUVywHOVoisd6xQ3",
+              "type": "Practitioner",
+              "display": "Attending Physician Inpatient, MD"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/feo.AhnEKfmSVA6Y82JlOQf-LyIWYivRF1HkSwCzHp204",
+              "display": "Component (1): GENOTYPE:"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/eVgy7plRONpRD4mfON6.ghhhvltp5gZc8m7Deq8R2q7o3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/eVgy7plRONpRD4mfON6.ghhhvltp5gZc8m7Deq8R2q7o3",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "eVgy7plRONpRD4mfON6.ghhhvltp5gZc8m7Deq8R2q7o3",
+          "identifier": [
+            {
+              "use": "official",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC",
+                    "display": "Placer Identifier"
+                  }
+                ],
+                "text": "Placer Identifier"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066907"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/egSVxzEQTsjKgW6Dx6veENM8MSbquRNB41NDAnmTfdEc3",
+              "display": "Pharmacogenomic Panel"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab"
+                }
+              ],
+              "text": "Lab"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.12",
+                "code": "LAB10052",
+                "display": "PHARMACOGENOMICS PANEL"
+              }
+            ],
+            "text": "Pharmacogenomic Panel"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2023-03-28T05:00:00Z",
+          "issued": "2023-03-28T21:22:00Z",
+          "performer": [
+            {
+              "reference": "Practitioner/e9s-IdXQOUVywHOVoisd6xQ3",
+              "type": "Practitioner",
+              "display": "Attending Physician Inpatient, MD"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:890b597b-be50-44ef-81a2-8167bff1b8d1",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for DiagnosticReport - Outside Record Results. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

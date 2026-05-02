@@ -1,0 +1,373 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=evYS76EX6LLeCX2PlRLhvwg3&category=problem-list-item",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:23.494279+00:00",
+  "_probe": "Condition-problems",
+  "_patient_id": "evYS76EX6LLeCX2PlRLhvwg3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 4,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=problem-list-item&patient=evYS76EX6LLeCX2PlRLhvwg3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/esuC6Kb78LKC026FoTyp5Vw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/esuC6Kb78LKC026FoTyp5Vw3",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "esuC6Kb78LKC026FoTyp5Vw3",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "W54.0XXA",
+                "display": "Bitten by dog, initial encounter"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "283734005",
+                "display": "Dog Bite - Wound"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "879.8",
+                "display": "Dog bite"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                "code": "34233",
+                "display": "Dog bite"
+              }
+            ],
+            "text": "Dog bite"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "onsetDateTime": "2019-04-09",
+          "recordedDate": "2019-04-09"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/eOnoZ4eQbuscBn3Ay0vmZXQ3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/eOnoZ4eQbuscBn3Ay0vmZXQ3",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "eOnoZ4eQbuscBn3Ay0vmZXQ3",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "R57.9",
+                "display": "Shock, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27942005",
+                "display": "Shock"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "785.50",
+                "display": "Shock (CMS/HCC)"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                "code": "88061",
+                "display": "Shock (CMS/HCC)"
+              }
+            ],
+            "text": "Shock (CMS/HCC)"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "onsetDateTime": "2019-04-09",
+          "recordedDate": "2019-04-09"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/eGMt7Bv9R.3XB8qVZU-Lksg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/eGMt7Bv9R.3XB8qVZU-Lksg3",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "eGMt7Bv9R.3XB8qVZU-Lksg3",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "A15.0",
+                "display": "Tuberculosis of lung"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "154283005",
+                "display": "Pulmonary Tuberculosis"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "011.90",
+                "display": "TB (pulmonary tuberculosis)"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                "code": "318069",
+                "display": "TB (pulmonary tuberculosis)"
+              }
+            ],
+            "text": "TB (pulmonary tuberculosis)"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "onsetDateTime": "2019-04-09",
+          "recordedDate": "2019-04-09"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/epMyvLtPK3IjLouV4H81c-g3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/epMyvLtPK3IjLouV4H81c-g3",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "epMyvLtPK3IjLouV4H81c-g3",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "E11.9",
+                "display": "Type 2 diabetes mellitus without complications"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "44054006",
+                "display": "Type 2 Diabetes Mellitus"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "250.00",
+                "display": "Diabetes mellitus type 2, uncomplicated (CMS/HCC)"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                "code": "941948",
+                "display": "Diabetes mellitus type 2, uncomplicated (CMS/HCC)"
+              }
+            ],
+            "text": "Diabetes mellitus type 2, uncomplicated (CMS/HCC)"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "onsetDateTime": "2019-04-09",
+          "recordedDate": "2019-04-09"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:9948174e-e544-4a43-a303-9ea6f3ad128f",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Condition - Outside Record Problems. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

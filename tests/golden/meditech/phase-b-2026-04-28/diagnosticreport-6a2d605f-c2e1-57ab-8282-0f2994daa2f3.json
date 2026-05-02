@@ -1,0 +1,67 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DiagnosticReport/6a2d605f-c2e1-57ab-8282-0f2994daa2f3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:53.125371+00:00",
+  "body": {
+    "id": "6a2d605f-c2e1-57ab-8282-0f2994daa2f3",
+    "status": "final",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+            "code": "LAB",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+          "system": "http://www.ama-assn.org/go/cpt",
+          "code": "83880",
+          "display": "B-type natriuretic peptide"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "390917008",
+          "display": "B-type natriuretic peptide"
+        }
+      ],
+      "text": "B-type natriuretic peptide"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "encounter": {
+      "reference": "Encounter/681e2d1f-0c5a-50f0-9429-ffddb5f2ae21",
+      "type": "Encounter"
+    },
+    "performer": [
+      {
+        "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+        "type": "Practitioner",
+        "display": "William Butler"
+      }
+    ],
+    "result": [
+      {
+        "reference": "Observation/LA.48c96a79-f1b5-5192-8339-96b4415f4ee7",
+        "type": "Observation"
+      }
+    ],
+    "effectiveDateTime": "2023-02-02T12:00:00+00:00",
+    "issued": "2023-05-05T11:45:00+00:00",
+    "meta": {
+      "lastUpdated": "2023-05-05T11:45:00+00:00"
+    },
+    "resourceType": "DiagnosticReport"
+  }
+}

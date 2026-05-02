@@ -1,0 +1,49 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Patient?totally-bogus-param=foo",
+    "status": 400
+  },
+  "_captured_at": "2026-04-26T21:48:47.066327+00:00",
+  "body": {
+    "resourceType": "OperationOutcome",
+    "issue": [
+      {
+        "severity": "information",
+        "code": "invalid",
+        "details": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+              "code": "59100",
+              "display": "Content invalid against the specification or a profile."
+            }
+          ],
+          "text": "Content invalid against the specification or a profile."
+        },
+        "diagnostics": "Unknown parameter: TOTALLY-BOGUS-PARAM. Parameter has been ignored."
+      },
+      {
+        "severity": "fatal",
+        "code": "business-rule",
+        "details": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+              "code": "59159",
+              "display": "The content/operation failed to pass a business rule, and so could not proceed."
+            }
+          ],
+          "text": "The content/operation failed to pass a business rule, and so could not proceed."
+        },
+        "diagnostics": "This resource requires demographics or _id parameter for searching.",
+        "location": [
+          "/f:demographics/_id"
+        ],
+        "expression": [
+          "demographics/_id"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CarePlan?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:49.521205+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CarePlan?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CarePlan/e1f7f1d0-aab9-5cc7-95d3-3c48c251f115",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e1f7f1d0-aab9-5cc7-95d3-3c48c251f115",
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/1dbe9453-ff3d-544a-98aa-b678320cd481",
+            "type": "Encounter"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><b>Plan of Treatment:</b><br /><br />\rContinue with prescribed medication regimen. Implement cardiovascular exercise program 4-5 times daily for 20-30 min/session. Improve dietary habits, limiting daily caloric intake to 1800 calories, in addition to limiting salt content in food. Implement weight loss goal of 40 lbs, with 10 lbs weight loss by next visit.   </div>"
+          },
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan",
+                  "display": "Care plan"
+                }
+              ],
+              "text": "Discharge Assessment & Plan"
+            }
+          ],
+          "title": "Discharge",
+          "resourceType": "CarePlan"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CarePlan/26953a46-5a28-5ef5-81d1-23d33a5d720c",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "26953a46-5a28-5ef5-81d1-23d33a5d720c",
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "display": "Bond,Paula",
+            "type": "Patient"
+          },
+          "encounter": {
+            "reference": "Encounter/1dbe9453-ff3d-544a-98aa-b678320cd481",
+            "type": "Encounter"
+          },
+          "author": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "display": "William Butler",
+            "type": "Practitioner"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\rContinue with prescribed medication regimen. Implement cardiovascular exercise program 4-5 times daily for 20-30 min/session. Improve dietary habits, limiting daily caloric intake to 1800 calories, in addition to limiting salt content in food. Implement weight loss goal of 40 lbs, with 10 lbs weight loss by next visit.   </div>"
+          },
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/careplan-category",
+                  "code": "assess-plan",
+                  "display": "Care plan"
+                }
+              ],
+              "text": "Assessment & Plan"
+            }
+          ],
+          "title": "Office Visit",
+          "created": "2023-05-05T12:56:19+00:00",
+          "resourceType": "CarePlan"
+        }
+      }
+    ],
+    "total": 2,
+    "resourceType": "Bundle"
+  }
+}

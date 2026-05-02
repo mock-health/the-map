@@ -1,0 +1,79 @@
+{
+  "ehr": "cerner",
+  "captured_date": "2026-04-27",
+  "probes_run": [
+    "Patient",
+    "AllergyIntolerance",
+    "Condition-problems",
+    "Condition-encounter-diag",
+    "Condition-health-concern",
+    "Observation-lab",
+    "Observation-vital-signs",
+    "MedicationRequest",
+    "Encounter",
+    "Procedure",
+    "DiagnosticReport-lab",
+    "Immunization",
+    "DocumentReference"
+  ],
+  "patient_selection_source": "ehrs/cerner/p0_patient_selection.json",
+  "raw_findings_count": 450,
+  "deduped_deviations_count": 176,
+  "category_counts": {
+    "matches": 131,
+    "missing": 16,
+    "value-set-unverified-locally": 20,
+    "value-set-mismatch": 4,
+    "value-set-narrowed": 5
+  },
+  "patients_per_probe": {
+    "Patient": [
+      "12724066",
+      "12742399",
+      "12744580"
+    ],
+    "AllergyIntolerance": [
+      "12724066",
+      "12742399"
+    ],
+    "Condition-problems": [
+      "12724066",
+      "12742399",
+      "12744580"
+    ],
+    "Observation-lab": [
+      "12724066",
+      "12742399"
+    ],
+    "Observation-vital-signs": [
+      "12724066",
+      "12742399",
+      "12752183"
+    ],
+    "MedicationRequest": [
+      "12724066",
+      "12742399"
+    ],
+    "Encounter": [
+      "12724066",
+      "12742399",
+      "12752183"
+    ],
+    "Procedure": [
+      "12724066",
+      "12742399"
+    ],
+    "DiagnosticReport-lab": [
+      "12724066",
+      "12742399"
+    ],
+    "Immunization": [
+      "12742399"
+    ],
+    "DocumentReference": [
+      "12724066",
+      "12742399",
+      "12752183"
+    ]
+  }
+}

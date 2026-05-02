@@ -1,0 +1,1578 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=eq081-VQEgP8drUUqCWzHfw3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:45.834658+00:00",
+  "_probe": "DocumentReference",
+  "_patient_id": "eq081-VQEgP8drUUqCWzHfw3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 20,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=eq081-VQEgP8drUUqCWzHfw3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eT7ZBGFMt93oRbyxUJ8SMHQ3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eT7ZBGFMt93oRbyxUJ8SMHQ3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eT7ZBGFMt93oRbyxUJ8SMHQ3",
+          "identifier": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+              "value": "195588"
+            },
+            {
+              "system": "urn:oid:1.2.840.114350.1.72.3.15",
+              "value": "1.2.840.114350.1.13.0.1.7.2.727879_195588"
+            }
+          ],
+          "status": "current",
+          "docStatus": "preliminary",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+                "code": "2",
+                "display": "Consults"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+                "code": "2",
+                "display": "Consults"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11488-4",
+                "display": "Consult note",
+                "userSelected": true
+              }
+            ],
+            "text": "Consults"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "date": "2021-01-13T09:25:20Z",
+          "author": [
+            {
+              "reference": "Practitioner/exfo6E4EXjWsnhA1OGVElgw3",
+              "type": "Practitioner",
+              "display": "User Epic"
+            }
+          ],
+          "custodian": {
+            "identifier": {
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+            },
+            "display": "FHIR Sandbox"
+          },
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                  "code": "NOPAT",
+                  "display": "no disclosure to patient, family or caregivers without attending provider's authorization"
+                }
+              ],
+              "text": "no disclosure to patient, family or caregivers without attending provider's authorization"
+            }
+          ],
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "Binary/e1WKN8.cCY8PGKAe8PemIkg3"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/rtf",
+                "url": "Binary/fqdIwrpRxihJSgNp2SWHt4Bw9bbWTYOE7reaW4uwG0i84"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "extension": [
+              {
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                      "code": "3",
+                      "display": "Registered Nurse"
+                    }
+                  ],
+                  "text": "Registered Nurse"
+                },
+                "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+              }
+            ],
+            "encounter": [
+              {
+                "reference": "Encounter/e6kBx6PwnxIv.5kCifScsWg3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27556"
+                },
+                "display": "Office Visit"
+              }
+            ],
+            "period": {
+              "start": "2019-05-28T13:37:00Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eodYta58HRE9wifVZaHe6sg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eodYta58HRE9wifVZaHe6sg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eodYta58HRE9wifVZaHe6sg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730091"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "12",
+                "display": "HIPAA Notice of Privacy"
+              }
+            ],
+            "text": "HIPAA Notice of Privacy"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eO.oQtf0Au-85cRpccvpgTA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eO.oQtf0Au-85cRpccvpgTA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eO.oQtf0Au-85cRpccvpgTA3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730092"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201016",
+                "display": "Hospital Consent for Treatment"
+              }
+            ],
+            "text": "Hospital Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eTzOKw6DOTR.z5WoH4HuYxQ3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27546"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eFxbaIgLNQIZlaHRBk7rE6A3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eFxbaIgLNQIZlaHRBk7rE6A3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eFxbaIgLNQIZlaHRBk7rE6A3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730093"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201017",
+                "display": "Physician Office Consent for Treatment"
+              }
+            ],
+            "text": "Physician Office Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eEpb5FJ2R9Hli222naGkhfw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eEpb5FJ2R9Hli222naGkhfw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eEpb5FJ2R9Hli222naGkhfw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730094"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "10",
+                "display": "Advance Directives and Living Will"
+              }
+            ],
+            "text": "Advance Directives and Living Will"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/esoWFBeWnRDsrDevob17yKg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/esoWFBeWnRDsrDevob17yKg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "esoWFBeWnRDsrDevob17yKg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730095"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "11",
+                "display": "Power of Attorney"
+              }
+            ],
+            "text": "Power of Attorney"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/efhVWVr4F0kuvKhDEv-nEkw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/efhVWVr4F0kuvKhDEv-nEkw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "efhVWVr4F0kuvKhDEv-nEkw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730096"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201007",
+                "display": "Hospital Financial Release of Information"
+              }
+            ],
+            "text": "Hospital Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eTzOKw6DOTR.z5WoH4HuYxQ3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27546"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/e.LYl0WkOlWMOpGva35e7AA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/e.LYl0WkOlWMOpGva35e7AA3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "e.LYl0WkOlWMOpGva35e7AA3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730097"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201015",
+                "display": "Physician Office Financial Release of Information"
+              }
+            ],
+            "text": "Physician Office Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eGeW.YuYrYDSMWuI7jNo-qw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eGeW.YuYrYDSMWuI7jNo-qw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eGeW.YuYrYDSMWuI7jNo-qw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730098"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201000",
+                "display": "Photo ID"
+              }
+            ],
+            "text": "Photo ID"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eK9g8EP9KNxDNXAehfAx20A3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eK9g8EP9KNxDNXAehfAx20A3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eK9g8EP9KNxDNXAehfAx20A3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730099"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201003",
+                "display": "Insurance Card"
+              }
+            ],
+            "text": "Insurance Card"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/endj8drgP66CZ8UVMCh2g3A3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/endj8drgP66CZ8UVMCh2g3A3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "endj8drgP66CZ8UVMCh2g3A3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730113"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201016",
+                "display": "Hospital Consent for Treatment"
+              }
+            ],
+            "text": "Hospital Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/e9h9CTA-1WXoNXcedrOpEIA3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27550"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/evSuo15xkqicpmPmUpJnDHw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/evSuo15xkqicpmPmUpJnDHw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "evSuo15xkqicpmPmUpJnDHw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730114"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201007",
+                "display": "Hospital Financial Release of Information"
+              }
+            ],
+            "text": "Hospital Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/e9h9CTA-1WXoNXcedrOpEIA3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27550"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/evprpiYAFLSuv3w.7lwuiIQ3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/evprpiYAFLSuv3w.7lwuiIQ3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "evprpiYAFLSuv3w.7lwuiIQ3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730436"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201016",
+                "display": "Hospital Consent for Treatment"
+              }
+            ],
+            "text": "Hospital Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/ebg7b8alz6KDIvgGL9baInQ3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27762"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eFQYA..xcb2F5qoXuV8XZsg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eFQYA..xcb2F5qoXuV8XZsg3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eFQYA..xcb2F5qoXuV8XZsg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730437"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201007",
+                "display": "Hospital Financial Release of Information"
+              }
+            ],
+            "text": "Hospital Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/ebg7b8alz6KDIvgGL9baInQ3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27762"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eOjkAIIj.C6yBiFnugDEw7w3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/eOjkAIIj.C6yBiFnugDEw7w3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "eOjkAIIj.C6yBiFnugDEw7w3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730446"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201016",
+                "display": "Hospital Consent for Treatment"
+              }
+            ],
+            "text": "Hospital Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/enX3vM0T.WL-kJjG5OX2jSw3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27775"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ez7PC8HWBk2QNejlBrJ4a0w3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ez7PC8HWBk2QNejlBrJ4a0w3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ez7PC8HWBk2QNejlBrJ4a0w3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730447"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201007",
+                "display": "Hospital Financial Release of Information"
+              }
+            ],
+            "text": "Hospital Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/enX3vM0T.WL-kJjG5OX2jSw3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27775"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/efFroQO8F7R2uPh30G0RyKw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/efFroQO8F7R2uPh30G0RyKw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "efFroQO8F7R2uPh30G0RyKw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730448"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201016",
+                "display": "Hospital Consent for Treatment"
+              }
+            ],
+            "text": "Hospital Consent for Treatment"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eDMt4VnxQ5igKdearpD-k7w3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27776"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ef7Ju7.Jj5dtrdzqKPzlULw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ef7Ju7.Jj5dtrdzqKPzlULw3",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ef7Ju7.Jj5dtrdzqKPzlULw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.686783",
+              "value": "730449"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.686783.100",
+                "code": "201007",
+                "display": "Hospital Financial Release of Information"
+              }
+            ],
+            "text": "Hospital Financial Release of Information"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/documentreference-category",
+                  "code": "document-information",
+                  "display": "Document Information"
+                }
+              ],
+              "text": "Document Information"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "extension": [
+                  {
+                    "valueCode": "not-applicable",
+                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+                  }
+                ]
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/eDMt4VnxQ5igKdearpD-k7w3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27776"
+                },
+                "display": "Appointment"
+              }
+            ]
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70UQILoe8888jaFzzR0Sr1z8E4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70UQILoe8888jaFzzR0Sr1z8E4",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ff4TK0R1fHwoJO-XKhI70UQILoe8888jaFzzR0Sr1z8E4",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.8.688883.146"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3"
+              }
+            ],
+            "text": "Encounter Summary"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/document-reference-category",
+                  "code": "summary-document",
+                  "display": "Summary Document"
+                }
+              ],
+              "text": "Summary Document"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "date": "2019-10-24T15:11:56Z",
+          "author": [
+            {
+              "display": "FHIR Sandbox"
+            }
+          ],
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "Binary/fMx3jGctXpu4WmCzzoRKrs9IMBBrP-ikNLsfkmac8Reg4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:hl7-org:sdwg:ccda-structuredBody:2.1",
+                "display": "Structured Body C-CDA 2.1"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/e6kBx6PwnxIv.5kCifScsWg3",
+                "identifier": {
+                  "use": "usual",
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+                  "value": "27556"
+                },
+                "display": "Office Visit"
+              }
+            ],
+            "period": {
+              "start": "2019-05-28"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70UYKcOZCHFVBL1fygT8K8w1Y4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference/ff4TK0R1fHwoJO-XKhI70UYKcOZCHFVBL1fygT8K8w1Y4",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "ff4TK0R1fHwoJO-XKhI70UYKcOZCHFVBL1fygT8K8w1Y4",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:oid:1.2.840.114350.1.13.0.1.7.8.688883.1462"
+            }
+          ],
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "34133-9"
+              }
+            ],
+            "text": "Patient Summary"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/document-reference-category",
+                  "code": "summary-document",
+                  "display": "Summary Document"
+                }
+              ],
+              "text": "Summary Document"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+            "display": "Lin, Derrick"
+          },
+          "date": "2020-10-10T10:48:01Z",
+          "author": [
+            {
+              "display": "FHIR Sandbox"
+            }
+          ],
+          "custodian": {
+            "display": "FHIR Sandbox"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "Binary/fMx3jGctXpu4WmCzzoRKrswzisOhGuZGyzafngkP1uuA4"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:hl7-org:sdwg:ccda-structuredBody:2.1",
+                "display": "Structured Body C-CDA 2.1"
+              }
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

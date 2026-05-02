@@ -1,0 +1,1115 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12742399",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:49:39.487779+00:00",
+  "_probe": "Patient",
+  "_patient_id": "12742399",
+  "body": {
+    "resourceType": "Patient",
+    "id": "12742399",
+    "meta": {
+      "versionId": "123945",
+      "lastUpdated": "2025-07-24T20:24:02.000Z"
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Patient</b></p><p><b>Name</b>: SMART II, SANDY</p><p><b>Status</b>: Active</p><p><b>DOB</b>: Sep 15, 2020</p><p><b>Administrative Gender</b>: Female</p><p><b>Marital Status</b>: Married</p></div>"
+    },
+    "extension": [
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2054-5",
+              "display": "Black or African American",
+              "userSelected": false
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Black or African American",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "userSelected": false
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Hispanic, Latino, or Spanish Origin",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "valueCode": "248152002",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex"
+      }
+    ],
+    "identifier": [
+      {
+        "id": "CI-490117368-0",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2",
+              "display": "Community Medical Record Number",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "Community Medical Record Number"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.787.0.0",
+        "value": "9006143802",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "9006143802",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        }
+      },
+      {
+        "id": "CI-490052464-1",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:2.16.840.1.113883.6.1000",
+        "value": "490052464",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "00490052464",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2019-12-26T15:17:05.000Z"
+        }
+      },
+      {
+        "id": "CI-490068254-3",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "22",
+              "display": "Military Id",
+              "userSelected": true
+            }
+          ],
+          "text": "Military Id"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.42.10001.100001.12",
+        "value": "1005007021",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1005007021",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        }
+      },
+      {
+        "id": "CI-490060159-4",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "670843",
+              "display": "Messaging",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "U",
+              "display": "Unspecified identifier",
+              "userSelected": false
+            }
+          ],
+          "text": "Messaging"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.13.8",
+        "value": "932C21D68DC84C2E8203C4920EFCD21D",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "932C21D68DC84C2E8203C4920EFCD21D",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2020-07-09T14:33:47.000Z"
+        }
+      },
+      {
+        "id": "CI-490154911-5",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2553236785",
+              "display": "MIllennium Person Identifier",
+              "userSelected": true
+            }
+          ],
+          "text": "MIllennium Person Identifier"
+        },
+        "_system": {
+          "extension": [
+            {
+              "valueCode": "unknown",
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            }
+          ]
+        },
+        "value": "13428",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "13428",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2020-12-18T19:15:13.000Z"
+        }
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "id": "CI-12742399-0",
+        "use": "official",
+        "text": "SMART II, SANDY",
+        "family": "SMART",
+        "given": [
+          "SANDY"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2019-12-26T15:17:05.000Z"
+        }
+      },
+      {
+        "id": "CI-495101547-0",
+        "use": "old",
+        "text": "Smart II, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2025-01-03T20:06:49.000Z",
+          "end": "2025-02-07T09:32:36.000Z"
+        }
+      },
+      {
+        "id": "CI-494759223-1",
+        "use": "old",
+        "text": "Smart IV, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "IV"
+        ],
+        "period": {
+          "start": "2024-12-20T06:13:40.000Z",
+          "end": "2025-01-03T20:06:49.000Z"
+        }
+      },
+      {
+        "id": "CI-494695562-2",
+        "use": "old",
+        "text": "Smart II, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2024-12-13T10:26:39.000Z",
+          "end": "2024-12-20T06:13:40.000Z"
+        }
+      },
+      {
+        "id": "CI-494655624-3",
+        "use": "old",
+        "text": "Smart III, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2024-12-12T09:16:12.000Z",
+          "end": "2024-12-13T10:26:39.000Z"
+        }
+      },
+      {
+        "id": "CI-494649679-4",
+        "use": "old",
+        "text": "Smart IV, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "IV"
+        ],
+        "period": {
+          "start": "2024-12-11T07:10:49.000Z",
+          "end": "2024-12-12T09:16:12.000Z"
+        }
+      },
+      {
+        "id": "CI-494642618-5",
+        "use": "old",
+        "text": "Smart III, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2024-12-10T04:14:51.000Z",
+          "end": "2024-12-11T07:10:49.000Z"
+        }
+      },
+      {
+        "id": "CI-494637066-6",
+        "use": "old",
+        "text": "Smart II, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2024-12-09T05:26:56.000Z",
+          "end": "2024-12-10T04:14:51.000Z"
+        }
+      },
+      {
+        "id": "CI-494627271-7",
+        "use": "old",
+        "text": "Smart IV, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "IV"
+        ],
+        "period": {
+          "start": "2024-11-26T04:30:32.000Z",
+          "end": "2024-12-09T05:26:56.000Z"
+        }
+      },
+      {
+        "id": "CI-494571422-8",
+        "use": "old",
+        "text": "Smart II, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2024-11-26T04:28:05.000Z",
+          "end": "2024-11-26T04:30:32.000Z"
+        }
+      },
+      {
+        "id": "CI-494571413-9",
+        "use": "old",
+        "text": "Smart IV, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "IV"
+        ],
+        "period": {
+          "start": "2024-11-19T03:59:02.000Z",
+          "end": "2024-11-26T04:28:05.000Z"
+        }
+      },
+      {
+        "id": "CI-494536528-10",
+        "use": "old",
+        "text": "Smart III, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2024-11-18T05:22:15.000Z",
+          "end": "2024-11-19T03:59:02.000Z"
+        }
+      },
+      {
+        "id": "CI-494528428-11",
+        "use": "old",
+        "text": "Smart II, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2024-11-13T03:58:14.000Z",
+          "end": "2024-11-18T05:22:15.000Z"
+        }
+      },
+      {
+        "id": "CI-494502490-12",
+        "use": "old",
+        "text": "Smart III, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2024-11-12T04:06:08.000Z",
+          "end": "2024-11-13T03:58:14.000Z"
+        }
+      },
+      {
+        "id": "CI-494497068-13",
+        "use": "old",
+        "text": "Smart Jr., Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "Jr."
+        ],
+        "period": {
+          "start": "2024-09-23T10:27:21.000Z",
+          "end": "2024-11-12T04:06:08.000Z"
+        }
+      },
+      {
+        "id": "CI-494260618-14",
+        "use": "old",
+        "text": "Smart III, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2024-09-23T10:23:53.000Z",
+          "end": "2024-09-23T10:27:21.000Z"
+        }
+      },
+      {
+        "id": "CI-494260607-15",
+        "use": "old",
+        "text": "Smart IV, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "suffix": [
+          "IV"
+        ],
+        "period": {
+          "start": "2024-09-23T09:50:39.000Z",
+          "end": "2024-09-23T10:23:53.000Z"
+        }
+      },
+      {
+        "id": "CI-494260531-16",
+        "use": "old",
+        "text": "Smart, Sandy",
+        "family": "Smart",
+        "given": [
+          "Sandy"
+        ],
+        "period": {
+          "start": "2023-08-01T17:30:12.000Z",
+          "end": "2024-09-23T09:50:39.000Z"
+        }
+      },
+      {
+        "id": "CI-491764977-17",
+        "use": "old",
+        "text": "SMART, SANDY A",
+        "family": "SMART",
+        "given": [
+          "SANDY",
+          "A"
+        ],
+        "period": {
+          "start": "2019-12-26T15:17:05.000Z",
+          "end": "2023-08-01T17:30:12.000Z"
+        }
+      }
+    ],
+    "telecom": [
+      {
+        "id": "CI-PH-29878381-0",
+        "extension": [
+          {
+            "valueUrl": "(651)760-7651",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "6517607651",
+        "use": "mobile",
+        "rank": 1
+      },
+      {
+        "id": "CI-PH-29904503-1",
+        "extension": [
+          {
+            "valueUrl": "5012889406",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5012889406",
+        "use": "mobile",
+        "rank": 2
+      },
+      {
+        "id": "CI-PH-29904507-2",
+        "extension": [
+          {
+            "valueUrl": "5012889406",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5012889406",
+        "use": "mobile",
+        "rank": 3
+      },
+      {
+        "id": "CI-PH-29904516-3",
+        "extension": [
+          {
+            "valueUrl": "5012889406",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5012889406",
+        "use": "mobile",
+        "rank": 4
+      },
+      {
+        "id": "CI-PH-29904520-4",
+        "extension": [
+          {
+            "valueUrl": "5012889406",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5012889406",
+        "use": "mobile",
+        "rank": 5
+      },
+      {
+        "id": "CI-PH-29904495-5",
+        "extension": [
+          {
+            "valueUrl": "5012889406",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5012889406",
+        "use": "mobile",
+        "rank": 6
+      },
+      {
+        "id": "CI-PH-29904499-6",
+        "extension": [
+          {
+            "valueUrl": "5012889406",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5012889406",
+        "use": "mobile",
+        "rank": 7
+      },
+      {
+        "id": "CI-EM-29822924-0",
+        "system": "email",
+        "value": "iqhtomas@gmail.com",
+        "use": "home",
+        "rank": 1,
+        "period": {
+          "start": "2020-07-09T14:20:26.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-29904505-1",
+        "system": "email",
+        "value": "clarrea@epionhealth.com",
+        "use": "home",
+        "rank": 2
+      },
+      {
+        "id": "CI-EM-29904509-2",
+        "system": "email",
+        "value": "clarrea@epionhealth.com",
+        "use": "home",
+        "rank": 3
+      },
+      {
+        "id": "CI-EM-29904518-3",
+        "system": "email",
+        "value": "clarrea@epionhealth.com",
+        "use": "home",
+        "rank": 4
+      },
+      {
+        "id": "CI-EM-29904522-4",
+        "system": "email",
+        "value": "clarrea@epionhealth.com",
+        "use": "home",
+        "rank": 5
+      },
+      {
+        "id": "CI-EM-29904497-5",
+        "system": "email",
+        "value": "clarrea@epionhealth.com",
+        "use": "home",
+        "rank": 6
+      },
+      {
+        "id": "CI-EM-29904501-6",
+        "system": "email",
+        "value": "clarrea@epionhealth.com",
+        "use": "home",
+        "rank": 7
+      },
+      {
+        "id": "CI-EM-30408844-7",
+        "system": "email",
+        "value": "Ashley+sandy@everydose.ai",
+        "use": "home",
+        "rank": 8,
+        "period": {
+          "start": "2024-03-14T04:46:06.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30131725-8",
+        "system": "email",
+        "value": "anil+sandys@everydose.in",
+        "use": "home",
+        "rank": 9,
+        "period": {
+          "start": "2024-01-18T10:04:11.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30435370-9",
+        "system": "email",
+        "value": "anil+sandys1@everydose.in",
+        "use": "home",
+        "rank": 10,
+        "period": {
+          "start": "2024-05-22T06:39:05.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30428875-10",
+        "system": "email",
+        "value": "anuva+sandysmart@everydose.in",
+        "use": "home",
+        "rank": 11,
+        "period": {
+          "start": "2024-04-29T01:18:36.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30421367-11",
+        "system": "email",
+        "value": "anil+smarts@everydose.in",
+        "use": "home",
+        "rank": 12,
+        "period": {
+          "start": "2024-04-05T05:24:06.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30482236-12",
+        "system": "email",
+        "value": "anuva+ss15@everydose.in",
+        "use": "home",
+        "rank": 13,
+        "period": {
+          "start": "2024-09-02T01:40:54.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30478428-13",
+        "system": "email",
+        "value": "anuva+ss2@everydose.in",
+        "use": "home",
+        "rank": 14,
+        "period": {
+          "start": "2024-08-26T06:28:17.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32384239-14",
+        "system": "email",
+        "value": "Ashley+s7221@EveryDose.ai",
+        "use": "home",
+        "rank": 15,
+        "period": {
+          "start": "2025-07-22T08:53:11.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32384209-15",
+        "system": "email",
+        "value": "Ashley+s722@EveryDose.ai",
+        "use": "home",
+        "rank": 16,
+        "period": {
+          "start": "2025-07-22T08:39:28.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32384207-16",
+        "system": "email",
+        "value": "Ashley+sandy7223@everydose.ai",
+        "use": "home",
+        "rank": 17,
+        "period": {
+          "start": "2025-07-22T08:33:08.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32384193-17",
+        "system": "email",
+        "value": "Ashley+sandy7222@everydose.ai",
+        "use": "home",
+        "rank": 18,
+        "period": {
+          "start": "2025-07-22T07:55:02.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32384173-18",
+        "system": "email",
+        "value": "Ashley+sandy7221@everydose.ai",
+        "use": "home",
+        "rank": 19,
+        "period": {
+          "start": "2025-07-22T07:39:20.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32384167-19",
+        "system": "email",
+        "value": "Ashley+sandy722@EveryDose.ai",
+        "use": "home",
+        "rank": 20,
+        "period": {
+          "start": "2025-07-22T07:26:47.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-32389674-20",
+        "system": "email",
+        "value": "Ashley+s724@everydose.ai",
+        "use": "home",
+        "rank": 21,
+        "period": {
+          "start": "2025-07-24T06:52:52.000Z"
+        }
+      }
+    ],
+    "gender": "female",
+    "birthDate": "2020-09-15",
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "id": "CI-24326098-0",
+        "use": "home",
+        "text": "55 EAST MONROE STREET\nCHICAGO, IL 60603\nUS",
+        "line": [
+          "55 EAST MONROE STREET"
+        ],
+        "city": "CHICAGO",
+        "district": "Jackson",
+        "state": "IL",
+        "postalCode": "60603",
+        "country": "US",
+        "period": {
+          "start": "2019-12-26T15:16:36.000Z"
+        }
+      }
+    ],
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/38",
+          "code": "309237",
+          "display": "Married",
+          "userSelected": true
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "M",
+          "display": "Married",
+          "userSelected": false
+        }
+      ],
+      "text": "Married"
+    },
+    "contact": [
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724071-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "2553243305",
+                "display": "Authorized Representative",
+                "userSelected": true
+              }
+            ],
+            "text": "Authorized Representative"
+          }
+        ],
+        "name": {
+          "id": "CI-12724071-0",
+          "use": "official",
+          "text": "SMART, VALERIE"
+        },
+        "period": {
+          "start": "2025-06-12T15:31:24.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724066-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12724066-1",
+          "use": "official",
+          "text": "SMARTS SR., NANCYS II"
+        },
+        "period": {
+          "start": "2025-06-12T15:31:34.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774598-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774598-2",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774601-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774601-3",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774595-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774595-4",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774596-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774596-5",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774597-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774597-6",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774600-12742399"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774600-7",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      }
+    ],
+    "communication": [
+      {
+        "language": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/36",
+              "code": "151",
+              "display": "English",
+              "userSelected": true
+            },
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "en",
+              "display": "English",
+              "userSelected": false
+            }
+          ],
+          "text": "English"
+        },
+        "preferred": true
+      }
+    ],
+    "generalPractitioner": [
+      {
+        "id": "CI-490136601-0",
+        "reference": "Practitioner/12744688",
+        "display": "PWDentrix, Dentalprofessional"
+      },
+      {
+        "id": "CI-490052511-1",
+        "reference": "Practitioner/4122622",
+        "display": "Cerner Test, Physician - Hospitalist Cerner"
+      }
+    ]
+  }
+}

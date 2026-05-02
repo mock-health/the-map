@@ -1,0 +1,32 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CareTeam/9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:49.879063+00:00",
+  "body": {
+    "id": "9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": "active",
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "participant": [
+      {
+        "member": {
+          "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+          "type": "Practitioner",
+          "display": "William Butler"
+        },
+        "role": [
+          {
+            "text": "Primary Care Provider"
+          }
+        ]
+      }
+    ],
+    "resourceType": "CareTeam"
+  }
+}

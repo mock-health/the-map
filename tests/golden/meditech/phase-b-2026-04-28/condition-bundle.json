@@ -1,0 +1,1105 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Condition?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:49.103292+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/5454cff8-a700-5686-8abd-bd80691402b8",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "5454cff8-a700-5686-8abd-bd80691402b8",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "text": "History of appendectomy"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "1972",
+          "recordedDate": "2023-05-05T12:34:05+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/a0f4ef5b-e9ce-52a8-aead-be5190596cda",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "a0f4ef5b-e9ce-52a8-aead-be5190596cda",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "2013",
+          "recordedDate": "2023-05-05T12:34:39+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/ca2d7a6d-3fdc-5220-bf50-783b4a2cf424",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "ca2d7a6d-3fdc-5220-bf50-783b4a2cf424",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I20.8",
+                "display": "Other forms of angina pectoris",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "233819005",
+                "display": "Stable angina"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "413.9",
+                "display": "Other and unspecified angina pectoris"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "88"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "188"
+              }
+            ],
+            "text": "Stable angina"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "2012",
+          "recordedDate": "2023-05-05T12:35:19+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/5d655d6d-fa0b-52b8-8382-97c681aacc1f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "5d655d6d-fa0b-52b8-8382-97c681aacc1f",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "R06.02",
+                "display": "Shortness of breath",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "267036007",
+                "display": "Dyspnea"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "786.05",
+                "display": "Shortness of breath"
+              }
+            ],
+            "text": "Shortness of breath"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "2024-03-22",
+          "recordedDate": "2023-05-05T12:35:53+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/b0ff3f35-5d35-52a4-83c0-7ac6afd8c3ca",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b0ff3f35-5d35-52a4-83c0-7ac6afd8c3ca",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "E66.9",
+                "display": "Obesity, unspecified",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "443371000124107",
+                "display": "Obese class I"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "278.00",
+                "display": "Obesity, unspecified"
+              }
+            ],
+            "text": "Obesity (BMI 30.0-34.9)"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "2002",
+          "recordedDate": "2023-05-05T12:36:45+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/a727c07c-0ea7-52af-886d-3cbdd3fc3fa3",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "a727c07c-0ea7-52af-886d-3cbdd3fc3fa3",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I10",
+                "display": "Essential (primary) hypertension",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "38341003",
+                "display": "Hypertensive disorder"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "401.9",
+                "display": "Unspecified essential hypertension"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "187"
+              }
+            ],
+            "text": "Hypertension"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "2002",
+          "recordedDate": "2023-05-05T12:37:26+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/121b3ac1-559e-5476-8020-f7ff6a37e729",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "121b3ac1-559e-5476-8020-f7ff6a37e729",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I25.2",
+                "display": "Old myocardial infarction",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "399211009",
+                "display": "History of myocardial infarction"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "412",
+                "display": "Old myocardial infarction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "188"
+              }
+            ],
+            "text": "Hx of myocardial infarction"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "2012",
+          "recordedDate": "2023-05-05T12:38:07+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/0a9a8157-4e4f-5d7c-8af0-0982b5ab0f26",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "0a9a8157-4e4f-5d7c-8af0-0982b5ab0f26",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "Z87.891",
+                "display": "Personal history of nicotine dependence",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "365982000",
+                "display": "Tobacco smoking consumption - finding"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "V15.82",
+                "display": "Personal history of tobacco use"
+              }
+            ],
+            "text": "History of smoking 10-25 pack years"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "recorder": {
+            "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+            "type": "Practitioner",
+            "display": "William Butler"
+          },
+          "onsetDateTime": "1977",
+          "recordedDate": "2023-05-05T12:38:41+00:00",
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/959b1f5b-a1bf-5b52-9776-72f3b813f5ad",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "959b1f5b-a1bf-5b52-9776-72f3b813f5ad",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/5292f266-4ea2-51da-9ae9-674222f1d115",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "5292f266-4ea2-51da-9ae9-674222f1d115",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/de932a52-52a3-504b-8ebb-45c373fe6292",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "de932a52-52a3-504b-8ebb-45c373fe6292",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/ce477068-76fb-5252-b1ad-077639bdcda4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "ce477068-76fb-5252-b1ad-077639bdcda4",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+            "type": "Encounter"
+          },
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/47fff8ca-1ae8-5158-ad88-0053b3a5d9db",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "47fff8ca-1ae8-5158-ad88-0053b3a5d9db",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "resourceType": "Condition"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition/2be0b511-0eea-5f52-963d-58e652ecec9d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "2be0b511-0eea-5f52-963d-58e652ecec9d",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            }
+          ],
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "I50.20",
+                "display": "Unspecified systolic (congestive) heart failure"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "428.20",
+                "display": "Systolic heart failure, unspecified"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "426263006",
+                "display": "Congestive heart failure due to left ventricular systolic dysfunction"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmshcc",
+                "code": "85"
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/cmsrxhcc",
+                "code": "186"
+              }
+            ],
+            "text": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/1dbe9453-ff3d-544a-98aa-b678320cd481",
+            "type": "Encounter"
+          },
+          "resourceType": "Condition"
+        }
+      }
+    ],
+    "total": 14,
+    "resourceType": "Bundle"
+  }
+}

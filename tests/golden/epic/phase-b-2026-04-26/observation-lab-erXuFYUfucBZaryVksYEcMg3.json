@@ -1,0 +1,516 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=erXuFYUfucBZaryVksYEcMg3&category=laboratory",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:25.739708+00:00",
+  "_probe": "Observation-lab",
+  "_patient_id": "erXuFYUfucBZaryVksYEcMg3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 5,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=laboratory&patient=erXuFYUfucBZaryVksYEcMg3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/faSpwWfVCMbN46Z9NPBBlfcprMmq.3qSsXKb23FkXdcw4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/faSpwWfVCMbN46Z9NPBBlfcprMmq.3qSsXKb23FkXdcw4",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "faSpwWfVCMbN46Z9NPBBlfcprMmq.3qSsXKb23FkXdcw4",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/egf4KkhXmgeVWImXEEYH.CEE1ZgJG5SQy2vBX1HgvBCs3",
+              "display": "Hemoglobin A1c"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab",
+                  "display": "Lab"
+                }
+              ],
+              "text": "Lab"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "4548-4",
+                "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768282",
+                "code": "1558024",
+                "display": "Hemoglobin A1C"
+              }
+            ],
+            "text": "Hemoglobin A1C"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2019-05-28T14:22:00Z",
+          "issued": "2019-05-28T14:22:41Z",
+          "valueQuantity": {
+            "value": 5.1
+          },
+          "specimen": {
+            "reference": "Specimen/e.n21kE9PMQ94vOo1lkT2XkN1av86guPxYsFU20qTQ1M3",
+            "display": "Specimen"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/fpQa5EAB1kLhFOWFQGycwZYltlIO5pmaUpDF5a1-phu44"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/fpQa5EAB1kLhFOWFQGycwZYltlIO5pmaUpDF5a1-phu44",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "fpQa5EAB1kLhFOWFQGycwZYltlIO5pmaUpDF5a1-phu44",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/eK6sCsSKqfbW3Mps-9UTttzTXimr.hD8JVMCVQTY8yMo3",
+              "display": "CBC and differential"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab",
+                  "display": "Lab"
+                }
+              ],
+              "text": "Lab"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "777-3",
+                "display": "Platelets [#/volume] in Blood by Automated count"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768282",
+                "code": "1577116",
+                "display": "Platelets"
+              }
+            ],
+            "text": "Platelets"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2019-05-28T14:21:00Z",
+          "issued": "2019-05-28T14:23:19Z",
+          "valueQuantity": {
+            "value": 322,
+            "unit": "10*3/uL",
+            "system": "http://unitsofmeasure.org",
+            "code": "10*3/uL"
+          },
+          "specimen": {
+            "reference": "Specimen/eMNGz2yeB0i2zJQLTWPG-ylW2KXvT82ov0GmVsYU9VeI3",
+            "display": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "value": 150,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+              },
+              "high": {
+                "value": 399,
+                "unit": "10*3/uL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/uL"
+              },
+              "text": "150 - 399 10*3/uL"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/fpQa5EAB1kLhFOWFQGycwZQM.-iqN-wv4PE222RBLFfs4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/fpQa5EAB1kLhFOWFQGycwZQM.-iqN-wv4PE222RBLFfs4",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "fpQa5EAB1kLhFOWFQGycwZQM.-iqN-wv4PE222RBLFfs4",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/eK6sCsSKqfbW3Mps-9UTttzTXimr.hD8JVMCVQTY8yMo3",
+              "display": "CBC and differential"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab",
+                  "display": "Lab"
+                }
+              ],
+              "text": "Lab"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "789-8",
+                "display": "Erythrocytes [#/volume] in Blood by Automated count"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768282",
+                "code": "1577212",
+                "display": "RBC"
+              }
+            ],
+            "text": "RBC"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2019-05-28T14:21:00Z",
+          "issued": "2019-05-28T14:23:19Z",
+          "valueQuantity": {
+            "value": 4.8,
+            "unit": "10*6/\u00b5L"
+          },
+          "specimen": {
+            "reference": "Specimen/eMNGz2yeB0i2zJQLTWPG-ylW2KXvT82ov0GmVsYU9VeI3",
+            "display": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "value": 4,
+                "unit": "10*6/\u00b5L"
+              },
+              "high": {
+                "value": 5.2,
+                "unit": "10*6/\u00b5L"
+              },
+              "text": "4.00 - 5.20 10*6/\u00b5L"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/fpQa5EAB1kLhFOWFQGycwZXEG-VEWbu.7fAr88rCXwBM4"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/fpQa5EAB1kLhFOWFQGycwZXEG-VEWbu.7fAr88rCXwBM4",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "fpQa5EAB1kLhFOWFQGycwZXEG-VEWbu.7fAr88rCXwBM4",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/eK6sCsSKqfbW3Mps-9UTttzTXimr.hD8JVMCVQTY8yMo3",
+              "display": "CBC and differential"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab",
+                  "display": "Lab"
+                }
+              ],
+              "text": "Lab"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "6690-2",
+                "display": "Leukocytes [#/volume] in Blood by Automated count"
+              },
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768282",
+                "code": "1577876",
+                "display": "Auto WBC"
+              }
+            ],
+            "text": "Auto WBC"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2019-05-28T14:21:00Z",
+          "issued": "2019-05-28T14:23:19Z",
+          "valueQuantity": {
+            "value": 6.5,
+            "unit": "10*3/mL",
+            "system": "http://unitsofmeasure.org",
+            "code": "10*3/mL"
+          },
+          "specimen": {
+            "reference": "Specimen/eMNGz2yeB0i2zJQLTWPG-ylW2KXvT82ov0GmVsYU9VeI3",
+            "display": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "value": 3.3,
+                "unit": "10*3/mL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/mL"
+              },
+              "high": {
+                "value": 10,
+                "unit": "10*3/mL",
+                "system": "http://unitsofmeasure.org",
+                "code": "10*3/mL"
+              },
+              "text": "3.3 - 10.0 10*3/mL"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/feo.AhnEKfmSVA6Y82JlOQf-LyIWYivRF1HkSwCzHp204"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation/feo.AhnEKfmSVA6Y82JlOQf-LyIWYivRF1HkSwCzHp204",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "feo.AhnEKfmSVA6Y82JlOQf-LyIWYivRF1HkSwCzHp204",
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/eikKnNjBSfWHmf2MZw5cvxvZudUUagi02jRCL-GG9YXA3",
+              "display": "Pharmacogenomic Panel"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            },
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab",
+                  "display": "Lab"
+                }
+              ],
+              "text": "Lab"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768282",
+                "code": "1811482",
+                "display": "Genotype:"
+              }
+            ],
+            "text": "Genotype:"
+          },
+          "subject": {
+            "reference": "Patient/erXuFYUfucBZaryVksYEcMg3",
+            "display": "Lopez, Camila Maria"
+          },
+          "encounter": {
+            "reference": "Encounter/elMz2mwjsRvKnZiR.0ceTUg3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27558"
+            },
+            "display": "Office Visit"
+          },
+          "effectiveDateTime": "2023-03-21T21:42:00Z",
+          "issued": "2023-03-21T21:45:34Z",
+          "valueString": "Genotype Value",
+          "interpretation": [
+            {
+              "text": "(NONE)"
+            }
+          ],
+          "note": [
+            {
+              "text": "Test Comment"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/euthx1Y.GwRzO1MfKny2w-4nOUelRKoZ7i261L1kGqUU3",
+            "display": "Specimen"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:dc74fa66-8d80-44aa-9541-65eda2526db9",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Observation - Outside Record Results. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

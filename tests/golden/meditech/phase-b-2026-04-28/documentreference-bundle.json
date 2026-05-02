@@ -1,0 +1,756 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DocumentReference?patient.identifier=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:54.851434+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference?patient.identifier=9bec5771-4796-5189-a54e-352c571a44c8"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/f161d5e6-9c39-50e9-a56e-65d95e5a892f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:b49d2416-c671-40a2-6689-a15b384f9638"
+            },
+            {
+              "use": "secondary",
+              "value": "34"
+            }
+          ],
+          "id": "f161d5e6-9c39-50e9-a56e-65d95e5a892f",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:b49d2416-c671-40a2-6689-a15b384f9638"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18748-4",
+                "display": "Imaging Narrative"
+              }
+            ],
+            "text": "Imaging Narrative"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Practitioner/a1497d50-1976-5183-86ac-92400fb92da6",
+              "type": "Practitioner",
+              "display": "Daniel Symes"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2023-05-10T07:00:00+00:00",
+              "end": "2023-05-10T16:22:00+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBYUmF5IFJlcG9ydCANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaWduZWQNCg0KUGF0aWVudDogQm9uZCxQYXVsYSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1SIzogSUEwMDAwMDANCjMwICAgICAgDQpET0I6IDA2LzE0LzE5NTggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBY2N0OkVCMDAwMDAwMDA3Nw0KICAgICAgDQpBZ2UvU2V4OiA2NCAvIEYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBRE0gRGF0ZTogMDUvMTAvMg0KMyAgICAgIA0KTG9jOiBFRCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpBdHRlbmRpbmcgRHI6IA0KDQoNCk9yZGVyaW5nIFBoeXNpY2lhbjogRS4gVHVja2VyLCBNRA0KRGF0ZSBvZiBTZXJ2aWNlOiAwNS8xMC8yMw0KUHJvY2VkdXJlKHMpOiBYUiBjaGVzdCAyVg0KQWNjZXNzaW9uIE51bWJlcihzKTogQTAwMDAwMDAwMTcNCg0KY2M6IH4NCg0KDQpDaGVzdCBYLXJheQ0KDQpGaW5kaW5nczoNCi0gSW1hZ2luZyBkZW1vbnN0cmF0ZXMgY2FyZGlvbWVnYWx5IHdpdGggaW50ZXJzdGl0aWFsIGVkZW1hIGFuZCBwbGV1cmFsIGVmZnVzaW9ucy4NCi0gQmx1bnRpbmcgb2YgY29zdG9waHJlbmljIGFuZ2xlcw0KDQpJbXByZXNzaW9uOg0KLSBTdWdnZXN0aXZlIG9mIGNvbmdlc3RpdmUgaGVhcnQgZmFpbHVyZQ0KDQoNCg0KDQoNCkRpY3RhdGVkIEJ5OiAgICBEYW5pZWwgU3ltZXMsIE1EICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANClNpZ25lZCBCeTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwNS8xMC8yMyAxMjIyDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCg0KREQvRFQ6IDA1LzEwLzIzIDAzMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpURC9UVDogMDUvMTAvMjMgMDMwMFRyYW5zY3JpcHRpb25pc3Q6IFdQQiAgICAgICAgICAgICAgICAgICAgDQo="
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2023-05-10T16:22:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/9119ab7f-870a-51b9-a83f-28f28aff0479",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:9dd905c2-9535-4dee-d091-4132dedfbde5"
+            },
+            {
+              "use": "secondary",
+              "value": "133"
+            }
+          ],
+          "id": "9119ab7f-870a-51b9-a83f-28f28aff0479",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:9dd905c2-9535-4dee-d091-4132dedfbde5"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18842-5",
+                "display": "Discharge Summary"
+              }
+            ],
+            "text": "Discharge Summary"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Practitioner/ac6c9882-55d9-5cde-a4e9-ee6e017c38b9",
+              "type": "Practitioner",
+              "display": "Michael Coelho"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2025-01-17T17:16:00+00:00",
+              "end": "2025-01-17T17:18:00+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxMDEgTWFpbiBTdHJlZXQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTm9yd29vZCwgTUEgMDIwNjINCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIERpc2NoYXJnZSBTdW1tYXJ5IA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNpZ25lZA0KDQpQYXRpZW50OiBCb25kLFBhdWxhICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTVIjOiBJQTAwMDAwMA0KMzAgICAgICANCkRPQjogMDYvMTQvMTk1OCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFjY3Q6RUIwMDAwMDAwMTQ0DQogICAgICANCkFnZS9TZXg6IDY2IC8gRiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFETSBEYXRlOiAwMy8yMi8yDQo0ICAgICAgDQpMb2M6IDE1TiAgICAgIDE1MDMtMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIERhdGUgb2YgU2VydmljZTowMy8yMi8yNA0KICAgICAgDQpBdHRlbmRpbmcgRHI6IEUgVHVja2VyDQoNCmNjOiB+DQoNCg0KRFM6IFByb3ZpZGVycw0KUHJvdmlkZXINCkRhdGUgb2YgYWRtaXNzaW9uOiANCjAzLzIyLzI0IDA3OjAwDQoNClByaW1hcnkgY2FyZSBwaHlzaWNpYW46IA0KV2lsbGlhbSBCdXRsZXINCg0KDQpEUzogRGlhZ25vc2lzDQpEaXNjaGFyZ2UgRGlhZ25vc2lzDQooMSkgU3lzdG9saWMgY29uZ2VzdGl2ZSBoZWFydCBmYWlsdXJlIHdpdGggcmVkdWNlZCBsZWZ0IHZlbnRyaWN1bGFyIGZ1bmN0aW9uLCBOWUhBIGNsYXNzIDE6IA0KICAgICAgT25zZXQgRGF0ZTogfjIwMTMNCg0KRFM6IFN1bW1hcnkNClRpbWUgU3BlbnQgd2l0aCBQYXRpZW50DQpUaW1lIGF0dGVzdGF0aW9uOiANClRvdGFsIHRpbWUgc3BlbnQgcHJvdmlkaW5nIGFuZC9vciBjb29yZGluYXRpbmcgZGlzY2hhcmdlIHNlcnZpY2VzOg0KDQoNCkRTOiBEYXRhDQpEYXRhIENvbXBsZXRlZCBhbmQgUGVuZGluZw0KQ29tcGxldGVkIHN0dWRpZXMgZHVyaW5nIGhvc3BpdGFsaXphdGlvbjogDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBQZW5kaW5nIGF0IGRpc2NoYXJnZQ0KDQowMy8yMi8yNCAwMDozMA0KQi1UeXBlIE5hdHJpdXJldGljIFBlcHRpZGUgUm91dGluZSANCkJhc2ljIE1ldGFib2xpYyBQYW5lbCBSb3V0aW5lIA0KQ29tcGxldGUgQmxvb2QgQ291bnQgUm91dGluZSANClVyaW5hbHlzaXMgUm91dGluZSANCg0KMDMvMjIvMjQgMDM6MDANCkVDRyAxMiBsZWFkIEVLRyBSb3V0aW5lIA0KWFIgY2hlc3QgMlYgUm91dGluZSANCg0KMDkvMjMvMjQgMTM6MjYNCkNyZWF0aW5pbmUgUm91dGluZSANClBvdGFzc2l1bSBSb3V0aW5lIA0KDQoNCg0KUGVuZGluZyBzdHVkaWVzIGF0IGRpc2NoYXJnZTogDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICBQZW5kaW5nIGF0IGRpc2NoYXJnZQ0KDQowOS8xMC8yNCAxMDoyOQ0KQ29tcGxldGUgQmxvb2QgQ291bnQgUm91dGluZSANCg0KMDkvMjMvMjQgMTM6MjYNCkNvbXBsZXRlIEJsb29kIENvdW50IFJvdXRpbmUgDQpHbHVjb3NlLFVyaW5lIFJhbmRvbSBSb3V0aW5lIA0KDQoNCg0KDQpEaXNjaGFyZ2UgUGxhbg0KRGlzY2hhcmdlDQpEYXRlIG9mIGFkbWlzc2lvbjogMDMvMjIvMjQgMDc6MDANCg0KUHJpbWFyeSBDYXJlIFByb3ZpZGVyOiBCdXRsZXIsV2lsbGlhbQ0KDQpBdHRlbmRpbmcgcGh5c2ljaWFuIG9uIGFkbWlzc2lvbjogVHVja2VyLEUNCg0KUGF0aWVudCBEaXNwb3NpdGlvbjogSG9tZSwgU2VsZi1DYXJlDQoNCkRpc2NoYXJnZSBNZWRpY2F0aW9uczoNCk5vIEFjdGlvbg0KICBtZXRvcHJvbG9sIHN1Y2NpbmF0ZSAyNSBtZyBUYWJsZXQgRXh0ZW5kZWQgUmVsZWFzZSAyNCBIciANCiAgIDI1IG1nIFBPIFFEQVkgUXR5OiAzMCAwUkYNCiAgYW1veGljaWxsaW4tcG90IGNsYXZ1bGFuYXRlIDUwMC0xMjUgbWcgVGFibGV0IA0KICAgMSB0YWIgUE8gUThIIFF0eTogNyAwUkYNCiAgZnVyb3NlbWlkZSAyMCBtZyB0YWJsZXQgDQogICAyMCBtZyBQTyBRREFZIA0KICBsaXNpbm9wcmlsIDIwIG1nIHRhYmxldCANCiAgIDIwIG1nIFBPIFFEQVkgDQogIG5pdHJvZ2x5Y2VyaW4gW05pdHJvc3RhdF0gMC40IG1nIHRhYmxldCwgc3VibGluZ3VhbCANCiAgIDAuNCBtZyBzdWJsaW5ndWFsIFE1LTE1TSBQUk4gKFJlYXNvbjogY2hlc3QgcGFpbikgDQogICBSeCBJbnN0cnVjdGlvbnM6DQogICBkbyBub3QgZXhjZWVkIDMgZG9zZXMgcGVyIGVwaXNvZGUNCiAgaXNvc29yYmlkZSBtb25vbml0cmF0ZSAzMCBtZyB0YWJsZXQgZXh0ZW5kZWQgcmVsZWFzZSAyNCBociANCiAgIDMwIG1nIFBPIFFBTSANCg0KUmVmZXJyYWxzOg0KQnV0bGVyLFdpbGxpYW0gW1ByaW1hcnkgQ2FyZSBQcm92aWRlciwgTWVkaWNhbF0NCg0KUHJpbnQgTGFuZ3VhZ2U6IEVuZ2xpc2gNCg0KDQoNCkRvY3VtZW50ZWQgQnk6ICBDb2VsaG8sTWljaGFlbCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwMS8xNy8yNSAxMzE2DQpTaWduZWQgQnk6ICAgICAgPEVsZWN0cm9uaWNhbGx5IHNpZ25lZCBieSBNaWNoYWVsIENvZWxobz4gICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgMDEvMTcvMjUgMTMxOA0K"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2025-01-17T17:19:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/bf3a154d-4f13-5f3f-80de-59b9b7efb4b3",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:2e1dfddf-fe00-4164-9fb9-9139c6b62d3d"
+            },
+            {
+              "use": "secondary",
+              "value": "135"
+            }
+          ],
+          "id": "bf3a154d-4f13-5f3f-80de-59b9b7efb4b3",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:2e1dfddf-fe00-4164-9fb9-9139c6b62d3d"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "34117-2",
+                "display": "History & Physical Note"
+              }
+            ],
+            "text": "History & Physical Note"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+              "type": "Organization",
+              "display": "Canton Medical Center"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2025-01-17T18:13:00+00:00",
+              "end": "2025-01-17T18:13:59+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxMDEgTWFpbiBTdHJlZXQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTm9yd29vZCwgTUEgMDIwNjINCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgSGlzdG9yeSAmIFBoeXNpY2FsIFJlcG9ydCANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaWduZWQNCg0KUGF0aWVudDogQm9uZCxQYXVsYSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1SIzogSUEwMDAwMDANCjMwICAgICAgDQpET0I6IDA2LzE0LzE5NTggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBY2N0OkVCMDAwMDAwMDE0NA0KICAgICAgDQpBZ2UvU2V4OiA2NiAvIEYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBRE0gRGF0ZTogMDMvMjIvMg0KNCAgICAgIA0KTG9jOiAxNU4gICAgICAxNTAzLTMgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBEYXRlIG9mIFNlcnZpY2U6MDMvMjIvMjQNCiAgICAgIA0KQXR0ZW5kaW5nIERyOiBFIFR1Y2tlcg0KDQpjYzogfg0KDQoNCkhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzDQpIaXN0b3J5IG9mIFByZXNlbnQgSWxsbmVzcw0KUmVhc29uIEZvciBWaXNpdDogSGVhcnQgZmFpbHVyZQ0KSGlzdG9yeSBvZiBwcmVzZW50IGlsbG5lc3M6IA0KUGF1bGEgQm9uZCBpcyBhIDY2IHllYXIgb2xkIGZlbWFsZSANCg0KDQpQYXN0IE1lZGljYWwgSGlzdG9yeQ0KUGFzdCBIaXN0b3J5DQpTbW9raW5nIHN0YXR1czogbmV2ZXIgc21va2VyDQoNCk1lZGljYXRpb25zDQpIb21lIE1lZGljYXRpb25zIGFuZCBBbGxlcmdpZXMNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSG9tZSBNZWRpY2F0aW9ucw0KDQoNCg0K77+9TWVkaWNhdGlvbiDvv71JbnN0cnVjdGlvbnMg77+9UmVjb3JkZWQg77+9Q29uZmlybWVkIO+/vVR5cGUNCiANCiAgICAgICAgICAgICAgICAgICAgICAgICAgZnVyb3NlbWlkZSAyMCBtZyB0YWJsZXQgICAyMCBtZyBQTyBRREFZIENoZXN0IHBhaW4gMDUvDQowNS8yMyAwMy8yMi8yNCBIaXN0b3J5DQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGlzb3NvcmJpZGUgbW9ub25pdHJhdGUgMzAgbWcgMzAgbWcgUE8gUUFNIDA1LzA1LzIzIDAzLw0KMjIvMjQgSGlzdG9yeQ0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFibGV0LGV4dGVuZGVkIHJlbGVhc2UgMjQgaHIgICAgDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGxpc2lub3ByaWwgMjAgbWcgdGFibGV0ICAgMjAgbWcgUE8gUURBWSAwNS8wNS8yMyAwMy8yMg0KLzI0IEhpc3RvcnkNCiANCiAgICAgICAgICAgICAgICAgICAgICAgICAgbml0cm9nbHljZXJpbiAwLjQgbWcgc3VibGluZ3VhbCAwLjQgbWcgc3VibGluZ3VhbCBRNS0xDQo1TSBQUk4gY2hlc3QgMDUvMDUvMjMgDQowMy8yMi8yNCBIaXN0b3J5DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgdGFibGV0IChOaXRyb3N0YXQpICAgICAgICBwYWluICAgDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGFtb3hpY2lsbGluIDUwMCBtZy1wb3Rhc3NpdW0gMSB0YWIgUE8gUThIICM3IHRhYnMgMTAvMQ0KMi8yMyAgUngNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXZ1bGFuYXRlIDEyNSBtZyB0YWJsZXQgICAgDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIG1ldG9wcm9sb2wgc3VjY2luYXRlIDI1IG1nIDI1IG1nIFBPIFFEQVkgIzMwIHRhYnMgMTAvMQ0KMi8yMyAwMy8yMi8yNCBSeA0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFibGV0LGV4dGVuZGVkIHJlbGVhc2UgMjQgaHIgICAgDQoNCg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBbGxlcmdpZXMNCg0KDQoNCkFsbGVyZ3kvQWR2UmVhYyBUeXBlIFNldmVyaXR5IFJlYWN0aW9uIFN0YXR1cyBEYXRlIC8gVGltZQ0KIA0KUGVuaWNpbGxpbnMgQWxsZXJneSBTZXZlcmUgQW5hcGh5bGF4aXMgVmVyaWZpZWQgMDUvMDQvMjMgMTQ6MTUNCg0KDQoNCg0KRXhhbQ0KQ29uc3RpdHV0aW9uYWwNClZpdGFsczogDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCg0KDQpUZW1wIFB1bHNlIFJlc3AgQlAgUHVsc2UgT3gNCiANCiA5Ny44IEYgICAxMjAgSCAgMjIgICAxNTAvODAgSCAgOTQgTA0KIA0KIDA5LzIzLzI0IDExOjIyICAwOS8yMy8yNCAxMToyMiAgMDkvMjMvMjQgMTE6MjIgIDA5LzIzLzI0IDExOjIyICAwOS8yMy8yNCAxMToyMg0KDQoNCg0KDQpBc3Nlc3NtZW50IGFuZCBQbGFuDQpBc3Nlc3NtZW50IGFuZCBwbGFuDQooMSkgU3lzdG9saWMgY29uZ2VzdGl2ZSBoZWFydCBmYWlsdXJlIHdpdGggcmVkdWNlZCBsZWZ0IHZlbnRyaWN1bGFyIGZ1bmN0aW9uLCBOWUhBIGNsYXNzIDE6IA0KICAgICAgU3RhdHVzOiBOb25lDQoNCg0KRG9jdW1lbnRlZCBCeTogIERyLiBNRURJVEVDSCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDAxLzE3LzI1IDE0MTMNClNpZ25lZCBCeTogICAgICA8RWxlY3Ryb25pY2FsbHkgc2lnbmVkIGJ5IERyLiBNRURJVEVDSD4gICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgMDEvMTcvMjUgMTQxMw0K"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2025-01-17T18:13:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/cd8a29d9-fb6d-50e8-b79c-039ec7de603a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:20db49da-67b6-4f24-679e-c998e5f87de6"
+            },
+            {
+              "use": "secondary",
+              "value": "112"
+            }
+          ],
+          "id": "cd8a29d9-fb6d-50e8-b79c-039ec7de603a",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:20db49da-67b6-4f24-679e-c998e5f87de6"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18748-4",
+                "display": "Imaging Narrative"
+              }
+            ],
+            "text": "Imaging Narrative"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Practitioner/a1497d50-1976-5183-86ac-92400fb92da6",
+              "type": "Practitioner",
+              "display": "Daniel Symes"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2024-03-22T07:00:00+00:00",
+              "end": "2024-03-22T11:53:00+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxMDEgTWFpbiBTdHJlZXQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTm9yd29vZCwgTUEgMDIwNjINCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBYUmF5IFJlcG9ydCANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaWduZWQNCg0KUGF0aWVudDogQm9uZCxQYXVsYSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1SIzogSUEwMDAwMDANCjMwICAgICAgDQpET0I6IDA2LzE0LzE5NTggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBY2N0OkVCMDAwMDAwMDE0NA0KICAgICAgDQpBZ2UvU2V4OiA2NSAvIEYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBRE0gRGF0ZTogMDMvMjIvMg0KNCAgICAgIA0KTG9jOiBFRCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpBdHRlbmRpbmcgRHI6IA0KDQoNCk9yZGVyaW5nIFBoeXNpY2lhbjogRS4gVHVja2VyLCBNRA0KRGF0ZSBvZiBTZXJ2aWNlOiAwMy8yMi8yNA0KUHJvY2VkdXJlKHMpOiBYUiBjaGVzdCAyVg0KQWNjZXNzaW9uIE51bWJlcihzKTogQTAwMDAwMDAwMjMNCg0KY2M6IH4NCg0KDQpDaGVzdCBYLXJheQ0KDQpGaW5kaW5nczoNCi0gSW1hZ2luZyBkZW1vbnN0cmF0ZXMgY2FyZGlvbWVnYWx5IHdpdGggaW50ZXJzdGl0aWFsIGVkZW1hIGFuZCBwbGV1cmFsIGVmZnVzaW9ucy4NCi0gQmx1bnRpbmcgb2YgY29zdG9waHJlbmljIGFuZ2xlcw0KDQpJbXByZXNzaW9uOg0KLSBTdWdnZXN0aXZlIG9mIGNvbmdlc3RpdmUgaGVhcnQgZmFpbHVyZQ0KDQoNCg0KDQoNCkRpY3RhdGVkIEJ5OiAgICBEYW5pZWwgU3ltZXMsIE1EICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANClNpZ25lZCBCeTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwMy8yMi8yNCAwNzUzDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCg0KREQvRFQ6IDAzLzIyLzI0IDAzMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpURC9UVDogMDMvMjIvMjQgMDMwMFRyYW5zY3JpcHRpb25pc3Q6IFdQQiAgICAgICAgICAgICAgICAgICAgDQo="
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2024-03-22T11:53:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/5e2dca8c-13e7-55df-809d-f8f952b5222e",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:0fa72c5a-0518-4b72-93a8-64eefa948141"
+            },
+            {
+              "use": "secondary",
+              "value": "134"
+            }
+          ],
+          "id": "5e2dca8c-13e7-55df-809d-f8f952b5222e",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:0fa72c5a-0518-4b72-93a8-64eefa948141"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18748-4",
+                "display": "Imaging Narrative"
+              }
+            ],
+            "text": "Imaging Narrative"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Practitioner/ac6c9882-55d9-5cde-a4e9-ee6e017c38b9",
+              "type": "Practitioner",
+              "display": "Michael Coelho"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2025-01-17T17:22:00+00:00",
+              "end": "2025-01-17T17:23:00+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxMDEgTWFpbiBTdHJlZXQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTm9yd29vZCwgTUEgMDIwNjINCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIENhcmRpb2xvZ3kgQ29uc3VsdCBOb3RlIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNpZ25lZA0KDQpQYXRpZW50OiBCb25kLFBhdWxhICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTVIjOiBJQTAwMDAwMA0KMzAgICAgICANCkRPQjogMDYvMTQvMTk1OCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFjY3Q6RUIwMDAwMDAwMTQ0DQogICAgICANCkFnZS9TZXg6IDY2IC8gRiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFETSBEYXRlOiAwMy8yMi8yDQo0ICAgICAgDQpMb2M6IDE1TiAgICAgIDE1MDMtMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIERhdGUgb2YgU2VydmljZTowMy8yMi8yNA0KICAgICAgDQpBdHRlbmRpbmcgRHI6IEUgVHVja2VyDQoNCmNjOiB+DQoNCg0KSGlzdG9yeSBvZiBQcmVzZW50IElsbG5lc3MNCkhpc3Rvcnkgb2YgUHJlc2VudCBJbGxuZXNzDQpDaGllZiBjb21wbGFpbnQ6IEhlYXJ0IGZhaWx1cmUNCg0KTWVkcw0KSG9tZSBNZWRpY2F0aW9ucyBhbmQgQWxsZXJnaWVzDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEhvbWUgTWVkaWNhdGlvbnMNCg0KDQoNCu+/vU1lZGljYXRpb24g77+9SW5zdHJ1Y3Rpb25zIO+/vVJlY29yZGVkIO+/vUNvbmZpcm1lZCDvv71UeXBlDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGZ1cm9zZW1pZGUgMjAgbWcgdGFibGV0ICAgMjAgbWcgUE8gUURBWSBDaGVzdCBwYWluIDA1Lw0KMDUvMjMgMDMvMjIvMjQgSGlzdG9yeQ0KIA0KICAgICAgICAgICAgICAgICAgICAgICAgICBpc29zb3JiaWRlIG1vbm9uaXRyYXRlIDMwIG1nIDMwIG1nIFBPIFFBTSAwNS8wNS8yMyAwMy8NCjIyLzI0IEhpc3RvcnkNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhYmxldCxleHRlbmRlZCByZWxlYXNlIDI0IGhyICAgIA0KIA0KICAgICAgICAgICAgICAgICAgICAgICAgICBsaXNpbm9wcmlsIDIwIG1nIHRhYmxldCAgIDIwIG1nIFBPIFFEQVkgMDUvMDUvMjMgMDMvMjINCi8yNCBIaXN0b3J5DQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIG5pdHJvZ2x5Y2VyaW4gMC40IG1nIHN1Ymxpbmd1YWwgMC40IG1nIHN1Ymxpbmd1YWwgUTUtMQ0KNU0gUFJOIGNoZXN0IDA1LzA1LzIzIDAzDQovMjIvMjQgSGlzdG9yeQ0KDQogICAgICAgICAgICAgICAgICAgICAgICAgIHRhYmxldCAoTml0cm9zdGF0KSAgICAgICAgcGFpbiAgIA0KIA0KICAgICAgICAgICAgICAgICAgICAgICAgICBhbW94aWNpbGxpbiA1MDAgbWctcG90YXNzaXVtIDEgdGFiIFBPIFE4SCAjNyB0YWJzIDEwLzENCjIvMjMgIFJ4DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGF2dWxhbmF0ZSAxMjUgbWcgdGFibGV0ICAgIA0KIA0KICAgICAgICAgICAgICAgICAgICAgICAgICBtZXRvcHJvbG9sIHN1Y2NpbmF0ZSAyNSBtZyAyNSBtZyBQTyBRREFZICMzMCB0YWJzIDEwLzENCjIvMjMgMDMvMjIvMjQgUngNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHRhYmxldCxleHRlbmRlZCByZWxlYXNlIDI0IGhyICAgIA0KDQoNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQWxsZXJnaWVzDQoNCg0KDQpBbGxlcmd5L0FkdlJlYWMgVHlwZSBTZXZlcml0eSBSZWFjdGlvbiBTdGF0dXMgRGF0ZSAvIFRpbWUNCiANClBlbmljaWxsaW5zIEFsbGVyZ3kgU2V2ZXJlIEFuYXBoeWxheGlzIFZlcmlmaWVkIDA1LzA0LzIzIDE0OjE1DQoNCg0KDQoNCkFzc2Vzc21lbnQgYW5kIFBsYW4NCkFzc2Vzc21lbnQgYW5kIFBsYW4NCigxKSBTeXN0b2xpYyBjb25nZXN0aXZlIGhlYXJ0IGZhaWx1cmUgd2l0aCByZWR1Y2VkIGxlZnQgdmVudHJpY3VsYXIgZnVuY3Rpb24sIE5ZSEEgY2xhc3MgMTogDQogICAgICBPbnNldCBEYXRlOiB+MjAxMw0KDQoNCkRvY3VtZW50ZWQgQnk6ICBDb2VsaG8sTWljaGFlbCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwMS8xNy8yNSAxMzIyDQpTaWduZWQgQnk6ICAgICAgPEVsZWN0cm9uaWNhbGx5IHNpZ25lZCBieSBNaWNoYWVsIENvZWxobz4gICAgICAgICAgICAgICAgICAgICAgIA0KICAgICAgICAgMDEvMTcvMjUgMTMyMw0K"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2025-01-17T17:57:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/1ff025ff-314b-5bf1-8122-991ba1fc82a6",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:6451e7ef-e55e-42c5-c188-b800e7b43c32"
+            },
+            {
+              "use": "secondary",
+              "value": "136"
+            }
+          ],
+          "id": "1ff025ff-314b-5bf1-8122-991ba1fc82a6",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:6451e7ef-e55e-42c5-c188-b800e7b43c32"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18748-4",
+                "display": "Imaging Narrative"
+              }
+            ],
+            "text": "Imaging Narrative"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+              "type": "Organization",
+              "display": "Canton Medical Center"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2025-01-17T18:12:00+00:00",
+              "end": "2025-01-17T18:12:59+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxMDEgTWFpbiBTdHJlZXQNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTm9yd29vZCwgTUEgMDIwNjINCg0KICAgICAgICAgICAgICAgICAgICAgICAgIEludGVybmFsIE1lZCBIaXN0b3J5JlBoeXNpY2FsIA0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFNpZ25lZA0KDQpQYXRpZW50OiBCb25kLFBhdWxhICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTVIjOiBJQTAwMDAwMA0KMzAgICAgICANCkRPQjogMDYvMTQvMTk1OCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFjY3Q6RUIwMDAwMDAwMTQ0DQogICAgICANCkFnZS9TZXg6IDY2IC8gRiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIEFETSBEYXRlOiAwMy8yMi8yDQo0ICAgICAgDQpMb2M6IDE1TiAgICAgIDE1MDMtMyAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIERhdGUgb2YgU2VydmljZTowMy8yMi8yNA0KICAgICAgDQpBdHRlbmRpbmcgRHI6IEUgVHVja2VyDQoNCmNjOiB+DQoNCg0KSW50ZXJuYWwgTWVkaWNpbmUgLSBIJlA6IEhQSQ0KSGlzdG9yeSBvZiBQcmVzZW50IElsbG5lc3MNCkNoaWVmIGNvbXBsYWludDogSGVhcnQgZmFpbHVyZQ0KDQpQTUZTSA0KRmFtaWx5IEhpc3RvcnkNCkZhbWlseSBIaXN0b3J5IChVcGRhdGVkIDA1LzA1LzIzIEAgMDg6NDEgYnkgV2lsbGlhbSBCdXRsZXIpDQpGYXRoZXIgSmFtZXMgQm9uZCAgIERlY2Vhc2VkICBNZW1iZXIgUmFjZS9FdGhuaWNpdHk6IFdoaXRlDQogICBIeXBlcnRlbnNpb24NCiAgIE9iZXNpdHkgKEJNSSAzMC4wLTM0LjkpDQpNb3RoZXIgTWFyeSBCb25kICAgRGVjZWFzZWQgIE1lbWJlciBSYWNlL0V0aG5pY2l0eTogV2hpdGUNCiAgIFN5c3RvbGljIGNvbmdlc3RpdmUgaGVhcnQgZmFpbHVyZSB3aXRoIHJlZHVjZWQgbGVmdCB2ZW50cmljdWxhciBmdW5jdGlvbiwgICAgTllIQSBjbGFzcyAxDQoNCg0KDQpNZWRzDQpIb21lIE1lZGljYXRpb25zIGFuZCBBbGxlcmdpZXMNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgSG9tZSBNZWRpY2F0aW9ucw0KDQoNCg0K77+9TWVkaWNhdGlvbiDvv71JbnN0cnVjdGlvbnMg77+9UmVjb3JkZWQg77+9Q29uZmlybWVkIO+/vVR5cGUNCiANCiAgICAgICAgICAgICAgICAgICAgICAgICAgZnVyb3NlbWlkZSAyMCBtZyB0YWJsZXQgICAyMCBtZyBQTyBRREFZIENoZXN0IHBhaW4gMDUvDQowNS8yMyAwMy8yMi8yNCBIaXN0b3J5DQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGlzb3NvcmJpZGUgbW9ub25pdHJhdGUgMzAgbWcgMzAgbWcgUE8gUUFNIDA1LzA1LzIzIDAzLw0KMjIvMjQgSGlzdG9yeQ0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFibGV0LGV4dGVuZGVkIHJlbGVhc2UgMjQgaHIgICAgDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGxpc2lub3ByaWwgMjAgbWcgdGFibGV0ICAgMjAgbWcgUE8gUURBWSAwNS8wNS8yMyAwMy8yMg0KLzI0IEhpc3RvcnkNCiANCiAgICAgICAgICAgICAgICAgICAgICAgICAgbml0cm9nbHljZXJpbiAwLjQgbWcgc3VibGluZ3VhbCAwLjQgbWcgc3VibGluZ3VhbCBRNS0xDQo1TSBQUk4gY2hlc3QgMDUvMDUvMjMgDQowMy8yMi8yNCBIaXN0b3J5DQoNCiAgICAgICAgICAgICAgICAgICAgICAgICAgdGFibGV0IChOaXRyb3N0YXQpICAgICAgICBwYWluICAgDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIGFtb3hpY2lsbGluIDUwMCBtZy1wb3Rhc3NpdW0gMSB0YWIgUE8gUThIICM3IHRhYnMgMTAvMQ0KMi8yMyAgUngNCg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXZ1bGFuYXRlIDEyNSBtZyB0YWJsZXQgICAgDQogDQogICAgICAgICAgICAgICAgICAgICAgICAgIG1ldG9wcm9sb2wgc3VjY2luYXRlIDI1IG1nIDI1IG1nIFBPIFFEQVkgIzMwIHRhYnMgMTAvMQ0KMi8yMyAwMy8yMi8yNCBSeA0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFibGV0LGV4dGVuZGVkIHJlbGVhc2UgMjQgaHIgICAgDQoNCg0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBbGxlcmdpZXMNCg0KDQoNCkFsbGVyZ3kvQWR2UmVhYyBUeXBlIFNldmVyaXR5IFJlYWN0aW9uIFN0YXR1cyBEYXRlIC8gVGltZQ0KIA0KUGVuaWNpbGxpbnMgQWxsZXJneSBTZXZlcmUgQW5hcGh5bGF4aXMgVmVyaWZpZWQgMDUvMDQvMjMgMTQ6MTUNCg0KDQoNCg0KSW50ZXJuYWwgTWVkLiAtIEgmUDogUmVzdWx0cw0KTGFicw0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDA5LzIzLzI0IDEzOjI2ICAgICAgICAgIA0KDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDA5LzIzLzI0IDEzOjI2ICAgICAgICAgIA0KDQoNCkFzc2Vzc21lbnQgYW5kIFBsYW4NCkFzc2Vzc21lbnQgYW5kIHBsYW4NCigxKSBTeXN0b2xpYyBjb25nZXN0aXZlIGhlYXJ0IGZhaWx1cmUgd2l0aCByZWR1Y2VkIGxlZnQgdmVudHJpY3VsYXIgZnVuY3Rpb24sIE5ZSEEgY2xhc3MgMTogDQogICAgICBTdGF0dXM6IE5vbmUNCg0KDQpEb2N1bWVudGVkIEJ5OiAgRHIuIE1FRElURUNIICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMDEvMTcvMjUgMTQxMg0KU2lnbmVkIEJ5OiAgICAgIDxFbGVjdHJvbmljYWxseSBzaWduZWQgYnkgRHIuIE1FRElURUNIPiAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAwMS8xNy8yNSAxNDEyDQo="
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2025-01-17T18:18:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference/36277e5d-56f3-5315-b253-0afe8e200c48",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:ietf:rfc:3986",
+              "value": "urn:uuid:87d1f51a-e611-49a1-6eb3-22927424dc5b"
+            },
+            {
+              "use": "secondary",
+              "value": "44"
+            }
+          ],
+          "id": "36277e5d-56f3-5315-b253-0afe8e200c48",
+          "masterIdentifier": {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:uuid:87d1f51a-e611-49a1-6eb3-22927424dc5b"
+          },
+          "status": "current",
+          "type": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "18748-4",
+                "display": "Imaging Narrative"
+              }
+            ],
+            "text": "Imaging Narrative"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note"
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "author": [
+            {
+              "reference": "Practitioner/a1497d50-1976-5183-86ac-92400fb92da6",
+              "type": "Practitioner",
+              "display": "Daniel Symes"
+            }
+          ],
+          "custodian": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+                "type": "Encounter"
+              }
+            ],
+            "period": {
+              "start": "2023-08-15T07:00:00+00:00",
+              "end": "2023-08-15T15:03:00+00:00"
+            }
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/plain",
+                "language": "en-US",
+                "data": "ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgTUFJTiBTSVRFDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAsICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBYUmF5IFJlcG9ydCANCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTaWduZWQNCg0KUGF0aWVudDogQm9uZCxQYXVsYSAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIE1SIzogSUEwMDAwMDANCjMwICAgICAgDQpET0I6IDA2LzE0LzE5NTggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBY2N0OkVCMDAwMDAwMDA5NA0KICAgICAgDQpBZ2UvU2V4OiA2NSAvIEYgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBBRE0gRGF0ZTogMDgvMTUvMg0KMyAgICAgIA0KTG9jOiBFRCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpBdHRlbmRpbmcgRHI6IA0KDQoNCk9yZGVyaW5nIFBoeXNpY2lhbjogRS4gVHVja2VyLCBNRA0KRGF0ZSBvZiBTZXJ2aWNlOiAwOC8xNS8yMw0KUHJvY2VkdXJlKHMpOiBYUiBjaGVzdCAyVg0KQWNjZXNzaW9uIE51bWJlcihzKTogQTAwMDAwMDAwMjANCg0KY2M6IH4NCg0KDQpDaGVzdCBYLXJheQ0KDQpGaW5kaW5nczoNCi0gSW1hZ2luZyBkZW1vbnN0cmF0ZXMgY2FyZGlvbWVnYWx5IHdpdGggaW50ZXJzdGl0aWFsIGVkZW1hIGFuZCBwbGV1cmFsIGVmZnVzaW9ucy4NCi0gQmx1bnRpbmcgb2YgY29zdG9waHJlbmljIGFuZ2xlcw0KDQpJbXByZXNzaW9uOg0KLSBTdWdnZXN0aXZlIG9mIGNvbmdlc3RpdmUgaGVhcnQgZmFpbHVyZQ0KDQoNCg0KDQoNCkRpY3RhdGVkIEJ5OiAgICBEYW5pZWwgU3ltZXMsIE1EICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICANClNpZ25lZCBCeTogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwOC8xNS8yMyAxMTAzDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQoNCg0KREQvRFQ6IDA4LzE1LzIzIDAzMDAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgDQpURC9UVDogMDgvMTUvMjMgMDMwMFRyYW5zY3JpcHRpb25pc3Q6IFdQQiAgICAgICAgICAgICAgICAgICAgDQo="
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "userSelected": false,
+                "display": "mimeType Sufficient",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient"
+              }
+            }
+          ],
+          "date": "2023-08-15T15:03:00+00:00",
+          "securityLabel": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                  "code": "N",
+                  "display": "normal"
+                }
+              ],
+              "text": "normal"
+            }
+          ],
+          "resourceType": "DocumentReference"
+        }
+      }
+    ],
+    "total": 7,
+    "resourceType": "Bundle"
+  }
+}

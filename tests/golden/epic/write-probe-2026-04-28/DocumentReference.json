@@ -1,0 +1,250 @@
+{
+  "_canonical_submitted": {
+    "resourceType": "DocumentReference",
+    "identifier": [
+      {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:uuid:3a6b13d1-3e2f-b9c5-b04c-5328c8378487"
+      }
+    ],
+    "status": "current",
+    "type": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "34117-2",
+          "display": "History and physical note"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "51847-2",
+          "display": "Evaluation + Plan note"
+        }
+      ]
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3"
+    },
+    "date": "2025-06-21T14:56:40.214-04:00",
+    "author": [
+      {
+        "reference": "urn:uuid:d5a34dbf-4b9c-3327-94c5-36e303afb648",
+        "display": " Christine Briner"
+      }
+    ],
+    "custodian": {
+      "reference": "urn:uuid:1f18618a-4d21-3e0e-847f-702268bb8164",
+      "display": "GREATER LAWRENCE FAMILY HEALTH CENTER INC"
+    },
+    "content": [
+      {
+        "attachment": {
+          "contentType": "text/plain; charset=utf-8",
+          "data": "Q0xJTklDQUwgTk9URQoKUGF0aWVudDogQWRhbGJlcnRvIEthbnRlcgpBZ2U6IDgyIHllYXJzLCBHZW5kZXI6IE0KRW5jb3VudGVyIFR5cGU6IHdlbGxuZXNzCkRhdGU6IDIwMjUtMDYtMjEKCkFDVElWRSBDT05ESVRJT05TOgogIC0gRXllIHBhaW4KICAtIEluc2VjdCBiaXRlCiAgLSBGYWxsCiAgLSBOYXVzZWEKICAtIENocm9uaWMgcGFpbgogIC0gRGlhcnJoZWEKICAtIENoZXN0IHBhaW4KICAtIE1vdG9yIHZlaGljbGUgYWNjaWRlbnQKICAtIEZldmVyCiAgLSBBc3RobWEKICAtIEFueGlldHkgZGlzb3JkZXIKICAtIEh5cGVydGVuc2l2ZSBkaXNvcmRlcgogIC0gQXRyaWFsIGZpYnJpbGxhdGlvbgogIC0gTmFzYWwgY29uZ2VzdGlvbgogIC0gQW5rbGUgc3ByYWluCiAgLSBNYWxpZ25hbnQgbmVvcGxhc3RpYyBkaXNlYXNlCiAgLSBFYXJhY2hlCiAgLSBDb25nZXN0aXZlIGhlYXJ0IGZhaWx1cmUKICAtIFBlcmlwaGVyYWwgYXJ0ZXJpYWwgZGlzZWFzZQogIC0gRGVtZW50aWEKICAtIENocm9uaWMga2lkbmV5IGRpc2Vhc2UKICAtIENocm9uaWMgb2JzdHJ1Y3RpdmUgbHVuZyBkaXNlYXNlCgpDVVJSRU5UIE1FRElDQVRJT05TOgogIC0gbWV0aHlscGhlbmlkYXRlIDguNiBNRyBEaXNpbnRlZ3JhdGluZyBPcmFsIFRhYmxldAogIC0gZm9zaW5vcHJpbCBzb2RpdW0gNDAgTUcgT3JhbCBUYWJsZXQKICAtIGh5ZHJvY29ydGlzb25lIDUwMCBNRyBJbmplY3Rpb24KICAtIDI0IEhSIGFtcGhldGFtaW5lIGFzcGFydGF0ZSA3LjUgTUcgLyBhbXBoZXRhbWluZSBzdWxmYXRlIDcuNSBNRyAvIGRleHRyb2FtcGhldGFtaW5lIHNhY2NoYXJhdGUgNy41IE1HIC8gZGV4dHJvYW1waGV0YW1pbmUgc3VsZmF0ZSA3LjUgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIENhcHN1bGUKICAtIGRveHljeWNsaW5lIG1vbm9oeWRyYXRlIDEwMCBNRyBPcmFsIFRhYmxldAogIC0gY2l0YWxvcHJhbSAzMCBNRyBPcmFsIENhcHN1bGUKICAtIGFjZXRhbWlub3BoZW4gMzI1IE1HIC8gYmVuemh5ZHJvY29kb25lIDYuMTIgTUcgT3JhbCBUYWJsZXQKICAtIDI0IEhSIGxldmV0aXJhY2V0YW0gMTUwMCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSBhbWxvZGlwaW5lIDUgTUcgLyB0ZWxtaXNhcnRhbiA0MCBNRyBPcmFsIFRhYmxldAogIC0gbWFwcm90aWxpbmUgaHlkcm9jaGxvcmlkZSA1MCBNRyBPcmFsIFRhYmxldAogIC0gaXNvcHJvcHlsIHVub3Byb3N0b25lIDEuNSBNRy9NTCBPcGh0aGFsbWljIFNvbHV0aW9uCiAgLSAyNCBIUiBuaWFjaW4gNTAwIE1HIC8gc2ltdmFzdGF0aW4gNDAgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gMC41IE1MIFNBUlMtQ29WLTIgKENPVklELTE5KSB2YWNjaW5lLCBwcm90ZWluIE5WWC1Db1YyNzA1IDAuMDEgTUcvTUwgUHJlZmlsbGVkIFN5cmluZ2UKICAtIGRpcHlyaWRhbW9sZSA3NSBNRyBPcmFsIFRhYmxldAogIC0gZW5hbGFwcmlsIG1hbGVhdGUgMjAgTUcgT3JhbCBUYWJsZXQKICAtIHRpemFuaWRpbmUgNiBNRyBPcmFsIENhcHN1bGUKICAtIHsxIChhY2V0YW1pbm9waGVuIDUwMCBNRyAvIGRveHlsYW1pbmUgc3VjY2luYXRlIDYuMjUgTUcgLyBwc2V1ZG9lcGhlZHJpbmUgaHlkcm9jaGxvcmlkZSAzMCBNRyBPcmFsIFRhYmxldCkgLyAxIChhY2V0YW1pbm9waGVuIDUwMCBNRyAvIHBzZXVkb2VwaGVkcmluZSBoeWRyb2NobG9yaWRlIDMwIE1HIE9yYWwgVGFibGV0KSB9IFBhY2sKICAtIGh5ZHJvY2hsb3JvdGhpYXppZGUgMTIuNSBNRyAvIGxpc2lub3ByaWwgMTAgTUcgT3JhbCBUYWJsZXQKICAtIDI0IEhSIG1ldGZvcm1pbiBoeWRyb2NobG9yaWRlIDUwMCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSAyNCBIUiBhbHByYXpvbGFtIDEgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gZXNvbWVwcmF6b2xlIDIwIE1HIEluamVjdGlvbgogIC0gMjQgSFIgbGFtb3RyaWdpbmUgMTAwIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBUYWJsZXQKICAtIGFtbG9kaXBpbmUgNSBNRyAvIGh5ZHJvY2hsb3JvdGhpYXppZGUgMTIuNSBNRyAvIG9sbWVzYXJ0YW4gbWVkb3hvbWlsIDQwIE1HIE9yYWwgVGFibGV0CiAgLSBtZXRmb3JtaW4gaHlkcm9jaGxvcmlkZSAxMDAgTUcvTUwgRXh0ZW5kZWQgUmVsZWFzZSBTdXNwZW5zaW9uCiAgLSAyMCBNTCBiYWNsb2ZlbiAxIE1HL01MIEluamVjdGlvbgogIC0gYXRvcnZhc3RhdGluIDQwIE1HIE9yYWwgVGFibGV0CiAgLSBhY2V0YW1pbm9waGVuIDMwMCBNRyAvIG94eWNvZG9uZSBoeWRyb2NobG9yaWRlIDcuNSBNRyBPcmFsIFRhYmxldAogIC0gU3ByaW5rbGUgZHVsb3hldGluZSAzMCBNRyBEZWxheWVkIFJlbGVhc2UgT3JhbCBDYXBzdWxlCiAgLSAyNCBIUiBtZXRvcHJvbG9sIHN1Y2NpbmF0ZSA1MCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgQ2Fwc3VsZQogIC0gZXByb3NhcnRhbiA2MDAgTUcgT3JhbCBUYWJsZXQKICAtIGh5ZHJvY2hsb3JvdGhpYXppZGUgMTIuNSBNRyBPcmFsIENhcHN1bGUKICAtIDI0IEhSIG5pYWNpbiA1MDAgTUcgLyBzaW12YXN0YXRpbiAyMCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSByb3N1dmFzdGF0aW4gMTAgTUcgT3JhbCBDYXBzdWxlCiAgLSBjYW5kZXNhcnRhbiBjaWxleGV0aWwgNCBNRyBPcmFsIFRhYmxldAogIC0gbmFsb3hvbmUgaHlkcm9jaGxvcmlkZSAwLjQgTUcvTUwgSW5qZWN0YWJsZSBTb2x1dGlvbgogIC0gNTAgTUwgYml2YWxpcnVkaW4gNSBNRy9NTCBJbmplY3Rpb24KICAtIDI0IEhSIGxvdmFzdGF0aW4gNjAgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gcml2YXJveGFiYW4gMTAgTUcgT3JhbCBUYWJsZXQKICAtIDIwMCBNTCBhbWlvZGFyb25lIGh5ZHJvY2hsb3JpZGUgMS44IE1HL01MIEluamVjdGlvbgogIC0gMC41IE1MIHBvbGlvdmlydXMgdmFjY2luZSBpbmFjdGl2YXRlZCwgdHlwZSAxIChNYWhvbmV5KSA4MCBVTlQvTUwgLyBwb2xpb3ZpcnVzIHZhY2NpbmUgaW5hY3RpdmF0ZWQsIHR5cGUgMiAoTUVGLTEpIDE2IFVOVC9NTCAvIHBvbGlvdmlydXMgdmFjY2luZSBpbmFjdGl2YXRlZCwgdHlwZSAzIChTYXVrZXR0KSA2NCBVTlQvTUwgUHJlZmlsbGVkIFN5cmluZ2UgW0lwb2xdCiAgLSBuYWRvbG9sIDIwIE1HIE9yYWwgVGFibGV0CiAgLSBzYXhhZ2xpcHRpbiAyLjUgTUcgT3JhbCBUYWJsZXQKICAtIHRlbG1pc2FydGFuIDQwIE1HIE9yYWwgVGFibGV0CiAgLSBhY2V0YW1pbm9waGVuIDMyNSBNRyAvIG94eWNvZG9uZSBoeWRyb2NobG9yaWRlIDcuNSBNRyBPcmFsIFRhYmxldAogIC0gMjQgSFIgbWlyYWJlZ3JvbiAyNSBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSBzaW12YXN0YXRpbiA1IE1HIE9yYWwgVGFibGV0CiAgLSBtZXRmb3JtaW4gaHlkcm9jaGxvcmlkZSA3NTAgTUcgT3JhbCBUYWJsZXQKICAtIG1ldGh5Y2xvdGhpYXppZGUgNSBNRyBPcmFsIFRhYmxldAogIC0gNSBNTCBtZXRvcHJvbG9sIHRhcnRyYXRlIDEgTUcvTUwgQ2FydHJpZGdlCiAgLSBjbG9iZXRhc29sIHByb3Bpb25hdGUgMC4wMDA1IE1HL01HIFRvcGljYWwgR2VsCiAgLSA0IE1MIGxhYmV0YWxvbCBoeWRyb2NobG9yaWRlIDUgTUcvTUwgQ2FydHJpZGdlCiAgLSBmZWJ1eG9zdGF0IDQwIE1HIE9yYWwgVGFibGV0CiAgLSBlemV0aW1pYmUgMTAgTUcgT3JhbCBUYWJsZXQKICAtIHJvc3V2YXN0YXRpbiA1IE1HIE9yYWwgQ2Fwc3VsZQogIC0gMjQgSFIgZG94YXpvc2luIDQgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gcGFudG9wcmF6b2xlIDIwIE1HIERlbGF5ZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gY2FydmVkaWxvbCAzLjEyNSBNRyBPcmFsIFRhYmxldAogIC0gdmVyYXBhbWlsIGh5ZHJvY2hsb3JpZGUgMTgwIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBUYWJsZXQKICAtIHRyaWFtdGVyZW5lIDUwIE1HIE9yYWwgQ2Fwc3VsZQogIC0gcHJhdmFzdGF0aW4gc29kaXVtIDEwIE1HIE9yYWwgVGFibGV0CiAgLSBvbG1lc2FydGFuIG1lZG94b21pbCA1IE1HIE9yYWwgVGFibGV0CiAgLSBmdXJvc2VtaWRlIDQwIE1HIE9yYWwgVGFibGV0CiAgLSBlZG94YWJhbiAxNSBNRyBPcmFsIFRhYmxldAogIC0gYnVtZXRhbmlkZSAwLjUgTUcgT3JhbCBUYWJsZXQKICAtIGxhbW90cmlnaW5lIDI1IE1HIERpc2ludGVncmF0aW5nIE9yYWwgVGFibGV0CiAgLSBwaXBlcmFjaWxsaW4gMzAwMCBNRyAvIHRhem9iYWN0YW0gMzc1IE1HIEluamVjdGlvbgogIC0gcGl0YXZhc3RhdGluIG1hZ25lc2l1bSAyIE1HIE9yYWwgVGFibGV0CiAgLSBiZXRheG9sb2wgNSBNRy9NTCBPcGh0aGFsbWljIFNvbHV0aW9uCiAgLSBtaW5veGlkaWwgMTAgTUcgT3JhbCBUYWJsZXQKICAtIHJlZCB5ZWFzdCByaWNlIFBpbGwKICAtIGh5ZHJvY29ydGlzb25lIDUgTUcgT3JhbCBUYWJsZXQKICAtIGR1bG94ZXRpbmUgMjAgTUcgRGVsYXllZCBSZWxlYXNlIE9yYWwgQ2Fwc3VsZQogIC0gc2ltdmFzdGF0aW4gNDAgTUcgT3JhbCBUYWJsZXQKICAtIG5lYml2b2xvbCAxMCBNRyBPcmFsIFRhYmxldAogIC0gZHV0YXN0ZXJpZGUgMC41IE1HIC8gdGFtc3Vsb3NpbiBoeWRyb2NobG9yaWRlIDAuNCBNRyBPcmFsIENhcHN1bGUKICAtIGZ1cm9zZW1pZGUgMTAgTUcvTUwgT3JhbCBTb2x1dGlvbgogIC0gYmV4YWdsaWZsb3ppbiAyMCBNRyBPcmFsIFRhYmxldAogIC0gc2lsb2Rvc2luIDggTUcgT3JhbCBDYXBzdWxlCiAgLSBldGhhY3J5bmljIGFjaWQgMjUgTUcgT3JhbCBUYWJsZXQKICAtIGFjZXRhbWlub3BoZW4gMzI1IE1HIC8gdHJhbWFkb2wgaHlkcm9jaGxvcmlkZSAzNy41IE1HIE9yYWwgVGFibGV0CiAgLSAyNCBIUiBuaWFjaW4gMTAwMCBNRyAvIHNpbXZhc3RhdGluIDQwIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBUYWJsZXQKICAtIGVzb21lcHJhem9sZSAyMCBNRyBEZWxheWVkIFJlbGVhc2UgT3JhbCBDYXBzdWxlCiAgLSBmdXJvc2VtaWRlIDggTUcvTUwgT3JhbCBTb2x1dGlvbgogIC0gU2Vuc29yIDIwMCBBQ1RVQVQgYWxidXRlcm9sIDAuMDkgTUcvQUNUVUFUIERyeSBQb3dkZXIgSW5oYWxlcgogIC0gY29sY2hpY2luZSAwLjYgTUcgT3JhbCBDYXBzdWxlCiAgLSBiZXRhbWV0aGFzb25lIDAuNSBNRy9NTCAvIGNhbGNpcG90cmllbmUgMC4wNSBNRy9NTCBUb3BpY2FsIExvdGlvbgogIC0gMjQgSFIgZG94YXpvc2luIDggTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gMjQgSFIgbmlzb2xkaXBpbmUgMzQgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gezc0IChhcGl4YWJhbiA1IE1HIE9yYWwgVGFibGV0KSB9IFBhY2sKICAtIGxhbnNvcHJhem9sZSAxNSBNRyBEaXNpbnRlZ3JhdGluZyBPcmFsIFRhYmxldAogIC0gcHJlZG5pc29uZSAyLjUgTUcgT3JhbCBUYWJsZXQKICAtIDEuNSBNTCBsZXVwcm9saWRlIGFjZXRhdGUgMzAgTUcvTUwgUHJlZmlsbGVkIFN5cmluZ2UgW0x1cHJvbl0KICAtIGFjZWJ1dG9sb2wgMjAwIE1HIE9yYWwgQ2Fwc3VsZQogIC0gMjQgSFIgbmlmZWRpcGluZSAzMCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSBwcmVnYWJhbGluIDMwMCBNRyBPcmFsIENhcHN1bGUKICAtIGJ1bWV0YW5pZGUgMC4yNSBNRy9NTCBJbmplY3RhYmxlIFNvbHV0aW9uCiAgLSAyIE1MIGxlY2FuZW1hYi1pcm1iIDEwMCBNRy9NTCBJbmplY3Rpb24KICAtIGNhcHNhaWNpbiAwLjAwMDM3NSBNRy9NRyAvIGxpZG9jYWluZSAwLjA0IE1HL01HIC8gbWVudGhvbCAwLjEgTUcvTUcgLyBtZXRoeWwgc2FsaWN5bGF0ZSAwLjIgTUcvTUcgVG9waWNhbCBPaW50bWVudAogIC0gMjQgSFIgdmVyYXBhbWlsIGh5ZHJvY2hsb3JpZGUgMzAwIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBDYXBzdWxlCiAgLSAyNCBIUiBuaXRyb2dseWNlcmluIDAuMyBNRy9IUiBUcmFuc2Rlcm1hbCBTeXN0ZW0KICAtIHJhYmVwcmF6b2xlIHNvZGl1bSAyMCBNRyBEZWxheWVkIFJlbGVhc2UgT3JhbCBUYWJsZXQKICAtIHRoeXJvaWQgKFVTUCkgMTk1IE1HIE9yYWwgVGFibGV0CiAgLSBzZXJ0cmFsaW5lIDEwMCBNRyBPcmFsIFRhYmxldAogIC0gbWV0b3Byb2xvbCB0YXJ0cmF0ZSA1MCBNRyBPcmFsIFRhYmxldAogIC0gaXJiZXNhcnRhbiAxNTAgTUcgT3JhbCBUYWJsZXQKICAtIHRvcnNlbWlkZSAxMDAgTUcgT3JhbCBUYWJsZXQKICAtIDI0IEhSIG5pZmVkaXBpbmUgOTAgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIFRhYmxldAogIC0gMjQgSFIgaXNvc29yYmlkZSBtb25vbml0cmF0ZSA2MCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSByaXZhcm94YWJhbiAxNSBNRyBPcmFsIFRhYmxldAogIC0gYXRlbm9sb2wgMTAwIE1HIE9yYWwgVGFibGV0CiAgLSBjaWxvc3Rhem9sIDUwIE1HIE9yYWwgVGFibGV0CiAgLSAwLjUgTUwgdGlyemVwYXRpZGUgMTAgTUcvTUwgQXV0by1JbmplY3RvcgogIC0gZ2xpbWVwaXJpZGUgMSBNRyBPcmFsIFRhYmxldAogIC0gcmFtaXByaWwgMS4yNSBNRyBPcmFsIENhcHN1bGUKICAtIGNhcGxhY2l6dW1hYi15aGRwIDExIE1HIEluamVjdGlvbgogIC0gbG9zYXJ0YW4gcG90YXNzaXVtIDEwIE1HL01MIE9yYWwgU3VzcGVuc2lvbgogIC0gb2Zsb3hhY2luIDMwMCBNRyBPcmFsIFRhYmxldAogIC0gMjQgSFIgbWV0b3Byb2xvbCBzdWNjaW5hdGUgMjUgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIENhcHN1bGUKICAtIDI0IEhSIGZlbG9kaXBpbmUgNSBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSAyIE1MIGRpYXplcGFtIDUgTUcvTUwgUHJlZmlsbGVkIFN5cmluZ2UKICAtIGFtbG9kaXBpbmUgMi41IE1HIC8gYXRvcnZhc3RhdGluIDEwIE1HIE9yYWwgVGFibGV0CiAgLSAyNCBIUiBidXByb3Bpb24gaHlkcm9icm9taWRlIDM0OCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgVGFibGV0CiAgLSByaXZhcm94YWJhbiAxIE1HL01MIE9yYWwgU3VzcGVuc2lvbgogIC0gY2VmYXpvbGluIDMwMDAgTUcgSW5qZWN0aW9uCiAgLSByaXZhcm94YWJhbiAyMCBNRyBPcmFsIFRhYmxldAogIC0gY2VsZWNveGliIDU2IE1HIC8gdHJhbWFkb2wgaHlkcm9jaGxvcmlkZSA0NCBNRyBPcmFsIFRhYmxldAogIC0gcHJhdmFzdGF0aW4gc29kaXVtIDQwIE1HIE9yYWwgVGFibGV0CiAgLSAxMiBIUiBkaWx0aWF6ZW0gaHlkcm9jaGxvcmlkZSAxMjAgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIENhcHN1bGUKICAtIGV0aGFjcnluYXRlIHNvZGl1bSA1MCBNRyBJbmplY3Rpb24KICAtIGRpbHRpYXplbSBoeWRyb2NobG9yaWRlIDkwIE1HIE9yYWwgVGFibGV0CiAgLSBkYXBhZ2xpZmxvemluIDEwIE1HIE9yYWwgVGFibGV0CiAgLSB7MiAoMjQgSFIgbGV2b21pbG5hY2lwcmFuIDIwIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBDYXBzdWxlIFtGZXR6aW1hXSkgLyAyNiAoMjQgSFIgbGV2b21pbG5hY2lwcmFuIDQwIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBDYXBzdWxlIFtGZXR6aW1hXSkgfSBQYWNrIFtGZXR6aW1hIFBhY2tdCiAgLSBjaGxvcnRoYWxpZG9uZSAxNSBNRyBPcmFsIFRhYmxldAogIC0gMSBNTCBhbGlyb2N1bWFiIDc1IE1HL01MIEF1dG8tSW5qZWN0b3IKICAtIDI0IEhSIGRpbHRpYXplbSBoeWRyb2NobG9yaWRlIDM2MCBNRyBFeHRlbmRlZCBSZWxlYXNlIE9yYWwgQ2Fwc3VsZQogIC0gMTAgTUwgZnVyb3NlbWlkZSA4IE1HL01MIENhcnRyaWRnZQogIC0gcmFiZXByYXpvbGUgc29kaXVtIDUgTUcgT3JhbCBHcmFudWxlcwogIC0gY2FwdG9wcmlsIDEwMCBNRyBPcmFsIFRhYmxldAogIC0gY2FuZGVzYXJ0YW4gY2lsZXhldGlsIDE2IE1HIE9yYWwgVGFibGV0CiAgLSBmZWJ1eG9zdGF0IDgwIE1HIE9yYWwgVGFibGV0CiAgLSBzaXRhZ2xpcHRpbiAyNSBNRyBPcmFsIFRhYmxldAogIC0gMSBNTCBsaW90aHlyb25pbmUgc29kaXVtIDAuMDEgTUcvTUwgSW5qZWN0aW9uCiAgLSBiZW5hemVwcmlsIGh5ZHJvY2hsb3JpZGUgMjAgTUcgLyBoeWRyb2NobG9yb3RoaWF6aWRlIDI1IE1HIE9yYWwgVGFibGV0CiAgLSBmbHVyYW5kcmVub2xpZGUgMC4wMDA1IE1HL01HIFRvcGljYWwgT2ludG1lbnQKICAtIHJvc3V2YXN0YXRpbiAyMCBNRyBPcmFsIENhcHN1bGUKICAtIHRpY2xvcGlkaW5lIGh5ZHJvY2hsb3JpZGUgMjUwIE1HIE9yYWwgVGFibGV0CiAgLSBmb3Npbm9wcmlsIHNvZGl1bSAyMCBNRyBPcmFsIFRhYmxldAogIC0gMTAwIE1MIGVzbW9sb2wgaHlkcm9jaGxvcmlkZSAyMCBNRy9NTCBJbmplY3Rpb24KICAtIGxhdGFub3Byb3N0IDAuMDUgTUcvTUwgT3BodGhhbG1pYyBTb2x1dGlvbgogIC0gMTggTUwgYW1pb2Rhcm9uZSBoeWRyb2NobG9yaWRlIDUwIE1HL01MIEluamVjdGlvbgogIC0gcm9zdXZhc3RhdGluIGNhbGNpdW0gMjAgTUcgT3JhbCBUYWJsZXQKICAtIHNlcnRyYWxpbmUgMjAgTUcvTUwgT3JhbCBTb2x1dGlvbgogIC0gMyBNTCBpbnN1bGluIGRlZ2x1ZGVjIDIwMCBVTlQvTUwgUGVuIEluamVjdG9yCiAgLSBnZW50YW1pY2luIDAuMDAxIE1HL01HIFRvcGljYWwgT2ludG1lbnQKICAtIDUgTUwgY3ljbG9zcG9yaW5lIDUwIE1HL01MIEluamVjdGlvbgogIC0gcG90YXNzaXVtIGJpY2FyYm9uYXRlIDI1IE1FUSBFZmZlcnZlc2NlbnQgT3JhbCBUYWJsZXQKICAtIDI0IEhSIGxvcmF6ZXBhbSAyIE1HIEV4dGVuZGVkIFJlbGVhc2UgT3JhbCBDYXBzdWxlCiAgLSAxMCBNTCBlcGhlZHJpbmUgc3VsZmF0ZSA1IE1HL01MIEluamVjdGlvbgogIC0gMjQgSFIgY2FydmVkaWxvbCBwaG9zcGhhdGUgMjAgTUcgRXh0ZW5kZWQgUmVsZWFzZSBPcmFsIENhcHN1bGUKICAtIHBpbmRvbG9sIDEwIE1HIE9yYWwgVGFibGV0CiAgLSBjZWZkaXRvcmVuIHBpdm94aWwgNDAwIE1HIE9yYWwgVGFibGV0CiAgLSBmaW5hc3RlcmlkZSA1IE1HIE9yYWwgVGFibGV0CiAgLSBsYWJldGFsb2wgaHlkcm9jaGxvcmlkZSA0MDAgTUcgT3JhbCBUYWJsZXQKICAtIG1vbnRlbHVrYXN0IDQgTUcgQ2hld2FibGUgVGFibGV0CgpBU1NFU1NNRU5UIEFORCBQTEFOOgogIFBhdGllbnQgc2VlbiBmb3Igd2VsbG5lc3MgdmlzaXQuIENvbnRpbnVlIGN1cnJlbnQgbWFuYWdlbWVudC4gRm9sbG93IHVwIGFzIHNjaGVkdWxlZC4K"
+        },
+        "format": {
+          "system": "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+          "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+          "display": "mimeType Sufficient"
+        }
+      }
+    ],
+    "context": {
+      "encounter": [
+        {
+          "reference": "Encounter/e6kBx6PwnxIv.5kCifScsWg3"
+        }
+      ]
+    }
+  },
+  "_epic_returned_create": {},
+  "_epic_returned_get": {
+    "resourceType": "DocumentReference",
+    "id": "ePUTWmDq2WbJbN8pNExdU0g3",
+    "extension": [
+      {
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.72072",
+                  "code": "1",
+                  "display": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
+            "url": "mode"
+          },
+          {
+            "valueDateTime": "2026-04-28T17:00:30Z",
+            "url": "time"
+          },
+          {
+            "valueReference": {
+              "reference": "Practitioner/evNp-KhYwOOqAZn1pZ2enuA3",
+              "display": "User Interconnect"
+            },
+            "url": "party"
+          }
+        ],
+        "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester"
+      }
+    ],
+    "identifier": [
+      {
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.727879",
+        "value": "197409"
+      },
+      {
+        "system": "urn:oid:1.2.840.114350.1.72.3.15",
+        "value": "1.2.840.114350.1.13.0.1.7.2.727879_197409"
+      }
+    ],
+    "status": "current",
+    "docStatus": "final",
+    "type": {
+      "coding": [
+        {
+          "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010",
+          "code": "4",
+          "display": "H&P"
+        },
+        {
+          "system": "urn:oid:1.2.840.114350.1.72.727879.69848980",
+          "code": "4",
+          "display": "H&P"
+        },
+        {
+          "system": "http://loinc.org",
+          "code": "34117-2",
+          "display": "History and physical note",
+          "userSelected": true
+        }
+      ],
+      "text": "H&P"
+    },
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+            "code": "clinical-note",
+            "display": "Clinical Note"
+          }
+        ],
+        "text": "Clinical Note"
+      }
+    ],
+    "subject": {
+      "reference": "Patient/eq081-VQEgP8drUUqCWzHfw3",
+      "display": "Lin, Derrick"
+    },
+    "date": "2026-04-28T17:00:30Z",
+    "author": [
+      {
+        "reference": "Practitioner/evNp-KhYwOOqAZn1pZ2enuA3",
+        "type": "Practitioner",
+        "display": "User Interconnect"
+      }
+    ],
+    "authenticator": {
+      "extension": [
+        {
+          "valueDateTime": "2026-04-28T17:00:30Z",
+          "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-authentication-instant"
+        }
+      ],
+      "reference": "Practitioner/evNp-KhYwOOqAZn1pZ2enuA3",
+      "type": "Practitioner",
+      "display": "User Interconnect"
+    },
+    "custodian": {
+      "identifier": {
+        "system": "urn:ietf:rfc:3986",
+        "value": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100"
+      },
+      "display": "FHIR Sandbox"
+    },
+    "securityLabel": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "NOPAT",
+            "display": "no disclosure to patient, family or caregivers without attending provider's authorization"
+          }
+        ],
+        "text": "no disclosure to patient, family or caregivers without attending provider's authorization"
+      }
+    ],
+    "content": [
+      {
+        "attachment": {
+          "contentType": "text/html",
+          "url": "Binary/e34Y6PBN2thb48vudP7GRmQ3"
+        },
+        "format": {
+          "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+          "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+          "display": "mimeType Sufficient"
+        }
+      },
+      {
+        "attachment": {
+          "contentType": "text/rtf",
+          "url": "Binary/fbCwHP047arDyX5Rb0.r2xwVZ9MviZvLrRfYLr8.9YxI4"
+        },
+        "format": {
+          "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+          "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+          "display": "mimeType Sufficient"
+        }
+      }
+    ],
+    "context": {
+      "extension": [
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040",
+                "code": "3",
+                "display": "Registered Nurse"
+              }
+            ],
+            "text": "Registered Nurse"
+          },
+          "url": "http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type"
+        }
+      ],
+      "encounter": [
+        {
+          "reference": "Encounter/e6kBx6PwnxIv.5kCifScsWg3",
+          "identifier": {
+            "use": "usual",
+            "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+            "value": "27556"
+          },
+          "display": "Office Visit"
+        }
+      ],
+      "period": {
+        "start": "2019-05-28T13:37:00Z"
+      }
+    }
+  },
+  "_iters": 2
+}

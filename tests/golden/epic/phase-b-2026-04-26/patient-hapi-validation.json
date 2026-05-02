@@ -1,0 +1,1440 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'race' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'ethnicity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'tribalAffiliation' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'birthsex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'sex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'genderIdentity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'race' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'ethnicity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'tribalAffiliation' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'birthsex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'sex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'genderIdentity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'race' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'ethnicity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'tribalAffiliation' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'birthsex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'sex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'genderIdentity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity' in url))</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[0], Line[1] Col[321]]</td><td>Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.extension[0].value.ofType(CodeableConcept), Line[1] Col[244]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000#male'</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[1], Line[1] Col[562]]</td><td>Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/sex-for-clinical-use</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.extension[1].value.ofType(CodeableConcept), Line[1] Col[474]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000#male'</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[Patient.extension[2].extension[0].value.ofType(Coding), Line[1] Col[678]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.6.238 for 'urn:oid:2.16.840.1.113883.6.238#2028-9'</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[Patient.extension[2].extension[0].value.ofType(Coding), Line[1] Col[678]]</td><td>The Coding provided (urn:oid:2.16.840.1.113883.6.238#2028-9) was not found in the value set 'OMB Race Categories' (http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0), and a code is required from this value set. (error message = CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.6.238 for 'urn:oid:2.16.840.1.113883.6.238#2028-9'; Unknown code 'urn:oid:2.16.840.1.113883.6.238#2028-9' for in-memory expansion of ValueSet 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category')</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.extension[4].value.ofType(code), Line[1] Col[980]]</td><td>ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.3' not found</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[Patient.extension[5], Line[1] Col[1283]]</td><td>Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/calculated-pronouns-to-use-for-text</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.extension[5].value.ofType(CodeableConcept), Line[1] Col[1180]]</td><td>CodeSystem is unknown and can't be validated: http://loinc.org for 'http://loinc.org#LA29518-0'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[0].type, Line[1] Col[1342]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[1].type, Line[1] Col[1474]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[2].type, Line[1] Col[1701]]</td><td>CodeSystem is unknown and can't be validated: http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType#um'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[2].type, Line[1] Col[1701]]</td><td>None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType#um)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[3].type, Line[1] Col[1819]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[4].type, Line[1] Col[2007]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[5].type, Line[1] Col[2167]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[5].value, Line[1] Col[2246]]</td><td>value should not start or finish with whitespace ' Z6127'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[6].type, Line[1] Col[2289]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[7].type, Line[1] Col[2419]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.identifier[8].type, Line[1] Col[2554]]</td><td>No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.maritalStatus, Line[1] Col[3442]]</td><td>No code provided, and a code should be provided from the value set 'MaritalStatus' (http://hl7.org/fhir/ValueSet/marital-status|4.0.1)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.communication[0].language, Line[1] Col[4071]]</td><td>Error Cannot invoke &quot;org.hl7.fhir.r5.model.CodeSystem.getConcept()&quot; because &quot;this.codeSystem&quot; is null validating CodeableConcept</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient.communication[1].language, Line[1] Col[4900]]</td><td>Error Cannot invoke &quot;org.hl7.fhir.r5.model.CodeSystem.getConcept()&quot; because &quot;this.codeSystem&quot; is null validating CodeableConcept</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Patient, Line[1] Col[5018]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'race' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' in url))",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'ethnicity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' in url))",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'tribalAffiliation' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation' in url))",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'birthsex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' in url))",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'sex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex' in url))",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'genderIdentity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity' in url))",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'race' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' in url))",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'ethnicity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' in url))",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'tribalAffiliation' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation' in url))",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'birthsex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' in url))",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'sex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex' in url))",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'genderIdentity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity' in url))",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'race' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' in url))",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'ethnicity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' in url))",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'tribalAffiliation' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation' in url))",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'birthsex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' in url))",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'sex' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex' in url))",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'genderIdentity' (discriminator: ('http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity' in url))",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 321
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Extension_EXT_Unknown"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Extension_EXT_Unknown"
+            }
+          ]
+        },
+        "diagnostics": "Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex",
+        "location": [
+          "Patient.extension[0]",
+          "Line[1] Col[321]"
+        ],
+        "expression": [
+          "Patient.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 244
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000#male'",
+        "location": [
+          "Patient.extension[0].value.ofType(CodeableConcept)",
+          "Line[1] Col[244]"
+        ],
+        "expression": [
+          "Patient.extension[0].value.ofType(CodeableConcept)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 562
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Extension_EXT_Unknown"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Extension_EXT_Unknown"
+            }
+          ]
+        },
+        "diagnostics": "Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/sex-for-clinical-use",
+        "location": [
+          "Patient.extension[1]",
+          "Line[1] Col[562]"
+        ],
+        "expression": [
+          "Patient.extension[1]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 474
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000#male'",
+        "location": [
+          "Patient.extension[1].value.ofType(CodeableConcept)",
+          "Line[1] Col[474]"
+        ],
+        "expression": [
+          "Patient.extension[1].value.ofType(CodeableConcept)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 678
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.6.238 for 'urn:oid:2.16.840.1.113883.6.238#2028-9'",
+        "location": [
+          "Patient.extension[2].extension[0].value.ofType(Coding)",
+          "Line[1] Col[678]"
+        ],
+        "expression": [
+          "Patient.extension[2].extension[0].value.ofType(Coding)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 678
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_12"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_12"
+            }
+          ]
+        },
+        "diagnostics": "The Coding provided (urn:oid:2.16.840.1.113883.6.238#2028-9) was not found in the value set 'OMB Race Categories' (http://hl7.org/fhir/us/core/ValueSet/omb-race-category|6.1.0), and a code is required from this value set.  (error message = CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.6.238 for 'urn:oid:2.16.840.1.113883.6.238#2028-9'; Unknown code 'urn:oid:2.16.840.1.113883.6.238#2028-9' for in-memory expansion of ValueSet 'http://hl7.org/fhir/us/core/ValueSet/omb-race-category')",
+        "location": [
+          "Patient.extension[2].extension[0].value.ofType(Coding)",
+          "Line[1] Col[678]"
+        ],
+        "expression": [
+          "Patient.extension[2].extension[0].value.ofType(Coding)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 980
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_ValueSet_NotFound"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_ValueSet_NotFound"
+            }
+          ]
+        },
+        "diagnostics": "ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.3' not found",
+        "location": [
+          "Patient.extension[4].value.ofType(code)",
+          "Line[1] Col[980]"
+        ],
+        "expression": [
+          "Patient.extension[4].value.ofType(code)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1283
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Extension_EXT_Unknown"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Extension_EXT_Unknown"
+            }
+          ]
+        },
+        "diagnostics": "Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/calculated-pronouns-to-use-for-text",
+        "location": [
+          "Patient.extension[5]",
+          "Line[1] Col[1283]"
+        ],
+        "expression": [
+          "Patient.extension[5]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1180
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://loinc.org for 'http://loinc.org#LA29518-0'",
+        "location": [
+          "Patient.extension[5].value.ofType(CodeableConcept)",
+          "Line[1] Col[1180]"
+        ],
+        "expression": [
+          "Patient.extension[5].value.ofType(CodeableConcept)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1342
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[0].type",
+          "Line[1] Col[1342]"
+        ],
+        "expression": [
+          "Patient.identifier[0].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1474
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[1].type",
+          "Line[1] Col[1474]"
+        ],
+        "expression": [
+          "Patient.identifier[1].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1701
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType for 'http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType#um'",
+        "location": [
+          "Patient.identifier[2].type",
+          "Line[1] Col[1701]"
+        ],
+        "expression": [
+          "Patient.identifier[2].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1701
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_2_CC"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_2_CC"
+            }
+          ]
+        },
+        "diagnostics": "None of the codings provided are in the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType#um)",
+        "location": [
+          "Patient.identifier[2].type",
+          "Line[1] Col[1701]"
+        ],
+        "expression": [
+          "Patient.identifier[2].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1819
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[3].type",
+          "Line[1] Col[1819]"
+        ],
+        "expression": [
+          "Patient.identifier[3].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2007
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[4].type",
+          "Line[1] Col[2007]"
+        ],
+        "expression": [
+          "Patient.identifier[4].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2167
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[5].type",
+          "Line[1] Col[2167]"
+        ],
+        "expression": [
+          "Patient.identifier[5].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2246
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Type_Specific_Checks_DT_String_WS"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Type_Specific_Checks_DT_String_WS"
+            }
+          ]
+        },
+        "diagnostics": "value should not start or finish with whitespace '     Z6127'",
+        "location": [
+          "Patient.identifier[5].value",
+          "Line[1] Col[2246]"
+        ],
+        "expression": [
+          "Patient.identifier[5].value"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2289
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[6].type",
+          "Line[1] Col[2289]"
+        ],
+        "expression": [
+          "Patient.identifier[6].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2419
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[7].type",
+          "Line[1] Col[2419]"
+        ],
+        "expression": [
+          "Patient.identifier[7].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2554
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'IdentifierType' (http://hl7.org/fhir/ValueSet/identifier-type|4.0.1)",
+        "location": [
+          "Patient.identifier[8].type",
+          "Line[1] Col[2554]"
+        ],
+        "expression": [
+          "Patient.identifier[8].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 3442
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Code_ValueSet_Ext"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Code_ValueSet_Ext"
+            }
+          ]
+        },
+        "diagnostics": "No code provided, and a code should be provided from the value set 'MaritalStatus' (http://hl7.org/fhir/ValueSet/marital-status|4.0.1)",
+        "location": [
+          "Patient.maritalStatus",
+          "Line[1] Col[3442]"
+        ],
+        "expression": [
+          "Patient.maritalStatus"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 4071
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Error_CodeableConcept"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Error_CodeableConcept"
+            }
+          ]
+        },
+        "diagnostics": "Error Cannot invoke \"org.hl7.fhir.r5.model.CodeSystem.getConcept()\" because \"this.codeSystem\" is null validating CodeableConcept",
+        "location": [
+          "Patient.communication[0].language",
+          "Line[1] Col[4071]"
+        ],
+        "expression": [
+          "Patient.communication[0].language"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 4900
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_Error_CodeableConcept"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_Error_CodeableConcept"
+            }
+          ]
+        },
+        "diagnostics": "Error Cannot invoke \"org.hl7.fhir.r5.model.CodeSystem.getConcept()\" because \"this.codeSystem\" is null validating CodeableConcept",
+        "location": [
+          "Patient.communication[1].language",
+          "Line[1] Col[4900]"
+        ],
+        "expression": [
+          "Patient.communication[1].language"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 5018
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "Patient",
+          "Line[1] Col[5018]"
+        ],
+        "expression": [
+          "Patient"
+        ]
+      }
+    ]
+  }
+}
