@@ -1,0 +1,35 @@
+{
+  "probe": {
+    "auth": "client_secret_basic",
+    "captured_at": "2026-05-02T22:48:47.798194+00:00",
+    "method": "POST",
+    "purpose": "Capture Cerner token-endpoint behavior when v1-syntax scope is requested (validation of phase_b_findings.headlines[1] claim about oauth2:token:empty-scopes vendor error code).",
+    "request_body": {
+      "grant_type": "client_credentials",
+      "scope": "system/Patient.read"
+    },
+    "url": "https://authorization.cerner.com/tenants/ec2458f2-1e24-41c8-b71b-0e701af7583d/protocols/oauth2/profiles/smart-v1/token"
+  },
+  "response": {
+    "body_parsed": {
+      "error": "invalid_scope",
+      "error_uri": "https://authorization.cerner.com/errors/urn%3Acerner%3Aerror%3Aauthorization-server%3Aoauth2%3Atoken%3Aempty-scopes/instances/6813f4e8-18a2-4745-941c-9898536f4585?client=aa35106b-e50c-4712-9250-9d405ec5b794&tenant=ec2458f2-1e24-41c8-b71b-0e701af7583d"
+    },
+    "body_text": "{\"error\":\"invalid_scope\",\"error_uri\":\"https://authorization.cerner.com/errors/urn%3Acerner%3Aerror%3Aauthorization-server%3Aoauth2%3Atoken%3Aempty-scopes/instances/6813f4e8-18a2-4745-941c-9898536f4585?client=aa35106b-e50c-4712-9250-9d405ec5b794&tenant=ec2458f2-1e24-41c8-b71b-0e701af7583d\"}",
+    "headers": {
+      "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept, Cerner-Correlation-Id",
+      "Access-Control-Allow-Methods": "OPTIONS, POST",
+      "Access-Control-Allow-Origin": "*",
+      "Cache-Control": "no-store",
+      "Cerner-Correlation-ID": "6813f4e8-18a2-4745-941c-9898536f4585",
+      "Connection": "keep-alive",
+      "Content-Length": "290",
+      "Content-Type": "application/json",
+      "Date": "Sat, 02 May 2026 22:48:47 GMT",
+      "Expect-CT": "enforce, max-age=30",
+      "Pragma": "no-cache",
+      "Server": "cloud_authorization_server1"
+    },
+    "status_code": 400
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.vaccineCode, Line[1] Col[299]]</td><td>ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6' not found</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization.vaccineCode, Line[1] Col[299]]</td><td>CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/cvx for 'http://hl7.org/fhir/sid/cvx#20'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[Immunization, Line[1] Col[894]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 299
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_ValueSet_NotFound"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_ValueSet_NotFound"
+            }
+          ]
+        },
+        "diagnostics": "ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.6' not found",
+        "location": [
+          "Immunization.vaccineCode",
+          "Line[1] Col[299]"
+        ],
+        "expression": [
+          "Immunization.vaccineCode"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 299
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://hl7.org/fhir/sid/cvx for 'http://hl7.org/fhir/sid/cvx#20'",
+        "location": [
+          "Immunization.vaccineCode",
+          "Line[1] Col[299]"
+        ],
+        "expression": [
+          "Immunization.vaccineCode"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 894
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "Immunization",
+          "Line[1] Col[894]"
+        ],
+        "expression": [
+          "Immunization"
+        ]
+      }
+    ]
+  }
+}

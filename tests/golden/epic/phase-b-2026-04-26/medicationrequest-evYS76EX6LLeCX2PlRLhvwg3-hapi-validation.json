@@ -1,0 +1,284 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].route, Line[1] Col[1976]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025#15'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[0].type, Line[1] Col[2259]]</td><td>CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#calculated'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity), Line[1] Col[2363]]</td><td>UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablet' SHOULD contain the annotation (it does not)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[1].type, Line[1] Col[2519]]</td><td>CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#admin-amount'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[1].dose.ofType(Quantity), Line[1] Col[2623]]</td><td>UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablet' SHOULD contain the annotation (it does not)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[2].type, Line[1] Col[2764]]</td><td>CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#ordered'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[2].dose.ofType(Quantity), Line[1] Col[2868]]</td><td>UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablet' SHOULD contain the annotation (it does not)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest, Line[1] Col[3120]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1976
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025#15'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].route",
+          "Line[1] Col[1976]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].route"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2259
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#calculated'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[0].type",
+          "Line[1] Col[2259]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[0].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2363
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NOT_IN_UNIT"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NOT_IN_UNIT"
+            }
+          ]
+        },
+        "diagnostics": "UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablet' SHOULD contain the annotation (it does not)",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity)",
+          "Line[1] Col[2363]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2519
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#admin-amount'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[1].type",
+          "Line[1] Col[2519]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[1].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2623
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NOT_IN_UNIT"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NOT_IN_UNIT"
+            }
+          ]
+        },
+        "diagnostics": "UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablet' SHOULD contain the annotation (it does not)",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[1].dose.ofType(Quantity)",
+          "Line[1] Col[2623]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[1].dose.ofType(Quantity)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2764
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#ordered'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[2].type",
+          "Line[1] Col[2764]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[2].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2868
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NOT_IN_UNIT"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "TYPE_SPECIFIC_CHECKS_DT_QTY_UCUM_ANNOTATIONS_NOT_IN_UNIT"
+            }
+          ]
+        },
+        "diagnostics": "UCUM Codes that contain human readable annotations like {tbl} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked, and the Quantity.unit 'tablet' SHOULD contain the annotation (it does not)",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[2].dose.ofType(Quantity)",
+          "Line[1] Col[2868]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[2].dose.ofType(Quantity)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 3120
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "MedicationRequest",
+          "Line[1] Col[3120]"
+        ],
+        "expression": [
+          "MedicationRequest"
+        ]
+      }
+    ]
+  }
+}

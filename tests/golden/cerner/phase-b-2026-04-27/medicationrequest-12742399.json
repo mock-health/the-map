@@ -1,0 +1,4074 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12742399",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:37.390805+00:00",
+  "_probe": "MedicationRequest",
+  "_patient_id": "12742399",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "9924ffcd-0237-4729-8672-0c771207721b",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12742399"
+      },
+      {
+        "relation": "next",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12742399&-pageContext=T3BlblBsYXRmb3JtRmhpckNvbnRleHQ9dHJ1ZSZwYWdlQ29udGV4dD04MDUxOTA3MDJfODA1MTkwNzAzXzEyNzQyMzk5XzFfMSZjb25jZXB0PWNoYXJ0ZWQ%3D&-pageDirection=NEXT"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410193641",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410193641",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2024-01-18T10:23:49Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: atorvastatin (Lipitor 10 mg oral tablet)</p><p><b>Dosage Instructions</b>: 10 mg = 1 tab, Oral, Daily, 30 tab, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 18, 2024 10:06 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "617314",
+                "display": "atorvastatin 10 MG Oral Tablet [Lipitor]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2750279",
+                "display": "Lipitor 10 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "atorvastatin (Lipitor 10 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97998276"
+          },
+          "authoredOn": "2024-01-18T10:06:39Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Maintenance"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "10 mg = 1 tab, Oral, Daily, # 30 tab, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "10 mg = 1 tab, Oral, Daily, 30 tab, 0 Refill(s)",
+              "patientInstruction": "1 tab Oral (given by mouth) every day.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-18T10:06:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 1.0,
+                    "unit": "tab",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-18T10:06:39Z"
+            },
+            "numberOfRepeatsAllowed": 0,
+            "quantity": {
+              "value": 30.0,
+              "unit": "tab",
+              "system": "http://unitsofmeasure.org",
+              "code": "{tbl}"
+            }
+          },
+          "substitution": {
+            "allowedBoolean": true
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436896547",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436896547",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:42:07Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: atorvastatin (atorvastatin 10 mg oral tablet)</p><p><b>Dosage Instructions</b>: 10 mg, BID, as needed, PRN, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:42 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "617312",
+                "display": "atorvastatin 10 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2750275",
+                "display": "atorvastatin 10 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "atorvastatin (atorvastatin 10 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:42:07Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "note": [
+            {
+              "text": "EveryDose - Feb 12, 2024 7:41 A.M. UTC - Entry made by EveryDose Application."
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "10 mg, BID, PRN, as needed, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "10 mg, BID, as needed, PRN, 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "as needed"
+                }
+              ],
+              "patientInstruction": "10 Milligrams 2 times a day as needed. as needed.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-17T09:00:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696528",
+                      "display": "BID",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "BID",
+                      "display": "BID",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229799001",
+                      "display": "Twice a day (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "BID"
+                }
+              },
+              "asNeededBoolean": true,
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 10.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:42:07Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410212749",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410212749",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-01-18T12:05:36Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: levothyroxine (levothyroxine 13 mcg (0.013 mg) oral capsule)</p><p><b>Dosage Instructions</b>: 13 mcg = 1 cap, Oral, Daily, 30 cap, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 18, 2024 12:05 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "discharge",
+                  "display": "Discharge",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "966412",
+                "display": "Levothyroxine Sodium 0.013 MG Oral Capsule",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "19952965",
+                "display": "levothyroxine 13 mcg (0.013 mg) oral capsule",
+                "userSelected": true
+              }
+            ],
+            "text": "levothyroxine (levothyroxine 13 mcg (0.013 mg) oral capsule)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97998276"
+          },
+          "authoredOn": "2024-01-18T12:05:22Z",
+          "requester": {
+            "reference": "Practitioner/12742905",
+            "display": "PWEveryDose, MDHosp"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Maintenance"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "13 mcg = 1 cap, Oral, Daily, # 30 cap, 0 Refill(s), called to pharmacy (Rx)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "13 mcg = 1 cap, Oral, Daily, 30 cap, 0 Refill(s)",
+              "patientInstruction": "1 Capsules Oral (given by mouth) every day. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-18T12:05:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 1.0,
+                    "unit": "cap",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{Capsule}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-18T12:05:22Z"
+            },
+            "numberOfRepeatsAllowed": 0,
+            "quantity": {
+              "value": 30.0,
+              "unit": "cap",
+              "system": "http://unitsofmeasure.org",
+              "code": "{Capsule}"
+            }
+          },
+          "substitution": {
+            "allowedBoolean": true
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/445188799",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "445188799",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-12-19T08:19:40Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Dec 19, 2024  8:19 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "966191",
+                "display": "Levothyroxine Sodium 0.125 MG Oral Tablet [Synthroid]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2762055",
+                "display": "Synthroid 125 mcg (0.125 mg) oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/98121303"
+          },
+          "authoredOn": "2024-12-19T08:19:40Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-12-19T08:19:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-12-19T08:19:40Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/445188807",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "445188807",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-12-19T08:20:07Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Dec 19, 2024  8:20 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "966191",
+                "display": "Levothyroxine Sodium 0.125 MG Oral Tablet [Synthroid]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2762055",
+                "display": "Synthroid 125 mcg (0.125 mg) oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/98121303"
+          },
+          "authoredOn": "2024-12-19T08:20:07Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-12-19T08:20:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-12-19T08:20:07Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/445188815",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "445188815",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-12-19T09:06:22Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Dec 19, 2024  9:06 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "966191",
+                "display": "Levothyroxine Sodium 0.125 MG Oral Tablet [Synthroid]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2762055",
+                "display": "Synthroid 125 mcg (0.125 mg) oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/98121303"
+          },
+          "authoredOn": "2024-12-19T09:06:22Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-12-19T09:06:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-12-19T09:06:22Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/445188823",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "445188823",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-12-19T09:06:58Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Dec 19, 2024  9:06 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "966191",
+                "display": "Levothyroxine Sodium 0.125 MG Oral Tablet [Synthroid]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2762055",
+                "display": "Synthroid 125 mcg (0.125 mg) oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "levothyroxine (Synthroid 125 mcg (0.125 mg) oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/98121303"
+          },
+          "authoredOn": "2024-12-19T09:06:58Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-12-19T09:06:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-12-19T09:06:58Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410277227",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410277227",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2024-01-19T07:27:33Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: rivaroxaban (Xarelto 2.5 mg oral tablet)</p><p><b>Dosage Instructions</b>: 2.5 mg = 1 tab, Oral, BID, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 19, 2024  6:55 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2059017",
+                "display": "rivaroxaban 2.5 MG Oral Tablet [Xarelto]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2571677209",
+                "display": "Xarelto 2.5 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "rivaroxaban (Xarelto 2.5 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97998276"
+          },
+          "authoredOn": "2024-01-19T06:55:35Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Maintenance"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "2.5 mg = 1 tab, Oral, BID, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "2.5 mg = 1 tab, Oral, BID, 0 Refill(s)",
+              "patientInstruction": "1 tab Oral (given by mouth) 2 times a day.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T06:55:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696528",
+                      "display": "BID",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "BID",
+                      "display": "BID",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229799001",
+                      "display": "Twice a day (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "BID"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318185",
+                    "display": "Oral",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "26643006",
+                    "display": "Oral route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Oral"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 1.0,
+                    "unit": "tab",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-19T06:55:35Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          },
+          "substitution": {
+            "allowedBoolean": true
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/412402557",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "412402557",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-02-12T07:41:36Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: rivaroxaban (rivaroxaban 2.5 mg oral tablet)</p><p><b>Dosage Instructions</b>: 1.0, BID, Xarelto 2.5 mg, PO, BID., 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Feb 12, 2024  7:41 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2059015",
+                "display": "rivaroxaban 2.5 MG Oral Tablet",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2571677211",
+                "display": "rivaroxaban 2.5 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "rivaroxaban (rivaroxaban 2.5 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-02-12T07:41:36Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "note": [
+            {
+              "text": "EveryDose - Feb 12, 2024  7:41 A.M. UTC - Entry made by EveryDose Application."
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "1.0, BID, Xarelto 2.5 mg, PO, BID., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "1.0, BID, Xarelto 2.5 mg, PO, BID., 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "Xarelto 2.5 mg, PO, BID."
+                }
+              ],
+              "patientInstruction": "1.0 2 times a day. Xarelto 2.5 mg, PO, BID..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-18T18:30:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696528",
+                      "display": "BID",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "BID",
+                      "display": "BID",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229799001",
+                      "display": "Twice a day (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "BID"
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-02-12T07:41:36Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/417105927",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "417105927",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-04-05T08:00:21Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: simvastatin (Zocor 5 mg oral tablet)</p><p><b>Dosage Instructions</b>: 1.0, Zocor 5 mg, PO, PRN., PRN, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Apr  5, 2024  8:00 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "208220",
+                "display": "Simvastatin 5 MG Oral Tablet [Zocor]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2768852",
+                "display": "Zocor 5 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "simvastatin (Zocor 5 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-04-05T08:00:21Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "note": [
+            {
+              "text": "EveryDose - Apr  5, 2024  8:00 A.M. UTC - Entry made by EveryDose Application."
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "1.0, PRN, Zocor 5 mg, PO, PRN., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "1.0, Zocor 5 mg, PO, PRN., PRN, 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "Zocor 5 mg, PO, PRN."
+                }
+              ],
+              "patientInstruction": "1.0 as needed. Zocor 5 mg, PO, PRN..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-04-05T00:00:00Z"
+                  }
+                }
+              },
+              "asNeededBoolean": true
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-04-05T08:00:21Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436831495",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436831495",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-10-16T01:00:13Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Order</p><p><b>Medication</b>: sodium hypochlorite topical (H-Chlor 12)</p><p><b>Dosage Instructions</b>: 55 cap, Chewed, Daily</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:28 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Needs pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "outpatient",
+                  "display": "Outpatient",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": false,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2572919173",
+                "display": "H-Chlor 12",
+                "userSelected": true
+              }
+            ],
+            "text": "sodium hypochlorite topical (H-Chlor 12)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97998276"
+          },
+          "authoredOn": "2024-10-01T12:28:58Z",
+          "requester": {
+            "reference": "Practitioner/12730044",
+            "display": "PWTSystem, Physician - Emergency Medicine"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "55 cap, Chewed, Daily, First Dose: 10/01/24 9:00:00 CDT",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "55 cap, Chewed, Daily",
+              "patientInstruction": "55 Capsules Chewed every day. Refills: 0.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T14:00:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "673847",
+                    "display": "Chewed",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "419747000",
+                    "display": "Chew - dosing instruction imperative (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "Chewed"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 55.0,
+                    "unit": "cap",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{Capsule}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:28:58Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436895693",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436895693",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:38:23Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: sodium hypochlorite topical (sodium hypochlorite 0.125% topical solution)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:38 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "644133",
+                "display": "Sodium Hypochlorite 1.25 MG/ML Topical Solution",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "4246575",
+                "display": "sodium hypochlorite 0.125% topical solution",
+                "userSelected": true
+              }
+            ],
+            "text": "sodium hypochlorite topical (sodium hypochlorite 0.125% topical solution)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:38:23Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:38:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:38:23Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436895997",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436895997",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:39:42Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: sodium hypochlorite topical (sodium hypochlorite 0.125% topical solution)</p><p><b>Dosage Instructions</b>: 6.0, every 1 hr, as needed, PRN, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:39 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "644133",
+                "display": "Sodium Hypochlorite 1.25 MG/ML Topical Solution",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "4246575",
+                "display": "sodium hypochlorite 0.125% topical solution",
+                "userSelected": true
+              }
+            ],
+            "text": "sodium hypochlorite topical (sodium hypochlorite 0.125% topical solution)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:39:42Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "6.0, every 1 hr, PRN, as needed, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "6.0, every 1 hr, as needed, PRN, 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "as needed"
+                }
+              ],
+              "patientInstruction": "6.0 every hour as needed. as needed.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:39:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696539",
+                      "display": "every 1 hr",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "Q1H",
+                      "display": "every hour",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "225768006",
+                      "display": "Hourly (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every 1 hr"
+                }
+              },
+              "asNeededBoolean": true
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:39:42Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/414470113",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "414470113",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-03-06T14:31:16Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: tafenoquine (Krintafel 150 mg oral tablet)</p><p><b>Dosage Instructions</b>: 2.0, Daily, Krintafel 150 mg, PO, QD., 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Mar  6, 2024  2:31 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "2109239",
+                "display": "tafenoquine 150 MG Oral Tablet [Krintafel]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2572921165",
+                "display": "Krintafel 150 mg oral tablet",
+                "userSelected": true
+              }
+            ],
+            "text": "tafenoquine (Krintafel 150 mg oral tablet)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-03-06T14:31:16Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "note": [
+            {
+              "text": "STAGING-EveryDose - Mar  6, 2024  2:31 P.M. UTC - Entry made by EveryDose Application."
+            }
+          ],
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "2.0, Daily, Krintafel 150 mg, PO, QD., 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "2.0, Daily, Krintafel 150 mg, PO, QD., 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "Krintafel 150 mg, PO, QD."
+                }
+              ],
+              "patientInstruction": "2.0 every day. Krintafel 150 mg, PO, QD..",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-18T00:00:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-03-06T14:31:16Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410277635",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410277635",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-01-19T08:00:29Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (Krintafel)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 19, 2024  8:00 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "Krintafel",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (Krintafel)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-01-19T08:00:29Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Krintafel, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T08:00:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-19T08:00:29Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410277653",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410277653",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-01-19T08:00:30Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (Lipitor)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 19, 2024  8:00 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "Lipitor",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (Lipitor)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-01-19T08:00:30Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Lipitor, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T08:00:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-19T08:00:30Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410277665",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410277665",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-01-19T08:00:36Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (Xarelto)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 19, 2024  8:00 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "Xarelto",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (Xarelto)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-01-19T08:00:35Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Xarelto, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T08:00:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-19T08:00:35Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410277683",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410277683",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-01-19T08:00:38Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (Xeomin)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 19, 2024  8:00 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "Xeomin",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (Xeomin)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-01-19T08:00:38Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Xeomin, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T08:00:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-19T08:00:38Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436830675",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436830675",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:21:25Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (H-Chlor 12)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:21 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "H-Chlor 12",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (H-Chlor 12)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:21:25Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "H-Chlor 12, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:21:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:21:25Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436830677",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436830677",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:21:26Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (H-Chlor 12)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:21 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "H-Chlor 12",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (H-Chlor 12)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:21:26Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "H-Chlor 12, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:21:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:21:26Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436896269",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436896269",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:41:00Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (Guanidine)</p><p><b>Dosage Instructions</b>: 6 mg, every 1 hr, as needed, PRN, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:41 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "Guanidine",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (Guanidine)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:41:00Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Guanidine, 6 mg =, every 1 hr, as needed, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "6 mg, every 1 hr, as needed, PRN, 0 Refill(s)",
+              "additionalInstruction": [
+                {
+                  "text": "as needed"
+                }
+              ],
+              "patientInstruction": "6 Milligrams every hour as needed. as needed.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T09:00:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696539",
+                      "display": "every 1 hr",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "Q1H",
+                      "display": "every hour",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "225768006",
+                      "display": "Hourly (qualifier value)",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "every 1 hr"
+                }
+              },
+              "asNeededBoolean": true,
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 6.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:41:00Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436942637",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436942637",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:43:10Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (aspirin 325 mg capsule)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:43 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "aspirin 325 mg capsule",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (aspirin 325 mg capsule)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:43:10Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "aspirin 325 mg capsule, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:43:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:43:10Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436960623",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436960623",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:45:51Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (Fish Oil 500 mg oral capsule)</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:45 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "Fish Oil 500 mg oral capsule",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (Fish Oil 500 mg oral capsule)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:45:51Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "Fish Oil 500 mg oral capsule, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:45:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:45:51Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/436961517",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "436961517",
+          "meta": {
+            "versionId": "0",
+            "lastUpdated": "2024-10-01T12:48:29Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: Active</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: template non-formulary (medication) (tafenoquine (Krintafel 150 mg oral tablet))</p><p><b>Dosage Instructions</b>: 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Oct  1, 2024 12:48 P.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "active",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "274145179",
+                "display": "tafenoquine (Krintafel 150 mg oral tablet)",
+                "userSelected": true
+              }
+            ],
+            "text": "template non-formulary (medication) (tafenoquine (Krintafel 150 mg oral tablet))"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "authoredOn": "2024-10-01T12:48:29Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Soft Stop"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "tafenoquine (Krintafel 150 mg oral tablet), 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "0 Refill(s)",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-10-01T12:48:00Z"
+                  }
+                }
+              }
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-10-01T12:48:29Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest/410277445",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "410277445",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-01-19T07:40:24Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Medication Request</b></p><p><b>Status</b>: On Hold</p><p><b>Intent</b>: Plan</p><p><b>Medication</b>: trimethobenzamide (Tigan 100 mg/mL intramuscular solution)</p><p><b>Dosage Instructions</b>: 200 mg, IM, Daily, 0 Refill(s)</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Authored On</b>: Jan 19, 2024  7:35 A.M. UTC</p></div>"
+          },
+          "extension": [
+            {
+              "valueCodeableConcept": {
+                "text": "Does not need pharmacy verification"
+              },
+              "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/pharmacy-verification-status"
+            },
+            {
+              "valueCoding": {
+                "system": "http://electronichealth.se/fhir/ValueSet/prescription-format",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLPrescriptionFormat"
+            },
+            {
+              "valueCoding": {
+                "system": "http://ehalsomyndigheten.se/fhir/ValueSet/registration-basis-codes",
+                "code": "ELECTRONIC",
+                "display": "Electronic"
+              },
+              "url": "http://electronichealth.se/fhir/StructureDefinition/NLLRegistrationBasis"
+            }
+          ],
+          "status": "on-hold",
+          "intent": "plan",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+                  "code": "patientspecified",
+                  "display": "Patient Specified",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "reportedBoolean": true,
+          "medicationCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                "code": "1726682",
+                "display": "2 ML Trimethobenzamide hydrochloride 100 MG/ML Injection [Tigan]",
+                "userSelected": false
+              },
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/synonym",
+                "code": "2770655",
+                "display": "Tigan 100 mg/mL intramuscular solution",
+                "userSelected": true
+              }
+            ],
+            "text": "trimethobenzamide (Tigan 100 mg/mL intramuscular solution)"
+          },
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97998276"
+          },
+          "authoredOn": "2024-01-19T07:35:53Z",
+          "requester": {
+            "extension": [
+              {
+                "valueCode": "unknown",
+                "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+              }
+            ]
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4009",
+                "code": "2338",
+                "display": "Soft Stop",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy",
+                "userSelected": false
+              }
+            ],
+            "text": "Maintenance"
+          },
+          "dosageInstruction": [
+            {
+              "extension": [
+                {
+                  "valueString": "200 mg, IM, Daily, 0 Refill(s)",
+                  "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/clinical-instruction"
+                }
+              ],
+              "text": "200 mg, IM, Daily, 0 Refill(s)",
+              "patientInstruction": "200 Milligrams Intramuscular (in a muscle) every day.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2024-01-19T07:35:00Z"
+                  }
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003",
+                      "code": "696530",
+                      "display": "Daily",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://snomed.info/sct",
+                      "code": "229797004",
+                      "display": "Once daily (qualifier value)",
+                      "userSelected": false
+                    },
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+                      "code": "QD",
+                      "display": "QD",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Daily"
+                }
+              },
+              "route": {
+                "coding": [
+                  {
+                    "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                    "code": "318167",
+                    "display": "IM",
+                    "userSelected": true
+                  },
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "78421000",
+                    "display": "Intramuscular route (qualifier value)",
+                    "userSelected": false
+                  }
+                ],
+                "text": "IM"
+              },
+              "doseAndRate": [
+                {
+                  "doseQuantity": {
+                    "value": 200.0,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "extension": [
+              {
+                "valueBoolean": false,
+                "url": "http://electronichealth.se/fhir/StructureDefinition/NLLDosePackaging"
+              }
+            ],
+            "validityPeriod": {
+              "start": "2024-01-19T07:35:53Z"
+            },
+            "numberOfRepeatsAllowed": 0
+          },
+          "substitution": {
+            "allowedBoolean": true
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

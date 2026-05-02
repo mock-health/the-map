@@ -1,0 +1,20 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient?totally-bogus-param=foo",
+    "status": 400
+  },
+  "_captured_at": "2026-04-27T20:52:08.110327+00:00",
+  "body": {
+    "resourceType": "OperationOutcome",
+    "issue": [
+      {
+        "severity": "error",
+        "code": "invalid",
+        "details": {
+          "text": "at least one of _id, identifier, name, family, given, birthdate, phone, email, address-postalcode, or -pageContext must be provided"
+        }
+      }
+    ]
+  }
+}

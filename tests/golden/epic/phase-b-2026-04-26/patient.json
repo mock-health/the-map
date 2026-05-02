@@ -1,0 +1,316 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Patient/eq081-VQEgP8drUUqCWzHfw3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:07:11.616769+00:00",
+  "body": {
+    "resourceType": "Patient",
+    "id": "eq081-VQEgP8drUUqCWzHfw3",
+    "extension": [
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+              "code": "male",
+              "display": "male"
+            }
+          ],
+          "text": "Male"
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+              "code": "male",
+              "display": "male"
+            }
+          ]
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/sex-for-clinical-use"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2028-9",
+              "display": "Asian"
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Chinese",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension": [
+          {
+            "valueString": "Unknown",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "valueCode": "248153007",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA29518-0",
+              "display": "he/him/his/his/himself"
+            }
+          ]
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/calculated-pronouns-to-use-for-text"
+      }
+    ],
+    "identifier": [
+      {
+        "use": "usual",
+        "type": {
+          "text": "CEID"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100",
+        "value": "FHRRJKD4PWK969G"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "EPIC"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.0",
+        "value": "E4005"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code": "um"
+            }
+          ],
+          "text": "EXTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+        "value": "Z6127"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "FHIR"
+        },
+        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-dstu2-fhir-id",
+        "value": "TGsj9rYGI8SV-LYYkdH1JqbxYuFGfrODXSPC6iLLYkJcB"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "FHIR STU3"
+        },
+        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-fhir-id",
+        "value": "eq081-VQEgP8drUUqCWzHfw3"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "INTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+        "value": "     Z6127"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "EPI"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.14",
+        "value": "203711"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "MYCHARTLOGIN"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.878082.110",
+        "value": "FHIRDERRICK"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "WPRINTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.878082",
+        "value": "738"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "official",
+        "text": "Derrick Lin",
+        "family": "Lin",
+        "given": [
+          "Derrick"
+        ]
+      },
+      {
+        "use": "usual",
+        "text": "Derrick Lin",
+        "family": "Lin",
+        "given": [
+          "Derrick"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+1 785-666-6666",
+        "use": "work",
+        "rank": 2
+      },
+      {
+        "system": "phone",
+        "value": "+1 785-785-4321",
+        "use": "mobile",
+        "rank": 3
+      },
+      {
+        "system": "email",
+        "value": "knixontestemail2@epic.com",
+        "rank": 1
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1973-06-03",
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "use": "home",
+        "text": "7324 Roosevelt Ave\r\nINDIANAPOLIS IN 46201\r\nUnited States of America",
+        "line": [
+          "7324 Roosevelt Ave"
+        ],
+        "city": "INDIANAPOLIS",
+        "district": "MARION",
+        "state": "IN",
+        "postalCode": "46201",
+        "country": "US",
+        "period": {
+          "start": "2019-05-24"
+        }
+      }
+    ],
+    "maritalStatus": {
+      "text": "Married"
+    },
+    "communication": [
+      {
+        "extension": [
+          {
+            "extension": [
+              {
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
+                  "code": "ESP",
+                  "display": "Expressed spoken"
+                },
+                "url": "type"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
+          },
+          {
+            "extension": [
+              {
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
+                  "code": "EWR",
+                  "display": "Expressed written"
+                },
+                "url": "type"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
+          }
+        ],
+        "language": {
+          "coding": [
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "en",
+              "display": "English"
+            }
+          ],
+          "text": "English"
+        },
+        "preferred": true,
+        "_preferred": {
+          "extension": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/language-preference-type",
+                "code": "verbal",
+                "display": "verbal"
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-preferenceType"
+            },
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/language-preference-type",
+                "code": "written",
+                "display": "written"
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-preferenceType"
+            }
+          ]
+        }
+      },
+      {
+        "extension": [
+          {
+            "extension": [
+              {
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
+                  "code": "EWR",
+                  "display": "Expressed written"
+                },
+                "url": "type"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
+          }
+        ],
+        "language": {
+          "coding": [
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "zh",
+              "display": "Chinese (Traditional)"
+            }
+          ],
+          "text": "Chinese (Traditional)"
+        }
+      }
+    ],
+    "managingOrganization": {
+      "reference": "Organization/enRyWnSP963FYDpoks4NHOA3",
+      "display": "Epic Hospital System"
+    }
+  }
+}

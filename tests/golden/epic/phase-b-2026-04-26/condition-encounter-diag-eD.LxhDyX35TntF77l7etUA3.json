@@ -1,0 +1,154 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eD.LxhDyX35TntF77l7etUA3&category=encounter-diagnosis",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:25.212759+00:00",
+  "_probe": "Condition-encounter-diag",
+  "_patient_id": "eD.LxhDyX35TntF77l7etUA3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 1,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=encounter-diagnosis&patient=eD.LxhDyX35TntF77l7etUA3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/frCuaocasfcvcdeK83XHiwbpXOS7hQr.xMcyYBDA42m84"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/frCuaocasfcvcdeK83XHiwbpXOS7hQr.xMcyYBDA42m84",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "frCuaocasfcvcdeK83XHiwbpXOS7hQr.xMcyYBDA42m84",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "encounter-diagnosis",
+                  "display": "Encounter Diagnosis"
+                }
+              ],
+              "text": "Encounter Diagnosis"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://open.epic.com/FHIR/StructureDefinition/condition-category",
+                  "code": "visit-diagnosis",
+                  "display": "Visit Diagnosis"
+                }
+              ],
+              "text": "Visit Diagnosis"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "154283005",
+                "display": "Pulmonary tuberculosis (disorder)"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "011.90",
+                "display": "Unspecified pulmonary tuberculosis, confirmation unspecified"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "A15.0",
+                "display": "Tuberculosis of lung"
+              }
+            ],
+            "text": "TB (pulmonary tuberculosis)"
+          },
+          "subject": {
+            "reference": "Patient/eD.LxhDyX35TntF77l7etUA3",
+            "display": "Argonaut, Jason"
+          },
+          "encounter": {
+            "reference": "Encounter/efDMwoKfDg5xDVLbLE6ErRA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27520"
+            },
+            "display": "Orders Only"
+          },
+          "onsetDateTime": "2019-04-09",
+          "recordedDate": "2019-04-09",
+          "evidence": [
+            {
+              "detail": [
+                {
+                  "reference": "Condition/eOXAy-LYvxTcCsudxlEgSzg3",
+                  "display": "TB (pulmonary tuberculosis)"
+                }
+              ]
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:c2da6abd-d392-4ff8-af90-9b09103c1a8f",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Condition - Outside Record Encounter Diagnosis. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

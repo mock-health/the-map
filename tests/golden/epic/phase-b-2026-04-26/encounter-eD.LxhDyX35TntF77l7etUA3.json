@@ -1,0 +1,281 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eD.LxhDyX35TntF77l7etUA3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:40.535715+00:00",
+  "_probe": "Encounter",
+  "_patient_id": "eD.LxhDyX35TntF77l7etUA3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 3,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eD.LxhDyX35TntF77l7etUA3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter/eHNOZwuZPHsztK984Q7fcRg3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter/eHNOZwuZPHsztK984Q7fcRg3",
+        "resource": {
+          "resourceType": "Encounter",
+          "id": "eHNOZwuZPHsztK984Q7fcRg3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27524"
+            }
+          ],
+          "status": "unknown",
+          "class": {
+            "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+            "code": "1",
+            "display": "Surgery Case"
+          },
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+                  "code": "51",
+                  "display": "Surgery"
+                }
+              ],
+              "text": "Surgery"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eD.LxhDyX35TntF77l7etUA3",
+            "display": "Argonaut, Jason"
+          },
+          "participant": [
+            {
+              "individual": {
+                "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+                "type": "Practitioner",
+                "display": "Physician One Cardiology, MD"
+              }
+            }
+          ],
+          "period": {
+            "start": "2019-04-29",
+            "end": "2019-04-29"
+          },
+          "location": [
+            {
+              "location": {
+                "reference": "Location/e2z032KE5XnuCAgr9ImSZ0Q3",
+                "display": "EHS ASC"
+              }
+            }
+          ],
+          "serviceProvider": {
+            "reference": "Organization/enRyWnSP963FYDpoks4NHOA3",
+            "display": "Epic Hospital System"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter/eOOEhSaShHmLBwj8zNVEyyw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter/eOOEhSaShHmLBwj8zNVEyyw3",
+        "resource": {
+          "resourceType": "Encounter",
+          "id": "eOOEhSaShHmLBwj8zNVEyyw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27522"
+            }
+          ],
+          "status": "in-progress",
+          "class": {
+            "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+            "code": "13",
+            "display": "Support OP Encounter"
+          },
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+                  "code": "101",
+                  "display": "Office Visit"
+                }
+              ],
+              "text": "Office Visit"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eD.LxhDyX35TntF77l7etUA3",
+            "display": "Argonaut, Jason"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "Participation"
+                    }
+                  ],
+                  "text": "Participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+                "display": "Physician One Cardiology, MD"
+              }
+            }
+          ],
+          "period": {
+            "start": "2019-04-29",
+            "end": "2019-04-29"
+          },
+          "location": [
+            {
+              "location": {
+                "reference": "Location/edMTlFfH6NJ009KzsRtLjgZyfcYBTM5Zu1eEO2ZKijsg3",
+                "display": "EMC Cardiology"
+              }
+            }
+          ],
+          "serviceProvider": {
+            "reference": "Organization/enRyWnSP963FYDpoks4NHOA3",
+            "display": "Epic Hospital System"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter/efDMwoKfDg5xDVLbLE6ErRA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter/efDMwoKfDg5xDVLbLE6ErRA3",
+        "resource": {
+          "resourceType": "Encounter",
+          "id": "efDMwoKfDg5xDVLbLE6ErRA3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27520"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "urn:oid:1.2.840.114350.1.72.1.7.7.10.696784.13260",
+            "code": "13",
+            "display": "Support OP Encounter"
+          },
+          "type": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.30",
+                  "code": "111",
+                  "display": "Orders Only"
+                }
+              ],
+              "text": "Orders Only"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/eD.LxhDyX35TntF77l7etUA3",
+            "display": "Argonaut, Jason"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "Participation"
+                    }
+                  ],
+                  "text": "Participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+                "display": "Physician One Cardiology, MD"
+              }
+            }
+          ],
+          "period": {
+            "start": "2019-04-29",
+            "end": "2019-04-29"
+          },
+          "location": [
+            {
+              "location": {
+                "reference": "Location/edMTlFfH6NJ009KzsRtLjgZyfcYBTM5Zu1eEO2ZKijsg3",
+                "display": "EMC Cardiology"
+              }
+            }
+          ],
+          "serviceProvider": {
+            "reference": "Organization/enRyWnSP963FYDpoks4NHOA3",
+            "display": "Epic Hospital System"
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:25e72d4e-4b60-4ef4-bc8a-3bd3553acc7f",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Encounter - Outside Record. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

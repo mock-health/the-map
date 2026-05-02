@@ -1,0 +1,333 @@
+{
+  "ehr": "epic",
+  "captured_date": "2026-05-02",
+  "selection_target_per_probe": 3,
+  "probes": {
+    "Patient": {
+      "profile_id": "us-core-patient",
+      "patient_ids": [
+        "eq081-VQEgP8drUUqCWzHfw3",
+        "erXuFYUfucBZaryVksYEcMg3",
+        "eD.LxhDyX35TntF77l7etUA3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "eq081-VQEgP8drUUqCWzHfw3",
+          "display_name": "Derrick Lin",
+          "entry_count": 1
+        },
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 1
+        },
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 1,
+      "patients_with_data_count": 7,
+      "selection_rationale": "chose top-3 of 7 sandbox patients with \u22651 entry"
+    },
+    "AllergyIntolerance": {
+      "profile_id": "us-core-allergyintolerance",
+      "patient_ids": [
+        "eD.LxhDyX35TntF77l7etUA3",
+        "e0w0LEDCYtfckT6N.CkJKCw3",
+        "eq081-VQEgP8drUUqCWzHfw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 3
+        },
+        {
+          "id": "e0w0LEDCYtfckT6N.CkJKCw3",
+          "display_name": "Warren James McGinnis",
+          "entry_count": 2
+        },
+        {
+          "id": "eq081-VQEgP8drUUqCWzHfw3",
+          "display_name": "Derrick Lin",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 3,
+      "patients_with_data_count": 7,
+      "selection_rationale": "chose top-3 of 7 sandbox patients with \u22651 entry"
+    },
+    "Condition-problems": {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "patient_ids": [
+        "eD.LxhDyX35TntF77l7etUA3",
+        "evYS76EX6LLeCX2PlRLhvwg3",
+        "eIXesllypH3M9tAA5WdJftQ3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 7
+        },
+        {
+          "id": "evYS76EX6LLeCX2PlRLhvwg3",
+          "display_name": "Jessica Argonaut",
+          "entry_count": 4
+        },
+        {
+          "id": "eIXesllypH3M9tAA5WdJftQ3",
+          "display_name": "Linda Jane Ross",
+          "entry_count": 2
+        }
+      ],
+      "max_entry_count_observed": 7,
+      "patients_with_data_count": 6,
+      "selection_rationale": "chose top-3 of 6 sandbox patients with \u22651 entry"
+    },
+    "Condition-encounter-diag": {
+      "profile_id": "",
+      "patient_ids": [
+        "erXuFYUfucBZaryVksYEcMg3",
+        "eq081-VQEgP8drUUqCWzHfw3",
+        "eD.LxhDyX35TntF77l7etUA3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 6
+        },
+        {
+          "id": "eq081-VQEgP8drUUqCWzHfw3",
+          "display_name": "Derrick Lin",
+          "entry_count": 1
+        },
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 6,
+      "patients_with_data_count": 3,
+      "selection_rationale": "chose top-3 of 3 sandbox patients with \u22651 entry"
+    },
+    "Condition-health-concern": {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "patient_ids": [],
+      "patient_descriptions": [],
+      "max_entry_count_observed": 0,
+      "patients_with_data_count": 0,
+      "selection_rationale": "no sandbox patients returned data for this probe \u2014 finding by absence is itself a Map row"
+    },
+    "Observation-lab": {
+      "profile_id": "us-core-observation-lab",
+      "patient_ids": [
+        "erXuFYUfucBZaryVksYEcMg3",
+        "e0w0LEDCYtfckT6N.CkJKCw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 5
+        },
+        {
+          "id": "e0w0LEDCYtfckT6N.CkJKCw3",
+          "display_name": "Warren James McGinnis",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 5,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "Observation-vital-signs": {
+      "profile_id": "us-core-vital-signs",
+      "patient_ids": [
+        "eq081-VQEgP8drUUqCWzHfw3",
+        "eAB3mDIBBcyUKviyzrxsnAw3",
+        "erXuFYUfucBZaryVksYEcMg3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "eq081-VQEgP8drUUqCWzHfw3",
+          "display_name": "Derrick Lin",
+          "entry_count": 1000
+        },
+        {
+          "id": "eAB3mDIBBcyUKviyzrxsnAw3",
+          "display_name": "Desiree Caroline Powell",
+          "entry_count": 388
+        },
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 245
+        }
+      ],
+      "max_entry_count_observed": 1000,
+      "patients_with_data_count": 5,
+      "selection_rationale": "chose top-3 of 5 sandbox patients with \u22651 entry"
+    },
+    "MedicationRequest": {
+      "profile_id": "us-core-medicationrequest",
+      "patient_ids": [
+        "eD.LxhDyX35TntF77l7etUA3",
+        "evYS76EX6LLeCX2PlRLhvwg3",
+        "eAB3mDIBBcyUKviyzrxsnAw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 9
+        },
+        {
+          "id": "evYS76EX6LLeCX2PlRLhvwg3",
+          "display_name": "Jessica Argonaut",
+          "entry_count": 5
+        },
+        {
+          "id": "eAB3mDIBBcyUKviyzrxsnAw3",
+          "display_name": "Desiree Caroline Powell",
+          "entry_count": 2
+        }
+      ],
+      "max_entry_count_observed": 9,
+      "patients_with_data_count": 6,
+      "selection_rationale": "chose top-3 of 6 sandbox patients with \u22651 entry"
+    },
+    "Encounter": {
+      "profile_id": "us-core-encounter",
+      "patient_ids": [
+        "erXuFYUfucBZaryVksYEcMg3",
+        "eD.LxhDyX35TntF77l7etUA3",
+        "eq081-VQEgP8drUUqCWzHfw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 10
+        },
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 3
+        },
+        {
+          "id": "eq081-VQEgP8drUUqCWzHfw3",
+          "display_name": "Derrick Lin",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 10,
+      "patients_with_data_count": 7,
+      "selection_rationale": "chose top-3 of 7 sandbox patients with \u22651 entry"
+    },
+    "Procedure": {
+      "profile_id": "us-core-procedure",
+      "patient_ids": [
+        "erXuFYUfucBZaryVksYEcMg3",
+        "e0w0LEDCYtfckT6N.CkJKCw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 2
+        },
+        {
+          "id": "e0w0LEDCYtfckT6N.CkJKCw3",
+          "display_name": "Warren James McGinnis",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 2,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "DiagnosticReport-lab": {
+      "profile_id": "us-core-diagnosticreport-lab",
+      "patient_ids": [
+        "erXuFYUfucBZaryVksYEcMg3",
+        "e0w0LEDCYtfckT6N.CkJKCw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 4
+        },
+        {
+          "id": "e0w0LEDCYtfckT6N.CkJKCw3",
+          "display_name": "Warren James McGinnis",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 4,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "Immunization": {
+      "profile_id": "",
+      "patient_ids": [
+        "eAB3mDIBBcyUKviyzrxsnAw3",
+        "eD.LxhDyX35TntF77l7etUA3",
+        "erXuFYUfucBZaryVksYEcMg3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "eAB3mDIBBcyUKviyzrxsnAw3",
+          "display_name": "Desiree Caroline Powell",
+          "entry_count": 7
+        },
+        {
+          "id": "eD.LxhDyX35TntF77l7etUA3",
+          "display_name": "Jason Argonaut",
+          "entry_count": 2
+        },
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 7,
+      "patients_with_data_count": 3,
+      "selection_rationale": "chose top-3 of 3 sandbox patients with \u22651 entry"
+    },
+    "DocumentReference": {
+      "profile_id": "",
+      "patient_ids": [
+        "erXuFYUfucBZaryVksYEcMg3",
+        "eq081-VQEgP8drUUqCWzHfw3",
+        "e0w0LEDCYtfckT6N.CkJKCw3"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "erXuFYUfucBZaryVksYEcMg3",
+          "display_name": "Camila Maria Lopez",
+          "entry_count": 70
+        },
+        {
+          "id": "eq081-VQEgP8drUUqCWzHfw3",
+          "display_name": "Derrick Lin",
+          "entry_count": 20
+        },
+        {
+          "id": "e0w0LEDCYtfckT6N.CkJKCw3",
+          "display_name": "Warren James McGinnis",
+          "entry_count": 18
+        }
+      ],
+      "max_entry_count_observed": 70,
+      "patients_with_data_count": 7,
+      "selection_rationale": "chose top-3 of 7 sandbox patients with \u22651 entry"
+    }
+  }
+}

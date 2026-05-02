@@ -1,0 +1,420 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8' not found</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: http://www.nlm.nih.gov/research/umls/rxnorm for 'http://www.nlm.nih.gov/research/umls/rxnorm#31738'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: http://www.nlm.nih.gov/research/umls/rxnorm for 'http://www.nlm.nih.gov/research/umls/rxnorm#1311629'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: http://www.nlm.nih.gov/research/umls/rxnorm for 'http://www.nlm.nih.gov/research/umls/rxnorm#1546280'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#4FLT4T3WUN'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#696BNE976J'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#7OV03QG267'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#J7B7WZ5ZMT'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.code, Line[1] Col[1357]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#NUZ5T2QN2V'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.reaction[0].manifestation[0], Line[1] Col[1647]]</td><td>Unable to expand ValueSet: cannot apply filters '[org.hl7.fhir.r5.model.ValueSet$ConceptSetFilterComponent@1d727a92]' because CodeSystem 'http://snomed.info/sct' is ignored/not-present</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance.reaction[0].manifestation[0], Line[1] Col[1647]]</td><td>None of the codings provided are in the value set 'SNOMED CT Clinical Findings' (http://hl7.org/fhir/ValueSet/clinical-findings|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#Rash)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[AllergyIntolerance, Line[1] Col[1674]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_ValueSet_NotFound"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_ValueSet_NotFound"
+            }
+          ]
+        },
+        "diagnostics": "ValueSet 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8' not found",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://www.nlm.nih.gov/research/umls/rxnorm for 'http://www.nlm.nih.gov/research/umls/rxnorm#31738'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://www.nlm.nih.gov/research/umls/rxnorm for 'http://www.nlm.nih.gov/research/umls/rxnorm#1311629'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://www.nlm.nih.gov/research/umls/rxnorm for 'http://www.nlm.nih.gov/research/umls/rxnorm#1546280'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#4FLT4T3WUN'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#696BNE976J'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#7OV03QG267'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#J7B7WZ5ZMT'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1357
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.4.9 for 'urn:oid:2.16.840.1.113883.4.9#NUZ5T2QN2V'",
+        "location": [
+          "AllergyIntolerance.code",
+          "Line[1] Col[1357]"
+        ],
+        "expression": [
+          "AllergyIntolerance.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1647
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet: cannot apply filters '[org.hl7.fhir.r5.model.ValueSet$ConceptSetFilterComponent@1d727a92]' because CodeSystem 'http://snomed.info/sct' is ignored/not-present",
+        "location": [
+          "AllergyIntolerance.reaction[0].manifestation[0]",
+          "Line[1] Col[1647]"
+        ],
+        "expression": [
+          "AllergyIntolerance.reaction[0].manifestation[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1647
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_2_CC"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_2_CC"
+            }
+          ]
+        },
+        "diagnostics": "None of the codings provided are in the value set 'SNOMED CT Clinical Findings' (http://hl7.org/fhir/ValueSet/clinical-findings|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#Rash)",
+        "location": [
+          "AllergyIntolerance.reaction[0].manifestation[0]",
+          "Line[1] Col[1647]"
+        ],
+        "expression": [
+          "AllergyIntolerance.reaction[0].manifestation[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1674
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "AllergyIntolerance",
+          "Line[1] Col[1674]"
+        ],
+        "expression": [
+          "AllergyIntolerance"
+        ]
+      }
+    ]
+  }
+}

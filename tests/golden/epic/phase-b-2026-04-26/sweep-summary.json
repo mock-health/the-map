@@ -1,0 +1,88 @@
+{
+  "ehr": "epic",
+  "captured_date": "2026-04-26",
+  "probes_run": [
+    "Patient",
+    "AllergyIntolerance",
+    "Condition-problems",
+    "Condition-encounter-diag",
+    "Condition-health-concern",
+    "Observation-lab",
+    "Observation-vital-signs",
+    "MedicationRequest",
+    "Encounter",
+    "Procedure",
+    "DiagnosticReport-lab",
+    "Immunization",
+    "DocumentReference"
+  ],
+  "patient_selection_source": "ehrs/epic/p0_patient_selection.json",
+  "raw_findings_count": 535,
+  "deduped_deviations_count": 189,
+  "category_counts": {
+    "matches": 138,
+    "missing": 20,
+    "value-set-unverified-locally": 22,
+    "value-set-mismatch": 3,
+    "value-set-narrowed": 6
+  },
+  "patients_per_probe": {
+    "Patient": [
+      "eq081-VQEgP8drUUqCWzHfw3",
+      "erXuFYUfucBZaryVksYEcMg3",
+      "eD.LxhDyX35TntF77l7etUA3"
+    ],
+    "AllergyIntolerance": [
+      "eD.LxhDyX35TntF77l7etUA3",
+      "e0w0LEDCYtfckT6N.CkJKCw3",
+      "eq081-VQEgP8drUUqCWzHfw3"
+    ],
+    "Condition-problems": [
+      "eD.LxhDyX35TntF77l7etUA3",
+      "evYS76EX6LLeCX2PlRLhvwg3",
+      "eIXesllypH3M9tAA5WdJftQ3"
+    ],
+    "Condition-encounter-diag": [
+      "erXuFYUfucBZaryVksYEcMg3",
+      "eq081-VQEgP8drUUqCWzHfw3",
+      "eD.LxhDyX35TntF77l7etUA3"
+    ],
+    "Observation-lab": [
+      "erXuFYUfucBZaryVksYEcMg3",
+      "e0w0LEDCYtfckT6N.CkJKCw3"
+    ],
+    "Observation-vital-signs": [
+      "eq081-VQEgP8drUUqCWzHfw3",
+      "eAB3mDIBBcyUKviyzrxsnAw3",
+      "erXuFYUfucBZaryVksYEcMg3"
+    ],
+    "MedicationRequest": [
+      "eD.LxhDyX35TntF77l7etUA3",
+      "evYS76EX6LLeCX2PlRLhvwg3",
+      "eAB3mDIBBcyUKviyzrxsnAw3"
+    ],
+    "Encounter": [
+      "erXuFYUfucBZaryVksYEcMg3",
+      "eD.LxhDyX35TntF77l7etUA3",
+      "eq081-VQEgP8drUUqCWzHfw3"
+    ],
+    "Procedure": [
+      "erXuFYUfucBZaryVksYEcMg3",
+      "e0w0LEDCYtfckT6N.CkJKCw3"
+    ],
+    "DiagnosticReport-lab": [
+      "erXuFYUfucBZaryVksYEcMg3",
+      "e0w0LEDCYtfckT6N.CkJKCw3"
+    ],
+    "Immunization": [
+      "eAB3mDIBBcyUKviyzrxsnAw3",
+      "eD.LxhDyX35TntF77l7etUA3",
+      "erXuFYUfucBZaryVksYEcMg3"
+    ],
+    "DocumentReference": [
+      "erXuFYUfucBZaryVksYEcMg3",
+      "eq081-VQEgP8drUUqCWzHfw3",
+      "e0w0LEDCYtfckT6N.CkJKCw3"
+    ]
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Patient/eD.LxhDyX35TntF77l7etUA3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:21.315342+00:00",
+  "_probe": "Patient",
+  "_patient_id": "eD.LxhDyX35TntF77l7etUA3",
+  "body": {
+    "resourceType": "Patient",
+    "id": "eD.LxhDyX35TntF77l7etUA3",
+    "extension": [
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+              "code": "male",
+              "display": "male"
+            }
+          ],
+          "text": "Male"
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/legal-sex"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.698084.130.657370.19999000",
+              "code": "male",
+              "display": "male"
+            }
+          ]
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/sex-for-clinical-use"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2028-9",
+              "display": "Asian"
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Other Asian",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension": [
+          {
+            "valueString": "Unknown",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "valueCode": "248153007",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex"
+      },
+      {
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA29518-0",
+              "display": "he/him/his/his/himself"
+            }
+          ]
+        },
+        "url": "http://open.epic.com/FHIR/StructureDefinition/extension/calculated-pronouns-to-use-for-text"
+      }
+    ],
+    "identifier": [
+      {
+        "use": "usual",
+        "type": {
+          "text": "CEID"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.688884.100",
+        "value": "FHRZTGD0DL4FTVW"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "EPIC"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.0",
+        "value": "E3967"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code": "um"
+            }
+          ],
+          "text": "EXTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+        "value": "Z6091"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "FHIR"
+        },
+        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-dstu2-fhir-id",
+        "value": "Tzq4j8Zz14GtEj1vkMR1DfKeTpXPttd5-8DvjtsLBdJsB"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "FHIR STU3"
+        },
+        "system": "http://open.epic.com/FHIR/StructureDefinition/patient-fhir-id",
+        "value": "eD.LxhDyX35TntF77l7etUA3"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "INTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.698084",
+        "value": "     Z6091"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "EPI"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.14",
+        "value": "203675"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "MYCHARTLOGIN"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.878082.110",
+        "value": "FHIRJASON"
+      },
+      {
+        "use": "usual",
+        "type": {
+          "text": "WPRINTERNAL"
+        },
+        "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.878082",
+        "value": "733"
+      },
+      {
+        "use": "usual",
+        "system": "urn:oid:2.16.840.1.113883.4.1",
+        "value": "775-44-6211"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "official",
+        "text": "Jason Argonaut",
+        "family": "Argonaut",
+        "given": [
+          "Jason"
+        ]
+      },
+      {
+        "use": "usual",
+        "text": "Jason Argonaut",
+        "family": "Argonaut",
+        "given": [
+          "Jason"
+        ]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+1 469-777-7777",
+        "use": "work"
+      }
+    ],
+    "gender": "male",
+    "birthDate": "1985-08-01",
+    "deceasedBoolean": false,
+    "communication": [
+      {
+        "extension": [
+          {
+            "extension": [
+              {
+                "valueCoding": {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
+                  "code": "ESP",
+                  "display": "Expressed spoken"
+                },
+                "url": "type"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-proficiency"
+          }
+        ],
+        "language": {
+          "coding": [
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "en",
+              "display": "English"
+            }
+          ],
+          "text": "English"
+        },
+        "preferred": true,
+        "_preferred": {
+          "extension": [
+            {
+              "valueCoding": {
+                "system": "http://hl7.org/fhir/language-preference-type",
+                "code": "verbal",
+                "display": "verbal"
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-preferenceType"
+            }
+          ]
+        }
+      }
+    ],
+    "generalPractitioner": [
+      {
+        "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+        "type": "Practitioner",
+        "display": "Physician One Cardiology, MD"
+      }
+    ],
+    "managingOrganization": {
+      "reference": "Organization/enRyWnSP963FYDpoks4NHOA3",
+      "display": "Epic Hospital System"
+    }
+  }
+}

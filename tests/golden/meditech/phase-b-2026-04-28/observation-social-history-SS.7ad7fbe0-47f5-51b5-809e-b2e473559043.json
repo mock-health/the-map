@@ -1,0 +1,55 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation/SS.7ad7fbe0-47f5-51b5-809e-b2e473559043",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:03.074144+00:00",
+  "body": {
+    "id": "SS.7ad7fbe0-47f5-51b5-809e-b2e473559043",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "social-history",
+            "display": "Social History"
+          }
+        ],
+        "text": "Social History"
+      }
+    ],
+    "encounter": {
+      "reference": "Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+      "type": "Encounter"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "72166-2",
+          "display": "Tobacco smoking status"
+        }
+      ],
+      "text": "Tobacco smoking status"
+    },
+    "effectiveDateTime": "2025-01-17T19:13:14+00:00",
+    "valueCodeableConcept": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "266919005",
+          "display": "Never smoked tobacco (finding)"
+        }
+      ],
+      "text": "never smoker"
+    },
+    "resourceType": "Observation"
+  }
+}

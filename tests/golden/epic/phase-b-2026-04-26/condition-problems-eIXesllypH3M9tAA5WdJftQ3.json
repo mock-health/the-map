@@ -1,0 +1,222 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eIXesllypH3M9tAA5WdJftQ3&category=problem-list-item",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:23.906236+00:00",
+  "_probe": "Condition-problems",
+  "_patient_id": "eIXesllypH3M9tAA5WdJftQ3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 2,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=problem-list-item&patient=eIXesllypH3M9tAA5WdJftQ3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/eOCME6XUbCLYmFlVf2l1G0w3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/eOCME6XUbCLYmFlVf2l1G0w3",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "eOCME6XUbCLYmFlVf2l1G0w3",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "severity": {
+            "text": "Medium"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "J45.40",
+                "display": "Moderate persistent asthma, uncomplicated"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "427295004",
+                "display": "Moderate Persistent Asthma"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "493.90",
+                "display": "Moderate persistent asthma"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                "code": "513862",
+                "display": "Moderate persistent asthma"
+              }
+            ],
+            "text": "Moderate persistent asthma"
+          },
+          "subject": {
+            "reference": "Patient/eIXesllypH3M9tAA5WdJftQ3",
+            "display": "Ross, Linda Jane"
+          },
+          "onsetDateTime": "1999-03-08",
+          "recordedDate": "2019-05-24"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/etZVq9vWdHQ4q0Y6INaFhig3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition/etZVq9vWdHQ4q0Y6INaFhig3",
+        "resource": {
+          "resourceType": "Condition",
+          "id": "etZVq9vWdHQ4q0Y6INaFhig3",
+          "clinicalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                "version": "4.0.0",
+                "code": "active",
+                "display": "Active"
+              }
+            ],
+            "text": "Active"
+          },
+          "verificationStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                "version": "4.0.0",
+                "code": "confirmed",
+                "display": "Confirmed"
+              }
+            ],
+            "text": "Confirmed"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/condition-category",
+                  "code": "problem-list-item",
+                  "display": "Problem List Item"
+                }
+              ],
+              "text": "Problem List Item"
+            }
+          ],
+          "severity": {
+            "text": "High"
+          },
+          "code": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "J20.9",
+                "display": "Acute bronchitis, unspecified"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "code": "J45.909",
+                "display": "Unspecified asthma, uncomplicated"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "405944004",
+                "display": "Asthmatic Bronchitis"
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/icd-9-cm",
+                "code": "466.0",
+                "display": "Bronchitis with asthma, acute"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.3.247.1.1",
+                "code": "954764",
+                "display": "Bronchitis with asthma, acute"
+              }
+            ],
+            "text": "Bronchitis with asthma, acute"
+          },
+          "subject": {
+            "reference": "Patient/eIXesllypH3M9tAA5WdJftQ3",
+            "display": "Ross, Linda Jane"
+          },
+          "onsetDateTime": "2019-05-24",
+          "recordedDate": "2019-05-24"
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:bf2b6e7b-90ab-4a3c-ac5d-c28bd24c18b4",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Condition - Outside Record Problems. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Goal/dae93f8c-aeac-500a-8060-01383c17be43",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:56.139522+00:00",
+  "body": {
+    "id": "dae93f8c-aeac-500a-8060-01383c17be43",
+    "lifecycleStatus": "active",
+    "description": {
+      "text": "\r15 lbs weight loss by next visit\r\rTarget BP = 125/75\r\rAdhere to Low Sodium diet\r\rModerate cardiovascular exercise 3-4 days for 30min\r\rAdhere to prescribed medications\r\r"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "resourceType": "Goal"
+  }
+}

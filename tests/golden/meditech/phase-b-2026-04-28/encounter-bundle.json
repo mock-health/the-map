@@ -1,0 +1,1237 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Encounter?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:55.756314+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/b51f59be-8422-56a0-afd9-f402f7f53802",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b51f59be-8422-56a0-afd9-f402f7f53802",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EC0000001865"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          "type": [
+            {
+              "text": "Registered BAR Non Visit"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "serviceProvider": {
+            "reference": "Organization/a1b48243-cd03-55da-add6-9e84faf1fbd3",
+            "type": "Organization",
+            "display": "Norwood Physicians Office"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2024-09-10T13:40:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/447a5bea-686d-50a2-9b1d-0692a81be7f7",
+                "type": "Location",
+                "display": "Ambulatory Practice"
+              }
+            }
+          ],
+          "period": {
+            "start": "2024-09-10T13:40:00+00:00"
+          },
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/0a252293-e7ab-5c30-a100-0a371078589d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "0a252293-e7ab-5c30-a100-0a371078589d",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EB0000000144"
+            }
+          ],
+          "status": "in-progress",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "IMP",
+            "display": "inpatient encounter"
+          },
+          "type": [
+            {
+              "text": "Admitted Inpatient"
+            }
+          ],
+          "priority": {
+            "text": "Emergency"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "serviceProvider": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ADM",
+                      "display": "admitter"
+                    }
+                  ],
+                  "text": "admitter"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2024-03-22T11:00:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+                "type": "Practitioner",
+                "display": "E Tucker"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2024-03-22T04:00:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/ac6c9882-55d9-5cde-a4e9-ee6e017c38b9",
+                "type": "Practitioner",
+                "display": "Michael Coelho"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/aeb791ef-6d02-5627-9572-c05159cce725",
+                "type": "Practitioner",
+                "display": "Michael Anderson MD"
+              }
+            }
+          ],
+          "hospitalization": {
+            "admitSource": {
+              "text": "Emergency Department"
+            },
+            "dischargeDisposition": {
+              "coding": [
+                {
+                  "code": "01",
+                  "system": "urn:oid:2.16.840.1.113883.12.112",
+                  "display": "Discharged to home care or self care (routine discharge)"
+                }
+              ],
+              "text": "Home, Self-Care"
+            }
+          },
+          "location": [
+            {
+              "location": {
+                "reference": "Location/fe32d8a1-6e6b-50f4-bfde-96f2117f310e",
+                "type": "Location",
+                "display": "15 North"
+              }
+            },
+            {
+              "location": {
+                "reference": "Location/fb587b7b-ca03-560e-975f-c2302ebee259",
+                "type": "Location",
+                "display": "1503"
+              }
+            },
+            {
+              "location": {
+                "reference": "Location/e2ae86b5-9300-5177-87d4-c7dbc876ec9d",
+                "type": "Location",
+                "display": "3"
+              }
+            }
+          ],
+          "diagnosis": [
+            {
+              "condition": {
+                "reference": "Condition/959b1f5b-a1bf-5b52-9776-72f3b813f5ad",
+                "type": "Condition",
+                "display": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+              }
+            },
+            {
+              "condition": {
+                "reference": "Condition/5292f266-4ea2-51da-9ae9-674222f1d115",
+                "type": "Condition",
+                "display": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+              }
+            },
+            {
+              "condition": {
+                "reference": "Condition/de932a52-52a3-504b-8ebb-45c373fe6292",
+                "type": "Condition",
+                "display": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+              }
+            },
+            {
+              "condition": {
+                "reference": "Condition/ce477068-76fb-5252-b1ad-077639bdcda4",
+                "type": "Condition",
+                "display": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+              }
+            }
+          ],
+          "period": {
+            "start": "2024-03-22T11:00:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "Unspecified systolic (congestive) heart failure",
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                  "code": "I50.20",
+                  "display": "Unspecified systolic (congestive) heart failure"
+                }
+              ]
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/5e6757a0-5529-5529-8c05-485b6cb056f3",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "5e6757a0-5529-5529-8c05-485b6cb056f3",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EC0000000303"
+            }
+          ],
+          "status": "planned",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          "type": [
+            {
+              "text": "Ambulatory Office Visit"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "appointment": [
+            {
+              "reference": "Appointment/be3e7831-c888-5cbf-b6fa-dc0232571c51",
+              "type": "Appointment",
+              "display": "New Patient Visit"
+            }
+          ],
+          "serviceProvider": {
+            "reference": "Organization/a1b48243-cd03-55da-add6-9e84faf1fbd3",
+            "type": "Organization",
+            "display": "Norwood Physicians Office"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/775e4237-d124-5dc6-832e-6136ed5b8650",
+                "type": "Practitioner",
+                "display": "Garry Miller"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/e4686d68-f72f-5e97-8947-b8481056ea52",
+                "type": "Location",
+                "display": "Norwood Physician Office"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-11-09T18:00:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "new patient consult"
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/b723f1ef-f11f-5e14-976c-97c4678e2907",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b723f1ef-f11f-5e14-976c-97c4678e2907",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EB0000000097"
+            }
+          ],
+          "status": "planned",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          "type": [
+            {
+              "text": "Scheduled Surgical Day Care"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "appointment": [
+            {
+              "reference": "Appointment/6217b4df-fff6-5371-83de-25bc6b58640e",
+              "type": "Appointment",
+              "display": "Ankle Fusion"
+            }
+          ],
+          "serviceProvider": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/d638ec04-bfac-5075-b2ed-595afd2988a6",
+                "type": "Practitioner",
+                "display": "Marc Belanger"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/7d185670-e49e-5d97-805d-c9f720227432",
+                "type": "Location",
+                "display": "Ambulatory Sugery Center"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-10-25T13:15:00+00:00"
+          },
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EB0000000094"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "IMP",
+            "display": "inpatient encounter"
+          },
+          "type": [
+            {
+              "text": "Discharged Inpatient"
+            }
+          ],
+          "priority": {
+            "text": "Emergency"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "serviceProvider": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ADM",
+                      "display": "admitter"
+                    }
+                  ],
+                  "text": "admitter"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2023-08-15T11:00:00+00:00",
+                "end": "2023-10-13T15:28:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+                "type": "Practitioner",
+                "display": "E Tucker"
+              }
+            }
+          ],
+          "hospitalization": {
+            "admitSource": {
+              "text": "Emergency Department"
+            },
+            "dischargeDisposition": {
+              "coding": [
+                {
+                  "code": "01",
+                  "system": "urn:oid:2.16.840.1.113883.12.112",
+                  "display": "Discharged to home care or self care (routine discharge)"
+                }
+              ],
+              "text": "Home, Self-Care"
+            }
+          },
+          "diagnosis": [
+            {
+              "condition": {
+                "reference": "Condition/47fff8ca-1ae8-5158-ad88-0053b3a5d9db",
+                "type": "Condition",
+                "display": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/fe32d8a1-6e6b-50f4-bfde-96f2117f310e",
+                "type": "Location",
+                "display": "15 North"
+              }
+            },
+            {
+              "location": {
+                "reference": "Location/e8da6f7b-916a-512f-9147-54586c609885",
+                "type": "Location",
+                "display": "1502"
+              }
+            },
+            {
+              "location": {
+                "reference": "Location/a588e863-8c3b-50f3-891d-66b50cd463c4",
+                "type": "Location",
+                "display": "4"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-08-15T11:00:00+00:00",
+            "end": "2023-10-13T15:28:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "Unspecified systolic (congestive) heart failure",
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                  "code": "I50.20",
+                  "display": "Unspecified systolic (congestive) heart failure"
+                }
+              ]
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EB0000000077"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "EMER",
+            "display": "emergency"
+          },
+          "type": [
+            {
+              "text": "Departed Emergency"
+            }
+          ],
+          "priority": {
+            "text": "Emergency"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "serviceProvider": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                }
+              ],
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            },
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2023-05-10T04:00:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+                "type": "Practitioner",
+                "display": "E Tucker"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/7d555fc0-a8f0-5117-8005-cab1b98fdab2",
+                "type": "Location",
+                "display": "Emergency Department"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-05-10T04:00:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "Short of breath and very tired"
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/1dbe9453-ff3d-544a-98aa-b678320cd481",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "1dbe9453-ff3d-544a-98aa-b678320cd481",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EC0000000109"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          "type": [
+            {
+              "text": "Ambulatory Office Visit"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "appointment": [
+            {
+              "reference": "Appointment/9b4bed57-07b0-5709-9e1a-56d31f9b8f03",
+              "type": "Appointment",
+              "display": "Office Visit- 30 Minutes"
+            }
+          ],
+          "serviceProvider": {
+            "reference": "Organization/a1b48243-cd03-55da-add6-9e84faf1fbd3",
+            "type": "Organization",
+            "display": "Norwood Physicians Office"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2023-02-05T14:00:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/e4686d68-f72f-5e97-8947-b8481056ea52",
+                "type": "Location",
+                "display": "Norwood Physician Office"
+              }
+            }
+          ],
+          "diagnosis": [
+            {
+              "condition": {
+                "reference": "Condition/2be0b511-0eea-5f52-963d-58e652ecec9d",
+                "type": "Condition",
+                "display": "Systolic congestive heart failure with reduced left ventricular function, NYHA class 1"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-02-05T14:00:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "Unspecified systolic (congestive) heart failure",
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                  "code": "I50.20",
+                  "display": "Unspecified systolic (congestive) heart failure"
+                }
+              ]
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/179c004a-d0fb-5f70-8ec4-b7a312b7516b",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "179c004a-d0fb-5f70-8ec4-b7a312b7516b",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EB0000000072"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          "type": [
+            {
+              "text": "Registered Clinical"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "serviceProvider": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "hospitalization": {
+            "admitSource": {
+              "text": "Home"
+            }
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2023-02-03T12:00:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/021e97da-0198-5799-ab44-9ebe517b295d",
+                "type": "Location",
+                "display": "Cardiology"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-02-03T12:00:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "Echocardiogram"
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter/681e2d1f-0c5a-50f0-9429-ffddb5f2ae21",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "681e2d1f-0c5a-50f0-9429-ffddb5f2ae21",
+          "identifier": [
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "AN",
+                    "display": "Account number"
+                  }
+                ],
+                "text": "Account Number"
+              },
+              "system": "https://greenfield-prod-apis.meditech.com:443/identifier/ACCT",
+              "value": "EB0000000073"
+            }
+          ],
+          "status": "finished",
+          "class": {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "code": "AMB",
+            "display": "ambulatory"
+          },
+          "type": [
+            {
+              "text": "Registered Clinical"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "serviceProvider": {
+            "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+            "type": "Organization",
+            "display": "Canton Medical Center"
+          },
+          "participant": [
+            {
+              "type": [
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "ATND",
+                      "display": "attender"
+                    }
+                  ],
+                  "text": "attender"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PART",
+                      "display": "participation"
+                    }
+                  ],
+                  "text": "participation"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                      "code": "PPRF",
+                      "display": "primary performer"
+                    }
+                  ],
+                  "text": "primary performer"
+                }
+              ],
+              "period": {
+                "start": "2023-02-02T13:00:00+00:00"
+              },
+              "individual": {
+                "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+                "type": "Practitioner",
+                "display": "William Butler"
+              }
+            }
+          ],
+          "location": [
+            {
+              "location": {
+                "reference": "Location/fefba308-3c75-5ac8-82df-3759634c8e60",
+                "type": "Location",
+                "display": "Laboratory"
+              }
+            }
+          ],
+          "period": {
+            "start": "2023-02-02T13:00:00+00:00"
+          },
+          "reasonCode": [
+            {
+              "text": "routine bloodwork"
+            }
+          ],
+          "resourceType": "Encounter"
+        }
+      }
+    ],
+    "total": 9,
+    "resourceType": "Bundle"
+  }
+}

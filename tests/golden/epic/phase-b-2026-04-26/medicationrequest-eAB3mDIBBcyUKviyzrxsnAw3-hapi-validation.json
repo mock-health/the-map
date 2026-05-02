@@ -1,0 +1,182 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].route, Line[1] Col[1879]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025#18'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[0].type, Line[1] Col[2166]]</td><td>CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#calculated'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[1].type, Line[1] Col[2421]]</td><td>CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#admin-amount'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest.dosageInstruction[0].doseAndRate[2].type, Line[1] Col[2661]]</td><td>CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#ordered'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[MedicationRequest, Line[1] Col[3028]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1879
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025#18'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].route",
+          "Line[1] Col[1879]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].route"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2166
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#calculated'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[0].type",
+          "Line[1] Col[2166]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[0].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2421
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#admin-amount'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[1].type",
+          "Line[1] Col[2421]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[1].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2661
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://epic.com/CodeSystem/dose-rate-type for 'http://epic.com/CodeSystem/dose-rate-type#ordered'",
+        "location": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[2].type",
+          "Line[1] Col[2661]"
+        ],
+        "expression": [
+          "MedicationRequest.dosageInstruction[0].doseAndRate[2].type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 3028
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "MedicationRequest",
+          "Line[1] Col[3028]"
+        ],
+        "expression": [
+          "MedicationRequest"
+        ]
+      }
+    ]
+  }
+}

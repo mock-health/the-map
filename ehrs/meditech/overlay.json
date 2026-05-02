@@ -1,0 +1,165 @@
+{
+  "ehr": "meditech",
+  "ehr_display_name": "MEDITECH (Greenfield Workspace + production fleet)",
+  "ehr_version_validated": "Interoperability Services: US Core STU6 FHIR R4 2.0.0",
+  "capability_statement_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/metadata",
+  "capability_statement_fetched_date": "2026-04-27",
+  "sandbox_base_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
+  "sandbox_canonical_patient_id": "0218f2d0-968b-5888-976f-68a554670f6e",
+  "auth_overlay": {
+    "client_credentials_jwt_alg": "n/a",
+    "jwks_required": false,
+    "jwks_hosted_or_embedded": "either",
+    "scopes_format": "custom",
+    "client_registration_url": "https://ehr.meditech.com/ehr-solutions/how-to-work-in-the-greenfield-workspace",
+    "notes": "Greenfield Workspace requires the authorization_code grant exclusively \u2014 client_credentials is documented as NOT supported in the complimentary sandbox per Getting Started v3.0 p.3 + p.12, despite SMART configuration `scopes_supported` advertising hundreds of `system/*` scopes (see vendor_stack_findings). Token endpoint auth method must be `client_secret_post` (credentials in form body); Basic auth and JWT-bearer are both advertised in `token_endpoint_auth_methods_supported`, but Greenfield's Postman collection (`postman-collection-stu6-v2.0.json`) sets `client_authentication: \"body\"` on both the authorization-code and client-credentials request templates. PKCE S256 required. Identity is gated on a Google account bound per client_id; binding is not self-service \u2014 a single email round-trip with greenfieldinfo@meditech.com is required to (re)bind, observed during this study's onboarding 2026-04 (see phase_b_findings:access-denied-wall). `https://greenfield.meditech.com/` is a public docs site with no login UI (theme toggle only); there is no self-service portal for authorized-user management. As snapshotted 2026-05-02 (`ehrs/meditech/greenfield/greenfield-meditech-com-snapshot-2026-05-02.html`): zero `<form>` tags, zero password inputs, zero visible Sign-in/Log-in link text. The bound Google account is linked to specific synthetic patients in the back-end EHR per MEDITECH's own docs.",
+    "verification": {
+      "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/.well-known/smart-configuration",
+      "source_quote": "token_endpoint_auth_methods_supported: ['client_secret_post', 'client_secret_basic', 'private_key_jwt']; capabilities includes 'authorize-post', 'launch-standalone', 'permission-patient', 'permission-user', 'permission-v1', 'permission-v2', 'sso-openid-connect'; code_challenge_methods_supported: ['S256']",
+      "verified_via": "meditech_public_sandbox",
+      "verified_query": "GET https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/.well-known/smart-configuration",
+      "verified_date": "2026-04-27"
+    }
+  },
+  "phase_b_findings": {
+    "description": "MEDITECH Phase B authenticated probing is BLOCKED at Greenfield's user-to-client allowlist gate (see headline 1). All other findings are derived from the publicly readable SMART configuration and CapabilityStatement at https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/* \u2014 no auth required for those, per FHIR R4 \u00a7C.0.0 and SMART STU 2.2.",
+    "headlines": [
+      {
+        "finding": "Greenfield consent fails with bare `error=access_denied` \u2014 issued credentials are bound to a Google identity through an opaque, support-mediated provisioning step with no self-service path to inspect or modify the binding",
+        "evidence": "Greenfield issues a confidential-client credential pair at registration. Walking the authorization_code flow with PKCE S256 and `client_secret_post`, the Google sign-in step succeeds for the developer's Workspace identity and the back-channel `POST /openid/` exchanges the verified Google account for an authorization decision \u2014 which returns `error=access_denied` with no `error_description`. The failure is reproducible across both `aud` variants and across the documented `oauth.pstmn.io/v1/callback` and `/v1/browser-callback` redirect URIs; PKCE round-trips correctly in every attempt. Per the onboarding flow observed during this study (2026-04), each issued client_id is linked to a single Google account, and that Google account is in turn linked to the back-end test patients used during OAuth; (re)binding the Google account to a client_id is not self-service and requires a support email round-trip with greenfieldinfo@meditech.com. The Greenfield portal at greenfield.meditech.com has no login UI \u2014 only a public docs site with a theme toggle \u2014 so the holder of the credentials cannot inspect, change, or rotate the bound Google account through the portal.",
+        "integrator_impact": "MEDITECH is the only EHR in this map (Epic, Cerner/Oracle Health, MEDITECH) that requires human-mediated provisioning for sandbox credentials AND offers no self-service afterward to inspect or recover from a misaligned binding. Compare: Epic (asymmetric Backend Services, instant), Cerner (`client_secret_basic`, instant). When MEDITECH's binding is wrong \u2014 and developers have no way to detect that until OAuth fails at consent \u2014 the only recovery is a support email round-trip. This is a process gap, not a code defect: standard SMART tooling (authorization_code + `client_secret_post` + PKCE S256) runs unchanged once the binding is correct.",
+        "verified_via": "meditech_public_sandbox",
+        "verified_date": "2026-04-27",
+        "citations": [
+          {
+            "label": "SMART App Launch STU 2.2 \u00a7 authorization_code grant",
+            "url": "https://hl7.org/fhir/smart-app-launch/STU2.2/app-launch.html"
+          },
+          {
+            "label": "MEDITECH Greenfield Workspace onboarding (vendor docs)",
+            "url": "https://ehr.meditech.com/ehr-solutions/how-to-work-in-the-greenfield-workspace"
+          }
+        ]
+      },
+      {
+        "finding": "Greenfield's public SMART configuration leaks roughly 165 internal infrastructure scope names (`infr-*`, `iops-*`) alongside the FHIR US Core scopes",
+        "evidence": "The `scopes_supported` array at https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/.well-known/smart-configuration contains over 500 entries. About 165 of those name MEDITECH-internal infrastructure capabilities unrelated to FHIR US Core, including `infr-database-config/*`, `infr-jwks/*`, `infr-cluster-join/*`, `infr-emulate-user/*`, `infr-tcpproxy-connection/*`, `infr-redis-config/*`, `iops-internal`, `iops-aaa-mfa`, `iops-ndsc-vendor/*.*`, `iops-ccda/*.*`, `infr-vendor-onboarding`, `infr-pending-client/*`, and `infr-tls-config/*`. Several of these (notably `infr-emulate-user/*` and `infr-cluster-join/*`) name capabilities that should never be issuable to a third-party integrator.",
+        "integrator_impact": "Two consequences. (1) Dev-portal hygiene: SMART App Launch STU 2.2 \u00a75.1 specifies `scopes_supported` as a hint to dev-portal UX about what an application can request. These internal scopes pollute that signal and could mislead an integrator into believing capabilities are available that are not. (2) Surface-area disclosure: each leaked scope name is a free sketch of MEDITECH's internal cloud architecture \u2014 taken together, `infr-database-config`, `infr-redis-config`, and `infr-cluster-join` describe a clustered, Redis-backed config store with a vendor-onboarding workflow. Among the EHRs in this map, no other vendor exposes this much internal namespace through its public SMART configuration \u2014 Epic and Oracle Health (Cerner) both advertise only the FHIR scopes their app classes can actually request.",
+        "verified_via": "meditech_public_sandbox",
+        "verified_date": "2026-04-27",
+        "citations": [
+          {
+            "label": "SMART App Launch STU 2.2 \u00a7 Conformance \u2014 well-known/smart-configuration",
+            "url": "https://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html"
+          }
+        ]
+      },
+      {
+        "finding": "Greenfield's SMART configuration advertises `system/*` scopes for roughly 30 resources, yet Greenfield does not support the client_credentials grant \u2014 the machine-readable spec advertises capabilities the docs explicitly disable",
+        "evidence": "`scopes_supported` lists `system/Patient.crus`, `system/Observation.crus`, `system/Encounter.rs`, `system/AllergyIntolerance.rs`, `system/Condition.crs`, `system/MedicationRequest.rs`, and similar `system/*` scopes covering the US Core resource set. MEDITECH's Greenfield Getting Started v3.0 contradicts this in two places. p.3: 'The Client Credentials Grant (system-level access) is not available in the complimentary sandbox environment.' p.12: 'The Client Credentials Grant is not enabled in sandbox because it is intended for system-to-system workflows that may vary by healthcare organization.' The same `well-known/smart-configuration` document advertises `private_key_jwt` in `token_endpoint_auth_methods_supported` \u2014 the SMART Backend Services authentication method, which exists to support exactly the grant the docs disable.",
+        "integrator_impact": "An integrator reading the machine-readable SMART configuration would reasonably conclude they can request Backend-Services-style access to Greenfield. They cannot \u2014 and they will only discover this by attempting the grant and observing the error, or by reading the human-readable PDF. This is a SMART App Launch STU 2.2 conformance gap: per \u00a75.1, advertised capabilities must be issuable. Where the SMART config and the human-readable docs disagree, the SMART config is wrong.",
+        "verified_via": "meditech_public_sandbox",
+        "verified_date": "2026-04-27",
+        "citations": [
+          {
+            "label": "SMART App Launch STU 2.2 \u00a7 Conformance \u2014 well-known/smart-configuration",
+            "url": "https://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html"
+          },
+          {
+            "label": "SMART Backend Services Authorization 1.0.0",
+            "url": "https://hl7.org/fhir/uv/bulkdata/authorization/index.html"
+          }
+        ]
+      },
+      {
+        "finding": "Greenfield sandbox runs US Core STU6 (CapStmt dated 2023-05-25, software v2.0.0), but Phase F's harvest of 542 production customer endpoints shows almost no customer on STU6: 322 advertise software version `1.0.0` and 12 advertise `1.0`, both dated 2021-04-01 \u2014 the frozen R4 baseline",
+        "evidence": "Greenfield's `CapabilityStatement.software` is `{name: 'Interoperability Services: US Core STU6 FHIR R4', version: '2.0.0'}` with `date: 2023-05-25` and `fhirVersion: 4.0.1`. The production fleet snapshot in `ehrs/meditech/production_fleet.json` (captured 2026-04-27 from MEDITECH's HTI-1 \u00a7170.404 brands bundle) shows 322 customer endpoints reporting software version `1.0.0`, 12 reporting `1.0`, both dated `2021-04-01` \u2014 the frozen R4 baseline. MEDITECH publishes a separate STU7 v2.0.0 implementation (dated 2024-02-19, observed at one customer endpoint manually fetched outside the brands-bundle harvest), but the brands-bundle harvest finds zero customer endpoints advertising `/v2/uscore/STU7` paths \u2014 STU7 adoption appears limited or not yet enumerated in the public brands bundle. Greenfield's STU6 baseline is therefore a version of US Core that does not match the publicly enumerated R4 fleet and is not corroborated against any STU7 deployment in the brands bundle. The Getting Started guide v3.0 p.3 claims STU6 'reflects the version most commonly used by healthcare organizations today'; direct measurement of the brands-bundle fleet contradicts this claim.",
+        "integrator_impact": "An integrator who builds against the Greenfield sandbox is testing US Core STU6, but their actual MEDITECH customers are running the R4 v1.0.0 baseline frozen in 2021. Profile changes between the 2021 baseline and STU6 are nontrivial \u2014 including us-core-vital-signs supportedProfile shape, us-core-pulse-oximetry inclusion criteria, and date-period semantics on us-core-encounter \u2014 so sandbox-passing integrations may fail against real customer endpoints purely from version drift. This compounds the well-known gotcha that vendor sandboxes track ahead of customer reality. In MEDITECH's case the gap is unusually wide because Greenfield is also out of sync with MEDITECH's own newest published implementation (STU7 v2.0.0, observed at one customer endpoint outside the brands-bundle harvest).",
+        "verified_via": "meditech_greenfield_anonymous_smart_config + production_fleet_harvest",
+        "verified_date": "2026-04-27",
+        "citations": [
+          {
+            "label": "US Core 6.1.0 (HL7)",
+            "url": "http://hl7.org/fhir/us/core/STU6.1/"
+          },
+          {
+            "label": "US Core 3.1.1 (frozen baseline used by most MEDITECH customers)",
+            "url": "http://hl7.org/fhir/us/core/STU3.1.1/"
+          },
+          {
+            "label": "ONC HTI-1 Final Rule \u00a7 170.404 Service Base URL List",
+            "url": "https://www.federalregister.gov/documents/2024/01/09/2023-28857/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and"
+          }
+        ]
+      }
+    ]
+  },
+  "implementation_leaks": {
+    "description": "Information unintentionally exposed in the SMART configuration and error responses that integrators can use to fingerprint MEDITECH's internal architecture.",
+    "leaks": [
+      {
+        "field": "smart-configuration.scopes_supported",
+        "value": "~165 entries with prefixes `infr-*` and `iops-*` (e.g., infr-database-config/*, infr-jwks/*, infr-cluster-join/*, infr-emulate-user/*, infr-redis-config/*, iops-internal, iops-aaa-mfa, iops-ndsc-vendor/*.*, infr-vendor-onboarding, infr-pending-client/*, infr-tls-config/*, infr-multifactor-reset/read)",
+        "leak_type": "internal-scope-namespace",
+        "interpretation": "Reveals clustered architecture with Redis-backed config, JWKS rotation, node/cluster join workflows, vendor onboarding state machine, user-emulation capability, MFA reset workflows, TLS profile management. Platform is internally named 'iops' (interoperability ops). 'aaa' in iops-aaa-mfa likely refers to the classic AAA (AuthN/AuthZ/Audit) pattern. Among the EHRs in this map, no other vendor exposes this much internal namespace in their public SMART config."
+      },
+      {
+        "field": "error envelope shape",
+        "value": "{\"resource\": \"...\", \"detail\": \"...\"}",
+        "leak_type": "non-fhir-error-shape",
+        "interpretation": "On any 4xx, MEDITECH returns `{resource, detail}` \u2014 uniform across the production-customer 401 path (Phase A) and Greenfield's token endpoint 400 (`{\"resource\": \"v1/resource/error/_version/1/\", \"detail\": \"Bad Request\"}`). Same shape across surfaces but non-FHIR (spec says OperationOutcome). Internal versioning is exposed via `_version/1/` in the resource path."
+      }
+    ],
+    "verification": {
+      "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/.well-known/smart-configuration",
+      "source_quote": "scopes_supported includes 'infr-database-config/*', 'infr-jwks/*', 'infr-cluster-join/*', 'infr-emulate-user/*', 'iops-internal', 'iops-aaa-mfa', 'infr-vendor-onboarding'",
+      "verified_via": "meditech_public_sandbox",
+      "verified_date": "2026-04-27"
+    }
+  },
+  "vendor_stack_findings": {
+    "description": "MEDITECH owns the full stack \u2014 EHR engine, FHIR server, and OAuth issuer are all MEDITECH-branded. The only third-party layer surfaced through public artifacts is Google Workspace as the user-identity provider for Greenfield's developer-facing OAuth flow.",
+    "stack": [
+      {
+        "layer": "EHR product brand",
+        "vendor": "MEDITECH",
+        "evidence": "Customer-facing brands at *.meditech.cloud (per the HTI-1 \u00a7170.404 brands bundle); sandbox host greenfield-prod-apis.meditech.com"
+      },
+      {
+        "layer": "EHR product engine",
+        "vendor": "MEDITECH Expanse",
+        "evidence": "Getting Started v3.0 p.13: 'MEDITECH Expanse supports both Patient-facing applications that operate independently and Provider-facing applications that can be launched either as a standalone application or directly from MEDITECH Expanse platform.'"
+      },
+      {
+        "layer": "FHIR server implementation",
+        "vendor": "MEDITECH-proprietary 'Interoperability Services'",
+        "evidence": "CapabilityStatement.software.name='Interoperability Services: US Core STU6 FHIR R4', software.version='2.0.0'. Internal scope namespace 'iops-*' (interoperability ops) is exposed in scopes_supported. No HAPI / reference-impl markers."
+      },
+      {
+        "layer": "Identity / OAuth issuer",
+        "vendor": "MEDITECH Greenfield (with Google Workspace as user IdP)",
+        "evidence": "POST /auth/openid/google/ in the consent flow drives the user to accounts.google.com; back-channel POST /openid/ from MEDITECH redeems the Google code and decides authorization. Per the onboarding flow observed during this study (2026-04), the user-to-client binding is set via a support email round-trip with greenfieldinfo@meditech.com \u2014 human-mediated, low-touch, but not self-service."
+      }
+    ],
+    "verification": {
+      "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/metadata",
+      "source_quote": "software: {name: 'Interoperability Services: US Core STU6 FHIR R4', version: '2.0.0'}; date: '2023-05-25'; fhirVersion: '4.0.1'",
+      "verified_via": "meditech_public_sandbox",
+      "verified_query": "GET https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/metadata Accept: application/fhir+json User-Agent: mockhealth-map/0.1",
+      "verified_date": "2026-04-27"
+    }
+  },
+  "operation_outcome_overlay": {
+    "examples": [],
+    "notes": "Phase B authenticated OperationOutcome shapes pending \u2014 blocked at consent. Phase A captured the unauthorized-read envelope shape from production customers (tests/golden/meditech/error-unauth-patient-read-2026-04-27.json)."
+  },
+  "pagination_overlay": {
+    "notes": "Pending Phase B unblock."
+  },
+  "transport_findings": {
+    "notes": "Phase B authenticated transport measurement pending — blocked at consent. Phase F harvest of 542 production customer endpoints captured connection-rate findings: 64% reachable; gap is dominated by smaller-hospital infra (146 connection failures + 94 DNS + 55 TLS). See production_fleet.json:harvest_outcomes."
+  },
+  "search_param_observations": {},
+  "element_deviations": [],
+  "compatibility_statement": "MEDITECH Greenfield Workspace publishes a US Core STU6 v2.0.0 implementation (dated 2023-05-25) that is anonymous-readable for CapabilityStatement and SMART configuration. Authenticated probing is gated by an authorization_code flow with PKCE S256 and `client_secret_post`; identity is bound to a single operator-provisioned Google ID per client_id with no self-service management. As of 2026-04-27 the consent step rejects developer Google identities at Greenfield's user-to-client allowlist with a bare `error=access_denied` and no diagnostic body; the only documented recovery path is an email round-trip with greenfieldinfo@meditech.com. The Greenfield sandbox runs a US Core version (STU6) in use by almost no MEDITECH production customer per Phase F's harvest of 542 customer endpoints \u2014 most customers remain on the frozen R4 v1.0.0 baseline from 2021."
+}

@@ -1,0 +1,167 @@
+{
+  "ehr": "cerner",
+  "captured_date": "2026-04-27",
+  "max_patients_attempted": 30,
+  "user_agent": "mockhealth-map/0.1 (+https://mock.health) sandbox-patient-enumerator",
+  "unfiltered_patient_search_diagnostics": {
+    "first_page_status": 400,
+    "first_page_error": "{\"resourceType\":\"OperationOutcome\",\"issue\":[{\"severity\":\"error\",\"code\":\"invalid\",\"details\":{\"text\":\"at least one of _id, identifier, name, family, given, birthdate, phone, email, address-postalcode, or -pageContext must be provided\"}}]}",
+    "pages_walked": 0
+  },
+  "patients": [
+    {
+      "id": "12724066",
+      "display_name": "NANCYS II SMARTS",
+      "gender": "female",
+      "birthDate": "1990-09-15",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 115,
+        "Condition-problems": 1623,
+        "Condition-encounter-diag": -504,
+        "Condition-health-concern": 0,
+        "Observation-lab": 50,
+        "Observation-vital-signs": 50,
+        "MedicationRequest": 25,
+        "Encounter": 10,
+        "Procedure": 535,
+        "DiagnosticReport-lab": 4,
+        "Immunization": -504,
+        "DocumentReference": 10
+      }
+    },
+    {
+      "id": "12742399",
+      "display_name": "SANDY SMART",
+      "gender": "female",
+      "birthDate": "2020-09-15",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 76,
+        "Condition-problems": 831,
+        "Condition-encounter-diag": -504,
+        "Condition-health-concern": 0,
+        "Observation-lab": 50,
+        "Observation-vital-signs": 50,
+        "MedicationRequest": 25,
+        "Encounter": 10,
+        "Procedure": 37,
+        "DiagnosticReport-lab": 2,
+        "Immunization": 24,
+        "DocumentReference": 10
+      }
+    },
+    {
+      "id": "12744580",
+      "display_name": "SMART JOHN",
+      "gender": "male",
+      "birthDate": "1990-09-16",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 0,
+        "Condition-problems": 1,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 0,
+        "MedicationRequest": 0,
+        "Encounter": 0,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 4
+      }
+    },
+    {
+      "id": "12747063",
+      "display_name": "Smart On Fhir",
+      "gender": "male",
+      "birthDate": "2000-10-10",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 0,
+        "Condition-problems": 0,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 0,
+        "MedicationRequest": 0,
+        "Encounter": 0,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 0
+      }
+    },
+    {
+      "id": "12752183",
+      "display_name": "Joe Smarty Mayank Homenick",
+      "gender": null,
+      "birthDate": "1977-08-25",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 0,
+        "Condition-problems": 0,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 1,
+        "MedicationRequest": 0,
+        "Encounter": 1,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 10
+      }
+    },
+    {
+      "id": "12753604",
+      "display_name": "Fabian Smarty Khan",
+      "gender": "male",
+      "birthDate": "1980-12-30",
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 0,
+        "Condition-problems": 0,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 0,
+        "MedicationRequest": 0,
+        "Encounter": 0,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 0
+      }
+    },
+    {
+      "id": "12821252",
+      "display_name": "SMART Nancy2",
+      "gender": null,
+      "birthDate": null,
+      "discovery_source": "known-roster",
+      "resource_coverage": {
+        "Patient": 1,
+        "AllergyIntolerance": 0,
+        "Condition-problems": 0,
+        "Condition-encounter-diag": 0,
+        "Condition-health-concern": 0,
+        "Observation-lab": 0,
+        "Observation-vital-signs": 0,
+        "MedicationRequest": 0,
+        "Encounter": 1,
+        "Procedure": 0,
+        "DiagnosticReport-lab": 0,
+        "Immunization": 0,
+        "DocumentReference": 0
+      }
+    }
+  ]
+}

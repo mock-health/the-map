@@ -1,0 +1,1751 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:37:53.125094+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      },
+      {
+        "relation": "next",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=F21A3E95-324B-48B8-A99C-BD0C3CB87BDC"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/6a2d605f-c2e1-57ab-8282-0f2994daa2f3",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "6a2d605f-c2e1-57ab-8282-0f2994daa2f3",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-type natriuretic peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/681e2d1f-0c5a-50f0-9429-ffddb5f2ae21",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/b968034a-8a5b-5d04-83b2-7879b3760919",
+              "type": "Practitioner",
+              "display": "William Butler"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.48c96a79-f1b5-5192-8339-96b4415f4ee7",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-02-02T12:00:00+00:00",
+          "issued": "2023-05-05T11:45:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-05T11:45:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/7a25682f-3bb3-50d3-a79d-5ee8161b9fee",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "7a25682f-3bb3-50d3-a79d-5ee8161b9fee",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete blood count (CBC)"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.7de73f06-e8e9-5a84-a35c-c75839371f8f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9efdc1f9-848b-509a-ac34-5c1d98faf98a",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.67c8481e-51ae-5269-9493-4c326a2f8f94",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.7f2b8537-65f3-538d-91f4-5ba4bc0ad5c6",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.1d6307a1-a51a-5c3f-bede-cc51385c9563",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d9fad6f0-728f-5e08-8ec5-da7fb0e835cc",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.4cdb0d85-e7a6-5213-8162-c50fd19f7d50",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.f6065932-8049-51e9-8222-2bb7b6b2a066",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.3ee74f96-141c-53ef-9f5a-d808c16af0ba",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.854dc6bd-72c5-5ea5-9150-42e1374ea912",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.feab1602-595b-5317-9459-8cadf6fb0348",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.f5be17a3-20b8-55d5-8caa-4e6908aad7cb",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.891211fd-5ecb-5aee-80d4-5dca4bb2bf6a",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.f96fdad8-8a99-53b2-995d-d1f9c0de060e",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.4b2518f9-c2df-51b8-813f-b2a1b8c0497f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.3e1f8e10-f984-5083-bcef-a67d10701646",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.e10a6a0c-1067-500e-8f88-1bf9f35b600c",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.a4f06c8f-c701-5735-9a32-b3d1f05d5e7f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.df380c1e-1b26-5607-826e-160953997d96",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.09e0c32c-30e9-587b-911e-988e93ca9e60",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.12be48ec-15d3-55e1-9a8b-8172d06e663f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.8b25d7b6-0da7-50a2-8073-75369dcf3e41",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-10T16:40:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/15ff9e3d-aa68-5228-826c-7c1b1b969605",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "15ff9e3d-aa68-5228-826c-7c1b1b969605",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.6ab29138-dd55-530f-9cb7-411b07254c7f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d4d40f77-7c15-52bd-8b03-3a14635e9312",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.a77eadcf-0efe-521c-b67b-3bc2d5b4d725",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.17216ef4-276e-53fc-9a44-50e42911248c",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.a864f2df-1d3c-5606-8257-f1e93bebe6bb",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.36f45397-ee40-529f-bac0-568e21f54410",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.c693e056-24e5-57de-829c-04e119779d35",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.aa84c1f3-1fa7-53db-b079-4cbedd436863",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9ee3a81a-5d51-53f4-8ef5-97eb762a66cd",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.cdb8c4fd-d8f9-55de-871d-4f8d1f67e8e2",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9c30768a-cb84-55b4-95a8-984e183ac5c0",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.b69f4646-c59a-52cd-8d0f-91ec4230bb3e",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:41:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-10T16:41:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/75b07d87-fbe1-53ff-9901-d7c40aff6c84",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "75b07d87-fbe1-53ff-9901-d7c40aff6c84",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic metabolic panel"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.679a66d5-a887-57f1-85e3-05fe62a0100f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.1e0df8c8-61ce-558d-b9fb-8ff51238b73d",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.256184f6-939e-579d-aab6-781f4c80ac96",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.e024f38f-8c92-59cf-8b82-6639fb1f2657",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.26e6c9ae-710a-5182-834e-30ef45087326",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.8f073b06-01f2-58ee-9d7f-db4af1047461",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.630c7cf9-1eb8-53d9-8cd4-35bbc623df3e",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.5d4f99d3-31e8-5a7b-8535-1279631e2081",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.67161af0-22dc-50cb-89c2-99dc0818ad06",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d9837808-fee2-5158-9796-2e4c07a74b9c",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-10T16:40:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/b44574f1-f0c0-56e1-8b29-7afee4944752",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "b44574f1-f0c0-56e1-8b29-7afee4944752",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-type natriuretic peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.77f66594-0a95-5362-ae5c-72bcf1c31562",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-10T16:40:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/c15d8356-e61f-52c4-8d52-ac5881afbc7e",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "c15d8356-e61f-52c4-8d52-ac5881afbc7e",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.2ea2dfc3-b01a-5766-b205-7a1e2068deca",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-11T13:16:00+00:00",
+          "issued": "2023-05-11T13:20:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-11T13:20:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/ef22f9a4-b13b-574c-a4be-bf227a140d29",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "ef22f9a4-b13b-574c-a4be-bf227a140d29",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2160-0",
+                "display": "Creat SerPl-mCnc"
+              }
+            ],
+            "text": "Creat SerPl-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.30813a54-45c9-520d-8e29-871562eb28b4",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-11T13:16:00+00:00",
+          "issued": "2023-05-11T13:20:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-11T13:20:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/cc8da7fe-2d53-54f8-ae55-d1db4ea5ff2f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "cc8da7fe-2d53-54f8-ae55-d1db4ea5ff2f",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2093-3",
+                "display": "Cholest SerPl-mCnc"
+              }
+            ],
+            "text": "Cholest SerPl-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.b15e11c7-f20b-5030-83e8-161a6a4cff0b",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-11T13:16:00+00:00",
+          "issued": "2023-05-11T13:20:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-11T13:20:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/daaad4ec-28de-5127-9ade-7938c9afef7c",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "daaad4ec-28de-5127-9ade-7938c9afef7c",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2089-1",
+                "display": "LDLc SerPl-mCnc"
+              }
+            ],
+            "text": "LDLc SerPl-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.63453014-2f17-5a71-a4ed-e5712e7bf056",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-05-11T13:16:00+00:00",
+          "issued": "2023-05-11T13:20:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-05-11T13:20:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/7de76c6b-8b5c-57cf-be0d-c46bb0266761",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "7de76c6b-8b5c-57cf-be0d-c46bb0266761",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete blood count (CBC)"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.5c9696ea-55cf-5bc4-9827-702db427645b",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.7ca86795-7697-5eb4-8330-35983c9c1d61",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.877cb536-cead-5525-9c53-9684fb89e5b9",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.3ac7117b-b81d-59b8-81f5-62933fd3a12e",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.1511e8a2-3932-53e6-a4e1-5aacc631494f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9352685d-d41b-56c7-9bdc-8c2733ad94ab",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.5e796199-dea9-53e3-825e-ee8081fc512d",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.aaf0994f-c83b-5527-8291-18a45fb55ae3",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.c07064a3-a19b-5009-9909-e1e66d279400",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9aa315f8-6616-5804-83d5-52eac6fed495",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.6ea0efa3-b6af-500d-9c92-e36402fb3f22",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.a21c83b1-01a9-5399-8267-4ce56fbac388",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.4c1e7773-31fd-5438-82dc-3c0ce1ecdc49",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.79b85300-dfb8-52fc-84f6-7b1bd76e7c74",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.10f2977f-3359-51d7-8755-ab97420c9d48",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.fbecfe97-12a6-5c95-bcf6-d43e56d11a69",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.be240aab-52ba-5414-9220-0a92da09fc3a",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d41949f8-0bc3-5143-88c5-284559d8651a",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.a483f776-c1f8-58e6-a14f-7420db6fd7c0",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9238835e-1b7c-5dcc-8e28-295b182ab88c",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d109bdc6-9c0f-5238-9b67-b8fdfeda35b7",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.dd3dccb7-c062-576b-97b4-0b176f1fd108",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-15T04:30:00+00:00",
+          "issued": "2023-08-15T16:04:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-15T16:04:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/dfbeb52e-52cb-52a0-8a7a-807d680bdaa4",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "dfbeb52e-52cb-52a0-8a7a-807d680bdaa4",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.e496f357-2690-5a5e-aab9-cd054539f7f6",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d450b3ec-3f3f-5106-8840-ccfd847e79ed",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.e76bc732-7d81-51e2-9a93-8b198091a024",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.3ed8757e-417d-5566-a828-6daab834a878",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.0056e26f-8037-52b7-bfe8-9e4721e0af94",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.54341c1d-c813-53a7-95d5-a2458966ffdf",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.ba879a8c-8cb6-51ed-9e1d-80efeb1dd7c8",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d3e26b10-191a-5010-8306-fe75e5f9b958",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.1de5aa36-7460-503b-91b0-6e6e55301082",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.98d402e6-b34c-5602-8c7f-2d9dfbedf6a0",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.672c5d60-e945-528a-8dd1-67c3a60cc20b",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.f4a5677a-306e-531d-9f67-6d41f5ee6237",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-15T04:30:00+00:00",
+          "issued": "2023-08-15T16:04:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-15T16:04:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/1edd55fc-d19c-5297-85de-ad831d707cd1",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "1edd55fc-d19c-5297-85de-ad831d707cd1",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "80048",
+                "display": "Basic metabolic panel"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "166312007",
+                "display": "Basic metabolic panel"
+              }
+            ],
+            "text": "Basic metabolic panel"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.d413598b-111b-59d6-8838-88c1688a0575",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.f8326f8d-2eeb-5280-8025-0787c306e787",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d9cd4f3a-d665-5939-8399-b2ea84ddb885",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.64c2280a-731f-51bf-9ae3-067b15a85f8e",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.29ce5f83-dcc2-5117-956b-2d3e2eda2de3",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.67f97463-9e55-5d87-a07b-1973ca3319e3",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.6c7cd0bf-3bf7-503d-8773-a2286e749806",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.8799de78-afc3-5199-92f6-198d26832067",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.100f76ea-51fc-503b-8300-8366a74f0b45",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.0161e2fb-ea4f-5367-a01e-bd25012506c5",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-15T04:30:00+00:00",
+          "issued": "2023-08-15T16:00:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-15T16:00:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/f85503f7-d3d1-5c18-8059-f6cb2d6f059f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "f85503f7-d3d1-5c18-8059-f6cb2d6f059f",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "83880",
+                "display": "B-type natriuretic peptide"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "390917008",
+                "display": "B-type natriuretic peptide"
+              }
+            ],
+            "text": "B-type natriuretic peptide"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.7c41392d-9152-5a94-a560-22f306bdb7bd",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-15T04:30:00+00:00",
+          "issued": "2023-08-15T16:00:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-15T16:00:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/e48d6e84-a36e-597e-9e90-5b6007c5675d",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "e48d6e84-a36e-597e-9e90-5b6007c5675d",
+          "status": "amended",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "85027",
+                "display": "Complete blood count (CBC)"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "26604007",
+                "display": "Complete blood count (CBC)"
+              }
+            ],
+            "text": "Complete blood count (CBC)"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.a14582cd-f582-57b5-8dd1-c3ec5e8b6c35",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.b9d49da6-86c6-573f-851a-5478dae7f8ca",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d017390c-005c-5640-80b6-3d33c63a574f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.cc8d6ffb-48db-56b8-83e8-0f6f0154c127",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.b71c3bbd-809c-5b51-89b3-03f63de1802f",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.050535bc-0fd1-507e-8016-a5e872198a17",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.da9ce7ca-26a3-582c-92c2-08870d162888",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.797596c7-9b7f-51af-b46b-3f7b90426d4c",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.439b3be9-fb41-568b-b144-b3ab14529416",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.d9e09006-b649-5013-a6d3-cc7ff3a551f3",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.22f19203-eb32-5002-8f95-6bb154d98196",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.c52f5ae8-8608-5754-9d1d-4a6c41c389b3",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.34f147ac-e2ee-5709-8d58-99266f98667b",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.38dff0a0-3a33-52e7-9a53-53fd5cd6235c",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.b465bbbf-c2e3-5912-8096-6c82c6106dcc",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.1aa45058-00b6-51d9-8ba2-28bde937d410",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.ee484368-84a6-5cc5-80b2-f17a7c43f655",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.7a74883b-e66d-5039-8b2a-536ff6b4e82d",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.def3eaef-e737-5cb2-8e5b-f371dd707171",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.e10292a7-ebaf-57c3-8e25-f7c7c25087e0",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.9a331f41-9c58-5075-844e-4cb808a8e9c1",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.c21ad8df-5c79-511b-9425-052d8875f345",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:18:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:18:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/62fec72f-03c4-56af-842a-f17f012d153f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "62fec72f-03c4-56af-842a-f17f012d153f",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://www.ama-assn.org/go/cpt",
+                "code": "81005",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "24356-8",
+                "display": "Urinalysis"
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "27171005",
+                "display": "Urinalysis"
+              }
+            ],
+            "text": "Urinalysis"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Organization/7ad91f82-162c-57e6-9b58-f798670ae069",
+              "type": "Organization",
+              "display": "."
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.bcfe47a2-bee9-5293-9f6e-b625353d41a2",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.ce75f09a-4e9e-5460-90a7-0238611893cb",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.dcd9b554-7509-54eb-8647-61d6c2456f46",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.81c8dcae-ca10-55cf-8fb8-d2858af4af6e",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.ae68da2c-9045-5dae-806f-ea942c8d111b",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.b8ac43b4-1b5c-52e8-ad3a-19e49718dea9",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.cb221e9d-ee30-5ecd-954f-1fffc01b6302",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.7775e953-faf4-58a0-898f-e8b70cb585d1",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.fd166162-0abd-5ff6-9df0-05f49945b43e",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.eb802d54-8b04-5c36-93ff-01150584f0e8",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.f8dbc640-ed3c-52ee-94a7-2bbefebd4499",
+              "type": "Observation"
+            },
+            {
+              "reference": "Observation/LA.e601ee19-46d9-5774-80a4-267319b5d7aa",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:19:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:19:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/c36ff687-ba7c-57e5-861d-4d1f717c97ac",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "c36ff687-ba7c-57e5-861d-4d1f717c97ac",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.48e67433-86a2-5c8f-9b46-773b6b718c87",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:17:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:17:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/846703d6-dc94-50c6-8e79-abb07c320f01",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "846703d6-dc94-50c6-8e79-abb07c320f01",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2160-0",
+                "display": "Creat SerPl-mCnc"
+              }
+            ],
+            "text": "Creat SerPl-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.6ae33aa6-a616-50cb-a88e-a79d3e661c17",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:17:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:17:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/39399bed-7d67-50ed-8119-be6ca5bb12bf",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "39399bed-7d67-50ed-8119-be6ca5bb12bf",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "42757-5",
+                "display": "Troponin I Bld-mCnc"
+              }
+            ],
+            "text": "Troponin I Bld-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.34246cc1-cc95-515c-a197-74f7e7121edb",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:17:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:17:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/4b13fb91-33ce-5116-800c-ff107cc81677",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "4b13fb91-33ce-5116-800c-ff107cc81677",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2571-8",
+                "display": "Trigl SerPl-mCnc"
+              }
+            ],
+            "text": "Trigl SerPl-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.bfc6b780-09bc-50a2-905d-bb3858c4a9d2",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:17:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:17:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport/913cb2ff-fc54-5032-bc7f-b68ad1f559a9",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "913cb2ff-fc54-5032-bc7f-b68ad1f559a9",
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2089-1",
+                "display": "LDLc SerPl-mCnc"
+              }
+            ],
+            "text": "LDLc SerPl-mCnc"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "encounter": {
+            "reference": "Encounter/ae7bdd77-1a91-54b6-96a2-c478db7e810d",
+            "type": "Encounter"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/362a220d-1a46-5265-8add-42ad1d3b09a1",
+              "type": "Practitioner",
+              "display": "E Tucker"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/LA.fe530e46-dcdf-5ca8-a9a4-ffed2ee00bc2",
+              "type": "Observation"
+            }
+          ],
+          "effectiveDateTime": "2023-08-16T13:13:00+00:00",
+          "issued": "2023-08-16T13:17:00+00:00",
+          "meta": {
+            "lastUpdated": "2023-08-16T13:17:00+00:00"
+          },
+          "resourceType": "DiagnosticReport"
+        }
+      }
+    ],
+    "total": 20,
+    "resourceType": "Bundle"
+  }
+}

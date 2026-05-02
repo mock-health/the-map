@@ -1,0 +1,289 @@
+{
+  "ehr": "cerner",
+  "captured_date": "2026-04-27",
+  "selection_target_per_probe": 3,
+  "probes": {
+    "Patient": {
+      "profile_id": "us-core-patient",
+      "patient_ids": [
+        "12724066",
+        "12742399",
+        "12744580"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 1
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 1
+        },
+        {
+          "id": "12744580",
+          "display_name": "SMART JOHN",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 1,
+      "patients_with_data_count": 7,
+      "selection_rationale": "chose top-3 of 7 sandbox patients with \u22651 entry"
+    },
+    "AllergyIntolerance": {
+      "profile_id": "us-core-allergyintolerance",
+      "patient_ids": [
+        "12724066",
+        "12742399"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 115
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 76
+        }
+      ],
+      "max_entry_count_observed": 115,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "Condition-problems": {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "patient_ids": [
+        "12724066",
+        "12742399",
+        "12744580"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 1623
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 831
+        },
+        {
+          "id": "12744580",
+          "display_name": "SMART JOHN",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 1623,
+      "patients_with_data_count": 3,
+      "selection_rationale": "chose top-3 of 3 sandbox patients with \u22651 entry"
+    },
+    "Condition-encounter-diag": {
+      "profile_id": "",
+      "patient_ids": [],
+      "patient_descriptions": [],
+      "max_entry_count_observed": 0,
+      "patients_with_data_count": 0,
+      "selection_rationale": "no sandbox patients returned data for this probe \u2014 finding by absence is itself a Map row"
+    },
+    "Condition-health-concern": {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "patient_ids": [],
+      "patient_descriptions": [],
+      "max_entry_count_observed": 0,
+      "patients_with_data_count": 0,
+      "selection_rationale": "no sandbox patients returned data for this probe \u2014 finding by absence is itself a Map row"
+    },
+    "Observation-lab": {
+      "profile_id": "us-core-observation-lab",
+      "patient_ids": [
+        "12724066",
+        "12742399"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 50
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 50
+        }
+      ],
+      "max_entry_count_observed": 50,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "Observation-vital-signs": {
+      "profile_id": "us-core-vital-signs",
+      "patient_ids": [
+        "12724066",
+        "12742399",
+        "12752183"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 50
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 50
+        },
+        {
+          "id": "12752183",
+          "display_name": "Joe Smarty Mayank Homenick",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 50,
+      "patients_with_data_count": 3,
+      "selection_rationale": "chose top-3 of 3 sandbox patients with \u22651 entry"
+    },
+    "MedicationRequest": {
+      "profile_id": "us-core-medicationrequest",
+      "patient_ids": [
+        "12724066",
+        "12742399"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 25
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 25
+        }
+      ],
+      "max_entry_count_observed": 25,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "Encounter": {
+      "profile_id": "us-core-encounter",
+      "patient_ids": [
+        "12724066",
+        "12742399",
+        "12752183"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 10
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 10
+        },
+        {
+          "id": "12752183",
+          "display_name": "Joe Smarty Mayank Homenick",
+          "entry_count": 1
+        }
+      ],
+      "max_entry_count_observed": 10,
+      "patients_with_data_count": 4,
+      "selection_rationale": "chose top-3 of 4 sandbox patients with \u22651 entry"
+    },
+    "Procedure": {
+      "profile_id": "us-core-procedure",
+      "patient_ids": [
+        "12724066",
+        "12742399"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 535
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 37
+        }
+      ],
+      "max_entry_count_observed": 535,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "DiagnosticReport-lab": {
+      "profile_id": "us-core-diagnosticreport-lab",
+      "patient_ids": [
+        "12724066",
+        "12742399"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 4
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 2
+        }
+      ],
+      "max_entry_count_observed": 4,
+      "patients_with_data_count": 2,
+      "selection_rationale": "chose top-2 of 2 sandbox patients with \u22651 entry"
+    },
+    "Immunization": {
+      "profile_id": "",
+      "patient_ids": [
+        "12742399"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 24
+        }
+      ],
+      "max_entry_count_observed": 24,
+      "patients_with_data_count": 1,
+      "selection_rationale": "chose top-1 of 1 sandbox patients with \u22651 entry"
+    },
+    "DocumentReference": {
+      "profile_id": "",
+      "patient_ids": [
+        "12724066",
+        "12742399",
+        "12752183"
+      ],
+      "patient_descriptions": [
+        {
+          "id": "12724066",
+          "display_name": "NANCYS II SMARTS",
+          "entry_count": 10
+        },
+        {
+          "id": "12742399",
+          "display_name": "SANDY SMART",
+          "entry_count": 10
+        },
+        {
+          "id": "12752183",
+          "display_name": "Joe Smarty Mayank Homenick",
+          "entry_count": 10
+        }
+      ],
+      "max_entry_count_observed": 10,
+      "patients_with_data_count": 4,
+      "selection_rationale": "chose top-3 of 4 sandbox patients with \u22651 entry"
+    }
+  }
+}

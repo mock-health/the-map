@@ -1,0 +1,1376 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:52:04.694112+00:00",
+  "_probe": "DocumentReference",
+  "_patient_id": "12742399",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "23cd936b-381c-480d-8e6f-2eed85eb60ba",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399"
+      },
+      {
+        "relation": "next",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399&-pageContext=eJxljcsKwjAUBf_lrhNoTFttwY2Cu-pC9-U2DyvEpORBldJ_t7oquDyHGWYC4ZKNULOMgFQak1nGBCL54DzUcDxjx57N9TA-7qO_nPit2QOBHkNr1Wtho0-KwIB31Qpn4-8DxjjfFl1OZck7muuM012lCyq05llZVSg3CDOBEBdPtkP_DtKJddgmY9YZjSb8db7QPH8Acn9BTA%3D%3D&-pageDirection=NEXT"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/206130476",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "206130476",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2023-05-12T21:19:59.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: 05/12/2023 - Current</p><p><b>Service Start Date</b>: May 12, 2023  9:19 P.M. UTC</p><p><b>Service End Date</b>: May 12, 2029  9:19 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206130476-2023051221195900"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-05-12T21:19:59Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-206130476",
+                "title": "05/12/2023 - Current",
+                "creation": "2023-05-12T21:19:57.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-206130476",
+                "title": "05/12/2023 - Current",
+                "creation": "2023-05-12T21:19:57.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-05-12T21:19:57Z",
+              "end": "2029-05-12T21:19:57Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203784656",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203784656",
+          "meta": {
+            "versionId": "3",
+            "lastUpdated": "2023-02-08T23:40:32.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: 02/08/2023 - Current</p><p><b>Service Start Date</b>: Feb  8, 2023 11:40 P.M. UTC</p><p><b>Service End Date</b>: Feb  8, 2029 11:40 P.M. UTC</p><p><b>Document Status</b>: Amended</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203784656-2023020823395500"
+            }
+          ],
+          "status": "current",
+          "docStatus": "amended",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-02-08T23:39:55Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203784656",
+                "title": "02/08/2023 - Current",
+                "creation": "2023-02-08T23:40:26.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203784656",
+                "title": "02/08/2023 - Current",
+                "creation": "2023-02-08T23:40:26.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-02-08T23:40:26Z",
+              "end": "2029-02-08T23:40:26Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203784626",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203784626",
+          "meta": {
+            "versionId": "3",
+            "lastUpdated": "2023-02-08T23:04:13.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Thumb Sprain</p><p><b>Service Start Date</b>: Feb  8, 2023 11:04 P.M. UTC</p><p><b>Service End Date</b>: Feb  8, 2029 11:04 P.M. UTC</p><p><b>Document Status</b>: Amended</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203784626-2023020823031800"
+            }
+          ],
+          "status": "current",
+          "docStatus": "amended",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-02-08T23:03:17Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203784626",
+                "title": "Thumb Sprain",
+                "creation": "2023-02-08T23:04:11.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203784626",
+                "title": "Thumb Sprain",
+                "creation": "2023-02-08T23:04:11.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-02-08T23:04:11Z",
+              "end": "2029-02-08T23:04:11Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203507756",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203507756",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2023-01-19T19:37:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Calf Muscle Strain</p><p><b>Service Start Date</b>: Jan 19, 2023  7:37 P.M. UTC</p><p><b>Service End Date</b>: Jan 19, 2029  7:37 P.M. UTC</p><p><b>Document Status</b>: Amended</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203507756-2023011919342500"
+            }
+          ],
+          "status": "current",
+          "docStatus": "amended",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-01-19T19:34:25Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203507756",
+                "title": "Calf Muscle Strain",
+                "creation": "2023-01-19T19:37:18.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203507756",
+                "title": "Calf Muscle Strain",
+                "creation": "2023-01-19T19:37:18.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-01-19T19:37:18Z",
+              "end": "2029-01-19T19:37:18Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203507744",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203507744",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2023-01-19T19:33:13.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Amputee - Above Knee</p><p><b>Service Start Date</b>: Jan 19, 2023  7:33 P.M. UTC</p><p><b>Service End Date</b>: Jan 19, 2029  7:33 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203507744-2023011919331300"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-01-19T19:33:13Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203507744",
+                "title": "Amputee - Above Knee",
+                "creation": "2023-01-19T19:33:10.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203507744",
+                "title": "Amputee - Above Knee",
+                "creation": "2023-01-19T19:33:10.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-01-19T19:33:10Z",
+              "end": "2029-01-19T19:33:10Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203507698",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203507698",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2023-01-19T19:32:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Back / Spine</p><p><b>Service Start Date</b>: Jan 19, 2023  7:32 P.M. UTC</p><p><b>Service End Date</b>: Jan 19, 2029  7:32 P.M. UTC</p><p><b>Document Status</b>: Amended</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203507698-2023011919275400"
+            }
+          ],
+          "status": "current",
+          "docStatus": "amended",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-01-19T19:27:54Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203507698",
+                "title": "Back / Spine",
+                "creation": "2023-01-19T19:32:17.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203507698",
+                "title": "Back / Spine",
+                "creation": "2023-01-19T19:32:17.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-01-19T19:32:17Z",
+              "end": "2029-01-19T19:32:17Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203507678",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203507678",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2023-01-19T19:22:49.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Abdominal</p><p><b>Service Start Date</b>: Jan 19, 2023  7:22 P.M. UTC</p><p><b>Service End Date</b>: Jan 19, 2029  7:22 P.M. UTC</p><p><b>Document Status</b>: Amended</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203507678-2023011919220400"
+            }
+          ],
+          "status": "current",
+          "docStatus": "amended",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2023-01-19T19:22:04Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203507678",
+                "title": "Abdominal",
+                "creation": "2023-01-19T19:22:30.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203507678",
+                "title": "Abdominal",
+                "creation": "2023-01-19T19:22:30.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2023-01-19T19:22:30Z",
+              "end": "2029-01-19T19:22:30Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209030622",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209030622",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T20:43:15.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Education Note</p><p><b>Document Title</b>: WebMD Ignite Patient Education - Asthma (Adult)</p><p><b>Service Start Date</b>: Apr 27, 2026  8:43 P.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  8:43 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209030622-2026042720431500"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "3278547",
+                "display": "Education Note",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "34895-3",
+                "display": "Education note",
+                "userSelected": false
+              }
+            ],
+            "text": "Education Note"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "34895-3",
+                  "display": "Education note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2026-04-27T20:43:15Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209030622",
+                "title": "WebMD Ignite Patient Education - Asthma (Adult)",
+                "creation": "2026-04-27T20:43:14.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209030622",
+                "title": "WebMD Ignite Patient Education - Asthma (Adult)",
+                "creation": "2026-04-27T20:43:14.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209030622",
+                "title": "WebMD Ignite Patient Education - Asthma (Adult)",
+                "creation": "2026-04-27T20:43:14.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T20:43:14Z",
+              "end": "2026-04-27T20:43:14Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209030618",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209030618",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T20:42:22.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Education Note</p><p><b>Document Title</b>: WebMD Ignite Patient Education - General Neck and Back Pain</p><p><b>Service Start Date</b>: Apr 27, 2026  8:42 P.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  8:42 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209030618-2026042720422300"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "3278547",
+                "display": "Education Note",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "34895-3",
+                "display": "Education note",
+                "userSelected": false
+              }
+            ],
+            "text": "Education Note"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "34895-3",
+                  "display": "Education note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2026-04-27T20:42:22Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209030618",
+                "title": "WebMD Ignite Patient Education - General Neck and Back Pain",
+                "creation": "2026-04-27T20:42:21.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209030618",
+                "title": "WebMD Ignite Patient Education - General Neck and Back Pain",
+                "creation": "2026-04-27T20:42:21.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209030618",
+                "title": "WebMD Ignite Patient Education - General Neck and Back Pain",
+                "creation": "2026-04-27T20:42:21.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T20:42:21Z",
+              "end": "2026-04-27T20:42:21Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209030614",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209030614",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T20:41:25.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMART II, SANDY</p><p><b>Document Type</b>: Education Note</p><p><b>Document Title</b>: WebMD Ignite Patient Education - Fever Blisters, KidsHealth</p><p><b>Service Start Date</b>: Apr 27, 2026  8:41 P.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  8:41 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209030614-2026042720412600"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "3278547",
+                "display": "Education Note",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "34895-3",
+                "display": "Education note",
+                "userSelected": false
+              }
+            ],
+            "text": "Education Note"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "34895-3",
+                  "display": "Education note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "date": "2026-04-27T20:41:25Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209030614",
+                "title": "WebMD Ignite Patient Education - Fever Blisters, KidsHealth",
+                "creation": "2026-04-27T20:41:24.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209030614",
+                "title": "WebMD Ignite Patient Education - Fever Blisters, KidsHealth",
+                "creation": "2026-04-27T20:41:24.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209030614",
+                "title": "WebMD Ignite Patient Education - Fever Blisters, KidsHealth",
+                "creation": "2026-04-27T20:41:24.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953523"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T20:41:24Z",
+              "end": "2026-04-27T20:41:24Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

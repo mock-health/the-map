@@ -1,0 +1,139 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=eD.LxhDyX35TntF77l7etUA3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:43.711634+00:00",
+  "_probe": "Immunization",
+  "_patient_id": "eD.LxhDyX35TntF77l7etUA3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 2,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=eD.LxhDyX35TntF77l7etUA3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization/e6Qw46zV7uV9eMe3zw8mbbw3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization/e6Qw46zV7uV9eMe3zw8mbbw3",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "e6Qw46zV7uV9eMe3zw8mbbw3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768076",
+              "value": "29327"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "text": "Cholera"
+          },
+          "patient": {
+            "reference": "Patient/eD.LxhDyX35TntF77l7etUA3",
+            "display": "Argonaut, Jason"
+          },
+          "encounter": {
+            "reference": "Encounter/efDMwoKfDg5xDVLbLE6ErRA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27520"
+            },
+            "display": "Orders Only"
+          },
+          "occurrenceDateTime": "2019-04-29",
+          "primarySource": false
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization/eXL.CqqmGJ7Iu70RgscvvhQ3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization/eXL.CqqmGJ7Iu70RgscvvhQ3",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "eXL.CqqmGJ7Iu70RgscvvhQ3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.768076",
+              "value": "29328"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "102"
+              }
+            ],
+            "text": "DTP-Hib-Hep B"
+          },
+          "patient": {
+            "reference": "Patient/eD.LxhDyX35TntF77l7etUA3",
+            "display": "Argonaut, Jason"
+          },
+          "encounter": {
+            "reference": "Encounter/efDMwoKfDg5xDVLbLE6ErRA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27520"
+            },
+            "display": "Orders Only"
+          },
+          "occurrenceDateTime": "2019-04-29",
+          "primarySource": false
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:4900743b-1177-4659-aac4-2c5f294a2666",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for Immunization - Outside Record. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

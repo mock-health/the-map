@@ -1,0 +1,70 @@
+# Vendor-neutral HAPI FHIR JPA Server with US Core 6.1.0 IG preloaded.
+# Used by Phase 4 (cross-validation): tools.cross_validate_with_hapi runs
+# captured EHR responses through HAPI's $validate operation as a second
+# opinion against our four-axis analyzer. Discrepancies are bugs in our
+# analyzer; agreements build trust.
+#
+# Quick start:
+#   docker compose -f tools/hapi/docker-compose.example.yml up -d
+#   # wait ~30s for HAPI to come up
+#   curl http://localhost:8080/fhir/metadata | jq .software.version
+#   # then:
+#   python -m tools.upload_us_core_to_hapi
+#   python -m tools.cross_validate_with_hapi epic
+#
+# Tear down:
+#   docker compose -f tools/hapi/docker-compose.example.yml down -v
+
+services:
+  hapi:
+    image: hapiproject/hapi:latest
+    container_name: the-map-hapi
+    ports:
+      - "8080:8080"
+    environment:
+      # Tell HAPI to load the US Core 6.1.0 IG package on boot. The package
+      # itself is pulled from packages.fhir.org by HAPI's package loader.
+      - hapi.fhir.implementationguides.us_core.name=hl7.fhir.us.core
+      - hapi.fhir.implementationguides.us_core.version=6.1.0
+      - hapi.fhir.implementationguides.us_core.installMode=STORE_AND_INSTALL
+
+      # Validation must be enabled for $validate to work.
+      - hapi.fhir.validation.requests_enabled=true
+      - hapi.fhir.validation.responses_enabled=false
+
+      # FHIR R4. US Core 6.1 is R4-based.
+      - hapi.fhir.fhir_version=R4
+
+      # H2 in-memory database is fine for ephemeral cross-validation.
+      # If you want persistence across restarts, swap to a postgres service.
+      - spring.datasource.url=jdbc:h2:mem:hapi
+      - spring.datasource.username=sa
+      - spring.datasource.password=
+      - spring.jpa.properties.hibernate.dialect=ca.uhn.fhir.jpa.model.dialect.HapiFhirH2Dialect
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/fhir/metadata"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+# To use a postgres-backed HAPI instead of in-memory H2:
+#
+#   services:
+#     postgres:
+#       image: postgres:16-alpine
+#       environment:
+#         POSTGRES_DB: hapi
+#         POSTGRES_USER: hapi
+#         POSTGRES_PASSWORD: hapi
+#       volumes:
+#         - hapi-pg:/var/lib/postgresql/data
+#     hapi:
+#       depends_on: [postgres]
+#       environment:
+#         - spring.datasource.url=jdbc:postgresql://postgres:5432/hapi
+#         - spring.datasource.username=hapi
+#         - spring.datasource.password=hapi
+#         - spring.jpa.properties.hibernate.dialect=ca.uhn.fhir.jpa.model.dialect.HapiFhirPostgres94Dialect
+#   volumes:
+#     hapi-pg:

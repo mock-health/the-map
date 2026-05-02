@@ -1,0 +1,1403 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:00.450555+00:00",
+  "body": {
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory"
+      },
+      {
+        "relation": "next",
+        "url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory&continue=LA.0878558F-C87D-4F89-B9C3-533FE13040BD"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.8435b4ea-30f5-5061-a294-f605af48f206",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.8435b4ea-30f5-5061-a294-f605af48f206",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/b51f59be-8422-56a0-afd9-f402f7f53802",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "status": "final",
+          "code": {
+            "text": "Creatinine"
+          },
+          "effectiveDateTime": "2024-09-10T13:40:00+00:00",
+          "valueQuantity": {
+            "value": 1.1
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.5bf3200f-7eea-515d-a197-e69556f86bb8",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.5bf3200f-7eea-515d-a197-e69556f86bb8",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/b51f59be-8422-56a0-afd9-f402f7f53802",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "77142-8",
+                "display": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+              }
+            ],
+            "text": "Potassium [Moles/volume] in Serum, Plasma or Blood"
+          },
+          "effectiveDateTime": "2024-09-10T13:41:00+00:00",
+          "valueString": "4.0",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.48c96a79-f1b5-5192-8339-96b4415f4ee7",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.48c96a79-f1b5-5192-8339-96b4415f4ee7",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/681e2d1f-0c5a-50f0-9429-ffddb5f2ae21",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/e226a011-b583-500e-aefc-f486a43cd11d",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "pg/mL",
+                "value": 0,
+                "code": "pg/mL",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "pg/mL",
+                "value": 99,
+                "code": "pg/mL",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 0-99 pg/mL"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "text": "B-Type Natriuretic Peptide"
+          },
+          "effectiveDateTime": "2023-02-02T12:00:00+00:00",
+          "issued": "2023-05-05T11:45:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "H",
+                  "display": "High"
+                }
+              ],
+              "text": "High"
+            }
+          ],
+          "valueQuantity": {
+            "unit": "pg/mL",
+            "value": 150,
+            "code": "pg/mL",
+            "system": "http://unitsofmeasure.org"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.7de73f06-e8e9-5a84-a35c-c75839371f8f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.7de73f06-e8e9-5a84-a35c-c75839371f8f",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/cd113964-62aa-55ab-9b14-94146ec6d8d0",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "K/mm3",
+                "value": 4.8,
+                "code": "K/mm3",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "K/mm3",
+                "value": 10.8,
+                "code": "K/mm3",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 4.8-10.8 K/mm3"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "6690-2",
+                "display": "WBC # Bld AUTO"
+              }
+            ],
+            "text": "WBC # Bld AUTO"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueQuantity": {
+            "unit": "K/mm3",
+            "value": 8.7,
+            "code": "K/mm3",
+            "system": "http://unitsofmeasure.org"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.9efdc1f9-848b-509a-ac34-5c1d98faf98a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.9efdc1f9-848b-509a-ac34-5c1d98faf98a",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/61f0d876-71ea-56aa-809b-904e8332701c",
+            "type": "Specimen"
+          },
+          "status": "entered-in-error",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "33256-9",
+                "display": "Corrected White Blood Count"
+              }
+            ],
+            "text": "Corrected White Blood Count"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "error",
+                "display": "Error"
+              }
+            ],
+            "text": "Error"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.67c8481e-51ae-5269-9493-4c326a2f8f94",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.67c8481e-51ae-5269-9493-4c326a2f8f94",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/4c4bad12-1e26-5cdb-9868-2b720c234ec1",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "M/mm3",
+                "value": 4,
+                "code": "M/mm3",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "M/mm3",
+                "value": 6,
+                "code": "M/mm3",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 4.0-6.0 M/mm3"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26453-1",
+                "display": "RBC # BLD"
+              }
+            ],
+            "text": "RBC # BLD"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueString": "5.00 M/mm3",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.7f2b8537-65f3-538d-91f4-5ba4bc0ad5c6",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.7f2b8537-65f3-538d-91f4-5ba4bc0ad5c6",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/1dd0e200-1dd9-5602-9b1b-a234c0bcfb25",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "gm/L",
+                "value": 14,
+                "code": "gm/L",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "gm/L",
+                "value": 18,
+                "code": "gm/L",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 14.0-18.0 gm/L"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "718-7",
+                "display": "Hemoglobin"
+              }
+            ],
+            "text": "Hemoglobin"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueString": "15.0 gm/L",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.1d6307a1-a51a-5c3f-bede-cc51385c9563",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.1d6307a1-a51a-5c3f-bede-cc51385c9563",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/0d78be37-f49e-5246-b660-ab73ae93a271",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "%",
+                "value": 35,
+                "code": "%",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "%",
+                "value": 49,
+                "code": "%",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 35-49 %"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "4544-3",
+                "display": "Hematocrit"
+              }
+            ],
+            "text": "Hematocrit"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueString": "45.0 %",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.d9fad6f0-728f-5e08-8ec5-da7fb0e835cc",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.d9fad6f0-728f-5e08-8ec5-da7fb0e835cc",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/64381deb-e1f5-509c-917b-c169affc00e7",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "fl",
+                "value": 81,
+                "code": "fl",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "fl",
+                "value": 98,
+                "code": "fl",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 81-98 fl"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "30428-7",
+                "display": "MCV (mean corpuscular volume) determination"
+              }
+            ],
+            "text": "MCV (mean corpuscular volume) determination"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueString": "90.0 fl",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.4cdb0d85-e7a6-5213-8162-c50fd19f7d50",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.4cdb0d85-e7a6-5213-8162-c50fd19f7d50",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/a1be1c88-903c-52bc-87a8-681a1e467e8c",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "pg",
+                "value": 27,
+                "code": "pg",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "pg",
+                "value": 33,
+                "code": "pg",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 27-33 pg"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "28539-5",
+                "display": "Mean Corpuscular Hemoglobin"
+              }
+            ],
+            "text": "Mean Corpuscular Hemoglobin"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueString": "30.0 pg",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.f6065932-8049-51e9-8222-2bb7b6b2a066",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.f6065932-8049-51e9-8222-2bb7b6b2a066",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/6ed391a2-eb38-5771-811c-8903b8f3a051",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "g/dl",
+                "value": 33,
+                "code": "g/dl",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "g/dl",
+                "value": 37,
+                "code": "g/dl",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 33-37 g/dl"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "28540-3",
+                "display": "Mean Corpuscular HGB Conc"
+              }
+            ],
+            "text": "Mean Corpuscular HGB Conc"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueString": "33.0 g/dl",
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.3ee74f96-141c-53ef-9f5a-d808c16af0ba",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.3ee74f96-141c-53ef-9f5a-d808c16af0ba",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/73f13614-59c8-53f8-8d3e-7c4fa7708b1f",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "788-0",
+                "display": "Red Cell Distribution Width (%)"
+              }
+            ],
+            "text": "Red Cell Distribution Width (%)"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.854dc6bd-72c5-5ea5-9150-42e1374ea912",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.854dc6bd-72c5-5ea5-9150-42e1374ea912",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "performer": [
+            {
+              "reference": "Practitioner/e58e153f-4006-5b53-88da-85cac251dbc7",
+              "type": "Practitioner",
+              "display": "AUTOINS User"
+            }
+          ],
+          "specimen": {
+            "reference": "Specimen/75d7094d-e177-52c7-8c57-cf63ebc1cf7c",
+            "type": "Specimen"
+          },
+          "referenceRange": [
+            {
+              "low": {
+                "unit": "K/mm3",
+                "value": 250,
+                "code": "K/mm3",
+                "system": "http://unitsofmeasure.org"
+              },
+              "high": {
+                "unit": "K/mm3",
+                "value": 400,
+                "code": "K/mm3",
+                "system": "http://unitsofmeasure.org"
+              },
+              "text": "Normal Range: 250-400 K/mm3"
+            }
+          ],
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26515-7",
+                "display": "Platelet Count"
+              }
+            ],
+            "text": "Platelet Count"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:40:00+00:00",
+          "interpretation": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                  "code": "N",
+                  "display": "Normal"
+                }
+              ],
+              "text": "Normal"
+            }
+          ],
+          "valueQuantity": {
+            "unit": "K/mm3",
+            "value": 305,
+            "code": "K/mm3",
+            "system": "http://unitsofmeasure.org"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.feab1602-595b-5317-9459-8cadf6fb0348",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.feab1602-595b-5317-9459-8cadf6fb0348",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/e9789df3-5fe1-54ec-85dd-f6ff21de83a4",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "32623-1",
+                "display": "Mean Platelet Volume"
+              }
+            ],
+            "text": "Mean Platelet Volume"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.f5be17a3-20b8-55d5-8caa-4e6908aad7cb",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.f5be17a3-20b8-55d5-8caa-4e6908aad7cb",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/afc52ea1-9e02-5067-9919-b3f6902f2c87",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "19023-1",
+                "display": "Automated granulocyte %"
+              }
+            ],
+            "text": "Automated granulocyte %"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.891211fd-5ecb-5aee-80d4-5dca4bb2bf6a",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.891211fd-5ecb-5aee-80d4-5dca4bb2bf6a",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/d3154ccf-8f24-53cb-a60d-42908bef46ba",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "770-8",
+                "display": "Automated neutrophil %"
+              }
+            ],
+            "text": "Automated neutrophil %"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.f96fdad8-8a99-53b2-995d-d1f9c0de060e",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.f96fdad8-8a99-53b2-995d-d1f9c0de060e",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/ac1088e8-ecd4-52ac-8a45-ed5425d2a634",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "26476-2",
+                "display": "Lymphocytes (%)"
+              }
+            ],
+            "text": "Lymphocytes (%)"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.4b2518f9-c2df-51b8-813f-b2a1b8c0497f",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.4b2518f9-c2df-51b8-813f-b2a1b8c0497f",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/fbd1c249-1194-5019-9269-3ddf196f4ecd",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "5905-5",
+                "display": "Automated monocyte %"
+              }
+            ],
+            "text": "Automated monocyte %"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.3e1f8e10-f984-5083-bcef-a67d10701646",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.3e1f8e10-f984-5083-bcef-a67d10701646",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/36622118-4951-50d5-b776-dec7013dd452",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "713-8",
+                "display": "Automated eosinophil %"
+              }
+            ],
+            "text": "Automated eosinophil %"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      },
+      {
+        "fullUrl": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation/LA.e10a6a0c-1067-500e-8f88-1bf9f35b600c",
+        "search": {
+          "mode": "match"
+        },
+        "resource": {
+          "id": "LA.e10a6a0c-1067-500e-8f88-1bf9f35b600c",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "encounter": {
+            "reference": "Encounter/9187b9b8-5dd2-55c5-9e3c-d558e0f729c4",
+            "type": "Encounter"
+          },
+          "subject": {
+            "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+            "type": "Patient",
+            "display": "Bond,Paula"
+          },
+          "specimen": {
+            "reference": "Specimen/67f24e10-cac6-589a-90a8-5e3a4296089d",
+            "type": "Specimen"
+          },
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "706-2",
+                "display": "Automated basophil %"
+              }
+            ],
+            "text": "Automated basophil %"
+          },
+          "effectiveDateTime": "2023-05-10T04:30:00+00:00",
+          "issued": "2023-05-10T16:33:00+00:00",
+          "dataAbsentReason": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "code": "not-performed",
+                "display": "Not Performed"
+              }
+            ],
+            "text": "Not Performed"
+          },
+          "resourceType": "Observation"
+        }
+      }
+    ],
+    "total": 20,
+    "resourceType": "Bundle"
+  }
+}

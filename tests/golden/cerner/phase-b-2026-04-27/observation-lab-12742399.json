@@ -1,0 +1,4927 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=laboratory",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:22.331408+00:00",
+  "_probe": "Observation-lab",
+  "_patient_id": "12742399",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "4f776817-36cb-471d-9176-a0589a7c62bf",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=laboratory"
+      },
+      {
+        "relation": "next",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=laboratory&-pageContext=eJxljbEOgjAURf_lzW2CUlohcdHBEAcHP4C8lgdiajG0DUbCv4tOJI735pycCUwfXYAiSxjU1GC0y5jAxMH3AxRwvFCbnsrrYbyP3fkh47vcA4Mb-srRa2HDEInBE1uqTO_C74OdMJnSmeTSCOQCU-K5VpKjyBXpJFebZgszAx8Wr64s6nXURWvXiQat_2t8oXn-AIYmP8E%3D&-pageDirection=NEXT"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207565740",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207565740",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-21T13:14:53.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb 21, 2025  1:14 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207565740-2025022113145300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-21T13:14:35.000Z",
+          "issued": "2025-02-21T13:14:35.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-21T13:14:52Z",
+              "text": "Time : 2025-02-21T13:14:52.429197243Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207565738",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207565738",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-21T13:14:41.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb 21, 2025  1:14 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207565738-2025022113144400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-21T13:14:35.000Z",
+          "issued": "2025-02-21T13:14:35.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-21T13:14:37Z",
+              "text": "Time : 2025-02-21T13:14:37.507606555Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323762",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323762",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T16:02:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  4:02 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323762-2025020116021900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T16:02:01.000Z",
+          "issued": "2025-02-01T16:02:01.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T16:02:17Z",
+              "text": "Time : 2025-02-01T16:02:17.831829826Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323756",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323756",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T16:02:03.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  4:02 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323756-2025020116020500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T16:02:01.000Z",
+          "issued": "2025-02-01T16:02:01.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T16:02:02Z",
+              "text": "Time : 2025-02-01T16:02:02.962086484Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323760",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323760",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T16:02:19.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  4:02 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323760-2025020116021900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T16:02:00.000Z",
+          "issued": "2025-02-01T16:02:00.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T16:02:17Z",
+              "text": "Time : 2025-02-01T16:02:17.346045304Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323758",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323758",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T16:02:17.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  4:02 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323758-2025020116021800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T16:02:00.000Z",
+          "issued": "2025-02-01T16:02:00.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T16:02:03Z",
+              "text": "Time : 2025-02-01T16:02:03.066538756Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323754",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323754",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:44:04.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:43 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323754-2025020115440400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:43:47.000Z",
+          "issued": "2025-02-01T15:43:47.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:44:04Z",
+              "text": "Time : 2025-02-01T15:44:04.004047930Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323752",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323752",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:43:51.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:43 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323752-2025020115435400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:43:47.000Z",
+          "issued": "2025-02-01T15:43:47.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:43:48Z",
+              "text": "Time : 2025-02-01T15:43:48.988909377Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323750",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323750",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:38:05.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:38 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323750-2025020115380500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:38:03.000Z",
+          "issued": "2025-02-01T15:38:03.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:38:04Z",
+              "text": "Time : 2025-02-01T15:38:04.857245013Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323746",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323746",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:37:31.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:37 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323746-2025020115373100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:37:23.000Z",
+          "issued": "2025-02-01T15:37:23.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:37:24Z",
+              "text": "Time : 2025-02-01T15:37:24.098455462Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323748",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323748",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:37:36.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:37 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323748-2025020115373600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:37:19.000Z",
+          "issued": "2025-02-01T15:37:19.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:37:36Z",
+              "text": "Time : 2025-02-01T15:37:36.343072965Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323744",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323744",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:37:21.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:37 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323744-2025020115372300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:37:19.000Z",
+          "issued": "2025-02-01T15:37:19.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:37:21Z",
+              "text": "Time : 2025-02-01T15:37:21.271561720Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323742",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323742",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:24:27.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:24 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323742-2025020115242700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:24:26.000Z",
+          "issued": "2025-02-01T15:24:26.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:24:27Z",
+              "text": "Time : 2025-02-01T15:24:27.355611842Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323740",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323740",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:24:19.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:24 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323740-2025020115241900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:24:18.000Z",
+          "issued": "2025-02-01T15:24:18.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:24:19Z",
+              "text": "Time : 2025-02-01T15:24:19.291197728Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323738",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323738",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:23:59.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:23 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323738-2025020115240000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:23:58.000Z",
+          "issued": "2025-02-01T15:23:58.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:23:59Z",
+              "text": "Time : 2025-02-01T15:23:59.792913314Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323736",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323736",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:23:58.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:23 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323736-2025020115235900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:23:57.000Z",
+          "issued": "2025-02-01T15:23:57.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:23:58Z",
+              "text": "Time : 2025-02-01T15:23:58.693207942Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323734",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323734",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:23:08.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:23 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323734-2025020115230800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:23:07.000Z",
+          "issued": "2025-02-01T15:23:07.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:23:08Z",
+              "text": "Time : 2025-02-01T15:23:08.118888290Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323730",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323730",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:22:58.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:22 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323730-2025020115225800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:22:57.000Z",
+          "issued": "2025-02-01T15:22:57.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:22:58Z",
+              "text": "Time : 2025-02-01T15:22:58.688803282Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323732",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323732",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:23:02.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:22 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323732-2025020115230200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:22:45.000Z",
+          "issued": "2025-02-01T15:22:45.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:23:01Z",
+              "text": "Time : 2025-02-01T15:23:01.942099946Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323728",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323728",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:22:47.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:22 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323728-2025020115225000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:22:45.000Z",
+          "issued": "2025-02-01T15:22:45.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:22:46Z",
+              "text": "Time : 2025-02-01T15:22:46.836311658Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323726",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323726",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:18:08.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:17 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323726-2025020115180900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:17:51.000Z",
+          "issued": "2025-02-01T15:17:51.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:18:08Z",
+              "text": "Time : 2025-02-01T15:18:08.247057519Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323724",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323724",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T15:17:57.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  3:17 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323724-2025020115180000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T15:17:51.000Z",
+          "issued": "2025-02-01T15:17:51.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T15:17:53Z",
+              "text": "Time : 2025-02-01T15:17:53.309938998Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323720",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323720",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:52:48.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:52 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323720-2025020114524900"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:52:39.000Z",
+          "issued": "2025-02-01T14:52:39.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:52:48Z",
+              "text": "Time : 2025-02-01T14:52:48.139146566Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323722",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323722",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:52:53.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:52 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323722-2025020114525300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:52:36.000Z",
+          "issued": "2025-02-01T14:52:36.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:52:53Z",
+              "text": "Time : 2025-02-01T14:52:53.022733914Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323718",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323718",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:52:38.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:52 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323718-2025020114524000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:52:36.000Z",
+          "issued": "2025-02-01T14:52:36.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:52:38Z",
+              "text": "Time : 2025-02-01T14:52:38.040665563Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323700",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323700",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:38:04.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:38 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323700-2025020114380500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:38:02.000Z",
+          "issued": "2025-02-01T14:38:03.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:38:04Z",
+              "text": "Time : 2025-02-01T14:38:04.794088684Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323698",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323698",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:36:56.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:36 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323698-2025020114365600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:36:54.000Z",
+          "issued": "2025-02-01T14:36:54.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:36:55Z",
+              "text": "Time : 2025-02-01T14:36:55.876276959Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323696",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323696",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:36:16.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:36 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323696-2025020114361700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:36:15.000Z",
+          "issued": "2025-02-01T14:36:15.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:36:16Z",
+              "text": "Time : 2025-02-01T14:36:16.613388500Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323694",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323694",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:36:03.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:36 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323694-2025020114360400"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:36:01.000Z",
+          "issued": "2025-02-01T14:36:02.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:36:03Z",
+              "text": "Time : 2025-02-01T14:36:03.631309263Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323692",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323692",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:35:26.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:34 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323692-2025020114352600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:34:54.000Z",
+          "issued": "2025-02-01T14:34:54.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:35:25Z",
+              "text": "Time : 2025-02-01T14:35:25.936664970Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323690",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323690",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:35:18.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:34 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323690-2025020114351800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:34:54.000Z",
+          "issued": "2025-02-01T14:34:54.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:35:11Z",
+              "text": "Time : 2025-02-01T14:35:11.940458366Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323688",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323688",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:35:02.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:34 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323688-2025020114350500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:34:54.000Z",
+          "issued": "2025-02-01T14:34:54.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:34:55Z",
+              "text": "Time : 2025-02-01T14:34:55.799251034Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323686",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323686",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:30:12.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:30 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323686-2025020114301300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:30:11.000Z",
+          "issued": "2025-02-01T14:30:11.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:30:12Z",
+              "text": "Time : 2025-02-01T14:30:12.705914344Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323684",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323684",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:28:07.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:27 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323684-2025020114280800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:27:44.000Z",
+          "issued": "2025-02-01T14:27:44.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:28:07Z",
+              "text": "Time : 2025-02-01T14:28:07.496489395Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207323682",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207323682",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2025-02-01T14:27:53.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Feb  1, 2025  2:27 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207323682-2025020114275600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2025-02-01T14:27:44.000Z",
+          "issued": "2025-02-01T14:27:44.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2025-02-01T14:27:52Z",
+              "text": "Time : 2025-02-01T14:27:52.790952852Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207033021",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207033021",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-12T15:09:11.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 12, 2024  3:09 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207033021-2024121215091100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-12T15:09:09.000Z",
+          "issued": "2024-12-12T15:09:09.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-12T15:09:11Z",
+              "text": "Time : 2024-12-12T15:09:11.460726914Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207033015",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207033015",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-12T15:07:36.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 12, 2024  3:07 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207033015-2024121215073700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-12T15:07:35.000Z",
+          "issued": "2024-12-12T15:07:35.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-12T15:07:36Z",
+              "text": "Time : 2024-12-12T15:07:36.805651821Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032997",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032997",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-12T14:34:11.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 12, 2024  2:34 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032997-2024121214341200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-12T14:34:10.000Z",
+          "issued": "2024-12-12T14:34:10.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-12T14:34:11Z",
+              "text": "Time : 2024-12-12T14:34:11.857717399Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032995",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032995",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-12T14:34:02.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 12, 2024  2:34 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032995-2024121214340200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-12T14:34:00.000Z",
+          "issued": "2024-12-12T14:34:00.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-12T14:34:01Z",
+              "text": "Time : 2024-12-12T14:34:01.967125079Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032993",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032993",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-12T14:32:40.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 12, 2024  2:32 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032993-2024121214324100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-12T14:32:37.000Z",
+          "issued": "2024-12-12T14:32:39.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-12T14:32:40Z",
+              "text": "Time : 2024-12-12T14:32:40.594828166Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032505",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032505",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T21:51:21.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  9:51 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032505-2024121121512100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T21:51:19.000Z",
+          "issued": "2024-12-11T21:51:20.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T21:51:21Z",
+              "text": "Time : 2024-12-11T21:51:21.193906984Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032503",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032503",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T21:50:25.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  9:50 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032503-2024121121502500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T21:50:23.000Z",
+          "issued": "2024-12-11T21:50:23.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T21:50:25Z",
+              "text": "Time : 2024-12-11T21:50:25.156226848Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032437",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032437",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:58:49.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:58 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032437-2024121119585000"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:58:48.000Z",
+          "issued": "2024-12-11T19:58:48.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:58:49Z",
+              "text": "Time : 2024-12-11T19:58:49.868584457Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032433",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032433",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:57:17.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:57 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032433-2024121119571700"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:57:15.000Z",
+          "issued": "2024-12-11T19:57:16.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:57:17Z",
+              "text": "Time : 2024-12-11T19:57:17.267558202Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032435",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032435",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:57:18.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:57 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032435-2024121119571800"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:57:14.000Z",
+          "issued": "2024-12-11T19:57:14.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:57:17Z",
+              "text": "Time : 2024-12-11T19:57:17.698230749Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032429",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032429",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:57:15.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:57 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032429-2024121119571500"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:57:13.000Z",
+          "issued": "2024-12-11T19:57:13.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:57:15Z",
+              "text": "Time : 2024-12-11T19:57:15.058614328Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032431",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032431",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:57:16.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:57 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032431-2024121119571600"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:57:12.000Z",
+          "issued": "2024-12-11T19:57:13.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:57:15Z",
+              "text": "Time : 2024-12-11T19:57:15.859643742Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032427",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032427",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:57:13.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:57 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032427-2024121119571300"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:57:11.000Z",
+          "issued": "2024-12-11T19:57:12.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:57:13Z",
+              "text": "Time : 2024-12-11T19:57:13.551775622Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032425",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032425",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:55:22.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:55 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032425-2024121119552200"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:55:19.000Z",
+          "issued": "2024-12-11T19:55:19.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:55:22Z",
+              "text": "Time : 2024-12-11T19:55:22.518648895Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation/L-207032423",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "L-207032423",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-12-11T19:55:21.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Observation</b></p><p><b>Patient Id</b>: 12742399</p><p><b>Status</b>: Final</p><p><b>Categories</b>: Laboratory</p><p><b>Code</b>: Whole Blood Glucose POC</p><p><b>Result</b>: 160 mg/dL</p><p><b>Effective Date</b>: Dec 11, 2024  7:55 P.M. UTC</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-207032423-2024121119552100"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                  "code": "laboratory",
+                  "display": "Laboratory",
+                  "userSelected": false
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "31007271",
+                "display": "Whole Blood Glucose POC",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "2339-0",
+                "display": "Glucose [Mass/volume] in Blood",
+                "userSelected": false
+              }
+            ],
+            "text": "Whole Blood Glucose POC"
+          },
+          "subject": {
+            "reference": "Patient/12742399"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "effectiveDateTime": "2024-12-11T19:55:18.000Z",
+          "issued": "2024-12-11T19:55:18.000Z",
+          "performer": [
+            {
+              "extension": [
+                {
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+                        "code": "LA",
+                        "display": "legal authenticator"
+                      }
+                    ],
+                    "text": "legal authenticator"
+                  },
+                  "url": "http://hl7.org/fhir/StructureDefinition/event-performerFunction"
+                }
+              ],
+              "reference": "Practitioner/593923"
+            }
+          ],
+          "valueQuantity": {
+            "value": 160,
+            "unit": "mg/dL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/593923"
+              },
+              "time": "2024-12-11T19:55:21Z",
+              "text": "Time : 2024-12-11T19:55:21.273284878Z\nAuthor : Applegate MD, Christina\nComment : Validic: Diabetes Management 1\nforacare: unspecified\nPatient comment: this is my note TESTING"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

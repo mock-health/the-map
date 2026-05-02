@@ -1,0 +1,1330 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:52:02.580202+00:00",
+  "_probe": "DocumentReference",
+  "_patient_id": "12724066",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "798051cc-d776-4166-8ed1-1632fa45cb05",
+    "type": "searchset",
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066"
+      },
+      {
+        "relation": "next",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066&-pageContext=eJxljb0KwjAURt_lriaQ22qtBRfdlOKgIJ1Kmh-rhKQ0CSql7251Kjh-H-dwBhAu2gAFMgJSaR7NNAYQsfeuhwL2h3SB1_K8e96rx_FUJZdyCwRa7murXhMb-qgIdPymauFs-H2gJcsEckZXuMnpskGk-TrNKMeEIWoldNbASMCHyZN11769dGIettGYeUZz4_86X2gcPwRdQIc%3D&-pageDirection=NEXT"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/206142019",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "206142019",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2025-10-13T13:39:11.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Inpatient Clinical Summary</p><p><b>Service Start Date</b>: May 12, 2023  9:17 P.M. UTC</p><p><b>Service End Date</b>: May 12, 2029  9:17 P.M. UTC</p><p><b>Document Status</b>: Entered in Error</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206142019-2023051805380800"
+            }
+          ],
+          "status": "entered-in-error",
+          "docStatus": "entered-in-error",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "4189665",
+                "display": "Inpatient Clinical Summary",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "18842-5",
+                "display": "Discharge summary",
+                "userSelected": false
+              }
+            ],
+            "text": "Inpatient Clinical Summary"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "18842-5",
+                  "display": "Discharge summary",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2023-05-18T05:38:07Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-206142019",
+                "creation": "2029-05-12T21:17:30.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-206142019",
+                "creation": "2029-05-12T21:17:30.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2023-05-12T21:17:30Z",
+              "end": "2029-05-12T21:17:30Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/206130472",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "206130472",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2023-05-12T21:17:33.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: 05/12/2023 - Current</p><p><b>Service Start Date</b>: May 12, 2023  9:17 P.M. UTC</p><p><b>Service End Date</b>: May 12, 2029  9:17 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206130472-2023051221173300"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2023-05-12T21:17:33Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-206130472",
+                "title": "05/12/2023 - Current",
+                "creation": "2023-05-12T21:17:30.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-206130472",
+                "title": "05/12/2023 - Current",
+                "creation": "2023-05-12T21:17:30.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2023-05-12T21:17:30Z",
+              "end": "2029-05-12T21:17:30Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/203508833",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "203508833",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2023-01-23T18:01:24.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Abdominal</p><p><b>Service Start Date</b>: Jan 23, 2023  6:01 P.M. UTC</p><p><b>Service End Date</b>: Jan 23, 2029  6:01 P.M. UTC</p><p><b>Document Status</b>: Amended</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-203508833-2023012317593100"
+            }
+          ],
+          "status": "current",
+          "docStatus": "amended",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2023-01-23T17:59:30Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-203508833",
+                "title": "Abdominal",
+                "creation": "2023-01-23T18:01:22.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-203508833",
+                "title": "Abdominal",
+                "creation": "2023-01-23T18:01:22.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2023-01-23T18:01:22Z",
+              "end": "2029-01-23T18:01:22Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209029934",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209029934",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T14:38:01.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Admission Note Physician - 27/4/2026</p><p><b>Service Start Date</b>: Apr 27, 2026  2:37 P.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  2:37 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: PWIntouch, MDCardio</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209029934-2026042714380100"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-27T14:38:01Z",
+          "author": [
+            {
+              "reference": "Practitioner/12744716",
+              "display": "PWIntouch, MDCardio"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12744716",
+            "display": "PWIntouch, MDCardio"
+          },
+          "custodian": {
+            "reference": "Organization/685844",
+            "display": "Model Clinic 1"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/R-209029934",
+                "title": "Admission Note Physician - 27/4/2026",
+                "creation": "2026-04-27T14:37:57.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97954295"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T14:37:53Z",
+              "end": "2026-04-27T14:37:57Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209029930",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209029930",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T14:08:44.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Admission Note Physician</p><p><b>Document Title</b>: Admission Note Physician - 27/4/2026</p><p><b>Service Start Date</b>: Apr 27, 2026  2:08 P.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  2:08 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: PWIntouch, MDCardio</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209029930-2026042714084400"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820507",
+                "display": "Admission Note Physician",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "83805-2",
+                "display": "Physician Admission evaluation note",
+                "userSelected": false
+              }
+            ],
+            "text": "Admission Note Physician"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "83805-2",
+                  "display": "Physician Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "67852-4",
+                  "display": "Hospital Admission evaluation note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-27T14:08:44Z",
+          "author": [
+            {
+              "reference": "Practitioner/12744716",
+              "display": "PWIntouch, MDCardio"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12744716",
+            "display": "PWIntouch, MDCardio"
+          },
+          "custodian": {
+            "reference": "Organization/685844",
+            "display": "Model Clinic 1"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "text/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/R-209029930",
+                "title": "Admission Note Physician - 27/4/2026",
+                "creation": "2026-04-27T14:08:40.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97954295"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T14:08:25Z",
+              "end": "2026-04-27T14:08:40Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209029706",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209029706",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T01:05:45.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Consultation Note Generic</p><p><b>Document Category</b>: Clinical Note</p><p><b>Document Title</b>: Consultation Note Generic</p><p><b>Service Start Date</b>: Apr 27, 2026  1:05 A.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  1:06 A.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209029706-2026042701054500"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820510",
+                "display": "Consultation Note Generic",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11488-4",
+                "display": "Consult note",
+                "userSelected": false
+              }
+            ],
+            "text": "Consultation Note Generic"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11488-4",
+                  "display": "Consult note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-27T01:05:45Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209029706",
+                "title": "Consultation Note Generic",
+                "creation": "2026-04-27T01:05:36.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209029706",
+                "title": "Consultation Note Generic",
+                "creation": "2026-04-27T01:05:36.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209029706",
+                "title": "Consultation Note Generic",
+                "creation": "2026-04-27T01:05:36.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T01:05:36Z",
+              "end": "2026-04-27T01:06:36Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209029702",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209029702",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-27T01:05:42.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Consultation Note Generic</p><p><b>Document Category</b>: Clinical Note</p><p><b>Document Title</b>: Consultation Note Generic</p><p><b>Service Start Date</b>: Apr 27, 2026  1:05 A.M. UTC</p><p><b>Service End Date</b>: Apr 27, 2026  1:06 A.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209029702-2026042701054300"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820510",
+                "display": "Consultation Note Generic",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11488-4",
+                "display": "Consult note",
+                "userSelected": false
+              }
+            ],
+            "text": "Consultation Note Generic"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11488-4",
+                  "display": "Consult note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-27T01:05:42Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209029702",
+                "title": "Consultation Note Generic",
+                "creation": "2026-04-27T01:05:36.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209029702",
+                "title": "Consultation Note Generic",
+                "creation": "2026-04-27T01:05:36.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209029702",
+                "title": "Consultation Note Generic",
+                "creation": "2026-04-27T01:05:36.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2026-04-27T01:05:36Z",
+              "end": "2026-04-27T01:06:36Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209028514",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209028514",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-22T15:30:04.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Rheumatology Consultation</p><p><b>Document Category</b>: Clinical Note</p><p><b>Document Title</b>: Allergy Skin Testing - Prick and Scratch Test / Allergy Skin Testing - Intradermal Skin Test2</p><p><b>Service End Date</b>: Apr 22, 2026  3:30 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209028514-2026042215300500"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820583",
+                "display": "Rheumatology Consultation",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "34839-1",
+                "display": "Rheumatology Consult note",
+                "userSelected": false
+              }
+            ],
+            "text": "Rheumatology Consultation"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "34839-1",
+                  "display": "Rheumatology Consult note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-22T15:30:04Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209028514",
+                "title": "Allergy Skin Testing - Prick and Scratch Test / Allergy Skin Testing - Intradermal Skin Test2",
+                "creation": "2026-04-22T15:30:01.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209028514",
+                "title": "Allergy Skin Testing - Prick and Scratch Test / Allergy Skin Testing - Intradermal Skin Test2",
+                "creation": "2026-04-22T15:30:01.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "end": "2026-04-22T15:30:01Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209027912",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209027912",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-21T04:19:42.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Progress Note Generic</p><p><b>Document Category</b>: Clinical Note</p><p><b>Document Title</b>: Clinical Note - DocAssistant</p><p><b>Service Start Date</b>: Apr 21, 2026  4:19 A.M. UTC</p><p><b>Service End Date</b>: Apr 21, 2026  4:19 A.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209027912-2026042104194400"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820555",
+                "display": "Progress Note Generic",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "11506-3",
+                "display": "Progress note",
+                "userSelected": false
+              }
+            ],
+            "text": "Progress Note Generic"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11506-3",
+                  "display": "Progress note",
+                  "userSelected": false
+                }
+              ]
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-21T04:19:42Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209027912",
+                "title": "Clinical Note - DocAssistant",
+                "creation": "2026-04-21T04:19:35.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209027912",
+                "title": "Clinical Note - DocAssistant",
+                "creation": "2026-04-21T04:19:35.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209027912",
+                "title": "Clinical Note - DocAssistant",
+                "creation": "2026-04-21T04:19:35.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2026-04-21T04:19:35Z",
+              "end": "2026-04-21T04:19:35Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference/209026845",
+        "resource": {
+          "resourceType": "DocumentReference",
+          "id": "209026845",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2026-04-15T21:25:20.000Z"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Document Reference</b></p><p><b>Patient Name</b>: SMARTS SR., NANCYS II</p><p><b>Document Type</b>: Education Note</p><p><b>Document Title</b>: WebMD Ignite Patient Education - Understanding the Cold Virus</p><p><b>Service Start Date</b>: Apr 15, 2026  9:25 P.M. UTC</p><p><b>Service End Date</b>: Apr 15, 2026  9:25 P.M. UTC</p><p><b>Document Status</b>: Final</p><p><b>Verifying Provider</b>: Portal, Portal</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-209026845-2026041521252200"
+            }
+          ],
+          "status": "current",
+          "docStatus": "final",
+          "type": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "3278547",
+                "display": "Education Note",
+                "userSelected": true
+              },
+              {
+                "system": "http://loinc.org",
+                "code": "34895-3",
+                "display": "Education note",
+                "userSelected": false
+              }
+            ],
+            "text": "Education Note"
+          },
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "34895-3",
+                  "display": "Education note",
+                  "userSelected": false
+                }
+              ]
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+                  "code": "clinical-note",
+                  "display": "Clinical Note",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Note"
+            }
+          ],
+          "subject": {
+            "reference": "Patient/12724066",
+            "display": "SMARTS SR., NANCYS II"
+          },
+          "date": "2026-04-15T21:25:20Z",
+          "author": [
+            {
+              "reference": "Practitioner/12742069",
+              "display": "Portal, Portal"
+            }
+          ],
+          "authenticator": {
+            "reference": "Practitioner/12742069",
+            "display": "Portal, Portal"
+          },
+          "custodian": {
+            "reference": "Organization/675844",
+            "display": "Model Hospital"
+          },
+          "content": [
+            {
+              "attachment": {
+                "contentType": "application/pdf",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XR-209026845",
+                "title": "WebMD Ignite Patient Education - Understanding the Cold Virus",
+                "creation": "2026-04-15T21:25:19.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "application/xml",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/XML-209026845",
+                "title": "WebMD Ignite Patient Education - Understanding the Cold Virus",
+                "creation": "2026-04-15T21:25:19.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            },
+            {
+              "attachment": {
+                "contentType": "text/html",
+                "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Binary/TR-209026845",
+                "title": "WebMD Ignite Patient Education - Understanding the Cold Virus",
+                "creation": "2026-04-15T21:25:19.000Z"
+              },
+              "format": {
+                "system": "http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+                "code": "urn:ihe:iti:xds:2017:mimeTypeSufficient",
+                "display": "mimeType Sufficient"
+              }
+            }
+          ],
+          "context": {
+            "encounter": [
+              {
+                "reference": "Encounter/97953477"
+              }
+            ],
+            "period": {
+              "start": "2026-04-15T21:25:19Z",
+              "end": "2026-04-15T21:25:19Z"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

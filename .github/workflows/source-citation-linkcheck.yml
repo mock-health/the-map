@@ -1,0 +1,72 @@
+name: source-citation-linkcheck
+
+# Weekly HEAD-check of every source_url cited in any overlay. When citations
+# break (HTTP 4xx/5xx, NXDOMAIN), open or update a tracking GitHub Issue so
+# the citation can be refreshed. Wednesday 14:00 UTC, offset from
+# refresh-capstmts on Monday so the two don't collide.
+on:
+  schedule:
+    - cron: "0 14 * * 3"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: run check_source_urls
+        id: check
+        # Capture exit code without failing the job; we want to open an issue
+        # rather than fail the workflow on broken links.
+        run: |
+          set +e
+          python tools/check_source_urls.py > linkcheck-report.json
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          # Pretty summary for the issue body.
+          python -c "
+          import json
+          r = json.load(open('linkcheck-report.json'))
+          print(f\"OK: {r['ok']}  Broken: {r['broken']}  Transient: {r['transient']}\")
+          for b in r.get('broken_details', []):
+              print(f\"\\n- {b['url']}\\n  reason: {b['reason']}\")
+              for c in b['citations']:
+                  print(f\"  cited at: {c['ehr']}/{c['label']} ({c['verified_via']})\")
+          " > linkcheck-summary.txt
+          cat linkcheck-summary.txt
+
+      - name: upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: linkcheck-report
+          path: |
+            linkcheck-report.json
+            linkcheck-summary.txt
+
+      - name: open or update tracking issue
+        if: steps.check.outputs.exit_code != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "Broken source citations (weekly linkcheck)"
+          content-filepath: linkcheck-summary.txt
+          labels: |
+            citation-rot
+            automated

@@ -1,0 +1,172 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?patient=e0w0LEDCYtfckT6N.CkJKCw3&category=LAB",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:42.854812+00:00",
+  "_probe": "DiagnosticReport-lab",
+  "_patient_id": "e0w0LEDCYtfckT6N.CkJKCw3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 1,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?category=LAB&patient=e0w0LEDCYtfckT6N.CkJKCw3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/eTWCAHQnBGeESy-MU0jCy.aoRnxFt7pRmPVj990QgK9M3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport/eTWCAHQnBGeESy-MU0jCy.aoRnxFt7pRmPVj990QgK9M3",
+        "resource": {
+          "resourceType": "DiagnosticReport",
+          "id": "eTWCAHQnBGeESy-MU0jCy.aoRnxFt7pRmPVj990QgK9M3",
+          "identifier": [
+            {
+              "use": "official",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PLAC",
+                    "display": "Placer Identifier"
+                  }
+                ],
+                "text": "Placer Identifier"
+              },
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1066934"
+            },
+            {
+              "use": "official",
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "FILL",
+                    "display": "Filler Identifier"
+                  }
+                ],
+                "text": "Filler Identifier"
+              },
+              "system": "https://open.epic.com/FHIR/0/order-accession-number/Beaker",
+              "value": "19H-148C0001"
+            }
+          ],
+          "basedOn": [
+            {
+              "reference": "ServiceRequest/e9dYxf-IZQnjLPZ.7EUor47r7hBhVUJW0uyCaouCn1Zw3",
+              "display": "Cholesterol, total"
+            }
+          ],
+          "status": "final",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30",
+                  "code": "Lab"
+                }
+              ],
+              "text": "Lab"
+            },
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                  "code": "LAB",
+                  "display": "Laboratory"
+                }
+              ],
+              "text": "Laboratory"
+            }
+          ],
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "2093-3"
+              },
+              {
+                "system": "urn:oid:2.16.840.1.113883.6.12",
+                "code": "82465",
+                "display": "HC ASSAY, BLD/SERUM CHOLESTEROL"
+              }
+            ],
+            "text": "Cholesterol, total"
+          },
+          "subject": {
+            "reference": "Patient/e0w0LEDCYtfckT6N.CkJKCw3",
+            "display": "McGinnis, Warren James III"
+          },
+          "encounter": {
+            "reference": "Encounter/eucYt0hPWgEMZqybf6t4c.g3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27561"
+            },
+            "display": "Hospital Encounter"
+          },
+          "effectiveDateTime": "2019-05-28T15:59:00Z",
+          "issued": "2019-05-28T16:06:00Z",
+          "performer": [
+            {
+              "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+              "type": "Practitioner",
+              "display": "Physician One Cardiology, MD"
+            },
+            {
+              "reference": "Organization/f2T-wVEazyJHGYbvLENOqyA4",
+              "type": "Organization",
+              "display": "EMH HOSPITAL LAB"
+            }
+          ],
+          "result": [
+            {
+              "reference": "Observation/fISfnqVNqtGcF86S8EZsgS7-mEsvyGauKQg1pF-1-Tew4",
+              "display": "Component (1): CHOLESTEROL (MG/DL) IN SER/PLAS"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:cf7639d7-2d94-400b-8e52-3c02101d214e",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for DiagnosticReport - Outside Record Results. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+# Production-fleet evidence — 380 MB across 2,474 endpoints. Lazy-fetched via Git LFS.
+# Default `git clone` pulls the regular content (~80 MB); researchers run
+# `git lfs pull` to fetch the per-endpoint CapStmt + smart-config evidence
+# that backs every cluster-shape claim in ehrs/{ehr}/production_fleet.json.
+tests/golden/production-fleet/** filter=lfs diff=lfs merge=lfs -text
+
+# Treat overlay/CapStmt JSON as text (line-ending normalization, sane diffs).
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# HTML render output is generated; treat as text but don't merge by default
+# (it's gitignored anyway, but if it ever lands accidentally, this prevents
+#  per-line merge attempts).
+*.html text eol=lf merge=binary

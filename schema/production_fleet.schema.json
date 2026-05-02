@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mock-health/us-core-deviation-map/schema/production_fleet.schema.json",
+  "title": "EHR Production Fleet Snapshot — what's actually deployed at hospitals",
+  "description": "Per-vendor summary of CapabilityStatement + smart-configuration harvested from every endpoint listed in the vendor's SMART STU 2.2 / HTI-1 §170.404 brands & endpoints registry. v1 of The Map measured one sandbox per vendor; v2 (this artifact) measures the production fleet — typically hundreds to thousands of customer deployments running the same vendor software with different configurations. Raw per-endpoint evidence lives under tests/golden/production-fleet/{ehr}/{captured_date}/. This summary is the rolled-up view the synthesizer joins onto the per-EHR Map view.",
+  "type": "object",
+  "required": [
+    "ehr",
+    "captured_date",
+    "brands_bundle_source_url",
+    "brands_bundle_total_endpoints",
+    "harvest_summary",
+    "verification"
+  ],
+  "properties": {
+    "ehr": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$",
+      "description": "Lowercase identifier matching the parent ehrs/{ehr}/ directory."
+    },
+    "captured_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date the harvest ran. Quarterly cadence is the target."
+    },
+    "brands_bundle_source_url": {
+      "type": "string",
+      "description": "URL or path of the brands bundle the endpoint list was drawn from (e.g., https://open.epic.com/Endpoints/R4 or tests/golden/cross-vendor/{stem}.json). For multi-bundle vendors (e.g., Oracle Health's provider + patient host fronts) this is a newline-delimited list of paths."
+    },
+    "brands_bundle_total_endpoints": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of Endpoint resources in the brands bundle at capture time."
+    },
+    "harvest_summary": {
+      "type": "object",
+      "required": [
+        "endpoints_attempted",
+        "capstmt_fetched_ok",
+        "capstmt_fetch_failed",
+        "smart_config_fetched_ok",
+        "smart_config_fetch_failed",
+        "failure_categories"
+      ],
+      "properties": {
+        "endpoints_attempted": { "type": "integer", "minimum": 0 },
+        "capstmt_fetched_ok": { "type": "integer", "minimum": 0 },
+        "capstmt_fetch_failed": { "type": "integer", "minimum": 0 },
+        "smart_config_fetched_ok": { "type": "integer", "minimum": 0 },
+        "smart_config_fetch_failed": { "type": "integer", "minimum": 0 },
+        "failure_categories": {
+          "type": "object",
+          "description": "Count of failures grouped by reason (dns, tls, timeout, http_4xx, http_5xx, parse, other)",
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
+        "wall_clock_seconds": { "type": ["number", "null"] },
+        "concurrency": { "type": ["integer", "null"], "description": "max_workers used for the harvest" }
+      }
+    },
+    "software_distribution": {
+      "type": "object",
+      "description": "Histogram of CapabilityStatement.software.{name + version} across reachable endpoints. Reveals patch-level deployment drift across the fleet.",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "fhir_version_distribution": {
+      "type": "object",
+      "description": "Histogram of CapabilityStatement.fhirVersion. Should be uniform within a brands bundle but isn't always.",
+      "additionalProperties": { "type": "integer", "minimum": 0 }
+    },
+    "capstmt_shape_clusters": {
+      "type": "array",
+      "description": "Endpoints clustered by the SHAPE of their CapStmt — sorted JSON of rest[0].resource[*].{type, supportedProfile, searchParam name list, interaction code list, security.service code list}. Customers in the same cluster expose identical-shape FHIR APIs.",
+      "items": {
+        "type": "object",
+        "required": ["cluster_id", "shape_hash", "endpoint_count"],
+        "properties": {
+          "cluster_id": { "type": "string", "description": "e.g. 'epic-cluster-A' (ranked by size, A = largest). For multi-bundle vendors the prefix encodes the harvest origin: 'cerner-cluster-A' for the provider tier, 'cerner-patient-cluster-A' for the patient tier." },
+          "modal": { "type": "boolean", "description": "True if this is the largest cluster within its access scope — the 'reference deployment' for the vendor (or for that access tier)" },
+          "access_scope": {
+            "type": "string",
+            "enum": ["provider", "patient"],
+            "description": "Optional. Set on multi-bundle vendors (e.g., Oracle Health) to record which host front this cluster was harvested from. 'provider' = system/EHR-launch tier (fhir-ehr.cerner.com); 'patient' = standalone patient-launch tier (fhir-myrecord.cerner.com)."
+          },
+          "endpoint_count": { "type": "integer", "minimum": 0 },
+          "shape_hash": { "type": "string", "description": "sha256 of the canonicalized shape JSON" },
+          "resources_advertised": { "type": "array", "items": { "type": "string" } },
+          "supported_profiles_total": { "type": "integer", "minimum": 0 },
+          "supported_profiles": { "type": "array", "items": { "type": "string" } },
+          "example_endpoint_id": { "type": "string", "description": "An endpoint slug from this cluster (anchors the per-cluster HTML page)" },
+          "example_endpoint_address": { "type": "string", "format": "uri" },
+          "endpoints": {
+            "type": "array",
+            "description": "Full roster of hospital endpoints in this cluster. Includes the modal cluster (which historically only surfaced its example_endpoint), so consumers can render 'hospitals in this cluster' for every cluster, not just outliers.",
+            "items": {
+              "type": "object",
+              "required": ["endpoint_id"],
+              "properties": {
+                "endpoint_id": { "type": "string" },
+                "address": { "type": ["string", "null"], "format": "uri" },
+                "managing_organization_name": { "type": ["string", "null"] }
+              }
+            }
+          }
+        }
+      }
+    },
+    "smart_config_drift": {
+      "type": "object",
+      "description": "Cross-customer drift in .well-known/smart-configuration. Reveals where vendor 'guidance' diverges from actual deployment.",
+      "properties": {
+        "grant_types_supported_distribution": {
+          "type": "object",
+          "description": "Histogram of grant_types_supported as a sorted JSON-encoded set",
+          "additionalProperties": { "type": "integer" }
+        },
+        "capabilities_modal_set": { "type": "array", "items": { "type": "string" } },
+        "capabilities_distribution": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        },
+        "scope_count_distribution": {
+          "type": "object",
+          "description": "Histogram of len(scopes_supported) bucketed (e.g., '<200', '200-400', '400+')",
+          "additionalProperties": { "type": "integer" }
+        },
+        "token_endpoint_auth_methods_distribution": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        },
+        "code_challenge_methods_distribution": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" }
+        }
+      }
+    },
+    "us_core_profile_support_rate": {
+      "type": "array",
+      "description": "Per US Core profile: how many reachable customers list it in any rest[0].resource[].supportedProfile. The headline 'production reality' finding — vendor sandbox claims X profiles but only Y% of customers actually advertise each one.",
+      "items": {
+        "type": "object",
+        "required": ["profile_id", "customers_advertising", "customers_with_capstmt", "fraction"],
+        "properties": {
+          "profile_id": { "type": "string", "description": "Profile id (last URL segment). May be us-core-* (in baseline) OR a vendor / non-baseline profile observed in the fleet (e.g., 'pediatric-weight-for-height', vendor StructureDefinitions). The in_us_core_baseline flag distinguishes." },
+          "in_us_core_baseline": { "type": "boolean" },
+          "customers_advertising": { "type": "integer", "minimum": 0 },
+          "customers_with_capstmt": { "type": "integer", "minimum": 0, "description": "Denominator: customers whose CapStmt was successfully fetched" },
+          "fraction": { "type": "number", "minimum": 0, "maximum": 1 },
+          "absent_in_modal_cluster": { "type": "boolean", "description": "True if the modal cluster's CapStmt does NOT list this profile (= deployment-time omission, not patient-data gap)" }
+        }
+      }
+    },
+    "outlier_endpoints": {
+      "type": "array",
+      "description": "Endpoints whose CapStmt cluster is in the long tail (NOT the modal cluster). Worth surfacing because integrators hitting these customers will see different shapes than the vendor sandbox advertised.",
+      "items": {
+        "type": "object",
+        "required": ["endpoint_id", "address", "cluster_id"],
+        "properties": {
+          "endpoint_id": { "type": "string" },
+          "address": { "type": "string", "format": "uri" },
+          "managing_organization_name": { "type": ["string", "null"], "description": "Null when the brands bundle has no Organization (e.g., Epic-R4 ships Endpoint-only) or when the Organization reference is missing/unresolvable." },
+          "cluster_id": { "type": "string" },
+          "deviation_summary": { "type": "string", "description": "Brief human-readable summary of how this endpoint diverges from modal" }
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["source_url", "source_quote", "verified_via", "verified_date"],
+      "properties": {
+        "source_url": { "type": "string", "description": "Path to the per-vendor harvest directory under tests/golden/production-fleet/" },
+        "source_quote": { "type": "string" },
+        "verified_via": {
+          "type": "string",
+          "enum": [
+            "epic_production_fleet",
+            "cerner_production_fleet",
+            "meditech_production_fleet",
+            "meditech-greenfield_production_fleet"
+          ]
+        },
+        "verified_date": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

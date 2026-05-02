@@ -1,0 +1,172 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "USCDI v3",
+  "version_url": "https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi",
+  "publication_date": "2022-07-01",
+  "captured_date": "2026-04-26",
+  "source": "https://www.healthit.gov/isa/sites/isa/files/2022-07/USCDI-Version-3-July-2022-Final.pdf",
+  "notes": "Baseline 'what every certified EHR must support' per ONC § 170.315(g)(10). Each data class maps to one or more US Core 6.1 profiles in us-core/us-core-6.1-baseline.json. Use US Core paths as the primary key when measuring vendor implementations.",
+  "data_classes": [
+    {
+      "id": "patient-demographics",
+      "name": "Patient Demographics",
+      "priority": "P0",
+      "elements": [
+        "First Name", "Last Name", "Middle Name (including middle initial)", "Suffix",
+        "Previous Name", "Date of Birth", "Date of Death", "Race", "Ethnicity",
+        "Tribal Affiliation", "Sex (Assigned at Birth)", "Sexual Orientation",
+        "Gender Identity", "Preferred Language", "Current Address", "Previous Address",
+        "Phone Number", "Phone Number Type", "Email Address", "Related Person's Name",
+        "Related Person's Relationship", "Occupation", "Occupation Industry"
+      ],
+      "us_core_profiles": ["us-core-patient", "us-core-relatedperson"]
+    },
+    {
+      "id": "laboratory",
+      "name": "Laboratory",
+      "priority": "P0",
+      "elements": ["Tests", "Values/Results", "Specimen Type", "Result Status", "Result Reference Range", "Result Interpretation"],
+      "us_core_profiles": ["us-core-observation-lab", "us-core-diagnosticreport-lab", "us-core-specimen"]
+    },
+    {
+      "id": "medications",
+      "name": "Medications",
+      "priority": "P0",
+      "elements": ["Medications", "Medication Allergies", "Dose", "Dose Unit of Measure", "Indication"],
+      "us_core_profiles": ["us-core-medicationrequest", "us-core-medication", "us-core-medicationdispense"]
+    },
+    {
+      "id": "allergies-intolerances",
+      "name": "Allergies and Intolerances",
+      "priority": "P0",
+      "elements": ["Substance (Medication)", "Substance (Drug Class)", "Reaction"],
+      "us_core_profiles": ["us-core-allergyintolerance"]
+    },
+    {
+      "id": "problems",
+      "name": "Problems",
+      "priority": "P0",
+      "elements": ["Problems", "Date of Diagnosis", "Date of Resolution", "SDOH Problems/Health Concerns"],
+      "us_core_profiles": ["us-core-condition-problems-health-concerns"]
+    },
+    {
+      "id": "encounter-information",
+      "name": "Encounter Information",
+      "priority": "P0",
+      "elements": ["Encounter Type", "Encounter Disposition", "Encounter Diagnosis", "Encounter Time", "Encounter Location"],
+      "us_core_profiles": ["us-core-encounter"]
+    },
+    {
+      "id": "vital-signs",
+      "name": "Vital Signs",
+      "priority": "P0",
+      "elements": ["Diastolic blood pressure", "Systolic blood pressure", "Heart rate", "Respiratory rate", "Body temperature", "Body height", "Body weight", "Pulse oximetry", "Inhaled oxygen concentration", "BMI Percentile (2-20yo)", "Weight-for-length Percentile (Birth to 36 mo)", "Head Occipital-frontal Circumference Percentile (Birth to 36 mo)"],
+      "us_core_profiles": ["us-core-vital-signs", "us-core-blood-pressure", "us-core-heart-rate", "us-core-respiratory-rate", "us-core-body-temperature", "us-core-body-height", "us-core-body-weight", "us-core-pulse-oximetry", "us-core-bmi", "us-core-head-circumference"]
+    },
+    {
+      "id": "procedures",
+      "name": "Procedures",
+      "priority": "P0",
+      "elements": ["Procedures", "Reason for Referral", "SDOH Interventions"],
+      "us_core_profiles": ["us-core-procedure", "us-core-servicerequest"]
+    },
+    {
+      "id": "immunizations",
+      "name": "Immunizations",
+      "priority": "P1",
+      "elements": ["Immunizations"],
+      "us_core_profiles": ["us-core-immunization"]
+    },
+    {
+      "id": "smoking-status",
+      "name": "Smoking Status",
+      "priority": "P1",
+      "elements": ["Smoking Status"],
+      "us_core_profiles": ["us-core-smokingstatus"]
+    },
+    {
+      "id": "care-team-members",
+      "name": "Care Team Member(s)",
+      "priority": "P1",
+      "elements": ["Care Team Member Name", "Care Team Member Identifier", "Care Team Member Role", "Care Team Member Location", "Care Team Member Telecom"],
+      "us_core_profiles": ["us-core-careteam", "us-core-practitioner", "us-core-practitionerrole", "us-core-organization", "us-core-location"]
+    },
+    {
+      "id": "clinical-notes",
+      "name": "Clinical Notes",
+      "priority": "P1",
+      "elements": ["Consultation Note", "Discharge Summary Note", "History & Physical", "Procedure Note", "Progress Note", "Imaging Narrative", "Laboratory Report Narrative", "Pathology Report Narrative"],
+      "us_core_profiles": ["us-core-documentreference"]
+    },
+    {
+      "id": "goals-and-preferences",
+      "name": "Goals and Preferences",
+      "priority": "P2",
+      "elements": ["Patient Goals", "SDOH Goals", "Treatment Intervention Preference", "Care Experience Preference"],
+      "us_core_profiles": ["us-core-goal"]
+    },
+    {
+      "id": "health-concerns",
+      "name": "Health Concerns",
+      "priority": "P2",
+      "elements": ["Health Concerns", "SDOH Health Concerns"],
+      "us_core_profiles": ["us-core-condition-problems-health-concerns"]
+    },
+    {
+      "id": "assessment-and-plan-of-treatment",
+      "name": "Assessment and Plan of Treatment",
+      "priority": "P2",
+      "elements": ["Assessment and Plan of Treatment"],
+      "us_core_profiles": ["us-core-careplan"]
+    },
+    {
+      "id": "provenance",
+      "name": "Provenance",
+      "priority": "P2",
+      "elements": ["Author Time Stamp", "Author Organization"],
+      "us_core_profiles": ["us-core-provenance"]
+    },
+    {
+      "id": "diagnostic-imaging",
+      "name": "Diagnostic Imaging",
+      "priority": "P2",
+      "elements": ["Diagnostic Imaging Test", "Diagnostic Imaging Report"],
+      "us_core_profiles": ["us-core-diagnosticreport-note", "us-core-imagingstudy"]
+    },
+    {
+      "id": "health-status-assessments",
+      "name": "Health Status Assessments",
+      "priority": "P2",
+      "elements": ["Functional Status", "Disability Status", "Mental/Cognitive Status", "Pregnancy Status", "Alcohol Use", "Substance Use", "Physical Activity", "SDOH Assessment"],
+      "us_core_profiles": ["us-core-observation-clinical-result", "us-core-observation-pregnancystatus", "us-core-observation-pregnancyintent", "us-core-observation-occupation", "us-core-observation-screening-assessment"]
+    },
+    {
+      "id": "patient-summary",
+      "name": "Patient Summary and Plan",
+      "priority": "P2",
+      "elements": ["Patient Summary"],
+      "us_core_profiles": ["us-core-encounter"]
+    },
+    {
+      "id": "sexual-orientation-gender-identity",
+      "name": "Sexual Orientation and Gender Identity",
+      "priority": "P3",
+      "elements": ["Sexual Orientation", "Gender Identity"],
+      "us_core_profiles": ["us-core-observation-sexual-orientation"]
+    },
+    {
+      "id": "unique-device-identifiers",
+      "name": "Unique Device Identifier(s) for a Patient's Implantable Device(s)",
+      "priority": "P3",
+      "elements": ["Unique Device Identifier(s)"],
+      "us_core_profiles": ["us-core-implantable-device"]
+    },
+    {
+      "id": "health-insurance-information",
+      "name": "Health Insurance Information",
+      "priority": "P1",
+      "elements": ["Coverage Status", "Coverage Type", "Relationship to Subscriber", "Member Identifier", "Subscriber Identifier", "Group Identifier", "Payer Identifier"],
+      "us_core_profiles": ["us-core-coverage"]
+    }
+  ]
+}

@@ -1,0 +1,556 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">ERROR</td><td>[DocumentReference.type, Line[1] Col[651]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010#2'</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[DocumentReference.type, Line[1] Col[651]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.72.727879.69848980 for 'urn:oid:1.2.840.114350.1.72.727879.69848980#2'</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[DocumentReference.type, Line[1] Col[651]]</td><td>Unable to expand ValueSet because CodeSystem could not be found: http://loinc.org</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[DocumentReference.type, Line[1] Col[651]]</td><td>CodeSystem is unknown and can't be validated: http://loinc.org for 'http://loinc.org#11488-4'</td></tr><tr><td style=\"font-weight: bold;\">ERROR</td><td>[DocumentReference.type, Line[1] Col[651]]</td><td>None of the codings provided are in the value set 'US Core DocumentReference Type' (http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type|6.1.0), and a coding from this value set is required) (codes = urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010#2, urn:oid:1.2.840.114350.1.72.727879.69848980#2, http://loinc.org#11488-4)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.content[0].format, Line[1] Col[1839]]</td><td>Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.content[0].format, Line[1] Col[1839]]</td><td>CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.content[0].format, Line[1] Col[1839]]</td><td>The Coding provided (http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable). (error message = CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'; Failed to expand ValueSet 'http://hl7.org/fhir/ValueSet/formatcodes' (in-memory). Could not validate code http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient. Error was: HAPI-0702: Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem; Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.content[1].format, Line[1] Col[2112]]</td><td>Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.content[1].format, Line[1] Col[2112]]</td><td>CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.content[1].format, Line[1] Col[2112]]</td><td>The Coding provided (http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable). (error message = CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'; Failed to expand ValueSet 'http://hl7.org/fhir/ValueSet/formatcodes' (in-memory). Could not validate code http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient. Error was: HAPI-0702: Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem; Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem)</td></tr><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[DocumentReference.context.extension[0], Line[1] Col[2514]]</td><td>Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.context.extension[0].value.ofType(CodeableConcept), Line[1] Col[2412]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040#1'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.context.extension[0].value.ofType(CodeableConcept), Line[1] Col[2412]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.11.19465 for 'urn:oid:2.16.840.1.113883.11.19465#207Q00000X'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference.context.practiceSetting, Line[1] Col[2935]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050#9'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DocumentReference, Line[1] Col[2937]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 651
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010#2'",
+        "location": [
+          "DocumentReference.type",
+          "Line[1] Col[651]"
+        ],
+        "expression": [
+          "DocumentReference.type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 651
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.72.727879.69848980 for 'urn:oid:1.2.840.114350.1.72.727879.69848980#2'",
+        "location": [
+          "DocumentReference.type",
+          "Line[1] Col[651]"
+        ],
+        "expression": [
+          "DocumentReference.type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 651
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet because CodeSystem could not be found: http://loinc.org",
+        "location": [
+          "DocumentReference.type",
+          "Line[1] Col[651]"
+        ],
+        "expression": [
+          "DocumentReference.type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 651
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://loinc.org for 'http://loinc.org#11488-4'",
+        "location": [
+          "DocumentReference.type",
+          "Line[1] Col[651]"
+        ],
+        "expression": [
+          "DocumentReference.type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 651
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_1_CC"
+          }
+        ],
+        "severity": "error",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_1_CC"
+            }
+          ]
+        },
+        "diagnostics": "None of the codings provided are in the value set 'US Core DocumentReference Type' (http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type|6.1.0), and a coding from this value set is required) (codes = urn:oid:1.2.840.114350.1.13.0.1.7.4.737880.5010#2, urn:oid:1.2.840.114350.1.72.727879.69848980#2, http://loinc.org#11488-4)",
+        "location": [
+          "DocumentReference.type",
+          "Line[1] Col[651]"
+        ],
+        "expression": [
+          "DocumentReference.type"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1839
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+        "location": [
+          "DocumentReference.content[0].format",
+          "Line[1] Col[1839]"
+        ],
+        "expression": [
+          "DocumentReference.content[0].format"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1839
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'",
+        "location": [
+          "DocumentReference.content[0].format",
+          "Line[1] Col[1839]"
+        ],
+        "expression": [
+          "DocumentReference.content[0].format"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1839
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_13"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_13"
+            }
+          ]
+        },
+        "diagnostics": "The Coding provided (http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'; Failed to expand ValueSet 'http://hl7.org/fhir/ValueSet/formatcodes' (in-memory). Could not validate code http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient. Error was: HAPI-0702: Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem; Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem)",
+        "location": [
+          "DocumentReference.content[0].format",
+          "Line[1] Col[1839]"
+        ],
+        "expression": [
+          "DocumentReference.content[0].format"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2112
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem",
+        "location": [
+          "DocumentReference.content[1].format",
+          "Line[1] Col[2112]"
+        ],
+        "expression": [
+          "DocumentReference.content[1].format"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2112
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'",
+        "location": [
+          "DocumentReference.content[1].format",
+          "Line[1] Col[2112]"
+        ],
+        "expression": [
+          "DocumentReference.content[1].format"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2112
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_13"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_13"
+            }
+          ]
+        },
+        "diagnostics": "The Coding provided (http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient) was not found in the value set 'DocumentReference Format Code Set' (http://hl7.org/fhir/ValueSet/formatcodes|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = CodeSystem is unknown and can't be validated: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem for 'http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient'; Failed to expand ValueSet 'http://hl7.org/fhir/ValueSet/formatcodes' (in-memory). Could not validate code http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem#urn:ihe:iti:xds:2017:mimeTypeSufficient. Error was: HAPI-0702: Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem; Unable to expand ValueSet because CodeSystem could not be found: http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem)",
+        "location": [
+          "DocumentReference.content[1].format",
+          "Line[1] Col[2112]"
+        ],
+        "expression": [
+          "DocumentReference.content[1].format"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2514
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Extension_EXT_Unknown"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Extension_EXT_Unknown"
+            }
+          ]
+        },
+        "diagnostics": "Unknown extension http://open.epic.com/FHIR/StructureDefinition/extension/clinical-note-author-provider-type",
+        "location": [
+          "DocumentReference.context.extension[0]",
+          "Line[1] Col[2514]"
+        ],
+        "expression": [
+          "DocumentReference.context.extension[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2412
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1040#1'",
+        "location": [
+          "DocumentReference.context.extension[0].value.ofType(CodeableConcept)",
+          "Line[1] Col[2412]"
+        ],
+        "expression": [
+          "DocumentReference.context.extension[0].value.ofType(CodeableConcept)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2412
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.11.19465 for 'urn:oid:2.16.840.1.113883.11.19465#207Q00000X'",
+        "location": [
+          "DocumentReference.context.extension[0].value.ofType(CodeableConcept)",
+          "Line[1] Col[2412]"
+        ],
+        "expression": [
+          "DocumentReference.context.extension[0].value.ofType(CodeableConcept)"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2935
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050 for 'urn:oid:1.2.840.114350.1.13.0.1.7.4.836982.1050#9'",
+        "location": [
+          "DocumentReference.context.practiceSetting",
+          "Line[1] Col[2935]"
+        ],
+        "expression": [
+          "DocumentReference.context.practiceSetting"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2937
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "DocumentReference",
+          "Line[1] Col[2937]"
+        ],
+        "expression": [
+          "DocumentReference"
+        ]
+      }
+    ]
+  }
+}

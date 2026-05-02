@@ -1,0 +1,250 @@
+{
+  "http_status": 200,
+  "operation_outcome": {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>Operation Outcome</h1><table border=\"0\"><tr><td style=\"font-weight: bold;\">INFORMATION</td><td>[DiagnosticReport.category[0], Line[1] Col[905]]</td><td>This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'LaboratorySlice' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0074') and (code = 'LAB')).exists())</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DiagnosticReport.category[0], Line[1] Col[905]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30#Lab'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DiagnosticReport.code, Line[1] Col[1254]]</td><td>Unable to expand ValueSet because CodeSystem could not be found: http://loinc.org</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DiagnosticReport.code, Line[1] Col[1254]]</td><td>CodeSystem is unknown and can't be validated: http://loinc.org for 'http://loinc.org#2093-3'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DiagnosticReport.code, Line[1] Col[1254]]</td><td>CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.6.12 for 'urn:oid:2.16.840.1.113883.6.12#82465'</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DiagnosticReport.code, Line[1] Col[1254]]</td><td>None of the codings provided are in the value set 'US Core Laboratory Test Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes|6.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#2093-3, urn:oid:2.16.840.1.113883.6.12#82465)</td></tr><tr><td style=\"font-weight: bold;\">WARNING</td><td>[DiagnosticReport, Line[1] Col[2042]]</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td></tr></table></div>"
+    },
+    "issue": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 905
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Details_for__matching_against_Profile_"
+          }
+        ],
+        "severity": "information",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Details_for__matching_against_Profile_"
+            }
+          ]
+        },
+        "diagnostics": "This element does not match any known slice defined in the profile http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|6.1.0 (this may not be a problem, but you should check that it's not intended to match a slice) - Does not match slice 'LaboratorySlice' (discriminator: $this.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v2-0074') and (code = 'LAB')).exists())",
+        "location": [
+          "DiagnosticReport.category[0]",
+          "Line[1] Col[905]"
+        ],
+        "expression": [
+          "DiagnosticReport.category[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 905
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30 for 'urn:oid:1.2.840.114350.1.13.0.1.7.10.798268.30#Lab'",
+        "location": [
+          "DiagnosticReport.category[0]",
+          "Line[1] Col[905]"
+        ],
+        "expression": [
+          "DiagnosticReport.category[0]"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1254
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "Unable to expand ValueSet because CodeSystem could not be found: http://loinc.org",
+        "location": [
+          "DiagnosticReport.code",
+          "Line[1] Col[1254]"
+        ],
+        "expression": [
+          "DiagnosticReport.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1254
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: http://loinc.org for 'http://loinc.org#2093-3'",
+        "location": [
+          "DiagnosticReport.code",
+          "Line[1] Col[1254]"
+        ],
+        "expression": [
+          "DiagnosticReport.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1254
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_PassThrough_TX_Message"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_PassThrough_TX_Message"
+            }
+          ]
+        },
+        "diagnostics": "CodeSystem is unknown and can't be validated: urn:oid:2.16.840.1.113883.6.12 for 'urn:oid:2.16.840.1.113883.6.12#82465'",
+        "location": [
+          "DiagnosticReport.code",
+          "Line[1] Col[1254]"
+        ],
+        "expression": [
+          "DiagnosticReport.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 1254
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "Terminology_TX_NoValid_2_CC"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "Terminology_TX_NoValid_2_CC"
+            }
+          ]
+        },
+        "diagnostics": "None of the codings provided are in the value set 'US Core Laboratory Test Codes' (http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes|6.1.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://loinc.org#2093-3, urn:oid:2.16.840.1.113883.6.12#82465)",
+        "location": [
+          "DiagnosticReport.code",
+          "Line[1] Col[1254]"
+        ],
+        "expression": [
+          "DiagnosticReport.code"
+        ]
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+            "valueInteger": 1
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+            "valueInteger": 2042
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+            "valueString": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+          }
+        ],
+        "severity": "warning",
+        "code": "processing",
+        "details": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/java-core-messageId",
+              "code": "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+            }
+          ]
+        },
+        "diagnostics": "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)",
+        "location": [
+          "DiagnosticReport",
+          "Line[1] Col[2042]"
+        ],
+        "expression": [
+          "DiagnosticReport"
+        ]
+      }
+    ]
+  }
+}

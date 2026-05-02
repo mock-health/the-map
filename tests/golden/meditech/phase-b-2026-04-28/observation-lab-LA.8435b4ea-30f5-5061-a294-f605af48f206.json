@@ -1,0 +1,41 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation/LA.8435b4ea-30f5-5061-a294-f605af48f206",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:00.450972+00:00",
+  "body": {
+    "id": "LA.8435b4ea-30f5-5061-a294-f605af48f206",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code": "laboratory",
+            "display": "Laboratory"
+          }
+        ],
+        "text": "Laboratory"
+      }
+    ],
+    "encounter": {
+      "reference": "Encounter/b51f59be-8422-56a0-afd9-f402f7f53802",
+      "type": "Encounter"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "type": "Patient",
+      "display": "Bond,Paula"
+    },
+    "status": "final",
+    "code": {
+      "text": "Creatinine"
+    },
+    "effectiveDateTime": "2024-09-10T13:40:00+00:00",
+    "valueQuantity": {
+      "value": 1.1
+    },
+    "resourceType": "Observation"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_comment": "Maps verification.verified_via enum values to URL substring patterns that source_url must match. Catches citations where the source_url disagrees with the claimed verification method (e.g., verified_via=epic_public_sandbox but source_url points to cerner.com). Updated when new verified_via values are added to schema/overlay.schema.json.",
+  "epic_public_sandbox": ["epic.com"],
+  "cerner_public_sandbox": ["cerner.com", "oracle.com", "oraclecloud.com"],
+  "meditech_public_sandbox": ["meditech.com"],
+  "ecw_public_sandbox": ["eclinicalworks.com", "ecw.com"],
+  "veradigm_public_sandbox": ["veradigm.com", "allscripts.com"],
+  "nextgen_public_sandbox": ["nextgen.com"],
+  "vendor_official_docs": [],
+  "vendor_pr": [],
+  "customer_evidence": [],
+  "community_report": []
+}

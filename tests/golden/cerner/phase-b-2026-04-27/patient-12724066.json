@@ -1,0 +1,5613 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Patient/12724066",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:49:38.440620+00:00",
+  "_probe": "Patient",
+  "_patient_id": "12724066",
+  "body": {
+    "resourceType": "Patient",
+    "id": "12724066",
+    "meta": {
+      "versionId": "1773",
+      "lastUpdated": "2026-04-15T09:11:07.000Z"
+    },
+    "text": {
+      "status": "extensions",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Patient</b></p><p><b>Name</b>: SMARTS SR., NANCYS II</p><p><b>Status</b>: Active</p><p><b>DOB</b>: Sep 15, 1990</p><p><b>Birth Sex</b>: Female</p><p><b>Administrative Gender</b>: Female</p><p><b>Marital Status</b>: Single</p></div>"
+    },
+    "extension": [
+      {
+        "id": "491151788",
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4640016",
+                  "code": "2572136737",
+                  "display": "Clinical Communications",
+                  "userSelected": true
+                },
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/communication-topic",
+                  "code": "progress-update",
+                  "display": "Progress Update",
+                  "userSelected": false
+                }
+              ],
+              "text": "Clinical Communications"
+            },
+            "url": "communication-type"
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/23042",
+                  "code": "4054467",
+                  "display": "Telephone",
+                  "userSelected": true
+                },
+                {
+                  "system": "http://hl7.org/fhir/contact-point-system",
+                  "code": "phone",
+                  "display": "Phone",
+                  "userSelected": false
+                }
+              ],
+              "text": "Telephone"
+            },
+            "url": "contact-method"
+          },
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/43",
+                  "code": "4149712",
+                  "display": "MOBILE",
+                  "userSelected": true
+                },
+                {
+                  "system": "http://hl7.org/fhir/contact-point-use",
+                  "code": "mobile",
+                  "display": "Mobile",
+                  "userSelected": false
+                }
+              ],
+              "text": "MOBILE"
+            },
+            "url": "contact-type"
+          },
+          {
+            "valueDateTime": "2022-11-17T16:22:49.000Z",
+            "url": "verified-datetime"
+          }
+        ],
+        "url": "https://fhir-ehr.cerner.com/r4/StructureDefinition/communication-preference"
+      },
+      {
+        "valueCode": "F",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2106-3",
+              "display": "White",
+              "userSelected": false
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "White",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+      },
+      {
+        "extension": [
+          {
+            "valueCoding": {
+              "system": "urn:oid:2.16.840.1.113883.6.238",
+              "code": "2135-2",
+              "display": "Hispanic or Latino",
+              "userSelected": false
+            },
+            "url": "ombCategory"
+          },
+          {
+            "valueString": "Hispanic, Latino, or Spanish Origin",
+            "url": "text"
+          }
+        ],
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+      },
+      {
+        "valueCode": "248152002",
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex"
+      }
+    ],
+    "identifier": [
+      {
+        "id": "CI-490268794-0",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2",
+              "display": "Community Medical Record Number",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "Community Medical Record Number"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.787.0.0",
+        "value": "6000031",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "6000031",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        }
+      },
+      {
+        "id": "CI-490117323-1",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2",
+              "display": "Community Medical Record Number",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "Community Medical Record Number"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.787.0.0",
+        "value": "9002435058",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "9002435058",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        }
+      },
+      {
+        "id": "CI-490101333-2",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2",
+              "display": "Community Medical Record Number",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "Community Medical Record Number"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.787.0.0",
+        "value": "171",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "171",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        }
+      },
+      {
+        "id": "CI-490196551-3",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "158",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "158",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-05T05:00:00.000Z",
+          "end": "2021-03-05T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195906-4",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1231636589",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1231636589",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-04T05:00:00.000Z",
+          "end": "2021-03-04T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195915-5",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1234565789",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1234565789",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-04T05:00:00.000Z",
+          "end": "2021-03-04T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195911-6",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1237105189",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1237105189",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-04T05:00:00.000Z",
+          "end": "2021-03-04T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195919-7",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1239855889",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1239855889",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-04T05:00:00.000Z",
+          "end": "2021-03-04T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195923-8",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1237504289",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1237504289",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-04T05:00:00.000Z",
+          "end": "2021-03-04T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195467-9",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1235699989",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1235699989",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-03T05:00:00.000Z",
+          "end": "2021-03-03T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490195471-10",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1236616589",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1236616589",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-03T05:00:00.000Z",
+          "end": "2021-03-03T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490193705-11",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1233145889",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1233145889",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-02-02T05:00:00.000Z",
+          "end": "2021-03-02T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490190154-12",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "987654",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "987654",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-28T05:00:00.000Z",
+          "end": "2021-02-28T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490190247-13",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "987654564",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "987654564",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-28T05:00:00.000Z",
+          "end": "2021-02-28T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490190164-14",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "987654325",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "987654325",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-28T05:00:00.000Z",
+          "end": "2021-02-28T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490188587-15",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1235485989",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1235485989",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-26T05:00:00.000Z",
+          "end": "2021-02-26T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490188599-16",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1235344389",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1235344389",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-26T05:00:00.000Z",
+          "end": "2021-02-26T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490188595-17",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1231524889",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1231524889",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-26T05:00:00.000Z",
+          "end": "2021-02-26T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490188591-18",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1231631289",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1231631289",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-26T05:00:00.000Z",
+          "end": "2021-02-26T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490186827-19",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1235748789",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1235748789",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z",
+          "end": "2021-02-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490186993-20",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1231407589",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1231407589",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z",
+          "end": "2021-02-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490186985-21",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1234780089",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1234780089",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z",
+          "end": "2021-02-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490186823-22",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1231167089",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1231167089",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z",
+          "end": "2021-02-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490186989-23",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:7.7.7.7.7.7",
+        "value": "1232616989",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "1232616989",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z",
+          "end": "2021-02-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490016875-24",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "10",
+              "display": "MRN",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "MR",
+              "display": "Medical record number",
+              "userSelected": false
+            }
+          ],
+          "text": "MRN"
+        },
+        "system": "urn:oid:2.16.840.1.113883.6.1000",
+        "value": "6930",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "00000006930",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2017-01-23T11:10:00.000Z"
+        }
+      },
+      {
+        "id": "CI-490060520-26",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "22",
+              "display": "Military Id",
+              "userSelected": true
+            }
+          ],
+          "text": "Military Id"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.42.10001.100001.12",
+        "value": "100000010",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "100000010",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        }
+      },
+      {
+        "id": "CI-493802789-27",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "670843",
+              "display": "Messaging",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "U",
+              "display": "Unspecified identifier",
+              "userSelected": false
+            }
+          ],
+          "text": "Messaging"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.13.8",
+        "value": "FB96C4D0C67E4CC7A2FE7580D0F4266D",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "FB96C4D0C67E4CC7A2FE7580D0F4266D",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2024-06-25T19:04:13.000Z"
+        }
+      },
+      {
+        "id": "CI-493802786-28",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2553236771",
+              "display": "Federated Person Principal",
+              "userSelected": true
+            },
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "AN",
+              "display": "Account number",
+              "userSelected": false
+            }
+          ],
+          "text": "Federated Person Principal"
+        },
+        "system": "urn:oid:2.16.840.1.113883.3.13.6",
+        "value": "URN:CERNER:IDENTITY-FEDERATION:REALM:EC2458F2-1E24-41C8-B71B-0E701AF7583D-CH:PRINCIPAL:RS7MH9WX3XB8VY63",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "URN:CERNER:IDENTITY-FEDERATION:REALM:EC2458F2-1E24-41C8-B71B-0E701AF7583D-CH:PRINCIPAL:RS7MH9WX3XB8VY63",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2024-06-25T19:04:11.000Z"
+        }
+      },
+      {
+        "id": "CI-490153231-29",
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4",
+              "code": "2553236785",
+              "display": "MIllennium Person Identifier",
+              "userSelected": true
+            }
+          ],
+          "text": "MIllennium Person Identifier"
+        },
+        "_system": {
+          "extension": [
+            {
+              "valueCode": "unknown",
+              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+            }
+          ]
+        },
+        "value": "12868",
+        "_value": {
+          "extension": [
+            {
+              "valueString": "12868",
+              "url": "http://hl7.org/fhir/StructureDefinition/rendered-value"
+            }
+          ]
+        },
+        "period": {
+          "start": "2017-01-23T11:10:00.000Z"
+        }
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "id": "CI-12724066-0",
+        "use": "official",
+        "text": "SMARTS SR., NANCYS II",
+        "family": "SMARTS",
+        "given": [
+          "NANCYS",
+          "II"
+        ],
+        "suffix": [
+          "SR."
+        ],
+        "period": {
+          "start": "2019-12-26T15:12:34.000Z"
+        }
+      },
+      {
+        "id": "CI-498204372-0",
+        "use": "old",
+        "text": "SMARTS Sr., NANCYS II",
+        "family": "SMARTS",
+        "given": [
+          "NANCYS",
+          "II"
+        ],
+        "suffix": [
+          "Sr."
+        ],
+        "period": {
+          "start": "2025-01-13T06:41:07.000Z",
+          "end": "2025-06-23T10:13:56.000Z"
+        }
+      },
+      {
+        "id": "CI-494825395-1",
+        "use": "old",
+        "text": "SMARTS Jr., NANCYS II",
+        "family": "SMARTS",
+        "given": [
+          "NANCYS",
+          "II"
+        ],
+        "suffix": [
+          "Jr."
+        ],
+        "period": {
+          "start": "2025-01-07T05:21:57.000Z",
+          "end": "2025-01-13T06:41:07.000Z"
+        }
+      },
+      {
+        "id": "CI-494771493-2",
+        "use": "old",
+        "text": "SMARTS IV, NANCYS II",
+        "family": "SMARTS",
+        "given": [
+          "NANCYS",
+          "II"
+        ],
+        "suffix": [
+          "IV"
+        ],
+        "period": {
+          "start": "2025-01-06T05:03:59.000Z",
+          "end": "2025-01-07T05:21:57.000Z"
+        }
+      },
+      {
+        "id": "CI-494763389-3",
+        "use": "old",
+        "text": "SMARTS III, NANCYS II",
+        "family": "SMARTS",
+        "given": [
+          "NANCYS",
+          "II"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2025-01-03T20:06:56.000Z",
+          "end": "2025-01-06T05:03:59.000Z"
+        }
+      },
+      {
+        "id": "CI-494759234-4",
+        "use": "old",
+        "text": "SMARTS II, NANCYS II",
+        "family": "SMARTS",
+        "given": [
+          "NANCYS",
+          "II"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2024-08-22T13:46:46.000Z",
+          "end": "2025-01-03T20:06:56.000Z"
+        }
+      },
+      {
+        "id": "CI-494087165-5",
+        "use": "old",
+        "text": "SMART II, NANCY II",
+        "family": "SMART",
+        "given": [
+          "NANCY",
+          "II"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2024-08-22T13:40:23.000Z",
+          "end": "2024-08-22T13:46:46.000Z"
+        }
+      },
+      {
+        "id": "CI-494087140-6",
+        "use": "old",
+        "text": "SMART II, NANCY",
+        "family": "SMART",
+        "given": [
+          "NANCY"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2023-10-09T20:18:57.000Z",
+          "end": "2024-08-22T13:40:23.000Z"
+        }
+      },
+      {
+        "id": "CI-491917821-7",
+        "use": "old",
+        "text": "Smart II, Nancy",
+        "family": "Smart",
+        "given": [
+          "Nancy"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2023-08-01T16:08:56.000Z",
+          "end": "2023-10-09T20:18:57.000Z"
+        }
+      },
+      {
+        "id": "CI-491764296-8",
+        "use": "old",
+        "text": "Smart II, Nancyu Nha Eeeeee",
+        "family": "Smart",
+        "given": [
+          "Nancyu",
+          "Nha Eeeeee"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2023-05-24T19:01:51.000Z",
+          "end": "2023-08-01T16:08:56.000Z"
+        }
+      },
+      {
+        "id": "CI-491579041-9",
+        "use": "old",
+        "text": "SMART II, NANCYU NHA EEEEEE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "NHA EEEEEE"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2023-03-17T06:36:18.000Z",
+          "end": "2023-05-24T19:01:51.000Z"
+        }
+      },
+      {
+        "id": "CI-491421528-10",
+        "use": "old",
+        "text": "SMART III, NANCYU NHA EEEEEE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "NHA EEEEEE"
+        ],
+        "suffix": [
+          "III"
+        ],
+        "period": {
+          "start": "2023-03-15T07:18:47.000Z",
+          "end": "2023-03-17T06:36:18.000Z"
+        }
+      },
+      {
+        "id": "CI-491392778-11",
+        "use": "old",
+        "text": "SMART II, NANCYU NHA EEEEEE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "NHA EEEEEE"
+        ],
+        "suffix": [
+          "II"
+        ],
+        "period": {
+          "start": "2023-03-15T07:01:33.000Z",
+          "end": "2023-03-15T07:18:47.000Z"
+        }
+      },
+      {
+        "id": "CI-491392749-12",
+        "use": "old",
+        "text": "SMART, NANCYU NHA EEEEEE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "NHA EEEEEE"
+        ],
+        "period": {
+          "start": "2023-02-21T18:24:36.000Z",
+          "end": "2023-03-15T07:01:33.000Z"
+        }
+      },
+      {
+        "id": "CI-491320336-13",
+        "use": "old",
+        "text": "Smart, Nancyu Nha Eeeeee",
+        "family": "Smart",
+        "given": [
+          "Nancyu",
+          "Nha Eeeeee"
+        ],
+        "period": {
+          "start": "2022-11-28T19:25:43.000Z",
+          "end": "2023-02-21T18:24:36.000Z"
+        }
+      },
+      {
+        "id": "CI-491171484-14",
+        "use": "old",
+        "text": "SMART, NANCYU NHA EEEEEE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "NHA EEEEEE"
+        ],
+        "period": {
+          "start": "2022-10-14T13:58:38.000Z",
+          "end": "2022-11-28T19:25:43.000Z"
+        }
+      },
+      {
+        "id": "CI-491088082-15",
+        "use": "old",
+        "text": "Smart, Nancyu Nha Eeeeee",
+        "family": "Smart",
+        "given": [
+          "Nancyu",
+          "Nha Eeeeee"
+        ],
+        "period": {
+          "start": "2022-10-05T18:18:35.000Z",
+          "end": "2022-10-14T13:58:38.000Z"
+        }
+      },
+      {
+        "id": "CI-491073957-16",
+        "use": "old",
+        "text": "SMART, NANCYU Nha EEEEEE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "Nha EEEEEE"
+        ],
+        "period": {
+          "start": "2022-08-04T03:51:15.000Z",
+          "end": "2022-10-05T18:18:35.000Z"
+        }
+      },
+      {
+        "id": "CI-490994647-17",
+        "use": "old",
+        "text": "SMART, NANCYU Nha EE",
+        "family": "SMART",
+        "given": [
+          "NANCYU",
+          "Nha EE"
+        ],
+        "period": {
+          "start": "2022-08-04T03:48:10.000Z",
+          "end": "2022-08-04T03:51:15.000Z"
+        }
+      },
+      {
+        "id": "CI-490994642-18",
+        "use": "old",
+        "text": "SMART, NANCYU",
+        "family": "SMART",
+        "given": [
+          "NANCYU"
+        ],
+        "period": {
+          "start": "2021-09-08T07:58:58.000Z",
+          "end": "2022-08-04T03:48:10.000Z"
+        }
+      },
+      {
+        "id": "CI-490409757-19",
+        "use": "old",
+        "text": "SMART, NANCYU\\u0000",
+        "family": "SMART",
+        "given": [
+          "NANCYU\\u0000"
+        ],
+        "period": {
+          "start": "2021-09-08T07:41:12.000Z",
+          "end": "2021-09-08T07:58:58.000Z"
+        }
+      },
+      {
+        "id": "CI-490409752-20",
+        "use": "old",
+        "text": "SMART, NANCYU",
+        "family": "SMART",
+        "given": [
+          "NANCYU"
+        ],
+        "period": {
+          "start": "2021-09-07T15:46:57.000Z",
+          "end": "2021-09-08T07:41:12.000Z"
+        }
+      },
+      {
+        "id": "CI-490405878-21",
+        "use": "old",
+        "text": "SMART, NANCY",
+        "family": "SMART",
+        "given": [
+          "NANCY"
+        ],
+        "period": {
+          "start": "2019-12-26T15:12:34.000Z",
+          "end": "2021-09-07T15:46:57.000Z"
+        }
+      },
+      {
+        "id": "CI-490080292-22",
+        "use": "old",
+        "text": "SMART, NANCY",
+        "family": "SMART",
+        "given": [
+          "NANCY"
+        ],
+        "period": {
+          "start": "2019-12-26T15:12:34.000Z",
+          "end": "2019-12-26T15:12:34.000Z"
+        }
+      }
+    ],
+    "telecom": [
+      {
+        "id": "CI-PH-30064445-0",
+        "extension": [
+          {
+            "valueUrl": "(502)370-5016",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5023705016",
+        "use": "temp",
+        "rank": 1,
+        "period": {
+          "start": "2023-10-09T20:18:57.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29967643-1",
+        "extension": [
+          {
+            "valueUrl": "(502)370-5017",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          },
+          {
+            "valueString": "123",
+            "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+          }
+        ],
+        "system": "phone",
+        "value": "5023705017",
+        "use": "work",
+        "rank": 1,
+        "period": {
+          "start": "2022-11-22T05:37:37.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29875422-2",
+        "extension": [
+          {
+            "valueUrl": "(978)831-3446",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "9788313446",
+        "use": "home",
+        "rank": 1
+      },
+      {
+        "id": "CI-PH-29811918-3",
+        "extension": [
+          {
+            "valueUrl": "(987)654-3210",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "9876543210",
+        "use": "home",
+        "rank": 2,
+        "period": {
+          "start": "2019-12-26T15:12:34.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29911043-4",
+        "extension": [
+          {
+            "valueUrl": "9788696552",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          },
+          {
+            "valueString": "9788696552",
+            "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+          }
+        ],
+        "system": "phone",
+        "value": "9788696552",
+        "use": "home",
+        "rank": 3,
+        "period": {
+          "start": "2022-02-03T16:21:14.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29911045-5",
+        "extension": [
+          {
+            "valueUrl": "9788696588",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          },
+          {
+            "valueString": "9788696588",
+            "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+          }
+        ],
+        "system": "phone",
+        "value": "9788696588",
+        "use": "home",
+        "rank": 4,
+        "period": {
+          "start": "2022-02-03T16:21:14.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29911047-6",
+        "extension": [
+          {
+            "valueUrl": "9788696599",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          },
+          {
+            "valueString": "9788696599",
+            "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+          }
+        ],
+        "system": "phone",
+        "value": "9788696599",
+        "use": "home",
+        "rank": 5,
+        "period": {
+          "start": "2022-02-03T16:21:14.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29941470-7",
+        "extension": [
+          {
+            "valueUrl": "8168229121",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          },
+          {
+            "valueString": "12345",
+            "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+          }
+        ],
+        "system": "phone",
+        "value": "8168229121",
+        "use": "home",
+        "rank": 6,
+        "period": {
+          "start": "2022-05-17T15:33:18.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29874870-8",
+        "extension": [
+          {
+            "valueUrl": "(242)353-4654",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "2423534654",
+        "use": "home",
+        "rank": 7
+      },
+      {
+        "id": "CI-PH-29844706-9",
+        "extension": [
+          {
+            "valueUrl": "(523)456-7890",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "5234567890",
+        "use": "mobile",
+        "rank": 1,
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29906485-10",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 2
+      },
+      {
+        "id": "CI-PH-29906452-11",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 3
+      },
+      {
+        "id": "CI-PH-29906477-12",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 4
+      },
+      {
+        "id": "CI-PH-29906446-13",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 5
+      },
+      {
+        "id": "CI-PH-29906440-14",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 6
+      },
+      {
+        "id": "CI-PH-29905682-15",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 7
+      },
+      {
+        "id": "CI-PH-29905692-16",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 8
+      },
+      {
+        "id": "CI-PH-29905739-17",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 9
+      },
+      {
+        "id": "CI-PH-29905686-18",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 10
+      },
+      {
+        "id": "CI-PH-29905674-19",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 11
+      },
+      {
+        "id": "CI-PH-29905678-20",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 12
+      },
+      {
+        "id": "CI-PH-29905696-21",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 13
+      },
+      {
+        "id": "CI-PH-29905743-22",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 14
+      },
+      {
+        "id": "CI-PH-29903044-23",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 15
+      },
+      {
+        "id": "CI-PH-29903048-24",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 16
+      },
+      {
+        "id": "CI-PH-29903052-25",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 17
+      },
+      {
+        "id": "CI-PH-29903056-26",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 18
+      },
+      {
+        "id": "CI-PH-29903062-27",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 19
+      },
+      {
+        "id": "CI-PH-29903066-28",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 20
+      },
+      {
+        "id": "CI-PH-29903406-29",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 21
+      },
+      {
+        "id": "CI-PH-29903410-30",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 22
+      },
+      {
+        "id": "CI-PH-29903070-31",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 23
+      },
+      {
+        "id": "CI-PH-29903414-32",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 24
+      },
+      {
+        "id": "CI-PH-29903418-33",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 25
+      },
+      {
+        "id": "CI-PH-29903422-34",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 26
+      },
+      {
+        "id": "CI-PH-29903447-35",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 27
+      },
+      {
+        "id": "CI-PH-29903455-36",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 28
+      },
+      {
+        "id": "CI-PH-29903463-37",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 29
+      },
+      {
+        "id": "CI-PH-29903471-38",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 30
+      },
+      {
+        "id": "CI-PH-29903475-39",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 31
+      },
+      {
+        "id": "CI-PH-29903164-40",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 32
+      },
+      {
+        "id": "CI-PH-29903500-41",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 33
+      },
+      {
+        "id": "CI-PH-29903504-42",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 34
+      },
+      {
+        "id": "CI-PH-29903508-43",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 35
+      },
+      {
+        "id": "CI-PH-29903516-44",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 36
+      },
+      {
+        "id": "CI-PH-29903520-45",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 37
+      },
+      {
+        "id": "CI-PH-29903524-46",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 38
+      },
+      {
+        "id": "CI-PH-29903040-47",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 39
+      },
+      {
+        "id": "CI-PH-29903074-48",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 40
+      },
+      {
+        "id": "CI-PH-29903078-49",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 41
+      },
+      {
+        "id": "CI-PH-29903459-50",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 42
+      },
+      {
+        "id": "CI-PH-29903467-51",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 43
+      },
+      {
+        "id": "CI-PH-29903512-52",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 44
+      },
+      {
+        "id": "CI-PH-29903528-53",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 45
+      },
+      {
+        "id": "CI-PH-29904176-54",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 46
+      },
+      {
+        "id": "CI-PH-29904180-55",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 47
+      },
+      {
+        "id": "CI-PH-29904250-56",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 48
+      },
+      {
+        "id": "CI-PH-29876398-57",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 49
+      },
+      {
+        "id": "CI-PH-29876256-58",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 50
+      },
+      {
+        "id": "CI-PH-29876664-59",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 51
+      },
+      {
+        "id": "CI-PH-29876670-60",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 52
+      },
+      {
+        "id": "CI-PH-29875847-61",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 53
+      },
+      {
+        "id": "CI-PH-29875606-62",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 54
+      },
+      {
+        "id": "CI-PH-29875369-63",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 55
+      },
+      {
+        "id": "CI-PH-29875420-64",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 56
+      },
+      {
+        "id": "CI-PH-29874868-65",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 57
+      },
+      {
+        "id": "CI-PH-29844710-66",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 58,
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29844690-67",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 59,
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29844708-68",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 60,
+        "period": {
+          "start": "2021-01-25T05:00:00.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29844688-69",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 61,
+        "period": {
+          "start": "2021-01-25T00:33:18.000Z"
+        }
+      },
+      {
+        "id": "CI-PH-29967438-70",
+        "extension": [
+          {
+            "valueUrl": "+1(415)354-1780",
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-TEL-address"
+          }
+        ],
+        "system": "phone",
+        "value": "+1 (415) 354-1780",
+        "use": "mobile",
+        "rank": 62,
+        "period": {
+          "start": "2022-11-20T16:46:02.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-29905741-0",
+        "system": "email",
+        "value": "Shanmuga.kumar@phreesia.com",
+        "use": "home",
+        "rank": 1
+      },
+      {
+        "id": "CI-EM-29906487-1",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 2
+      },
+      {
+        "id": "CI-EM-29906454-2",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 3
+      },
+      {
+        "id": "CI-EM-29906479-3",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 4
+      },
+      {
+        "id": "CI-EM-29906448-4",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 5
+      },
+      {
+        "id": "CI-EM-29906442-5",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 6
+      },
+      {
+        "id": "CI-EM-29822894-6",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 7,
+        "period": {
+          "start": "2020-06-30T19:47:10.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-29905684-7",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 8
+      },
+      {
+        "id": "CI-EM-29905694-8",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 9
+      },
+      {
+        "id": "CI-EM-29905688-9",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 10
+      },
+      {
+        "id": "CI-EM-29905676-10",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 11
+      },
+      {
+        "id": "CI-EM-29905680-11",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 12
+      },
+      {
+        "id": "CI-EM-29905698-12",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 13
+      },
+      {
+        "id": "CI-EM-29905745-13",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 14
+      },
+      {
+        "id": "CI-EM-29903038-14",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 15
+      },
+      {
+        "id": "CI-EM-29903046-15",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 16
+      },
+      {
+        "id": "CI-EM-29903050-16",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 17
+      },
+      {
+        "id": "CI-EM-29903054-17",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 18
+      },
+      {
+        "id": "CI-EM-29903058-18",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 19
+      },
+      {
+        "id": "CI-EM-29903064-19",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 20
+      },
+      {
+        "id": "CI-EM-29903408-20",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 21
+      },
+      {
+        "id": "CI-EM-29903068-21",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 22
+      },
+      {
+        "id": "CI-EM-29903072-22",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 23
+      },
+      {
+        "id": "CI-EM-29903412-23",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 24
+      },
+      {
+        "id": "CI-EM-29903416-24",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 25
+      },
+      {
+        "id": "CI-EM-29903420-25",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 26
+      },
+      {
+        "id": "CI-EM-29903424-26",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 27
+      },
+      {
+        "id": "CI-EM-29903449-27",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 28
+      },
+      {
+        "id": "CI-EM-29903457-28",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 29
+      },
+      {
+        "id": "CI-EM-29903465-29",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 30
+      },
+      {
+        "id": "CI-EM-29903473-30",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 31
+      },
+      {
+        "id": "CI-EM-29903477-31",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 32
+      },
+      {
+        "id": "CI-EM-29903166-32",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 33
+      },
+      {
+        "id": "CI-EM-29903502-33",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 34
+      },
+      {
+        "id": "CI-EM-29903506-34",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 35
+      },
+      {
+        "id": "CI-EM-29903510-35",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 36
+      },
+      {
+        "id": "CI-EM-29903518-36",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 37
+      },
+      {
+        "id": "CI-EM-29903522-37",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 38
+      },
+      {
+        "id": "CI-EM-29903526-38",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 39
+      },
+      {
+        "id": "CI-EM-29903042-39",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 40
+      },
+      {
+        "id": "CI-EM-29903076-40",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 41
+      },
+      {
+        "id": "CI-EM-29903080-41",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 42
+      },
+      {
+        "id": "CI-EM-29903461-42",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 43
+      },
+      {
+        "id": "CI-EM-29903469-43",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 44
+      },
+      {
+        "id": "CI-EM-29903514-44",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 45
+      },
+      {
+        "id": "CI-EM-29903530-45",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 46
+      },
+      {
+        "id": "CI-EM-29904178-46",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 47
+      },
+      {
+        "id": "CI-EM-29904182-47",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 48
+      },
+      {
+        "id": "CI-EM-29904252-48",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 49
+      },
+      {
+        "id": "CI-EM-29883197-49",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 50
+      },
+      {
+        "id": "CI-EM-29876400-50",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 51
+      },
+      {
+        "id": "CI-EM-29876258-51",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 52
+      },
+      {
+        "id": "CI-EM-29876666-52",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 53
+      },
+      {
+        "id": "CI-EM-29876672-53",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 54
+      },
+      {
+        "id": "CI-EM-29875851-54",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 55
+      },
+      {
+        "id": "CI-EM-29875608-55",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 56
+      },
+      {
+        "id": "CI-EM-29875438-56",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 57
+      },
+      {
+        "id": "CI-EM-29875371-57",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 58
+      },
+      {
+        "id": "CI-EM-29875424-58",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 59
+      },
+      {
+        "id": "CI-EM-29874872-59",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 60,
+        "period": {
+          "start": "2021-09-01T05:27:11.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-29911049-60",
+        "system": "email",
+        "value": "humberto.ganesh+@lumahealth.io",
+        "use": "home",
+        "rank": 61
+      },
+      {
+        "id": "CI-EM-30071684-61",
+        "system": "email",
+        "value": "shubham+324@everydose.ai",
+        "use": "home",
+        "rank": 62,
+        "period": {
+          "start": "2023-11-14T02:28:05.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30078713-62",
+        "system": "email",
+        "value": "anil+smartnancy@everydose.in",
+        "use": "home",
+        "rank": 63,
+        "period": {
+          "start": "2023-12-19T10:32:32.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30343275-63",
+        "system": "email",
+        "value": "test@test.com",
+        "use": "home",
+        "rank": 64,
+        "period": {
+          "start": "2018-01-05T22:24:32.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30343653-64",
+        "system": "email",
+        "value": "test@test.com",
+        "use": "home",
+        "rank": 65,
+        "period": {
+          "start": "2018-01-05T22:24:32.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30411829-65",
+        "system": "email",
+        "value": "anuva+nancysmart@everydose.in",
+        "use": "home",
+        "rank": 66,
+        "period": {
+          "start": "2024-03-22T11:14:17.000Z"
+        }
+      },
+      {
+        "id": "CI-EM-30434064-66",
+        "system": "email",
+        "value": "anil+nsp@everydose.in",
+        "use": "home",
+        "rank": 67,
+        "period": {
+          "start": "2024-05-17T09:41:48.000Z"
+        }
+      }
+    ],
+    "gender": "female",
+    "birthDate": "1990-09-15",
+    "deceasedBoolean": false,
+    "address": [
+      {
+        "id": "CI-24526435-0",
+        "use": "home",
+        "text": "55 FRUIT STREET\nBOSTON, DC 02114\nUS",
+        "line": [
+          "55 FRUIT STREET"
+        ],
+        "city": "BOSTON",
+        "state": "DC",
+        "postalCode": "02114",
+        "country": "US",
+        "period": {
+          "start": "2023-04-25T17:18:18.000Z"
+        }
+      },
+      {
+        "id": "CI-26798588-1",
+        "use": "home",
+        "text": "1212 Faircastle Drive\nApartment 406\nKC, KS 64199\nUS",
+        "line": [
+          "1212 Faircastle Drive",
+          "Apartment 406"
+        ],
+        "city": "KC",
+        "district": "Jackson",
+        "state": "KS",
+        "postalCode": "64199",
+        "country": "US",
+        "period": {
+          "start": "2027-05-17T15:33:18.000Z"
+        }
+      }
+    ],
+    "maritalStatus": {
+      "coding": [
+        {
+          "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/38",
+          "code": "309239",
+          "display": "Single",
+          "userSelected": true
+        },
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code": "S",
+          "display": "Never Married",
+          "userSelected": false
+        }
+      ],
+      "text": "Single"
+    },
+    "contact": [
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/14841377-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-14841377-0",
+          "use": "official",
+          "text": "Jdoe, Johny Smith"
+        },
+        "period": {
+          "start": "2025-07-18T05:55:42.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/14469400-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-14469400-1",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2025-04-02T12:01:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970339-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970339-2",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:54.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970338-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970338-3",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:54.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970338-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970338-4",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:54.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970338-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970338-5",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:53.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970338-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970338-6",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:53.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970338-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970338-7",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:53.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970339-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970339-8",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z",
+          "end": "2024-06-25T17:22:53.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970335-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970335-9",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970335-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970335-10",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970335-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970335-11",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970336-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970336-12",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970336-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970336-13",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970335-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970335-14",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970335-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970335-15",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:36:42.000Z",
+          "end": "2024-06-25T17:12:46.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970331-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970331-16",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970331-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970331-17",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970331-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970331-18",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970332-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970332-19",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970332-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970332-20",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970331-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970331-21",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970331-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970331-22",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T16:18:56.000Z",
+          "end": "2024-06-25T16:36:45.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970324-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970324-23",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970324-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970324-24",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970324-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970324-25",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970325-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970325-26",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970325-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970325-27",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970324-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970324-28",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970324-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970324-29",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:36:46.000Z",
+          "end": "2024-06-25T16:19:13.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970322-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970322-30",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970322-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970322-31",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970322-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970322-32",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970323-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970323-33",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970323-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970323-34",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970322-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970322-35",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970322-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970322-36",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:34:14.000Z",
+          "end": "2024-06-25T15:36:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970319-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970319-37",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:05:45.000Z",
+          "end": "2024-06-25T15:34:18.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970319-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970319-38",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:05:45.000Z",
+          "end": "2024-06-25T15:34:18.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970319-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970319-39",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:05:45.000Z",
+          "end": "2024-06-25T15:34:18.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970320-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970320-40",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T15:05:45.000Z",
+          "end": "2024-06-25T15:34:18.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970320-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970320-41",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T15:05:45.000Z",
+          "end": "2024-06-25T15:34:18.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970319-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970319-42",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T15:05:45.000Z",
+          "end": "2024-06-25T15:34:18.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12869498-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12869498-43",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "end": "2024-06-25T15:05:49.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970599-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970599-44",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-26T14:21:07.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970600-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970600-45",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-26T14:21:07.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970341-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970341-46",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12970340-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12970340-47",
+          "use": "official",
+          "text": "Doe, John Smith"
+        },
+        "period": {
+          "start": "2024-06-25T17:12:41.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12869499-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12869499-48",
+          "use": "official",
+          "text": "Doe, John Smith"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12869500-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12869500-49",
+          "use": "official",
+          "text": "Doe, John Smith"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12869501-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12869501-50",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12869502-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12869502-51",
+          "use": "official",
+          "text": "DelMonico, Sarah"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12868330-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1152",
+                "display": "Emergency Contact",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                "code": "C",
+                "display": "Emergency Contact",
+                "userSelected": false
+              }
+            ],
+            "text": "Emergency Contact"
+          }
+        ],
+        "name": {
+          "id": "CI-12868330-52",
+          "use": "official",
+          "text": "Doe, John Smith"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724069-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12724069-53",
+          "use": "official",
+          "text": "SMART, TIMMY"
+        },
+        "period": {
+          "start": "2020-08-10T16:37:51.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774273-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774273-54",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774278-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774278-55",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12774383-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12774383-56",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12777369-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12777369-57",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12777371-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12777371-58",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12777373-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12777373-59",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12777391-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12777391-60",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12777396-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12777396-61",
+          "use": "official",
+          "text": "NOT, SET"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12742397-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12742397-62",
+          "use": "official",
+          "text": "VAN, JEFFERSON"
+        },
+        "period": {
+          "start": "2020-03-04T18:58:24.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12742399-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12742399-63",
+          "use": "official",
+          "text": "SMART II, SANDY"
+        },
+        "period": {
+          "start": "2019-12-26T16:09:36.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12742400-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12742400-64",
+          "use": "official",
+          "text": "PETERS, TIM"
+        },
+        "period": {
+          "start": "2019-12-26T16:09:36.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12794564-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12794564-65",
+          "use": "official",
+          "text": "EXPORTII, DEMOGRAPHICS"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12762192-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12762192-66",
+          "use": "official",
+          "text": "STEIN, FRANK N"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724068-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12724068-67",
+          "use": "official",
+          "text": "SMART, Harry James"
+        },
+        "period": {
+          "start": "2016-12-19T16:44:25.000Z",
+          "end": "2022-05-01T16:56:56.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724068-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12724068-68",
+          "use": "official",
+          "text": "SMART, Harry James"
+        },
+        "period": {
+          "start": "2016-12-19T16:44:25.000Z",
+          "end": "2022-05-01T16:56:56.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724068-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12724068-69",
+          "use": "official",
+          "text": "SMART, Harry James"
+        },
+        "period": {
+          "start": "2016-12-19T16:44:25.000Z",
+          "end": "2022-05-01T16:56:56.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12724068-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12724068-70",
+          "use": "official",
+          "text": "SMART, Harry James"
+        },
+        "period": {
+          "start": "2016-12-19T16:44:25.000Z",
+          "end": "2022-05-01T16:56:56.000Z"
+        }
+      },
+      {
+        "extension": [
+          {
+            "valueReference": {
+              "reference": "RelatedPerson/12708020-12724066"
+            },
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-relatedPerson"
+          }
+        ],
+        "relationship": [
+          {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/351",
+                "code": "1153",
+                "display": "Family Member",
+                "userSelected": true
+              }
+            ],
+            "text": "Family Member"
+          }
+        ],
+        "name": {
+          "id": "CI-12708020-71",
+          "use": "official",
+          "text": "ZZTEST, ANDREA"
+        },
+        "period": {
+          "start": "2016-12-19T16:44:25.000Z",
+          "end": "2022-05-01T16:56:56.000Z"
+        }
+      }
+    ],
+    "communication": [
+      {
+        "language": {
+          "coding": [
+            {
+              "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/36",
+              "code": "151",
+              "display": "English",
+              "userSelected": true
+            },
+            {
+              "system": "urn:ietf:bcp:47",
+              "code": "en",
+              "display": "English",
+              "userSelected": false
+            }
+          ],
+          "text": "English"
+        },
+        "preferred": true
+      }
+    ],
+    "generalPractitioner": [
+      {
+        "id": "CI-499786360-1",
+        "reference": "Practitioner/14903378",
+        "display": "sarkar MD Dr kumar pappu"
+      }
+    ]
+  }
+}

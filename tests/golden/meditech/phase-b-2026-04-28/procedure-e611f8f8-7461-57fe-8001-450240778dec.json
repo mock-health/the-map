@@ -1,0 +1,89 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Procedure/e611f8f8-7461-57fe-8001-450240778dec",
+    "status": 200
+  },
+  "_captured_at": "2026-04-28T20:38:04.498158+00:00",
+  "body": {
+    "id": "e611f8f8-7461-57fe-8001-450240778dec",
+    "status": "in-progress",
+    "category": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "387713003",
+          "display": "Surgical procedure"
+        }
+      ],
+      "text": "Surgical procedure"
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "63513005",
+          "display": "Fusion of right ankle"
+        }
+      ],
+      "text": "Fusion of right ankle"
+    },
+    "subject": {
+      "reference": "Patient/9bec5771-4796-5189-a54e-352c571a44c8",
+      "display": "Bond,Paula",
+      "type": "Patient"
+    },
+    "encounter": {
+      "reference": "Encounter/b723f1ef-f11f-5e14-976c-97c4678e2907",
+      "type": "Encounter"
+    },
+    "performer": [
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "304292004",
+              "display": "Surgeon"
+            }
+          ],
+          "text": "Surgeon"
+        },
+        "actor": {
+          "reference": "Practitioner/d638ec04-bfac-5075-b2ed-595afd2988a6",
+          "display": "Marc Belanger",
+          "type": "Practitioner"
+        },
+        "onBehalfOf": {
+          "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+          "display": "Canton Medical Center",
+          "type": "Organization"
+        }
+      },
+      {
+        "function": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "304292004",
+              "display": "Surgeon"
+            }
+          ],
+          "text": "Surgeon"
+        },
+        "actor": {
+          "reference": "Practitioner/a39354a3-f838-506e-9493-95b081d3cbf5",
+          "display": "Kirk Benson",
+          "type": "Practitioner"
+        },
+        "onBehalfOf": {
+          "reference": "Organization/5990ce3f-2397-5456-b7d1-73c43a116d6f",
+          "display": "Canton Medical Center",
+          "type": "Organization"
+        }
+      }
+    ],
+    "performedDateTime": "2023-10-25T13:15:00+00:00",
+    "resourceType": "Procedure"
+  }
+}

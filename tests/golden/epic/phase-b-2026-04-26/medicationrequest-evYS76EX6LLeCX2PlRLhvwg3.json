@@ -1,0 +1,999 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=evYS76EX6LLeCX2PlRLhvwg3",
+    "status": 200
+  },
+  "_captured_at": "2026-04-26T21:48:39.073227+00:00",
+  "_probe": "MedicationRequest",
+  "_patient_id": "evYS76EX6LLeCX2PlRLhvwg3",
+  "body": {
+    "resourceType": "Bundle",
+    "type": "searchset",
+    "total": 5,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=evYS76EX6LLeCX2PlRLhvwg3"
+      }
+    ],
+    "entry": [
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/eMgh18og5R3sALY19rPcL2e.JDyYNb6iahp8oguxRED03"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/eMgh18og5R3sALY19rPcL2e.JDyYNb6iahp8oguxRED03",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "eMgh18og5R3sALY19rPcL2e.JDyYNb6iahp8oguxRED03",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1064875"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community"
+                }
+              ],
+              "text": "Community"
+            }
+          ],
+          "medicationReference": {
+            "reference": "Medication/fcvRZUDZ6xxQYsDiXjWx2gQ4",
+            "display": "norethindrone-ethinyl estradiol (MICROGESTIN) 1-20 MG-MCG per tablet"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "encounter": {
+            "reference": "Encounter/eMjTDmjQOfDujMwZzeSmbsA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27526"
+            },
+            "display": "Orders Only"
+          },
+          "authoredOn": "2019-04-29",
+          "requester": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "recorder": {
+            "reference": "Practitioner/eFPRzYfMADRCMg.SB4.vGQA3",
+            "type": "Practitioner",
+            "display": "Scott Dinkle"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy"
+              }
+            ],
+            "text": "Continuous long term therapy"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Take 1 tablet by mouth 1 (one) time each day., Starting Mon 4/29/2019, Until Tue 4/28/2020, Normal",
+              "patientInstruction": "Take 1 tablet by mouth 1 (one) time each day.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2019-04-29"
+                  },
+                  "count": 365,
+                  "timeOfDay": [
+                    "09:00:00"
+                  ]
+                },
+                "code": {
+                  "text": "0900"
+                }
+              },
+              "asNeededBoolean": false,
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "260548002",
+                    "display": "Oral (qualifier value)"
+                  },
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025",
+                    "code": "15",
+                    "display": "Oral"
+                  }
+                ],
+                "text": "Oral"
+              },
+              "method": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "419652001",
+                    "display": "Take"
+                  }
+                ],
+                "text": "Take"
+              },
+              "doseAndRate": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "calculated",
+                        "display": "calculated"
+                      }
+                    ],
+                    "text": "calculated"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "tablet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "admin-amount",
+                        "display": "admin-amount"
+                      }
+                    ],
+                    "text": "admin-amount"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "tablet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "ordered",
+                        "display": "ordered"
+                      }
+                    ],
+                    "text": "ordered"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "tablet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "start": "2019-04-29"
+            },
+            "numberOfRepeatsAllowed": 12,
+            "quantity": {
+              "value": 21,
+              "unit": "tablet"
+            },
+            "expectedSupplyDuration": {
+              "value": 21,
+              "unit": "Day",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/eWiz0Ko6nez.vPkNJ3M91quyW1mO90BdqWY7gJ38A0tk3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/eWiz0Ko6nez.vPkNJ3M91quyW1mO90BdqWY7gJ38A0tk3",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "eWiz0Ko6nez.vPkNJ3M91quyW1mO90BdqWY7gJ38A0tk3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1064874"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community"
+                }
+              ],
+              "text": "Community"
+            }
+          ],
+          "medicationReference": {
+            "reference": "Medication/fN9f3gl24USH0pnHwMqi19A4",
+            "display": "chlorthalidone (HYGROTON) 50 MG tablet"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "encounter": {
+            "reference": "Encounter/eMjTDmjQOfDujMwZzeSmbsA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27526"
+            },
+            "display": "Orders Only"
+          },
+          "authoredOn": "2019-04-29",
+          "requester": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "recorder": {
+            "reference": "Practitioner/eFPRzYfMADRCMg.SB4.vGQA3",
+            "type": "Practitioner",
+            "display": "Scott Dinkle"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy"
+              }
+            ],
+            "text": "Continuous long term therapy"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Take 1 tablet (50 mg total) by mouth 1 (one) time each day., Starting Mon 4/29/2019, Until Tue 4/28/2020, Normal",
+              "patientInstruction": "Take 1 tablet (50 mg total) by mouth 1 (one) time each day.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2019-04-29"
+                  },
+                  "count": 365,
+                  "timeOfDay": [
+                    "09:00:00"
+                  ]
+                },
+                "code": {
+                  "text": "0900"
+                }
+              },
+              "asNeededBoolean": false,
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "260548002",
+                    "display": "Oral (qualifier value)"
+                  },
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025",
+                    "code": "15",
+                    "display": "Oral"
+                  }
+                ],
+                "text": "Oral"
+              },
+              "method": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "419652001",
+                    "display": "Take"
+                  }
+                ],
+                "text": "Take"
+              },
+              "doseAndRate": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "calculated",
+                        "display": "calculated"
+                      }
+                    ],
+                    "text": "calculated"
+                  },
+                  "doseQuantity": {
+                    "value": 50,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "admin-amount",
+                        "display": "admin-amount"
+                      }
+                    ],
+                    "text": "admin-amount"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "tablet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "ordered",
+                        "display": "ordered"
+                      }
+                    ],
+                    "text": "ordered"
+                  },
+                  "doseQuantity": {
+                    "value": 50,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "start": "2019-04-29"
+            },
+            "numberOfRepeatsAllowed": 11,
+            "quantity": {
+              "value": 30,
+              "unit": "tablet"
+            },
+            "expectedSupplyDuration": {
+              "value": 30,
+              "unit": "Day",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/ebvCLxd7GpHLauQ4eFdZR6GMP9N78pa1k8Vn4Pz3U1KU3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/ebvCLxd7GpHLauQ4eFdZR6GMP9N78pa1k8Vn4Pz3U1KU3",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "ebvCLxd7GpHLauQ4eFdZR6GMP9N78pa1k8Vn4Pz3U1KU3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1064872"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community"
+                }
+              ],
+              "text": "Community"
+            }
+          ],
+          "medicationReference": {
+            "reference": "Medication/fZYAaDl5rBMgwrG8l4BfqyQ4",
+            "display": "amphetamine-dextroamphetamine XR (ADDERALL XR) 30 MG 24 hr capsule"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "encounter": {
+            "reference": "Encounter/eMjTDmjQOfDujMwZzeSmbsA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27526"
+            },
+            "display": "Orders Only"
+          },
+          "authoredOn": "2019-04-29",
+          "requester": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "recorder": {
+            "reference": "Practitioner/eFPRzYfMADRCMg.SB4.vGQA3",
+            "type": "Practitioner",
+            "display": "Scott Dinkle"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy"
+              }
+            ],
+            "text": "Continuous long term therapy"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Take 1 capsule (30 mg total) by mouth 1 (one) time each day in the morning. Do not crush or chew., Starting Mon 4/29/2019, Normal",
+              "patientInstruction": "Take 1 capsule (30 mg total) by mouth 1 (one) time each day in the morning. Do not crush or chew.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2019-04-29"
+                  },
+                  "timeOfDay": [
+                    "07:00:00"
+                  ]
+                },
+                "code": {
+                  "text": "0700"
+                }
+              },
+              "asNeededBoolean": false,
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "260548002",
+                    "display": "Oral (qualifier value)"
+                  },
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025",
+                    "code": "15",
+                    "display": "Oral"
+                  }
+                ],
+                "text": "Oral"
+              },
+              "method": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "419652001",
+                    "display": "Take"
+                  }
+                ],
+                "text": "Take"
+              },
+              "doseAndRate": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "calculated",
+                        "display": "calculated"
+                      }
+                    ],
+                    "text": "calculated"
+                  },
+                  "doseQuantity": {
+                    "value": 30,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "admin-amount",
+                        "display": "admin-amount"
+                      }
+                    ],
+                    "text": "admin-amount"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "capsule",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{capsule}"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "ordered",
+                        "display": "ordered"
+                      }
+                    ],
+                    "text": "ordered"
+                  },
+                  "doseQuantity": {
+                    "value": 30,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "start": "2019-04-29"
+            },
+            "numberOfRepeatsAllowed": 0,
+            "quantity": {
+              "value": 1,
+              "unit": "capsule"
+            },
+            "expectedSupplyDuration": {
+              "value": 1,
+              "unit": "Day",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/eu5uESQ09mxneqhpJuQa0qJqbyZkVesmDGciL5oAuFcE3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/eu5uESQ09mxneqhpJuQa0qJqbyZkVesmDGciL5oAuFcE3",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "eu5uESQ09mxneqhpJuQa0qJqbyZkVesmDGciL5oAuFcE3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1064876"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community"
+                }
+              ],
+              "text": "Community"
+            }
+          ],
+          "medicationReference": {
+            "reference": "Medication/fGRCcmuB7fq1PRFCxtsKyow4",
+            "display": "phenylephrine (NEO-SYNEPHRINE) 1 % nasal spray"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "encounter": {
+            "reference": "Encounter/eMjTDmjQOfDujMwZzeSmbsA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27526"
+            },
+            "display": "Orders Only"
+          },
+          "authoredOn": "2019-04-29",
+          "requester": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "recorder": {
+            "reference": "Practitioner/eFPRzYfMADRCMg.SB4.vGQA3",
+            "type": "Practitioner",
+            "display": "Scott Dinkle"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy"
+              }
+            ],
+            "text": "Continuous long term therapy"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Administer 1 drop into each nostril every 4 (four) hours if needed for congestion for up to 3 days., Starting Mon 4/29/2019, Until Thu 5/2/2019 at 2359, Normal",
+              "patientInstruction": "Administer 1 drop into each nostril every 4 (four) hours if needed for congestion for up to 3 days.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2019-04-29"
+                  },
+                  "frequency": 1,
+                  "period": 4,
+                  "periodUnit": "h"
+                },
+                "code": {
+                  "text": "Every 4 (four) hours as needed"
+                }
+              },
+              "asNeededBoolean": true,
+              "route": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025",
+                    "code": "110",
+                    "display": "Each Nostril"
+                  }
+                ],
+                "text": "Each Nostril"
+              },
+              "doseAndRate": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "calculated",
+                        "display": "calculated"
+                      }
+                    ],
+                    "text": "calculated"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "drop",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[drp]"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "admin-amount",
+                        "display": "admin-amount"
+                      }
+                    ],
+                    "text": "admin-amount"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "drop",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[drp]"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "ordered",
+                        "display": "ordered"
+                      }
+                    ],
+                    "text": "ordered"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "drop",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[drp]"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "start": "2019-04-29"
+            },
+            "numberOfRepeatsAllowed": 0,
+            "quantity": {
+              "value": 30,
+              "unit": "mL"
+            },
+            "expectedSupplyDuration": {
+              "value": 3,
+              "unit": "Day",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "link": [
+          {
+            "relation": "self",
+            "url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/euvvGWAUXJCeXN5D2kQCUXRtrJ5LIo0Pb3BRay3IzkNA3"
+          }
+        ],
+        "fullUrl": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest/euvvGWAUXJCeXN5D2kQCUXRtrJ5LIo0Pb3BRay3IzkNA3",
+        "resource": {
+          "resourceType": "MedicationRequest",
+          "id": "euvvGWAUXJCeXN5D2kQCUXRtrJ5LIo0Pb3BRay3IzkNA3",
+          "identifier": [
+            {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.798268",
+              "value": "1064873"
+            }
+          ],
+          "status": "active",
+          "intent": "order",
+          "category": [
+            {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+                  "code": "community",
+                  "display": "Community"
+                }
+              ],
+              "text": "Community"
+            }
+          ],
+          "medicationReference": {
+            "reference": "Medication/fODRy33.1iYzKtUxo06pJMQ4",
+            "display": "miglitol (GLYSET) 50 MG tablet"
+          },
+          "subject": {
+            "reference": "Patient/evYS76EX6LLeCX2PlRLhvwg3",
+            "display": "Argonaut, Jessica"
+          },
+          "encounter": {
+            "reference": "Encounter/eMjTDmjQOfDujMwZzeSmbsA3",
+            "identifier": {
+              "use": "usual",
+              "system": "urn:oid:1.2.840.114350.1.13.0.1.7.3.698084.8",
+              "value": "27526"
+            },
+            "display": "Orders Only"
+          },
+          "authoredOn": "2019-04-29",
+          "requester": {
+            "reference": "Practitioner/ef9TegF2nfECi-0Skirbvpg3",
+            "type": "Practitioner",
+            "display": "Physician One Cardiology, MD"
+          },
+          "recorder": {
+            "reference": "Practitioner/eFPRzYfMADRCMg.SB4.vGQA3",
+            "type": "Practitioner",
+            "display": "Scott Dinkle"
+          },
+          "courseOfTherapyType": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+                "code": "continuous",
+                "display": "Continuous long term therapy"
+              }
+            ],
+            "text": "Continuous long term therapy"
+          },
+          "dosageInstruction": [
+            {
+              "text": "Take 1 tablet (50 mg total) by mouth 3 (three) times a day with meals., Starting Mon 4/29/2019, Until Tue 4/28/2020, Normal",
+              "patientInstruction": "Take 1 tablet (50 mg total) by mouth 3 (three) times a day with meals.",
+              "timing": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2019-04-29"
+                  },
+                  "count": 1095,
+                  "timeOfDay": [
+                    "08:00:00",
+                    "12:00:00",
+                    "18:00:00"
+                  ]
+                },
+                "code": {
+                  "text": "0800, 1200, 1800"
+                }
+              },
+              "asNeededBoolean": false,
+              "route": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "260548002",
+                    "display": "Oral (qualifier value)"
+                  },
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.4.798268.7025",
+                    "code": "15",
+                    "display": "Oral"
+                  }
+                ],
+                "text": "Oral"
+              },
+              "method": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "419652001",
+                    "display": "Take"
+                  }
+                ],
+                "text": "Take"
+              },
+              "doseAndRate": [
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "calculated",
+                        "display": "calculated"
+                      }
+                    ],
+                    "text": "calculated"
+                  },
+                  "doseQuantity": {
+                    "value": 50,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "admin-amount",
+                        "display": "admin-amount"
+                      }
+                    ],
+                    "text": "admin-amount"
+                  },
+                  "doseQuantity": {
+                    "value": 1,
+                    "unit": "tablet",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "{tbl}"
+                  }
+                },
+                {
+                  "type": {
+                    "coding": [
+                      {
+                        "system": "http://epic.com/CodeSystem/dose-rate-type",
+                        "code": "ordered",
+                        "display": "ordered"
+                      }
+                    ],
+                    "text": "ordered"
+                  },
+                  "doseQuantity": {
+                    "value": 50,
+                    "unit": "mg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mg"
+                  }
+                }
+              ]
+            }
+          ],
+          "dispenseRequest": {
+            "validityPeriod": {
+              "start": "2019-04-29"
+            },
+            "numberOfRepeatsAllowed": 11,
+            "quantity": {
+              "value": 90,
+              "unit": "tablet"
+            },
+            "expectedSupplyDuration": {
+              "value": 30,
+              "unit": "Day",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            }
+          }
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:1be380fc-dde4-4e45-9901-107d5d62e6c9",
+        "resource": {
+          "resourceType": "OperationOutcome",
+          "issue": [
+            {
+              "severity": "warning",
+              "code": "suppressed",
+              "details": {
+                "coding": [
+                  {
+                    "system": "urn:oid:1.2.840.114350.1.13.0.1.7.2.657369",
+                    "code": "59204",
+                    "display": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+                  }
+                ],
+                "text": "The authenticated client's search request applies to a sub-resource that the client is not authorized for. Results of this sub-type will not be returned."
+              },
+              "diagnostics": "Client not authorized for MedicationRequest - Outside Record. Search results of this type have not been included."
+            }
+          ]
+        },
+        "search": {
+          "mode": "outcome"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,2895 @@
+{
+  "_request": {
+    "method": "GET",
+    "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization?patient=12742399",
+    "status": 200
+  },
+  "_captured_at": "2026-04-27T20:51:59.835589+00:00",
+  "_probe": "Immunization",
+  "_patient_id": "12742399",
+  "body": {
+    "resourceType": "Bundle",
+    "id": "17fbd5f2-ead1-47b2-b768-2faadd2817cd",
+    "type": "searchset",
+    "total": 24,
+    "link": [
+      {
+        "relation": "self",
+        "url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization?patient=12742399"
+      }
+    ],
+    "entry": [
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206373390",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206373390",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-02-26T14:53:27+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: anthrax vaccine adsorbed</p><p><b>Occurrence</b>: Feb 24, 2024 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Urgent Care</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206373390-2024022614532800"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2796920",
+                "display": "anthrax vaccine adsorbed",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "24",
+                "display": "Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis",
+                "userSelected": false
+              }
+            ],
+            "text": "anthrax vaccine adsorbed"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97955594"
+          },
+          "occurrenceDateTime": "2024-02-23T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/33834799",
+            "display": "MX Urgent Care"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/1196423",
+                "display": "Model Urgent Care"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347901",
+                      "display": "Anthrax",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "319",
+                      "display": "Anthrax vaccine, unspecified",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Anthrax"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206373182",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206373182",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-02-26T09:34:41+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: anthrax vaccine adsorbed</p><p><b>Occurrence</b>: Feb 24, 2024 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206373182-2024022609344300"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2796920",
+                "display": "anthrax vaccine adsorbed",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "24",
+                "display": "Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis",
+                "userSelected": false
+              }
+            ],
+            "text": "anthrax vaccine adsorbed"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97961376"
+          },
+          "occurrenceDateTime": "2024-02-23T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347901",
+                      "display": "Anthrax",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "319",
+                      "display": "Anthrax vaccine, unspecified",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Anthrax"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206373394",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206373394",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-02-26T14:53:30+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: anthrax vaccine adsorbed</p><p><b>Occurrence</b>: Feb 15, 2024 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Urgent Care</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206373394-2024022614533000"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2796920",
+                "display": "anthrax vaccine adsorbed",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "24",
+                "display": "Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis",
+                "userSelected": false
+              }
+            ],
+            "text": "anthrax vaccine adsorbed"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97955594"
+          },
+          "occurrenceDateTime": "2024-02-14T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/33834799",
+            "display": "MX Urgent Care"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/1196423",
+                "display": "Model Urgent Care"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347901",
+                      "display": "Anthrax",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "319",
+                      "display": "Anthrax vaccine, unspecified",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Anthrax"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206339549",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206339549",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2023-12-13T07:31:28+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: anthrax vaccine adsorbed</p><p><b>Occurrence</b>: Dec  5, 2023 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Urgent Care</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206339549-2023121307313000"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2796920",
+                "display": "anthrax vaccine adsorbed",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "24",
+                "display": "Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis",
+                "userSelected": false
+              }
+            ],
+            "text": "anthrax vaccine adsorbed"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97955603"
+          },
+          "occurrenceDateTime": "2023-12-04T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/33834799",
+            "display": "MX Urgent Care"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/1196423",
+                "display": "Model Urgent Care"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347901",
+                      "display": "Anthrax",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "319",
+                      "display": "Anthrax vaccine, unspecified",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Anthrax"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206341658",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206341658",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2023-12-19T13:48:29+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Dec  4, 2023 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Urgent Care</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206341658-2023121913482900"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97955594"
+          },
+          "occurrenceDateTime": "2023-12-03T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/33834799",
+            "display": "MX Urgent Care"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/1196423",
+                "display": "Model Urgent Care"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206341650",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206341650",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2023-12-19T13:24:39+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: diphth/tetanus/pertussis,acel/hepB/polio</p><p><b>Occurrence</b>: Dec  4, 2023 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Urgent Care</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206341650-2023121913244000"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2797625",
+                "display": "diphth/tetanus/pertussis,acel/hepB/polio",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "110",
+                "display": "DTaP-hepatitis B and poliovirus vaccine",
+                "userSelected": false
+              }
+            ],
+            "text": "diphth/tetanus/pertussis,acel/hepB/polio"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97955594"
+          },
+          "occurrenceDateTime": "2023-12-03T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/33834799",
+            "display": "MX Urgent Care"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/1196423",
+                "display": "Model Urgent Care"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42348033",
+                      "display": "Polio",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "89",
+                      "display": "poliovirus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Polio"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347955",
+                      "display": "Hepatitis B",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "45",
+                      "display": "hepatitis B vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Hepatitis B"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347919",
+                      "display": "DTaP",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "107",
+                      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "DTaP"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206360003",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206360003",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-01-22T14:02:12+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: diphth/tetanus/pertussis,acel/hepB/polio</p><p><b>Occurrence</b>: Nov 30, 2023 12:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206360003-2024012214021200"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2797625",
+                "display": "diphth/tetanus/pertussis,acel/hepB/polio",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "110",
+                "display": "DTaP-hepatitis B and poliovirus vaccine",
+                "userSelected": false
+              }
+            ],
+            "text": "diphth/tetanus/pertussis,acel/hepB/polio"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97961014"
+          },
+          "occurrenceDateTime": "2023-11-29T18:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42348033",
+                      "display": "Polio",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "89",
+                      "display": "poliovirus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Polio"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347955",
+                      "display": "Hepatitis B",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "45",
+                      "display": "hepatitis B vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Hepatitis B"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347919",
+                      "display": "DTaP",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "107",
+                      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "DTaP"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583721",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583721",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:32:09+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583721-2022012620320800"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820755",
+                "display": "influenza virus vaccine, inactivated",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "88",
+                "display": "influenza virus vaccine, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "influenza virus vaccine, inactivated"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347925",
+                      "display": "Influenza",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "88",
+                      "display": "influenza virus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Influenza"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583717",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583717",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:32:08+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583717-2022012620320800"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583703",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583703",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:21:15+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583703-2022012620211500"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583699",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583699",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:21:14+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583699-2022012620211400"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820755",
+                "display": "influenza virus vaccine, inactivated",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "88",
+                "display": "influenza virus vaccine, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "influenza virus vaccine, inactivated"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347925",
+                      "display": "Influenza",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "88",
+                      "display": "influenza virus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Influenza"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583685",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583685",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:09:27+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583685-2022012620092700"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583681",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583681",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:09:26+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583681-2022012620092700"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820755",
+                "display": "influenza virus vaccine, inactivated",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "88",
+                "display": "influenza virus vaccine, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "influenza virus vaccine, inactivated"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347925",
+                      "display": "Influenza",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "88",
+                      "display": "influenza virus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Influenza"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583667",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583667",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:03:38+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583667-2022012620033800"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583663",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583663",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T20:03:37+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583663-2022012620033700"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820755",
+                "display": "influenza virus vaccine, inactivated",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "88",
+                "display": "influenza virus vaccine, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "influenza virus vaccine, inactivated"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347925",
+                      "display": "Influenza",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "88",
+                      "display": "influenza virus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Influenza"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583649",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583649",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T19:54:16+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583649-2022012619541600"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583645",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583645",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T19:54:13+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583645-2022012619541300"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820755",
+                "display": "influenza virus vaccine, inactivated",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "88",
+                "display": "influenza virus vaccine, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "influenza virus vaccine, inactivated"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347925",
+                      "display": "Influenza",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "88",
+                      "display": "influenza virus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Influenza"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583631",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583631",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T19:50:49+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: influenza virus vaccine, inactivated</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583631-2022012619504900"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2820755",
+                "display": "influenza virus vaccine, inactivated",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "88",
+                "display": "influenza virus vaccine, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "influenza virus vaccine, inactivated"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347925",
+                      "display": "Influenza",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "88",
+                      "display": "influenza virus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Influenza"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197583627",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197583627",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-01-26T19:50:48+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA-1273 vacc</p><p><b>Occurrence</b>: Jan 26, 2021  6:00 A.M. UTC</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Administered by</b>: SYSTEM, SYSTEM Cerner</p><p><b>Organization</b>: Model Hospital</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197583627-2022012619504800"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572919541",
+                "display": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "207",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 100 mcg/0.5mL dose or 50 mcg/0.25mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA-1273 vacc"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2021-01-26T00:00:00-06:00",
+          "primarySource": true,
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "function": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0443",
+                    "code": "AP",
+                    "display": "Administering Provider"
+                  }
+                ],
+                "text": "Administering Provider"
+              },
+              "actor": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              }
+            },
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M206358551",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M206358551",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2024-01-18T22:26:27+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: diphtheria/tetanus/pertussis,acel/polio</p><p><b>Occurrence</b>: Jan 14, 2024</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Organization</b>: Model Hospital</p><p><b>Site</b>: Hand, Right</p><p><b>Route</b>: IM</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-206358551-2024011822262900"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "4337361",
+                "display": "diphtheria/tetanus/pertussis,acel/polio",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "130",
+                "display": "Diphtheria, tetanus toxoids and acellular pertussis vaccine, and poliovirus vaccine, inactivated",
+                "userSelected": false
+              }
+            ],
+            "text": "diphtheria/tetanus/pertussis,acel/polio"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953523"
+          },
+          "occurrenceDateTime": "2024-01-14",
+          "primarySource": false,
+          "reportOrigin": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/30200",
+                "code": "679978",
+                "display": "Self",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+                "code": "recall",
+                "display": "Parent/Guardian/Patient Recall",
+                "userSelected": false
+              }
+            ],
+            "text": "Self"
+          },
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "site": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/97",
+                "code": "610",
+                "display": "Hand, Right",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78791008",
+                "display": "Structure of right hand (body structure)",
+                "userSelected": false
+              }
+            ],
+            "text": "Hand, Right"
+          },
+          "route": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                "code": "318167",
+                "display": "IM",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78421000",
+                "display": "Intramuscular route (qualifier value)",
+                "userSelected": false
+              }
+            ],
+            "text": "IM"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42348033",
+                      "display": "Polio",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "89",
+                      "display": "poliovirus vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "Polio"
+                },
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42347919",
+                      "display": "DTaP",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "107",
+                      "display": "diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "DTaP"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M198786708",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M198786708",
+          "meta": {
+            "versionId": "1",
+            "lastUpdated": "2022-09-20T20:21:07+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: tetanus toxoid</p><p><b>Occurrence</b>: Jun 30, 2022</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Organization</b>: Model Hospital</p><p><b>Site</b>: Hand, Right</p><p><b>Route</b>: IM</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-198786708-2022092020210700"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2798767",
+                "display": "tetanus toxoid",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "112",
+                "display": "tetanus toxoid, unspecified formulation",
+                "userSelected": false
+              }
+            ],
+            "text": "tetanus toxoid"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97967684"
+          },
+          "occurrenceDateTime": "2022-06-30",
+          "primarySource": false,
+          "reportOrigin": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/30200",
+                "code": "679978",
+                "display": "Self",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+                "code": "recall",
+                "display": "Parent/Guardian/Patient Recall",
+                "userSelected": false
+              }
+            ],
+            "text": "Self"
+          },
+          "location": {
+            "reference": "Location/21250403",
+            "display": "MX Hospital"
+          },
+          "site": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/97",
+                "code": "610",
+                "display": "Hand, Right",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78791008",
+                "display": "Structure of right hand (body structure)",
+                "userSelected": false
+              }
+            ],
+            "text": "Hand, Right"
+          },
+          "route": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                "code": "318167",
+                "display": "IM",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78421000",
+                "display": "Intramuscular route (qualifier value)",
+                "userSelected": false
+              }
+            ],
+            "text": "IM"
+          },
+          "doseQuantity": {
+            "value": 0.0,
+            "unit": "unknown unit",
+            "system": "http://unitsofmeasure.org",
+            "code": "{unknownunit}"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Organization/675844",
+                "display": "Model Hospital"
+              }
+            }
+          ],
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/1",
+                "display": "SYSTEM, SYSTEM Cerner"
+              },
+              "time": "2022-09-20T20:21:07+00:00",
+              "text": "Original Free text Vaccine : tetanus toxoid\n"
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "42348063",
+                      "display": "Td/Tdap",
+                      "userSelected": true
+                    }
+                  ],
+                  "text": "Td/Tdap"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197482954",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197482954",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2021-05-19T15:02:01+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vac</p><p><b>Occurrence</b>: Apr 26, 2021</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Organization</b>: Model Clinic 1</p><p><b>Site</b>: Arm, Left</p><p><b>Route</b>: IM</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197482954-2021051914503900"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572918741",
+                "display": "SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vac",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "208",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 30 mcg/0.3mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vac"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953522"
+          },
+          "occurrenceDateTime": "2021-04-26",
+          "primarySource": false,
+          "reportOrigin": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/30200",
+                "code": "679976",
+                "display": "Mother",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+                "code": "recall",
+                "display": "Parent/Guardian/Patient Recall",
+                "userSelected": false
+              }
+            ],
+            "text": "Mother"
+          },
+          "location": {
+            "reference": "Location/21304872",
+            "display": "MX Clinic 1"
+          },
+          "manufacturer": {
+            "display": "Pfizer U.S. Pharmaceuticals Group"
+          },
+          "lotNumber": "1A4353",
+          "expirationDate": "2021-06-05",
+          "site": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/97",
+                "code": "576",
+                "display": "Arm, Left",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "80768000",
+                "display": "Structure of left upper limb (body structure)",
+                "userSelected": false
+              }
+            ],
+            "text": "Arm, Left"
+          },
+          "route": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                "code": "318167",
+                "display": "IM",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78421000",
+                "display": "Intramuscular route (qualifier value)",
+                "userSelected": false
+              }
+            ],
+            "text": "IM"
+          },
+          "doseQuantity": {
+            "value": 0.3,
+            "unit": "mL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Organization/685844",
+                "display": "Model Clinic 1"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197482958",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197482958",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2021-05-19T15:01:42+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vac</p><p><b>Occurrence</b>: May 10, 2021</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Completed</p><p><b>Organization</b>: Model Clinic 1</p><p><b>Site</b>: Arm, Right</p><p><b>Route</b>: IM</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197482958-2021051914514900"
+            }
+          ],
+          "status": "completed",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2572918741",
+                "display": "SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vac",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "208",
+                "display": "SARS-COV-2 (COVID-19) vaccine, mRNA, spike protein, LNP, preservative free, 30 mcg/0.3mL dose",
+                "userSelected": false
+              }
+            ],
+            "text": "SARS-CoV-2 (COVID-19) mRNA BNT-162b2 vac"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953522"
+          },
+          "occurrenceDateTime": "2021-05-10",
+          "primarySource": false,
+          "reportOrigin": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/30200",
+                "code": "679976",
+                "display": "Mother",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+                "code": "recall",
+                "display": "Parent/Guardian/Patient Recall",
+                "userSelected": false
+              }
+            ],
+            "text": "Mother"
+          },
+          "location": {
+            "reference": "Location/21304872",
+            "display": "MX Clinic 1"
+          },
+          "manufacturer": {
+            "display": "Pfizer U.S. Pharmaceuticals Group"
+          },
+          "lotNumber": "1b2658",
+          "site": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/97",
+                "code": "603",
+                "display": "Arm, Right",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "6921000",
+                "display": "Structure of right upper limb (body structure)",
+                "userSelected": false
+              }
+            ],
+            "text": "Arm, Right"
+          },
+          "route": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                "code": "318167",
+                "display": "IM",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78421000",
+                "display": "Intramuscular route (qualifier value)",
+                "userSelected": false
+              }
+            ],
+            "text": "IM"
+          },
+          "doseQuantity": {
+            "value": 0.3,
+            "unit": "mL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+          },
+          "performer": [
+            {
+              "actor": {
+                "reference": "Organization/685844",
+                "display": "Model Clinic 1"
+              }
+            }
+          ],
+          "protocolApplied": [
+            {
+              "targetDisease": [
+                {
+                  "coding": [
+                    {
+                      "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4003106",
+                      "code": "2573076931",
+                      "display": "COVID-19",
+                      "userSelected": true
+                    },
+                    {
+                      "system": "http://hl7.org/fhir/sid/cvx",
+                      "code": "213",
+                      "display": "SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED",
+                      "userSelected": false
+                    }
+                  ],
+                  "text": "COVID-19"
+                }
+              ],
+              "doseNumberString": "Unknown"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      },
+      {
+        "fullUrl": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization/M197482949",
+        "resource": {
+          "resourceType": "Immunization",
+          "id": "M197482949",
+          "meta": {
+            "versionId": "2",
+            "lastUpdated": "2021-05-19T14:42:51+00:00"
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Immunization</b></p><p><b>Vaccine</b>: COVID-19 vaccine, vector-nr, rS-Ad26</p><p><b>Occurrence</b>: Apr 12, 2021</p><p><b>Patient</b>: SMART II, SANDY</p><p><b>Status</b>: Entered in Error</p><p><b>Site</b>: Arm, Left</p><p><b>Route</b>: IM</p></div>"
+          },
+          "identifier": [
+            {
+              "system": "https://fhir.cerner.com/ceuuid",
+              "value": "CE87caf4b7-9397-4667-9897-702218017c9e-197482949-2021051914401700"
+            }
+          ],
+          "status": "entered-in-error",
+          "vaccineCode": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/72",
+                "code": "2573124749",
+                "display": "COVID-19 vaccine, vector-nr, rS-Ad26",
+                "userSelected": true
+              },
+              {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "code": "212",
+                "display": "SARS-COV-2 (COVID-19) vaccine, vector non-replicating, recombinant spike protein-Ad26, preservative free, 0.5 mL",
+                "userSelected": false
+              }
+            ],
+            "text": "COVID-19 vaccine, vector-nr, rS-Ad26"
+          },
+          "patient": {
+            "reference": "Patient/12742399",
+            "display": "SMART II, SANDY"
+          },
+          "encounter": {
+            "reference": "Encounter/97953522"
+          },
+          "occurrenceDateTime": "2021-04-12",
+          "primarySource": false,
+          "reportOrigin": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/30200",
+                "code": "679976",
+                "display": "Mother",
+                "userSelected": true
+              },
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/immunization-origin",
+                "code": "recall",
+                "display": "Parent/Guardian/Patient Recall",
+                "userSelected": false
+              }
+            ],
+            "text": "Mother"
+          },
+          "location": {
+            "reference": "Location/21304872",
+            "display": "MX Clinic 1"
+          },
+          "manufacturer": {
+            "display": "Janssen Pharmaceuticals"
+          },
+          "lotNumber": "165241",
+          "site": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/97",
+                "code": "576",
+                "display": "Arm, Left",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "80768000",
+                "display": "Structure of left upper limb (body structure)",
+                "userSelected": false
+              }
+            ],
+            "text": "Arm, Left"
+          },
+          "route": {
+            "coding": [
+              {
+                "system": "https://fhir.cerner.com/ec2458f2-1e24-41c8-b71b-0e701af7583d/codeSet/4001",
+                "code": "318167",
+                "display": "IM",
+                "userSelected": true
+              },
+              {
+                "system": "http://snomed.info/sct",
+                "code": "78421000",
+                "display": "Intramuscular route (qualifier value)",
+                "userSelected": false
+              }
+            ],
+            "text": "IM"
+          },
+          "doseQuantity": {
+            "value": 0.2,
+            "unit": "mL",
+            "system": "http://unitsofmeasure.org",
+            "code": "mL"
+          },
+          "note": [
+            {
+              "authorReference": {
+                "reference": "Practitioner/744079",
+                "display": "Cerner Test, Case Manager Cerner"
+              },
+              "time": "2021-05-19T09:42:51-05:00",
+              "text": "[5/19/2021 Uncharted] charted in error on wrong patient"
+            }
+          ]
+        },
+        "search": {
+          "mode": "match"
+        }
+      }
+    ]
+  }
+}

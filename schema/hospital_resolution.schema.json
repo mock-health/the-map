@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mock-health/the-map/schema/hospital_resolution.schema.json",
+  "title": "FHIR Endpoint → CMS hospital resolution",
+  "description": "Per-vendor mapping from a FHIR brands-bundle Endpoint.id to a Medicare-certified hospital row in the CMS Provider-of-Services file. Resolves the hospital-disambiguation problem flagged in tasks/hospital-disambiguation.md: the brand bundles cannot disambiguate same-named hospitals across states, and Epic publishes no address at all. This file attaches CCN, normalized address, and (where available) NPI to each endpoint so downstream consumers (fhir-studio brand_index.json, claims joins, HCRIS, Hospital Compare) can use a stable identifier.",
+  "type": "object",
+  "required": [
+    "vendor",
+    "captured_date",
+    "pos_catalog",
+    "endpoints",
+    "verification"
+  ],
+  "properties": {
+    "vendor": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$",
+      "description": "Lowercase vendor identifier (epic, cerner, meditech)."
+    },
+    "captured_date": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date the resolution ran."
+    },
+    "pos_catalog": {
+      "type": "string",
+      "description": "Relative path to the data/cms-pos/hospitals-{date}.json catalog this resolution was joined against."
+    },
+    "match_summary": {
+      "type": "object",
+      "properties": {
+        "endpoints_total": { "type": "integer", "minimum": 0 },
+        "matched_unique": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Endpoints that resolved to exactly one CCN."
+        },
+        "matched_multiple": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Endpoints with multiple POS candidates (no auto-resolution; surfaced in candidates[])."
+        },
+        "unmatched": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Endpoints with no plausible POS candidate."
+        }
+      }
+    },
+    "endpoints": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/endpointResolution" }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["source_url", "source_quote", "verified_via", "verified_date"],
+      "properties": {
+        "source_url": {
+          "type": "string",
+          "description": "Either the CMS POS file URL or the path to the bundled catalog."
+        },
+        "source_quote": { "type": "string" },
+        "verified_via": {
+          "type": "string",
+          "enum": ["cms_pos_csv", "manual_override", "llm_assisted", "nppes_api"]
+        },
+        "verified_date": { "type": "string", "format": "date" }
+      }
+    }
+  },
+  "$defs": {
+    "endpointResolution": {
+      "type": "object",
+      "required": [
+        "endpoint_id",
+        "vendor",
+        "match_strategy",
+        "match_confidence",
+        "verified_via",
+        "verified_date"
+      ],
+      "properties": {
+        "endpoint_id": {
+          "type": "string",
+          "description": "FHIR Endpoint.id from the vendor's brands bundle. Stable per-endpoint key."
+        },
+        "endpoint_address": { "type": "string", "description": "FHIR base URL." },
+        "vendor": { "type": "string" },
+        "ccn": {
+          "type": ["string", "null"],
+          "description": "CMS Certification Number (PRVDR_NUM) when a unique POS row was matched. Null when unmatched or ambiguous."
+        },
+        "npi": {
+          "type": ["string", "null"],
+          "description": "National Provider Identifier when present in the brands bundle Organization.identifier or recovered via NPPES."
+        },
+        "name_observed": {
+          "type": "string",
+          "description": "Endpoint.name or managingOrganization.name verbatim from the brands bundle."
+        },
+        "name_pos": {
+          "type": ["string", "null"],
+          "description": "Hospital name from the POS catalog when matched."
+        },
+        "city": { "type": ["string", "null"] },
+        "state": { "type": ["string", "null"] },
+        "zip5": { "type": ["string", "null"] },
+        "fac_subtype_code": { "type": ["string", "null"] },
+        "bed_count": { "type": ["integer", "null"] },
+        "match_strategy": {
+          "type": "string",
+          "enum": [
+            "manual_override",
+            "llm_assisted",
+            "npi_direct",
+            "address_state_zip5_name",
+            "address_state_name",
+            "name_only_with_state_hint",
+            "name_only",
+            "unmatched"
+          ]
+        },
+        "match_confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "candidates": {
+          "type": "array",
+          "description": "When the resolver found multiple plausible POS rows, all are listed here. ccn is the join key.",
+          "items": {
+            "type": "object",
+            "required": ["ccn", "name", "city", "state"],
+            "properties": {
+              "ccn": { "type": "string" },
+              "name": { "type": "string" },
+              "city": { "type": "string" },
+              "state": { "type": "string" },
+              "zip5": { "type": ["string", "null"] },
+              "score": { "type": "number" }
+            }
+          }
+        },
+        "verified_via": {
+          "type": "string",
+          "enum": ["cms_pos_csv", "manual_override", "llm_assisted", "nppes_api"]
+        },
+        "verified_date": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

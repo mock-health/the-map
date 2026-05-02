@@ -1,0 +1,1441 @@
+{
+	"info": {
+		"_postman_id": "5223d97b-ec49-4e0d-993b-d9aa8e5cae14",
+		"name": "Greenfield US Core APIs STU6 v2.0",
+		"description": "## About this Collection\n\nThis collection provides view-only access to a subset of MEDITECH's US Core FHIR API resources for sandbox testing. It is intended to help vendors quickly explore common requests and responses using test data.\n\nFor additional guidance on endpoints, workflows, and authentication, please refer to the [Greenfield Portal](https://greenfield.meditech.com).\n\n## Data Privacy & Usage Disclaimer\n\n- This collection is provided for testing in the Greenfield Workspace environment only.\n    \n- Do not use real patient data or any Protected Health Information (PHI).\n    \n- Payloads and requests are intended to validate structure, logic and authentication flows using test data.\n    \n- Postman is not HIPAA-compliant and does not guarantee secure handling of PHI.\n    \n- Client credentials are provisioned for sandbox use and must not be shared outside your authorized integration team.\n    \n- This collection is MEDITECH proprietary material and is provided for your organization's internal use only. Redistribution or external sharing is not permitted.\n    \n- If you alter environment variables to point to a production endpoint, you are solely responsible for ensuring compliance with your organization's privacy, security, and regulatory obligations.\n    \n\n## Reporting Access Issues\n\nIf you experience login problems with your registered Google ID or cannot access the Greenfield Portal, you may email [greenfieldinfo@meditech.com](https://mailto:greenfieldinfo@meditech.com).\n\n**Please note:** This email is for access issues only. All other sandbox questions should be addressed using the published documentation and FAQs. No dedicated support is provided for sandbox testing.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20376700"
+	},
+	"item": [
+		{
+			"name": "Sarai Mccall",
+			"item": [
+				{
+					"name": "Allergy Intolerance",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/AllergyIntolerance?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"AllergyIntolerance"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Allergy Intolerance (ID) Penicillins",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/AllergyIntolerance/908e0f26-cd59-540d-831b-4ad377834ca0",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"AllergyIntolerance",
+								"908e0f26-cd59-540d-831b-4ad377834ca0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CarePlan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CarePlan?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"CarePlan"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CarePlan (ID) Discharge Assessment & Plan",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CarePlan/28439363-448a-50d7-9a3f-1b485c534b19",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"CarePlan",
+								"28439363-448a-50d7-9a3f-1b485c534b19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Care Team",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CareTeam?_id=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"CareTeam"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Condition",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Condition?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Condition"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Condition (ID) History of Appendectomy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Condition/cbbee1da-66b9-50ff-ac9c-569dfa74fa1c",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Condition",
+								"cbbee1da-66b9-50ff-ac9c-569dfa74fa1c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Diagnostic Report",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DiagnosticReport?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"DiagnosticReport"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Diagnostic Report (ID) CBC",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DiagnosticReport/49ad076e-4272-51e1-9a7f-bb0b3c503b37",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"DiagnosticReport",
+								"49ad076e-4272-51e1-9a7f-bb0b3c503b37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document Reference",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DocumentReference?patient.identifier=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"DocumentReference"
+							],
+							"query": [
+								{
+									"key": "patient.identifier",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document Reference (ID) Clinical Note - Imaging Narrative",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DocumentReference/ff3c6f0d-c6f4-5bd3-8393-3d4ee5918b60",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"DocumentReference",
+								"ff3c6f0d-c6f4-5bd3-8393-3d4ee5918b60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Encounter",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Encounter?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Encounter"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Encounter (ID) - Admitted In Patient",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Encounter/414d39a7-f3ec-50fc-bf43-32976adec671",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Encounter",
+								"414d39a7-f3ec-50fc-bf43-32976adec671"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Goal",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Goal?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Goal"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Goal (ID) Weight Loss",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Goal/8f40fe8c-edae-5ebc-90d5-dc841350d6b5",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Goal",
+								"8f40fe8c-edae-5ebc-90d5-dc841350d6b5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Immunization",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Immunization?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Immunization"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Immunization (ID) Covid-19 Vaccine",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Immunization/17282d5e-541d-578d-84ef-d222877f9c0b",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Immunization",
+								"17282d5e-541d-578d-84ef-d222877f9c0b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Location/",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Location",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location Filter by Name (Norwood Physician Office)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Location?name=Norwood",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Location"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Norwood"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location ID (Norwood)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Location/e4686d68-f72f-5e97-8947-b8481056ea52",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Location",
+								"e4686d68-f72f-5e97-8947-b8481056ea52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medication",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Medication?_id=4bb43890-3b63-5ea9-9560-5e9b8f0b2c38",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Medication"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "4bb43890-3b63-5ea9-9560-5e9b8f0b2c38"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medication Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/MedicationRequest?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"MedicationRequest"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medication Request - Lisinopril 20 mg tablet",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/MedicationRequest/f8f59059-35fd-56d6-a180-7eced132859d",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"MedicationRequest",
+								"f8f59059-35fd-56d6-a180-7eced132859d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Observation",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Observation"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Observation vital signs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=0218f2d0-968b-5888-976f-68a554670f6e&category=vital-signs",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Observation"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								},
+								{
+									"key": "category",
+									"value": "vital-signs"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Observation Lab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=0218f2d0-968b-5888-976f-68a554670f6e&category=laboratory",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Observation"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								},
+								{
+									"key": "category",
+									"value": "laboratory"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Observation social-history",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=0218f2d0-968b-5888-976f-68a554670f6e&category=social-history",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Observation"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								},
+								{
+									"key": "category",
+									"value": "social-history"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient Search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Patient?name=Mccall\\,Sarai&birthdate=1959-08-14",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Patient"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Mccall\\,Sarai"
+								},
+								{
+									"key": "birthdate",
+									"value": "1959-08-14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient (ID)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Patient/0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Patient",
+								"0218f2d0-968b-5888-976f-68a554670f6e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service Request",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/ServiceRequest?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"ServiceRequest"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patient ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v1/uscore/STU6/Patient/0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v1",
+								"uscore",
+								"STU6",
+								"Patient",
+								"0218f2d0-968b-5888-976f-68a554670f6e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Practitioner List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Practitioner",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Practitioner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Practitioner (ID) Kirk Benson",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Practitioner",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Practitioner"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Practitioner Role",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/PractitionerRole?practitioner=a39354a3-f838-506e-9493-95b081d3cbf5",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"PractitionerRole"
+							],
+							"query": [
+								{
+									"key": "practitioner",
+									"value": "a39354a3-f838-506e-9493-95b081d3cbf5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Procedure",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Procedure?patient=0218f2d0-968b-5888-976f-68a554670f6e",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Procedure"
+							],
+							"query": [
+								{
+									"key": "patient",
+									"value": "0218f2d0-968b-5888-976f-68a554670f6e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Procedure (ID) Diagnostic Procedure",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Procedure/b8cf4285-1dd6-505d-a2f3-9daa491ecdea",
+							"protocol": "https",
+							"host": [
+								"greenfield-prod-apis",
+								"meditech",
+								"com"
+							],
+							"path": [
+								"v2",
+								"uscore",
+								"STU6",
+								"Procedure",
+								"b8cf4285-1dd6-505d-a2f3-9daa491ecdea"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metadata",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "scope",
+							"value": "launch user/*.*",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://greenfield-prod-apis.meditech.com/oauth/token",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "MEDITECH User Session Token",
+							"type": "string"
+						},
+						{
+							"key": "challengeAlgorithm",
+							"value": "S256",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{my-client-secret}}",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{my-client-id}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://greenfield-apis.meditech.com/oauth/authorize",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/metadata",
+					"protocol": "https",
+					"host": [
+						"greenfield-prod-apis",
+						"meditech",
+						"com"
+					],
+					"path": [
+						"v2",
+						"uscore",
+						"STU6",
+						"metadata"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "scope",
+				"value": "patient/*.read",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "authorization_code",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://greenfield-prod-apis.meditech.com/oauth/authorize",
+				"type": "string"
+			},
+			{
+				"key": "refreshRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "authRequestParams",
+				"value": [],
+				"type": "any"
+			},
+			{
+				"key": "tokenName",
+				"value": "MEDITECH User Session Token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{my-client-secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{my-client-id}}",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://greenfield-prod-apis.meditech.com/oauth/token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "my-client-id",
+			"value": ""
+		},
+		{
+			"key": "my-client-secret",
+			"value": ""
+		}
+	]
+}
