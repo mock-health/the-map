@@ -41,8 +41,7 @@ data/hospital-overrides/.cache/
 .idea/
 *.swp
 
-# --- Git LFS placeholder ---
-# Remove the next line AFTER `git lfs install && git lfs track 'tests/golden/production-fleet/**'`.
-# .gitattributes already has the LFS pattern; this line just keeps the 380MB
-# subtree out of the first commit, which lands before LFS is set up on the remote.
-tests/golden/production-fleet/
+# --- Git LFS ---
+# tests/golden/production-fleet/ is tracked via Git LFS (see .gitattributes).
+# Default `git clone` pulls pointer files only; run `git lfs pull` to fetch
+# the 380MB of per-endpoint harvest evidence.
