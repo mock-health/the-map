@@ -81,14 +81,17 @@ def main():
     today = datetime.date.today().isoformat()
     ehr_dir = EHRS_DIR / args.ehr
     ehr_dir.mkdir(parents=True, exist_ok=True)
+    # ensure_ascii=False keeps non-ASCII chars (em-dash, →, etc.) literal in
+    # overlay.json narratives instead of escaping them to \uXXXX. JSON parsers
+    # round-trip both forms identically; the difference is human readability.
     primary = ehr_dir / "CapabilityStatement.json"
-    primary.write_text(json.dumps(capstmt, indent=2) + "\n")
+    primary.write_text(json.dumps(capstmt, indent=2, ensure_ascii=False) + "\n")
     print(f"  wrote {primary.relative_to(REPO_ROOT)}")
 
     golden_dir = GOLDEN_DIR / args.ehr
     golden_dir.mkdir(parents=True, exist_ok=True)
     archive = golden_dir / f"CapabilityStatement-{today}.json"
-    archive.write_text(json.dumps(capstmt, indent=2) + "\n")
+    archive.write_text(json.dumps(capstmt, indent=2, ensure_ascii=False) + "\n")
     print(f"  archived {archive.relative_to(REPO_ROOT)}")
 
     overlay_path = ehr_dir / "overlay.json"
@@ -98,7 +101,7 @@ def main():
         overlay["capability_statement_url"] = f"{base.rstrip('/')}/metadata"
         if "version" in sw:
             overlay["ehr_version_validated"] = f"{sw.get('name', args.ehr.title())} {sw['version']}"
-        overlay_path.write_text(json.dumps(overlay, indent=2) + "\n")
+        overlay_path.write_text(json.dumps(overlay, indent=2, ensure_ascii=False) + "\n")
         print(f"  bumped {overlay_path.relative_to(REPO_ROOT)} fetched_date and version")
 
     return 0
