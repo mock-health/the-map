@@ -25,7 +25,10 @@ jobs:
       matrix:
         # Anonymous Phase A endpoints. These are guaranteed-public per
         # ONC HTI-1 §170.404 + FHIR R4 §C.0.0 + SMART STU 2.2.
-        ehr: [epic, cerner, meditech, meditech-greenfield]
+        # `meditech` is currently aliased to the Greenfield sandbox (see
+        # KNOWN_BASES in tools/fetch_capability.py). When MEDITECH Expanse gets
+        # its own representative refresh URL, add it as a separate matrix entry.
+        ehr: [epic, cerner, meditech]
     steps:
       - uses: actions/checkout@v4
         with:
