@@ -32,7 +32,6 @@ KNOWN_BASES = {
     "epic": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4",
     "cerner": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
     "meditech": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
-    "meditech-greenfield": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
 }
 
 
