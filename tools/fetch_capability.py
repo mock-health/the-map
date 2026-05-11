@@ -20,9 +20,19 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 EHRS_DIR = REPO_ROOT / "ehrs"
 GOLDEN_DIR = REPO_ROOT / "tests" / "golden"
 
+# Anonymous sandbox base URLs for the weekly `refresh-capstmts` cron.
+# Each must return a R4 CapabilityStatement from `${base}/metadata` without auth.
+#
+# - Cerner / Oracle Health: open sandbox tenant `ec2458f2-…` is the demo tenant
+#   Oracle publishes in dev-center docs; `/r4` without a tenant 404s.
+# - MEDITECH: aliased to Greenfield — the only stable singular sandbox MEDITECH
+#   publishes. MEDITECH Expanse is the 542-customer-endpoint world tracked
+#   separately via the brands-bundle harvest, not refreshable on a single URL.
 KNOWN_BASES = {
     "epic": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4",
-    "cerner": "https://fhir-open.cerner.com/r4",
+    "cerner": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
+    "meditech": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
+    "meditech-greenfield": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
 }
 
 
