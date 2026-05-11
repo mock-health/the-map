@@ -2,7 +2,7 @@
   "ehr": "epic",
   "ehr_display_name": "Epic",
   "ehr_version_validated": "Epic February 2026",
-  "capability_statement_fetched_date": "2026-04-26",
+  "capability_statement_fetched_date": "2026-05-11",
   "capability_statement_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/metadata",
   "sandbox_base_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4",
   "sandbox_canonical_patient_id": "eq081-VQEgP8drUUqCWzHfw3",
@@ -120,7 +120,7 @@
       },
       {
         "finding": "Bundle.total reports the page size, not the result count, when _count is set",
-        "evidence": "GET /Observation?patient={id}&category=laboratory&_count=1 returns Bundle.total=1 even when 5+ matches exist. Adding _summary=count returns Bundle.total=5 with no entry array. Without _count, Bundle.total accurately reports the unbounded match count up to ~1000 (vital-signs cap). Re-validated 2026-05-02 against Derrick Lin's vital-signs feed: `&_count=5` → Bundle.total=5 (entry=5), walking rel=next → Bundle.total still 5 (entry=5), `&_count=1000` → Bundle.total=1000 (entry=1000). Captured in `tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-paginated-with-total-2026-05-02.json`.",
+        "evidence": "GET /Observation?patient={id}&category=laboratory&_count=1 returns Bundle.total=1 even when 5+ matches exist. Adding _summary=count returns Bundle.total=5 with no entry array. Without _count, Bundle.total accurately reports the unbounded match count up to ~1000 (vital-signs cap). Re-validated 2026-05-02 against Derrick Lin's vital-signs feed: `&_count=5` \u2192 Bundle.total=5 (entry=5), walking rel=next \u2192 Bundle.total still 5 (entry=5), `&_count=1000` \u2192 Bundle.total=1000 (entry=1000). Captured in `tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-paginated-with-total-2026-05-02.json`.",
         "integrator_impact": "Integrators that page with _count and trust Bundle.total for progress estimation are misled by this Epic-specific quirk \u2014 Bundle.total reflects the page contents, not the result set. Use _summary=count for accurate match counting before walking pages.",
         "verified_via": "epic_public_sandbox",
         "verified_date": "2026-04-26",
@@ -308,7 +308,7 @@
     "jwks_hosted_or_embedded": "hosted",
     "scopes_format": "v1",
     "client_registration_url": "https://fhir.epic.com/Developer/Apps",
-    "notes": "Phase A finding from CapabilityStatement.rest[0].security: declares OAuth + SMART-on-FHIR + Basic. authorize endpoint at /oauth2/authorize, token at /oauth2/token. JWT alg / JWKS hosting / scope-format details below were initially sourced from Epic's published OAuth 2.0 Tutorial; Phase B verification completed 2026-04-26 — values reflect the actual sandbox-flow behavior observed in element_deviations and golden captures.",
+    "notes": "Phase A finding from CapabilityStatement.rest[0].security: declares OAuth + SMART-on-FHIR + Basic. authorize endpoint at /oauth2/authorize, token at /oauth2/token. JWT alg / JWKS hosting / scope-format details below were initially sourced from Epic's published OAuth 2.0 Tutorial; Phase B verification completed 2026-04-26 \u2014 values reflect the actual sandbox-flow behavior observed in element_deviations and golden captures.",
     "verification": {
       "source_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/metadata",
       "source_quote": "rest[0].security.service includes OAuth, SMART-on-FHIR, Basic. extension[0].extension lists authorize=https://fhir.epic.com/interconnect-fhir-oauth/oauth2/authorize, token=https://fhir.epic.com/interconnect-fhir-oauth/oauth2/token.",
