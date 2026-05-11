@@ -50,14 +50,11 @@ jobs:
 
       - name: re-fetch CapStmt (anonymous)
         id: fetch
-        continue-on-error: true
         run: |
           python -m tools.fetch_capability ${{ matrix.ehr }}
-          echo "fetched=true" >> "$GITHUB_OUTPUT"
 
       - name: detect drift
         id: drift
-        if: steps.fetch.outputs.fetched == 'true'
         run: |
           if git diff --quiet -- ehrs/${{ matrix.ehr }}/CapabilityStatement.json; then
             echo "drift=false" >> "$GITHUB_OUTPUT"
