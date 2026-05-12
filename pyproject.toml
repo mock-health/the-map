@@ -35,6 +35,7 @@ dependencies = [
     "cryptography>=44",
     "python-dotenv>=1.0",
     "jsonschema>=4.20",
+    "zstandard>=0.22",
 ]
 
 [project.optional-dependencies]
