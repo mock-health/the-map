@@ -17,14 +17,29 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 EHRS = ("epic", "cerner", "meditech")
 
 # Per-vendor brands bundle paths under tests/golden/cross-vendor/. Multiple paths
-# means the fleet endpoint set is the UNION of those bundles.
+# means the fleet endpoint set is the UNION of those bundles. The HTI-1 bundle
+# is authoritative; *-luxera-augmented-* and *-npd-augmented-* dated bundles add
+# discovered endpoints absent from HTI-1 (FHIR Directory / CMS NPD). All
+# fleet addresses must be traceable to one of these.
 BRANDS_BUNDLES: dict[str, list[str]] = {
-    "epic": ["epic-r4-endpoints-2026-04-27.json", "epic-dstu2-endpoints-2026-04-27.json"],
+    "epic": [
+        "epic-r4-endpoints-2026-04-27.json",
+        "epic-dstu2-endpoints-2026-04-27.json",
+        "epic-r4-endpoints-luxera-augmented-2026-05-07.json",
+        "epic-r4-endpoints-npd-augmented-2026-05-12.json",
+    ],
     "cerner": [
         "oracle-health-provider-r4-endpoints-2026-04-27.json",
         "oracle-health-patient-r4-endpoints-2026-04-27.json",
+        "oracle-health-provider-r4-endpoints-luxera-augmented-2026-05-07.json",
+        "oracle-health-patient-r4-endpoints-luxera-augmented-2026-05-07.json",
+        "oracle-health-provider-r4-endpoints-npd-augmented-2026-05-12.json",
+        "oracle-health-patient-r4-endpoints-npd-augmented-2026-05-12.json",
     ],
-    "meditech": ["meditech-brands-2026-04-27.json"],
+    "meditech": [
+        "meditech-brands-2026-04-27.json",
+        "meditech-brands-luxera-augmented-2026-05-07.json",
+    ],
 }
 
 

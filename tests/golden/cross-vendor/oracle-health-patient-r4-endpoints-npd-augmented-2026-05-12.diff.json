@@ -1,0 +1,134 @@
+{
+  "harvest_slug": "cerner-patient",
+  "captured_date": "2026-05-12",
+  "npd_release": "2026-05-07",
+  "input_bundle": "tests/golden/cross-vendor/oracle-health-patient-r4-endpoints-2026-04-27.json",
+  "input_endpoint_count": 1359,
+  "npd_matched_count": 1457,
+  "overlap_count": 1359,
+  "net_new_count": 98,
+  "only_in_official_count": 0,
+  "sample_net_new": [
+    {
+      "address": "https://fhir-myrecord.cerner.com/dstu2",
+      "name": "TUFTS MEDICAL CENTER",
+      "npi": "1538478797",
+      "state": "MA"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/dstu2/b9b77dc1-8db8-486e-b0ce-6b2a89edb7e5",
+      "name": "CENTRASTATE MEDICAL CENTER INC",
+      "npi": "1295718450",
+      "state": "NJ"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/-PfaU8OdmNJOCEa6gZfariChFiIaTEYA/",
+      "name": "LAUREL PEDIATRICS",
+      "npi": "1154462810",
+      "state": "MD"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/00f37c04-43c3-4ddc-ac68-d7a0479d717b/",
+      "name": "ST ANTHONY'S PRIMARY CARE LLC",
+      "npi": "1235398058",
+      "state": "FL"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/021ccf32-cac0-4b15-95d2-1f0aa35704ca/",
+      "name": "JEFF PAN MD PC",
+      "npi": "1104835545",
+      "state": "NJ"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/0699f5e4-11ef-4cab-a1a5-a9d1e45fecf3/",
+      "name": "PODIATRY ASSOCIATES OF LAKE COUNTY INC",
+      "npi": "1134248172",
+      "state": "OH"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/070774ed-b306-4327-820a-1c8972c30c5d/",
+      "name": "RHEUMATOLOGY AND IMMUNOTHERAPY CENTER",
+      "npi": "1306016654",
+      "state": "WI"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/07af479d-1794-4b56-b7f8-74ad337e7233/",
+      "name": "VALLEY HEART CONSULTANTS",
+      "npi": "1831242015",
+      "state": "TX"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/0b85a188-4e79-4276-b029-bbb0ec6e4802/",
+      "name": "COUNCIL BLUFFS SURGICAL ASSOCIATES PC",
+      "npi": "1790862043",
+      "state": "IA"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/155265c8-cc75-4495-acc6-6ac5bd3a872e/",
+      "name": "CHATTANOOGA EYE INSTITUTEPC",
+      "npi": "1265622450",
+      "state": "TN"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/18845894-5a9c-4f61-b462-cea2ada953b3/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/18c2ddf7-cb55-4622-a2b3-eb9aad8f5a43/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/1ba56762-29f3-48fc-ab7a-bea5f733932b/",
+      "name": "PEDIATRIC ASSOCIATES INC",
+      "npi": "1659375079",
+      "state": "IN"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/1f7b6536-c76b-4398-ab49-8978aae098e4/",
+      "name": "MICHEL C SAMSON MD FACS PLLC",
+      "npi": "1487050365",
+      "state": "FL"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/1ff00bc8-0ecb-4ee5-8444-70f6c6b68888/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/24a392d6-e8f4-4f4c-9344-2c748653164b/",
+      "name": "TIDALHEALTH SPECIALTY CARE",
+      "npi": "1003651712",
+      "state": "MD"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/266fc0e7-96c0-4bdc-b43f-3e8aea7cea7b/",
+      "name": "KATHRYN T BALLARD MD",
+      "npi": "1790053049",
+      "state": "AZ"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/26b29267-7a91-4754-a0ab-557e7e4d37f2/",
+      "name": "AESTHETIC PLASTIC SURGERY PC",
+      "npi": "1801187802",
+      "state": "GA"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/2841d-FUNyRbAEZPU2fkwLVgAHCA3S2l/",
+      "name": "FIRST COAST INFECTIOUS DISEASE CONSULTANTS LLC",
+      "npi": "1740477843",
+      "state": "FL"
+    },
+    {
+      "address": "https://fhir-myrecord.cerner.com/r4/288e16c2-01d4-4a2a-90df-7bc0d74aa458/",
+      "name": null,
+      "npi": null,
+      "state": null
+    }
+  ],
+  "sample_only_in_official": []
+}

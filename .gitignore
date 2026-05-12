@@ -33,6 +33,12 @@ reports/*/html/
 .gstack/
 .DS_Store
 
+# --- internal planning notes (not part of the documentation product) ---
+# Strategic plans for upcoming work (long-tail EHR ingest, mock.health
+# integrations, etc.) live in PLAN.md and are intentionally local-only.
+# The repo is the published map+drift artifact; planning notes aren't.
+PLAN.md
+
 # --- LLM disambiguation cache (regenerable; one Anthropic API call per row) ---
 data/hospital-overrides/.cache/
 

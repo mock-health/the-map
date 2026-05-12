@@ -1,0 +1,14 @@
+{
+  "harvest_slug": "epic",
+  "luxera_vendor_id": "epic",
+  "host_filter": null,
+  "captured_date": "2026-05-07",
+  "official_bundle": "tests/golden/cross-vendor/epic-r4-endpoints-2026-04-27.json",
+  "official_endpoint_count": 451,
+  "luxera_matched_count": 451,
+  "overlap_count": 451,
+  "net_new_count": 0,
+  "only_in_official_count": 0,
+  "sample_net_new": [],
+  "sample_only_in_official": []
+}

@@ -13,7 +13,7 @@ EHRS := $(notdir $(wildcard ehrs/*))
 QUARTER := $(shell date +%Y)-q$(shell echo $$(( ($$(date +%-m) - 1) / 3 + 1 )))
 EXPORT_DIR := dist/data/the-map
 
-.PHONY: help install validate render render-all synthesize fetch-all-anonymous test lint typecheck export clean clean-render pos-index resolve-pos resolve-pos-llm
+.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index resolve-pos resolve-pos-llm
 
 help:
 	@echo "The Map — developer tasks"
@@ -24,6 +24,7 @@ help:
 	@echo "  make render-all           render HTML for every EHR"
 	@echo "  make synthesize EHR=epic  print the synthesized matrix"
 	@echo "  make fetch-all-anonymous  Phase A + Phase F.1 (no creds needed)"
+	@echo "  make discover-luxera      diff Luxera FHIR Directory against official brands bundles, emit *-luxera-augmented-*.json supersets for harvest"
 	@echo "  make pos-index            build data/cms-pos/hospitals-{date}.json from CMS POS CSV"
 	@echo "  make resolve-pos [EHR=]   resolve FHIR Endpoints to CMS hospitals (one EHR or all)"
 	@echo "  make resolve-pos-llm EHR= LLM disambiguation pass on top of resolve-pos (needs THE_MAP_ANTHROPIC_API_KEY)"
@@ -72,6 +73,16 @@ fetch-all-anonymous:
 	@echo "Phase F.1: anonymous brands-bundle harvest"
 	$(PY) -m tools.fetch_brands --all
 
+# Phase F.2 — discovery augmentation. Queries Luxera's FHIR Directory
+# (https://fhir-api.luxera.io) for our three EHRs, diffs against the latest
+# official brands bundles in tests/golden/cross-vendor/, and writes
+# *-luxera-augmented-{date}.json supersets that tools.harvest_production_capstmts
+# can consume. Discovery-only: we re-probe every endpoint ourselves; Luxera's
+# pre-probed CapStmts are not mirrored. Set LUXERA_API_KEY only if Luxera
+# requires one (anonymous works as of 2026-05-07).
+discover-luxera:
+	$(PY) -m tools.luxera_endpoint_discovery --all
+
 # Phase G — geographic enrichment: join FHIR Endpoints to CMS hospitals.
 # Set THE_MAP_POS_CSV to the path of POS_File_Hospital_Non_Hospital_Facilities_*.zip
 # downloaded from data.cms.gov, or pass --input to build_pos_hospital_index.
@@ -94,6 +105,43 @@ ifndef EHR
 endif
 	$(PY) -m tools.llm_disambiguate $(EHR) $(LIMIT_ARG)
 	$(PY) -m tools.resolve_endpoints_to_pos $(EHR)
+
+# Phase G.3 — CMS National Provider Directory ingest. NPD publishes a weekly
+# bulk release at directory.cms.gov. fetch-npd downloads the 5 NDJSON.zst files
+# we use (Endpoint, Organization, OrganizationAffiliation, Location,
+# PractitionerRole) into $THE_MAP_CMS_NPD_DIR (default: ~/back/data/cms-npd/).
+# Pass `make fetch-npd FETCH_ARGS="--all"` to also pull the 18GB Practitioner.
+# build-npd-index streams those files into a per-FHIR-endpoint identity JSON
+# under data/cms-npd/. resolve-npd matches each production_fleet endpoint
+# against that index and writes data/hospital-overlays/{vendor}-npd.json — the
+# NPI-side twin of resolve-pos's CCN overlay.
+fetch-npd:
+	$(PY) -m tools.fetch_cms_npd $(FETCH_ARGS)
+
+build-npd-index:
+	$(PY) -m tools.build_npd_endpoint_index $(NPD_ARGS)
+
+resolve-npd:
+ifdef EHR
+	$(PY) -m tools.resolve_endpoints_to_npd $(EHR)
+else
+	$(PY) -m tools.resolve_endpoints_to_npd --all
+endif
+
+# Rebuild ehrs/{ehr}/production_fleet.json so it picks up the latest NPD+POS
+# overlays as per-endpoint enrichment (npi/ccn/state/city/parent_org_*) and
+# per-cluster aggregates (state_distribution, recognizable_members).
+rebuild-fleet-npd:
+	@for ehr in $(EHRS); do \
+		echo "  → $$ehr"; \
+		$(PY) -m tools.analyze_fleet_drift $$ehr; \
+	done
+
+# Cross-pipeline coverage report: per-vendor counts of endpoints resolved by
+# NPD (NPI), by POS (CCN), by both, by neither. The (NPI ∩ CCN) intersection
+# validates both pipelines; (NPI ⊕ CCN) flags vendor-specific gaps.
+npd-coverage:
+	$(PY) -m tools.report_npd_coverage
 
 test:
 	$(PY) -m pytest
@@ -128,6 +176,15 @@ export:
 	@if [ -d data/hospital-overrides ]; then \
 		mkdir -p $(EXPORT_DIR)/data/hospital-overrides; \
 		cp data/hospital-overrides/*.json $(EXPORT_DIR)/data/hospital-overrides/ 2>/dev/null || true; \
+	fi
+	@if [ -d data/hospital-overlays ]; then \
+		mkdir -p $(EXPORT_DIR)/data/hospital-overlays; \
+		cp data/hospital-overlays/*.json $(EXPORT_DIR)/data/hospital-overlays/ 2>/dev/null || true; \
+	fi
+	@if [ -d data/cms-npd ]; then \
+		mkdir -p $(EXPORT_DIR)/data/cms-npd; \
+		cp data/cms-npd/*.json $(EXPORT_DIR)/data/cms-npd/ 2>/dev/null || true; \
+		cp data/cms-npd/*.md $(EXPORT_DIR)/data/cms-npd/ 2>/dev/null || true; \
 	fi
 	@$(PY) -c "import json, pathlib; \
 		root = pathlib.Path('$(EXPORT_DIR)'); \

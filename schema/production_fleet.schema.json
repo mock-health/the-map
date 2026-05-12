@@ -97,7 +97,29 @@
               "properties": {
                 "endpoint_id": { "type": "string" },
                 "address": { "type": ["string", "null"], "format": "uri" },
-                "managing_organization_name": { "type": ["string", "null"] }
+                "managing_organization_name": { "type": ["string", "null"] },
+                "npi": { "type": ["string", "null"], "description": "10-digit National Provider Identifier, from CMS NPD endpoint→Organization join. Authoritative." },
+                "ccn": { "type": ["string", "null"], "description": "CMS Certification Number, from POS hospital catalog name+address Jaccard. Authoritative for hospitals; absent for non-facility providers." },
+                "state": { "type": ["string", "null"], "description": "2-letter state from NPD Org.address or POS hospital record" },
+                "city": { "type": ["string", "null"] },
+                "parent_org_name": { "type": ["string", "null"], "description": "From NPD OrganizationAffiliation hierarchy. Picks the most-recognizable system name (e.g., 'AdventHealth' over 'AdventHealth Tampa-FL Facility 22')." },
+                "parent_org_npi": { "type": ["string", "null"] }
+              }
+            }
+          },
+          "state_distribution": {
+            "type": "object",
+            "description": "Top states represented in this cluster, derived from per-endpoint state attribution.",
+            "additionalProperties": { "type": "integer", "minimum": 0 }
+          },
+          "recognizable_members": {
+            "type": "array",
+            "description": "Up to 10 distinct organization names in this cluster, ranked so a cluster page headline reads like names a clinician would recognize: (1) NPD-catalogued parents first (strongest 'these facilities roll up to this system' signal), (2) names repeating across endpoints, (3) singletons ranked by brand-quality heuristic (penalize legal-entity suffixes like LLC/PA/INC, reward healthcare keywords Hospital/Medical Center/Children's, reward mixed-case curated names). Tied entries break alphabetically. endpoint_count is the distinct count of endpoints in this cluster that reference the name (as parent_org_name or managing_organization_name).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "endpoint_count": { "type": "integer", "minimum": 1 }
               }
             }
           }
