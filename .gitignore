@@ -42,6 +42,15 @@ PLAN.md
 # --- LLM disambiguation cache (regenerable; one Anthropic API call per row) ---
 data/hospital-overrides/.cache/
 
+# --- Bulk source-data indexes (regenerable from upstream CMS files) ---
+# Built by tools.build_nppes_index / tools.build_pecos_index. Each one is
+# 100s of MB and reconstructible deterministically from upstream data
+# (NPPES Monthly Data Dissemination + PECOS PPEF). The downstream overlay
+# files at data/hospital-overlays/ ARE committed — those are the product.
+data/cms-nppes/orgs-*.jsonl
+data/cms-nppes/fhir-endpoints-*.json
+data/cms-pecos/enrollment-*.json
+
 # --- IDE ---
 .vscode/
 .idea/
