@@ -50,6 +50,31 @@ POS_ZIP_PATTERN = re.compile(
 HOSPITAL_CATEGORY = "01"
 ACTIVE_TERMINATION_CODE = "00"
 
+# CMS Provider-of-Services facility categories (PRVDR_CTGRY_CD).
+# Source: POS Data Dictionary, code 21 reserved/internal-use only — exclude.
+# This list is the *full* set of FHIR-publishing-eligible categories: any
+# org with a CCN under one of these codes is a Medicare-certified facility
+# that COULD plausibly publish a FHIR endpoint. Hospital-only is a tight
+# subset of this; "providers" mode unions everything below.
+FHIR_RELEVANT_CATEGORIES: dict[str, str] = {
+    "01": "Hospital",
+    "02": "Skilled Nursing Facility",
+    "04": "Comprehensive Outpatient Rehab / PRTF",
+    "05": "Home Health Agency / Hospice",
+    "06": "End-Stage Renal Disease Facility",
+    "08": "Rural Health Clinic",
+    "09": "Comprehensive Outpatient Rehab Facility",
+    "10": "FQHC (legacy)",
+    "11": "FQHC",  # NB: codes 10 vs 11 vary across POS releases; include both.
+    "12": "Ambulatory Surgical Center",
+    "14": "Outpatient Physical Therapy",
+    "15": "FQHC",
+    "16": "Clinic",
+    "17": "Specialty Hospital (subset of 01)",
+    "21": "Ambulatory Surgical Center (alt)",
+    "23": "Religious Non-Medical Health Care Institution",
+}
+
 PROJECTED_FIELDS = [
     "ccn",
     "name",
@@ -58,6 +83,8 @@ PROJECTED_FIELDS = [
     "state",
     "zip",
     "phone",
+    "category_code",
+    "category_label",
     "fac_subtype_code",
     "bed_count",
     "urban_rural",
@@ -148,6 +175,7 @@ def normalize_iso_date(yyyymmdd: str) -> str:
 def project_row(row: dict) -> dict:
     # POS column dictionary: https://data.cms.gov/sites/default/files/2024-12/
     # provider-of-services-file-hospital-and-non-hospital-facilities-data-dictionary.pdf
+    cat_code = row.get("PRVDR_CTGRY_CD", "").strip()
     return {
         "ccn": row["PRVDR_NUM"].strip(),
         "name": row["FAC_NAME"].strip(),
@@ -156,6 +184,8 @@ def project_row(row: dict) -> dict:
         "state": row["STATE_CD"].strip(),
         "zip": normalize_zip(row["ZIP_CD"]),
         "phone": normalize_phone(row.get("PHNE_NUM", "")),
+        "category_code": cat_code,
+        "category_label": FHIR_RELEVANT_CATEGORIES.get(cat_code, "unknown"),
         "fac_subtype_code": row["PRVDR_CTGRY_SBTYP_CD"].strip(),
         "bed_count": _parse_int(row.get("BED_CNT")),
         "urban_rural": row.get("CBSA_URBN_RRL_IND", "").strip(),
@@ -179,7 +209,20 @@ def _parse_int(s: str | None) -> int | None:
         return None
 
 
-def build_index(input_path: Path, *, include_terminated: bool) -> list[dict]:
+def build_index(
+    input_path: Path,
+    *,
+    include_terminated: bool,
+    categories: set[str] | None = None,
+) -> tuple[list[dict], int]:
+    """Build a CCN catalog from one POS CSV.
+
+    categories: filter to these PRVDR_CTGRY_CD codes. None => hospitals only
+    (back-compat). Pass `set(FHIR_RELEVANT_CATEGORIES)` for the broader
+    provider catalog (FQHCs, ASCs, RHCs, SNFs, etc.).
+    """
+    if categories is None:
+        categories = {HOSPITAL_CATEGORY}
     text, handle = open_csv_stream(input_path)
     try:
         reader = csv.DictReader(text)
@@ -187,7 +230,7 @@ def build_index(input_path: Path, *, include_terminated: bool) -> list[dict]:
         scanned = 0
         for row in reader:
             scanned += 1
-            if row.get("PRVDR_CTGRY_CD", "").strip() != HOSPITAL_CATEGORY:
+            if row.get("PRVDR_CTGRY_CD", "").strip() not in categories:
                 continue
             if (
                 not include_terminated
@@ -211,7 +254,14 @@ def main() -> int:
     ap.add_argument(
         "--include-terminated",
         action="store_true",
-        help="Include hospitals with PGM_TRMNTN_CD != '00' (default: actives only)",
+        help="Include facilities with PGM_TRMNTN_CD != '00' (default: actives only)",
+    )
+    ap.add_argument(
+        "--categories",
+        default="hospitals",
+        help="'hospitals' (default; PRVDR_CTGRY_CD=01 only), 'all' (every "
+        "FHIR-publishing-eligible category — FQHCs, ASCs, RHCs, SNFs, ESRD, "
+        "hospice, …), or a comma-separated code list (e.g., '01,12,15').",
     )
     ap.add_argument(
         "--captured-date",
@@ -220,14 +270,34 @@ def main() -> int:
     )
     args = ap.parse_args()
 
+    if args.categories == "hospitals":
+        categories = {HOSPITAL_CATEGORY}
+        catalog_label = "hospitals"
+    elif args.categories == "all":
+        categories = set(FHIR_RELEVANT_CATEGORIES)
+        catalog_label = "providers"
+    else:
+        categories = {c.strip() for c in args.categories.split(",") if c.strip()}
+        catalog_label = "providers" if categories != {HOSPITAL_CATEGORY} else "hospitals"
+
     input_path = discover_input(args.input)
     print(f"Input: {input_path}")
 
-    rows, scanned = build_index(input_path, include_terminated=args.include_terminated)
+    rows, scanned = build_index(
+        input_path,
+        include_terminated=args.include_terminated,
+        categories=categories,
+    )
     rows.sort(key=lambda r: r["ccn"])
+    cat_counts: dict[str, int] = {}
+    for r in rows:
+        cat_counts[r["category_code"]] = cat_counts.get(r["category_code"], 0) + 1
     print(f"  scanned   : {scanned} POS rows")
-    print(f"  hospitals : {len(rows)} (PRVDR_CTGRY_CD={HOSPITAL_CATEGORY}"
+    print(f"  kept      : {len(rows)} (categories={sorted(categories)}"
           f"{', actives only' if not args.include_terminated else ', all'})")
+    if catalog_label == "providers":
+        for c, n in sorted(cat_counts.items(), key=lambda kv: -kv[1])[:10]:
+            print(f"    {c} {FHIR_RELEVANT_CATEGORIES.get(c, '?'):>40}: {n:>6}")
 
     captured_date = args.captured_date or captured_date_from_filename(input_path)
     if not captured_date:
@@ -235,13 +305,18 @@ def main() -> int:
         captured_date = datetime.date.today().isoformat()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    out_path = OUTPUT_DIR / f"hospitals-{captured_date}.json"
+    out_path = OUTPUT_DIR / f"{catalog_label}-{captured_date}.json"
+    # Keep the legacy key name `hospitals` for back-compat with
+    # resolve_endpoints_to_pos so the resolver picks up the broader catalog
+    # transparently when present.
     payload = {
         "source": "cms_provider_of_services",
         "source_filename": input_path.name,
         "captured_date": captured_date,
         "include_terminated": args.include_terminated,
-        "hospital_count": len(rows),
+        "categories_included": sorted(categories),
+        "facility_count": len(rows),
+        "facility_count_by_category": cat_counts,
         "fields": PROJECTED_FIELDS,
         "hospitals": rows,
     }

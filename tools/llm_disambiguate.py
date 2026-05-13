@@ -48,12 +48,18 @@ import time
 from pathlib import Path
 
 from tools._env import REPO_ROOT, load_env
+from tools.nucc_to_pos import filter_candidates_by_taxonomy
 
 OUT_DIR = REPO_ROOT / "data" / "hospital-overrides"
+EHRS_DIR = REPO_ROOT / "ehrs"
 CACHE_DIR = OUT_DIR / ".cache" / "llm-disambiguate"
 
 MODEL = "claude-haiku-4-5"
-SYSTEM_PROMPT_VERSION = "v1"  # bump when SYSTEM_PROMPT changes; cache key invalidates
+# Bump when SYSTEM_PROMPT changes; cache key invalidates. The candidates_hash
+# already invalidates rows whose candidate set changes (e.g., after a NUCC
+# taxonomy filter narrows the candidates), so we don't need to bump on
+# pipeline-side changes — only on prompt edits.
+SYSTEM_PROMPT_VERSION = "v1"
 
 # Anthropic SDK guidance:
 #   - Strict tool use forces the model to return well-typed structured output.
@@ -167,11 +173,18 @@ def cache_path(endpoint_id: str, c_hash: str, model: str) -> Path:
 def render_user_prompt(row: dict) -> str:
     cand_lines = []
     for i, c in enumerate(row.get("candidates") or [], 1):
+        cat_suffix = ""
+        if c.get("category_label"):
+            cat_suffix = f"  facility_type={c['category_label']!r}"
         cand_lines.append(
             f"  [{i}] ccn={c['ccn']}  name={c['name']!r}  city={c['city']!r}  "
             f"state={c['state']!r}  zip5={c.get('zip5') or ''!r}  score={c.get('score', 0):.2f}"
+            f"{cat_suffix}"
         )
     cands_text = "\n".join(cand_lines) if cand_lines else "  (none)"
+    taxonomy_line = ""
+    if row.get("_taxonomy"):
+        taxonomy_line = f"endpoint_nucc_taxonomy: {row['_taxonomy']!r}  (NPPES-derived; candidates have been pre-filtered to compatible facility types)\n"
     return (
         f"vendor: {row.get('vendor', '?')}\n"
         f"endpoint_id: {row['endpoint_id']}\n"
@@ -180,6 +193,7 @@ def render_user_prompt(row: dict) -> str:
         f"observed_city: {row.get('city') or ''!r}\n"
         f"observed_state: {row.get('state') or ''!r}\n"
         f"observed_zip5: {row.get('zip5') or ''!r}\n"
+        f"{taxonomy_line}"
         f"candidates ({len(row.get('candidates') or [])}):\n"
         f"{cands_text}\n\n"
         "Pick the best ccn from candidates, or refuse with confidence=none."
@@ -276,6 +290,63 @@ def select_rows_for_disambiguation(payload: dict) -> list[dict]:
     return rows
 
 
+def load_fleet_taxonomy_map(vendor: str) -> dict[str, str]:
+    """Build endpoint_address → NUCC taxonomy code from the published
+    production fleet. The taxonomy comes from the NPPES overlay layered in
+    by analyze_fleet_drift; missing means we don't have NPPES org identity
+    for that endpoint and the LLM filter falls back to "kept_all".
+
+    Keyed by URL because pos.json uses brand-bundle resource IDs while
+    production_fleet uses harvest slugs — different schemes. URL is the
+    universal join key.
+    """
+    fleet_path = EHRS_DIR / vendor / "production_fleet.json"
+    if not fleet_path.exists():
+        return {}
+    fleet = json.loads(fleet_path.read_text())
+    out: dict[str, str] = {}
+    for cluster in fleet.get("capstmt_shape_clusters") or []:
+        for ep in cluster.get("endpoints") or []:
+            t = ep.get("taxonomy")
+            addr = ep.get("address")
+            if t and addr:
+                out[addr.rstrip("/")] = t
+    return out
+
+
+def apply_nucc_filter(
+    rows: list[dict],
+    taxonomy_by_address: dict[str, str],
+) -> tuple[list[dict], dict[str, int]]:
+    """Narrow each row's `candidates[]` to those compatible with the
+    endpoint's NPPES taxonomy. Returns (filtered_rows, stats) where stats
+    counts the filter outcomes: kept_all / filtered / filtered_empty.
+
+    Rows whose filter empties candidates are dropped from disambiguation —
+    a hospital endpoint with no hospital-class candidates is correctly
+    classified as "no candidate is plausible," and skipping saves an API
+    call where the answer would be `none` anyway.
+    """
+    stats = {"kept_all": 0, "filtered": 0, "filtered_empty": 0, "no_taxonomy": 0}
+    out: list[dict] = []
+    for row in rows:
+        addr = (row.get("endpoint_address") or "").rstrip("/")
+        taxonomy = taxonomy_by_address.get(addr)
+        if not taxonomy:
+            stats["no_taxonomy"] += 1
+            out.append(row)
+            continue
+        filtered, status = filter_candidates_by_taxonomy(row.get("candidates") or [], taxonomy)
+        stats[status] += 1
+        if status == "filtered_empty":
+            # Don't send to LLM — no compatible candidate exists. Leave the
+            # row out (resolver keeps it as unmatched, which is correct).
+            continue
+        row = {**row, "candidates": filtered, "_taxonomy": taxonomy}
+        out.append(row)
+    return out, stats
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("vendor", choices=["cerner", "meditech", "epic"])
@@ -307,6 +378,21 @@ def main() -> int:
     todo = select_rows_for_disambiguation(payload)
     print(f"[{args.vendor}] {len(todo)} endpoints with candidates to disambiguate "
           f"(of {len(payload.get('endpoints', []))} total)")
+
+    # NUCC taxonomy filter: narrow each row's candidates to the POS facility
+    # categories compatible with the endpoint's NPPES taxonomy. Drops rows
+    # where no compatible candidate exists — they're correctly unmatchable
+    # (asking LLM would just yield "none").
+    taxonomy_map = load_fleet_taxonomy_map(args.vendor)
+    todo, filter_stats = apply_nucc_filter(todo, taxonomy_map)
+    print(
+        f"[{args.vendor}] NUCC filter: "
+        f"kept_all={filter_stats['kept_all']} (no taxonomy hit or unmapped) | "
+        f"filtered={filter_stats['filtered']} (narrowed candidates) | "
+        f"filtered_empty={filter_stats['filtered_empty']} (dropped — no compatible candidate) | "
+        f"no_taxonomy={filter_stats['no_taxonomy']} (endpoint has no NPPES taxonomy)"
+    )
+    print(f"[{args.vendor}] {len(todo)} endpoints remain for LLM")
 
     if args.dry_run:
         for r in todo[:5]:
