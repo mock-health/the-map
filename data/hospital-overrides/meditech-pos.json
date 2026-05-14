@@ -4,9 +4,9 @@
   "pos_catalog": "data/cms-pos/providers-2026-01-01.json",
   "match_summary": {
     "endpoints_total": 549,
-    "matched_unique": 366,
-    "matched_multiple": 37,
-    "unmatched": 146
+    "matched_unique": 374,
+    "matched_multiple": 52,
+    "unmatched": 123
   },
   "endpoints": [
     {
@@ -33,6 +33,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "422557",
+          "name": "ALLENDALE COUNTY DIALYSIS",
+          "city": "FAIRFAX",
+          "state": "SC",
+          "zip5": "29827",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "421837",
@@ -103,6 +113,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -193,6 +243,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "141560",
+          "name": "FHN HOSPICE",
+          "city": "FREEPORT",
+          "state": "IL",
+          "zip5": "61032",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -633,6 +693,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "282314",
+          "name": "BOX BUTTE DIALYSIS UNIT",
+          "city": "ALLIANCE",
+          "state": "NE",
+          "zip5": "69301",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -663,6 +733,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "282314",
+          "name": "BOX BUTTE DIALYSIS UNIT",
+          "city": "ALLIANCE",
+          "state": "NE",
+          "zip5": "69301",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -741,6 +821,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "042576",
+          "name": "BRADLEY COUNTY DIALYSIS",
+          "city": "WARREN",
+          "state": "AR",
+          "zip5": "71671",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "047140",
+          "name": "BRADLEY COUNTY MEDICAL CENTER HOME HEALTH Agency",
+          "city": "WARREN",
+          "state": "AR",
+          "zip5": "71671",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "048518",
@@ -941,21 +1041,21 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "491503",
+          "name": "Bon Secours Hospice",
+          "city": "SUFFOLK",
+          "state": "VA",
+          "zip5": "23435",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "493430",
           "name": "BON SECOURS LIVELY MEDICAL CENTER",
           "city": "LIVELY",
           "state": "VA",
           "zip5": "22507",
-          "score": 0.5,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "493433",
-          "name": "BON SECOURS HARTFIELD MEDICAL CENTER",
-          "city": "HARTFIELD",
-          "state": "VA",
-          "zip5": "23071",
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
@@ -1059,6 +1159,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "675887",
+          "name": "St. Joseph Manor",
+          "city": "Bryan",
+          "state": "TX",
+          "zip5": "77802",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "673065",
@@ -1255,6 +1365,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -1283,6 +1445,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -1519,6 +1721,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -1537,6 +1791,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -1565,6 +1871,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "125002",
+          "name": "HILO BENIOFF MEDICAL CENTER",
+          "city": "HILO",
+          "state": "HI",
+          "zip5": "96720",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -1585,6 +1901,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -1613,6 +1981,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "175163",
+          "name": "SOUTHWEST MEDICAL CENTER SNF",
+          "city": "LIBERAL",
+          "state": "KS",
+          "zip5": "67905",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -1713,6 +2091,16 @@
           "score": 0.4,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "167051",
+          "name": "FLOYD COUNTY PUBLIC HEALTH/ HOME HEALTH CARE",
+          "city": "CHARLES CITY",
+          "state": "IA",
+          "zip5": "50616",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -1843,6 +2231,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "255333",
+          "name": "GEORGE REGIONAL HEALTH & REHAB CENTER",
+          "city": "LUCEDALE",
+          "state": "MS",
+          "zip5": "39452",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -1983,6 +2381,46 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "28C0001019",
+          "name": "GRAND ISLAND SURGERY CENTER, LLC",
+          "city": "GRAND ISLAND",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "282523",
+          "name": "KIDNEY DIALYSIS CENTER OF GRAND ISLAND",
+          "city": "GRAND ISLAND",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "287005",
+          "name": "CHI HEALTH AT HOME - GRAND ISLAND",
+          "city": "GRAND ISLAND",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "285221",
+          "name": "Adept nursing & Rehab of Grand Island",
+          "city": "Grand Island",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2013,6 +2451,46 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "28C0001019",
+          "name": "GRAND ISLAND SURGERY CENTER, LLC",
+          "city": "GRAND ISLAND",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "282523",
+          "name": "KIDNEY DIALYSIS CENTER OF GRAND ISLAND",
+          "city": "GRAND ISLAND",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "287005",
+          "name": "CHI HEALTH AT HOME - GRAND ISLAND",
+          "city": "GRAND ISLAND",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "285221",
+          "name": "Adept nursing & Rehab of Grand Island",
+          "city": "Grand Island",
+          "state": "NE",
+          "zip5": "68803",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2043,6 +2521,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "241502",
+          "name": "Glacial Ridge Hospice",
+          "city": "GLENWOOD",
+          "state": "MN",
+          "zip5": "56334",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "247212",
+          "name": "GLACIAL RIDGE HOME CARE",
+          "city": "GLENWOOD",
+          "state": "MN",
+          "zip5": "56334",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2133,6 +2631,16 @@
           "category_label": "Ambulatory Surgical Center"
         },
         {
+          "ccn": "377418",
+          "name": "Great Plains Home Care",
+          "city": "Elk City",
+          "state": "OK",
+          "zip5": "73644",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "378526",
           "name": "GREAT PLAINS PAT WALL CLINIC",
           "city": "ELK CITY",
@@ -2171,6 +2679,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "675572",
+          "name": "Glen Rose Nursing and Rehab Center",
+          "city": "Glen Rose",
+          "state": "TX",
+          "zip5": "76043",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2219,6 +2737,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "261541",
+          "name": "Harrison County Hospice",
+          "city": "Bethany",
+          "state": "MO",
+          "zip5": "64424",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "267560",
+          "name": "Harrison County Home Health & Hospice",
+          "city": "BETHANY",
+          "state": "MO",
+          "zip5": "64424",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2309,6 +2847,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -2337,6 +2927,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "405023",
+          "name": "DAMAS HOSPITAL SNF",
+          "city": "PONCE",
+          "state": "PR",
+          "zip5": "00717",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2631,6 +3231,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "501539",
+          "name": "KLICKITAT VALLEY HEALTH",
+          "city": "GOLDENDALE",
+          "state": "WA",
+          "zip5": "98620",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2661,6 +3271,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "501539",
+          "name": "KLICKITAT VALLEY HEALTH",
+          "city": "GOLDENDALE",
+          "state": "WA",
+          "zip5": "98620",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -2917,6 +3537,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "522328",
+          "name": "MILE BLUFF DIALYSIS CENTER",
+          "city": "MAUSTON",
+          "state": "WI",
+          "zip5": "53948",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "528549",
@@ -3183,6 +3813,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "261508",
+          "name": "CITIZENS MEMORIAL HOSPICE",
+          "city": "BOLIVAR",
+          "state": "MO",
+          "zip5": "65613",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "265545",
+          "name": "CITIZENS MEMORIAL HEALTHCARE FACILITY",
+          "city": "BOLIVAR",
+          "state": "MO",
+          "zip5": "65613",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "267196",
+          "name": "CITIZENS MEMORIAL HOME HEALTH",
+          "city": "BOLIVAR",
+          "state": "MO",
+          "zip5": "65613",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -3275,6 +3935,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "515081",
+          "name": "MONTGOMERY GENERAL HOSPITAL",
+          "city": "MONTGOMERY",
+          "state": "WV",
+          "zip5": "25136",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "513429",
           "name": "MONTGOMERY PEDIATRICS",
           "city": "MONTGOMERY",
@@ -3333,6 +4003,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -3487,6 +4209,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "381521",
+          "name": "Mercy Medical Center Hospice",
+          "city": "Roseburg",
+          "state": "OR",
+          "zip5": "97471",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -3507,6 +4239,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -3565,6 +4349,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "162566",
+          "name": "PELLA DIALYSIS",
+          "city": "PELLA",
+          "state": "IA",
+          "zip5": "50219",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -3642,25 +4436,25 @@
       "endpoint_address": "https://mtmc-mtrestapis-live01.dignityhealth.org:443/v1/uscore/R4",
       "name_observed": "Glendale Memorial Hospital and Health Center",
       "npi": null,
-      "city": "Glendale",
+      "city": "GLENDALE",
       "state": "CA",
       "zip5": "91204",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "ccn": "555609",
+      "name_pos": "GLENDALE HEALTHCARE CENTER",
+      "fac_subtype_code": "16",
+      "bed_count": 48,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "050239",
-          "name": "GLENDALE ADVENTIST MEDICAL CENTER",
+          "ccn": "555609",
+          "name": "GLENDALE HEALTHCARE CENTER",
           "city": "GLENDALE",
           "state": "CA",
-          "zip5": "91206",
-          "score": 0.5,
-          "category_code": "01",
-          "category_label": "Hospital"
+          "zip5": "91204",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -3753,6 +4547,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "267186",
+          "name": "OZARKS HEALTHCARE AT HOME, HOME HEALTH",
+          "city": "WEST PLAINS",
+          "state": "MO",
+          "zip5": "65775",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "268761",
           "name": "OZARKS MEDICAL CENTER PEDIATRICS",
           "city": "WEST PLAINS",
@@ -3821,6 +4625,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "535059",
+          "name": "Star Valley Care Center",
+          "city": "Afton",
+          "state": "WY",
+          "zip5": "83110",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -3941,6 +4755,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "106070",
+          "name": "DESOTO HEALTH AND REHAB",
+          "city": "ARCADIA",
+          "state": "FL",
+          "zip5": "34266",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -3971,6 +4795,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "055462",
+          "name": "HAZEL HAWKINS MEMORIAL HOSPITAL D/P SNF",
+          "city": "HOLLISTER",
+          "state": "CA",
+          "zip5": "95023",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4151,6 +4985,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "417023",
+          "name": "South County Home Health",
+          "city": "Wakefield",
+          "state": "RI",
+          "zip5": "02879",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4427,6 +5271,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "372522",
+          "name": "DUNCAN DIALYSIS CENTER",
+          "city": "DUNCAN",
+          "state": "OK",
+          "zip5": "73533",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "373498",
           "name": "DUNCAN MEDICAL ASSOCIATES",
           "city": "DUNCAN",
@@ -4535,6 +5389,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "282315",
+          "name": "CHERRY COUNTY  HOSPITAL  DIALYSIS UNIT",
+          "city": "VALENTINE",
+          "state": "NE",
+          "zip5": "69201",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4643,6 +5507,26 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "371540",
+          "name": "Jackson County Memorial Hospital Authority",
+          "city": "Altus",
+          "state": "OK",
+          "zip5": "73521",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "377137",
+          "name": "Jackson County Memorial Hospital Authority",
+          "city": "Altus",
+          "state": "OK",
+          "zip5": "73521",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4691,6 +5575,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "142740",
+          "name": "MORRIS DIALYSIS",
+          "city": "MORRIS",
+          "state": "IL",
+          "zip5": "60450",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "142814",
+          "name": "MORRIS COMMUNITY DIALYSIS",
+          "city": "MORRIS",
+          "state": "IL",
+          "zip5": "60450",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4731,14 +5635,14 @@
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "021314",
-          "name": "SOUTHEAST ALASKA REGIONAL HEALTH CONSORTIUM",
-          "city": "SITKA",
+          "ccn": "02C0001010",
+          "name": "SOUTHEAST ALASKA SURGERY CENTER",
+          "city": "JUNEAU",
           "state": "AK",
-          "zip5": "99835",
-          "score": 1.0,
-          "category_code": "01",
-          "category_label": "Hospital"
+          "zip5": "99801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4811,6 +5715,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "392666",
+          "name": "WARREN DIALYSIS",
+          "city": "NORTH WARREN",
+          "state": "PA",
+          "zip5": "16365",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "394016",
           "name": "WARREN STATE HOSPITAL",
           "city": "NORTH WARREN",
@@ -4819,6 +5733,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "395650",
+          "name": "WARREN MANOR",
+          "city": "WARREN",
+          "state": "PA",
+          "zip5": "16365",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4849,6 +5773,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "451541",
+          "name": "GUADALUPE REGIONAL HOSPICE",
+          "city": "SEGUIN",
+          "state": "TX",
+          "zip5": "78155",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "742591",
+          "name": "GUADALUPE DIALYSIS",
+          "city": "SEGUIN",
+          "state": "TX",
+          "zip5": "78155",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4881,6 +5825,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "042517",
+          "name": "CONWAY DIALYSIS",
+          "city": "CONWAY",
+          "state": "AR",
+          "zip5": "72034",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "043033",
           "name": "CONWAY REGIONAL REHABILITATION HOSPITAL",
           "city": "CONWAY",
@@ -4899,6 +5853,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "045245",
+          "name": "CONWAY HEALTHCARE AND REHABILITATION CENTER",
+          "city": "CONWAY",
+          "state": "AR",
+          "zip5": "72034",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -4977,6 +5941,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "451675",
+          "name": "UVALDE HOSPICE",
+          "city": "UVALDE",
+          "state": "TX",
+          "zip5": "78801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "452540",
+          "name": "BMA UVALDE",
+          "city": "UVALDE",
+          "state": "TX",
+          "zip5": "78801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "675532",
+          "name": "UVALDE HEALTHCARE AND REHABILITATION CENTER",
+          "city": "UVALDE",
+          "state": "TX",
+          "zip5": "78801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5007,6 +6001,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "332599",
+          "name": "WHITE PLAINS DIALYSIS CENTER",
+          "city": "WHITE PLAINS",
+          "state": "NY",
+          "zip5": "10601",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "335878",
+          "name": "EPIC REHABILITATION AND NURSING AT WHITE PLAINS",
+          "city": "WHITE PLAINS",
+          "state": "NY",
+          "zip5": "10601",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5067,6 +6081,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0001657",
+          "name": "BAYLOR SCOTT AND WHITE SPORTS SURGERY CENTER",
+          "city": "FRISCO",
+          "state": "TX",
+          "zip5": "75034",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5145,6 +6169,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "337254",
+          "name": "SAMARITAN HOME HEALTH, INC",
+          "city": "WATERTOWN",
+          "state": "NY",
+          "zip5": "13601",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5177,6 +6211,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "392666",
+          "name": "WARREN DIALYSIS",
+          "city": "NORTH WARREN",
+          "state": "PA",
+          "zip5": "16365",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "394016",
           "name": "WARREN STATE HOSPITAL",
           "city": "NORTH WARREN",
@@ -5185,6 +6229,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "395650",
+          "name": "WARREN MANOR",
+          "city": "WARREN",
+          "state": "PA",
+          "zip5": "16365",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5198,13 +6252,13 @@
       "npi": null,
       "city": "BATESVILLE",
       "state": "AR",
-      "zip5": "72503",
-      "ccn": "040119",
-      "name_pos": "WHITE RIVER MEDICAL CENTER",
-      "fac_subtype_code": "01",
-      "bed_count": 224,
-      "match_strategy": "address_state_name",
-      "match_confidence": 1.0,
+      "zip5": "72501",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
         {
           "ccn": "048539",
@@ -5285,6 +6339,16 @@
           "score": 1.0,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "225232",
+          "name": "REGALCARE AT HOLYOKE",
+          "city": "HOLYOKE",
+          "state": "MA",
+          "zip5": "01040",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5317,6 +6381,16 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
+          "ccn": "407031",
+          "name": "PUERTO RICO HOME HEALTH",
+          "city": "QUEBRADILLAS",
+          "state": "PR",
+          "zip5": "00678",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "400138",
           "name": "PUERTO RICO WOMEN AND CHILDREN HOSPITAL LLC",
           "city": "BAYAMON",
@@ -5325,6 +6399,26 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "402529",
+          "name": "BIO MEDICAL APPLICATION OF PUERTO RICO INC",
+          "city": "ARECIBO",
+          "state": "PR",
+          "zip5": "00612",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "407051",
+          "name": "BEST OPTION HEALTHCARE PUERTO RICO",
+          "city": "SAN JUAN",
+          "state": "PR",
+          "zip5": "00909",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5415,6 +6509,26 @@
       "match_confidence": 1.0,
       "candidates": [
         {
+          "ccn": "221541",
+          "name": "BETH ISRAEL LAHEY HEALTH AT HOME",
+          "city": "DANVERS",
+          "state": "MA",
+          "zip5": "01923",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "227495",
+          "name": "BETH ISRAEL LAHEY HEALTH AT HOME",
+          "city": "BEVERLY",
+          "state": "MA",
+          "zip5": "01915",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "220086",
           "name": "BETH ISRAEL DEACONESS MEDICAL CENTER",
           "city": "BOSTON",
@@ -5440,16 +6554,6 @@
           "city": "NEEDHAM",
           "state": "MA",
           "zip5": "02494",
-          "score": 0.4,
-          "category_code": "01",
-          "category_label": "Hospital"
-        },
-        {
-          "ccn": "220108",
-          "name": "BETH ISRAEL DEACONESS HOSPITAL-MILTON INC",
-          "city": "MILTON",
-          "state": "MA",
-          "zip5": "02186",
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
@@ -5511,14 +6615,24 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "171341",
-          "name": "AMBERWELL HIAWATHA",
-          "city": "HIAWATHA",
+          "ccn": "171516",
+          "name": "Amberwell Hospice",
+          "city": "ATCHISON",
           "state": "KS",
-          "zip5": "66434",
+          "zip5": "66002",
           "score": 0.5,
-          "category_code": "01",
-          "category_label": "Hospital"
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "177181",
+          "name": "AMBERWELL HEALTH AT HOME",
+          "city": "ATCHISON",
+          "state": "KS",
+          "zip5": "66002",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5540,6 +6654,16 @@
       "match_strategy": "llm_assisted",
       "match_confidence": 1.0,
       "candidates": [
+        {
+          "ccn": "497285",
+          "name": "AUGUSTA HOME CARE,",
+          "city": "FISHERSVILLE",
+          "state": "VA",
+          "zip5": "22939",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "490018",
           "name": "AUGUSTA HEALTH",
@@ -5579,6 +6703,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "061515",
+          "name": "ARKANSAS VALLEY HOSPICE INC",
+          "city": "LA JUNTA",
+          "state": "CO",
+          "zip5": "81050",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5609,6 +6743,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "031552",
+          "name": "KINGMAN REGIONAL MEDICAL CENTER HOSPICE",
+          "city": "KINGMAN",
+          "state": "AZ",
+          "zip5": "86401",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "037050",
+          "name": "KINGMAN REGIONAL MEDICAL CENTER HOME HEALTH",
+          "city": "KINGMAN",
+          "state": "AZ",
+          "zip5": "86401",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5681,6 +6835,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "197183",
+          "name": "BEAUREGARD HOME HEALTH",
+          "city": "DERIDDER",
+          "state": "LA",
+          "zip5": "70634",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "198500",
           "name": "BEAUREGARD FAMILY MEDICAL CENTER",
           "city": "DERIDDER",
@@ -5729,6 +6893,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "225762",
+          "name": "BERKSHIRE PLACE",
+          "city": "PITTSFIELD",
+          "state": "MA",
+          "zip5": "01201",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -5979,6 +7153,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "103174",
+          "name": "BROOKS REHABILITATION HOME HEALTH",
+          "city": "Jacksonville",
+          "state": "FL",
+          "zip5": "32216",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6039,6 +7223,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "271515",
+          "name": "LOGAN HEALTH HOSPICE",
+          "city": "KALISPELL",
+          "state": "MT",
+          "zip5": "59901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6069,6 +7263,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "271515",
+          "name": "LOGAN HEALTH HOSPICE",
+          "city": "KALISPELL",
+          "state": "MT",
+          "zip5": "59901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6117,6 +7321,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "05C0001741",
+          "name": "CASA COLINA SURGERY CENTER",
+          "city": "POMONA",
+          "state": "CA",
+          "zip5": "91767",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "751088",
@@ -6245,6 +7459,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "531519",
+          "name": "Hospice of Campbell County Memorial Hospital",
+          "city": "Gillette",
+          "state": "WY",
+          "zip5": "82716",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "532305",
+          "name": "Campbell County Memorial Hospital Dialysis Center",
+          "city": "Gillette",
+          "state": "WY",
+          "zip5": "82716",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "537035",
+          "name": "Campbell County Memorial Hospital Home Health",
+          "city": "Gillette",
+          "state": "WY",
+          "zip5": "82716",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6501,6 +7745,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "111542",
+          "name": "COLQUITT REGIONAL HOSPICE",
+          "city": "MOULTRIE",
+          "state": "GA",
+          "zip5": "31768",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "112314",
+          "name": "COLQUITT REGIONAL MEDICAL CENTER DIALYSIS",
+          "city": "MOULTRIE",
+          "state": "GA",
+          "zip5": "31768",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6551,6 +7815,16 @@
           "score": 1.0,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "458056",
+          "name": "CONNALLY MEMORIAL HOME HEALTH",
+          "city": "FLORESVILLE",
+          "state": "TX",
+          "zip5": "78114",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6665,6 +7939,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "525377",
+          "name": "DOOR COUNTY MEMORIAL HOSPITAL SNF",
+          "city": "STURGEON BAY",
+          "state": "WI",
+          "zip5": "54235",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6767,54 +8051,24 @@
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "250082",
-          "name": "DELTA HEALTH SYSTEM - THE MEDICAL CENTER",
+          "ccn": "257098",
+          "name": "Delta Health-The Medical Center",
           "city": "GREENVILLE",
           "state": "MS",
-          "zip5": "38704",
+          "zip5": "38703",
           "score": 1.0,
-          "category_code": "01",
-          "category_label": "Hospital"
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
-          "ccn": "251020",
-          "name": "DELTA HEALTH CENTER, INC",
+          "ccn": "251538",
+          "name": "DELTA HEALTH- THE MEDICAL CENTER (Hospice)",
           "city": "GREENVILLE",
           "state": "MS",
-          "zip5": "38701",
-          "score": 1.0,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "251022",
-          "name": "DELTA HEALTH CENTER, INC",
-          "city": "INDIANOLA",
-          "state": "MS",
-          "zip5": "38751",
-          "score": 1.0,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "251033",
-          "name": "DELTA HEALTH CENTER, INC",
-          "city": "HOLLANDALE",
-          "state": "MS",
-          "zip5": "38748",
-          "score": 1.0,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "251094",
-          "name": "DELTA HEALTH CENTER, INC.",
-          "city": "INDIANOLA",
-          "state": "MS",
-          "zip5": "38751",
-          "score": 1.0,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
+          "zip5": "38703",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -6955,6 +8209,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "332350",
+          "name": "ERIE COUNTY MEDICAL CENTER",
+          "city": "BUFFALO",
+          "state": "NY",
+          "zip5": "14215",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "339814",
           "name": "ERIE COUNTY MEDICAL CENTER T C",
           "city": "BUFFALO",
@@ -6993,6 +8257,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "305064",
+          "name": "EXETER CENTER",
+          "city": "EXETER",
+          "state": "NH",
+          "zip5": "03833",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "305049",
+          "name": "RIVERWOODS AT EXETER",
+          "city": "EXETER",
+          "state": "NH",
+          "zip5": "03833",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7193,6 +8477,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "455831",
+          "name": "PARIS HEALTHCARE CENTER",
+          "city": "PARIS",
+          "state": "TX",
+          "zip5": "75460",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7271,6 +8565,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "395387",
+          "name": "FULTON COUNTY MEDICAL CENTER",
+          "city": "MCCONNELLSBURG",
+          "state": "PA",
+          "zip5": "17233",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "392890",
+          "name": "DIALYSIS CARE CENTER FULTON COUNTY, LLC",
+          "city": "MCCONNELLSBURG",
+          "state": "PA",
+          "zip5": "17233",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7301,6 +8615,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "332393",
+          "name": "GENEVA GENERAL HOSPITAL DIALYSIS",
+          "city": "GENEVA",
+          "state": "NY",
+          "zip5": "14456",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7451,6 +8775,16 @@
           "score": 0.6,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "512300",
+          "name": "WEST VIRGINIA UNIVERSITY HOSPITAL DIALYSIS",
+          "city": "MORGANTOWN",
+          "state": "WV",
+          "zip5": "26505",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7481,6 +8815,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "255333",
+          "name": "GEORGE REGIONAL HEALTH & REHAB CENTER",
+          "city": "LUCEDALE",
+          "state": "MS",
+          "zip5": "39452",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7541,6 +8885,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "155856",
+          "name": "RESTORACY OF GOSHEN, THE",
+          "city": "GOSHEN",
+          "state": "IN",
+          "zip5": "46526",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "15C0002002",
+          "name": "GOSHEN HEALTH SURGERY CENTER LLC",
+          "city": "GOSHEN",
+          "state": "IN",
+          "zip5": "46526",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7581,6 +8945,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "377418",
+          "name": "Great Plains Home Care",
+          "city": "Elk City",
+          "state": "OK",
+          "zip5": "73644",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "378526",
@@ -7632,16 +9006,26 @@
       "endpoint_address": "https://mtrestapis-live01.grahamhospital.org/v1/uscore/R4",
       "name_observed": "Graham Hospital",
       "npi": null,
-      "city": "Canton",
+      "city": "CANTON",
       "state": "IL",
       "zip5": "61520",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "ccn": "145572",
+      "name_pos": "GRAHAM HOSPITAL",
+      "fac_subtype_code": "17",
+      "bed_count": 50,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 1.0,
       "candidates": [
+        {
+          "ccn": "145572",
+          "name": "GRAHAM HOSPITAL",
+          "city": "CANTON",
+          "state": "IL",
+          "zip5": "61520",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "141356",
           "name": "GRAHAM HOSPITAL ASSOCIATION",
@@ -7711,6 +9095,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "065381",
+          "name": "GRAND RIVER HEALTH CARE CENTER",
+          "city": "RIFLE",
+          "state": "CO",
+          "zip5": "81650",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "063980",
@@ -7792,16 +9186,36 @@
       "endpoint_address": "https://mtrestapis-live01.gvh.org:443/v1/uscore/R4",
       "name_observed": "Grand View Hospital",
       "npi": null,
-      "city": "Sellersville",
+      "city": "SELLERSVILLE",
       "state": "PA",
       "zip5": "18960",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
+      "ccn": "391557",
+      "name_pos": "GRAND VIEW HOSPICE",
+      "fac_subtype_code": "Not Applicable",
       "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 0.6667,
       "candidates": [
+        {
+          "ccn": "391557",
+          "name": "GRAND VIEW HOSPICE",
+          "city": "SELLERSVILLE",
+          "state": "PA",
+          "zip5": "18960",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "397051",
+          "name": "GRAND VIEW HOME CARE",
+          "city": "SELLERSVILLE",
+          "state": "PA",
+          "zip5": "18960",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "390057",
           "name": "ST LUKE'S HOSPITAL - GRAND VIEW CAMPUS",
@@ -7931,6 +9345,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "145464",
+          "name": "HAMMOND-HENRY DISTRICT HSP",
+          "city": "GENESEO",
+          "state": "IL",
+          "zip5": "61254",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -7961,6 +9385,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "15C0001160",
+          "name": "HANCOCK SURGERY CENTER",
+          "city": "GREENFIELD",
+          "state": "IN",
+          "zip5": "46140",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8051,6 +9485,28 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "221596",
+          "name": "HEBREW SENIORLIFE HOSPICE CARE, INC",
+          "city": "DEDHAM",
+          "state": "MA",
+          "zip5": "02026",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "227422",
+          "name": "HEBREW SENIORLIFE - HOME HEALTH CARE",
+          "city": "DEDHAM",
+          "state": "MA",
+          "zip5": "02026",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -8079,6 +9535,46 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "012522",
+          "name": "HUNTSVILLE DIALYSIS CENTER",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "012671",
+          "name": "HUNTSVILLE HOME",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "01C0001013",
+          "name": "SURGERY CENTER OF HUNTSVILLE, THE",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "01C0001025",
+          "name": "HUNTSVILLE ENDOSCOPY CENTER, INC",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8149,6 +9645,16 @@
           "score": 1.0,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "225232",
+          "name": "REGALCARE AT HOLYOKE",
+          "city": "HOLYOKE",
+          "state": "MA",
+          "zip5": "01040",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8227,6 +9733,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "405032",
+          "name": "HOSPITAL DE LA CONCEPCION INC",
+          "city": "SAN GERMAN",
+          "state": "PR",
+          "zip5": "00683",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8335,6 +9851,26 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "50C0001137",
+          "name": "INLAND NORTHWEST SURGERY CENTER LLC",
+          "city": "SPOKANE",
+          "state": "WA",
+          "zip5": "99206",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "50X0009827",
+          "name": "NORTHWEST MOBILE SERVICES",
+          "city": "LYNNWOOD",
+          "state": "WA",
+          "zip5": "98036",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8443,6 +9979,46 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "012522",
+          "name": "HUNTSVILLE DIALYSIS CENTER",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "012671",
+          "name": "HUNTSVILLE HOME",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "01C0001013",
+          "name": "SURGERY CENTER OF HUNTSVILLE, THE",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "01C0001025",
+          "name": "HUNTSVILLE ENDOSCOPY CENTER, INC",
+          "city": "HUNTSVILLE",
+          "state": "AL",
+          "zip5": "35801",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8543,6 +10119,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "271515",
+          "name": "LOGAN HEALTH HOSPICE",
+          "city": "KALISPELL",
+          "state": "MT",
+          "zip5": "59901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8603,6 +10189,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "265429",
+          "name": "LAKE REGIONAL HEALTH SYSTEMS",
+          "city": "OSAGE BEACH",
+          "state": "MO",
+          "zip5": "65065",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "261672",
+          "name": "LAKE REGIONAL HOSPICE",
+          "city": "OSAGE BEACH",
+          "state": "MO",
+          "zip5": "65065",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8633,6 +10239,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "195617",
+          "name": "THE LODGE AT LANE",
+          "city": "ZACHARY",
+          "state": "LA",
+          "zip5": "70791",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8693,6 +10309,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "331540",
+          "name": "LEWIS COUNTY GENERAL HOSPITAL HOSPICE",
+          "city": "LOWVILLE",
+          "state": "NY",
+          "zip5": "13367",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "337136",
+          "name": "LEWIS COUNTY GENERAL HOSPITAL CHHA",
+          "city": "LOWVILLE",
+          "state": "NY",
+          "zip5": "13367",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "335428",
+          "name": "LEWIS COUNTY GENERAL HOSPITAL-NURSING HOME UNIT",
+          "city": "LOWVILLE",
+          "state": "NY",
+          "zip5": "13367",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -8714,6 +10360,26 @@
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
       "candidates": [
+        {
+          "ccn": "392822",
+          "name": "MILLCREEK DIALYSIS",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "396072",
+          "name": "Millcreek Manor",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "39L624",
           "name": "MILLCREEK COMMUNITY HOSPITAL PRTF",
@@ -8753,6 +10419,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "365202",
+          "name": "CARECORE AT LIMA",
+          "city": "LIMA",
+          "state": "OH",
+          "zip5": "45804",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9202,15 +10878,67 @@
       "endpoint_address": "https://mtrestapis-live01.mhcs.us:443/v1/uscore/R4",
       "name_observed": "Memorial Health Care Systems",
       "npi": null,
-      "city": "Seward",
+      "city": "Aurora",
       "state": "NE",
-      "zip5": "68434",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "zip5": "68818",
+      "ccn": "28E191",
+      "name_pos": "Memorial Community Care",
+      "fac_subtype_code": "19",
+      "bed_count": 48,
+      "match_strategy": "address_state_name",
+      "match_confidence": 1.0,
+      "candidates": [
+        {
+          "ccn": "28E191",
+          "name": "Memorial Community Care",
+          "city": "Aurora",
+          "state": "NE",
+          "zip5": "68818",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "285116",
+          "name": "Clarkson Community Care Center Inc",
+          "city": "Clarkson",
+          "state": "NE",
+          "zip5": "68629",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "285151",
+          "name": "Wisner Care Center",
+          "city": "Wisner",
+          "state": "NE",
+          "zip5": "68791",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "285172",
+          "name": "Wilber Care Center",
+          "city": "Wilber",
+          "state": "NE",
+          "zip5": "68465",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "285201",
+          "name": "Cloverlodge Care Center",
+          "city": "St Edward",
+          "state": "NE",
+          "zip5": "68660",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -9239,6 +10967,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "362563",
+          "name": "MARIETTA DIALYSIS",
+          "city": "MARIETTA",
+          "state": "OH",
+          "zip5": "45750",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "365687",
+          "name": "ARBORS AT MARIETTA",
+          "city": "MARIETTA",
+          "state": "OH",
+          "zip5": "45750",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "36C0001144",
+          "name": "MARIETTA SURGERY CENTER",
+          "city": "MARIETTA",
+          "state": "OH",
+          "zip5": "45750",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9297,6 +11055,16 @@
           "score": 1.0,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "392537",
+          "name": "MEADVILLE DIALYSIS",
+          "city": "MEADVILLE",
+          "state": "PA",
+          "zip5": "16335",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9327,6 +11095,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "271515",
+          "name": "LOGAN HEALTH HOSPICE",
+          "city": "KALISPELL",
+          "state": "MT",
+          "zip5": "59901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9497,6 +11275,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "25C0001043",
+          "name": "Magnolia Endoscopy Center",
+          "city": "CORINTH",
+          "state": "MS",
+          "zip5": "38834",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9563,6 +11351,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "181523",
+          "name": "Murray Calloway County Hospital Hospice",
+          "city": "MURRAY",
+          "state": "KY",
+          "zip5": "42071",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9861,6 +11659,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "275112",
+          "name": "NORTHERN MONTANA CARE CENTER",
+          "city": "HAVRE",
+          "state": "MT",
+          "zip5": "59501",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9891,6 +11699,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "231534",
+          "name": "Trinity Health At Home - Grand Haven",
+          "city": "Grand Haven",
+          "state": "MI",
+          "zip5": "49417",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "232563",
+          "name": "PDI-GRAND HAVEN",
+          "city": "GRAND HAVEN",
+          "state": "MI",
+          "zip5": "49417",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "23C0001139",
+          "name": "Spectrum Health Grand Haven Center",
+          "city": "Grand Haven",
+          "state": "MI",
+          "zip5": "49417",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -9902,15 +11740,27 @@
       "endpoint_address": "https://mtrestapis-live01.northbrookbhh.com:443/v1/uscore/R4",
       "name_observed": "Elmwood Hills Healthcare Center",
       "npi": null,
-      "city": "Blackwood",
+      "city": "BLACKWOOD",
       "state": "NJ",
       "zip5": "08012",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "ccn": "315159",
+      "name_pos": "ELMWOOD HILLS HEALTHCARE CENTER LLC",
+      "fac_subtype_code": "16",
+      "bed_count": 300,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 1.0,
+      "candidates": [
+        {
+          "ccn": "315159",
+          "name": "ELMWOOD HILLS HEALTHCARE CENTER LLC",
+          "city": "BLACKWOOD",
+          "state": "NJ",
+          "zip5": "08012",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -9939,6 +11789,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "245384",
+          "name": "NORTH SHORE HEALTH",
+          "city": "GRAND MARAIS",
+          "state": "MN",
+          "zip5": "55604",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "247004",
+          "name": "NORTH SHORE HEALTH",
+          "city": "GRAND MARAIS",
+          "state": "MN",
+          "zip5": "55604",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10209,6 +12079,36 @@
           "score": 0.6667,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "36C0001040",
+          "name": "North East Ohio Endoscopy Center Inc",
+          "city": "CANTON",
+          "state": "OH",
+          "zip5": "44718",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "362520",
+          "name": "FRESENIUS MEDICAL CARE CENTRAL OHIO EAST",
+          "city": "COLUMBUS",
+          "state": "OH",
+          "zip5": "43213",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "362569",
+          "name": "OHIO RENAL CARE GROUP EAST",
+          "city": "CLEVELAND",
+          "state": "OH",
+          "zip5": "44104",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10249,6 +12149,16 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "515187",
+          "name": "PRINCETON HEALTH CARE CENTER",
+          "city": "PRINCETON",
+          "state": "WV",
+          "zip5": "24740",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10269,6 +12179,28 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "457596",
+          "name": "PERMIAN REGIONAL MEDICAL CENTER HOME HEALTH",
+          "city": "ANDREWS",
+          "state": "TX",
+          "zip5": "79714",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "741545",
+          "name": "PERMIAN REGIONAL MEDICAL CENTER HOSPICE",
+          "city": "ANDREWS",
+          "state": "TX",
+          "zip5": "79714",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -10297,6 +12229,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "671585",
+          "name": "PETERSON HOSPICE",
+          "city": "KERRVILLE",
+          "state": "TX",
+          "zip5": "78028",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10327,6 +12269,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "455961",
+          "name": "PALO PINTO NURSING CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10365,6 +12317,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "147105",
+          "name": "PRESENCE HOME CARE-KANKAKEE",
+          "city": "Kankakee",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -10393,6 +12357,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "055001",
+          "name": "Redlands Healthcare Center",
+          "city": "Redlands",
+          "state": "CA",
+          "zip5": "92373",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "051534",
+          "name": "HOSPICE OF REDLANDS COMMUNITY HOSPITAL",
+          "city": "REDLANDS",
+          "state": "CA",
+          "zip5": "92373",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10643,6 +12627,26 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "366096",
+          "name": "SALEM WEST HEALTHCARE CENTER",
+          "city": "SALEM",
+          "state": "OH",
+          "zip5": "44460",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "366104",
+          "name": "SALEM NORTH HEALTHCARE CENTER",
+          "city": "SALEM",
+          "state": "OH",
+          "zip5": "44460",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "721130",
           "name": "CAA HEALTH CENTER AT SALEM",
           "city": "PATMOS",
@@ -10771,6 +12775,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "177053",
+          "name": "SUSAN B ALLEN MEM HOSPITAL HHA",
+          "city": "EL DORADO",
+          "state": "KS",
+          "zip5": "67042",
+          "score": 0.6,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10801,6 +12815,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "042303",
+          "name": "ST BERNARDS  MEDICAL CENTER JONESBORO DIALYSIS",
+          "city": "JONESBORO",
+          "state": "AR",
+          "zip5": "72401",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "047033",
+          "name": "ST BERNARDS HOME CARE",
+          "city": "JONESBORO",
+          "state": "AR",
+          "zip5": "72401",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "041512",
+          "name": "ST BERNARDS REGIONAL MED CTR H",
+          "city": "JONESBORO",
+          "state": "AR",
+          "zip5": "72401",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10831,6 +12875,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "151529",
+          "name": "SCHNECK MEDICAL CENTER HOSPICE",
+          "city": "SEYMOUR",
+          "state": "IN",
+          "zip5": "47274",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10871,6 +12925,16 @@
           "score": 1.0,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "245225",
+          "name": "SLEEPY EYE REHABILITATI CENTER",
+          "city": "SLEEPY EYE",
+          "state": "MN",
+          "zip5": "56085",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -10909,6 +12973,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "056466",
+          "name": "SIERRA VIEW CARE CENTER",
+          "city": "BALDWIN PARK",
+          "state": "CA",
+          "zip5": "91706",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -11059,6 +13135,26 @@
       "match_confidence": 0.0,
       "candidates": [
         {
+          "ccn": "241524",
+          "name": "ASPIRUS ST. LUKE'S AT HOME-HOSPICE-DULUTH",
+          "city": "DULUTH",
+          "state": "MN",
+          "zip5": "55805",
+          "score": 0.4286,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "247098",
+          "name": "ASPIRUS ST. LUKE'S AT HOME - HOME CARE - DULUTH",
+          "city": "DULUTH",
+          "state": "MN",
+          "zip5": "55805",
+          "score": 0.4286,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "240002",
           "name": "ESSENTIA HEALTH ST MARY'S MEDICAL CENTER",
           "city": "DULUTH",
@@ -11097,6 +13193,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "065239",
+          "name": "SAN LUIS CARE CENTER",
+          "city": "ALAMOSA",
+          "state": "CO",
+          "zip5": "81101",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11381,6 +13487,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11411,6 +13527,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "271515",
+          "name": "LOGAN HEALTH HOSPICE",
+          "city": "KALISPELL",
+          "state": "MT",
+          "zip5": "59901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11471,6 +13597,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "472301",
+          "name": "SOUTHWESTERN VERMONT RENAL CENTER",
+          "city": "BENNINGTON",
+          "state": "VT",
+          "zip5": "05201",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11501,6 +13637,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "052602",
+          "name": "SALINAS VALLEY DIALYSIS CENTER",
+          "city": "SALINAS",
+          "state": "CA",
+          "zip5": "93901",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "055739",
+          "name": "SALINAS VALLEY POST ACUTE",
+          "city": "SALINAS",
+          "state": "CA",
+          "zip5": "93901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11619,6 +13775,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "502604",
+          "name": "TRI-STATE HEALTH SERVICES",
+          "city": "CLARKSTON",
+          "state": "WA",
+          "zip5": "99403",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11639,6 +13805,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "392825",
+          "name": "TYRONE DIALYSIS",
+          "city": "TYRONE",
+          "state": "PA",
+          "zip5": "16686",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -11743,6 +13921,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "047052",
+          "name": "UNITY HEALTH HOMECARE",
+          "city": "NEWPORT",
+          "state": "AR",
+          "zip5": "72112",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11813,6 +14001,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "311522",
+          "name": "VALLEY HOSPICE",
+          "city": "PARAMUS",
+          "state": "NJ",
+          "zip5": "07652",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11845,6 +14043,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "056183",
+          "name": "Valley Healthcare Center",
+          "city": "San Bernardino",
+          "state": "CA",
+          "zip5": "92404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "551103",
           "name": "VALLEY CENTER",
           "city": "VALLEY CENTER",
@@ -11863,6 +14071,16 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "555229",
+          "name": "VALLEY HEALTHCARE CENTER",
+          "city": "BAKERSFIELD",
+          "state": "CA",
+          "zip5": "93304",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11893,6 +14111,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "175100",
+          "name": "VIA CHRISTI VILLAGE MANHATTAN, INC",
+          "city": "MANHATTAN",
+          "state": "KS",
+          "zip5": "66502",
+          "score": 0.6,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -11923,6 +14151,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "675395",
+          "name": "VAL VERDE NURSING AND REHABILITATION CENTER",
+          "city": "DEL RIO",
+          "state": "TX",
+          "zip5": "78840",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "452557",
+          "name": "FRESENIUS KIDNEY CARE VAL VERDE",
+          "city": "DEL RIO",
+          "state": "TX",
+          "zip5": "78840",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "673431",
@@ -12003,6 +14251,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "362840",
+          "name": "WOOSTER DIALYSIS",
+          "city": "WOOSTER",
+          "state": "OH",
+          "zip5": "44691",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "366405",
+          "name": "WOOSTER COMMUNITY HOSPITAL SNF",
+          "city": "WOOSTER",
+          "state": "OH",
+          "zip5": "44691",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "366463",
+          "name": "AVENUE AT WOOSTER",
+          "city": "WOOSTER",
+          "state": "OH",
+          "zip5": "44691",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12093,6 +14371,16 @@
           "score": 0.6,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "405025",
+          "name": "CENTRO MEDICO WILMA N VAZQUEZ SNF",
+          "city": "VEGA BAJA",
+          "state": "PR",
+          "zip5": "00693",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12163,6 +14451,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "195622",
+          "name": "WILLIS-KNIGHTON EXTENDED CARE CENTER",
+          "city": "SHREVEPORT",
+          "state": "LA",
+          "zip5": "71103",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "197056",
+          "name": "HME HLTH DEPT WILLIS KNIGHTON",
+          "city": "SHREVEPORT",
+          "state": "LA",
+          "zip5": "71103",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12271,6 +14579,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "235381",
+          "name": "MyMichigan Medical Center Sault",
+          "city": "Sault Ste. Marie",
+          "state": "MI",
+          "zip5": "49783",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12285,22 +14603,62 @@
       "city": "CUMBERLAND",
       "state": "MD",
       "zip5": "21502",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
+      "ccn": "211534",
+      "name_pos": "UPMC Western Maryland",
+      "fac_subtype_code": "Not Applicable",
       "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "212002",
-          "name": "WESTERN MARYLAND HOSPITAL CENTER",
-          "city": "HAGERSTOWN",
+          "ccn": "211534",
+          "name": "UPMC Western Maryland",
+          "city": "CUMBERLAND",
           "state": "MD",
-          "zip5": "21742",
-          "score": 0.6667,
-          "category_code": "01",
-          "category_label": "Hospital"
+          "zip5": "21502",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "212302",
+          "name": "UPMC WESTERN MARYLAND CORPORATION",
+          "city": "CUMBERLAND",
+          "state": "MD",
+          "zip5": "21502",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "217031",
+          "name": "UPMC WESTERN MARYLAND",
+          "city": "CUMBERLAND",
+          "state": "MD",
+          "zip5": "21502",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "21C0001198",
+          "name": "WESTERN MARYLAND SURGICENTER",
+          "city": "CUMBERLAND",
+          "state": "MD",
+          "zip5": "21502",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "21C0001521",
+          "name": "SURGCENTER OF WESTERN MARYLAND, LLC",
+          "city": "CUMBERLAND",
+          "state": "MD",
+          "zip5": "21502",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12379,6 +14737,26 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "301518",
+          "name": "NORTH COUNTRY HOME HEALTH & HOSPICE AGENCY",
+          "city": "LITTLETON",
+          "state": "NH",
+          "zip5": "03561",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "307009",
+          "name": "NORTH COUNTRY HOME HEALTH & HOSPICE AGENCY",
+          "city": "LITTLETON",
+          "state": "NH",
+          "zip5": "03561",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12519,6 +14897,26 @@
       "match_confidence": 0.0,
       "candidates": [
         {
+          "ccn": "392822",
+          "name": "MILLCREEK DIALYSIS",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "396072",
+          "name": "Millcreek Manor",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "39L624",
           "name": "MILLCREEK COMMUNITY HOSPITAL PRTF",
           "city": "ERIE",
@@ -12597,6 +14995,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "402533",
+          "name": "THE RENAL CENTRE OF MANATI",
+          "city": "MANATI",
+          "state": "PR",
+          "zip5": "00674",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -12715,6 +15125,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "147105",
+          "name": "PRESENCE HOME CARE-KANKAKEE",
+          "city": "Kankakee",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -12743,6 +15165,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "151529",
+          "name": "SCHNECK MEDICAL CENTER HOSPICE",
+          "city": "SEYMOUR",
+          "state": "IN",
+          "zip5": "47274",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12823,6 +15255,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12863,6 +15305,26 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "195319",
+          "name": "Thibodaux Healthcare and Rehabilitation Center",
+          "city": "THIBODAUX",
+          "state": "LA",
+          "zip5": "70301",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "19C0001082",
+          "name": "THIBODAUX ENDOSCOPY LLC",
+          "city": "THIBODAUX",
+          "state": "LA",
+          "zip5": "70301",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -12971,6 +15433,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "147105",
+          "name": "PRESENCE HOME CARE-KANKAKEE",
+          "city": "Kankakee",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13019,6 +15493,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13067,6 +15551,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "175100",
+          "name": "VIA CHRISTI VILLAGE MANHATTAN, INC",
+          "city": "MANHATTAN",
+          "state": "KS",
+          "zip5": "66502",
+          "score": 0.6,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13087,6 +15581,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "147105",
+          "name": "PRESENCE HOME CARE-KANKAKEE",
+          "city": "Kankakee",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13135,6 +15641,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13173,6 +15689,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "147105",
+          "name": "PRESENCE HOME CARE-KANKAKEE",
+          "city": "Kankakee",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13221,6 +15749,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13259,6 +15797,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "147105",
+          "name": "PRESENCE HOME CARE-KANKAKEE",
+          "city": "Kankakee",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13307,6 +15857,16 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13509,13 +16069,23 @@
       "city": "FREDERICKSBURG",
       "state": "TX",
       "zip5": "78624",
-      "ccn": "450604",
-      "name_pos": "HILL COUNTRY MEMORIAL HOSPITAL",
-      "fac_subtype_code": "01",
-      "bed_count": 84,
+      "ccn": "457216",
+      "name_pos": "Methodist Healthcare Hill Country Healthcare at Home",
+      "fac_subtype_code": "Not Applicable",
+      "bed_count": null,
       "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.6667,
+      "match_confidence": 0.75,
       "candidates": [
+        {
+          "ccn": "457216",
+          "name": "Methodist Healthcare Hill Country Healthcare at Home",
+          "city": "FREDERICKSBURG",
+          "state": "TX",
+          "zip5": "78624",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "450604",
           "name": "HILL COUNTRY MEMORIAL HOSPITAL",
@@ -13525,6 +16095,26 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "451600",
+          "name": "Methodist Healthcare Hill Country Hospice & Family Care",
+          "city": "FREDERICKSBURG",
+          "state": "TX",
+          "zip5": "78624",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "45C0451318",
+          "name": "Legent Hill Country ASC",
+          "city": "FREDERICKSBURG",
+          "state": "TX",
+          "zip5": "78624",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13585,6 +16175,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "047153",
+          "name": "JOHNSON REGIONAL HOMECARE",
+          "city": "CLARKSVILLE",
+          "state": "AR",
+          "zip5": "72830",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13596,16 +16196,26 @@
       "endpoint_address": "https://mtrestexpapis-live01.nlh.org:443/v1/uscore/R4",
       "name_observed": "Nathan Littauer Hospital & Nursing Home",
       "npi": null,
-      "city": "Gloversville",
+      "city": "GLOVERSVILLE",
       "state": "NY",
       "zip5": "12078",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "ccn": "335351",
+      "name_pos": "NATHAN LITTAUER HOSPITAL NURSING HOME",
+      "fac_subtype_code": "16",
+      "bed_count": 84,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 1.0,
       "candidates": [
+        {
+          "ccn": "335351",
+          "name": "NATHAN LITTAUER HOSPITAL NURSING HOME",
+          "city": "GLOVERSVILLE",
+          "state": "NY",
+          "zip5": "12078",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "330276",
           "name": "NATHAN LITTAUER HOSPITAL",
@@ -13771,6 +16381,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -13801,6 +16451,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "322519",
+          "name": "SOUTHEASTERN NEW MEXICO KIDNEY CENTER",
+          "city": "ROSWELL",
+          "state": "NM",
+          "zip5": "88201",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14035,6 +16695,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "181518",
+          "name": "HOSPICE OF OHIO County",
+          "city": "HARTFORD",
+          "state": "KY",
+          "zip5": "42347",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14046,25 +16716,25 @@
       "endpoint_address": "https://ohh-mtapislive.trinityhealth.com:443/v1/uscore/R4",
       "name_observed": "Trinity Health System",
       "npi": null,
-      "city": "Steubenville",
+      "city": "BEAVERCREEK",
       "state": "OH",
-      "zip5": "43952",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "zip5": "45440",
+      "ccn": "365777",
+      "name_pos": "TRINITY COMMUNITY",
+      "fac_subtype_code": "16",
+      "bed_count": 95,
+      "match_strategy": "address_state_name",
+      "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "363451",
-          "name": "TRINITY HEALTH SYSTEM-CADIZ",
-          "city": "CADIZ",
+          "ccn": "367135",
+          "name": "TRINITY HOME HEALTH",
+          "city": "STEUBENVILLE",
           "state": "OH",
-          "zip5": "43907",
+          "zip5": "43952",
           "score": 0.5,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14115,6 +16785,26 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "372552",
+          "name": "RCG PONCA CITY",
+          "city": "PONCA CITY",
+          "state": "OK",
+          "zip5": "74601",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "375439",
+          "name": "PONCA CITY NURSING & REHABILITATION CENTER",
+          "city": "PONCA CITY",
+          "state": "OK",
+          "zip5": "74601",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14187,6 +16877,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "345004",
+          "name": "PERSON MEMORIAL HOSPITAL",
+          "city": "ROXBORO",
+          "state": "NC",
+          "zip5": "27573",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
           "ccn": "341814",
           "name": "PERSON FAMILY MEDICAL",
           "city": "ROXBORO",
@@ -14225,6 +16925,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "232347",
+          "name": "PORTAGE HEALTH DIALYSIS CENTER",
+          "city": "HANCOCK",
+          "state": "MI",
+          "zip5": "49930",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14275,6 +16985,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -14439,6 +17201,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "175159",
+          "name": "PROVIDENCE PLACE",
+          "city": "KANSAS CITY",
+          "state": "KS",
+          "zip5": "66112",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14489,6 +17261,58 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "057497",
+          "name": "PRIME NURSING SERVICES",
+          "city": "LOS ANGELES",
+          "state": "CA",
+          "zip5": "90010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559058",
+          "name": "A PRIME HOME HEALTH SERVICES INC",
+          "city": "CAMARILLO",
+          "state": "CA",
+          "zip5": "93010",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "559406",
+          "name": "PRIME CARE HEALTH SERVICES, INC",
+          "city": "Carson",
+          "state": "CA",
+          "zip5": "90746",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757953",
+          "name": "Prime Care Services, Inc",
+          "city": "VAN NUYS",
+          "state": "CA",
+          "zip5": "91411",
+          "score": 0.6667,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "757479",
+          "name": "Regional Health Services, Inc.",
+          "city": "Valley Village",
+          "state": "CA",
+          "zip5": "91607",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -14547,6 +17371,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "055001",
+          "name": "Redlands Healthcare Center",
+          "city": "Redlands",
+          "state": "CA",
+          "zip5": "92373",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "051534",
+          "name": "HOSPICE OF REDLANDS COMMUNITY HOSPITAL",
+          "city": "REDLANDS",
+          "state": "CA",
+          "zip5": "92373",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "552578",
+          "name": "Redlands Dialysis",
+          "city": "Redlands",
+          "state": "CA",
+          "zip5": "92374",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14558,16 +17412,26 @@
       "endpoint_address": "https://restapi-cuylive.csauh.com/v1/uscore/R4",
       "name_observed": "St. Vincent Charity Medical Center",
       "npi": null,
-      "city": "Cleveland",
+      "city": "FAIRVIEW PARK",
       "state": "OH",
-      "zip5": "44115",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
+      "zip5": "44126",
+      "ccn": "368231",
+      "name_pos": "ST VINCENT CHARITY HOMECARE",
+      "fac_subtype_code": "Not Applicable",
       "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "match_strategy": "address_state_name",
+      "match_confidence": 0.75,
       "candidates": [
+        {
+          "ccn": "368231",
+          "name": "ST VINCENT CHARITY HOMECARE",
+          "city": "FAIRVIEW PARK",
+          "state": "OH",
+          "zip5": "44126",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
         {
           "ccn": "360112",
           "name": "MERCY HEALTH ST VINCENT MEDICAL CENTER",
@@ -14577,6 +17441,16 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "362314",
+          "name": "MERCY HEALTH ST VINCENT MEDICAL CENTER ESRD",
+          "city": "TOLEDO",
+          "state": "OH",
+          "zip5": "43608",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -14588,15 +17462,15 @@
       "endpoint_address": "https://restapi-live.sjchs.org:443/v1/uscore/R4",
       "name_observed": "St. Joseph's/Candler Health System, Inc.",
       "npi": null,
-      "city": "PEMBROKE",
+      "city": "Savannah",
       "state": "GA",
-      "zip5": "31321",
-      "ccn": "113841",
-      "name_pos": "ST. JOSEPH'S/CANDLER MEDICAL GROUP",
-      "fac_subtype_code": "01",
+      "zip5": "31405",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "address_state_name",
-      "match_confidence": 0.8,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
         {
           "ccn": "113841",
@@ -14607,6 +17481,26 @@
           "score": 0.8,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "117082",
+          "name": "ST JOSEPH'S/ CANDLER HOME HEALTHCARE",
+          "city": "HINESVILLE",
+          "state": "GA",
+          "zip5": "31313",
+          "score": 0.8,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "117143",
+          "name": "ST JOSEPH'S/CANDLER HOME HEALTHCARE, INC",
+          "city": "SAVANNAH",
+          "state": "GA",
+          "zip5": "31406",
+          "score": 0.8,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "110043",
@@ -14705,6 +17599,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "515099",
+          "name": "ROANE GENERAL HOSPITAL",
+          "city": "SPENCER",
+          "state": "WV",
+          "zip5": "25276",
+          "score": 1.0,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "513408",
@@ -15109,6 +18013,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "417023",
+          "name": "South County Home Health",
+          "city": "Wakefield",
+          "state": "RI",
+          "zip5": "02879",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15199,6 +18113,36 @@
           "score": 1.0,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "072504",
+          "name": "STAMFORD DIALYSIS",
+          "city": "STAMFORD",
+          "state": "CT",
+          "zip5": "06902",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "075061",
+          "name": "STAMFORD CARE CENTER",
+          "city": "STAMFORD",
+          "state": "CT",
+          "zip5": "06902",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "07C0001061",
+          "name": "Stamford Asc Llc",
+          "city": "STAMFORD",
+          "state": "CT",
+          "zip5": "06902",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15349,6 +18293,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "175159",
+          "name": "PROVIDENCE PLACE",
+          "city": "KANSAS CITY",
+          "state": "KS",
+          "zip5": "66112",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15417,6 +18371,16 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "175127",
+          "name": "LEGACY AT SALINA",
+          "city": "SALINA",
+          "state": "KS",
+          "zip5": "67401",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15467,6 +18431,26 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "145878",
+          "name": "ST PATRICK'S RESIDENCE",
+          "city": "NAPERVILLE",
+          "state": "IL",
+          "zip5": "60563",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "146122",
+          "name": "ST PAUL'S SENIOR COMMUNITY",
+          "city": "BELLEVILLE",
+          "state": "IL",
+          "zip5": "62220",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15575,6 +18559,36 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "27C0001016",
+          "name": "GREAT FALLS CLINIC SURGERY CENTER, LLC",
+          "city": "GREAT FALLS",
+          "state": "MT",
+          "zip5": "59405",
+          "score": 0.75,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "272512",
+          "name": "FRESENIUS GREAT FALLS CLINIC DIALYSIS",
+          "city": "GREAT FALLS",
+          "state": "MT",
+          "zip5": "59405",
+          "score": 0.6,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "272509",
+          "name": "GREAT FALLS DIALYSIS",
+          "city": "GREAT FALLS",
+          "state": "MT",
+          "zip5": "59405",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15605,6 +18619,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15653,6 +18707,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15734,17 +18828,29 @@
       "endpoint_address": "https://stprestapis-live01.sphealth.org:443/v1/uscore/R4",
       "name_observed": "Saint Peter's Health",
       "npi": null,
-      "city": "Helena",
+      "city": "HELENA",
       "state": "MT",
       "zip5": "59601",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
+      "ccn": "272300",
+      "name_pos": "ST PETER'S COMMUNITY HOSPITAL ESRD",
+      "fac_subtype_code": "55",
       "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "match_strategy": "llm_assisted",
+      "match_confidence": 1.0,
+      "candidates": [
+        {
+          "ccn": "272300",
+          "name": "ST PETER'S COMMUNITY HOSPITAL ESRD",
+          "city": "HELENA",
+          "state": "MT",
+          "zip5": "59601",
+          "score": 0.4,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        }
+      ],
       "vendor": "meditech",
-      "verified_via": "cms_pos_csv",
+      "verified_via": "llm_assisted",
       "verified_date": "2026-05-14"
     },
     {
@@ -15771,6 +18877,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15801,6 +18947,46 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "45C0451300",
+          "name": "CHRISTUS HEART CENTER",
+          "city": "CORPUS CHRISTI",
+          "state": "TX",
+          "zip5": "78404",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "677544",
+          "name": "CHRISTUS HOMECARE",
+          "city": "NEW BRAUNFELS",
+          "state": "TX",
+          "zip5": "78130",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "679505",
+          "name": "CHRISTUS HomeCare",
+          "city": "LUFKIN",
+          "state": "TX",
+          "zip5": "75901",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "743197",
+          "name": "CHRISTUS HOMECARE",
+          "city": "TYLER",
+          "state": "TX",
+          "zip5": "75701",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -15831,6 +19017,26 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "366131",
+          "name": "BELLEVUE CARE CENTER",
+          "city": "BELLEVUE",
+          "state": "OH",
+          "zip5": "44811",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "366365",
+          "name": "WILLOWS AT BELLEVUE",
+          "city": "BELLEVUE",
+          "state": "OH",
+          "zip5": "44811",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         },
         {
           "ccn": "721036",
@@ -16045,6 +19251,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "525333",
+          "name": "WATERTOWN HEALTH CARE CENTER",
+          "city": "WATERTOWN",
+          "state": "WI",
+          "zip5": "53098",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",
@@ -16213,6 +19429,36 @@
           "score": 1.0,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "341532",
+          "name": "HOSPICE OF WILSON MEDICAL CENTER",
+          "city": "WILSON",
+          "state": "NC",
+          "zip5": "27893",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "342507",
+          "name": "WILSON DIALYSIS",
+          "city": "WILSON",
+          "state": "NC",
+          "zip5": "27893",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
+        },
+        {
+          "ccn": "345332",
+          "name": "Wilson Healthcare and Rehabilitation Center",
+          "city": "Wilson",
+          "state": "NC",
+          "zip5": "27893",
+          "score": 0.5,
+          "category_code": "iqies",
+          "category_label": "iQIES (LTC / post-acute)"
         }
       ],
       "vendor": "meditech",

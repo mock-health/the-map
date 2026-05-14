@@ -202,19 +202,27 @@ def archive_provenance(
     files: list[Path] | None = None,
     captured_at: str | None = None,
     extra: dict[str, Any] | None = None,
+    filename: str = PROVENANCE_FILENAME,
 ) -> Path:
-    """Write ``out_dir/.provenance.json`` and return its path.
+    """Write ``out_dir/<filename>`` and return its path.
 
     If ``files`` is provided, each entry's size and sha256 are recomputed
     from disk so the provenance record describes exactly what currently
     exists in ``out_dir`` (idempotent across re-runs that skip cached
-    downloads). Hidden files (``.provenance.json``, ``.partial`` sidecars)
-    are excluded automatically.
+    downloads). Hidden files (``.provenance*.json``, ``.partial`` sidecars)
+    are excluded automatically from the auto-discovery path.
+
+    ``filename`` lets a single dated dir hold provenance for multiple
+    upstream sources side-by-side (e.g. ``.provenance-qies.json`` and
+    ``.provenance-iqies.json``) without clobbering each other.
     """
     if files is None:
         files = sorted(
             p for p in out_dir.iterdir()
-            if p.is_file() and not p.name.startswith(".") and not p.name.endswith(".partial")
+            if p.is_file()
+            and not p.name.startswith(".")
+            and not p.name.endswith(".partial")
+            and not (p.name.startswith("provenance") and p.name.endswith(".json"))
         )
 
     file_entries = []
@@ -239,7 +247,7 @@ def archive_provenance(
     if extra:
         record.update(extra)
 
-    path = out_dir / PROVENANCE_FILENAME
+    path = out_dir / filename
     path.write_text(json.dumps(record, indent=2) + "\n")
     return path
 

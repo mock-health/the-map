@@ -92,6 +92,8 @@ def fetch(
     else:
         stream_download(url, dest)
 
+    # Per-source provenance filename so a single dated dir can hold the QIES
+    # and iQIES extracts side-by-side without one fetch overwriting the other.
     archive_provenance(
         out_dir,
         dataset=DATASET,
@@ -104,6 +106,7 @@ def fetch(
             "distribution_title": dist["distribution_title"],
             "dataset_identifier": dist["dataset_identifier"],
         },
+        filename=f".provenance-{source}.json",
     )
     print(f"Done. {dest}")
     return out_dir

@@ -1,16 +1,16 @@
 {
   "vendor": "epic",
-  "generated_at": "2026-05-14T17:00:05+00:00",
+  "generated_at": "2026-05-14T17:25:11+00:00",
   "source_nppes_release": "2026-02-08",
   "summary": {
     "fleet_total": 555,
-    "matched": 389,
-    "matched_with_npi": 389,
-    "unmatched": 166,
+    "matched": 391,
+    "matched_with_npi": 391,
+    "unmatched": 164,
     "by_strategy": {
-      "org_name_state": 96,
-      "org_name_fuzzy_state": 254,
-      "org_name_unique": 10,
+      "org_name_state": 97,
+      "org_name_fuzzy_state": 256,
+      "org_name_unique": 9,
       "hostname_registered": 14,
       "canonical_url": 15
     }
@@ -1950,6 +1950,20 @@
       "taxonomy": "170300000X"
     },
     {
+      "endpoint_id": "epicproxy.et0876.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
+      "endpoint_address": "https://epicproxy.et0876.epichosted.com/FHIRProxyPRD/api/FHIR/R4",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "low",
+      "npi": "1235459058",
+      "org_name_nppes": "LEGACY HEALTH SERVICES",
+      "state": "WI",
+      "city": "MILWAUKEE",
+      "postal_code": "532123676",
+      "address_line": "1915 N. MLK JR. DRIVE",
+      "taxonomy": "251B00000X",
+      "fuzzy_score": 88
+    },
+    {
       "endpoint_id": "epicproxy.mhsjvl.org_FHIRproxy_api_FHIR_R4",
       "endpoint_address": "https://epicproxy.mhsjvl.org/FHIRproxy/api/FHIR/R4/",
       "match_strategy": "org_name_fuzzy_state",
@@ -2353,8 +2367,8 @@
     {
       "endpoint_id": "epicproxy.et0883.epichosted.com_FHIRProxy_api_FHIR_R4",
       "endpoint_address": "https://epicproxy.et0883.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "match_strategy": "org_name_unique",
-      "confidence": "medium",
+      "match_strategy": "org_name_state",
+      "confidence": "high",
       "npi": "1619627114",
       "org_name_nppes": "ONE BROOKLYN HEALTH SYSTEM INC",
       "state": "NY",
@@ -2708,6 +2722,20 @@
       "address_line": "1100 REID PKWY",
       "taxonomy": "282N00000X",
       "fuzzy_score": 100
+    },
+    {
+      "endpoint_id": "ep-rpfg.rivhs.com_Interconnect-FHIR-PRD_api_FHIR_R4",
+      "endpoint_address": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "low",
+      "npi": "1588605380",
+      "org_name_nppes": "SP NEWPORT NEWS, LLC",
+      "state": "VA",
+      "city": "NEWPORT NEWS",
+      "postal_code": "236026913",
+      "address_line": "12997 NETTLES DR",
+      "taxonomy": "314000000X",
+      "fuzzy_score": 88
     },
     {
       "endpoint_id": "rpprod.riversidehealthcare.net_FHIRPRD_api_FHIR_R4",
