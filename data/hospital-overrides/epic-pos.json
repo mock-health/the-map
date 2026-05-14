@@ -1,6 +1,6 @@
 {
   "vendor": "epic",
-  "captured_date": "2026-05-12",
+  "captured_date": "2026-05-14",
   "pos_catalog": "data/cms-pos/providers-2025-06-01.json",
   "match_summary": {
     "endpoints_total": 739,
@@ -107,7 +107,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7265770b-0a31-ec11-9155-001dd8b71f19",
@@ -125,7 +125,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f92d2a8b-da25-ec11-9152-001dd8b71f19",
@@ -143,7 +143,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2ce5767c-ed04-eb11-9130-001dd8b71f1a",
@@ -183,7 +183,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c6b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -283,7 +283,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f2c16039-d37a-eb11-9144-001dd8b71f19",
@@ -301,7 +301,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1d374bca-fdd4-eb11-9149-001dd8b71f19",
@@ -401,7 +401,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e27ab767-cb13-eb11-9130-001dd8b71f1a",
@@ -431,7 +431,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9c766868-6636-eb11-9135-001dd8b71f1a",
@@ -511,7 +511,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ceb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -571,7 +571,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d789a35f-d3ce-eb11-9149-001dd8b71f19",
@@ -661,7 +661,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "344ed595-5e6d-eb11-9143-001dd8b71f19",
@@ -679,7 +679,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "722f674a-bc26-ec11-9152-001dd8b71f19",
@@ -729,7 +729,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e3aa9c3b-6917-ec11-9150-001dd8b71f19",
@@ -747,7 +747,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d1b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -765,7 +765,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a827fa04-dd90-eb11-9144-001dd8b71f19",
@@ -865,7 +865,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "45c27bfc-dc25-ec11-9152-001dd8b71f19",
@@ -945,7 +945,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0ba4ffb5-f0b4-ec11-9150-001dd8b71f1a",
@@ -975,7 +975,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "36da8e0f-9915-ec11-9150-001dd8b71f19",
@@ -1025,7 +1025,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b4087ebe-fc96-eb11-9145-001dd8b71f19",
@@ -1125,7 +1125,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4e94b278-c72a-ec11-9152-001dd8b71f19",
@@ -1175,7 +1175,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dce47f24-281b-ec11-9150-001dd8b71f19",
@@ -1255,7 +1255,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dbb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -1305,7 +1305,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dcb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -1323,7 +1323,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "93e84fd6-ce77-eb11-9143-001dd8b71f19",
@@ -1423,7 +1423,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c7eba562-3254-eb11-9141-001dd8b71f19",
@@ -1493,7 +1493,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3b0fbe1d-66d4-eb11-9149-001dd8b71f19",
@@ -1593,7 +1593,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e7a7a41b-d91b-ec11-9150-001dd8b71f19",
@@ -1693,7 +1693,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cea7acee-83ad-ed11-915b-001dd8b71f1a",
@@ -1723,7 +1723,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4ad8cf0d-fe87-eb11-9144-001dd8b71f19",
@@ -1783,7 +1783,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "65635fc6-1601-ec11-914b-001dd8b71f19",
@@ -1813,7 +1813,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "582077b5-6dbc-ee11-9169-001dd8b73101",
@@ -1913,7 +1913,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e3b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2013,7 +2013,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e5b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2043,7 +2043,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e6b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2061,7 +2061,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eab565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2151,7 +2151,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "edb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2201,7 +2201,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "95e29194-2d88-eb11-9144-001dd8b71f19",
@@ -2301,7 +2301,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "efb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2319,7 +2319,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "24755363-e2d8-eb11-9149-001dd8b71f19",
@@ -2337,7 +2337,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "797c9092-7b28-ec11-9152-001dd8b71f19",
@@ -2417,7 +2417,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f4b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2497,7 +2497,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "55c316f0-49d0-eb11-9149-001dd8b71f19",
@@ -2527,7 +2527,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f7b565c7-0c38-ec11-9155-001dd8b71f19",
@@ -2627,7 +2627,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fd4a6e76-bf1a-ec11-9150-001dd8b71f19",
@@ -2727,7 +2727,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "00fc6b17-712a-eb11-9135-001dd8b71f1a",
@@ -2827,7 +2827,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9355839c-629d-eb11-9145-001dd8b71f19",
@@ -2845,7 +2845,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2ff92d02-5cbd-eb11-913d-001dd8b71f1a",
@@ -2945,7 +2945,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9578c3af-0ec6-ee11-9169-001dd8b73101",
@@ -3005,7 +3005,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fdb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -3055,7 +3055,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "36ae67b7-f819-eb11-9135-001dd8b71f1a",
@@ -3073,7 +3073,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "61fe9007-7dca-eb11-9149-001dd8b71f19",
@@ -3103,7 +3103,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c4d2cf19-dcf8-eb11-914b-001dd8b71f19",
@@ -3203,7 +3203,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "feb565c7-0c38-ec11-9155-001dd8b71f19",
@@ -3303,7 +3303,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "03b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -3343,7 +3343,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "04b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -3373,7 +3373,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fac7c00c-fb19-ec11-9150-001dd8b71f19",
@@ -3423,7 +3423,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "50f9ecb0-b114-eb11-9130-001dd8b71f1a",
@@ -3523,7 +3523,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "08b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -3563,7 +3563,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d77a0aa1-632c-ec11-9152-001dd8b71f19",
@@ -3593,7 +3593,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bf43c2aa-b413-eb11-9130-001dd8b71f1a",
@@ -3623,7 +3623,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0bb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -3641,7 +3641,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0db665c7-0c38-ec11-9155-001dd8b71f19",
@@ -3671,7 +3671,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6bf1ca9f-f819-ec11-9150-001dd8b71f19",
@@ -3721,7 +3721,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9f42d6d0-f819-ec11-9150-001dd8b71f19",
@@ -3739,7 +3739,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "701cac38-f919-ec11-9150-001dd8b71f19",
@@ -3757,7 +3757,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "21b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -3775,7 +3775,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a95880df-060f-f011-91ed-0050568bc890",
@@ -3793,7 +3793,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6c0b96c1-e222-ec11-9150-001dd8b71f19",
@@ -3853,7 +3853,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e7625ad2-5fb3-eb11-913d-001dd8b71f1a",
@@ -3923,7 +3923,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "67c84243-80f0-eb11-914b-001dd8b71f19",
@@ -3973,7 +3973,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "48b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -4073,7 +4073,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "58ec6835-6ad4-eb11-9149-001dd8b71f19",
@@ -4103,7 +4103,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "339b4a1b-fe19-ec11-9150-001dd8b71f19",
@@ -4153,7 +4153,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "37d4a2f9-ba1c-ec11-9150-001dd8b71f19",
@@ -4193,7 +4193,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4bb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -4293,7 +4293,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dffbdf22-d5d2-eb11-9149-001dd8b71f19",
@@ -4393,7 +4393,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0a7b631f-fa75-eb11-9143-001dd8b71f19",
@@ -4493,7 +4493,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d3f0b8cb-1d05-ec11-9141-001dd8b71f1a",
@@ -4543,7 +4543,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "063da454-f587-eb11-9144-001dd8b71f19",
@@ -4573,7 +4573,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4f86d85e-fa16-ec11-9150-001dd8b71f19",
@@ -4673,7 +4673,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e286037a-c990-eb11-9144-001dd8b71f19",
@@ -4691,7 +4691,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "52b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -4709,7 +4709,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "54b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -4809,7 +4809,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "56b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -4869,7 +4869,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0aab163e-d31a-eb11-9135-001dd8b71f1a",
@@ -4969,7 +4969,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "70b7d6cb-0bf7-ec11-9155-001dd8b71f1a",
@@ -5069,7 +5069,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5484fbfe-d80a-ec11-914d-001dd8b71f19",
@@ -5159,7 +5159,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "91a5d87f-2967-eb11-9143-001dd8b71f19",
@@ -5259,7 +5259,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5cb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -5359,7 +5359,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b330bd2a-0273-eb11-9143-001dd8b71f19",
@@ -5459,7 +5459,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b02bd13f-2e96-eb11-9145-001dd8b71f19",
@@ -5559,7 +5559,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a8d8bb18-0cd9-eb11-9149-001dd8b71f19",
@@ -5659,7 +5659,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5eb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -5759,7 +5759,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "61b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -5859,7 +5859,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d7e628a1-8c92-eb11-9145-001dd8b71f19",
@@ -5959,7 +5959,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "974eac44-9afe-eb11-914b-001dd8b71f19",
@@ -6019,7 +6019,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "32566f74-7237-ec11-9155-001dd8b71f19",
@@ -6079,7 +6079,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "adf5c533-c217-eb11-9135-001dd8b71f1a",
@@ -6179,7 +6179,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e4a24d79-9b15-ec11-9150-001dd8b71f19",
@@ -6279,7 +6279,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e9abb664-6e36-eb11-9135-001dd8b71f1a",
@@ -6379,7 +6379,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "708e9f76-9e90-eb11-9144-001dd8b71f19",
@@ -6479,7 +6479,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "68b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -6497,7 +6497,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6cb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -6547,7 +6547,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6db665c7-0c38-ec11-9155-001dd8b71f19",
@@ -6647,7 +6647,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6fb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -6747,7 +6747,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cfe15ef1-d7b8-eb11-913d-001dd8b71f1a",
@@ -6847,7 +6847,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c15635b7-f2ae-ed11-915b-001dd8b71f1a",
@@ -6937,7 +6937,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "84b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -6997,7 +6997,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ea973520-f685-eb11-9144-001dd8b71f19",
@@ -7097,7 +7097,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b1764137-f685-eb11-9144-001dd8b71f19",
@@ -7197,7 +7197,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "678f8851-f685-eb11-9144-001dd8b71f19",
@@ -7297,7 +7297,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "67ebf4f9-6d5b-eb11-9138-001dd8b71f1a",
@@ -7397,7 +7397,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eaa7e823-5212-ec11-9150-001dd8b71f19",
@@ -7497,7 +7497,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e7956987-62b7-eb11-913d-001dd8b71f1a",
@@ -7527,7 +7527,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e48fb8f9-b1da-eb11-9149-001dd8b71f19",
@@ -7557,7 +7557,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6839ded7-30ca-eb11-9149-001dd8b71f19",
@@ -7657,7 +7657,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2f9a72f5-2f75-eb11-9143-001dd8b71f19",
@@ -7737,7 +7737,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "88b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -7807,7 +7807,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8ffe515d-d831-ec11-9155-001dd8b71f19",
@@ -7907,7 +7907,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dde2879e-c92a-ec11-9152-001dd8b71f19",
@@ -8007,7 +8007,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e0fbe108-3c16-ec11-9150-001dd8b71f19",
@@ -8077,7 +8077,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "348dbcc1-f579-ef11-919c-0050568bc890",
@@ -8167,7 +8167,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "59797504-4c54-eb11-9141-001dd8b71f19",
@@ -8267,7 +8267,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "70c2d451-3325-eb11-9135-001dd8b71f1a",
@@ -8367,7 +8367,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0bc93f0e-c3cb-ec11-9155-001dd8b71f1a",
@@ -8427,7 +8427,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8eb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -8527,7 +8527,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a9428986-0681-eb11-9144-001dd8b71f19",
@@ -8627,7 +8627,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "92b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -8645,7 +8645,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "360ef78d-6678-eb11-9143-001dd8b71f19",
@@ -8675,7 +8675,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8c411d37-5e33-ec11-9155-001dd8b71f19",
@@ -8765,7 +8765,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a324354d-e822-ec11-9150-001dd8b71f19",
@@ -8783,7 +8783,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "93b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -8883,7 +8883,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "84b7aea1-1b1b-ec11-9150-001dd8b71f19",
@@ -8953,7 +8953,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c6f38870-cb3c-ec11-9155-001dd8b71f19",
@@ -8983,7 +8983,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "583df01b-5f42-ec11-914e-001dd8b71f1a",
@@ -9023,7 +9023,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6f069249-e210-ec11-914d-001dd8b71f19",
@@ -9073,7 +9073,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "97b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -9173,7 +9173,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a337e555-3d3b-ec11-9155-001dd8b71f19",
@@ -9191,7 +9191,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "777e020c-7661-eb11-9143-001dd8b71f19",
@@ -9291,7 +9291,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6b54288b-7437-ec11-9155-001dd8b71f19",
@@ -9341,7 +9341,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9cb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -9421,7 +9421,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "051f04e1-272d-ec11-9152-001dd8b71f19",
@@ -9521,7 +9521,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "94f95b7c-96a7-eb11-913d-001dd8b71f1a",
@@ -9621,7 +9621,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "49444a90-96a7-eb11-913d-001dd8b71f1a",
@@ -9701,7 +9701,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1c26aa22-c664-eb11-9143-001dd8b71f19",
@@ -9741,7 +9741,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "65e98da3-8c21-ec11-9150-001dd8b71f19",
@@ -9781,7 +9781,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9fb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -9799,7 +9799,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "45e89e1e-f61d-eb11-9135-001dd8b71f1a",
@@ -9869,7 +9869,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7f5057da-4ed4-eb11-9149-001dd8b71f19",
@@ -9969,7 +9969,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a1b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -10019,7 +10019,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2d5e326d-f685-eb11-9144-001dd8b71f19",
@@ -10037,7 +10037,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ada1e579-38d7-ee11-9169-001dd8b73101",
@@ -10137,7 +10137,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a5b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -10167,7 +10167,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "634584ab-db25-ec11-9152-001dd8b71f19",
@@ -10237,7 +10237,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d31ed225-920d-eb11-9130-001dd8b71f1a",
@@ -10337,7 +10337,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "647e170d-3192-eb11-9145-001dd8b71f19",
@@ -10367,7 +10367,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e7b652bb-6309-eb11-9130-001dd8b71f1a",
@@ -10467,7 +10467,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a6b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -10485,7 +10485,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e3d3969f-581c-ec11-9150-001dd8b71f19",
@@ -10585,7 +10585,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "13215798-3804-ec11-9141-001dd8b71f1a",
@@ -10625,7 +10625,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "aab665c7-0c38-ec11-9155-001dd8b71f19",
@@ -10725,7 +10725,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "35da096d-708d-eb11-9144-001dd8b71f19",
@@ -10825,7 +10825,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4507699b-7af0-eb11-914b-001dd8b71f19",
@@ -10925,7 +10925,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "105b2091-cb38-eb11-9135-001dd8b71f1a",
@@ -10943,7 +10943,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "63d3cbf7-fc25-eb11-9135-001dd8b71f1a",
@@ -10973,7 +10973,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "aeb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11023,7 +11023,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b0b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11073,7 +11073,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b2b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11173,7 +11173,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b4b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11273,7 +11273,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "84477dfc-5028-eb11-9135-001dd8b71f1a",
@@ -11313,7 +11313,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b7b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11343,7 +11343,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b8b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11443,7 +11443,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "47e43b94-206b-eb11-9143-001dd8b71f19",
@@ -11483,7 +11483,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b9b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11501,7 +11501,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "36a5bbf3-672b-eb11-9135-001dd8b71f1a",
@@ -11551,7 +11551,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4e7fddc0-3f19-eb11-9135-001dd8b71f1a",
@@ -11621,7 +11621,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f1eb9ee0-6ad4-eb11-9149-001dd8b71f19",
@@ -11721,7 +11721,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bdb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11821,7 +11821,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c0b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11839,7 +11839,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c2b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -11939,7 +11939,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c3b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -12039,7 +12039,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1c52eb56-7233-ec11-9155-001dd8b71f19",
@@ -12099,7 +12099,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a15417b2-47d0-eb11-9149-001dd8b71f19",
@@ -12149,7 +12149,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "16535d3c-8991-eb11-9145-001dd8b71f19",
@@ -12179,7 +12179,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c8b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -12279,7 +12279,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d96c4d19-07eb-eb11-914b-001dd8b71f19",
@@ -12309,7 +12309,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f47228d4-34af-eb11-913d-001dd8b71f1a",
@@ -12409,7 +12409,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cbb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -12469,7 +12469,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e4b44121-ec04-ec11-9141-001dd8b71f1a",
@@ -12539,7 +12539,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5b1f3d29-3904-ec11-9141-001dd8b71f1a",
@@ -12557,7 +12557,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "efd2d7f5-fdd4-eb11-9149-001dd8b71f19",
@@ -12575,7 +12575,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b43ff408-fed4-eb11-9149-001dd8b71f19",
@@ -12675,7 +12675,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "87b8371b-fed4-eb11-9149-001dd8b71f19",
@@ -12693,7 +12693,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7fa2c829-fed4-eb11-9149-001dd8b71f19",
@@ -12711,7 +12711,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "165d8839-fed4-eb11-9149-001dd8b71f19",
@@ -12729,7 +12729,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2092494a-fed4-eb11-9149-001dd8b71f19",
@@ -12747,7 +12747,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5ed1d406-2a96-eb11-9145-001dd8b71f19",
@@ -12777,7 +12777,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fd4fff31-338b-eb11-9144-001dd8b71f19",
@@ -12795,7 +12795,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "28fd8fc8-3904-ec11-9141-001dd8b71f1a",
@@ -12813,7 +12813,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cdb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -12913,7 +12913,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "85a29101-f52d-ec11-9152-001dd8b71f19",
@@ -12931,7 +12931,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0d497f1d-5f2b-ec11-9152-001dd8b71f19",
@@ -13031,7 +13031,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "204fe4a4-f081-eb11-9144-001dd8b71f19",
@@ -13101,7 +13101,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cfb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13201,7 +13201,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "04c110f2-2ecc-ee11-9169-001dd8b73101",
@@ -13301,7 +13301,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ddecad78-9f0a-ec11-9141-001dd8b71f1a",
@@ -13401,7 +13401,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d0b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13451,7 +13451,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "41f85cd2-6226-ec11-9152-001dd8b71f19",
@@ -13481,7 +13481,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0497e043-650a-ec11-9141-001dd8b71f1a",
@@ -13561,7 +13561,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "48957985-e7d0-ee11-9169-001dd8b73101",
@@ -13611,7 +13611,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4c6c39dd-ba0c-ec11-914d-001dd8b71f19",
@@ -13671,7 +13671,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f9bcc24c-9f2b-ec11-9152-001dd8b71f19",
@@ -13701,7 +13701,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d3b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13719,7 +13719,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d6b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13799,7 +13799,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d8b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13817,7 +13817,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dab665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13857,7 +13857,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dcb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -13957,7 +13957,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "208e69b8-81ad-ed11-915b-001dd8b71f1a",
@@ -14007,7 +14007,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dfb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14047,7 +14047,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e0b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14147,7 +14147,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e1b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14247,7 +14247,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "70aa745a-d71e-eb11-9135-001dd8b71f1a",
@@ -14347,7 +14347,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e2b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14387,7 +14387,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bb16e9a0-2a3e-ef11-916c-001dd8b73101",
@@ -14437,7 +14437,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e5b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14537,7 +14537,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e7b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14597,7 +14597,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eab665c7-0c38-ec11-9155-001dd8b71f19",
@@ -14615,7 +14615,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e3091461-b106-ec11-9141-001dd8b71f1a",
@@ -14715,7 +14715,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "842ab6ba-cf40-ed11-9156-001dd8b71f1a",
@@ -14815,7 +14815,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "00962025-d040-ed11-9156-001dd8b71f1a",
@@ -14915,7 +14915,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ecb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -15015,7 +15015,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eeb665c7-0c38-ec11-9155-001dd8b71f19",
@@ -15095,7 +15095,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "27f1cfd6-720b-ec11-914d-001dd8b71f19",
@@ -15125,7 +15125,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b7d85431-cc2a-ec11-9152-001dd8b71f19",
@@ -15225,7 +15225,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f1b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -15295,7 +15295,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "286c9e1e-5f0a-ec11-9141-001dd8b71f1a",
@@ -15395,7 +15395,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6e5e3720-610a-ec11-9141-001dd8b71f1a",
@@ -15413,7 +15413,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5e68c14e-610a-ec11-9141-001dd8b71f1a",
@@ -15431,7 +15431,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "33e28b50-2d97-eb11-9145-001dd8b71f19",
@@ -15531,7 +15531,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b48c575a-a482-eb11-9144-001dd8b71f19",
@@ -15561,7 +15561,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "768382c4-11fd-ea11-9130-001dd8b71f1a",
@@ -15661,7 +15661,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1399a87e-3822-ec11-9150-001dd8b71f19",
@@ -15761,7 +15761,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f6b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -15801,7 +15801,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f9b665c7-0c38-ec11-9155-001dd8b71f19",
@@ -15901,7 +15901,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "72bfe8a6-d040-ed11-9156-001dd8b71f1a",
@@ -16001,7 +16001,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "56c916b5-019f-eb11-9145-001dd8b71f19",
@@ -16071,7 +16071,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8d5c6491-c81b-ec11-9150-001dd8b71f19",
@@ -16121,7 +16121,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ab359b13-2a25-ec11-9152-001dd8b71f19",
@@ -16151,7 +16151,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "00b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -16169,7 +16169,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a63a82bd-3f1a-ec11-9150-001dd8b71f19",
@@ -16269,7 +16269,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "01b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -16309,7 +16309,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "04b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -16327,7 +16327,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dbd5b29c-ab1c-ec11-9150-001dd8b71f19",
@@ -16427,7 +16427,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "07b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -16457,7 +16457,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "08b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -16475,7 +16475,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4e274da7-5f2c-ec11-9152-001dd8b71f19",
@@ -16575,7 +16575,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c031622-a932-ec11-9155-001dd8b71f19",
@@ -16655,7 +16655,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "59adc2a9-7d8e-eb11-9144-001dd8b71f19",
@@ -16755,7 +16755,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "485187b9-2e96-eb11-9145-001dd8b71f19",
@@ -16805,7 +16805,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b3b42edb-421a-ec11-9150-001dd8b71f19",
@@ -16835,7 +16835,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a1007ce9-622c-ec11-9152-001dd8b71f19",
@@ -16935,7 +16935,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "aa1e9c2a-21d3-eb11-9149-001dd8b71f19",
@@ -17035,7 +17035,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "26f65ec4-8d2d-eb11-9135-001dd8b71f1a",
@@ -17085,7 +17085,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cb58401b-7699-eb11-9145-001dd8b71f19",
@@ -17155,7 +17155,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "11b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -17255,7 +17255,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7ac5a0f0-5296-eb11-9145-001dd8b71f19",
@@ -17295,7 +17295,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "12b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -17335,7 +17335,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "13b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -17385,7 +17385,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0692116d-bb26-ec11-9152-001dd8b71f19",
@@ -17485,7 +17485,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "15b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -17545,7 +17545,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "17b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -17585,7 +17585,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c9508a06-8a39-eb11-9135-001dd8b71f1a",
@@ -17625,7 +17625,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f0d01e27-6426-ec11-9152-001dd8b71f19",
@@ -17725,7 +17725,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6fee39a9-8127-ec11-9152-001dd8b71f19",
@@ -17825,7 +17825,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e8ecf969-a91c-ec11-9150-001dd8b71f19",
@@ -17925,7 +17925,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "78efa6a7-e090-eb11-9144-001dd8b71f19",
@@ -17995,7 +17995,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7e0a87fd-2b51-eb11-9135-001dd8b71f1a",
@@ -18025,7 +18025,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e9869033-0678-ee11-9164-001dd8b71f1a",
@@ -18125,7 +18125,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "18b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18225,7 +18225,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "19b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18325,7 +18325,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1bb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18425,7 +18425,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "21b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18465,7 +18465,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ed5fa91e-312c-ec11-9152-001dd8b71f19",
@@ -18565,7 +18565,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "23b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18665,7 +18665,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "26b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18695,7 +18695,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "90fbcb0e-64d0-ec11-9155-001dd8b71f1a",
@@ -18713,7 +18713,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0f4a5ef9-f1a9-eb11-913d-001dd8b71f1a",
@@ -18793,7 +18793,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2bb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -18823,7 +18823,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "585817c4-54af-eb11-913d-001dd8b71f1a",
@@ -18853,7 +18853,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3a9d3fea-7d18-eb11-9135-001dd8b71f1a",
@@ -18893,7 +18893,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "67186f3f-1e8e-ee11-9164-001dd8b71f1a",
@@ -18993,7 +18993,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f185dcbc-b4da-eb11-9149-001dd8b71f19",
@@ -19093,7 +19093,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "31b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19193,7 +19193,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "147fdb3a-2276-eb11-9143-001dd8b71f19",
@@ -19211,7 +19211,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "33b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19311,7 +19311,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "34b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19411,7 +19411,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "38b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19429,7 +19429,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b39cbeb8-7678-eb11-9143-001dd8b71f19",
@@ -19529,7 +19529,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2d1e360b-035c-eb11-9138-001dd8b71f1a",
@@ -19569,7 +19569,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "612182b9-860d-eb11-9130-001dd8b71f1a",
@@ -19609,7 +19609,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3eb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19709,7 +19709,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "40b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19809,7 +19809,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "43b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19839,7 +19839,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "47b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -19939,7 +19939,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cd9b8850-db25-ec11-9152-001dd8b71f19",
@@ -20039,7 +20039,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4eb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -20057,7 +20057,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d8a78b0e-c990-eb11-9144-001dd8b71f19",
@@ -20087,7 +20087,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3b64c07d-e6e4-eb11-9149-001dd8b71f19",
@@ -20137,7 +20137,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "52b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -20207,7 +20207,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9c70b3a2-8027-ec11-9152-001dd8b71f19",
@@ -20277,7 +20277,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "85863409-9f8c-eb11-9144-001dd8b71f19",
@@ -20347,7 +20347,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8bf9a956-5dc5-eb11-913d-001dd8b71f1a",
@@ -20397,7 +20397,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "54b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -20477,7 +20477,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "55b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -20517,7 +20517,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "be16415b-4172-eb11-9143-001dd8b71f19",
@@ -20617,7 +20617,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0f3294e8-fb7d-ec11-9150-001dd8b71f1a",
@@ -20667,7 +20667,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "00d3177b-561c-ec11-9150-001dd8b71f19",
@@ -20717,7 +20717,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5ab765c7-0c38-ec11-9155-001dd8b71f19",
@@ -20757,7 +20757,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5cb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -20857,7 +20857,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "52383cfa-c4a9-eb11-913d-001dd8b71f1a",
@@ -20957,7 +20957,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6335c73e-fd11-ec11-9150-001dd8b71f19",
@@ -20997,7 +20997,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "61b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -21027,7 +21027,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "08d8fb3c-f845-ef11-916c-001dd8b73101",
@@ -21057,7 +21057,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "36d0c026-ee37-ec11-9155-001dd8b71f19",
@@ -21157,7 +21157,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "986deb26-3a1a-eb11-9135-001dd8b71f1a",
@@ -21257,7 +21257,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2aeb1beb-d0fa-eb11-914b-001dd8b71f19",
@@ -21357,7 +21357,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "02d2e8f3-471a-ec11-9150-001dd8b71f19",
@@ -21407,7 +21407,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9ec37168-915a-eb11-9138-001dd8b71f1a",
@@ -21507,7 +21507,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cd8dd522-e181-eb11-9144-001dd8b71f19",
@@ -21607,7 +21607,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "da07ec13-6791-eb11-9144-001dd8b71f19",
@@ -21637,7 +21637,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "db2fa901-5dc5-eb11-913d-001dd8b71f1a",
@@ -21655,7 +21655,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b1d1856e-5b16-ec11-9150-001dd8b71f19",
@@ -21673,7 +21673,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a1134c61-9140-eb11-9135-001dd8b71f1a",
@@ -21703,7 +21703,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "64b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -21733,7 +21733,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a3dd2d85-79e9-eb11-914b-001dd8b71f19",
@@ -21763,7 +21763,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9eb7381a-8027-ec11-9152-001dd8b71f19",
@@ -21833,7 +21833,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "66b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -21933,7 +21933,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2090f20d-911f-ec11-9150-001dd8b71f19",
@@ -21973,7 +21973,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8c11f760-9714-eb11-9130-001dd8b71f1a",
@@ -22013,7 +22013,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "95a67f16-d98b-eb11-9144-001dd8b71f19",
@@ -22113,7 +22113,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cd96e486-2e22-ec11-9150-001dd8b71f19",
@@ -22131,7 +22131,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6ab765c7-0c38-ec11-9155-001dd8b71f19",
@@ -22221,7 +22221,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d0fd5d00-7437-ec11-9155-001dd8b71f19",
@@ -22321,7 +22321,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8ce6301f-6526-ec11-9152-001dd8b71f19",
@@ -22421,7 +22421,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "814c2c0b-bb1c-ec11-9150-001dd8b71f19",
@@ -22471,7 +22471,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "be4ec4d1-9d35-eb11-9135-001dd8b71f1a",
@@ -22561,7 +22561,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4c925123-d813-eb11-9130-001dd8b71f1a",
@@ -22661,7 +22661,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6dd1052e-e00f-eb11-9130-001dd8b71f1a",
@@ -22691,7 +22691,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6eb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -22791,7 +22791,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6fb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -22891,7 +22891,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "70b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -22909,7 +22909,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "031843dd-a636-ec11-9155-001dd8b71f19",
@@ -22959,7 +22959,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "72b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -23039,7 +23039,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1d6e910e-48ca-ed11-915b-001dd8b71f1a",
@@ -23057,7 +23057,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "75b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -23075,7 +23075,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "485ee983-fbb9-ee11-9169-001dd8b73101",
@@ -23105,7 +23105,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7ebc8ddb-f027-ec11-9152-001dd8b71f19",
@@ -23205,7 +23205,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dfb2c221-ffb9-eb11-913d-001dd8b71f1a",
@@ -23235,7 +23235,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "596fb146-6133-ec11-9155-001dd8b71f19",
@@ -23335,7 +23335,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7bb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -23365,7 +23365,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "86685c89-fdd4-eb11-9149-001dd8b71f19",
@@ -23455,7 +23455,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "65d9e6a1-fdd4-eb11-9149-001dd8b71f19",
@@ -23555,7 +23555,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e882d04b-9c82-eb11-9144-001dd8b71f19",
@@ -23573,7 +23573,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3b0cf7ab-a0dd-eb11-9149-001dd8b71f19",
@@ -23613,7 +23613,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c6eaef94-9f91-eb11-9145-001dd8b71f19",
@@ -23631,7 +23631,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7db765c7-0c38-ec11-9155-001dd8b71f19",
@@ -23731,7 +23731,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9e53e5d0-d11f-ec11-9150-001dd8b71f19",
@@ -23831,7 +23831,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7fb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -23901,7 +23901,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fb5cd496-d34b-ec11-914e-001dd8b71f1a",
@@ -23931,7 +23931,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "32986af7-ae06-ec11-9141-001dd8b71f1a",
@@ -23991,7 +23991,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d05a570d-2f96-eb11-9145-001dd8b71f19",
@@ -24091,7 +24091,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "81b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -24191,7 +24191,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "84b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -24271,7 +24271,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9b59e1b9-d68b-eb11-9144-001dd8b71f19",
@@ -24321,7 +24321,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0ae26555-a636-ec11-9155-001dd8b71f19",
@@ -24339,7 +24339,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "523f0fac-bd26-ec11-9152-001dd8b71f19",
@@ -24357,7 +24357,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f44e61a0-7bf0-eb11-914b-001dd8b71f19",
@@ -24437,7 +24437,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2d3d97d9-eb93-eb11-9145-001dd8b71f19",
@@ -24455,7 +24455,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "30987f49-2516-ec11-9150-001dd8b71f19",
@@ -24485,7 +24485,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8849aa22-538e-eb11-9144-001dd8b71f19",
@@ -24585,7 +24585,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "86b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -24625,7 +24625,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "88b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -24725,7 +24725,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2762daae-df1e-eb11-9135-001dd8b71f1a",
@@ -24755,7 +24755,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dd1bb107-af90-eb11-9144-001dd8b71f19",
@@ -24773,7 +24773,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8ab765c7-0c38-ec11-9155-001dd8b71f19",
@@ -24791,7 +24791,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8cb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -24809,7 +24809,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "09e77ad6-611d-ec11-9150-001dd8b71f19",
@@ -24869,7 +24869,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "174f5170-1c30-ec11-9155-001dd8b71f19",
@@ -24887,7 +24887,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3eb04572-7337-ec11-9155-001dd8b71f19",
@@ -24987,7 +24987,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8fb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -25087,7 +25087,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dcf32798-ab2c-ec11-9152-001dd8b71f19",
@@ -25117,7 +25117,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9baa47d5-fb11-ec11-9150-001dd8b71f19",
@@ -25217,7 +25217,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1cdb58b1-1d97-eb11-9145-001dd8b71f19",
@@ -25307,7 +25307,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d8750fd7-6133-ec11-9155-001dd8b71f19",
@@ -25407,7 +25407,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "93b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -25437,7 +25437,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a9226c86-e5ad-eb11-913d-001dd8b71f1a",
@@ -25455,7 +25455,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4c648d5f-dea6-eb11-9147-001dd8b71f19",
@@ -25555,7 +25555,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "388e537a-2a96-eb11-9145-001dd8b71f19",
@@ -25573,7 +25573,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "49041207-329e-eb11-9145-001dd8b71f19",
@@ -25591,7 +25591,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "34f54e54-f46a-eb11-9143-001dd8b71f19",
@@ -25609,7 +25609,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "95b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -25659,7 +25659,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "97b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -25709,7 +25709,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "105a228c-246a-eb11-9143-001dd8b71f19",
@@ -25739,7 +25739,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "99b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -25839,7 +25839,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "138962ee-620a-ec11-9141-001dd8b71f1a",
@@ -25869,7 +25869,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cbc5a6d2-02f6-eb11-914b-001dd8b71f19",
@@ -25969,7 +25969,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "959b563c-f0cc-ed11-915b-001dd8b71f1a",
@@ -25987,7 +25987,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1c213004-79e9-eb11-914b-001dd8b71f19",
@@ -26005,7 +26005,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c6e725c8-6536-ec11-9155-001dd8b71f19",
@@ -26105,7 +26105,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "43e49a97-ccc0-ec11-9155-001dd8b71f1a",
@@ -26165,7 +26165,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9fb765c7-0c38-ec11-9155-001dd8b71f19",
@@ -26183,7 +26183,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "85b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -26223,7 +26223,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "69a170ba-0e7e-ec11-9150-001dd8b71f1a",
@@ -26313,7 +26313,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2fd915c5-5e2b-ec11-9152-001dd8b71f19",
@@ -26343,7 +26343,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a2b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -26373,7 +26373,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "34c6371c-babe-ee11-9169-001dd8b73101",
@@ -26473,7 +26473,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e24c258c-babe-ee11-9169-001dd8b73101",
@@ -26573,7 +26573,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f578eede-babe-ee11-9169-001dd8b73101",
@@ -26673,7 +26673,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "06da4e45-bbbe-ee11-9169-001dd8b73101",
@@ -26691,7 +26691,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b20ce7b7-bbbe-ee11-9169-001dd8b73101",
@@ -26709,7 +26709,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "98557809-bcbe-ee11-9169-001dd8b73101",
@@ -26727,7 +26727,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9603e657-bcbe-ee11-9169-001dd8b73101",
@@ -26745,7 +26745,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c66421b9-bcbe-ee11-9169-001dd8b73101",
@@ -26763,7 +26763,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "342c03a0-f089-ec11-9150-001dd8b71f1a",
@@ -26803,7 +26803,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "040aeda9-6fcd-ec11-9155-001dd8b71f1a",
@@ -26873,7 +26873,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d9b5dd25-94ae-ec11-9150-001dd8b71f1a",
@@ -26923,7 +26923,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0cf57fe7-aa06-ec11-9141-001dd8b71f1a",
@@ -26953,7 +26953,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1da157ee-7928-ec11-9152-001dd8b71f19",
@@ -27043,7 +27043,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a9b765c7-0c38-ec11-9155-001dd8b71f19",
@@ -27143,7 +27143,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3acacc8f-31bb-ec11-9150-001dd8b71f1a",
@@ -27161,7 +27161,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3163775a-1123-ed11-9156-001dd8b71f1a",
@@ -27261,7 +27261,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3d910dd1-8e1d-ed11-9156-001dd8b71f1a",
@@ -27331,7 +27331,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6612f1b3-a6ba-ec11-9150-001dd8b71f1a",
@@ -27391,7 +27391,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b4fc7cdb-f60a-ee11-915d-001dd8b71f1a",
@@ -27451,7 +27451,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d44e7fa0-ea7f-ed11-9159-001dd8b71f1a",
@@ -27551,7 +27551,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "74114be0-f8dd-ed11-915d-001dd8b71f1a",
@@ -27651,7 +27651,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5a8b5188-5cbc-ed11-915b-001dd8b71f1a",
@@ -27681,7 +27681,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "89b35c15-c2d7-ec11-9155-001dd8b71f1a",
@@ -27781,7 +27781,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fca445b0-d427-ed11-9156-001dd8b71f1a",
@@ -27861,7 +27861,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "68215876-bc27-ee11-915f-001dd8b71f1a",
@@ -27879,7 +27879,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "08a3596d-671a-ed11-9156-001dd8b71f1a",
@@ -27919,7 +27919,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dc613e45-6a1e-ed11-9156-001dd8b71f1a",
@@ -28019,7 +28019,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5f32142b-7ab3-ed11-915b-001dd8b71f1a",
@@ -28119,7 +28119,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1730525c-d24f-ed11-9157-001dd8b71f1a",
@@ -28159,7 +28159,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "877abdae-1c59-ed11-9157-001dd8b71f1a",
@@ -28177,7 +28177,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d02f6104-50cc-ee11-9169-001dd8b73101",
@@ -28227,7 +28227,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2ab7aacb-da56-ed11-9157-001dd8b71f1a",
@@ -28327,7 +28327,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7ac99288-7fc2-ed11-915b-001dd8b71f1a",
@@ -28345,7 +28345,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9b327ef5-98ae-ec11-9150-001dd8b71f1a",
@@ -28445,7 +28445,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8dafa5dc-262e-ed11-9156-001dd8b71f1a",
@@ -28545,7 +28545,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "da894517-7b4d-ee11-9162-001dd8b71f1a",
@@ -28645,7 +28645,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2407be8e-a412-ed11-9156-001dd8b71f1a",
@@ -28685,7 +28685,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "923e9d06-4bb4-ed11-915b-001dd8b71f1a",
@@ -28703,7 +28703,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fff097ec-a412-ed11-9156-001dd8b71f1a",
@@ -28721,7 +28721,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7f1d9019-64bd-ee11-9169-001dd8b73101",
@@ -28761,7 +28761,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8632faa4-123e-ee11-915f-001dd8b71f1a",
@@ -28811,7 +28811,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8d954709-c9f1-ed11-915d-001dd8b71f1a",
@@ -28911,7 +28911,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f5dd61fa-fa4c-ee11-9162-001dd8b71f1a",
@@ -29011,7 +29011,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5f6f8c64-7264-ee11-9162-001dd8b71f1a",
@@ -29101,7 +29101,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5fc7e5c0-4169-ee11-9162-001dd8b71f1a",
@@ -29119,7 +29119,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7a0d84e1-7ceb-ee11-9169-001dd8b73101",
@@ -29219,7 +29219,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "87b43e2d-4f9b-ee11-9164-001dd8b71f1a",
@@ -29319,7 +29319,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "090138ca-fab9-ee11-9169-001dd8b73101",
@@ -29369,7 +29369,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cab21051-ac2c-ee11-915f-001dd8b71f1a",
@@ -29469,7 +29469,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f0295ece-df0b-ef11-916c-001dd8b73101",
@@ -29569,7 +29569,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "513cc807-be6e-ef11-9185-0050568bc890",
@@ -29587,7 +29587,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "96b6c3a8-49e8-ee11-9169-001dd8b73101",
@@ -29687,7 +29687,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ec6c0980-029e-ef11-91e5-0050568bc890",
@@ -29737,7 +29737,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "920e12d8-3e59-ee11-9162-001dd8b71f1a",
@@ -29837,7 +29837,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eaae90be-f0a5-ef11-91e5-0050568bc890",
@@ -29855,7 +29855,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "00996e2e-ed07-ef11-916c-001dd8b73101",
@@ -29905,7 +29905,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9cd6f757-53d6-ee11-9169-001dd8b73101",
@@ -29955,7 +29955,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5227cf26-4523-ef11-916c-001dd8b73101",
@@ -30055,7 +30055,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1aeab419-ac2c-ee11-915f-001dd8b71f1a",
@@ -30073,7 +30073,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a918bdf4-2b56-ee11-9162-001dd8b71f1a",
@@ -30091,7 +30091,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "35df1585-2d49-ef11-9170-001dd8b73101",
@@ -30191,7 +30191,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b3776638-dd2f-ef11-916c-001dd8b73101",
@@ -30209,7 +30209,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e1c35c0e-82ec-ee11-9169-001dd8b73101",
@@ -30227,7 +30227,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0a3002a2-bd80-ef11-919d-0050568bc890",
@@ -30307,7 +30307,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dec519f8-bd80-ef11-919d-0050568bc890",
@@ -30357,7 +30357,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-0f067e13-6d35-4221-a5bc-636dd3c85316",
@@ -30375,7 +30375,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7349b713-d912-4087-b55c-7d0dfb15b9b7",
@@ -30393,7 +30393,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-0cb4c295-081d-48e7-80dd-e8422136d63b",
@@ -30411,7 +30411,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5f99929f-f697-4350-8aa9-95e72c60891d",
@@ -30429,7 +30429,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6a876ef8-06ea-4c0b-b154-f02096a6a812",
@@ -30447,7 +30447,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f500343f-0bd3-4e34-acb7-ae789c2f7d77",
@@ -30465,7 +30465,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9f8d47fc-52ce-4ab2-9bbb-c598ba365132",
@@ -30483,7 +30483,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-de9fabb3-adf8-430e-a791-4eac2e4e06b2",
@@ -30501,7 +30501,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-3f182184-9c52-4734-9f37-5140cfee37eb",
@@ -30519,7 +30519,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c08251fd-52a9-4b69-8026-09842a5f09cc",
@@ -30537,7 +30537,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-099f82bf-b963-42b7-9f21-bf826fb55c68",
@@ -30555,7 +30555,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-689cadca-d2ce-482d-a7fa-d1ff01357294",
@@ -30573,7 +30573,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-07afc536-06ca-464d-840c-0920061abd02",
@@ -30591,7 +30591,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7ce97be8-02c1-4485-a5b5-30ce86e16f0d",
@@ -30609,7 +30609,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7d6e87dd-2d68-4be8-8874-faf2c98b82f2",
@@ -30627,7 +30627,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-dc47b76a-b32a-4953-aa1c-1cf50b6ed480",
@@ -30645,7 +30645,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2af94fd5-5116-436d-8917-992ee073f9c6",
@@ -30663,7 +30663,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-eedc5180-a170-4633-ac9a-ad98e4c53559",
@@ -30681,7 +30681,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-0d1466b3-c803-4f2c-946e-0e6920d47bb4",
@@ -30699,7 +30699,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7bd68b4a-2529-442d-bc1f-83335f665cbb",
@@ -30717,7 +30717,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-271268e5-ea48-4d54-847e-6c6d0333814a",
@@ -30735,7 +30735,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a21e6485-045e-44d4-a67e-c4b2dcecd702",
@@ -30753,7 +30753,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-821f54c1-1296-43cf-9007-871facafc7ae",
@@ -30771,7 +30771,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6ffdf0c6-71f3-4aa1-aeaa-a30cc780f5cb",
@@ -30789,7 +30789,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9559d341-d6f8-44c5-8bd3-cf131400d624",
@@ -30807,7 +30807,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-60ffcfbf-0f3d-4af6-88f0-c8f8e082a5be",
@@ -30825,7 +30825,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ff0b0b09-5595-44f5-8aba-51eefdfae2ea",
@@ -30843,7 +30843,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c3ae3ffe-7bb1-429b-af9f-f3c649a56b62",
@@ -30861,7 +30861,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8ad3d7a2-13c4-4bc4-a16b-e263cffa3c16",
@@ -30879,7 +30879,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-54478009-8e29-4e42-b2ce-926039308f02",
@@ -30897,7 +30897,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-50dc9e64-8238-442c-a45e-e69985a1eac0",
@@ -30915,7 +30915,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-05d3bdce-18f6-4f7e-898a-32afb564e693",
@@ -30933,7 +30933,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-11f191cf-5ee6-40a5-9091-db3fe047b779",
@@ -30951,7 +30951,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9da4c7c1-9030-44d0-aab9-f7a15448543f",
@@ -30969,7 +30969,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e0bba325-db10-4292-b1e2-c09df0ad50b5",
@@ -30987,7 +30987,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-3a941677-d3ee-497c-9c61-9aa8064cae83",
@@ -31005,7 +31005,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-40840282-24cb-4121-ae6d-30a6e7872e8c",
@@ -31023,7 +31023,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d858603e-2b31-4cdc-a358-21c1e24cafd3",
@@ -31041,7 +31041,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2e2e03a8-4f22-448f-beb4-976691a36581",
@@ -31059,7 +31059,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-62466928-2eb1-4380-9e08-da66fbe2b0f2",
@@ -31077,7 +31077,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1ac10c86-276f-4aac-8a75-13f1f5a1baca",
@@ -31095,7 +31095,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-47637b5e-cae6-41f8-9a7e-1f7cc750ce93",
@@ -31113,7 +31113,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-4e8be17b-20d4-43ae-a8ae-f91778568727",
@@ -31131,7 +31131,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-93cc8b81-701c-440d-8f7e-644fb7ea1d27",
@@ -31149,7 +31149,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-58b41aae-0857-4926-975a-74d685624021",
@@ -31167,7 +31167,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-19bbc3cb-45f1-48fa-ae0e-13728101f519",
@@ -31185,7 +31185,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-018068ab-c3b2-4bff-be2f-2ab06eab8994",
@@ -31203,7 +31203,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e2553fbd-8467-4b46-b371-53383d2db1a3",
@@ -31221,7 +31221,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-19fb6e2b-5115-48ea-81a7-092f3b14627b",
@@ -31239,7 +31239,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8c60eecf-2f93-4e63-af87-59ee529110c1",
@@ -31257,7 +31257,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-b425558c-3def-4161-80fd-b5eafaeb7aba",
@@ -31275,7 +31275,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f2cd0040-d677-493c-a7a6-784c0f8d9d0a",
@@ -31293,7 +31293,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-3fa2fa68-4761-44f6-b9f6-ffb3bbf81056",
@@ -31311,7 +31311,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5032980b-ad6b-4ea5-b10d-1ac86da6f4cd",
@@ -31329,7 +31329,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f9f46a85-0ac1-481d-ac79-139159d5219e",
@@ -31347,7 +31347,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-be5ad5d6-1f91-4757-95fa-51783d815df4",
@@ -31365,7 +31365,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9d6739fa-d29c-4dd4-8e9f-42c044358ddc",
@@ -31383,7 +31383,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1d666b7a-3caa-437c-ac1a-53ea8cb3003f",
@@ -31401,7 +31401,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-06290115-a2a0-4bb0-ae85-7d34f47e5a0d",
@@ -31419,7 +31419,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-564c87a5-882e-4dbd-8ed0-f4ba6dd6a33e",
@@ -31437,7 +31437,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-4bb2e3bf-0f1b-48bc-9bd0-62d691850930",
@@ -31455,7 +31455,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6298a37c-785b-4cfa-be92-f93d815ba539",
@@ -31473,7 +31473,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-94418106-390a-4897-a187-d81e376d9977",
@@ -31491,7 +31491,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d36db241-ea67-4987-91fb-bd921ca6b4ee",
@@ -31509,7 +31509,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5c139ec0-0bcb-4a90-a8bd-09b0dfd16b31",
@@ -31527,7 +31527,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d38a9598-bb46-4ade-b4cc-441c0a02000d",
@@ -31545,7 +31545,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-482e051f-6a8a-4a2e-ab09-6c406fd26de2",
@@ -31563,7 +31563,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9d96da66-7b3b-49cd-afaf-51b7af634fe9",
@@ -31581,7 +31581,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-eb367f93-7ccf-4e4e-98e9-cdfc11fe7a8f",
@@ -31631,7 +31631,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1017f00f-3286-41c8-92c5-70ddaf1fde95",
@@ -31649,7 +31649,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-fae1706d-a512-46cd-b6cd-c7d7eacd786b",
@@ -31667,7 +31667,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f1250fe4-2bab-4d0b-8d5c-13d8a9c0a739",
@@ -31685,7 +31685,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1152cdd6-a956-40ed-bc95-187de8f9402d",
@@ -31703,7 +31703,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d9f16f9d-4e1a-4fcd-bdb4-c9ed1fc9f7e7",
@@ -31753,7 +31753,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-578aa593-7aac-40c8-a99a-0e600cdb1c6f",
@@ -31783,7 +31783,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-11a741ce-6e73-4fdf-ab02-4baa5e64fb66",
@@ -31801,7 +31801,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-4bc5f396-c9c9-4994-a755-1a7d42f0e837",
@@ -31901,7 +31901,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9ad08c28-9420-4d23-bfb2-22d0a604b851",
@@ -31951,7 +31951,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d76e3752-8d12-4283-acf9-0a4f32bf7d56",
@@ -32051,7 +32051,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e248d9bf-ad1d-46d6-8b1c-4ac57117db06",
@@ -32069,7 +32069,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-229b5714-8264-4351-b4d1-84923aaabf97",
@@ -32087,7 +32087,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a4e2cd52-16ae-4e65-8f3f-0f6d13dd20a8",
@@ -32105,7 +32105,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1fbe02b2-2d1e-423d-b67e-7070dc77b938",
@@ -32123,7 +32123,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7bcc7683-857f-428b-947c-d936711de7f7",
@@ -32153,7 +32153,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8f7a2740-f649-4eeb-a026-73307eb917cf",
@@ -32253,7 +32253,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-205d8ecb-ab81-413f-8d02-d5872e5f4ca5",
@@ -32283,7 +32283,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a82059cd-d424-4149-bcc8-2eac4e2482b9",
@@ -32301,7 +32301,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-bcf1708d-6d5a-44dd-9b7b-89ce56798ac2",
@@ -32319,7 +32319,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f0105015-5a32-40ab-8685-a3ac92b458cc",
@@ -32337,7 +32337,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-115b855a-7606-4a4f-ac54-cd93314fe81a",
@@ -32387,7 +32387,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-50921eee-6409-4b62-b110-1c0f04447b5f",
@@ -32405,7 +32405,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-bc48e233-b70d-4e8b-8cff-2c767c789cb5",
@@ -32423,7 +32423,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-73c4255a-ec40-4c39-99bc-846de55910e2",
@@ -32453,7 +32453,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5da19122-66d8-4a5c-8e8b-4a84ec58a71e",
@@ -32471,7 +32471,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-186f563f-2783-424b-a955-ba5b4fadfbac",
@@ -32489,7 +32489,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5d79aec3-61ac-43c7-8612-669600cf80f8",
@@ -32559,7 +32559,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d1768d57-f006-453c-b6e9-061d58a8ad2e",
@@ -32659,7 +32659,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f44e42f2-dd21-4f34-a640-17df4e3cea1e",
@@ -32677,7 +32677,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5ba61446-6159-4549-81fc-bbda9bf3345e",
@@ -32695,7 +32695,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8e621018-070e-42f6-95e1-9fc0c1cc9ff4",
@@ -32713,7 +32713,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-be2d1e3e-466e-4aad-b02d-eeb9a0a9e329",
@@ -32731,7 +32731,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-882b4af4-1ccf-4e48-8a7f-dfef47d3c774",
@@ -32831,7 +32831,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6d462869-66fc-48a9-b865-87152281d27e",
@@ -32901,7 +32901,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-484fdf21-89a5-4d9a-9a51-8b6963ec9f05",
@@ -32919,7 +32919,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a5680508-1eb5-4f6a-a6d3-4a394dd3b6df",
@@ -32949,7 +32949,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-dcbbd04d-c252-4f84-bba1-56d0869b748c",
@@ -32967,7 +32967,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7bf59c7d-d893-4b4b-bf81-9230493c2485",
@@ -32985,7 +32985,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1ebca976-afbf-415a-bf9f-5c5c74786347",
@@ -33003,7 +33003,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d6f9bfe7-2028-4d48-a2b5-b67d460be883",
@@ -33021,7 +33021,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9974e001-9b84-4051-a623-4de702c4d7de",
@@ -33039,7 +33039,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7635d0bb-2652-43d6-8558-af568db945f6",
@@ -33079,7 +33079,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c4fe6370-4ee1-43c5-904c-292b70fa014e",
@@ -33097,7 +33097,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-776b3a98-4015-4a4c-ae0f-8fc363fffed5",
@@ -33115,7 +33115,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9784532d-ffa2-4e3b-a3b4-22cf5f57969b",
@@ -33133,7 +33133,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-534a103b-2ccb-4156-9462-7924b3fe0c50",
@@ -33151,7 +33151,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ec5e9a18-1f2f-4b95-b0f0-d4556f17ab8d",
@@ -33169,7 +33169,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cd17e973-d93f-43a3-8bd7-ab934a2cbeb6",
@@ -33187,7 +33187,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f59c2da3-883c-4eb7-907c-3289c15a36df",
@@ -33205,7 +33205,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e9dde028-3cbb-4317-a81d-b4c52de3c8e0",
@@ -33223,7 +33223,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-02ae619c-54db-463d-8c5d-a896d382c6af",
@@ -33241,7 +33241,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ec28cac9-9047-41d8-86b6-e438434f5f9a",
@@ -33259,7 +33259,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-70bea606-70d2-4ab0-b17a-e7999d30d710",
@@ -33277,7 +33277,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8121980a-b210-4084-8a7c-75e65b3c86e8",
@@ -33295,7 +33295,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-915eb9fc-b418-403e-8a20-6b62da19e2e0",
@@ -33313,7 +33313,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7ac0ba62-20ff-450b-8131-eaf3f17f8c9a",
@@ -33331,7 +33331,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-31555604-c832-4828-8999-f594082a882d",
@@ -33349,7 +33349,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a9bb6446-3f49-4199-8653-569a3685b706",
@@ -33367,7 +33367,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c1c68c67-f2a2-48d9-ac10-34c84c60e94b",
@@ -33385,7 +33385,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6c760ea6-9b25-404f-994b-65ce078b204d",
@@ -33403,7 +33403,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7a684a73-98c9-44a3-977d-c06c36c631e9",
@@ -33421,7 +33421,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-39ec124f-522f-4db6-9317-1253fb697aba",
@@ -33439,7 +33439,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-50bdbd61-abbd-4876-84bc-d0b2db53d080",
@@ -33457,7 +33457,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d5e9dd57-1e70-41db-922a-1352b6163cb1",
@@ -33475,7 +33475,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-09da0f59-3233-4a66-879c-dd4a1b5dc92d",
@@ -33493,7 +33493,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7b4720c1-ce3e-4164-ae3e-13f907eafae7",
@@ -33523,7 +33523,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d45bfe61-5805-4ba5-a27a-d9880312a170",
@@ -33563,7 +33563,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c6ea9b0d-bc89-465e-af90-e7ac74d34894",
@@ -33613,7 +33613,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-b5b9619e-17fa-4948-b158-2dcfc39afc95",
@@ -33631,7 +33631,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6de36025-2398-4743-a390-71916259cf81",
@@ -33649,7 +33649,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-97c0b4ad-c6c2-4098-9fc3-6afa380516d8",
@@ -33667,7 +33667,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a11eb402-aea9-47ab-8537-554c3fccc3a1",
@@ -33685,7 +33685,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-37fc52b4-6a5a-4d8f-9b68-59e844545e05",
@@ -33703,7 +33703,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-3f4bd844-c87a-461e-948e-cae7d42ac284",
@@ -33721,7 +33721,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-0d56420c-8de9-41e4-93af-ac31b507c833",
@@ -33739,7 +33739,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-eed8b5b9-f6da-4a4c-b0a9-2701c425076f",
@@ -33757,7 +33757,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ba8d63ea-4693-478c-9c77-2249ef0950f9",
@@ -33775,7 +33775,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-3b882c7c-9fd4-4692-8e36-c851618329ef",
@@ -33793,7 +33793,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a24e71c4-b338-485c-b14b-10115a7dfa31",
@@ -33811,7 +33811,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-20624cc0-bba5-45bd-8cd2-7d11c1ccce05",
@@ -33829,7 +33829,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-4144f559-2faa-4e67-957d-3214dd8c0cbc",
@@ -33847,7 +33847,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-55119b34-3f4b-4e00-831d-f9acc3826a3b",
@@ -33865,7 +33865,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2336e7b3-7ec1-47ef-8ce7-f41e9a994102",
@@ -33883,7 +33883,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-26b8ea04-eebd-4ab6-a17f-056409ee3c81",
@@ -33901,7 +33901,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-324e6987-e30a-4e25-9dac-f7588105278d",
@@ -33919,7 +33919,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-10ae61a2-b2ef-47b6-ad11-d27f6aa28007",
@@ -34019,7 +34019,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7b94c908-58de-4a38-9dc0-4e370e38226f",
@@ -34037,7 +34037,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-296cc9d9-2522-41c6-a8cd-59c85348304a",
@@ -34055,7 +34055,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ba8464a4-2eb9-4593-9b15-ff67cf216c2e",
@@ -34073,7 +34073,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a63173ee-89d7-4b97-8f14-89927f4b9ae7",
@@ -34103,7 +34103,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-de6edbb0-20d0-43a2-bf17-718c1fd53157",
@@ -34133,7 +34133,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7a7faf72-a074-45e7-98a0-5d2c405018e1",
@@ -34233,7 +34233,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-72081c30-1385-41c6-98bf-621968080172",
@@ -34251,7 +34251,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-98a3e3e4-19c4-44cc-93c2-567d0eac84fc",
@@ -34351,7 +34351,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-de7c1b3d-9c02-4426-8fd5-455a93bae114",
@@ -34441,7 +34441,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f539b803-8b1c-4cae-af95-7f221fdae321",
@@ -34459,7 +34459,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-229a9968-1b30-44be-b0b0-ad600d384e9d",
@@ -34559,7 +34559,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-36aa821f-4988-486e-acd0-86bb062a15ea",
@@ -34589,7 +34589,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-bd01deaa-951d-475e-9b18-f45ac4a4c3a9",
@@ -34639,7 +34639,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-68a2a0c9-259e-4747-9447-e59a374e5646",
@@ -34657,7 +34657,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8f7a61fb-5523-43e5-bbea-18c305ddeef7",
@@ -34687,7 +34687,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-84fb974e-717e-4a83-8804-48b836a6b499",
@@ -34705,7 +34705,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-b97900e8-d780-4a43-8c39-7ec138854619",
@@ -34735,7 +34735,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9596555d-ac64-4ab7-ad2c-d1caa6ba0e75",
@@ -34765,7 +34765,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9fca1a75-3e71-49c0-8201-17b8517e41f4",
@@ -34795,7 +34795,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-4560b322-6c51-4c90-b2c2-c18ebc44e8fd",
@@ -34845,7 +34845,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8a3a94ab-149c-471c-ba04-df40ce00c562",
@@ -34895,7 +34895,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-80fe00e2-75c8-4936-9959-77d1e286bb46",
@@ -34955,7 +34955,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-aa6b33c1-cfc3-4f16-b4ce-bb683f00afb8",
@@ -34973,7 +34973,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-fab6c261-cd64-4461-9b8d-0791eae0e8b7",
@@ -34991,7 +34991,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9f940e64-e17f-4de9-a1f0-708e57093931",
@@ -35091,7 +35091,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-25859961-887e-4c57-b1fc-74bfb4f5d943",
@@ -35191,7 +35191,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ef31a282-bf45-4901-9e6f-6d352dbd5c31",
@@ -35291,7 +35291,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a80f2315-8ee5-4144-8d31-a634053aa202",
@@ -35391,7 +35391,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-590c3fc2-a0b4-42f1-9bca-e4ff17d4bafe",
@@ -35421,7 +35421,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6b5e6ea7-5654-448d-b68e-1df1e851f2d6",
@@ -35439,7 +35439,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2c075380-837f-43e7-b16a-a0c718b813cb",
@@ -35457,7 +35457,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cd193132-b271-4a45-b92e-193d8c20e0d4",
@@ -35475,7 +35475,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8c3353db-1229-404b-9baf-214a94ea1037",
@@ -35493,7 +35493,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f8689c7a-86d9-4143-a743-3ed297df57a4",
@@ -35543,7 +35543,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2913c9ee-edbd-4255-8de6-d0d2787a9f31",
@@ -35603,7 +35603,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-9e19c3d4-14cf-460c-8df7-3d31d12df0bc",
@@ -35643,7 +35643,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2250759a-cac3-473c-9910-fbc013ca73ef",
@@ -35661,7 +35661,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-81100868-e8f4-4b9d-a930-77ac11d2603d",
@@ -35721,7 +35721,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-fe7e2833-6c1c-4d75-91ab-95afba145546",
@@ -35739,7 +35739,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-527d50d4-2530-4548-b4ab-812a246af603",
@@ -35757,7 +35757,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cc33c3df-bda3-4a10-b189-10ad568ab371",
@@ -35775,7 +35775,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ee84152c-a054-4254-aa2c-7d0445f13878",
@@ -35875,7 +35875,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-56c37200-feb4-417f-9317-382c7534490d",
@@ -35965,7 +35965,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-355f0851-79b5-4156-8e8b-3d4e32a1e993",
@@ -36005,7 +36005,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-06ecc334-7b79-487e-a9ef-8ceccce36302",
@@ -36023,7 +36023,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8ae80ba8-9735-4640-a633-d2f223c0bd0a",
@@ -36041,7 +36041,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-81690fe9-8b3d-4336-95a2-8a1fcea36b3c",
@@ -36131,7 +36131,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-5154f437-87ea-477e-b4a4-1b858cb80a96",
@@ -36231,7 +36231,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e2cca77c-8a3b-4861-859c-52fd3b5773db",
@@ -36249,7 +36249,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7f366800-6cbf-4c74-95fb-80f2f322c690",
@@ -36267,7 +36267,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-dc5407cd-711b-451e-b84b-7ffc76dd4e11",
@@ -36347,7 +36347,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-82f99197-3c1a-4863-b68f-dd04ab33e28f",
@@ -36427,7 +36427,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cf2b013a-bcb7-49a3-9683-902a04696d5c",
@@ -36445,7 +36445,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-b1d4b560-2312-496e-af83-3b32ae9510d9",
@@ -36463,7 +36463,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cd64e9f6-fbab-43c7-aff5-f4b1be49a72f",
@@ -36523,7 +36523,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-3b4e0e34-4208-40ec-b816-31541e4d1549",
@@ -36541,7 +36541,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-7fbbc5a0-46d1-4930-b44a-4d2132ee0aab",
@@ -36641,7 +36641,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d963a44d-b753-4b1d-84d2-d0339bc980f6",
@@ -36741,7 +36741,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f337bc1e-3033-4619-9cbf-6f5c1ea4ff44",
@@ -36841,7 +36841,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e27669ec-119e-4d16-8237-d91f74449366",
@@ -36859,7 +36859,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c23e208a-533e-4907-8b78-c9e06002ff6f",
@@ -36877,7 +36877,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-43f30f87-2728-46fe-a9ba-3b70360bd142",
@@ -36977,7 +36977,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8cb6a25a-513d-434b-94bd-c6cde937d3db",
@@ -37017,7 +37017,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-82d77606-7f11-45a1-b66b-dcee295f48d5",
@@ -37035,7 +37035,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8e56219d-582e-4064-b1d9-0f7bf4b9921e",
@@ -37135,7 +37135,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-eb58de78-b970-4475-9346-f5e3ff66a27d",
@@ -37153,7 +37153,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-329384eb-78c1-48b7-9c83-24daefea1a1b",
@@ -37253,7 +37253,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-88334cb7-131f-4137-b1e2-bef7fcdd0b1f",
@@ -37271,7 +37271,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-07709318-f4bc-4bd0-b80a-e944631736b7",
@@ -37321,7 +37321,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-fdc37d47-b105-4b54-bd80-7f7b799f77d4",
@@ -37339,7 +37339,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-239cd9b7-8818-4b4b-834f-fd7ca4997828",
@@ -37439,7 +37439,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-13e00f37-7247-40fe-bb98-ca5194f427a0",
@@ -37489,7 +37489,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6ff25e4f-a227-4da2-89d3-38afb9775453",
@@ -37507,7 +37507,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c7870bfc-30fc-44a4-ba01-24d87f86c6b1",
@@ -37525,7 +37525,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d892a408-0751-4f5e-bd97-2aa236924abc",
@@ -37543,7 +37543,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d565daf4-2b90-4cbd-9be9-ddc23694cf11",
@@ -37643,7 +37643,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-79770b62-7f90-4cd2-acb1-99ee179f378f",
@@ -37661,7 +37661,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-6e8284f6-9f16-4fe9-8197-2e215e68dafa",
@@ -37679,7 +37679,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cff229c5-cf97-4bd9-87c3-2e6bc33ace61",
@@ -37697,7 +37697,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-05287377-841c-4985-afa6-a3f14210c2e9",
@@ -37715,7 +37715,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-0cb99f39-0ff9-45a7-899f-5eba09d740c2",
@@ -37733,7 +37733,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-ada69f5c-05f4-40c4-917c-88c29c1670c1",
@@ -37833,7 +37833,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-01b4a3db-7566-425d-af9f-43244bd1d9f8",
@@ -37851,7 +37851,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-f3bd9fef-a2c0-485d-a57c-61341f791bb4",
@@ -37869,7 +37869,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cfbddd6f-056c-4265-9134-10bae8c0b418",
@@ -37949,7 +37949,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-c45337b4-76b2-4de4-aa11-2a9e04aa45aa",
@@ -37967,7 +37967,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-92eb7c2e-f421-4259-bd77-8f5095c73b04",
@@ -37985,7 +37985,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-dde8c95d-d6ec-40fe-9a25-e6ee3a1a3acb",
@@ -38085,7 +38085,7 @@
       ],
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-35008f35-832c-42e8-a192-d28a0aa04921",
@@ -38103,7 +38103,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e2f09ef5-8c9e-478d-9bd8-c12faa5b0434",
@@ -38121,7 +38121,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-80b4539e-d9a9-4a73-bca3-90549032ede1",
@@ -38139,7 +38139,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a5c0d6fd-e6e9-4692-b44c-d6dff0413dcd",
@@ -38169,7 +38169,7 @@
       ],
       "vendor": "epic",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-8e8ee69a-74f6-4220-b7b1-4c6ed1a9e413",
@@ -38187,7 +38187,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1901e47b-3e24-4e1b-8ad7-b19cbb68568d",
@@ -38205,7 +38205,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a388bb11-5609-4f13-9431-a57ae572a7a4",
@@ -38223,7 +38223,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e85e207e-ad10-4a5c-97a8-0bd19f384a0f",
@@ -38241,7 +38241,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-2a7467cd-be39-41d1-a6ce-c53b665b18bf",
@@ -38259,7 +38259,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-cf9719ea-c0a2-4685-934f-e8facf987427",
@@ -38277,7 +38277,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-1a754c1a-ac82-4d55-883c-8ec71fddbde1",
@@ -38295,7 +38295,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-a708482e-62cf-4e74-a6df-2153b8989851",
@@ -38313,7 +38313,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-e7a7a2f8-a974-44e5-8863-c736c25553a5",
@@ -38331,7 +38331,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-d8726ff1-8496-452d-b7ad-4c321e2414fd",
@@ -38349,7 +38349,7 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "npd-Endpoint-db91420a-42f5-42e9-ac44-8b306d69ca2e",
@@ -38367,13 +38367,13 @@
       "match_confidence": 0.0,
       "vendor": "epic",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     }
   ],
   "verification": {
     "source_url": "data/cms-pos/providers-2025-06-01.json",
     "source_quote": "CMS Provider-of-Services file (hospitals only, PRVDR_CTGRY_CD=01, active termination code) matched on (state, zip5, name-token Jaccard).",
     "verified_via": "cms_pos_csv",
-    "verified_date": "2026-05-12"
+    "verified_date": "2026-05-14"
   }
 }

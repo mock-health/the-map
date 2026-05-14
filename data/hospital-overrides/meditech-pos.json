@@ -1,6 +1,6 @@
 {
   "vendor": "meditech",
-  "captured_date": "2026-05-12",
+  "captured_date": "2026-05-14",
   "pos_catalog": "data/cms-pos/providers-2025-06-01.json",
   "match_summary": {
     "endpoints_total": 549,
@@ -57,7 +57,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "be48c39d-8422-5f13-b2d1-c7fa35e66925",
@@ -87,7 +87,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "83ad79dd-6314-4cb5-ab7c-3cd7453247c4",
@@ -117,7 +117,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "53ff5ff3-af58-5fed-9c2e-f52dfbcdc997",
@@ -147,7 +147,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "af13d4a8-8be6-4ea0-a691-390310d00a3e",
@@ -177,7 +177,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eb4b8858-b4ad-5c5d-9397-4ea7db73ba56",
@@ -207,7 +207,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e4cd841a-39ef-5f2a-a802-a50b6947b49a",
@@ -225,7 +225,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9ad7ec42-11d7-52ea-b204-1dde0c216036",
@@ -243,7 +243,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c597827c-fea3-566f-bb97-ca69601bb87d",
@@ -261,7 +261,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "911981ba-94ea-57a0-8e63-095b57a02479",
@@ -279,7 +279,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f0f6eabf-fb3e-5476-b436-2595d73a0626",
@@ -297,7 +297,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bd54639c-83ad-5b5e-9fd3-402af8e4aaee",
@@ -315,7 +315,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4a4e15fc-e9c5-582a-a9c2-72a7045178b9",
@@ -333,7 +333,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "776c8633-b182-576d-9963-74dc96a1fc72",
@@ -351,7 +351,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "88aaaea2-689e-5aac-9463-6b14258e1df9",
@@ -369,7 +369,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a00f5c2b-6497-5104-afa5-3ac9cdc1bf7b",
@@ -387,7 +387,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "57660be9-ddf0-5c06-bf76-0fcfabd053a3",
@@ -405,7 +405,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5708d386-d6c6-5a40-a26e-f658fc2c0ad7",
@@ -423,7 +423,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0b630879-565b-57a3-8f0c-d9e116751ab8",
@@ -441,7 +441,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8818091b-c59d-5863-a064-f359c2479c9e",
@@ -459,7 +459,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "567cb0bd-c85f-5ec0-bf83-eae7a4637296",
@@ -477,7 +477,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7acc7c39-9741-5b41-912b-aa3eb64eee6a",
@@ -495,7 +495,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0573cd72-4d73-5790-98b1-81a9678a6f68",
@@ -513,7 +513,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bad4ab83-b4b4-4db8-9921-569259e67a80",
@@ -531,7 +531,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "47b34ec0-1579-5aea-909f-e0406146a3b5",
@@ -549,7 +549,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a1af0eec-ad21-400b-a157-ad0b87c67c0e",
@@ -599,7 +599,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "266d35d9-869a-5caa-a6ed-53bf11cd92d9",
@@ -617,7 +617,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1579576a-7f5e-5280-b205-8c7f77493053",
@@ -657,7 +657,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "43037ed0-fe23-4e7f-b381-9a86c2dc1406",
@@ -697,7 +697,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "509601e2-eb7a-502f-8d43-dbc24ace32e8",
@@ -727,7 +727,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1a690a66-81f0-5dd9-b969-2217a0d0c2cb",
@@ -745,7 +745,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7ebb9b5c-be3f-5b92-8248-5d99ff9c52c9",
@@ -795,7 +795,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "50891410-46d9-4b6d-b244-6da1f616ba2b",
@@ -825,7 +825,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "75457943-96db-4de9-95d8-95fbd4d1ab14",
@@ -843,7 +843,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "37ab5b5c-0a16-5e1b-b693-ad703c8f7ca3",
@@ -873,7 +873,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d1ea2fbe-b23b-5f66-ade4-8fea97a9f891",
@@ -903,7 +903,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cb4e7aef-73d7-5801-b51e-8fb454255c8e",
@@ -1003,7 +1003,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "14bfb77f-4b3b-5118-9e02-075daaaca83c",
@@ -1033,7 +1033,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "32b55e65-0616-592b-91fb-fca751baad7e",
@@ -1073,7 +1073,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b0a34eaa-41db-4e6e-bafa-b282695c614a",
@@ -1113,7 +1113,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8e55d909-2c90-498a-adf0-c516843486d5",
@@ -1131,7 +1131,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "396da329-4cb2-5068-9420-dc8181ed32bd",
@@ -1161,7 +1161,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fd8d83f8-233f-5d03-afe7-c5dbb6ec05a6",
@@ -1201,7 +1201,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9e9de380-d22b-568e-ac8e-3e784815afcf",
@@ -1219,7 +1219,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0ac18de3-4376-5bd1-9cd9-08ee05641e91",
@@ -1249,7 +1249,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "79a4e1cf-663d-4a1e-b297-93ffad2b5b86",
@@ -1279,7 +1279,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "57c3f46e-0d28-40f7-ae7a-acb54996fc6c",
@@ -1297,7 +1297,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d433750f-2d10-4197-b5d4-028399e9e241",
@@ -1327,7 +1327,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "744e258c-7b3c-5958-8955-0f66265215d9",
@@ -1367,7 +1367,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1b220ad6-1c98-4c5d-8902-8e585d723817",
@@ -1385,7 +1385,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6576a535-b4d8-4049-8002-83fbfaa9bfbc",
@@ -1435,7 +1435,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "11e8feea-d5b0-5ce1-8112-f10e84577cf2",
@@ -1465,7 +1465,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f2d180ec-fca2-5758-b1ec-1598c0bd551b",
@@ -1483,7 +1483,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b81e0b4a-1446-5763-8499-df144e3ebc4e",
@@ -1513,7 +1513,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a748d97a-a4ba-4a4c-9368-7f877c95a07c",
@@ -1543,7 +1543,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "026f155c-a258-412a-803e-6c01a4aff779",
@@ -1561,7 +1561,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c956786c-2883-4a6f-b7a0-a00c161ab73b",
@@ -1579,7 +1579,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8706352d-ed45-5151-9a38-e4023ef0a4f5",
@@ -1609,7 +1609,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5d3cb9db-05ce-4434-a47a-f36e7695bf0e",
@@ -1627,7 +1627,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2ccda37a-d265-5049-ab1d-92ef841fe664",
@@ -1667,7 +1667,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4a4535cf-37be-45d3-a01b-cc61570804ae",
@@ -1697,7 +1697,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ca041f1b-ea9a-5a9f-b470-3f4f0bd4e44d",
@@ -1727,7 +1727,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "25513ad3-0d2d-4420-9a9a-35e59d52b20b",
@@ -1767,7 +1767,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f7ac9980-0cc1-5f69-950b-ce99c7ba5fed",
@@ -1797,7 +1797,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d7536e0e-d96b-5c5a-865e-0ee61149155e",
@@ -1837,7 +1837,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "365c2a9d-ea93-5acb-b94c-fd3841197a82",
@@ -1867,7 +1867,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "aaa47121-e982-50c5-9bf4-a331a2dea1b0",
@@ -1907,7 +1907,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5e8c6208-b042-5efe-844c-6ff7fda83fe3",
@@ -1937,7 +1937,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5e33fd5e-43be-5b9b-9c67-7dcd9556c8b5",
@@ -1977,7 +1977,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "307ee108-648f-57fb-85d8-e2e24641a564",
@@ -2007,7 +2007,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e7eb33c4-0ba3-5803-92e1-d845be162130",
@@ -2047,7 +2047,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "22693577-de24-40ba-89a9-4c5fff2d77c5",
@@ -2087,7 +2087,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d069f20d-af9d-5506-9fef-720296115592",
@@ -2117,7 +2117,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5d166965-53fd-5ca2-8afc-f22447304c20",
@@ -2135,7 +2135,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "61d998bc-a9bb-4e73-b2db-ca0dcb5f726a",
@@ -2165,7 +2165,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "212054fa-e240-57dd-8cd7-79e3e87e56b5",
@@ -2215,7 +2215,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4f0756b9-5257-5a6b-95d7-cf72b86941b9",
@@ -2245,7 +2245,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fc83aadb-ee25-5267-9c69-bcc189663ebd",
@@ -2263,7 +2263,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9d616a83-0a5e-5a54-a6e4-0e788490160e",
@@ -2293,7 +2293,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "26a07013-5508-5d46-b855-09c0c09e9951",
@@ -2333,7 +2333,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c61b9244-ae62-4c86-bfaa-6eb9db5ea30e",
@@ -2363,7 +2363,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bbbdd720-801c-494d-94bd-37c03bc1abca",
@@ -2381,7 +2381,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "39246820-3784-5e19-9807-11b798474ea1",
@@ -2421,7 +2421,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "36d42844-3f69-50d1-a343-5a8c234029d6",
@@ -2451,7 +2451,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1c2001d4-48ae-4041-af76-689868312b0c",
@@ -2469,7 +2469,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e36ac7bb-b5c2-5cfb-91d4-a567c820003f",
@@ -2499,7 +2499,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b80c2811-6de4-53a7-bad6-608bd03c92cd",
@@ -2517,7 +2517,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e6ce55fe-c7de-51a2-bd94-97b8542c4896",
@@ -2535,7 +2535,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "37bd05f6-f379-468e-84f1-a44bbf2b300a",
@@ -2565,7 +2565,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5a2bbb40-62fb-5623-a7d4-fa06ce943815",
@@ -2595,7 +2595,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c736ef44-a366-59c7-9dcc-11f0730bb227",
@@ -2625,7 +2625,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6ca1f173-2675-5eb5-9eea-e16bdbd41777",
@@ -2655,7 +2655,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ff7c52b4-410a-5ee7-9d94-5bb9d836036f",
@@ -2685,7 +2685,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1bb34869-3cd2-596b-8129-662f3bf7d362",
@@ -2715,7 +2715,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bf5bf471-37c8-57de-8de3-6213f0be8356",
@@ -2745,7 +2745,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a9ee898d-16bc-4f32-85c2-25d94cd199a2",
@@ -2785,7 +2785,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0a1169e4-9027-5380-8637-80038bec63ff",
@@ -2803,7 +2803,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1bccb38b-fed0-585a-ade1-d81be74bb130",
@@ -2833,7 +2833,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "edc2ce16-2efc-5673-a19a-939bc39a8332",
@@ -2851,7 +2851,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "91fa502b-4ca6-5d4f-a328-9c2cdfe857ed",
@@ -2881,7 +2881,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2dff3aad-35d5-5e79-b7f7-4bb5876c14ea",
@@ -2911,7 +2911,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "02b35e45-ac24-5a87-8ddb-7123471a6cb6",
@@ -2941,7 +2941,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ccd5e392-b98c-5c27-b2d9-2830a73b72b4",
@@ -2971,7 +2971,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fd5efc4a-c6be-4b99-8b71-7bc4243f716f",
@@ -3021,7 +3021,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9733fa04-0d9f-5631-9255-899e96acfbc1",
@@ -3061,7 +3061,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2dcf962a-eca8-51f1-9e17-61ea366a783d",
@@ -3091,7 +3091,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c718522f-3dab-54b4-91e6-e7382e151f22",
@@ -3121,7 +3121,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fe57fade-408c-4f3f-9df0-39ab556fcd13",
@@ -3151,7 +3151,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e5349aa3-53f9-5195-afb7-1d5b0c4f4218",
@@ -3191,7 +3191,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "58ed5972-6938-5695-8a64-a64ab030bc65",
@@ -3209,7 +3209,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "de5624c5-3af7-5a42-bce8-26497d17f616",
@@ -3227,7 +3227,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "82cd1a90-d486-4b88-b901-bdac5b90bd9d",
@@ -3257,7 +3257,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dfe222ed-18b4-5aeb-9934-d5b312df7011",
@@ -3297,7 +3297,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b6286e3a-2a2c-565d-95ab-77e3183dd2c4",
@@ -3327,7 +3327,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b284fb2d-3f9c-4842-bed8-eab6c5ba0234",
@@ -3357,7 +3357,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "18cd94c4-be11-5f8d-843f-19401ff42f25",
@@ -3407,7 +3407,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2fd485fe-8d8a-5096-83bd-57b39eb15519",
@@ -3437,7 +3437,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2359fcf8-e489-4790-9a5a-92235cd35b5f",
@@ -3455,7 +3455,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "16788de1-9926-42f0-ab68-4b6eb3fcad8f",
@@ -3473,7 +3473,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c87218a2-ff95-5730-a050-800c102177d6",
@@ -3491,7 +3491,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3d9b8f32-79cc-5047-a2c2-264ae6d890f4",
@@ -3521,7 +3521,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ded163ef-8051-5030-a471-41bc9bb7c6b3",
@@ -3551,7 +3551,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0b08de0f-5a55-59c7-af7c-52ed544f32a5",
@@ -3581,7 +3581,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0121be77-ebac-448c-90cb-7a5003696f3b",
@@ -3611,7 +3611,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f8b56297-f2da-433d-965a-73dbd28e16f9",
@@ -3629,7 +3629,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "695a2ced-004d-5d16-ab8b-1dfe8e155cc9",
@@ -3659,7 +3659,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4535be84-19d5-5107-aee3-8215ecceffd7",
@@ -3699,7 +3699,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "92f33665-40a5-5da6-9f3d-c42acc53a39f",
@@ -3729,7 +3729,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "021e3b5b-1eaa-4d8d-9ca7-b429e7831254",
@@ -3747,7 +3747,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2a934a54-fa2d-51cf-88c8-df0ef995d20d",
@@ -3765,7 +3765,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "68f6df66-6ce1-4d56-8075-0eeead603f28",
@@ -3795,7 +3795,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9a444dca-f422-4aac-aeea-35e8b6524cb9",
@@ -3825,7 +3825,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fb4a7994-e8e9-57f6-8e3b-539592dc02aa",
@@ -3855,7 +3855,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d8a19800-2874-517a-ae2f-ef69bfca46a9",
@@ -3895,7 +3895,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "51a26b22-3820-4ac0-9204-45d093b0e9a2",
@@ -3925,7 +3925,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9ff40d40-d903-4faf-b559-5d7921d1f311",
@@ -3965,7 +3965,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0922c2d3-9761-40e7-bf9f-39731df8101e",
@@ -3995,7 +3995,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6b76459d-fe6b-4c4d-8acf-f96b7e6f79bf",
@@ -4025,7 +4025,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "637865ab-78dd-5d83-905d-dc6c5a1c2a05",
@@ -4055,7 +4055,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2eec1b34-5b5d-42d5-b111-218c41632319",
@@ -4095,7 +4095,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "90932123-0de4-4b5b-89a6-36cd770dc2f6",
@@ -4135,7 +4135,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d1294b3a-d92e-5fd6-96e4-de3f9d2a10d4",
@@ -4165,7 +4165,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cb0b3c00-085d-4ff3-b1b7-dcbdb5310226",
@@ -4195,7 +4195,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b51a77ef-99bf-5e8b-87f2-b80c7d14e2e1",
@@ -4225,7 +4225,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "893cc832-f383-4f66-86db-e6b73d0210f6",
@@ -4255,7 +4255,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9663bbb4-d3de-5ed1-b2d4-1b659a41b932",
@@ -4285,7 +4285,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "45be1b85-a3a2-4021-a3b6-106939d78190",
@@ -4315,7 +4315,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "125fe0d9-e003-4009-a510-b878c74c7676",
@@ -4355,7 +4355,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0cfa5bf1-492d-4964-aad5-1450c4436829",
@@ -4385,7 +4385,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cfd5febc-396c-5cf8-83bf-9ecfdfa80789",
@@ -4403,7 +4403,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3730bf0a-30dd-5074-9f56-5dc39d03c1dd",
@@ -4433,7 +4433,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "21c0f50a-5365-5088-b087-338163a4c8e5",
@@ -4451,7 +4451,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "14409ed8-8bdf-524f-8820-90abd0957e04",
@@ -4469,7 +4469,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7659adfa-7b20-5593-937b-23cad219454a",
@@ -4499,7 +4499,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f8951ca7-fa96-5f78-92cd-391b277252dc",
@@ -4559,7 +4559,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "96e47a3f-5ce1-5668-9146-a6ad73ce0783",
@@ -4609,7 +4609,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "45589403-3938-581c-92db-caf8588f98a7",
@@ -4639,7 +4639,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "189f6bc6-c13e-55be-86b2-642bf19936d2",
@@ -4669,7 +4669,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3999be15-b838-5dc5-804b-7e3cf448925e",
@@ -4719,7 +4719,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "69b46e97-6ef8-5aa9-8820-60e5f073928f",
@@ -4749,7 +4749,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8b8d7290-08f8-5507-a391-c71a30df812c",
@@ -4767,7 +4767,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "27c9eafd-4903-5b64-9486-1076ef6363f2",
@@ -4797,7 +4797,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9fb55be2-35be-5abe-9efd-8d65093bd2c7",
@@ -4827,7 +4827,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8ed4d928-d230-5f5d-9dcd-5bf0203c1cea",
@@ -4845,7 +4845,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6c5f2d80-3942-5fc1-9f1d-ba8f4c6bac62",
@@ -4895,7 +4895,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8231d902-431c-58bc-8ddc-c63c429e466e",
@@ -4913,7 +4913,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c1c7bd10-4bfe-5d17-813e-8cad14317f1b",
@@ -4943,7 +4943,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "01cdeede-8757-5555-b2ec-9d5107933144",
@@ -4983,7 +4983,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6d29034a-dc7a-523d-be7f-c794ecd30b0a",
@@ -5053,7 +5053,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a4bcb84c-0f10-5745-88a9-19398ef3c805",
@@ -5093,7 +5093,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "13c0c66b-6180-5fa6-8c59-b671128d2820",
@@ -5163,7 +5163,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c3bb031-4f36-492b-a281-0fbf8b3acc9c",
@@ -5181,7 +5181,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f0aadb66-b514-4b23-a1a0-e279e872371e",
@@ -5211,7 +5211,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "230fcd93-88c6-527d-af24-6026aae5c089",
@@ -5251,7 +5251,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "00c67f7b-fb28-4be1-b5d9-900f4fbfaa11",
@@ -5301,7 +5301,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "199ba4a9-f1e7-48c6-862d-7e40ce00e53b",
@@ -5331,7 +5331,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0cb14cbb-d89c-4e9e-b6be-06763a1be9e0",
@@ -5361,7 +5361,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1e67586f-a3c9-4d3e-ac47-d455cef8c541",
@@ -5391,7 +5391,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e4bcfd46-8db1-4cc1-a33c-da816fd4f372",
@@ -5421,7 +5421,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "756981ea-1db8-4b80-b444-942b39ef3240",
@@ -5451,7 +5451,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ab138c9b-3dbc-4c33-ab1d-5f768c02dd17",
@@ -5521,7 +5521,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "be9bd559-8aa9-4d7f-82f3-e971fee81e12",
@@ -5581,7 +5581,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f67d68c4-e367-52b9-97f7-87301aeb5966",
@@ -5631,7 +5631,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a32a8ba6-613b-4fb7-a85e-75249f1ba0f8",
@@ -5691,7 +5691,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9e878499-a28a-46fd-be06-037d38a130b6",
@@ -5709,7 +5709,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0d863627-69c8-46b1-bd86-3fb3608c4b24",
@@ -5759,7 +5759,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1724065c-c39f-49d6-8ce6-937d487c4d63",
@@ -5819,7 +5819,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0d77a229-a4cb-42ae-bba6-be910cb7e59a",
@@ -5837,7 +5837,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2a6cda35-85d8-5701-9660-56c7603d1169",
@@ -5855,7 +5855,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b803fe99-3a67-5680-9060-d4ddad398e4d",
@@ -5885,7 +5885,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "46ad8f69-0eae-4e0d-8712-5c353f4089f7",
@@ -5915,7 +5915,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "89d1249f-bd12-482c-bd92-831bc9d05849",
@@ -5945,7 +5945,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "57fc935d-7009-5570-9e9c-009b841391d5",
@@ -5975,7 +5975,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0feaf0f0-7fb9-5aea-8161-965e404ac5c7",
@@ -6015,7 +6015,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "32d4214a-2b02-5bbd-bfec-b0a263ccedd0",
@@ -6065,7 +6065,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d51bf064-7c64-4c49-b544-4523bcdb33be",
@@ -6105,7 +6105,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bb0e576e-7968-5c28-8fe6-3dc488b7a93c",
@@ -6135,7 +6135,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "20406166-bb37-5b14-a560-4d88c6f4f337",
@@ -6165,7 +6165,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "681ff542-28bf-5a04-b69e-9855c3bb08cb",
@@ -6195,7 +6195,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4ce82dd2-9c94-5b6c-9249-47af54b8185b",
@@ -6225,7 +6225,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "07d2c258-9688-5a18-9844-b5bc42d704aa",
@@ -6255,7 +6255,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cbd4dba3-ee2c-4292-b0a8-a9c6d7f63b8a",
@@ -6295,7 +6295,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9f7dc3e1-138c-5da1-b1a7-a408006c5d8d",
@@ -6325,7 +6325,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c72fcaec-4d34-5261-9cb3-63af29de4511",
@@ -6355,7 +6355,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6ebe2b1a-b506-5a6c-a01c-0ef97185e285",
@@ -6385,7 +6385,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "08804cfa-e593-5df2-8445-5d6e0e50ff45",
@@ -6415,7 +6415,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "54e91327-aa4b-4d49-8844-46c8212c38a0",
@@ -6445,7 +6445,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b093fd97-3bfd-5949-918d-809fdd298d94",
@@ -6463,7 +6463,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a1d89a18-98a7-50b7-8146-62b85565ee3b",
@@ -6503,7 +6503,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9a504a2f-7be1-5669-8246-92e4e2a497e6",
@@ -6543,7 +6543,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e079589a-7723-5799-a44d-6711a71cd356",
@@ -6573,7 +6573,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7a766078-3485-50b2-bf8d-8e84d34be7c5",
@@ -6603,7 +6603,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3198cbf3-4ef9-58b7-9a81-77b8f7b8cd54",
@@ -6633,7 +6633,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0a69fcc2-063d-5f2c-bc16-a0700ddeec79",
@@ -6663,7 +6663,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "da47aa1f-43a7-45dd-9897-ae9e67f9d0a0",
@@ -6693,7 +6693,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7a9a14d3-1df0-5fa1-9a30-f61d3b45451a",
@@ -6711,7 +6711,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8428d899-cb1c-4fe8-a767-d16b43eef042",
@@ -6751,7 +6751,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "585d9513-9f34-5034-b243-af14b3d9f8c7",
@@ -6769,7 +6769,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4bb3a98c-b867-45a9-bbce-eca4c1dcf7fc",
@@ -6799,7 +6799,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8dfad1ee-1f2f-4914-9f57-201d2be9a500",
@@ -6829,7 +6829,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f09f7bd0-e4e3-59ee-9741-29d50459041b",
@@ -6859,7 +6859,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "76e49d3d-0d79-5887-ad8d-e2f92cbc2025",
@@ -6899,7 +6899,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "524426e1-2fb0-4b3c-a093-eb48657b62b7",
@@ -6949,7 +6949,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "267151ac-ce41-428a-80bc-16ed72fc9409",
@@ -6979,7 +6979,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c059e1d4-c414-5ee8-a61b-b7115b94299e",
@@ -6997,7 +6997,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "80b31b9a-7179-5549-b14a-bc3bcbf460b9",
@@ -7015,7 +7015,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0cb58524-b7ab-4b90-bbcf-5f110796309b",
@@ -7033,7 +7033,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9d1f955c-cc2f-5216-8f80-521f67f0eb28",
@@ -7073,7 +7073,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "184624fb-b0b3-5753-97a2-ec937c7cf3fd",
@@ -7123,7 +7123,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "be08bfcc-6797-5b5b-9456-ce6a01d0c614",
@@ -7153,7 +7153,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5acc1aed-a919-54ea-9770-069eeba27e9c",
@@ -7223,7 +7223,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dd4784e3-6385-5292-8327-e6cec5ceb963",
@@ -7253,7 +7253,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a895fc3d-6c38-475a-b938-8929144fae0a",
@@ -7283,7 +7283,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c2700bd5-00e0-46ff-b283-fd72b35d26cd",
@@ -7313,7 +7313,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "49e48393-44a6-416a-99d0-181b3f24f120",
@@ -7331,7 +7331,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c0577436-d469-4e00-b8d7-13ec7a01abee",
@@ -7381,7 +7381,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8446df4c-58b8-4a56-938e-904afa7fd6f2",
@@ -7431,7 +7431,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5bb7e060-cfbe-577c-b887-d480bbfd0592",
@@ -7461,7 +7461,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c85b0579-159d-4f10-8caa-a502ddd6c7d1",
@@ -7491,7 +7491,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0aa293d9-1fb9-435c-bc77-bbface6d23f0",
@@ -7531,7 +7531,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d5e682a5-1464-4cce-969e-a1f1be48f57d",
@@ -7561,7 +7561,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "59382da9-3cfc-5eff-88ff-ac5f058baef7",
@@ -7601,7 +7601,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "96c35970-07b6-4fae-aea8-8743ac831b10",
@@ -7631,7 +7631,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e07a01c1-dfe1-585c-89c6-9d8f8995b3d3",
@@ -7661,7 +7661,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bb393955-faee-449c-b087-e2e1c243017b",
@@ -7679,7 +7679,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "46de416b-0304-500e-a0a8-d8c04bc8af26",
@@ -7729,7 +7729,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a6d1975a-7044-4353-b639-f723313fb9e1",
@@ -7769,7 +7769,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d76fa084-70c1-5ae6-875e-220b611119fd",
@@ -7799,7 +7799,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d785cbc6-cc54-5d0e-9d01-b39bb5dfc645",
@@ -7829,7 +7829,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a8bd4a40-98fe-4895-8957-5c6f2f2bf939",
@@ -7859,7 +7859,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e88e127c-147e-4c58-bb58-7998dd69227e",
@@ -7889,7 +7889,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d8abfd8d-0183-426e-9a2a-5a3f45323044",
@@ -7929,7 +7929,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "296cf7cc-724e-40f5-a5a1-d089a7194bf9",
@@ -7969,7 +7969,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0f2182d7-49dd-4b42-8f03-43d7e0c11550",
@@ -7999,7 +7999,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2ca81be4-f662-524a-9ac0-d9dfb34ab8b1",
@@ -8039,7 +8039,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6d8753a9-477b-4e9b-8e11-87012371b9a3",
@@ -8089,7 +8089,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2d9c70f6-b59b-4a89-90d4-5cde83b7e7e3",
@@ -8119,7 +8119,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dce185be-2d69-57e2-a2e1-bd57d0f9e55a",
@@ -8149,7 +8149,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c88f4f7b-1651-4914-9ffe-b3a413d45b19",
@@ -8179,7 +8179,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "514083ca-f0af-579d-870c-8fc499bb1ca4",
@@ -8229,7 +8229,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1738f0ee-deed-5a5c-84e2-bc531d6ea3bd",
@@ -8259,7 +8259,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d800a4c7-6cda-568d-a14a-353fed71a6fe",
@@ -8289,7 +8289,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "97c336e3-2f60-575a-b55e-d1b6495c6b61",
@@ -8319,7 +8319,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "96a97f10-c226-5b8b-8efe-58bdb24fd794",
@@ -8359,7 +8359,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "81725f5e-d5ed-510a-be90-5f9f9ef5c89c",
@@ -8399,7 +8399,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "12280eed-5521-45fb-b4b2-b5ce282b1f99",
@@ -8439,7 +8439,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "01131dee-b670-5734-b920-933f7963f92d",
@@ -8469,7 +8469,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e3970eed-0a0b-4cdc-b050-528ee75716ee",
@@ -8499,7 +8499,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3a966677-8160-5393-9e6a-693f8f24a6cc",
@@ -8539,7 +8539,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "824cd900-9127-54a1-ba5a-fbfff1d5c3b1",
@@ -8557,7 +8557,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3aee46e9-eac0-47f9-beb5-46f7e96e6fe0",
@@ -8607,7 +8607,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "01b5ff7f-c311-4991-8b51-9e0286f18269",
@@ -8637,7 +8637,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0afb031c-af17-5e2d-85f9-3936c8cbaba6",
@@ -8687,7 +8687,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "02dab84c-0c32-5ba4-8686-08c8eeb1ee66",
@@ -8717,7 +8717,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d75065ca-1b3a-5c9a-ba2a-7ee5aa9cac21",
@@ -8735,7 +8735,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "31b81829-a818-52a1-ad6e-5ad978992520",
@@ -8775,7 +8775,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ddf124d2-5bed-5da4-a15b-480fcc5e20fe",
@@ -8793,7 +8793,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6dbbf535-35d7-5315-85e9-4e54d45ca56a",
@@ -8823,7 +8823,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9da8d4f7-5a24-40d9-b0ca-ae8136fef325",
@@ -8853,7 +8853,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7fa98525-66ad-403d-be58-18a534c2b64f",
@@ -8883,7 +8883,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5e0e3a76-4bb0-5321-bec6-a000f414a0d8",
@@ -8901,7 +8901,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "41acfa73-7b0f-5d5a-9694-329ef0bc1657",
@@ -8931,7 +8931,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "94022e69-acce-4b9d-9373-e79566945453",
@@ -8961,7 +8961,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1a690569-840e-4fa4-9e77-f14c8ffc1264",
@@ -9011,7 +9011,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c5f84c42-cfd2-57b3-a5c9-8d782dc37c48",
@@ -9041,7 +9041,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "50da21ea-9efe-50d4-94a6-e72964af9a66",
@@ -9081,7 +9081,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0117ff17-2708-511c-922d-578deac58d58",
@@ -9111,7 +9111,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0033d12c-7561-5326-a6ec-174335fed866",
@@ -9141,7 +9141,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c341959-c202-5d13-b0a2-1e0d35ccf19d",
@@ -9181,7 +9181,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d0b024da-b369-5504-a436-e322e9cae590",
@@ -9221,7 +9221,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d90fcc14-4c59-5c8f-82cb-9187e19aff93",
@@ -9251,7 +9251,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "43689a3c-a87b-58a5-b997-c4a69a34eb78",
@@ -9291,7 +9291,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "738f0b6c-8988-4509-a9e2-dcdb9f8503cb",
@@ -9341,7 +9341,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "db5751ff-bd99-5c40-8fcb-dee2068b5832",
@@ -9381,7 +9381,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5d034de7-1163-5231-ba85-209ada743480",
@@ -9411,7 +9411,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8193ed36-fd43-4351-9cbe-9e276c5d36d0",
@@ -9441,7 +9441,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "07bcabd0-564e-4dc2-bc73-befdb9d08d23",
@@ -9471,7 +9471,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4ddf82c0-275a-4b89-acd3-bf3810f34127",
@@ -9501,7 +9501,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7f5ef33f-2c9b-50a9-b00d-3909130138b3",
@@ -9541,7 +9541,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d69100c2-4b4f-45f0-b5cd-6b17bc442283",
@@ -9581,7 +9581,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2c446e6e-b7ab-462b-b9ab-17a2abe70f73",
@@ -9611,7 +9611,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e5dc67db-cba0-5bc5-9534-8a2e6bf5d9a0",
@@ -9711,7 +9711,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e0959e9a-6344-4bf3-86c9-07ffc243bed5",
@@ -9761,7 +9761,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "dba19e9c-5a62-5c5f-8063-db944d2ca84d",
@@ -9779,7 +9779,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "46e562f0-02d0-5b9f-8185-f4509faa359f",
@@ -9809,7 +9809,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6ae19dcb-6762-5dcc-a15c-67478197760d",
@@ -9879,7 +9879,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f75c280b-dea5-5e31-88aa-ed2c66828e9c",
@@ -9929,7 +9929,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e9a0b402-64bd-41dc-bcc8-eafc67ec99d0",
@@ -9947,7 +9947,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "69dfbac7-c45e-5a0d-892c-d995c458e1f4",
@@ -9997,7 +9997,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "66c1fffb-608a-5a4f-96f4-a966e39d227c",
@@ -10027,7 +10027,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3b0f24db-14f2-4e0c-badb-189e67d48a10",
@@ -10057,7 +10057,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "26e50d3b-c134-4d0e-a384-95b5f128fedb",
@@ -10127,7 +10127,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "acd4b822-558f-54f6-b37c-7a01f8ed497d",
@@ -10157,7 +10157,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b6609065-4587-5743-b1f4-3f1f0c2d8552",
@@ -10187,7 +10187,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "41775bd1-c939-47cd-9282-977cd646184d",
@@ -10205,7 +10205,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bbb277ff-ecf2-5cec-bb8b-245516448908",
@@ -10223,7 +10223,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fff00e85-dd1f-41dd-befc-93818c001c66",
@@ -10253,7 +10253,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "94bc8deb-4e36-5dfb-ad70-819b23e93e96",
@@ -10283,7 +10283,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "46c16b26-5844-578c-ad41-9f8b98001455",
@@ -10301,7 +10301,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "92ec42fc-c6df-59bf-95f9-cf4ec9320f33",
@@ -10331,7 +10331,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fbd7d452-082c-505a-9452-4c7da6f99ca7",
@@ -10361,7 +10361,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d4df37a1-a7e8-41cb-8271-8297c292dc93",
@@ -10401,7 +10401,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "296290c0-7522-45e7-b628-ccea6a79edb8",
@@ -10431,7 +10431,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f421f7e4-ee73-47dd-95a9-7f9cb16f9c4f",
@@ -10461,7 +10461,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "991c5a6b-ad0e-5ee6-9e22-5efd1791a7e8",
@@ -10501,7 +10501,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "39433c8e-7801-5c93-8c1e-dce46a4ff0bf",
@@ -10561,7 +10561,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "483917f8-9ae7-4f03-b6fc-a985d0434392",
@@ -10601,7 +10601,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "353174d8-e300-54fa-bdb2-31207320f747",
@@ -10631,7 +10631,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f3c8f0a4-790e-4a04-a944-3b38a927ea97",
@@ -10671,7 +10671,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6f9746a2-a69d-46ab-a3d9-75d78529ff42",
@@ -10689,7 +10689,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "25918b2b-e21f-5c3a-843f-2b09eb0e0fcc",
@@ -10719,7 +10719,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c8be606c-01a5-40d9-b9fe-e66a7897aa68",
@@ -10737,7 +10737,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8466b76a-a1da-527b-b2f2-c3ee9b8f0189",
@@ -10767,7 +10767,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "69e22229-c66c-5c0d-9159-cba61a3be427",
@@ -10785,7 +10785,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "19dd0b57-f199-53a3-b494-bc167d576122",
@@ -10803,7 +10803,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d3701894-1093-52d2-99c9-8faae0412c5d",
@@ -10833,7 +10833,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d79d332f-147f-41d9-b074-f3b3d15a992e",
@@ -10851,7 +10851,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "29ff0538-34f2-4a25-b575-82416b51a2b5",
@@ -10881,7 +10881,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "508a25b0-0c66-4f12-aa52-94d99af99e36",
@@ -10911,7 +10911,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e37c521e-c908-45f9-a1f2-65182f9039d5",
@@ -10941,7 +10941,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "aead6121-1350-597a-b25a-a2dcc2723528",
@@ -10991,7 +10991,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e4215f70-dfa8-5c09-a136-cb79cd013437",
@@ -11009,7 +11009,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6d5d787d-c370-57fe-a1cf-af4411315c4a",
@@ -11039,7 +11039,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d3d924d4-cf51-5d44-89ad-a3e4d4c60ec6",
@@ -11079,7 +11079,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "141fd32c-f185-47e3-b704-d53f09c0f0e1",
@@ -11097,7 +11097,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1605854f-6b8a-4fdb-86f1-eeb732d8b8fa",
@@ -11115,7 +11115,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e93e68d9-7f1a-4763-b06c-77060ccfb0df",
@@ -11155,7 +11155,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6bb8767e-47fc-4adc-8c54-96c542e57463",
@@ -11185,7 +11185,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "43963dda-7194-5b8f-954f-6793120847b9",
@@ -11215,7 +11215,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f4035629-bd58-5b5c-9b5d-7d9286035dde",
@@ -11255,7 +11255,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1648e357-7f88-4712-9a53-d685604a9ff9",
@@ -11295,7 +11295,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "66cbbdc0-cdb7-53e9-8013-658b939cc673",
@@ -11313,7 +11313,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bdf61a47-9ea6-40bc-920c-251c235e00b7",
@@ -11343,7 +11343,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c4a85a2-33b4-4c07-b7b5-17f94e9081ac",
@@ -11373,7 +11373,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "69a2ba35-a9fe-5eeb-84fd-bbc348cffd43",
@@ -11433,7 +11433,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "55b8ebee-7674-598e-b7a2-be9cc44efe51",
@@ -11463,7 +11463,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "83ba56ea-c7ec-465d-af77-60549faf481e",
@@ -11493,7 +11493,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "408f43bd-9f01-45ee-9c15-62e11261272e",
@@ -11523,7 +11523,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "170b9a94-e56f-44b6-8ba2-fc689f18f613",
@@ -11553,7 +11553,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a215984a-40fb-51d6-ac53-8e06bf85d16b",
@@ -11593,7 +11593,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0d192d75-515b-424d-aedd-f11201d95ced",
@@ -11623,7 +11623,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "55d38f72-d2e7-5969-bd45-5fcd8aa755c7",
@@ -11673,7 +11673,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "22083718-fdd1-5a63-97ff-da8690a7fc78",
@@ -11691,7 +11691,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d5cf7c7d-b5cc-58a0-90cb-1a90b27a32c1",
@@ -11721,7 +11721,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6ef2c5a7-ee41-5721-a75c-099864f95673",
@@ -11751,7 +11751,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9d557dda-b95f-47cf-918e-335348412063",
@@ -11781,7 +11781,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b6a86b30-3775-47c7-af1b-96a6ce8551e5",
@@ -11851,7 +11851,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "088d9de0-6499-5189-a607-e19581804169",
@@ -11881,7 +11881,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "940d141e-f761-50af-8a79-36e1f0c080dc",
@@ -11921,7 +11921,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d9bcce0b-f527-5766-bf6d-c75777303e3e",
@@ -11951,7 +11951,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e9beb58d-e004-51c9-a9d1-51417648f444",
@@ -11981,7 +11981,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9bbe8825-24fd-5821-a07b-9593a9f1e6fe",
@@ -12011,7 +12011,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fecf33d1-2b4e-4995-9268-8897723fdc63",
@@ -12029,7 +12029,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "56a495d6-2b54-4263-aa7b-eb8551450391",
@@ -12059,7 +12059,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1fa8af81-0c2c-5034-980e-6b64e8bbb299",
@@ -12077,7 +12077,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fb5531ce-a973-4cee-a458-5284f36e1496",
@@ -12107,7 +12107,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ad49b9d0-345d-5f3e-a59a-dd13a2938940",
@@ -12125,7 +12125,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "723258e4-6a2f-4f89-bb1d-eb7c3821a1ab",
@@ -12155,7 +12155,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8eebda49-e8b6-55fb-81f3-26af24277bef",
@@ -12215,7 +12215,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "32da95b8-94b7-5da8-9973-f9d09485784e",
@@ -12245,7 +12245,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "71e7c5e5-5d1c-4916-8795-218b8f5616d9",
@@ -12275,7 +12275,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7872ec68-0d11-4583-a958-cf83788e85da",
@@ -12315,7 +12315,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6fd30b09-942a-5d62-8e5a-d13c69aad9a8",
@@ -12365,7 +12365,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1a6f4d5a-8e8a-46d8-9e89-bce15592fc35",
@@ -12405,7 +12405,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "af19c43a-3a90-44e6-8e9a-a183fd512a86",
@@ -12423,7 +12423,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b51f2bc7-47cc-5402-8d04-c8b8addac926",
@@ -12453,7 +12453,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5c89f182-f120-550c-8a0b-ad44bf6ad6bf",
@@ -12493,7 +12493,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b01155b1-611e-42a7-bcc9-0017b726ff16",
@@ -12523,7 +12523,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ca5efa6f-cb93-5ef3-8bcc-f36042465d43",
@@ -12541,7 +12541,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1da0217a-b98d-4581-b1d7-1fede2238caa",
@@ -12571,7 +12571,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "463d8338-4014-4489-b798-73ad75bac32b",
@@ -12589,7 +12589,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e73e9d76-5237-55fb-b1f1-3a9c1fc39271",
@@ -12629,7 +12629,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2902e950-b65e-58a8-965b-10ae6ea495db",
@@ -12669,7 +12669,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7f4e8027-56b8-500a-9a2d-f9eeb3009b54",
@@ -12699,7 +12699,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c048489-fb17-4be5-ad5d-0aa1b1a2fd5a",
@@ -12769,7 +12769,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "295037e4-de74-4dd7-8d00-1bd3addc03b4",
@@ -12809,7 +12809,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "67c10881-03cd-5f07-b1f3-da8de7ebcedd",
@@ -12869,7 +12869,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cd71f8bc-5797-4db4-a492-f9d973a8bcaf",
@@ -12909,7 +12909,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "06c945b2-ff5b-5f48-b31b-8f42d7e208b4",
@@ -12969,7 +12969,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3c7de8cf-b67d-5143-89ce-1403b8c53b51",
@@ -12999,7 +12999,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "793fd909-0c4c-49f8-a03b-312854bce5af",
@@ -13029,7 +13029,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "44f5c261-018e-525f-971e-857464b74390",
@@ -13069,7 +13069,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7e70889b-d100-558a-8e6a-186716e04c07",
@@ -13099,7 +13099,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a473a715-f5ee-513b-95fd-7145baec6a53",
@@ -13149,7 +13149,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7556ceb4-175c-542c-ad26-81d9a20ea40e",
@@ -13167,7 +13167,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cffdd421-821d-498b-9d39-fd7df9da4d17",
@@ -13227,7 +13227,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c19a1cfc-072b-5d37-a34a-17db0de70e7b",
@@ -13267,7 +13267,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "037a04bb-6e24-4eec-86d3-2bed9ec0bb1f",
@@ -13297,7 +13297,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1a575a90-2019-58d3-8852-47f549a356fa",
@@ -13315,7 +13315,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f8319a35-0e4b-5e94-bfe5-599f98f5725d",
@@ -13345,7 +13345,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b0c68d1e-2c8f-57e1-a265-165540a7bbb3",
@@ -13375,7 +13375,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d810a439-9980-5d52-8d8b-1f99407b30c9",
@@ -13415,7 +13415,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b417bb4f-b5f9-471f-b4af-53c2ff2bfd7c",
@@ -13445,7 +13445,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "96988621-2a46-579b-a185-1b5972d938f4",
@@ -13463,7 +13463,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "791a19f5-963b-52d7-aa55-8ae584c4e6b1",
@@ -13493,7 +13493,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fa86195d-9543-4cb6-8c13-577d32c42db5",
@@ -13543,7 +13543,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "ffff22fc-07e5-4acb-a718-13ef74c85188",
@@ -13593,7 +13593,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "abd35e9a-e010-5df8-969b-b135a71b974a",
@@ -13623,7 +13623,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "210043f8-f803-466d-a37a-bd8430308841",
@@ -13653,7 +13653,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8c6828b8-fdda-5b48-8d7d-f77b9473d93a",
@@ -13683,7 +13683,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e9f43511-ea69-5696-bdf6-8d84d9880f21",
@@ -13723,7 +13723,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "67693395-7328-4e29-9135-2a451843b308",
@@ -13741,7 +13741,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b369f2c7-a085-5cfa-bff3-f1b79e11f2bb",
@@ -13771,7 +13771,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6d4c5c8d-7359-5c5b-8b17-334642964685",
@@ -13801,7 +13801,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0122f247-6ee7-5228-8314-266e3b223102",
@@ -13861,7 +13861,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eab2fd15-e158-5e07-96e2-5512d33630a6",
@@ -13901,7 +13901,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "55211953-c0a1-4b04-97b1-ebbab00314df",
@@ -13919,7 +13919,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "950220c0-e106-4fbf-aa24-593a75568111",
@@ -13989,7 +13989,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "25fdf6fe-a555-41b1-ac92-12aad89094c7",
@@ -14007,7 +14007,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1b200e22-fa36-54b7-bb86-2eb04c92448b",
@@ -14067,7 +14067,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "bd5ce6da-269a-411d-bc2a-56a2e78ced66",
@@ -14085,7 +14085,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3905916f-fc5d-4417-8d7f-b68cde931057",
@@ -14125,7 +14125,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "14a06913-5b21-44b0-9eef-20dfc21c49e4",
@@ -14143,7 +14143,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4a369bb0-f17e-5ff7-97e0-7a3c96347018",
@@ -14203,7 +14203,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fd0843a2-13d1-4032-8ec3-69aa9d3c8ff7",
@@ -14221,7 +14221,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0631437d-bdac-4588-8907-5e0b12ab65a1",
@@ -14239,7 +14239,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "590c967b-5e58-54aa-8637-e3a70dc4062e",
@@ -14299,7 +14299,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9b98755a-4508-4e58-a652-b18ec6013444",
@@ -14317,7 +14317,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "30ef8c8f-ded5-45d0-8876-9b8fba525b15",
@@ -14335,7 +14335,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8111ea06-faeb-5e7e-9e5b-302d84adb5a2",
@@ -14395,7 +14395,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6c069898-6dee-466e-849c-beddd709304f",
@@ -14413,7 +14413,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "89cf3b04-b737-48c8-9339-73f9ba10db3e",
@@ -14431,7 +14431,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "de9b7940-ece2-57c1-8e8a-86935fc73937",
@@ -14471,7 +14471,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "704e7577-3743-4d37-b9cc-ea9b6cf6aafe",
@@ -14489,7 +14489,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e0d13a41-8047-56a5-aa9c-0040efd15239",
@@ -14507,7 +14507,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d657c24f-1bc8-40d5-9f34-7f443f773b5b",
@@ -14525,7 +14525,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "38f119f1-46d2-5b85-92ca-aa675b5f4c3a",
@@ -14565,7 +14565,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e8076802-bd66-46a7-811c-108e169701cf",
@@ -14583,7 +14583,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5930c067-8fe9-5d33-b2b9-5abf0b66482a",
@@ -14613,7 +14613,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "d3b3341c-f7e8-582a-940b-df6c0d263ce6",
@@ -14643,7 +14643,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "43bd92de-491f-4be2-a3d6-f31ebee80653",
@@ -14673,7 +14673,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f8119584-f971-5960-b20c-fffa1bd0df8a",
@@ -14713,7 +14713,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c9846186-e096-4e93-8f03-0545d67d8fc5",
@@ -14743,7 +14743,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "01fc44c3-cecf-5514-b0f1-cd38a0b2d380",
@@ -14773,7 +14773,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f5182989-c3bf-575d-bf22-7c327266b705",
@@ -14803,7 +14803,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1cb51de1-cdbb-4ddc-baaa-209ae70f4715",
@@ -14821,7 +14821,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c5c2135-2230-5193-b615-0bbe6d5175fa",
@@ -14839,7 +14839,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0966695d-8166-4e8b-a2ee-a262f4b7d5b2",
@@ -14869,7 +14869,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1edf993c-cb89-4cee-9ebc-73d099c7529e",
@@ -14909,7 +14909,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "fc666059-55e3-59ed-96c7-816bab35314e",
@@ -14927,7 +14927,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3f62b3e1-e9c6-5e41-a977-05541d8f41c5",
@@ -14957,7 +14957,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b0732401-efc5-4817-b95a-7cbe16edb4f5",
@@ -14975,7 +14975,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7565e408-20c9-4684-8c80-af9de63c8e35",
@@ -14993,7 +14993,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9a3bd89d-0d83-4e06-8b75-4b844b7e41e5",
@@ -15011,7 +15011,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4b5a7d95-ff46-4562-8807-e054a3ce79a0",
@@ -15029,7 +15029,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c8d2fee4-355b-43a2-ae0e-006ea91ed399",
@@ -15047,7 +15047,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1aa17797-e813-4d65-ac76-ba8f0f3e93de",
@@ -15065,7 +15065,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9d699db6-a961-4227-8c10-0e53e70132aa",
@@ -15083,7 +15083,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3dd6a51c-4c87-58d7-8d88-bf3a7f6f24a6",
@@ -15113,7 +15113,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9bd108cb-24cb-5665-adda-1bf140e3c488",
@@ -15143,7 +15143,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4ead1374-d405-4b85-9aae-dcd0d8477ca8",
@@ -15183,7 +15183,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "70deb326-9332-4810-8c0f-d3f74a288b72",
@@ -15243,7 +15243,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "aa02f311-1e34-5ebc-84bc-fcc9ddf785cd",
@@ -15283,7 +15283,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "26a7839e-75a1-43b0-ae85-fafc2d128806",
@@ -15333,7 +15333,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "77fcb71a-52cf-4bd4-8f11-1d24846b93b4",
@@ -15373,7 +15373,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "692f7033-02e6-5bac-8fed-1ca79702488c",
@@ -15403,7 +15403,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7660cbc4-c0cb-427e-834a-83d16da7f553",
@@ -15421,7 +15421,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4409141e-be1c-5881-9672-41f99fc76985",
@@ -15439,7 +15439,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "cc531488-0f84-5305-8e7f-94c094f76032",
@@ -15469,7 +15469,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e367c71f-1493-49db-afe0-6392afed1b28",
@@ -15487,7 +15487,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c0266e71-e3cf-54ce-9e45-7e53a3c024ef",
@@ -15527,7 +15527,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4248c4a2-9868-5adf-9142-0c87dfa7efd5",
@@ -15557,7 +15557,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "061f55e6-1a65-445d-ad97-9da30550d9df",
@@ -15597,7 +15597,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "54257ba6-9629-5cc4-9205-c0d838cff75f",
@@ -15627,7 +15627,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a7ae4910-f48d-4cb1-8241-ce3462443fc1",
@@ -15645,7 +15645,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "eec3409d-ee59-4d1a-aead-535f145ed1a8",
@@ -15675,7 +15675,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4ae329bd-5dec-5e7e-8fa4-c9184d87b1c7",
@@ -15725,7 +15725,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0b52beb4-d822-4d63-9308-fd2f66ba2f94",
@@ -15765,7 +15765,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "76632ad5-2132-5f2d-adc1-e2fb708c4c30",
@@ -15815,7 +15815,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4af663e7-8586-5646-abad-540510284785",
@@ -15845,7 +15845,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "81fa2681-f1bd-45be-b6b0-a9c06dcd50cc",
@@ -15863,7 +15863,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "39a16210-9c6d-5437-9ae6-df2845cf6f72",
@@ -15923,7 +15923,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4e4d0ba5-9834-5dfc-a951-672ec08ac030",
@@ -15993,7 +15993,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e9150e9a-2080-5e05-8bc5-ebe404b7f325",
@@ -16033,7 +16033,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0ca9a847-6472-4bb9-9871-cbd0153dd439",
@@ -16073,7 +16073,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "45e0f37d-72f6-5ebb-a095-cabcf62a5a88",
@@ -16091,7 +16091,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2f14c549-8243-4012-bf40-3aa58e4a0fdd",
@@ -16121,7 +16121,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "edc0c058-17c6-59c3-ab2b-7cd4bb8adbde",
@@ -16139,7 +16139,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e97f18d0-fa22-59f3-9d0f-64a97ccb9f75",
@@ -16169,7 +16169,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "2d3c4bd8-e43d-4bae-a199-054d64527f90",
@@ -16199,7 +16199,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "e8816c12-6b9e-5055-94a7-ba12c5934cbc",
@@ -16229,7 +16229,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "da88162d-130d-546f-87aa-3c5eb5dba9d0",
@@ -16259,7 +16259,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "74a0a9a9-530d-586d-a687-2017fee74577",
@@ -16277,7 +16277,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f5ce5ff0-074d-5890-917f-82f20e35bed8",
@@ -16307,7 +16307,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3de52713-83a3-56b2-843f-bde77624f889",
@@ -16337,7 +16337,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5d1c641e-b136-5951-b385-0174a3cc9f59",
@@ -16367,7 +16367,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f14a507c-e781-4655-b11d-09d7c3cfefb1",
@@ -16417,7 +16417,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6b306973-a7db-40a4-a153-4a0ae1374292",
@@ -16447,7 +16447,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "50a064a2-143f-51cb-9f6a-c1845d982968",
@@ -16477,7 +16477,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "47aea592-0e9f-50e1-aeb4-a83132cd5ca8",
@@ -16507,7 +16507,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "252e1830-12fe-5318-88a9-fb355de9405e",
@@ -16537,7 +16537,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0fd12e95-a608-40aa-8052-29685fc98302",
@@ -16577,7 +16577,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "c0c7b7c6-5bed-4599-9de4-7fa5fa047d78",
@@ -16595,7 +16595,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b0050983-ba4f-5395-9a30-31b5c67a5fdd",
@@ -16655,7 +16655,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "41cd14aa-fcf8-5c9e-ab87-fa2977115ff0",
@@ -16715,7 +16715,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a8377635-7037-4a89-8589-b666fe5426c4",
@@ -16733,7 +16733,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "94d48e6f-2617-5239-ab57-d91c500a3066",
@@ -16763,7 +16763,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "896237da-396f-412f-857f-b7a85f50f4bc",
@@ -16793,7 +16793,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7ff245ed-f5fa-5abe-ac28-b2e10a4b9f5a",
@@ -16843,7 +16843,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b690a3f7-71a1-46b3-9c71-73dd4bb55ba9",
@@ -16873,7 +16873,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "8693c302-3f49-59f1-8a10-e2b46589762a",
@@ -16891,7 +16891,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "211b49da-b7b8-4f3b-9331-b83998da5dcc",
@@ -16921,7 +16921,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "edab3a34-18eb-44ab-87fa-080fb6d9110c",
@@ -16961,7 +16961,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "3f27df9e-5944-48d9-92fd-b5efa85a2f9d",
@@ -16991,7 +16991,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "422a04cc-8de6-448b-b44f-f02903b527dd",
@@ -17021,7 +17021,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9aee0368-c30d-4baa-9f74-ec979f68d480",
@@ -17051,7 +17051,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "4a4efa96-0851-48d4-b374-4f64c1ca0243",
@@ -17081,7 +17081,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "19d56469-0885-5011-aeb0-895d2f6e7a23",
@@ -17141,7 +17141,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "7aa33a00-0352-5708-82ab-ebe2721d25d4",
@@ -17159,7 +17159,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "f9386e6c-9634-5919-8808-87d9e58a6842",
@@ -17189,7 +17189,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "70d66ca1-7a82-5ae8-9a6c-e286082a2f8d",
@@ -17219,7 +17219,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "a867e08f-8d0a-5028-9627-9f366d555bc3",
@@ -17237,7 +17237,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "5a644e49-ccd6-5340-bd18-89b56cca3628",
@@ -17267,7 +17267,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "0c98e37d-a8eb-5e36-a093-4f6ec5506a84",
@@ -17297,7 +17297,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "adf465ec-075d-5ed6-b112-b988e06f282c",
@@ -17315,7 +17315,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "89c0ea54-2241-40a3-b42e-0a44dd15c1e3",
@@ -17355,7 +17355,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "9111d339-2ae7-54d5-b2b1-b1a5780812c0",
@@ -17395,7 +17395,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "be56abe2-9f1a-5e45-9b6e-cdd444d9ade1",
@@ -17435,7 +17435,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6bf333ea-e32d-51f0-85f7-db2a716625cc",
@@ -17453,7 +17453,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "6e9cce65-157b-4e3e-b9f0-24151bc07f2e",
@@ -17483,7 +17483,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "b624940b-8ed1-42c5-835e-3f088b1393e4",
@@ -17553,7 +17553,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "1c9ce87d-107c-5bdd-9a4a-6378f7001a10",
@@ -17571,7 +17571,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-8433a042a568b593",
@@ -17589,7 +17589,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-754107abff3878f1",
@@ -17607,7 +17607,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-249b4490e377a597",
@@ -17625,7 +17625,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-c90905e3713ec904",
@@ -17643,7 +17643,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-17cb5a0e5c20529f",
@@ -17683,7 +17683,7 @@
       ],
       "vendor": "meditech",
       "verified_via": "llm_assisted",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-efc7ebe41e97ef97",
@@ -17701,7 +17701,7 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     },
     {
       "endpoint_id": "luxera-7a3d6c206ea074b9",
@@ -17719,13 +17719,13 @@
       "match_confidence": 0.0,
       "vendor": "meditech",
       "verified_via": "cms_pos_csv",
-      "verified_date": "2026-05-12"
+      "verified_date": "2026-05-14"
     }
   ],
   "verification": {
     "source_url": "data/cms-pos/providers-2025-06-01.json",
     "source_quote": "CMS Provider-of-Services file (hospitals only, PRVDR_CTGRY_CD=01, active termination code) matched on (state, zip5, name-token Jaccard).",
     "verified_via": "cms_pos_csv",
-    "verified_date": "2026-05-12"
+    "verified_date": "2026-05-14"
   }
 }

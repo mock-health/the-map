@@ -38,14 +38,25 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = REPO_ROOT / "data" / "cms-pos"
 
+# Search paths in priority order. ``data/raw/cms-pos`` is the new automated
+# location written by ``tools.fetch_cms_pos`` and is scanned recursively
+# (zips/CSVs live in dated subdirectories). The legacy paths preserve
+# pre-PR-3 manual-download layouts.
 DEFAULT_GLOB_DIRS = [
+    REPO_ROOT / "data" / "raw" / "cms-pos",
     Path.home() / "back" / "data" / "pos",
     REPO_ROOT / "data" / "pos",
 ]
 
+# Old (pre-2024) CMS layout: a single hospital+non-hospital-facilities zip
+# named by data-as-of date.
 POS_ZIP_PATTERN = re.compile(
     r"POS_File_Hospital_Non_Hospital_Facilities_(\d{8})\.zip$"
 )
+# Current data.cms.gov layout (QIES source system): a bare CSV named by
+# quarter. The data-as-of date is encoded in the catalog distribution
+# title — preserved in the sibling ``.provenance.json``.
+POS_CSV_PATTERN = re.compile(r"Hospital_and_other\.DATA\.Q(\d)_(\d{4})\.csv$")
 
 HOSPITAL_CATEGORY = "01"
 ACTIVE_TERMINATION_CODE = "00"
@@ -96,6 +107,10 @@ PROJECTED_FIELDS = [
 ]
 
 
+def _pos_filename_matches(name: str) -> bool:
+    return bool(POS_ZIP_PATTERN.search(name) or POS_CSV_PATTERN.search(name))
+
+
 def discover_input(explicit: str | None) -> Path:
     if explicit:
         p = Path(explicit).expanduser()
@@ -110,22 +125,55 @@ def discover_input(explicit: str | None) -> Path:
         return p
     candidates: list[Path] = []
     for d in DEFAULT_GLOB_DIRS:
-        if d.is_dir():
-            candidates.extend(p for p in d.iterdir() if POS_ZIP_PATTERN.search(p.name))
+        if not d.is_dir():
+            continue
+        # The fetcher's bucket dir has a dated-subdirectory layout, so scan
+        # recursively. Legacy dirs hold loose files, so a shallow iterdir is
+        # sufficient and avoids wandering into unrelated trees.
+        iterator = d.rglob("*") if d == REPO_ROOT / "data" / "raw" / "cms-pos" else d.iterdir()
+        candidates.extend(p for p in iterator if p.is_file() and _pos_filename_matches(p.name))
     if not candidates:
         sys.exit(
-            "ERROR: no POS file found. Pass --input <path> or set $THE_MAP_POS_CSV.\n"
+            "ERROR: no POS file found. Pass --input <path> or set $THE_MAP_POS_CSV, "
+            "or run `python -m tools.fetch_cms_pos` to download.\n"
             "Searched:\n  " + "\n  ".join(str(d) for d in DEFAULT_GLOB_DIRS)
         )
-    candidates.sort(key=lambda p: p.name)
-    return candidates[-1]
+    # Newest by mtime so we follow the latest fetch automatically. Lexical
+    # sort would break across naming conventions (zip vs csv).
+    return max(candidates, key=lambda p: p.stat().st_mtime)
+
+
+def _quarter_start_date(quarter: int, year: int) -> str:
+    month = {1: "01", 2: "04", 3: "07", 4: "10"}[quarter]
+    return f"{year}-{month}-01"
 
 
 def captured_date_from_filename(p: Path) -> str:
-    m = POS_ZIP_PATTERN.search(p.name)
-    if m:
-        ymd = m.group(1)
+    """Best-effort data-as-of date for a POS input file.
+
+    Order of preference:
+      1. ``release_date`` from a sibling ``.provenance.json`` (canonical,
+         written by ``tools.fetch_cms_pos`` from the DCAT distribution title).
+      2. Legacy zip filename ``..._YYYYMMDD.zip``.
+      3. New CSV filename ``Hospital_and_other.DATA.QX_YYYY.csv`` → first
+         day of quarter.
+    """
+    provenance = p.parent / ".provenance.json"
+    if provenance.is_file():
+        try:
+            record = json.loads(provenance.read_text())
+            release = record.get("release_date")
+            if isinstance(release, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", release):
+                return release
+        except (OSError, ValueError):
+            pass
+    m_zip = POS_ZIP_PATTERN.search(p.name)
+    if m_zip:
+        ymd = m_zip.group(1)
         return f"{ymd[:4]}-{ymd[4:6]}-{ymd[6:8]}"
+    m_csv = POS_CSV_PATTERN.search(p.name)
+    if m_csv:
+        return _quarter_start_date(int(m_csv.group(1)), int(m_csv.group(2)))
     return ""
 
 
