@@ -92,6 +92,9 @@ def _check_one(url: str, timeout: int = 15, *, verified_via: str = "") -> dict:
     judged by HTTP status: <400 = OK, anything else = broken. Evidence-bearing
     query URLs (*_public_sandbox, customer_evidence) are only broken on hard
     link rot (404, 410, NXDOMAIN); auth gates like 401/403 prove the URL is alive.
+    For FHIR sandbox bases, a 404 at the bare root is *expected* — FHIR servers
+    discover capability under ${base}/metadata, not at the root — so we re-probe
+    /metadata before declaring rot.
     """
     is_query = verified_via in EVIDENCE_QUERY_VIA
     try:
@@ -99,18 +102,35 @@ def _check_one(url: str, timeout: int = 15, *, verified_via: str = "") -> dict:
     except ImportError:
         return {"url": url, "status": None, "ok": False, "kind": "broken",
                 "reason": "requests not installed (pip install requests)"}
-    try:
-        r = requests.head(url, headers={"User-Agent": USER_AGENT}, timeout=timeout, allow_redirects=True)
+
+    def _probe_status(target: str) -> int | None:
+        r = requests.head(target, headers={"User-Agent": USER_AGENT}, timeout=timeout, allow_redirects=True)
         if r.status_code == 405:
-            r = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=timeout, allow_redirects=True, stream=True)
+            r = requests.get(target, headers={"User-Agent": USER_AGENT, "Accept": "application/fhir+json"},
+                             timeout=timeout, allow_redirects=True, stream=True)
             r.close()
-        sc = r.status_code
+        return r.status_code
+
+    try:
+        sc = _probe_status(url)
         if sc in TREAT_AS_OK:
             return {"url": url, "status": sc, "ok": True, "kind": "ok"}
         # Auth-gated responses on evidence query URLs: URL exists, auth just required.
         if is_query and sc in {401, 403}:
             return {"url": url, "status": sc, "ok": True, "kind": "ok",
                     "reason": f"HTTP {sc} (auth required; URL is alive)"}
+        # FHIR convention: a bare base URL legitimately 404s; capability lives
+        # at ${base}/metadata. For sandbox-evidence URLs, re-probe /metadata and
+        # accept any non-rot response (2xx/3xx, 401/403 auth-gates, 405/406 from
+        # HEAD content-negotiation) as proof that the FHIR server is alive.
+        if is_query and sc == 404 and not url.rstrip("/").endswith("/metadata"):
+            try:
+                meta_sc = _probe_status(url.rstrip("/") + "/metadata")
+                if meta_sc in TREAT_AS_OK or meta_sc in {401, 403, 405, 406}:
+                    return {"url": url, "status": sc, "ok": True, "kind": "ok",
+                            "reason": f"HTTP 404 at bare base; /metadata responded {meta_sc} (FHIR convention)"}
+            except Exception:
+                pass  # Fall through to broken below.
         # Hard link rot for everyone:
         if sc in {404, 410}:
             return {"url": url, "status": sc, "ok": False, "kind": "broken", "reason": f"HTTP {sc}"}

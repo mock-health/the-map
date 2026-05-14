@@ -25,7 +25,10 @@ jobs:
       matrix:
         # Anonymous Phase A endpoints. These are guaranteed-public per
         # ONC HTI-1 §170.404 + FHIR R4 §C.0.0 + SMART STU 2.2.
-        ehr: [epic, cerner, meditech, meditech-greenfield]
+        # `meditech` is currently aliased to the Greenfield sandbox (see
+        # KNOWN_BASES in tools/fetch_capability.py). When MEDITECH Expanse gets
+        # its own representative refresh URL, add it as a separate matrix entry.
+        ehr: [epic, cerner, meditech]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -50,23 +53,28 @@ jobs:
 
       - name: re-fetch CapStmt (anonymous)
         id: fetch
-        continue-on-error: true
         run: |
           python -m tools.fetch_capability ${{ matrix.ehr }}
-          echo "fetched=true" >> "$GITHUB_OUTPUT"
 
       - name: detect drift
         id: drift
-        if: steps.fetch.outputs.fetched == 'true'
         run: |
-          if git diff --quiet -- ehrs/${{ matrix.ehr }}/CapabilityStatement.json; then
+          capstmt=ehrs/${{ matrix.ehr }}/CapabilityStatement.json
+          # Compare semantic content only — strip the top-level `date` field
+          # before diffing. Vendors regenerate it server-side on every fetch
+          # (Epic uses a per-request timestamp), which would otherwise produce
+          # a no-op drift PR every cron run. The vendor's original timestamp
+          # is still preserved in the dated tests/golden/{ehr}/ archive.
+          if diff -q \
+              <(git show HEAD:"$capstmt" | jq -S 'del(.date)') \
+              <(jq -S 'del(.date)' "$capstmt") >/dev/null 2>&1; then
             echo "drift=false" >> "$GITHUB_OUTPUT"
-            echo "no drift detected for ${{ matrix.ehr }}"
+            echo "no semantic drift detected for ${{ matrix.ehr }}"
           else
             echo "drift=true" >> "$GITHUB_OUTPUT"
             # Capture a short summary for the PR body
             git --no-pager diff --stat -- ehrs/${{ matrix.ehr }}/ > /tmp/drift-stat.txt
-            git --no-pager diff -- ehrs/${{ matrix.ehr }}/CapabilityStatement.json | head -200 > /tmp/drift-head.txt
+            git --no-pager diff -- "$capstmt" | head -200 > /tmp/drift-head.txt
           fi
 
       - name: open drift PR
