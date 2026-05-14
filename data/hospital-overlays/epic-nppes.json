@@ -1,16 +1,16 @@
 {
   "vendor": "epic",
-  "generated_at": "2026-05-12T21:19:17+00:00",
+  "generated_at": "2026-05-14T16:24:43+00:00",
   "source_nppes_release": "2026-02-08",
   "summary": {
     "fleet_total": 555,
-    "matched": 381,
-    "matched_with_npi": 381,
-    "unmatched": 174,
+    "matched": 392,
+    "matched_with_npi": 392,
+    "unmatched": 163,
     "by_strategy": {
-      "org_name_state": 95,
-      "org_name_fuzzy_state": 246,
-      "org_name_unique": 11,
+      "org_name_state": 97,
+      "org_name_fuzzy_state": 257,
+      "org_name_unique": 9,
       "hostname_registered": 14,
       "canonical_url": 15
     }
@@ -253,6 +253,20 @@
       "fuzzy_score": 100
     },
     {
+      "endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "endpoint_address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1336406578",
+      "org_name_nppes": "BAPTIST HEALTH OF NORTHEAST FLORIDA",
+      "state": "FL",
+      "city": "JACKSONVILLE",
+      "postal_code": "322078202",
+      "address_line": "800 PRUDENTIAL DR",
+      "taxonomy": "282N00000X",
+      "fuzzy_score": 96
+    },
+    {
       "endpoint_id": "rxedi.bmhcc.org_prd-fhir_api_FHIR_R4",
       "endpoint_address": "https://rxedi.bmhcc.org/prd-fhir/api/FHIR/R4/",
       "match_strategy": "org_name_unique",
@@ -372,6 +386,20 @@
       "postal_code": "631101010",
       "address_line": "660 S EUCLID AVE",
       "taxonomy": "261QM1300X",
+      "fuzzy_score": 100
+    },
+    {
+      "endpoint_id": "epicproxy.et1351.epichosted.com_APIProxyPRD_HOME_api_FHIR_R4",
+      "endpoint_address": "https://epicproxy.et1351.epichosted.com/APIProxyPRD/HOME/api/FHIR/R4",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1114969169",
+      "org_name_nppes": "CHILDREN'S HOSPITAL BOSTON",
+      "state": "MA",
+      "city": "BOSTON",
+      "postal_code": "021155724",
+      "address_line": "300 LONGWOOD AVE",
+      "taxonomy": "281PC2000X",
       "fuzzy_score": 100
     },
     {
@@ -1550,6 +1578,20 @@
       "taxonomy": "261QR0401X"
     },
     {
+      "endpoint_id": "fhir.jefferson.edu_FHIRProxy_api_FHIR_R4",
+      "endpoint_address": "https://fhir.jefferson.edu/FHIRProxy/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1801963343",
+      "org_name_nppes": "JEFFERSON HEALTH - NORTHEAST",
+      "state": "PA",
+      "city": "PHILADELPHIA",
+      "postal_code": "191144200",
+      "address_line": "10800 KNIGHTS RD",
+      "taxonomy": "282N00000X",
+      "fuzzy_score": 100
+    },
+    {
       "endpoint_id": "fhir.johnmuirhealth.com_fhir-prd_api_FHIR_R4",
       "endpoint_address": "https://fhir.johnmuirhealth.com/fhir-prd/api/FHIR/R4/",
       "match_strategy": "org_name_fuzzy_state",
@@ -1636,8 +1678,8 @@
     {
       "endpoint_id": "khnarr.ketthealth.com_FHIR-PROD_api_FHIR_R4",
       "endpoint_address": "https://khnarr.ketthealth.com/FHIR-PROD/api/FHIR/R4/",
-      "match_strategy": "org_name_unique",
-      "confidence": "medium",
+      "match_strategy": "org_name_state",
+      "confidence": "high",
       "npi": "1356669840",
       "org_name_nppes": "KETTERING HEALTH NETWORK",
       "state": "OH",
@@ -1908,6 +1950,20 @@
       "taxonomy": "170300000X"
     },
     {
+      "endpoint_id": "epicproxy.et0876.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
+      "endpoint_address": "https://epicproxy.et0876.epichosted.com/FHIRProxyPRD/api/FHIR/R4",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "low",
+      "npi": "1235459058",
+      "org_name_nppes": "LEGACY HEALTH SERVICES",
+      "state": "WI",
+      "city": "MILWAUKEE",
+      "postal_code": "532123676",
+      "address_line": "1915 N. MLK JR. DRIVE",
+      "taxonomy": "251B00000X",
+      "fuzzy_score": 88
+    },
+    {
       "endpoint_id": "epicproxy.mhsjvl.org_FHIRproxy_api_FHIR_R4",
       "endpoint_address": "https://epicproxy.mhsjvl.org/FHIRproxy/api/FHIR/R4/",
       "match_strategy": "org_name_fuzzy_state",
@@ -2118,6 +2174,20 @@
       "fuzzy_score": 100
     },
     {
+      "endpoint_id": "iconnect.nemours.org_fhir_api_FHIR_R4",
+      "endpoint_address": "https://iconnect.nemours.org/fhir/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1386658615",
+      "org_name_nppes": "THE NEMOURS FOUNDATION",
+      "state": "FL",
+      "city": "JACKSONVILLE",
+      "postal_code": "322560532",
+      "address_line": "10140 CENTURION PKWY N",
+      "taxonomy": "261QD1600X",
+      "fuzzy_score": 100
+    },
+    {
       "endpoint_id": "epicproxy.et1153.epichosted.com_FHIRProxy_api_FHIR_R4",
       "endpoint_address": "https://epicproxy.et1153.epichosted.com/FHIRProxy/api/FHIR/R4/",
       "match_strategy": "org_name_state",
@@ -2311,8 +2381,8 @@
     {
       "endpoint_id": "epicproxy.et0883.epichosted.com_FHIRProxy_api_FHIR_R4",
       "endpoint_address": "https://epicproxy.et0883.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "match_strategy": "org_name_unique",
-      "confidence": "medium",
+      "match_strategy": "org_name_state",
+      "confidence": "high",
       "npi": "1619627114",
       "org_name_nppes": "ONE BROOKLYN HEALTH SYSTEM INC",
       "state": "NY",
@@ -2668,6 +2738,20 @@
       "fuzzy_score": 100
     },
     {
+      "endpoint_id": "ep-rpfg.rivhs.com_Interconnect-FHIR-PRD_api_FHIR_R4",
+      "endpoint_address": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "low",
+      "npi": "1588605380",
+      "org_name_nppes": "SP NEWPORT NEWS, LLC",
+      "state": "VA",
+      "city": "NEWPORT NEWS",
+      "postal_code": "236026913",
+      "address_line": "12997 NETTLES DR",
+      "taxonomy": "314000000X",
+      "fuzzy_score": 88
+    },
+    {
       "endpoint_id": "rpprod.riversidehealthcare.net_FHIRPRD_api_FHIR_R4",
       "endpoint_address": "https://rpprod.riversidehealthcare.net/FHIRPRD/api/FHIR/R4/",
       "match_strategy": "org_name_fuzzy_state",
@@ -2720,6 +2804,20 @@
       "address_line": "140 W 151ST ST S",
       "taxonomy": "251J00000X",
       "fuzzy_score": 98
+    },
+    {
+      "endpoint_id": "reverseproxy.sfmc.net_fhirproxyprd_api_FHIR_R4",
+      "endpoint_address": "https://reverseproxy.sfmc.net/fhirproxyprd/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "low",
+      "npi": "1861144636",
+      "org_name_nppes": "JM HEALTHCARE PLLC",
+      "state": "OK",
+      "city": "OKLAHOMA CITY",
+      "postal_code": "731021212",
+      "address_line": "700 NW 7TH ST",
+      "taxonomy": "207R00000X",
+      "fuzzy_score": 86
     },
     {
       "endpoint_id": "epicmobile.corp.saint-lukes.org_FHIRPROXY_api_FHIR_R4",
@@ -3738,6 +3836,20 @@
       "postal_code": "853647127",
       "address_line": "2400 S AVE A",
       "taxonomy": "282N00000X",
+      "fuzzy_score": 100
+    },
+    {
+      "endpoint_id": "eprescribing.accesscommunityhealth.net_FHIR_api_FHIR_R4",
+      "endpoint_address": "https://eprescribing.accesscommunityhealth.net/FHIR/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1912944125",
+      "org_name_nppes": "ACCESS COMMUNITY HEALTH NETWORK",
+      "state": "IL",
+      "city": "CHICAGO",
+      "postal_code": "606243312",
+      "address_line": "3435 W VAN BUREN ST",
+      "taxonomy": "261QF0400X",
       "fuzzy_score": 100
     },
     {
@@ -4816,6 +4928,20 @@
       "taxonomy": "261QP2300X"
     },
     {
+      "endpoint_id": "interconapps.uchospitals.edu_PRD-FHIR-Proxy_api_FHIR_R4",
+      "endpoint_address": "https://interconapps.uchospitals.edu/PRD-FHIR-Proxy/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1164427126",
+      "org_name_nppes": "MEDICINE LTD.",
+      "state": "IL",
+      "city": "ARLINGTON HEIGHTS",
+      "postal_code": "600051529",
+      "address_line": "121 S WILKE RD",
+      "taxonomy": "207R00000X",
+      "fuzzy_score": 100
+    },
+    {
       "endpoint_id": "unified-api.ucsf.edu_clinical_apex_api_FHIR_R4",
       "endpoint_address": "https://unified-api.ucsf.edu/clinical/apex/api/FHIR/R4/",
       "match_strategy": "org_name_state",
@@ -4827,6 +4953,20 @@
       "postal_code": "941432351",
       "address_line": "1975 4TH ST",
       "taxonomy": "363LA2100X"
+    },
+    {
+      "endpoint_id": "epicproxy.et1130.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "endpoint_address": "https://epicproxy.et1130.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "low",
+      "npi": "1568168482",
+      "org_name_nppes": "SAN ANTONIO EP, PLLC",
+      "state": "TX",
+      "city": "SAN ANTONIO",
+      "postal_code": "782305321",
+      "address_line": "4330 VANCE JACKSON RD",
+      "taxonomy": "207PE0004X",
+      "fuzzy_score": 88
     },
     {
       "endpoint_id": "epicproxy.et1127.epichosted.com_FHIRproxy_api_FHIR_R4",
@@ -5114,6 +5254,20 @@
       "postal_code": "977016752",
       "address_line": "2400 NE NEFF RD STE A",
       "taxonomy": "207V00000X"
+    },
+    {
+      "endpoint_id": "epicproxy.et4001.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "endpoint_address": "https://epicproxy.et4001.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "match_strategy": "org_name_fuzzy_state",
+      "confidence": "medium",
+      "npi": "1114811031",
+      "org_name_nppes": "EAST",
+      "state": "SC",
+      "city": "CLOVER",
+      "postal_code": "297107112",
+      "address_line": "272 SCOTTISH HIGHLAND RD",
+      "taxonomy": "343900000X",
+      "fuzzy_score": 100
     },
     {
       "endpoint_id": "epicproxy.et1240.epichosted.com_FHIRProxy_api_FHIR_R4",

@@ -49,7 +49,13 @@ from tools.luxera_endpoint_discovery import normalize_address
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT_DIR = REPO_ROOT / "data" / "cms-nppes"
-DEFAULT_NPPES_DOWNLOAD_DIR = Path("~/back/data/downloads").expanduser()
+# Search paths in priority order. The first is the new automated-fetch
+# location (tools.fetch_cms_nppes writes here); the second preserves the
+# pre-PR-1 layout for users with existing manual downloads.
+DEFAULT_NPPES_SEARCH_DIRS = (
+    REPO_ROOT / "data" / "raw" / "cms-nppes",
+    Path("~/back/data/downloads").expanduser(),
+)
 
 # Monthly NPPES release zips are named like
 # NPPES_Data_Dissemination_February_2026.zip. The inner CSV filename embeds
@@ -73,12 +79,29 @@ LEGAL_SUFFIX_TOKENS = (
 )
 
 
-def find_latest_monthly(d: Path) -> Path:
-    """Pick the most recent monthly zip. Sort by mtime not name since
-    'December_2025' sorts before 'February_2026' lexically."""
-    candidates = [p for p in d.iterdir() if MONTHLY_RE.match(p.name)]
+def find_latest_monthly(search_dirs: tuple[Path, ...] = DEFAULT_NPPES_SEARCH_DIRS) -> Path:
+    """Pick the most recent monthly zip across one or more candidate dirs.
+
+    ``data/raw/cms-nppes/`` is scanned recursively (zips live in dated
+    subdirectories written by ``tools.fetch_cms_nppes``). Other candidate
+    dirs are scanned non-recursively for backward compatibility with
+    manually-downloaded zips. Sort by mtime not name since
+    'December_2025' sorts before 'February_2026' lexically.
+    """
+    candidates: list[Path] = []
+    for d in search_dirs:
+        if not d.is_dir():
+            continue
+        iterator = d.rglob("*") if d == REPO_ROOT / "data" / "raw" / "cms-nppes" else d.iterdir()
+        for p in iterator:
+            if p.is_file() and MONTHLY_RE.match(p.name):
+                candidates.append(p)
     if not candidates:
-        sys.exit(f"ERROR: no monthly NPPES zip in {d}")
+        tried = "\n  ".join(str(d) for d in search_dirs)
+        sys.exit(
+            f"ERROR: no NPPES monthly zip found. Tried:\n  {tried}\n"
+            f"Run `python -m tools.fetch_cms_nppes` to download the latest release."
+        )
     return max(candidates, key=lambda p: p.stat().st_mtime)
 
 
@@ -243,16 +266,17 @@ def extract_orgs(zip_path: Path, out_path: Path) -> tuple[int, int]:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
+    search_help = ", ".join(str(d) for d in DEFAULT_NPPES_SEARCH_DIRS)
     ap.add_argument(
         "--zip",
-        help=f"Path to NPPES monthly zip (default: most recent in {DEFAULT_NPPES_DOWNLOAD_DIR})",
+        help=f"Path to NPPES monthly zip (default: most recent in {search_help})",
     )
     ap.add_argument("--out-dir", help=f"Output dir (default: {DEFAULT_OUT_DIR.relative_to(REPO_ROOT)}/)")
     ap.add_argument("--skip-endpoints", action="store_true")
     ap.add_argument("--skip-orgs", action="store_true")
     args = ap.parse_args()
 
-    zip_path = Path(args.zip).expanduser() if args.zip else find_latest_monthly(DEFAULT_NPPES_DOWNLOAD_DIR)
+    zip_path = Path(args.zip).expanduser() if args.zip else find_latest_monthly()
     if not zip_path.exists():
         sys.exit(f"ERROR: zip not found: {zip_path}")
 
