@@ -38,25 +38,32 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUTPUT_DIR = REPO_ROOT / "data" / "cms-pecos"
 
-DEFAULT_PPEF_DIR = Path.home() / "back" / "data" / "ppef"
+# Search paths in priority order. ``data/raw/cms-pecos`` is the new automated
+# location written by ``tools.fetch_cms_pecos`` and is scanned recursively
+# (CSVs live in dated subdirectories). The legacy path preserves pre-PR-4
+# manual-download layouts.
+DEFAULT_PPEF_SEARCH_DIRS = (
+    REPO_ROOT / "data" / "raw" / "cms-pecos",
+    Path.home() / "back" / "data" / "ppef",
+)
 PPEF_DATE_RE = re.compile(r"PPEF_Enrollment_Extract_(\d{4})\.(\d{2})\.(\d{2})\.csv$")
 
 
-def discover_latest_enrollment(d: Path) -> Path:
-    """Find the most recent PPEF_Enrollment_Extract_*.csv under d/<quarter>/."""
+def discover_latest_enrollment(search_dirs: tuple[Path, ...] = DEFAULT_PPEF_SEARCH_DIRS) -> Path:
+    """Find the most recent PPEF_Enrollment_Extract_*.csv across candidate dirs."""
     candidates: list[tuple[str, Path]] = []
-    if d.is_dir():
-        for quarter_dir in d.iterdir():
-            if not quarter_dir.is_dir():
-                continue
-            for f in quarter_dir.iterdir():
-                m = PPEF_DATE_RE.search(f.name)
-                if m:
-                    candidates.append((f"{m.group(1)}-{m.group(2)}-{m.group(3)}", f))
+    for d in search_dirs:
+        if not d.is_dir():
+            continue
+        for f in d.rglob("PPEF_Enrollment_Extract_*.csv"):
+            m = PPEF_DATE_RE.search(f.name)
+            if m:
+                candidates.append((f"{m.group(1)}-{m.group(2)}-{m.group(3)}", f))
     if not candidates:
+        tried = "\n  ".join(str(d) for d in search_dirs)
         sys.exit(
-            f"ERROR: no PPEF_Enrollment_Extract_*.csv under {d}/. "
-            "Pass --input <path>."
+            f"ERROR: no PPEF_Enrollment_Extract_*.csv found. Tried:\n  {tried}\n"
+            "Pass --input <path> or run `python -m tools.fetch_cms_pecos`."
         )
     candidates.sort(key=lambda kv: kv[0])
     return candidates[-1][1]
@@ -115,7 +122,7 @@ def main() -> int:
     ap.add_argument("--out", help="Output JSON path (default: data/cms-pecos/enrollment-{captured_date}.json)")
     args = ap.parse_args()
 
-    csv_path = Path(args.input).expanduser() if args.input else discover_latest_enrollment(DEFAULT_PPEF_DIR)
+    csv_path = Path(args.input).expanduser() if args.input else discover_latest_enrollment()
     if not csv_path.exists():
         sys.exit(f"ERROR: PPEF CSV not found: {csv_path}")
 
