@@ -1,12 +1,12 @@
 {
   "vendor": "cerner",
   "captured_date": "2026-05-14",
-  "pos_catalog": "data/cms-pos/providers-2025-06-01.json",
+  "pos_catalog": "data/cms-pos/providers-2026-01-01.json",
   "match_summary": {
     "endpoints_total": 1451,
-    "matched_unique": 453,
-    "matched_multiple": 190,
-    "unmatched": 808
+    "matched_unique": 440,
+    "matched_multiple": 166,
+    "unmatched": 845
   },
   "endpoints": [
     {
@@ -59,28 +59,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "391132",
-          "name": "LAUREL PEDIATRICS - WELLSBORO",
-          "city": "WELLSBORO",
-          "state": "PA",
-          "zip5": "16901",
-          "score": 0.6667,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "395408",
-          "name": "LAUREL CENTER",
-          "city": "HAMBURG",
-          "state": "PA",
-          "zip5": "19526",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -112,7 +90,7 @@
         },
         {
           "ccn": "681077",
-          "name": "TREASURE COAST COMMUNITY HEALTH, INC",
+          "name": "TREASURE COAST COMMUNITY HEALTH INC",
           "city": "SEBASTIAN",
           "state": "FL",
           "zip5": "32958",
@@ -131,24 +109,24 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "682743",
-          "name": "TREASURE COAST DIALYSIS",
-          "city": "FORT PIERCE",
+          "ccn": "681154",
+          "name": "TREASURE COAST COMMUNITY HEALTH INC",
+          "city": "VERO BEACH",
           "state": "FL",
-          "zip5": "34952",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "zip5": "32960",
+          "score": 0.6667,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "102525",
-          "name": "TREASURE COAST KIDNEY CENTER NORTH",
-          "city": "STUART",
+          "ccn": "C11074",
+          "name": "TREASURE COAST COMMUNITY HEALTH INC",
+          "city": "VERO BEACH",
           "state": "FL",
-          "zip5": "34996",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "zip5": "32966",
+          "score": 0.6667,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -200,15 +178,15 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/00647884-2425-4aef-9dfc-60b7447da45a/",
       "name_observed": "COUNTY OF ORANGE HEALTH CARE AGENCY",
       "npi": null,
-      "city": "BUENA PARK",
+      "city": "Santa Ana",
       "state": "CA",
-      "zip5": "90620",
-      "ccn": "055674",
-      "name_pos": "HEALTHCARE CENTER OF ORANGE COUNTY",
-      "fac_subtype_code": "03",
-      "bed_count": 99,
-      "match_strategy": "llm_assisted",
-      "match_confidence": 1.0,
+      "zip5": "92701",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
         {
           "ccn": "051881",
@@ -219,16 +197,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "055674",
-          "name": "HEALTHCARE CENTER OF ORANGE COUNTY",
-          "city": "BUENA PARK",
-          "state": "CA",
-          "zip5": "90620",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "050746",
@@ -252,7 +220,7 @@
         }
       ],
       "vendor": "cerner",
-      "verified_via": "llm_assisted",
+      "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
     },
     {
@@ -471,18 +439,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "345396",
-          "name": "SMOKY MOUNTAIN HEALTH AND REHABILITATION CENTER",
-          "city": "WAYNESVILLE",
-          "state": "NC",
-          "zip5": "28785",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -605,16 +561,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "44E166",
-          "name": "HARDIN HOME",
-          "city": "SAVANNAH",
-          "state": "TN",
-          "zip5": "38372",
-          "score": 0.5,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -710,16 +656,6 @@
           "city": "CASSVILLE",
           "state": "MO",
           "zip5": "65625",
-          "score": 0.4286,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "263920",
-          "name": "MERCY CLINIC FAMILY MEDICINE-SUMMERSVILLE",
-          "city": "SUMMERSVILLE",
-          "state": "MO",
-          "zip5": "65571",
           "score": 0.4286,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
@@ -1037,16 +973,6 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "325092",
-          "name": "NEW MEXICO STATE VETERANS HOME",
-          "city": "TRUTH OR CONSEQUENCE",
-          "state": "NM",
-          "zip5": "87901",
-          "score": 0.6,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "320006",
           "name": "EASTERN NEW MEXICO MEDICAL CENTER",
           "city": "ROSWELL",
@@ -1082,6 +1008,16 @@
           "city": "ALAMOGORDO",
           "state": "NM",
           "zip5": "88310",
+          "score": 0.4,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "323032",
+          "name": "REHABILITATION HOSPITAL OF SOUTHERN NEW MEXICO,INC",
+          "city": "LAS CRUCES",
+          "state": "NM",
+          "zip5": "88011",
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
@@ -1217,16 +1153,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "16E668",
-          "name": "PALO ALTO COUNTY HOSPITAL",
-          "city": "EMMETSBURG",
-          "state": "IA",
-          "zip5": "50536",
-          "score": 1.0,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -1257,16 +1183,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "285296",
-          "name": "SAUNDERS MEDICAL CENTER",
-          "city": "WAHOO",
-          "state": "NE",
-          "zip5": "68066",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "283990",
@@ -1533,16 +1449,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "075135",
-          "name": "MASONICARE HEALTH CENTER",
-          "city": "WALLINGFORD",
-          "state": "CT",
-          "zip5": "06492",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -1693,16 +1599,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "332664",
-          "name": "ST JOSEPH'S - REGIONAL",
-          "city": "SYRACUSE",
-          "state": "NY",
-          "zip5": "13203",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -1917,26 +1813,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "36G221",
-          "name": "BLANCHARD VALLEY RESIDENTIAL CENTER",
-          "city": "FINDLAY",
-          "state": "OH",
-          "zip5": "45840",
-          "score": 0.6667,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "362696",
-          "name": "BLANCHARD VALLEY DIALYSIS SERVICES, LLC",
-          "city": "FINDLAY",
-          "state": "OH",
-          "zip5": "45840",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -1970,19 +1846,19 @@
       "state": "CA",
       "zip5": "93308",
       "ccn": "050257",
-      "name_pos": "GOOD SAMARITAN HOSPITAL",
+      "name_pos": "GOOD SAMARITAN HOSPITAL, LP",
       "fac_subtype_code": "01",
       "bed_count": 64,
       "match_strategy": "address_state_zip5_name",
-      "match_confidence": 1.0,
+      "match_confidence": 0.6667,
       "candidates": [
         {
           "ccn": "050257",
-          "name": "GOOD SAMARITAN HOSPITAL",
+          "name": "GOOD SAMARITAN HOSPITAL, LP",
           "city": "BAKERSFIELD",
           "state": "CA",
           "zip5": "93308",
-          "score": 1.0,
+          "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
         }
@@ -2025,14 +1901,14 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "162539",
-          "name": "COUNCIL BLUFFS DIALYSIS CENTER",
-          "city": "CO BLUFFS",
+          "ccn": "161814",
+          "name": "COUNCIL BLUFFS COMMUNITY HEALTH CENTER",
+          "city": "COUNCIL BLUFFS",
           "state": "IA",
-          "zip5": "51503",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "zip5": "51502",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -2105,16 +1981,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "056426",
-          "name": "ADVENTIST HEALTH DELANO",
-          "city": "DELANO",
-          "state": "CA",
-          "zip5": "93215",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "051974",
           "name": "DELANO COMMUNITY HEALTH CENTER",
           "city": "DELANO",
@@ -2161,28 +2027,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "322564",
-          "name": "FRESENIUS KIDNEY CARE FARMINGTON",
-          "city": "FARMINGTON",
-          "state": "NM",
-          "zip5": "87401",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "322567",
-          "name": "SAN JUAN REGIONAL KIDNEY CARE LLC",
-          "city": "FARMINGTON",
-          "state": "NM",
-          "zip5": "87401",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -2224,7 +2068,7 @@
         },
         {
           "ccn": "393304",
-          "name": "CHILDREN'S HOME OF PITTSBURGH",
+          "name": "CHILDREN'S HOME OF PITTSBURGH, THE",
           "city": "PITTSBURGH",
           "state": "PA",
           "zip5": "15224",
@@ -2319,6 +2163,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "158597",
+          "name": "MARGARET MARY PHYSICIAN CENTER",
+          "city": "BATESVILLE",
+          "state": "IN",
+          "zip5": "47006",
+          "score": 0.6667,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
         }
       ],
       "vendor": "cerner",
@@ -2357,18 +2211,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "166527",
-          "name": "CENTRAL REHABILITATION",
-          "city": "WEST DES MOINES",
-          "state": "IA",
-          "zip5": "50265",
-          "score": 0.5,
-          "category_code": "08",
-          "category_label": "Rural Health Clinic"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -2613,16 +2455,6 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "015201",
-          "name": "GENERATIONS OF RED BAY, LLC",
-          "city": "RED BAY",
-          "state": "AL",
-          "zip5": "35582",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -2655,14 +2487,24 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "053526",
-          "name": "SAN JOAQUIN GENERAL HOSPITAL ESRD",
+          "ccn": "751127",
+          "name": "SAN JOAQUIN COUNTY CLINICS",
           "city": "FRENCH CAMP",
           "state": "CA",
           "zip5": "95231",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "751128",
+          "name": "SAN JOAQUIN COUNTY CLINICS PMC",
+          "city": "FRENCH CAMP",
+          "state": "CA",
+          "zip5": "95231",
+          "score": 0.4,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -3309,16 +3151,6 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "052690",
-          "name": "EL CENTRO DESERT VALLEY DIALYSIS",
-          "city": "EL CENTRO",
-          "state": "CA",
-          "zip5": "92243",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "058518",
           "name": "EL CENTRO REGIONAL MEDICAL CTR OUTPATIENT CLINIC",
           "city": "EL CENTRO",
@@ -3327,16 +3159,6 @@
           "score": 0.4,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "555158",
-          "name": "EL CENTRO POST-ACUTE CARE",
-          "city": "EL CENTRO",
-          "state": "CA",
-          "zip5": "92243",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -3545,26 +3367,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "45G788",
-          "name": "BELLVILLE COMMUNITY RESIDENCE",
-          "city": "BELLVILLE",
-          "state": "TX",
-          "zip5": "77418",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "676164",
-          "name": "AVIR AT BELLVILLE",
-          "city": "BELLVILLE",
-          "state": "TX",
-          "zip5": "77418",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -3585,18 +3387,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "751098",
-          "name": "INTEGRATED HEALTH CARE SERVICES",
-          "city": "MARINA",
-          "state": "CA",
-          "zip5": "93933",
-          "score": 0.4,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -3691,16 +3481,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "32E027",
-          "name": "MINERS COLFAX MEDICAL CENTER",
-          "city": "RATON",
-          "state": "NM",
-          "zip5": "87740",
-          "score": 1.0,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -3785,16 +3565,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "17E597",
-          "name": "KIOWA HOSPITAL DISTRICT MANOR",
-          "city": "KIOWA",
-          "state": "KS",
-          "zip5": "67070",
-          "score": 0.6667,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         },
         {
           "ccn": "178506",
@@ -3974,7 +3744,7 @@
       "state": "MN",
       "zip5": "55106",
       "ccn": "243300",
-      "name_pos": "GILLETTE CHILDRENS SPECIALTY HOSPITAL",
+      "name_pos": "GILLETTE CHILDRENS SPECIALTY HEALTHCARE",
       "fac_subtype_code": "06",
       "bed_count": 60,
       "match_strategy": "llm_assisted",
@@ -3982,7 +3752,7 @@
       "candidates": [
         {
           "ccn": "243300",
-          "name": "GILLETTE CHILDRENS SPECIALTY HOSPITAL",
+          "name": "GILLETTE CHILDRENS SPECIALTY HEALTHCARE",
           "city": "SAINT PAUL",
           "state": "MN",
           "zip5": "55106",
@@ -4479,6 +4249,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "678577",
+          "name": "LIBERTY DAYTON MEDICAL SPECIALTY CLINIC",
+          "city": "LIBERTY",
+          "state": "TX",
+          "zip5": "77575",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
         }
       ],
       "vendor": "cerner",
@@ -4631,6 +4411,16 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
+          "ccn": "C11066",
+          "name": "COMMUNITY HEALTH OF SOUTH FLORIDA INC",
+          "city": "KEY LARGO",
+          "state": "FL",
+          "zip5": "33037",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
           "ccn": "100132",
           "name": "SOUTH FLORIDA BAPTIST HOSPITAL",
           "city": "PLANT CITY",
@@ -4639,16 +4429,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102680",
-          "name": "SOUTH FLORIDA DIALYSIS",
-          "city": "HOLLYWOOD",
-          "state": "FL",
-          "zip5": "33020",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -4965,16 +4745,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "345306",
-          "name": "IREDELL MEMORIAL HOSPITAL INC",
-          "city": "STATESVILLE",
-          "state": "NC",
-          "zip5": "28677",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "341135",
           "name": "IREDELL PSYCHIATRY",
           "city": "STATESVILLE",
@@ -5169,26 +4939,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102624",
-          "name": "TALLAHASSEE DIALYSIS",
-          "city": "TALLAHASSEE",
-          "state": "FL",
-          "zip5": "32308",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "105433",
-          "name": "AVIATA AT TALLAHASSEE",
-          "city": "TALLAHASSEE",
-          "state": "FL",
-          "zip5": "32308",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -5555,16 +5305,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "17A020",
-          "name": "TREGO CO-LEMKE MEMORIAL HOSPITAL LTCU",
-          "city": "WAKEENEY",
-          "state": "KS",
-          "zip5": "67672",
-          "score": 0.5,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -5753,16 +5493,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "265429",
-          "name": "LAKE REGIONAL HEALTH SYSTEMS",
-          "city": "OSAGE BEACH",
-          "state": "MO",
-          "zip5": "65065",
-          "score": 1.0,
-          "category_code": "04",
-          "category_label": "Comprehensive Outpatient Rehab / PRTF"
         }
       ],
       "vendor": "cerner",
@@ -5887,16 +5617,6 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "185387",
-          "name": "T J SAMSON COMMUNITY HOSPITAL",
-          "city": "GLASGOW",
-          "state": "KY",
-          "zip5": "42141",
-          "score": 0.6667,
-          "category_code": "04",
-          "category_label": "Comprehensive Outpatient Rehab / PRTF"
         }
       ],
       "vendor": "cerner",
@@ -5926,27 +5646,15 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/2563cb1b-8ed5-4fa8-82ee-eb933a99c9c2/",
       "name_observed": "Rock Regional Hospital",
       "npi": null,
-      "city": "DERBY",
+      "city": "Derby",
       "state": "KS",
       "zip5": "67037",
-      "ccn": "170204",
-      "name_pos": "ROCK REGIONAL HOSPITAL, LLC",
-      "fac_subtype_code": "01",
-      "bed_count": 31,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 1.0,
-      "candidates": [
-        {
-          "ccn": "170204",
-          "name": "ROCK REGIONAL HOSPITAL, LLC",
-          "city": "DERBY",
-          "state": "KS",
-          "zip5": "67037",
-          "score": 1.0,
-          "category_code": "01",
-          "category_label": "Hospital"
-        }
-      ],
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -6191,18 +5899,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "175534",
-          "name": "CARITAS CENTER, INC",
-          "city": "WICHITA",
-          "state": "KS",
-          "zip5": "67213",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -6223,14 +5919,14 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "102820",
-          "name": "FIRST COAST DIALYSIS CENTER",
-          "city": "JACKSONVILLE",
+          "ccn": "101856",
+          "name": "INFECTIOUS DISEASE CENTER",
+          "city": "FORT PIERCE",
           "state": "FL",
-          "zip5": "32216",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "zip5": "34950",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -6461,26 +6157,6 @@
           "score": 0.75,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "312613",
-          "name": "ST JOSEPH'S SJRMC DIALYSIS",
-          "city": "PATERSON",
-          "state": "NJ",
-          "zip5": "07503",
-          "score": 0.6,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "312614",
-          "name": "ST JOSEPH'S PATERSON DIALYSIS",
-          "city": "PATERSON",
-          "state": "NJ",
-          "zip5": "07503",
-          "score": 0.6,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -6516,7 +6192,7 @@
       "ccn": "450686",
       "name_pos": "UNIVERSITY MEDICAL CENTER",
       "fac_subtype_code": "01",
-      "bed_count": 505,
+      "bed_count": 503,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -6789,16 +6465,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "285282",
-          "name": "JEFFERSON COMMUNITY HEALTH & LIFE GARDENSIDE",
-          "city": "FAIRBURY",
-          "state": "NE",
-          "zip5": "68352",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "288541",
@@ -7163,16 +6829,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "458868",
-          "name": "MARTIN COUNTY FAMILY CLINIC",
-          "city": "STANTON",
-          "state": "TX",
-          "zip5": "79782",
-          "score": 0.4,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
         }
       ],
       "vendor": "cerner",
@@ -7255,16 +6911,6 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "452636",
-          "name": "SOUTH TEXAS DIALYSIS CENTER",
-          "city": "MISSION",
-          "state": "TX",
-          "zip5": "78572",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "453092",
           "name": "SOUTH TEXAS REHABILTATION HOSPITAL",
           "city": "BROWNSVILLE",
@@ -7273,6 +6919,16 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "971056",
+          "name": "COMMUNITY ACTION CORPORATION OF SOUTH TEXAS",
+          "city": "KINGSVILLE",
+          "state": "TX",
+          "zip5": "78363",
+          "score": 0.4,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -7405,26 +7061,6 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "462534",
-          "name": "SRS - AMERICAN FORK, LLC",
-          "city": "AMERICAN FORK",
-          "state": "UT",
-          "zip5": "84003",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "465097",
-          "name": "SANDSTONE AMERICAN FORK",
-          "city": "AMERICAN FORK",
-          "state": "UT",
-          "zip5": "84003",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -7639,36 +7275,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "492558",
-          "name": "FRESENIUS MEDICAL CARE BLUE RIDGE",
-          "city": "BEDFORD",
-          "state": "VA",
-          "zip5": "24523",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "495146",
-          "name": "BLUE RIDGE REHABILITATION AND NURSING",
-          "city": "HARRISONBURG",
-          "state": "VA",
-          "zip5": "22801",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "495306",
-          "name": "BLUE RIDGE THERAPY CONNECTION",
-          "city": "STUART",
-          "state": "VA",
-          "zip5": "24171",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -7755,15 +7361,15 @@
       "city": "PHILADELPHIA",
       "state": "MS",
       "zip5": "39350",
-      "ccn": "250043",
+      "ccn": "251340",
       "name_pos": "NESHOBA COUNTY GENERAL HOSPITAL",
-      "fac_subtype_code": "01",
-      "bed_count": 82,
+      "fac_subtype_code": "11",
+      "bed_count": 25,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "250043",
+          "ccn": "251340",
           "name": "NESHOBA COUNTY GENERAL HOSPITAL",
           "city": "PHILADELPHIA",
           "state": "MS",
@@ -7771,26 +7377,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "252588",
-          "name": "NESHOBA COUNTY DIALYSIS",
-          "city": "PHILADELPHIA",
-          "state": "MS",
-          "zip5": "39350",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "255137",
-          "name": "NESHOBA COUNTY NURSING HOME",
-          "city": "PHILADELPHIA",
-          "state": "MS",
-          "zip5": "39350",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -7839,26 +7425,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "325085",
-          "name": "SAN JUAN CARE CENTER",
-          "city": "FARMINGTON",
-          "state": "NM",
-          "zip5": "87401",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "322567",
-          "name": "SAN JUAN REGIONAL KIDNEY CARE LLC",
-          "city": "FARMINGTON",
-          "state": "NM",
-          "zip5": "87401",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -7943,26 +7509,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "432301",
-          "name": "HURON REGIONAL MEDICAL CENTER",
-          "city": "HURON",
-          "state": "SD",
-          "zip5": "57350",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "435020",
-          "name": "AVANTARA HURON",
-          "city": "HURON",
-          "state": "SD",
-          "zip5": "57350",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -8031,58 +7577,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "33G053",
-          "name": "U C P OF NEW YORK CITY",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip5": "10009",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G059",
-          "name": "U C P OF NEW YORK CITY",
-          "city": "BRONX",
-          "state": "NY",
-          "zip5": "10451",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G060",
-          "name": "U C P OF NEW YORK CITY",
-          "city": "BROOKLYN",
-          "state": "NY",
-          "zip5": "11239",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G063",
-          "name": "U C P OF NEW YORK CITY",
-          "city": "BROOKLYN",
-          "state": "NY",
-          "zip5": "11239",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G502",
-          "name": "U C P OF NEW YORK CITY",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip5": "10010",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -8129,16 +7623,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "255339",
-          "name": "CHOCTAW RESIDENTIAL CENTER",
-          "city": "CHOCTAW",
-          "state": "MS",
-          "zip5": "39350",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -8327,18 +7811,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "552742",
-          "name": "BOYLE HEIGHTS DIALYSIS",
-          "city": "LOS ANGELES",
-          "state": "CA",
-          "zip5": "90033",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -8367,16 +7839,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "112317",
-          "name": "CRISP REGIONAL HOSPITAL DIALYSIS",
-          "city": "CORDELE",
-          "state": "GA",
-          "zip5": "31015",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -8794,26 +8256,16 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/37f6d032-7bca-45b8-891c-69b79d7f4de8/",
       "name_observed": "Minneola District Hospital",
       "npi": null,
-      "city": "MINNEOLA",
+      "city": "Minneola",
       "state": "KS",
       "zip5": "67865",
-      "ccn": "17E470",
-      "name_pos": "MINNEOLA DISTRICT HOSPITAL LTCU",
-      "fac_subtype_code": "02",
-      "bed_count": 36,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.6667,
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "17E470",
-          "name": "MINNEOLA DISTRICT HOSPITAL LTCU",
-          "city": "MINNEOLA",
-          "state": "KS",
-          "zip5": "67865",
-          "score": 0.6667,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        },
         {
           "ccn": "171368",
           "name": "MINNEOLA DISTRICT HOSPITAL NBR 2",
@@ -8853,26 +8305,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "262660",
-          "name": "NEVADA DIALYSIS",
-          "city": "NEVADA",
-          "state": "MO",
-          "zip5": "64772",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "265493",
-          "name": "MEDICALODGES NEVADA",
-          "city": "NEVADA",
-          "state": "MO",
-          "zip5": "64772",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "268793",
@@ -9156,19 +8588,19 @@
       "state": "WV",
       "zip5": "26452",
       "ccn": "510038",
-      "name_pos": "STONEWALL JACKSON MEMORIAL HOSPITAL",
+      "name_pos": "STONEWALL JACKSON MEMORIAL HOSPITAL COMPANY",
       "fac_subtype_code": "01",
       "bed_count": 70,
       "match_strategy": "address_state_zip5_name",
-      "match_confidence": 1.0,
+      "match_confidence": 0.6667,
       "candidates": [
         {
           "ccn": "510038",
-          "name": "STONEWALL JACKSON MEMORIAL HOSPITAL",
+          "name": "STONEWALL JACKSON MEMORIAL HOSPITAL COMPANY",
           "city": "WESTON",
           "state": "WV",
           "zip5": "26452",
-          "score": 1.0,
+          "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
         }
@@ -9343,14 +8775,24 @@
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "332682",
-          "name": "NIAGARA FALLS KIDNEY CARE CENTER",
+          "ccn": "330065",
+          "name": "NIAGARA FALLS MEMORIAL MEDICAL CENTER",
           "city": "NIAGARA FALLS",
           "state": "NY",
-          "zip5": "14301",
+          "zip5": "14302",
+          "score": 1.0,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "331011",
+          "name": "COMMUNITY HEALTH CENTER OF NIAGARA",
+          "city": "NIAGARA FALLS",
+          "state": "NY",
+          "zip5": "14305",
           "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -9499,36 +8941,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "052397",
-          "name": "SAN FRANCISCO GENERAL HOSPITAL RENAL CENTER",
-          "city": "SAN FRANCISCO",
-          "state": "CA",
-          "zip5": "94110",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052719",
-          "name": "SAN FRANCISCO DIALYSIS",
-          "city": "SAN FRANCISCO",
-          "state": "CA",
-          "zip5": "94115",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "056272",
-          "name": "SAN FRANCISCO HEALTH CARE",
-          "city": "SAN FRANCISCO",
-          "state": "CA",
-          "zip5": "94117",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -9637,36 +9049,6 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102578",
-          "name": "CORAL GABLES KIDNEY CENTER",
-          "city": "CORAL GABLES",
-          "state": "FL",
-          "zip5": "33134",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "682593",
-          "name": "FRESENIUS MEDICAL CARE CORAL GABLES",
-          "city": "CORAL GABLES",
-          "state": "FL",
-          "zip5": "33134",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "682710",
-          "name": "KIDNEY PARTNERS CORAL GABLES LLC",
-          "city": "MIAMI",
-          "state": "FL",
-          "zip5": "33135",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -9893,16 +9275,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "683824",
-          "name": "THE PEDIATRIC CENTER",
-          "city": "BELLE GLADE",
-          "state": "FL",
-          "zip5": "33430",
-          "score": 0.5,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
         }
       ],
       "vendor": "cerner",
@@ -9989,26 +9361,14 @@
       "city": "MORGANTOWN",
       "state": "WV",
       "zip5": "26505",
-      "ccn": "512550",
-      "name_pos": "FMC MONONGALIA COUNTY",
-      "fac_subtype_code": "01",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "llm_assisted",
-      "match_confidence": 1.0,
-      "candidates": [
-        {
-          "ccn": "512550",
-          "name": "FMC MONONGALIA COUNTY",
-          "city": "MORGANTOWN",
-          "state": "WV",
-          "zip5": "26505",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "vendor": "cerner",
-      "verified_via": "llm_assisted",
+      "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
     },
     {
@@ -10055,18 +9415,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "165301",
-          "name": "GREAT RIVER CARE CENTER",
-          "city": "MC GREGOR",
-          "state": "IA",
-          "zip5": "52157",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -10407,16 +9755,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "42G103",
-          "name": "MCLEOD I",
-          "city": "BISHOPVILLE",
-          "state": "SC",
-          "zip5": "29010",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
         }
       ],
       "vendor": "cerner",
@@ -10480,21 +9818,21 @@
       "state": "IN",
       "zip5": "46947",
       "ccn": "158561",
-      "name_pos": "LOGANSPORT MEMORIAL EXPRESS MEDICAL CENTER",
+      "name_pos": "PARKVIEW LOGANSPORT WALK-IN CLINIC",
       "fac_subtype_code": "01",
       "bed_count": null,
       "match_strategy": "llm_assisted",
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "158561",
-          "name": "LOGANSPORT MEMORIAL EXPRESS MEDICAL CENTER",
+          "ccn": "150072",
+          "name": "PARKVIEW LOGANSPORT HOSPITAL, INC",
           "city": "LOGANSPORT",
           "state": "IN",
           "zip5": "46947",
           "score": 0.5,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -10525,36 +9863,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "105219",
-          "name": "BOCA RATON REHABILITATION CENTER",
-          "city": "BOCA RATON",
-          "state": "FL",
-          "zip5": "33486",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "105521",
-          "name": "AVANTE AT BOCA RATON, INC.",
-          "city": "BOCA RATON",
-          "state": "FL",
-          "zip5": "33486",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "102520",
-          "name": "BOCA RATON ARTIFICIAL KIDNEY CENTER",
-          "city": "BOCA RATON",
-          "state": "FL",
-          "zip5": "33486",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -10885,18 +10193,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "315283",
-          "name": "SOUTH MOUNTAIN HC",
-          "city": "VAUXHALL",
-          "state": "NJ",
-          "zip5": "07088",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -11079,14 +10375,34 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "262618",
-          "name": "RENAL CARE GROUP - SOUTHEAST MISSOURI",
-          "city": "CAPE GIRARDEAU",
+          "ccn": "261826",
+          "name": "SOUTHEAST MISSOURI HEALTH NETWORK",
+          "city": "SIKESTON",
           "state": "MO",
-          "zip5": "63701",
+          "zip5": "63801",
+          "score": 0.6667,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "261989",
+          "name": "SOUTHEAST MISSOURI HEALTH NETWORK",
+          "city": "NEW MADRID",
+          "state": "MO",
+          "zip5": "63869",
+          "score": 0.6667,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "264005",
+          "name": "SOUTHEAST MISSOURI MENTAL HLTH CTR",
+          "city": "FARMINGTON",
+          "state": "MO",
+          "zip5": "63640",
           "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -11127,16 +10443,6 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "473504",
-          "name": "NORTH COUNTRY DIALYSIS UNIT",
-          "city": "NEWPORT",
-          "state": "VT",
-          "zip5": "05855",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         },
         {
           "ccn": "473979",
@@ -11207,16 +10513,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "255341",
-          "name": "GULFPORT CARE CENTER",
-          "city": "GULFPORT",
-          "state": "MS",
-          "zip5": "39503",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -11313,36 +10609,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "172546",
-          "name": "DIALYSIS CENTER OF HUTCHINSON",
-          "city": "HUTCHINSON",
-          "state": "KS",
-          "zip5": "67502",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "175114",
-          "name": "DIVERSICARE OF HUTCHINSON",
-          "city": "HUTCHINSON",
-          "state": "KS",
-          "zip5": "67502",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "175236",
-          "name": "HUTCHINSON OPERATOR, LLC",
-          "city": "HUTCHINSON",
-          "state": "KS",
-          "zip5": "67502",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "178908",
@@ -11589,15 +10855,15 @@
       "city": "EASTLAND",
       "state": "TX",
       "zip5": "76448",
-      "ccn": "450411",
+      "ccn": "671303",
       "name_pos": "EASTLAND MEMORIAL HOSPITAL",
-      "fac_subtype_code": "01",
-      "bed_count": 83,
+      "fac_subtype_code": "11",
+      "bed_count": 52,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "450411",
+          "ccn": "671303",
           "name": "EASTLAND MEMORIAL HOSPITAL",
           "city": "EASTLAND",
           "state": "TX",
@@ -11605,16 +10871,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "453517",
-          "name": "EASTLAND DIALYSIS CENTER",
-          "city": "EASTLAND",
-          "state": "TX",
-          "zip5": "76448",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -11873,16 +11129,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "555865",
-          "name": "HUNTINGTON HEALTHCARE CENTER",
-          "city": "LOS ANGELES",
-          "state": "CA",
-          "zip5": "90032",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "050091",
           "name": "COMMUNITY HOSPITAL OF HUNTINGTON PARK",
           "city": "HUNTINGTON PARK",
@@ -11903,14 +11149,14 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "055888",
-          "name": "HUNTINGTON VALLEY HEALTHCARE CENTER",
-          "city": "HUNTINGTON BEACH",
+          "ccn": "551179",
+          "name": "HUNTINGTON PARK COMMUNITY HEALTH CENTER",
+          "city": "HUNTINGTON PARK",
           "state": "CA",
-          "zip5": "92647",
+          "zip5": "90255",
           "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -11971,18 +11217,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "119802",
-          "name": "CHILDREN'S HEALTHCARE OF ATLANTA",
-          "city": "ATLANTA",
-          "state": "GA",
-          "zip5": "30322",
-          "score": 0.4,
-          "category_code": "01",
-          "category_label": "Hospital"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -12043,16 +11277,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "450143",
-          "name": "ASCENSION SETON SMITHVILLE",
-          "city": "SMITHVILLE",
-          "state": "TX",
-          "zip5": "78957",
-          "score": 0.6667,
-          "category_code": "01",
-          "category_label": "Hospital"
-        },
-        {
           "ccn": "450865",
           "name": "ASCENSION SETON  SOUTHWEST",
           "city": "AUSTIN",
@@ -12081,6 +11305,16 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "670041",
+          "name": "ASCENSION SETON WILLIAMSON",
+          "city": "ROUND ROCK",
+          "state": "TX",
+          "zip5": "78664",
+          "score": 0.6667,
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -12161,16 +11395,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "165198",
-          "name": "IOWA CITY REHAB & HEALTH CARE",
-          "city": "IOWA CITY",
-          "state": "IA",
-          "zip5": "52245",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -12261,6 +11485,16 @@
           "score": 0.4,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "751118",
+          "name": "COUNTY OF SAN JOAQUIN",
+          "city": "STOCKTON",
+          "state": "CA",
+          "zip5": "95202",
+          "score": 0.4,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -12309,16 +11543,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "025019",
-          "name": "PETERSBURG MEDICAL CENTER LTC",
-          "city": "PETERSBURG",
-          "state": "AK",
-          "zip5": "99833",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -12612,7 +11836,7 @@
       "ccn": "103301",
       "name_pos": "NICKLAUS CHILDREN'S HOSPITAL",
       "fac_subtype_code": "06",
-      "bed_count": 307,
+      "bed_count": 474,
       "match_strategy": "llm_assisted",
       "match_confidence": 1.0,
       "candidates": [
@@ -12779,16 +12003,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "17E531",
-          "name": "KEARNY COUNTY HOSPITAL LTCU",
-          "city": "LAKIN",
-          "state": "KS",
-          "zip5": "67860",
-          "score": 0.6667,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -12809,58 +12023,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "33G222",
-          "name": "U C P A OF QUEENS, INC",
-          "city": "JAMAICA",
-          "state": "NY",
-          "zip5": "11432",
-          "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G949",
-          "name": "U C P A OF QUEENS, INC",
-          "city": "BELLEROSE",
-          "state": "NY",
-          "zip5": "11426",
-          "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G953",
-          "name": "U C P A OF QUEENS, INC",
-          "city": "BELLEROSE",
-          "state": "NY",
-          "zip5": "11426",
-          "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G966",
-          "name": "U C P A OF QUEENS, INC",
-          "city": "BELLEROSE",
-          "state": "NY",
-          "zip5": "11426",
-          "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G967",
-          "name": "U C P A OF QUEENS, INC",
-          "city": "BELLEROSE",
-          "state": "NY",
-          "zip5": "11426",
-          "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -12991,36 +12153,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "225768",
-          "name": "NEW ENGLAND HOMES FOR THE DEAF, INC",
-          "city": "DANVERS",
-          "state": "MA",
-          "zip5": "01923",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "225785",
-          "name": "NEW ENGLAND PEDIATRIC CARE",
-          "city": "NORTH BILLERICA",
-          "state": "MA",
-          "zip5": "01862",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "22P001",
-          "name": "NEW ENGLAND ORGAN BANK, INC",
-          "city": "WALTHAM",
-          "state": "MA",
-          "zip5": "02451",
-          "score": 0.4,
-          "category_code": "17",
-          "category_label": "Specialty Hospital (subset of 01)"
         }
       ],
       "vendor": "cerner",
@@ -13259,16 +12391,6 @@
           "score": 0.4,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "555022",
-          "name": "SENECA DISTRICT HOSPITAL D/P SNF",
-          "city": "CHESTER",
-          "state": "CA",
-          "zip5": "96020",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -13449,18 +12571,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "395647",
-          "name": "SPIRITRUST LUTHERAN THE VILLAGE AT GETTYSBURG",
-          "city": "GETTYSBURG",
-          "state": "PA",
-          "zip5": "17325",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13709,16 +12819,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "312315",
-          "name": "CAPITAL HEALTH SYSTEM AT FULD",
-          "city": "TRENTON",
-          "state": "NJ",
-          "zip5": "08638",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -13787,18 +12887,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "442503",
-          "name": "DIALYSIS CLINIC INC KNOXVILLE",
-          "city": "KNOXVILLE",
-          "state": "TN",
-          "zip5": "37920",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13808,37 +12896,15 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/5c7467fb-60f9-4172-add4-57667a5dfcfa/",
       "name_observed": "Christiana Care Health Services, Inc.",
       "npi": null,
-      "city": "NEWARK",
+      "city": "Wilmington",
       "state": "DE",
-      "zip5": "19718",
-      "ccn": "082300",
-      "name_pos": "CHRISTIANA CARE HEALTH SERVICES",
-      "fac_subtype_code": "01",
+      "zip5": "19801",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "address_state_name",
-      "match_confidence": 1.0,
-      "candidates": [
-        {
-          "ccn": "082300",
-          "name": "CHRISTIANA CARE HEALTH SERVICES",
-          "city": "NEWARK",
-          "state": "DE",
-          "zip5": "19718",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "082506",
-          "name": "FRESENIUS MEDICAL CARE OF CHRISTIANA",
-          "city": "NEWARK",
-          "state": "DE",
-          "zip5": "19702",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -13975,6 +13041,16 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "711974",
+          "name": "AHL EYE ASSOCIATES OF WEST JEFFERSON",
+          "city": "MARRERO",
+          "state": "LA",
+          "zip5": "70072",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
           "ccn": "191923",
           "name": "JEFFCARE WEST JEFFERSON",
           "city": "MARRERO",
@@ -14021,38 +13097,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "33G034",
-          "name": "COMMUNITY RESOURCE CENTER FOR THE D D, INC",
-          "city": "BRONX",
-          "state": "NY",
-          "zip5": "10451",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G089",
-          "name": "COMMUNITY RESOURCE CENTER FOR THE D D, INC",
-          "city": "NEW YORK",
-          "state": "NY",
-          "zip5": "10035",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33G588",
-          "name": "COMMUNITY RESOURCE CENTER FOR THE D D, INC",
-          "city": "BRONX",
-          "state": "NY",
-          "zip5": "10451",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -14091,14 +13135,14 @@
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "015048",
-          "name": "CULLMAN HEALTH CARE CENTER",
+          "ccn": "010035",
+          "name": "CULLMAN REGIONAL MEDICAL CENTER",
           "city": "CULLMAN",
           "state": "AL",
-          "zip5": "35055",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
+          "zip5": "35058",
+          "score": 1.0,
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -14137,38 +13181,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "065234",
-          "name": "EVERGREEN NURSING HOME",
-          "city": "ALAMOSA",
-          "state": "CO",
-          "zip5": "81101",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "065309",
-          "name": "WASHINGTON COUNTY NURSING HOME",
-          "city": "AKRON",
-          "state": "CO",
-          "zip5": "80720",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "06A173",
-          "name": "SEDGWICK COUNTY MEMORIAL NURSING HOME",
-          "city": "JULESBURG",
-          "state": "CO",
-          "zip5": "80737",
-          "score": 0.4,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -14333,26 +13345,6 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "232020",
-          "name": "MCLAREN BAY SPECIAL CARE",
-          "city": "BAY CITY",
-          "state": "MI",
-          "zip5": "48706",
-          "score": 0.5,
-          "category_code": "01",
-          "category_label": "Hospital"
-        },
-        {
-          "ccn": "238738",
-          "name": "MCLAREN PRIMARY CARE-MIO",
-          "city": "MIO",
-          "state": "MI",
-          "zip5": "48647",
-          "score": 0.5,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
-        },
-        {
           "ccn": "238758",
           "name": "MCLAREN CENTRAL URGENT CARE",
           "city": "MOUNT PLEASANT",
@@ -14368,16 +13360,6 @@
           "city": "CARO",
           "state": "MI",
           "zip5": "48723",
-          "score": 0.4,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "238735",
-          "name": "MCLAREN PRIMARY CARE-ROSE CITY",
-          "city": "ROSE CITY",
-          "state": "MI",
-          "zip5": "48654",
           "score": 0.4,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
@@ -14411,16 +13393,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "392335",
-          "name": "MILTON S HERSHEY MEDICAL CENTE",
-          "city": "HERSHEY",
-          "state": "PA",
-          "zip5": "17033",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         },
         {
           "ccn": "399807",
@@ -14759,16 +13731,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "165302",
-          "name": "ACCURA HEALTHCARE OF NEW HAMPTON",
-          "city": "NEW HAMPTON",
-          "state": "IA",
-          "zip5": "50659",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -14865,16 +13827,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "025037",
-          "name": "YUKON KUSKOKWIM ELDER'S HOME",
-          "city": "BETHEL",
-          "state": "AK",
-          "zip5": "99559",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -14925,26 +13877,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "396056",
-          "name": "WILLIAM PENN CARE CENTER",
-          "city": "JEANNETTE",
-          "state": "PA",
-          "zip5": "15644",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "396092",
-          "name": "VILLAGE AT PENN STATE,  THE",
-          "city": "STATE COLLEGE",
-          "state": "PA",
-          "zip5": "16803",
-          "score": 0.4,
-          "category_code": "04",
-          "category_label": "Comprehensive Outpatient Rehab / PRTF"
         }
       ],
       "vendor": "cerner",
@@ -15177,16 +14109,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "06A185",
-          "name": "SOUTHEAST COLORADO HOSPITAL LTC",
-          "city": "SPRINGFIELD",
-          "state": "CO",
-          "zip5": "81073",
-          "score": 0.5,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        },
-        {
           "ccn": "063998",
           "name": "SOUTHEAST COLORADO PHYSICIANS CLINIC",
           "city": "SPRINGFIELD",
@@ -15329,16 +14251,6 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "363437",
-          "name": "KETTERING HEALTH PRIMARY CARE",
-          "city": "WILMINGTON",
-          "state": "OH",
-          "zip5": "45177",
-          "score": 0.4,
-          "category_code": "12",
-          "category_label": "Ambulatory Surgical Center"
-        },
-        {
           "ccn": "363446",
           "name": "DEPARTMENT OF PRIMARY CARE",
           "city": "WOODSFIELD",
@@ -15379,23 +14291,13 @@
       "city": "CARROLLTON",
       "state": "AL",
       "zip5": "35447",
-      "ccn": "012640",
-      "name_pos": "PICKENS COUNTY DIALYSIS",
-      "fac_subtype_code": "01",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.6667,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "012640",
-          "name": "PICKENS COUNTY DIALYSIS",
-          "city": "CARROLLTON",
-          "state": "AL",
-          "zip5": "35447",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
         {
           "ccn": "018957",
           "name": "PICKENS COUNTY PRIMARY CARE, PC",
@@ -15631,16 +14533,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "175505",
-          "name": "MITCHELL COUNTY HOSPITAL HEALTH SYSTEMS LTCU",
-          "city": "BELOIT",
-          "state": "KS",
-          "zip5": "67420",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -15795,14 +14687,14 @@
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "112315",
-          "name": "TIFT REGIONAL DIALYSIS CENTER",
+          "ccn": "110095",
+          "name": "TIFT REGIONAL MEDICAL CENTER",
           "city": "TIFTON",
           "state": "GA",
-          "zip5": "31794",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "zip5": "31793",
+          "score": 1.0,
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -15905,26 +14797,6 @@
           "score": 0.75,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "312613",
-          "name": "ST JOSEPH'S SJRMC DIALYSIS",
-          "city": "PATERSON",
-          "state": "NJ",
-          "zip5": "07503",
-          "score": 0.6,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "312614",
-          "name": "ST JOSEPH'S PATERSON DIALYSIS",
-          "city": "PATERSON",
-          "state": "NJ",
-          "zip5": "07503",
-          "score": 0.6,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -16023,16 +14895,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "055067",
-          "name": "PALOMAR VISTA HEALTHCARE CENTER",
-          "city": "ESCONDIDO",
-          "state": "CA",
-          "zip5": "92025",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -16159,16 +15021,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "235708",
-          "name": "MARY FREE BED SUB-ACUTE REHABILITATION",
-          "city": "GRAND RAPIDS",
-          "state": "MI",
-          "zip5": "49503",
-          "score": 0.6667,
-          "category_code": "04",
-          "category_label": "Comprehensive Outpatient Rehab / PRTF"
         }
       ],
       "vendor": "cerner",
@@ -16279,26 +15131,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "33H464",
-          "name": "HEARTSHARE HUMAN SERVICES",
-          "city": "BROOKLYN",
-          "state": "NY",
-          "zip5": "11214",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
-        },
-        {
-          "ccn": "33H465",
-          "name": "HEARTSHARE HUMAN SERVICES",
-          "city": "BROOKLYN",
-          "state": "NY",
-          "zip5": "11214",
-          "score": 0.5,
-          "category_code": "11",
-          "category_label": "FQHC"
         }
       ],
       "vendor": "cerner",
@@ -16329,16 +15161,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "515113",
-          "name": "ST. MARY'S HOSPITAL",
-          "city": "HUNTINGTON",
-          "state": "WV",
-          "zip5": "25702",
-          "score": 1.0,
-          "category_code": "04",
-          "category_label": "Comprehensive Outpatient Rehab / PRTF"
         }
       ],
       "vendor": "cerner",
@@ -16589,14 +15411,14 @@
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "015048",
-          "name": "CULLMAN HEALTH CARE CENTER",
+          "ccn": "010035",
+          "name": "CULLMAN REGIONAL MEDICAL CENTER",
           "city": "CULLMAN",
           "state": "AL",
-          "zip5": "35055",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
+          "zip5": "35058",
+          "score": 1.0,
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -16802,19 +15624,19 @@
       "state": "CA",
       "zip5": "92868",
       "ccn": "053304",
-      "name_pos": "CHILDREN'S HOSPITAL OF ORANGE COUNTY",
+      "name_pos": "RADY CHILDREN'S HOSPITAL ORANGE COUNTY",
       "fac_subtype_code": "06",
       "bed_count": 192,
       "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.8,
+      "match_confidence": 0.6667,
       "candidates": [
         {
           "ccn": "053304",
-          "name": "CHILDREN'S HOSPITAL OF ORANGE COUNTY",
+          "name": "RADY CHILDREN'S HOSPITAL ORANGE COUNTY",
           "city": "ORANGE",
           "state": "CA",
           "zip5": "92868",
-          "score": 0.8,
+          "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
         }
@@ -16864,7 +15686,7 @@
       "ccn": "100132",
       "name_pos": "SOUTH FLORIDA BAPTIST HOSPITAL",
       "fac_subtype_code": "01",
-      "bed_count": 147,
+      "bed_count": 146,
       "match_strategy": "address_state_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -16909,14 +15731,14 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "102680",
-          "name": "SOUTH FLORIDA DIALYSIS",
-          "city": "HOLLYWOOD",
+          "ccn": "C11066",
+          "name": "COMMUNITY HEALTH OF SOUTH FLORIDA INC",
+          "city": "KEY LARGO",
           "state": "FL",
-          "zip5": "33020",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
+          "zip5": "33037",
+          "score": 0.6667,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -17115,16 +15937,6 @@
           "score": 0.4,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "312716",
-          "name": "SOUTH JERSEY DIALYSIS",
-          "city": "PENNSAUKEN",
-          "state": "NJ",
-          "zip5": "08109",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -17145,18 +15957,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "265829",
-          "name": "INDEPENDENCE CARE CENTER OF PERRY COUNTY",
-          "city": "PERRYVILLE",
-          "state": "MO",
-          "zip5": "63775",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -17195,6 +15995,16 @@
           "score": 1.0,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "061090",
+          "name": "PAGOSA SPRINGS COMPREHENSIVE PRIMARY CARE",
+          "city": "PAGOSA SPRINGS",
+          "state": "CO",
+          "zip5": "81147",
+          "score": 0.4,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -17212,7 +16022,7 @@
       "ccn": "191315",
       "name_pos": "HARDTNER MEDICAL CENTER",
       "fac_subtype_code": "11",
-      "bed_count": 35,
+      "bed_count": 25,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -17265,16 +16075,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "056426",
-          "name": "ADVENTIST HEALTH DELANO",
-          "city": "DELANO",
-          "state": "CA",
-          "zip5": "93215",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "051974",
@@ -17689,14 +16489,14 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "525488",
-          "name": "MEADOWBROOK AT BLACK RIVER FALLS",
+          "ccn": "528658",
+          "name": "BLACK RIVER HEALTHCARE CLINIC",
           "city": "BLACK RIVER FALLS",
           "state": "WI",
           "zip5": "54615",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
+          "score": 0.6667,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
         }
       ],
       "vendor": "cerner",
@@ -17836,16 +16636,6 @@
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "335556",
-          "name": "ROCHESTER CENTER FOR REHABILITATION AND NURSING",
-          "city": "ROCHESTER",
-          "state": "NY",
-          "zip5": "14624",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
         {
           "ccn": "330125",
           "name": "ROCHESTER GENERAL HOSPITAL",
@@ -18071,16 +16861,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "26A381",
-          "name": "SALEM MEMORIAL DISTRICT HOSPITAL",
-          "city": "SALEM",
-          "state": "MO",
-          "zip5": "65560",
-          "score": 1.0,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -18367,16 +17147,6 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "332582",
-          "name": "NEW YORK RENAL ASSOCIATES",
-          "city": "BRONX",
-          "state": "NY",
-          "zip5": "10456",
-          "score": 0.6,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "330019",
           "name": "NEW YORK COMMUNITY HOSPITAL OF BROOKLYN, INC.",
           "city": "BROOKLYN",
@@ -18397,24 +17167,34 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "33H577",
-          "name": "THE NEW YORK FOUNDLING",
+          "ccn": "571105",
+          "name": "NEW YORK CITY HEALTH & HOSPITAL CORP",
           "city": "BROOKLYN",
           "state": "NY",
-          "zip5": "11212",
+          "zip5": "11221",
           "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
-          "ccn": "33H578",
-          "name": "THE NEW YORK FOUNDLING",
-          "city": "BROOKLYN",
+          "ccn": "571150",
+          "name": "NEW YORK CITY HEALTH AND HOSPITAL CORP",
+          "city": "JAMAICA",
           "state": "NY",
-          "zip5": "11212",
+          "zip5": "11413",
           "score": 0.4,
-          "category_code": "11",
-          "category_label": "FQHC"
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "571161",
+          "name": "NEW YORK CITY HEALTH AND HOSPITAL CORP",
+          "city": "JAMAICA",
+          "state": "NY",
+          "zip5": "11434",
+          "score": 0.4,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -18492,15 +17272,27 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/82b5c78e-3511-4091-8bf4-9b7dbe078f0c/",
       "name_observed": "Prisma Health-Midlands",
       "npi": null,
-      "city": "Columbia",
+      "city": "SUMTER",
       "state": "SC",
-      "zip5": "29201",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "zip5": "29150",
+      "ccn": "420070",
+      "name_pos": "PRISMA HEALTH MIDLANDS",
+      "fac_subtype_code": "01",
+      "bed_count": 283,
+      "match_strategy": "address_state_name",
+      "match_confidence": 1.0,
+      "candidates": [
+        {
+          "ccn": "420070",
+          "name": "PRISMA HEALTH MIDLANDS",
+          "city": "SUMTER",
+          "state": "SC",
+          "zip5": "29150",
+          "score": 1.0,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -18877,16 +17669,6 @@
           "score": 0.75,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "195564",
-          "name": "ACADIA ST LANDRY NURSING & REHABILITATION CENTER",
-          "city": "CHURCH POINT",
-          "state": "LA",
-          "zip5": "70525",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -19001,16 +17783,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "332303",
-          "name": "ST JOSEPH'S MEDICAL CENTER ESRD",
-          "city": "YONKERS",
-          "state": "NY",
-          "zip5": "10701",
-          "score": 0.75,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         },
         {
           "ccn": "330208",
@@ -19281,16 +18053,6 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "17E658",
-          "name": "PHILLIPS COUNTY RETIREMENT CENTER",
-          "city": "PHILLIPSBURG",
-          "state": "KS",
-          "zip5": "67661",
-          "score": 0.6667,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -19737,16 +18499,6 @@
           "category_label": "Ambulatory Surgical Center"
         },
         {
-          "ccn": "672746",
-          "name": "COMPLETE DIALYSIS CARE LLC",
-          "city": "ODESSA",
-          "state": "TX",
-          "zip5": "79761",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "458653",
           "name": "COMMUNITY CARE CENTER",
           "city": "MINERAL WELLS",
@@ -19807,16 +18559,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "505226",
-          "name": "SUNNYSIDE HEALTHCARE CENTER",
-          "city": "SUNNYSIDE",
-          "state": "WA",
-          "zip5": "98944",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "508538",
           "name": "ASTRIA HEALTH CENTER",
           "city": "SUNNYSIDE",
@@ -19838,6 +18580,16 @@
         },
         {
           "ccn": "508563",
+          "name": "ASTRIA HEALTH CENTER",
+          "city": "SUNNYSIDE",
+          "state": "WA",
+          "zip5": "98944",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "508569",
           "name": "ASTRIA HEALTH CENTER",
           "city": "SUNNYSIDE",
           "state": "WA",
@@ -20049,16 +18801,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "052656",
-          "name": "DIALYSIS CENTERS OF VENTURA COUNTY",
-          "city": "VENTURA",
-          "state": "CA",
-          "zip5": "93003",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "050394",
           "name": "COMMUNITY MEMORIAL HOSPITAL - VENTURA",
           "city": "VENTURA",
@@ -20096,15 +18838,15 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/8d555f5f-2441-4690-bfdd-d2697379c3d6/",
       "name_observed": "University of South Alabama Hospitals and Clinics",
       "npi": null,
-      "city": "MOBILE",
+      "city": "Mobile",
       "state": "AL",
-      "zip5": "36688",
-      "ccn": "012559",
-      "name_pos": "FRESENIUS MEDICAL CARE UNIVERSITY OF SOUTH ALABAMA",
-      "fac_subtype_code": "01",
+      "zip5": "36617",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "llm_assisted",
-      "match_confidence": 1.0,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
         {
           "ccn": "010033",
@@ -20115,16 +18857,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "012559",
-          "name": "FRESENIUS MEDICAL CARE UNIVERSITY OF SOUTH ALABAMA",
-          "city": "MOBILE",
-          "state": "AL",
-          "zip5": "36688",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         },
         {
           "ccn": "019800",
@@ -20148,7 +18880,7 @@
         }
       ],
       "vendor": "cerner",
-      "verified_via": "llm_assisted",
+      "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
     },
     {
@@ -20463,18 +19195,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "395080",
-          "name": "PHOEBE ALLENTOWN HEALTH CARE CENTER",
-          "city": "ALLENTOWN",
-          "state": "PA",
-          "zip5": "18104",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -20521,26 +19241,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "332332",
-          "name": "LONG ISLAND COMMUNITY HOSPITAL",
-          "city": "PATCHOGUE",
-          "state": "NY",
-          "zip5": "11772",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "333527",
-          "name": "LONG ISLAND COMMUNITY HOSPITAL DIALYSIS CENTER",
-          "city": "PATCHOGUE",
-          "state": "NY",
-          "zip5": "11772",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -20795,26 +19495,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "492575",
-          "name": "VIRGINIA BEACH DIALYSIS CENTER",
-          "city": "VIRGINIA BEACH",
-          "state": "VA",
-          "zip5": "23455",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "492631",
-          "name": "FMCNA OF VIRGINIA BEACH",
-          "city": "VIRGINIA BEACH",
-          "state": "VA",
-          "zip5": "23452",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         },
         {
           "ccn": "494025",
@@ -21323,16 +20003,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "06A173",
-          "name": "SEDGWICK COUNTY MEMORIAL NURSING HOME",
-          "city": "JULESBURG",
-          "state": "CO",
-          "zip5": "80737",
-          "score": 0.5,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -21492,7 +20162,7 @@
       "ccn": "103301",
       "name_pos": "NICKLAUS CHILDREN'S HOSPITAL",
       "fac_subtype_code": "06",
-      "bed_count": 307,
+      "bed_count": 474,
       "match_strategy": "llm_assisted",
       "match_confidence": 1.0,
       "candidates": [
@@ -21535,16 +20205,6 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "285081",
-          "name": "CHI HEALTH ST FRANCIS",
-          "city": "GRAND ISLAND",
-          "state": "NE",
-          "zip5": "68803",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -21751,18 +20411,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "172573",
-          "name": "FREE STATE DIALYSIS",
-          "city": "LAWRENCE",
-          "state": "KS",
-          "zip5": "66046",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -21841,38 +20489,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "172541",
-          "name": "OLATHE DIALYSIS",
-          "city": "OLATHE",
-          "state": "KS",
-          "zip5": "66061",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "175551",
-          "name": "THE HEALTHCARE RESORT OF OLATHE",
-          "city": "OLATHE",
-          "state": "KS",
-          "zip5": "66061",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "175557",
-          "name": "AZRIA HEALTH OLATHE",
-          "city": "OLATHE",
-          "state": "KS",
-          "zip5": "66061",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -21901,16 +20517,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "155657",
-          "name": "HARRISON HEALTHCARE CENTER",
-          "city": "CORYDON",
-          "state": "IN",
-          "zip5": "47112",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -22082,7 +20688,7 @@
       "ccn": "190034",
       "name_pos": "ABBEVILLE GENERAL HOSPITAL",
       "fac_subtype_code": "01",
-      "bed_count": 76,
+      "bed_count": 60,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -22295,16 +20901,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "052871",
-          "name": "CENTRAL COAST KIDNEY CENTER",
-          "city": "SANTA MARIA",
-          "state": "CA",
-          "zip5": "93458",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -22477,38 +21073,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "065234",
-          "name": "EVERGREEN NURSING HOME",
-          "city": "ALAMOSA",
-          "state": "CO",
-          "zip5": "81101",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "065309",
-          "name": "WASHINGTON COUNTY NURSING HOME",
-          "city": "AKRON",
-          "state": "CO",
-          "zip5": "80720",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "06A173",
-          "name": "SEDGWICK COUNTY MEMORIAL NURSING HOME",
-          "city": "JULESBURG",
-          "state": "CO",
-          "zip5": "80737",
-          "score": 0.4,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -22585,16 +21149,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "056416",
-          "name": "MAYERS MEMORIAL HOSPITAL",
-          "city": "FALL RIVER MILLS",
-          "state": "CA",
-          "zip5": "96028",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -22606,26 +21160,16 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/9e1c46ab-19e0-4fcc-9634-a468798d997d/",
       "name_observed": "Crook County Medical Services District",
       "npi": null,
-      "city": "SUNDANCE",
+      "city": "Sundance",
       "state": "WY",
       "zip5": "82729",
-      "ccn": "535029",
-      "name_pos": "CROOK COUNTY MEDICAL SERVICES DISTRICT LTC",
-      "fac_subtype_code": "03",
-      "bed_count": 32,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.8,
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "535029",
-          "name": "CROOK COUNTY MEDICAL SERVICES DISTRICT LTC",
-          "city": "SUNDANCE",
-          "state": "WY",
-          "zip5": "82729",
-          "score": 0.8,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
         {
           "ccn": "531311",
           "name": "CROOK COUNTY HOSPITAL",
@@ -22793,18 +21337,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "522572",
-          "name": "MONROE CLINIC DIALYSIS",
-          "city": "MONROE",
-          "state": "WI",
-          "zip5": "53566",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -22899,16 +21431,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "352303",
-          "name": "TRINITY HOSPITAL RDC",
-          "city": "MINOT",
-          "state": "ND",
-          "zip5": "58701",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -23008,29 +21530,17 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/B7F4hVCEUUKLely3RU0W7_wMcuPLet5m/",
       "name_observed": "Anthony Medical Center",
       "npi": null,
-      "city": "ANTHONY",
+      "city": "Anthony",
       "state": "KS",
       "zip5": "67003",
-      "ccn": "17E630",
-      "name_pos": "ANTHONY COMMUNITY CARE CENTER",
-      "fac_subtype_code": "02",
-      "bed_count": 37,
-      "match_strategy": "llm_assisted",
-      "match_confidence": 1.0,
-      "candidates": [
-        {
-          "ccn": "17E630",
-          "name": "ANTHONY COMMUNITY CARE CENTER",
-          "city": "ANTHONY",
-          "state": "KS",
-          "zip5": "67003",
-          "score": 0.5,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        }
-      ],
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "vendor": "cerner",
-      "verified_via": "llm_assisted",
+      "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
     },
     {
@@ -23104,26 +21614,16 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/CZXZx6LxE-L3UYv_vYuZuKXOvALyMhgz/",
       "name_observed": "Albert Einstein Healthcare Network",
       "npi": null,
-      "city": "PHILADELPHIA",
+      "city": "Philadelphia",
       "state": "PA",
       "zip5": "19141",
-      "ccn": "392338",
-      "name_pos": "ALBERT EINSTEIN MEDICAL CENTER ESRD",
-      "fac_subtype_code": "01",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "llm_assisted",
-      "match_confidence": 1.0,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "392338",
-          "name": "ALBERT EINSTEIN MEDICAL CENTER ESRD",
-          "city": "PHILADELPHIA",
-          "state": "PA",
-          "zip5": "19141",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
         {
           "ccn": "399813",
           "name": "ALBERT EINSTEIN MEDICAL CENTER TRANSPLANT CENTER",
@@ -23136,7 +21636,7 @@
         }
       ],
       "vendor": "cerner",
-      "verified_via": "llm_assisted",
+      "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
     },
     {
@@ -23351,58 +21851,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "552853",
-          "name": "NORTHRIDGE KIDNEY CARE CENTER LLC",
-          "city": "NORTHRIDGE",
-          "state": "CA",
-          "zip5": "91324",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "752546",
-          "name": "ALHAMBRA KIDNEY CARE",
-          "city": "ALHAMBRA",
-          "state": "CA",
-          "zip5": "91801",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052502",
-          "name": "KIDNEY DIALYSIS CARE UNIT",
-          "city": "LYNWOOD",
-          "state": "CA",
-          "zip5": "90262",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052727",
-          "name": "FRESENIUS KIDNEY CARE REDLANDS",
-          "city": "REDLANDS",
-          "state": "CA",
-          "zip5": "92373",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052757",
-          "name": "FRESENIUS KIDNEY CARE PITTSBURG",
-          "city": "PITTSBURG",
-          "state": "CA",
-          "zip5": "94565",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -23467,26 +21915,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102524",
-          "name": "LAKELAND DIALYSIS",
-          "city": "LAKELAND",
-          "state": "FL",
-          "zip5": "33805",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "105283",
-          "name": "LAKELAND HILLS CENTER",
-          "city": "LAKELAND",
-          "state": "FL",
-          "zip5": "33805",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -23782,7 +22210,7 @@
       "ccn": "370215",
       "name_pos": "OKLAHOMA HEART HOSPITAL, LLC",
       "fac_subtype_code": "01",
-      "bed_count": 98,
+      "bed_count": 97,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -23861,36 +22289,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "332370",
-          "name": "DCI-GLENS FALLS",
-          "city": "GLENS FALLS",
-          "state": "NY",
-          "zip5": "12801",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "332782",
-          "name": "DCI-GLENS FALLS",
-          "city": "GLENS FALLS",
-          "state": "NY",
-          "zip5": "12801",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "335306",
-          "name": "GLENS FALLS CENTER FOR REHABILITATION AND NURSING",
-          "city": "GLENS FALLS",
-          "state": "NY",
-          "zip5": "12801",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -23971,23 +22369,13 @@
       "city": "KANSAS CITY",
       "state": "MO",
       "zip5": "64108",
-      "ccn": "262326",
-      "name_pos": "CHILDREN'S MERCY HOSPITAL",
-      "fac_subtype_code": "01",
-      "bed_count": null,
+      "ccn": "269806",
+      "name_pos": "THE CHILDREN'S MERCY HOSPITAL",
+      "fac_subtype_code": "20",
+      "bed_count": 0,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
-        {
-          "ccn": "262326",
-          "name": "CHILDREN'S MERCY HOSPITAL",
-          "city": "KANSAS CITY",
-          "state": "MO",
-          "zip5": "64108",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
         {
           "ccn": "269806",
           "name": "THE CHILDREN'S MERCY HOSPITAL",
@@ -24035,18 +22423,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "366573",
-          "name": "CENTRAL PARK WEST HEALTH CENTER",
-          "city": "TOLEDO",
-          "state": "OH",
-          "zip5": "43617",
-          "score": 0.4,
-          "category_code": "08",
-          "category_label": "Rural Health Clinic"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -24290,23 +22666,23 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/MtxVU3dbzZwHcvfCb2vTAE2_Nwhai9Oq/",
       "name_observed": "NORTH KANSAS CITY HOSPITAL",
       "npi": null,
-      "city": "NORTH KANSAS CITY",
+      "city": "North Kansas City",
       "state": "MO",
       "zip5": "64116",
-      "ccn": "260096",
-      "name_pos": "NORTH KANSAS CITY HOSPITAL",
-      "fac_subtype_code": "01",
-      "bed_count": 451,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 1.0,
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "260096",
-          "name": "NORTH KANSAS CITY HOSPITAL",
-          "city": "NORTH KANSAS CITY",
+          "ccn": "260138",
+          "name": "ST LUKES HOSPITAL OF KANSAS CITY",
+          "city": "KANSAS CITY",
           "state": "MO",
-          "zip5": "64116",
-          "score": 1.0,
+          "zip5": "64111",
+          "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
         }
@@ -24685,18 +23061,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "312661",
-          "name": "OCEAN COUNTY DIALYSIS CENTER",
-          "city": "TOMS RIVER",
-          "state": "NJ",
-          "zip5": "08753",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -24751,18 +23115,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "102820",
-          "name": "FIRST COAST DIALYSIS CENTER",
-          "city": "JACKSONVILLE",
-          "state": "FL",
-          "zip5": "32216",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -24798,6 +23150,26 @@
           "city": "GAFFNEY",
           "state": "SC",
           "zip5": "29340",
+          "score": 0.4,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "428506",
+          "name": "INTERNAL MEDICINE OF THE PIEDMONT",
+          "city": "GREENWOOD",
+          "state": "SC",
+          "zip5": "29646",
+          "score": 0.4,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "428513",
+          "name": "INTERNAL MEDICINE OF GREENWOOD",
+          "city": "GREENWOOD",
+          "state": "SC",
+          "zip5": "29646",
           "score": 0.4,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
@@ -24841,16 +23213,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "092305",
-          "name": "CHILDREN'S HOSPITAL",
-          "city": "WASHINGTON",
-          "state": "DC",
-          "zip5": "20010",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -24881,16 +23243,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "272510",
-          "name": "BILLINGS CLINIC DIALYSIS",
-          "city": "BILLINGS",
-          "state": "MT",
-          "zip5": "59101",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -25527,16 +23879,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "150161",
-          "name": "INDIANA UNIVERSITY HEALTH NORTH HOSPITAL",
-          "city": "CARMEL",
-          "state": "IN",
-          "zip5": "46032",
-          "score": 0.4,
-          "category_code": "01",
-          "category_label": "Hospital"
-        },
-        {
           "ccn": "150173",
           "name": "INDIANA UNIVERSITY HEALTH ARNETT HOSPITAL",
           "city": "LAFAYETTE",
@@ -25552,6 +23894,16 @@
           "city": "PAOLI",
           "state": "IN",
           "zip5": "47454",
+          "score": 0.4,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "151311",
+          "name": "INDIANA UNIVERSITY HEALTH TIPTON HOSPITAL INC",
+          "city": "TIPTON",
+          "state": "IN",
+          "zip5": "46072",
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
@@ -26011,36 +24363,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "052521",
-          "name": "ANTELOPE VALLEY DIALYSIS",
-          "city": "LANCASTER",
-          "state": "CA",
-          "zip5": "93534",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "555456",
-          "name": "ANTELOPE VALLEY CARE CENTER",
-          "city": "LANCASTER",
-          "state": "CA",
-          "zip5": "93534",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "552593",
-          "name": "ANTELOPE VALLEY KIDNEY INSTITUTE",
-          "city": "LANCASTER",
-          "state": "CA",
-          "zip5": "93534",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -26151,18 +24473,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "032315",
-          "name": "GILA RIVER DIALYSIS EAST",
-          "city": "SACATON",
-          "state": "AZ",
-          "zip5": "85147",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -26357,16 +24667,6 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "17E011",
-          "name": "WICHITA COUNTY HEALTH CENTER LTCU",
-          "city": "LEOTI",
-          "state": "KS",
-          "zip5": "67861",
-          "score": 0.6667,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -26427,16 +24727,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "145267",
-          "name": "PANA HEALTH AND REHAB CENTER",
-          "city": "PANA",
-          "state": "IL",
-          "zip5": "62557",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "148508",
@@ -26801,23 +25091,13 @@
       "city": "KANSAS CITY",
       "state": "MO",
       "zip5": "64108",
-      "ccn": "262326",
-      "name_pos": "CHILDREN'S MERCY HOSPITAL",
-      "fac_subtype_code": "01",
-      "bed_count": null,
+      "ccn": "269806",
+      "name_pos": "THE CHILDREN'S MERCY HOSPITAL",
+      "fac_subtype_code": "20",
+      "bed_count": 0,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
-        {
-          "ccn": "262326",
-          "name": "CHILDREN'S MERCY HOSPITAL",
-          "city": "KANSAS CITY",
-          "state": "MO",
-          "zip5": "64108",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
         {
           "ccn": "269806",
           "name": "THE CHILDREN'S MERCY HOSPITAL",
@@ -26947,26 +25227,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "262662",
-          "name": "EXCELSIOR SPRINGS DIALYSIS",
-          "city": "EXCELSIOR SPRINGS",
-          "state": "MO",
-          "zip5": "64024",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "265821",
-          "name": "ASPIRE SENIOR LIVING EXCELSIOR SPRINGS",
-          "city": "EXCELSIOR SPRINGS",
-          "state": "MO",
-          "zip5": "64024",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "791056",
           "name": "SWOPE HEALTH - EXCELSIOR SPRINGS PEDIATRIC CLINIC",
           "city": "EXCELSIOR SPRINGS",
@@ -26996,16 +25256,6 @@
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "262522",
-          "name": "DIALYSIS CLINIC INC - BOWLING GREEN",
-          "city": "BOWLING GREEN",
-          "state": "MO",
-          "zip5": "63334",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
         {
           "ccn": "268595",
           "name": "COXHEALTH BRANSON HILLS CLINIC",
@@ -27107,6 +25357,18 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
+      "candidates": [
+        {
+          "ccn": "013963",
+          "name": "WASHINGTON COUNTY HEALTHCARE AUTHORITY INC",
+          "city": "MILLRY",
+          "state": "AL",
+          "zip5": "36558",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        }
+      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -27116,15 +25378,27 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/a7e8884c-0f8a-4040-a7e2-b8409572d6c9/",
       "name_observed": "Reeves Regional Health",
       "npi": null,
-      "city": "Pecos",
+      "city": "PECOS",
       "state": "TX",
       "zip5": "79772",
-      "ccn": null,
-      "name_pos": null,
-      "fac_subtype_code": null,
-      "bed_count": null,
-      "match_strategy": "unmatched",
-      "match_confidence": 0.0,
+      "ccn": "451377",
+      "name_pos": "REEVES REGIONAL HEALTH",
+      "fac_subtype_code": "11",
+      "bed_count": 25,
+      "match_strategy": "address_state_zip5_name",
+      "match_confidence": 1.0,
+      "candidates": [
+        {
+          "ccn": "451377",
+          "name": "REEVES REGIONAL HEALTH",
+          "city": "PECOS",
+          "state": "TX",
+          "zip5": "79772",
+          "score": 1.0,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -27537,16 +25811,6 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "175548",
-          "name": "THE HEALTHCARE RESORT OF KANSAS CITY",
-          "city": "KANSAS CITY",
-          "state": "KS",
-          "zip5": "66112",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "170188",
           "name": "KANSAS CITY ORTHOPAEDIC INSTITUTE",
           "city": "LEAWOOD",
@@ -27555,36 +25819,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "175281",
-          "name": "LIFE CARE CENTER OF KANSAS CITY",
-          "city": "KANSAS CITY",
-          "state": "KS",
-          "zip5": "66104",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "176536",
-          "name": "HEALTHSOUTH REHAB OF KANSAS CITY",
-          "city": "LEAWOOD",
-          "state": "KS",
-          "zip5": "66206",
-          "score": 0.4,
-          "category_code": "08",
-          "category_label": "Rural Health Clinic"
-        },
-        {
-          "ccn": "176584",
-          "name": "EMPOWERME WELLNESS KANSAS CITY, LLC",
-          "city": "PRAIRIE VILLAGE",
-          "state": "KS",
-          "zip5": "66206",
-          "score": 0.4,
-          "category_code": "08",
-          "category_label": "Rural Health Clinic"
         }
       ],
       "vendor": "cerner",
@@ -28067,16 +26301,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "266687",
-          "name": "EMPOWERME REHAB ST CHARLES",
-          "city": "ST CHARLES",
-          "state": "MO",
-          "zip5": "63301",
-          "score": 0.4,
-          "category_code": "08",
-          "category_label": "Rural Health Clinic"
         }
       ],
       "vendor": "cerner",
@@ -28130,7 +26354,7 @@
       "ccn": "281306",
       "name_pos": "KEARNEY COUNTY HEALTH SERVICES",
       "fac_subtype_code": "11",
-      "bed_count": 25,
+      "bed_count": 10,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -28293,23 +26517,13 @@
       "city": "HAMILTON",
       "state": "MT",
       "zip5": "59840",
-      "ccn": "271001",
+      "ccn": "271862",
       "name_pos": "SAPPHIRE COMMUNITY HEALTH INC",
       "fac_subtype_code": "01",
       "bed_count": null,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
-        {
-          "ccn": "271001",
-          "name": "SAPPHIRE COMMUNITY HEALTH INC",
-          "city": "HAMILTON",
-          "state": "MT",
-          "zip5": "59840",
-          "score": 1.0,
-          "category_code": "21",
-          "category_label": "Ambulatory Surgical Center (alt)"
-        },
         {
           "ccn": "271862",
           "name": "SAPPHIRE COMMUNITY HEALTH INC",
@@ -28543,16 +26757,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "452768",
-          "name": "CROCKETT DIALYSIS CENTER",
-          "city": "CROCKETT",
-          "state": "TX",
-          "zip5": "75835",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "673467",
           "name": "CROCKETT MEDICAL CENTER CLINIC",
           "city": "CROCKETT",
@@ -28663,16 +26867,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "672796",
-          "name": "CORYELL DIALYSIS",
-          "city": "GATESVILLE",
-          "state": "TX",
-          "zip5": "76528",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -28819,16 +27013,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "445187",
-          "name": "WEST TENNESSEE POST ACUTE",
-          "city": "JACKSON",
-          "state": "TN",
-          "zip5": "38301",
-          "score": 0.5,
-          "category_code": "04",
-          "category_label": "Comprehensive Outpatient Rehab / PRTF"
         }
       ],
       "vendor": "cerner",
@@ -28869,16 +27053,6 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "285225",
-          "name": "HERITAGE OF WEBSTER COUNTY",
-          "city": "RED CLOUD",
-          "state": "NE",
-          "zip5": "68970",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -28967,16 +27141,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "235638",
-          "name": "MEDILODGE OF HOLLAND",
-          "city": "HOLLAND",
-          "state": "MI",
-          "zip5": "49423",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -29305,16 +27469,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "155657",
-          "name": "HARRISON HEALTHCARE CENTER",
-          "city": "CORYDON",
-          "state": "IN",
-          "zip5": "47112",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -29758,7 +27912,7 @@
       "candidates": [
         {
           "ccn": "388531",
-          "name": "SAMARITAN DEPOE BAY CLINIC",
+          "name": "SAMARITAN HEALTH CLINIC - DEPOE BAY",
           "city": "DEPOE BAY",
           "state": "OR",
           "zip5": "97341",
@@ -29807,31 +27961,31 @@
           "category_label": "Hospital"
         },
         {
+          "ccn": "460015",
+          "name": "INTERMOUNTAIN HEALTH LOGAN REGIONAL HOSPITAL",
+          "city": "LOGAN",
+          "state": "UT",
+          "zip5": "84341",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "460058",
+          "name": "INTERMOUNTAIN HEALTH RIVERTON HOSPITAL",
+          "city": "RIVERTON",
+          "state": "UT",
+          "zip5": "84065",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
           "ccn": "460061",
           "name": "INTERMOUNTAIN HEALTH LAYTON HOSPITAL",
           "city": "LAYTON",
           "state": "UT",
           "zip5": "84041",
-          "score": 0.5,
-          "category_code": "01",
-          "category_label": "Hospital"
-        },
-        {
-          "ccn": "461300",
-          "name": "INTERMOUNTAIN HEALTH DELTA COMMUNITY HOSPITAL",
-          "city": "DELTA",
-          "state": "UT",
-          "zip5": "84624",
-          "score": 0.5,
-          "category_code": "01",
-          "category_label": "Hospital"
-        },
-        {
-          "ccn": "461333",
-          "name": "INTERMOUNTAIN HEALTH GARFIELD MEMORIAL HOSPITAL",
-          "city": "PANGUITCH",
-          "state": "UT",
-          "zip5": "84759",
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
@@ -29875,16 +28029,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "492678",
-          "name": "HAMPTON ROADS HOME TRAINING",
-          "city": "NEWPORT NEWS",
-          "state": "VA",
-          "zip5": "23601",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -30105,16 +28249,6 @@
       "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "102336",
-          "name": "MIAMI CHILDREN'S HOSPITAL",
-          "city": "MIAMI",
-          "state": "FL",
-          "zip5": "33155",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "103301",
           "name": "NICKLAUS CHILDREN'S HOSPITAL",
           "city": "MIAMI",
@@ -30273,16 +28407,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "175565",
-          "name": "SUNPORCH OF SMITH COUNTY",
-          "city": "SMITH CENTER",
-          "state": "KS",
-          "zip5": "66967",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "178505",
           "name": "SMITH COUNTY FAMILY PRACTICE",
           "city": "SMITH CENTER",
@@ -30311,28 +28435,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "312569",
-          "name": "MIDDLETOWN DIALYSIS CENTER",
-          "city": "RED BANK",
-          "state": "NJ",
-          "zip5": "07701",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "315087",
-          "name": "CAREONE AT MIDDLETOWN",
-          "city": "ATLANTIC HIGHLANDS",
-          "state": "NJ",
-          "zip5": "07716",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -30371,16 +28473,6 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "275136",
-          "name": "MADISON VALLEY MANOR",
-          "city": "ENNIS",
-          "state": "MT",
-          "zip5": "59729",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -31598,26 +29690,16 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/cbeeaf3b-295c-4ed3-bee9-82bd88557832/",
       "name_observed": "Satanta District Hospital",
       "npi": null,
-      "city": "SATANTA",
+      "city": "Satanta",
       "state": "KS",
       "zip5": "67870",
-      "ccn": "17E356",
-      "name_pos": "SATANTA DISTRICT HOSPITAL LTCU",
-      "fac_subtype_code": "02",
-      "bed_count": 44,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.6667,
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
-        {
-          "ccn": "17E356",
-          "name": "SATANTA DISTRICT HOSPITAL LTCU",
-          "city": "SATANTA",
-          "state": "KS",
-          "zip5": "67870",
-          "score": 0.6667,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        },
         {
           "ccn": "171324",
           "name": "SATANTA DISTRICT HOSPITAL, CLINICS, & LTCU",
@@ -31975,18 +30057,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "122511",
-          "name": "LIBERTY DIALYSIS-HAWAII LLC-KAUAI DIALYSIS",
-          "city": "LIHUE",
-          "state": "HI",
-          "zip5": "96766",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -32015,16 +30085,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "525132",
-          "name": "NORTH CENTRAL HEALTH CARE",
-          "city": "WAUSAU",
-          "state": "WI",
-          "zip5": "54403",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -32603,16 +30663,6 @@
           "score": 0.6667,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "28E303",
-          "name": "ROCK COUNTY HOSPITAL LONG TERM CARE",
-          "city": "BASSETT",
-          "state": "NE",
-          "zip5": "68714",
-          "score": 0.4,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
         }
       ],
       "vendor": "cerner",
@@ -32741,16 +30791,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "422542",
-          "name": "CONWAY DIALYSIS CENTER",
-          "city": "CONWAY",
-          "state": "SC",
-          "zip5": "29526",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "423865",
           "name": "CONWAY PEDIATRICS",
           "city": "CONWAY",
@@ -32759,16 +30799,6 @@
           "score": 0.5,
           "category_code": "12",
           "category_label": "Ambulatory Surgical Center"
-        },
-        {
-          "ccn": "425173",
-          "name": "PRUITTHEALTH- CONWAY AT CONWAY MEDICAL CENTER",
-          "city": "CONWAY",
-          "state": "SC",
-          "zip5": "29526",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -32847,16 +30877,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "232528",
-          "name": "MUNSON DIALYSIS CENTER",
-          "city": "TRAVERSE CITY",
-          "state": "MI",
-          "zip5": "49684",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -33200,7 +31220,7 @@
       "state": "NE",
       "zip5": "69337",
       "ccn": "281341",
-      "name_pos": "CHADRON COMMUNITY HOSPITAL AND HEALTH SERVICES",
+      "name_pos": "CHADRON HOSPITAL",
       "fac_subtype_code": "11",
       "bed_count": 25,
       "match_strategy": "llm_assisted",
@@ -33208,23 +31228,13 @@
       "candidates": [
         {
           "ccn": "281341",
-          "name": "CHADRON COMMUNITY HOSPITAL AND HEALTH SERVICES",
+          "name": "CHADRON HOSPITAL",
           "city": "CHADRON",
           "state": "NE",
           "zip5": "69337",
-          "score": 0.5,
+          "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "282313",
-          "name": "CHADRON COMMUNITY HOSPITAL AND HEALTH SERVICES",
-          "city": "CHADRON",
-          "state": "NE",
-          "zip5": "69337",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -33397,16 +31407,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102302",
-          "name": "ADVENTHEALTH ORLANDO",
-          "city": "ORLANDO",
-          "state": "FL",
-          "zip5": "32803",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         },
         {
           "ccn": "109802",
@@ -33629,18 +31629,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "312647",
-          "name": "GARDEN STATE KIDNEY CENTER",
-          "city": "WOODBRIDGE",
-          "state": "NJ",
-          "zip5": "07095",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -33771,6 +31759,16 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "531818",
+          "name": "UNIVERSITY OF WYOMING",
+          "city": "CASPER",
+          "state": "WY",
+          "zip5": "82601",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
         }
       ],
       "vendor": "cerner",
@@ -34011,16 +32009,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "355037",
-          "name": "SMP HEALTH - ST ALOISIUS",
-          "city": "HARVEY",
-          "state": "ND",
-          "zip5": "58341",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "358509",
           "name": "SMP HEALTH - ST ALOISIUS",
           "city": "HARVEY",
@@ -34137,38 +32125,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "052665",
-          "name": "SANTA MONICA DIALYSIS",
-          "city": "SANTA MONICA",
-          "state": "CA",
-          "zip5": "90404",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "055540",
-          "name": "SANTA MONICA HEALTH CARE CENTER",
-          "city": "SANTA MONICA",
-          "state": "CA",
-          "zip5": "90404",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
-          "ccn": "555808",
-          "name": "SANTA MONICA REHABILITATION CENTER",
-          "city": "SANTA MONICA",
-          "state": "CA",
-          "zip5": "90404",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -34312,22 +32268,22 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/e35355ac-dfca-48b9-9dd9-0b7c408c2a66/",
       "name_observed": "Lake Region Healthcare Corporation",
       "npi": null,
-      "city": "FERGUS FALLS",
+      "city": "ELBOW LAKE",
       "state": "MN",
-      "zip5": "56537",
-      "ccn": "240052",
+      "zip5": "56531",
+      "ccn": "241379",
       "name_pos": "LAKE REGION HEALTHCARE CORPORATION",
-      "fac_subtype_code": "01",
-      "bed_count": 100,
-      "match_strategy": "address_state_zip5_name",
+      "fac_subtype_code": "11",
+      "bed_count": 10,
+      "match_strategy": "address_state_name",
       "match_confidence": 1.0,
       "candidates": [
         {
-          "ccn": "240052",
+          "ccn": "241379",
           "name": "LAKE REGION HEALTHCARE CORPORATION",
-          "city": "FERGUS FALLS",
+          "city": "ELBOW LAKE",
           "state": "MN",
-          "zip5": "56537",
+          "zip5": "56531",
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
@@ -34360,25 +32316,25 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/e3c3f29b-49ce-4329-ade7-4c5593d87595/",
       "name_observed": "Green Valley Hospital",
       "npi": null,
-      "city": "GREEN VALLEY",
+      "city": "Green Valley",
       "state": "AZ",
       "zip5": "85614",
-      "ccn": "035073",
-      "name_pos": "HAVEN HEALTH GREEN VALLEY, LLC",
-      "fac_subtype_code": "03",
-      "bed_count": 111,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 0.6667,
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "candidates": [
         {
-          "ccn": "035073",
-          "name": "HAVEN HEALTH GREEN VALLEY, LLC",
-          "city": "GREEN VALLEY",
+          "ccn": "034026",
+          "name": "VALLEY HOSPITAL",
+          "city": "PHOENIX",
           "state": "AZ",
-          "zip5": "85614",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
+          "zip5": "85018",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
         }
       ],
       "vendor": "cerner",
@@ -34468,29 +32424,17 @@
       "endpoint_address": "https://fhir-ehr.cerner.com/r4/e4a5b337-4c87-45bf-ab09-077b7fc19e84/",
       "name_observed": "Monongalia County General Hospital Company",
       "npi": null,
-      "city": "MORGANTOWN",
+      "city": "Morgantown",
       "state": "WV",
       "zip5": "26505",
-      "ccn": "512550",
-      "name_pos": "FMC MONONGALIA COUNTY",
-      "fac_subtype_code": "01",
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
       "bed_count": null,
-      "match_strategy": "llm_assisted",
-      "match_confidence": 1.0,
-      "candidates": [
-        {
-          "ccn": "512550",
-          "name": "FMC MONONGALIA COUNTY",
-          "city": "MORGANTOWN",
-          "state": "WV",
-          "zip5": "26505",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "vendor": "cerner",
-      "verified_via": "llm_assisted",
+      "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
     },
     {
@@ -34558,7 +32502,7 @@
       "ccn": "281351",
       "name_pos": "CHASE COUNTY COMMUNITY HOSPITAL",
       "fac_subtype_code": "11",
-      "bed_count": 22,
+      "bed_count": 15,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -34823,16 +32767,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "16E170",
-          "name": "FRANKLIN GENERAL HOSPITAL",
-          "city": "HAMPTON",
-          "state": "IA",
-          "zip5": "50441",
-          "score": 1.0,
-          "category_code": "10",
-          "category_label": "FQHC (legacy)"
-        },
-        {
           "ccn": "163420",
           "name": "FRANKLIN MEDICAL CENTER-HAMPTON",
           "city": "HAMPTON",
@@ -34861,18 +32795,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "285109",
-          "name": "PRESTIGE CARE CENTER OF NEBRASKA CITY",
-          "city": "NEBRASKA CITY",
-          "state": "NE",
-          "zip5": "68410",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -35003,16 +32925,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "515037",
-          "name": "WEIRTON GERIATRIC CENTER",
-          "city": "WEIRTON",
-          "state": "WV",
-          "zip5": "26062",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -35313,16 +33225,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "236673",
-          "name": "MICHIGAN THERAPY INSTITUTE",
-          "city": "WARREN",
-          "state": "MI",
-          "zip5": "48092",
-          "score": 0.4,
-          "category_code": "08",
-          "category_label": "Rural Health Clinic"
         }
       ],
       "vendor": "cerner",
@@ -35353,26 +33255,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "172534",
-          "name": "SABETHA DIALYSIS",
-          "city": "SABETHA",
-          "state": "KS",
-          "zip5": "66534",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "175241",
-          "name": "SABETHA MANOR",
-          "city": "SABETHA",
-          "state": "KS",
-          "zip5": "66534",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -35403,16 +33285,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "072508",
-          "name": "FRESENIUS MEDICAL CARE CENTRAL CONNECTICUT",
-          "city": "MERIDEN",
-          "state": "CT",
-          "zip5": "06450",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -35657,16 +33529,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "175347",
-          "name": "CHEYENNE COUNTY VILLAGE INC",
-          "city": "ST FRANCIS",
-          "state": "KS",
-          "zip5": "67756",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
-        },
-        {
           "ccn": "173477",
           "name": "CHEYENNE COUNTY CLINIC-ST FRANCIS",
           "city": "SAINT FRANCIS",
@@ -35811,26 +33673,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "463505",
-          "name": "UINTAH BASIN MEDICAL CENTER DIALYSIS ROOSEVELT",
-          "city": "ROOSEVELT",
-          "state": "UT",
-          "zip5": "84066",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "465084",
-          "name": "UINTAH BASIN REHABILITATION AND SENIOR VILLA",
-          "city": "ROOSEVELT",
-          "state": "UT",
-          "zip5": "84066",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -35889,16 +33731,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "362693",
-          "name": "FAIRFIELD KIDNEY CENTER, LLC",
-          "city": "LANCASTER",
-          "state": "OH",
-          "zip5": "43130",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -36139,16 +33971,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "522324",
-          "name": "BELOIT HEALTH SYSTEM",
-          "city": "BELOIT",
-          "state": "WI",
-          "zip5": "53511",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "521822",
           "name": "BELOIT AREA COMMUNITY HEALTH CENTER",
           "city": "BELOIT",
@@ -36157,16 +33979,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "525273",
-          "name": "BELOIT HEALTH AND REHABILITATION CENTER",
-          "city": "BELOIT",
-          "state": "WI",
-          "zip5": "53511",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -36238,7 +34050,7 @@
         },
         {
           "ccn": "921812",
-          "name": "TENDER CARE COMMUNITY CLINIC",
+          "name": "TENDER CARE COMMUNITY CLINIC, INC",
           "city": "DOWNEY",
           "state": "CA",
           "zip5": "90241",
@@ -36368,7 +34180,7 @@
       "ccn": "100253",
       "name_pos": "JUPITER MEDICAL CENTER",
       "fac_subtype_code": "01",
-      "bed_count": 248,
+      "bed_count": 340,
       "match_strategy": "address_state_zip5_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -36381,26 +34193,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102527",
-          "name": "JUPITER KIDNEY CENTER",
-          "city": "JUPITER",
-          "state": "FL",
-          "zip5": "33458",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "105555",
-          "name": "JUPITER REHABILITATION AND HEALTHCARE CENTER",
-          "city": "JUPITER",
-          "state": "FL",
-          "zip5": "33458",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -36613,24 +34405,12 @@
       "city": "STARKVILLE",
       "state": "MS",
       "zip5": "39759",
-      "ccn": "250050",
-      "name_pos": "OCH REGIONAL MEDICAL CENTER",
-      "fac_subtype_code": "01",
-      "bed_count": 96,
-      "match_strategy": "address_state_zip5_name",
-      "match_confidence": 1.0,
-      "candidates": [
-        {
-          "ccn": "250050",
-          "name": "OCH REGIONAL MEDICAL CENTER",
-          "city": "STARKVILLE",
-          "state": "MS",
-          "zip5": "39759",
-          "score": 1.0,
-          "category_code": "01",
-          "category_label": "Hospital"
-        }
-      ],
+      "ccn": null,
+      "name_pos": null,
+      "fac_subtype_code": null,
+      "bed_count": null,
+      "match_strategy": "unmatched",
+      "match_confidence": 0.0,
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -37017,6 +34797,16 @@
           "category_label": "Ambulatory Surgical Center (alt)"
         },
         {
+          "ccn": "C11066",
+          "name": "COMMUNITY HEALTH OF SOUTH FLORIDA INC",
+          "city": "KEY LARGO",
+          "state": "FL",
+          "zip5": "33037",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
           "ccn": "100132",
           "name": "SOUTH FLORIDA BAPTIST HOSPITAL",
           "city": "PLANT CITY",
@@ -37025,16 +34815,6 @@
           "score": 0.4,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "102680",
-          "name": "SOUTH FLORIDA DIALYSIS",
-          "city": "HOLLYWOOD",
-          "state": "FL",
-          "zip5": "33020",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -37137,16 +34917,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "295046",
-          "name": "BOULDER CITY HOSPITAL SNF",
-          "city": "BOULDER CITY",
-          "state": "NV",
-          "zip5": "89005",
-          "score": 0.6667,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         },
         {
           "ccn": "293989",
@@ -37535,16 +35305,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "045365",
-          "name": "DEWITT NURSING HOME",
-          "city": "DE WITT",
-          "state": "AR",
-          "zip5": "72042",
-          "score": 1.0,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -37633,16 +35393,6 @@
           "score": 0.8,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "052321",
-          "name": "CHILDREN'S HOSPITAL OF LOS ANG",
-          "city": "LOS ANGELES",
-          "state": "CA",
-          "zip5": "90027",
-          "score": 0.6,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -37859,16 +35609,6 @@
           "score": 1.0,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "242305",
-          "name": "WINONA HEALTH SERVICES",
-          "city": "WINONA",
-          "state": "MN",
-          "zip5": "55987",
-          "score": 1.0,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
         }
       ],
       "vendor": "cerner",
@@ -37935,16 +35675,6 @@
           "score": 0.5,
           "category_code": "21",
           "category_label": "Ambulatory Surgical Center (alt)"
-        },
-        {
-          "ccn": "325040",
-          "name": "WHITE SANDS HEALTHCARE",
-          "city": "HOBBS",
-          "state": "NM",
-          "zip5": "88240",
-          "score": 0.4,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -38165,16 +35895,6 @@
           "score": 0.5,
           "category_code": "01",
           "category_label": "Hospital"
-        },
-        {
-          "ccn": "525276",
-          "name": "ST MARY'S CARE AND REHAB CENTER LLC",
-          "city": "MADISON",
-          "state": "WI",
-          "zip5": "53719",
-          "score": 0.5,
-          "category_code": "02",
-          "category_label": "Skilled Nursing Facility"
         }
       ],
       "vendor": "cerner",
@@ -38597,58 +36317,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "552853",
-          "name": "NORTHRIDGE KIDNEY CARE CENTER LLC",
-          "city": "NORTHRIDGE",
-          "state": "CA",
-          "zip5": "91324",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "752546",
-          "name": "ALHAMBRA KIDNEY CARE",
-          "city": "ALHAMBRA",
-          "state": "CA",
-          "zip5": "91801",
-          "score": 0.5,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052502",
-          "name": "KIDNEY DIALYSIS CARE UNIT",
-          "city": "LYNWOOD",
-          "state": "CA",
-          "zip5": "90262",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052727",
-          "name": "FRESENIUS KIDNEY CARE REDLANDS",
-          "city": "REDLANDS",
-          "state": "CA",
-          "zip5": "92373",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
-          "ccn": "052757",
-          "name": "FRESENIUS KIDNEY CARE PITTSBURG",
-          "city": "PITTSBURG",
-          "state": "CA",
-          "zip5": "94565",
-          "score": 0.4,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -39135,16 +36803,6 @@
           "category_label": "Hospital"
         },
         {
-          "ccn": "203501",
-          "name": "NORTHERN LIGHT DIALYSIS",
-          "city": "PRESQUE ISLE",
-          "state": "ME",
-          "zip5": "04769",
-          "score": 0.6667,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        },
-        {
           "ccn": "204006",
           "name": "NORTHERN LIGHT ACADIA HOSPITAL",
           "city": "BANGOR",
@@ -39153,6 +36811,16 @@
           "score": 0.6667,
           "category_code": "01",
           "category_label": "Hospital"
+        },
+        {
+          "ccn": "208504",
+          "name": "NORTHERN LIGHT HEALTH CENTER-UNITY",
+          "city": "UNITY",
+          "state": "ME",
+          "zip5": "04988",
+          "score": 0.6667,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
         },
         {
           "ccn": "208514",
@@ -39360,7 +37028,7 @@
       "ccn": "170086",
       "name_pos": "STORMONT VAIL HOSPITAL",
       "fac_subtype_code": "01",
-      "bed_count": 506,
+      "bed_count": 586,
       "match_strategy": "address_state_name",
       "match_confidence": 1.0,
       "candidates": [
@@ -39523,18 +37191,6 @@
       "bed_count": null,
       "match_strategy": "unmatched",
       "match_confidence": 0.0,
-      "candidates": [
-        {
-          "ccn": "312543",
-          "name": "DIALYSIS ASSOCIATES OF NORTHERN NEW JERSEY",
-          "city": "PARSIPPANY",
-          "state": "NJ",
-          "zip5": "07054",
-          "score": 0.4286,
-          "category_code": "09",
-          "category_label": "Comprehensive Outpatient Rehab Facility"
-        }
-      ],
       "vendor": "cerner",
       "verified_via": "cms_pos_csv",
       "verified_date": "2026-05-14"
@@ -39828,7 +37484,7 @@
       "state": "MN",
       "zip5": "55404",
       "ccn": "243302",
-      "name_pos": "CHILDREN'S HOSPITALS & CLINICS OF MN",
+      "name_pos": "CHILDREN'S HOSPITAL AND CLINICS OF MINNESOTA",
       "fac_subtype_code": "06",
       "bed_count": 279,
       "match_strategy": "llm_assisted",
@@ -39846,7 +37502,7 @@
         },
         {
           "ccn": "243302",
-          "name": "CHILDREN'S HOSPITALS & CLINICS OF MN",
+          "name": "CHILDREN'S HOSPITAL AND CLINICS OF MINNESOTA",
           "city": "MINNEAPOLIS",
           "state": "MN",
           "zip5": "55404",
@@ -39985,7 +37641,7 @@
     }
   ],
   "verification": {
-    "source_url": "data/cms-pos/providers-2025-06-01.json",
+    "source_url": "data/cms-pos/providers-2026-01-01.json",
     "source_quote": "CMS Provider-of-Services file (hospitals only, PRVDR_CTGRY_CD=01, active termination code) matched on (state, zip5, name-token Jaccard).",
     "verified_via": "cms_pos_csv",
     "verified_date": "2026-05-14"

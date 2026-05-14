@@ -13,7 +13,7 @@ EHRS := $(notdir $(wildcard ehrs/*))
 QUARTER := $(shell date +%Y)-q$(shell echo $$(( ($$(date +%-m) - 1) / 3 + 1 )))
 EXPORT_DIR := dist/data/the-map
 
-.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index resolve-pos resolve-pos-llm fetch-npd fetch-nppes fetch-pos fetch-pecos fetch-all-cms nppes-index resolve-nppes pecos-index rebuild-overlays verify-overlay-refresh
+.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index pos-providers-index resolve-pos resolve-pos-llm fetch-npd fetch-nppes fetch-pos fetch-pecos fetch-all-cms nppes-index resolve-nppes pecos-index rebuild-overlays verify-overlay-refresh
 
 help:
 	@echo "The Map — developer tasks"
@@ -36,7 +36,8 @@ help:
 	@echo "  make verify-overlay-refresh  diff regenerated overlays vs git HEAD"
 	@echo ""
 	@echo "  Phase G — individual builders/resolvers"
-	@echo "  make pos-index            build data/cms-pos/hospitals-{date}.json"
+	@echo "  make pos-index            build data/cms-pos/hospitals-{date}.json (cat 01 only)"
+	@echo "  make pos-providers-index  build data/cms-pos/providers-{date}.json (all 16 FHIR categories — what resolve-pos prefers)"
 	@echo "  make resolve-pos [EHR=]   resolve FHIR Endpoints to CMS hospitals"
 	@echo "  make resolve-pos-llm EHR= LLM disambiguation pass (needs THE_MAP_ANTHROPIC_API_KEY)"
 	@echo "  make nppes-index          build NPPES endpoint+orgs indexes"
@@ -105,6 +106,13 @@ discover-luxera:
 # downloaded from data.cms.gov, or pass --input to build_pos_hospital_index.
 pos-index:
 	$(PY) -m tools.build_pos_hospital_index
+
+# Broader providers index (all FHIR-publishing-eligible POS categories —
+# FQHCs, ASCs, RHCs, ESRDs, hospices, ...). resolve_endpoints_to_pos prefers
+# this catalog over the hospitals-only one when both are present, so this is
+# the target rebuild-overlays uses.
+pos-providers-index:
+	$(PY) -m tools.build_pos_hospital_index --categories all
 
 resolve-pos:
 ifdef EHR
@@ -183,7 +191,7 @@ endif
 # every derived index, regenerate every endpoint-overlay. Run after pulling a
 # fresh data refresh; combine with `make verify-overlay-refresh` to inspect
 # how the new outputs differ from the committed ones.
-rebuild-overlays: fetch-all-cms build-npd-index nppes-index pos-index pecos-index resolve-npd resolve-pos resolve-nppes
+rebuild-overlays: fetch-all-cms build-npd-index nppes-index pos-index pos-providers-index pecos-index resolve-npd resolve-pos resolve-nppes
 	@echo "All overlays rebuilt under data/hospital-overlays/ and data/hospital-overrides/."
 
 # verify-overlay-refresh: diff committed overlays (via `git show HEAD:`)
