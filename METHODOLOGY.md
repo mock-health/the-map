@@ -291,6 +291,58 @@ Output: `ehrs/{ehr}/production_fleet.json` (~50KB, schema in `schema/production_
 
 ---
 
+## Phase G — CMS-derived endpoint enrichment
+
+Phase G attaches per-endpoint identity (NPI, CCN, parent organization, geography) to every FHIR endpoint in the production fleet, by joining against four federal datasets. All four sources are fetched reproducibly — no manual downloads, no out-of-repo caches.
+
+### G.0 — Source datasets
+
+| Dataset | Distribution | Cadence | Fetcher | Bucket | Use |
+|---|---|---|---|---|---|
+| **NPD** (National Provider Directory) | `directory.cms.gov/downloads/manifest.json` + signed S3 zsts | Weekly | `tools.fetch_cms_npd` | `data/raw/cms-npd/{YYYY-MM-DD}/` | Authoritative endpoint → NPI registration where the org has filed with CMS' NDH program |
+| **NPPES** (National Plan & Provider Enumeration System) | `download.cms.gov/nppes/NPPES_Data_Dissemination_{Month}_{Year}.zip` | Monthly | `tools.fetch_cms_nppes` | `data/raw/cms-nppes/{YYYY-MM}-01/` | Catalogue of every NPI (~1.5M orgs + ~5.5M individuals). FHIR-endpoint subset gives most of our URL-based NPI matches |
+| **POS** (Provider-of-Services) | `data.cms.gov/data.json` → CSV distribution | Quarterly | `tools.fetch_cms_pos` | `data/raw/cms-pos/{data_as_of}/` | CCN → facility name + address + category for every Medicare-certified facility. The QIES source replaces the legacy `POS_File_Hospital_Non_Hospital_Facilities.zip` |
+| **PECOS** (Medicare Public Provider Enrollment / PPEF) | `data.cms.gov/data.json` → CSV distribution | Quarterly | `tools.fetch_cms_pecos` | `data/raw/cms-pecos/{data_as_of}/` | NPI → stable PAC ID for longitudinal joins across NPI re-issuance |
+
+Each dated subdirectory carries a `.provenance.json` recording the source URL, release date, file size, SHA-256, and the git revision of the fetcher that wrote it.
+
+### G.1 — Fetch every CMS dataset
+
+```bash
+make fetch-all-cms       # NPD + NPPES + POS + PECOS, in that order
+```
+
+`fetch-all-cms` chains the four individual targets (`fetch-npd`, `fetch-nppes`, `fetch-pos`, `fetch-pecos`). Plan for 30+ minutes on residential broadband; NPPES dominates (~7 GB compressed). Override the bucket location with the per-dataset env vars (`THE_MAP_CMS_NPD_DIR`, `THE_MAP_NPPES_DIR`, `THE_MAP_POS_DIR`, `THE_MAP_PECOS_DIR`) if you keep raw data outside the working tree.
+
+### G.2 — Rebuild every overlay
+
+```bash
+make rebuild-overlays    # fetch-all-cms + every index builder + every resolver
+```
+
+The rebuild chain is idempotent and skips any download that already matches the upstream byte size. Outputs:
+
+- `data/hospital-overlays/{vendor}-npd.json` — NPI overlay from NPD join
+- `data/hospital-overlays/{vendor}-nppes.json` — NPI overlay from NPPES URL + fuzzy name match
+- `data/hospital-overrides/{vendor}-pos.json` — CCN overlay from POS join (plus LLM disambiguation for ambiguous matches; see `tools.llm_disambiguate`)
+
+### G.3 — Verify the refresh
+
+```bash
+make verify-overlay-refresh
+```
+
+Compares the regenerated overlays on disk against the committed ones at `HEAD` (via `git show HEAD:`) and writes a drift report under `data/verification/overlay-refresh-{date}.md`. Structural problems (schema mismatch, missing files) exit non-zero; data drift within tolerance (default ±25%) is informational. The expected outcome of a fresh refresh is **some** drift — upstream CMS releases have moved on since the last commit — and the report makes that drift inspectable before the regenerated overlays are committed.
+
+### G.4 — Output
+
+- `data/raw/{dataset}/{date}/` — raw CMS source files with `.provenance.json` (gitignored)
+- `data/cms-{npd,nppes,pos,pecos}/` — compact JSON indexes (some gitignored, some committed depending on size; see `.gitignore`)
+- `data/hospital-overlays/`, `data/hospital-overrides/` — per-vendor per-source endpoint enrichment (committed; the product)
+- `data/verification/overlay-refresh-{date}.md` — refresh drift report (gitignored)
+
+---
+
 ## Re-verification cadence
 
 **Quarterly:** re-run `tools.fetch_capability` for all EHRs. The new CapStmt overwrites the primary `ehrs/{ehr}/CapabilityStatement.json`; the dated copy lands in `tests/golden/{ehr}/`. `git diff` on the primary file shows the spec delta. Re-run Phase B.4 (per-element deviation pass) only for resources where CapStmt diff or sandbox behavior changed. Phase F (production fleet) re-runs on the same quarterly cadence.

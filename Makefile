@@ -13,7 +13,7 @@ EHRS := $(notdir $(wildcard ehrs/*))
 QUARTER := $(shell date +%Y)-q$(shell echo $$(( ($$(date +%-m) - 1) / 3 + 1 )))
 EXPORT_DIR := dist/data/the-map
 
-.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index resolve-pos resolve-pos-llm
+.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index resolve-pos resolve-pos-llm fetch-npd fetch-nppes fetch-pos fetch-pecos fetch-all-cms nppes-index resolve-nppes pecos-index rebuild-overlays verify-overlay-refresh
 
 help:
 	@echo "The Map — developer tasks"
@@ -24,10 +24,27 @@ help:
 	@echo "  make render-all           render HTML for every EHR"
 	@echo "  make synthesize EHR=epic  print the synthesized matrix"
 	@echo "  make fetch-all-anonymous  Phase A + Phase F.1 (no creds needed)"
-	@echo "  make discover-luxera      diff Luxera FHIR Directory against official brands bundles, emit *-luxera-augmented-*.json supersets for harvest"
-	@echo "  make pos-index            build data/cms-pos/hospitals-{date}.json from CMS POS CSV"
-	@echo "  make resolve-pos [EHR=]   resolve FHIR Endpoints to CMS hospitals (one EHR or all)"
-	@echo "  make resolve-pos-llm EHR= LLM disambiguation pass on top of resolve-pos (needs THE_MAP_ANTHROPIC_API_KEY)"
+	@echo "  make discover-luxera      diff Luxera FHIR Directory against official brands bundles"
+	@echo ""
+	@echo "  Phase G — CMS dataset reproducibility (~30 min for fetch-all-cms)"
+	@echo "  make fetch-npd            CMS National Provider Directory (weekly, ~40 MB)"
+	@echo "  make fetch-nppes          CMS NPPES monthly Data Dissemination (~7 GB)"
+	@echo "  make fetch-pos            CMS Provider-of-Services (quarterly CSV)"
+	@echo "  make fetch-pecos          CMS Medicare Public Provider Enrollment (~400 MB)"
+	@echo "  make fetch-all-cms        all four CMS sources, in order"
+	@echo "  make rebuild-overlays     fetch-all-cms + every index builder + resolver"
+	@echo "  make verify-overlay-refresh  diff regenerated overlays vs git HEAD"
+	@echo ""
+	@echo "  Phase G — individual builders/resolvers"
+	@echo "  make pos-index            build data/cms-pos/hospitals-{date}.json"
+	@echo "  make resolve-pos [EHR=]   resolve FHIR Endpoints to CMS hospitals"
+	@echo "  make resolve-pos-llm EHR= LLM disambiguation pass (needs THE_MAP_ANTHROPIC_API_KEY)"
+	@echo "  make nppes-index          build NPPES endpoint+orgs indexes"
+	@echo "  make resolve-nppes [EHR=] resolve endpoints against NPPES"
+	@echo "  make pecos-index          build NPI→PAC ID lookup"
+	@echo "  make build-npd-index      build per-endpoint NPD identity JSON"
+	@echo "  make resolve-npd [EHR=]   resolve endpoints against NPD"
+	@echo ""
 	@echo "  make test                 run pytest"
 	@echo "  make lint                 ruff check"
 	@echo "  make typecheck            mypy"
@@ -109,14 +126,72 @@ endif
 # Phase G.3 — CMS National Provider Directory ingest. NPD publishes a weekly
 # bulk release at directory.cms.gov. fetch-npd downloads the 5 NDJSON.zst files
 # we use (Endpoint, Organization, OrganizationAffiliation, Location,
-# PractitionerRole) into $THE_MAP_CMS_NPD_DIR (default: ~/back/data/cms-npd/).
-# Pass `make fetch-npd FETCH_ARGS="--all"` to also pull the 18GB Practitioner.
-# build-npd-index streams those files into a per-FHIR-endpoint identity JSON
-# under data/cms-npd/. resolve-npd matches each production_fleet endpoint
-# against that index and writes data/hospital-overlays/{vendor}-npd.json — the
-# NPI-side twin of resolve-pos's CCN overlay.
+# PractitionerRole) into <repo>/data/raw/cms-npd/ (override with
+# $THE_MAP_CMS_NPD_DIR). Pass `make fetch-npd FETCH_ARGS="--all"` to also
+# pull the 18GB Practitioner. build-npd-index streams those files into a
+# per-FHIR-endpoint identity JSON under data/cms-npd/. resolve-npd matches
+# each production_fleet endpoint against that index and writes
+# data/hospital-overlays/{vendor}-npd.json — the NPI-side twin of
+# resolve-pos's CCN overlay.
 fetch-npd:
 	$(PY) -m tools.fetch_cms_npd $(FETCH_ARGS)
+
+# Phase G.4 — CMS NPPES monthly Data Dissemination. ~7 GB compressed zip
+# at download.cms.gov/nppes/. fetch-nppes auto-discovers the latest monthly
+# release and downloads to <repo>/data/raw/cms-nppes/ (override with
+# $THE_MAP_NPPES_DIR). build_nppes_index then streams it into compact
+# fhir-endpoints / orgs indexes under data/cms-nppes/.
+fetch-nppes:
+	$(PY) -m tools.fetch_cms_nppes $(FETCH_ARGS)
+
+# Phase G.5 — CMS Provider-of-Services. Quarterly CSV discovered through the
+# data.cms.gov DCAT catalog (data.json) and downloaded to
+# <repo>/data/raw/cms-pos/ (override with $THE_MAP_POS_DIR). Default source
+# is the QIES "Hospital and other facilities" file — the post-2024
+# replacement for the legacy POS_File_Hospital_Non_Hospital_Facilities.zip.
+# Pass FETCH_ARGS="--source iqies" for the LTC/post-acute extract.
+fetch-pos:
+	$(PY) -m tools.fetch_cms_pos $(FETCH_ARGS)
+
+# Phase G.6 — CMS Medicare Public Provider Enrollment File (PPEF / PECOS).
+# Quarterly CSV from the data.cms.gov DCAT catalog. Downloaded to
+# <repo>/data/raw/cms-pecos/ (override with $THE_MAP_PECOS_DIR). ~400 MB.
+fetch-pecos:
+	$(PY) -m tools.fetch_cms_pecos $(FETCH_ARGS)
+
+# fetch-all-cms: prime every CMS dataset the reproducibility pipeline needs.
+# Expect this to take 30+ minutes on residential broadband — NPPES dominates.
+fetch-all-cms: fetch-npd fetch-nppes fetch-pos fetch-pecos
+	@echo "All CMS source files refreshed under data/raw/."
+
+# Index builders — turn raw CMS source files into compact JSON indexes that
+# the resolvers consume. Idempotent against existing inputs.
+nppes-index:
+	$(PY) -m tools.build_nppes_index $(NPPES_ARGS)
+
+pecos-index:
+	$(PY) -m tools.build_pecos_index $(PECOS_ARGS)
+
+resolve-nppes:
+ifdef EHR
+	$(PY) -m tools.resolve_endpoints_to_nppes $(EHR)
+else
+	$(PY) -m tools.resolve_endpoints_to_nppes --all
+endif
+
+# rebuild-overlays: full clean-room rebuild — fetch every CMS dataset, rebuild
+# every derived index, regenerate every endpoint-overlay. Run after pulling a
+# fresh data refresh; combine with `make verify-overlay-refresh` to inspect
+# how the new outputs differ from the committed ones.
+rebuild-overlays: fetch-all-cms build-npd-index nppes-index pos-index pecos-index resolve-npd resolve-pos resolve-nppes
+	@echo "All overlays rebuilt under data/hospital-overlays/ and data/hospital-overrides/."
+
+# verify-overlay-refresh: diff committed overlays (via `git show HEAD:`)
+# against the regenerated ones on disk. Flags structural breakage (schema
+# mismatch, missing files) as non-zero exit; data drift within tolerance is
+# informational. Writes data/verification/overlay-refresh-{date}.md.
+verify-overlay-refresh:
+	$(PY) -m tools.verify_overlay_refresh $(VERIFY_ARGS)
 
 build-npd-index:
 	$(PY) -m tools.build_npd_endpoint_index $(NPD_ARGS)
