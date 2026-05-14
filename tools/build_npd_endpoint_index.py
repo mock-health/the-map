@@ -41,7 +41,6 @@ from __future__ import annotations
 import argparse
 import io
 import json
-import os
 import re
 import sys
 import time
@@ -62,10 +61,9 @@ NPI_FROM_ID_RE = re.compile(r"^Organization-(\d{10})$")
 
 
 def default_storage_dir() -> Path:
-    env = os.environ.get("THE_MAP_CMS_NPD_DIR")
-    if env:
-        return Path(env).expanduser()
-    return Path("~/back/data/cms-npd").expanduser()
+    from tools._fetch import storage_root
+
+    return storage_root("cms-npd", env_var="THE_MAP_CMS_NPD_DIR")
 
 
 def find_latest_release(storage_dir: Path) -> str:
@@ -376,7 +374,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--dir",
-        help="Raw NPD storage dir (default: $THE_MAP_CMS_NPD_DIR or ~/back/data/cms-npd)",
+        help="Raw NPD storage dir (default: $THE_MAP_CMS_NPD_DIR or <repo>/data/raw/cms-npd)",
     )
     ap.add_argument("--release", help="Release date (YYYY-MM-DD); defaults to most recent under storage dir")
     ap.add_argument(
