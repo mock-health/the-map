@@ -129,8 +129,11 @@ def test_real_catalog_validates(repo_root: Path) -> None:
     if not catalogs:
         pytest.skip("no committed POS catalog to check")
     catalog = json.loads(catalogs[-1].read_text())
-    assert catalog["hospital_count"] == len(catalog["hospitals"])
-    assert catalog["hospital_count"] > 1000, "hospital catalog suspiciously small"
+    # `facility_count` superseded `hospital_count` when the catalog gained
+    # multi-category mode. Older committed catalogs still carry the old key.
+    count = catalog.get("facility_count") or catalog.get("hospital_count")
+    assert count == len(catalog["hospitals"])
+    assert count > 1000, "hospital catalog suspiciously small"
     # Spot-check the first row has the projected shape
     first = catalog["hospitals"][0]
     for required in ("ccn", "name", "city", "state", "zip", "fac_subtype_code"):

@@ -92,11 +92,17 @@ def jaccard(a: set[str], b: set[str]) -> float:
 # --- POS catalog loader --------------------------------------------------
 
 def load_latest_catalog() -> tuple[Path, dict]:
+    """Prefer broader providers-*.json catalog (hospitals + FQHC + ASC + RHC + …)
+    when present; fall back to legacy hospitals-*.json for hospital-only."""
+    providers = sorted(POS_DIR.glob("providers-*.json"))
+    if providers:
+        p = providers[-1]
+        return p, json.loads(p.read_text())
     candidates = sorted(POS_DIR.glob("hospitals-*.json"))
     if not candidates:
         sys.exit(
             "ERROR: no POS catalog found under data/cms-pos/. Run "
-            "`python -m tools.build_pos_hospital_index` first."
+            "`python -m tools.build_pos_hospital_index --categories all` first."
         )
     p = candidates[-1]
     return p, json.loads(p.read_text())
@@ -136,7 +142,7 @@ def score_candidates(name: str, pool: list[dict]) -> list[tuple[float, dict]]:
 
 
 def to_candidate(score: float, h: dict) -> dict:
-    return {
+    out = {
         "ccn": h["ccn"],
         "name": h["name"],
         "city": h["city"],
@@ -144,6 +150,14 @@ def to_candidate(score: float, h: dict) -> dict:
         "zip5": h["zip"],
         "score": round(score, 4),
     }
+    # Carry POS category through to consumers (LLM disambiguation uses these
+    # to filter by NPPES-derived taxonomy: a hospital endpoint shouldn't be
+    # disambiguated against FQHC candidates).
+    if h.get("category_code"):
+        out["category_code"] = h["category_code"]
+    if h.get("category_label"):
+        out["category_label"] = h["category_label"]
+    return out
 
 
 # --- per-vendor extractors ----------------------------------------------
@@ -459,7 +473,8 @@ def main() -> int:
         ap.error("pass a vendor identifier or --all")
 
     catalog_path, catalog = load_latest_catalog()
-    print(f"POS catalog: {catalog_path.relative_to(REPO_ROOT)} ({catalog['hospital_count']} hospitals)")
+    catalog_count = catalog.get("facility_count") or catalog.get("hospital_count") or len(catalog.get("hospitals", []))
+    print(f"POS catalog: {catalog_path.relative_to(REPO_ROOT)} ({catalog_count} facilities)")
     idx = index_catalog(catalog)
 
     today = args.captured_date or datetime.date.today().isoformat()

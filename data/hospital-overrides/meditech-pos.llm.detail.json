@@ -1,0 +1,1462 @@
+{
+  "vendor": "meditech",
+  "captured_date": "2026-05-12",
+  "model": "claude-haiku-4-5",
+  "system_prompt_version": "v1",
+  "summary": {
+    "endpoints_considered": 34,
+    "endpoints_processed": 34,
+    "cache_hits": 34,
+    "api_calls": 0,
+    "invalidations": 0,
+    "high_confidence": 0,
+    "medium_confidence": 1,
+    "low_confidence": 0,
+    "none_confidence": 33,
+    "auto_resolved": 1
+  },
+  "endpoints": [
+    {
+      "endpoint_id": "83ad79dd-6314-4cb5-ab7c-3cd7453247c4",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint is 'CHRISTUS Health', a large multi-hospital health system based in Irving, TX. The single candidate, CHRISTUS Jasper Memorial Hospital in Jasper, TX (75951), is geographically distant from the observed location (Irving, TX 75038) and represents only one facility within the broader CHRISTUS system. The endpoint URL and organization address indicate a system-level FHIR service rather than a single hospital, making it not a plausible match for an individual Medicare-certified hospital.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2083,
+        "output_tokens": 177,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "cb4e7aef-73d7-5801-b51e-8fb454255c8e",
+      "vendor": "meditech",
+      "name_observed": "Bon Secours Health System Limited",
+      "candidates": [
+        {
+          "ccn": "330135",
+          "name": "BON SECOURS COMMUNITY HOSPITAL",
+          "city": "PORT JERVIS",
+          "state": "NY",
+          "zip5": "12771",
+          "score": 0.6667,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "490069",
+          "name": "BON SECOURS MEMORIAL REGIONAL MEDICAL CENTER",
+          "city": "MECHANICSVILLE",
+          "state": "VA",
+          "zip5": "23116",
+          "score": 0.6667,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "490017",
+          "name": "BON SECOURS MARYVIEW MEDICAL CENTER",
+          "city": "PORTSMOUTH",
+          "state": "VA",
+          "zip5": "23707",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "490067",
+          "name": "BON SECOURS SOUTHSIDE MEDICAL CENTER",
+          "city": "PETERSBURG",
+          "state": "VA",
+          "zip5": "23805",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "490092",
+          "name": "BON SECOURS SOUTHAMPTON MEMORIAL HOSPITAL",
+          "city": "FRANKLIN",
+          "state": "VA",
+          "zip5": "23851",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "490094",
+          "name": "BON SECOURS RICHMOND COMMUNITY HOSPITAL",
+          "city": "RICHMOND",
+          "state": "VA",
+          "zip5": "23223",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "493430",
+          "name": "BON SECOURS LIVELY MEDICAL CENTER",
+          "city": "LIVELY",
+          "state": "VA",
+          "zip5": "22507",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "493433",
+          "name": "BON SECOURS HARTFIELD MEDICAL CENTER",
+          "city": "HARTFIELD",
+          "state": "VA",
+          "zip5": "23071",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint is hosted on a Meditech cloud infrastructure in Ireland (meditech-ie.cloud) with observed location Cork, Ireland (zip5 '127' is Irish postal code format), indicating a non-US healthcare provider. All candidates are US Medicare-certified hospitals; no plausible match exists.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2437,
+        "output_tokens": 128,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "d433750f-2d10-4197-b5d4-028399e9e241",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint is named 'CHRISTUS Health', a large Texas-based health system's corporate/umbrella organization based in Irving, TX. The only candidate, CHRISTUS Jasper Memorial Hospital, is a specific member facility 150+ miles away in Jasper, TX. The endpoint's Irving location and generic system name indicate this is likely the corporate FHIR endpoint serving the entire CHRISTUS system, not a single Medicare-certified hospital.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2082,
+        "output_tokens": 160,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "5e33fd5e-43be-5b9b-9c67-7dcd9556c8b5",
+      "vendor": "meditech",
+      "name_observed": "Gibson Area Hospital & Health Services",
+      "candidates": [
+        {
+          "ccn": "148546",
+          "name": "GIBSON AREA MEDICAL CLINIC",
+          "city": "GIBSON CITY",
+          "state": "IL",
+          "zip5": "60936",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "148516",
+          "name": "GIBSON AREA PRIMARY CARE",
+          "city": "GIBSON CITY",
+          "state": "IL",
+          "zip5": "60936",
+          "score": 0.4,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name is 'Gibson Area Hospital & Health Services' but both candidates are physician clinics ('MEDICAL CLINIC' and 'PRIMARY CARE'), not Medicare-certified hospitals. The endpoint claims to be a hospital but the available candidates are primary care/ambulatory clinics.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2137,
+        "output_tokens": 123,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "fe57fade-408c-4f3f-9df0-39ab556fcd13",
+      "vendor": "meditech",
+      "name_observed": "Moore County Hospital District",
+      "candidates": [
+        {
+          "ccn": "673411",
+          "name": "MOORE COUNTY FAMILY CLINIC",
+          "city": "DUMAS",
+          "state": "TX",
+          "zip5": "79029",
+          "score": 0.4,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The only candidate is 'MOORE COUNTY FAMILY CLINIC', which is a physician practice/clinic (indicated by 'Family Clinic' and 'PC/LLC-equivalent' organizational type), not a Medicare-certified hospital. The endpoint name 'Moore County Hospital District' suggests a hospital system, but the candidate is a primary care clinic and thus not a plausible match.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2078,
+        "output_tokens": 146,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "be9bd559-8aa9-4d7f-82f3-e971fee81e12",
+      "vendor": "meditech",
+      "name_observed": "White River Health",
+      "candidates": [
+        {
+          "ccn": "048539",
+          "name": "WHITE RIVER HEALTH FAMILY CARE",
+          "city": "BATESVILLE",
+          "state": "AR",
+          "zip5": "72501",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "048541",
+          "name": "WHITE RIVER HEALTH FAMILY CARE",
+          "city": "SOUTHSIDE",
+          "state": "AR",
+          "zip5": "72501",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "048542",
+          "name": "WHITE RIVER HEALTH FAMILY CARE",
+          "city": "BATESVILLE",
+          "state": "AR",
+          "zip5": "72501",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "048543",
+          "name": "WHITE RIVER HEALTH CHILDREN'S CLINIC",
+          "city": "BATESVILLE",
+          "state": "AR",
+          "zip5": "72501",
+          "score": 0.4,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name 'White River Health' and the base URL suggest a health system organization, but all four candidates are specialty clinics ('Family Care' and 'Children's Clinic'), not Medicare-certified hospitals. These are likely outpatient clinics or physician practices rather than acute-care hospitals.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2231,
+        "output_tokens": 127,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "a32a8ba6-613b-4fb7-a85e-75249f1ba0f8",
+      "vendor": "meditech",
+      "name_observed": "Puerto Rico Department of Health",
+      "candidates": [
+        {
+          "ccn": "401850",
+          "name": "COMMUNITY HEALTH FOUNDATION OF PUERTO RICO INC",
+          "city": "BAYAMON",
+          "state": "PR",
+          "zip5": "00961",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "400138",
+          "name": "PUERTO RICO WOMEN AND CHILDREN HOSPITAL LLC",
+          "city": "BAYAMON",
+          "state": "PR",
+          "zip5": "00959",
+          "score": 0.4,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "402529",
+          "name": "BIO MEDICAL APPLICATION OF PUERTO RICO INC",
+          "city": "ARECIBO",
+          "state": "PR",
+          "zip5": "00612",
+          "score": 0.4,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        },
+        {
+          "ccn": "40P002",
+          "name": "LIFE LINK OF PUERTO RICO",
+          "city": "GUAYNABO",
+          "state": "PR",
+          "zip5": "00968",
+          "score": 0.4,
+          "category_code": "17",
+          "category_label": "Specialty Hospital (subset of 01)"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Puerto Rico Department of Health' is a government health agency, not a Medicare-certified hospital. None of the candidates match the endpoint name, and the organization type (public health department) is fundamentally different from hospital providers.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2249,
+        "output_tokens": 114,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "b803fe99-3a67-5680-9060-d4ddad398e4d",
+      "vendor": "meditech",
+      "name_observed": "Amberwell Health",
+      "candidates": [
+        {
+          "ccn": "171341",
+          "name": "AMBERWELL HIAWATHA",
+          "city": "HIAWATHA",
+          "state": "KS",
+          "zip5": "66434",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint is observed in Atchison, KS 66002, but the only candidate (Amberwell Hiawatha) is located in Hiawatha, KS 66434\u2014a different city and zip code approximately 30 miles away. The endpoint name \"Amberwell Health\" is a system-level brand rather than a specific hospital facility, and the location mismatch is decisive.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2089,
+        "output_tokens": 153,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "d5e682a5-1464-4cce-969e-a1f1be48f57d",
+      "vendor": "meditech",
+      "name_observed": "Eastern Niagara Health System",
+      "candidates": [
+        {
+          "ccn": "331011",
+          "name": "COMMUNITY HEALTH CENTER OF NIAGARA",
+          "city": "NIAGARA FALLS",
+          "state": "NY",
+          "zip5": "14305",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name \"Eastern Niagara Health System\" does not match the candidate \"Community Health Center of Niagara\"; the observed location (Lockport, NY 14094) is distinct from the candidate (Niagara Falls, NY 14305), and the name/location mismatch suggests these are different organizations despite regional overlap.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2093,
+        "output_tokens": 138,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "d8abfd8d-0183-426e-9a2a-5a3f45323044",
+      "vendor": "meditech",
+      "name_observed": "West Virginia University Health System (WVU Medicine)",
+      "candidates": [
+        {
+          "ccn": "510001",
+          "name": "WEST VIRGINIA UNIVERSITY HOSPITALS, INC",
+          "city": "MORGANTOWN",
+          "state": "WV",
+          "zip5": "26506",
+          "score": 0.6,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "512300",
+          "name": "WEST VIRGINIA UNIVERSITY HOSPITAL DIALYSIS",
+          "city": "MORGANTOWN",
+          "state": "WV",
+          "zip5": "26505",
+          "score": 0.5,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        }
+      ],
+      "ccn": "510001",
+      "confidence": "medium",
+      "reason": "Endpoint name 'West Virginia University Health System (WVU Medicine)' strongly matches the primary candidate 'WEST VIRGINIA UNIVERSITY HOSPITALS, INC', which is a hospital (vs. the dialysis facility alternative). However, observed location (Fairmont, WV 26554) does not match the candidate's location (Morgantown, WV 26506), suggesting the endpoint may represent a regional hub or system entity rather than a specific hospital campus.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2173,
+        "output_tokens": 168,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "7fa98525-66ad-403d-be58-18a534c2b64f",
+      "vendor": "meditech",
+      "name_observed": "Inland Northwest Health Services",
+      "candidates": [
+        {
+          "ccn": "504014",
+          "name": "INLAND NORTHWEST BEHAVIORAL HEALTH",
+          "city": "SPOKANE",
+          "state": "WA",
+          "zip5": "99204",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name \"Inland Northwest Health Services\" is a regional health system organization, while the sole candidate is a specialized behavioral health facility. The endpoint's organization type (health services network) does not match the candidate's type (behavioral health hospital), and the token overlap is insufficient to establish that this FHIR endpoint represents that specific behavioral health hospital rather than the parent system or other members.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2085,
+        "output_tokens": 144,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "738f0b6c-8988-4509-a9e2-dcdb9f8503cb",
+      "vendor": "meditech",
+      "name_observed": "Millcreek Community Hospital",
+      "candidates": [
+        {
+          "ccn": "392822",
+          "name": "MILLCREEK DIALYSIS",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        },
+        {
+          "ccn": "396072",
+          "name": "MILLCREEK MANOR",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        },
+        {
+          "ccn": "39L624",
+          "name": "MILLCREEK COMMUNITY HOSPITAL PRTF",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "06",
+          "category_label": "End-Stage Renal Disease Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "All three candidates are specialized facilities (dialysis center, nursing home, and skilled nursing facility) rather than acute-care hospitals. The endpoint name 'Millcreek Community Hospital' suggests a hospital, but no acute-care hospital candidate exists in the list to match it.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2184,
+        "output_tokens": 122,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "4ddf82c0-275a-4b89-acd3-bf3810f34127",
+      "vendor": "meditech",
+      "name_observed": "Madera Community Hospital",
+      "candidates": [
+        {
+          "ccn": "552703",
+          "name": "MADERA DIALYSIS CENTER",
+          "city": "MADERA",
+          "state": "CA",
+          "zip5": "93638",
+          "score": 0.5,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Madera Community Hospital' clearly indicates a hospital, but the only candidate is 'Madera Dialysis Center'\u2014a specialty dialysis facility, not a Medicare-certified hospital. The endpoint is a hospital; the candidate is not.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2087,
+        "output_tokens": 120,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "e5dc67db-cba0-5bc5-9534-8a2e6bf5d9a0",
+      "vendor": "meditech",
+      "name_observed": "Doctors Hospital (Expanse)",
+      "candidates": [
+        {
+          "ccn": "050464",
+          "name": "DOCTORS MEDICAL CENTER",
+          "city": "MODESTO",
+          "state": "CA",
+          "zip5": "95350",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "100296",
+          "name": "DOCTORS HOSPITAL",
+          "city": "CORAL GABLES",
+          "state": "FL",
+          "zip5": "33146",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "101307",
+          "name": "DOCTORS MEMORIAL HOSPITAL",
+          "city": "BONIFAY",
+          "state": "FL",
+          "zip5": "32425",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "101314",
+          "name": "DOCTORS MEMORIAL HOSPITAL INC",
+          "city": "PERRY",
+          "state": "FL",
+          "zip5": "32347",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "110177",
+          "name": "DOCTORS HOSPITAL",
+          "city": "AUGUSTA",
+          "state": "GA",
+          "zip5": "30909",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "141949",
+          "name": "DOCTORS MEDICAL CENTER",
+          "city": "CHICAGO",
+          "state": "IL",
+          "zip5": "60638",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "360152",
+          "name": "DOCTORS HOSPITAL",
+          "city": "COLUMBUS",
+          "state": "OH",
+          "zip5": "43228",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "400118",
+          "name": "DOCTORS' CENTER HOSPITAL, INC",
+          "city": "MANATI",
+          "state": "PR",
+          "zip5": "00674",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Observed city is Nassau, which is a primary city in the Bahamas; no candidate hospital is located in Nassau or the Bahamas. The 'Expanse' branding and endpoint domain ('doctorshosp.com') suggest an international or multi-location system, but none of the eight US and PR candidates align with the Nassau location.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2394,
+        "output_tokens": 138,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "d5cf7c7d-b5cc-58a0-90cb-1a90b27a32c1",
+      "vendor": "meditech",
+      "name_observed": "Sierra View Local Health Care District dba Sierra View Medical Center",
+      "candidates": [
+        {
+          "ccn": "056466",
+          "name": "SIERRA VIEW CARE CENTER",
+          "city": "BALDWIN PARK",
+          "state": "CA",
+          "zip5": "91706",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint location is Porterville, CA 93257, but the only candidate (Sierra View Care Center) is in Baldwin Park, CA 91706 \u2014 a different city and zip code. The candidate's name lacks \"Medical Center\" and is identified as a \"Care Center\" rather than a full hospital, making it a likely skilled nursing facility or specialized facility rather than the acute-care hospital suggested by the endpoint name.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2095,
+        "output_tokens": 152,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "088d9de0-6499-5189-a607-e19581804169",
+      "vendor": "meditech",
+      "name_observed": "St. Luke's Hospital",
+      "candidates": [
+        {
+          "ccn": "240002",
+          "name": "ESSENTIA HEALTH ST MARY'S MEDICAL CENTER",
+          "city": "DULUTH",
+          "state": "MN",
+          "zip5": "55805",
+          "score": 0.4,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name \"St. Luke's Hospital\" does not match the only candidate \"ESSENTIA HEALTH ST MARY'S MEDICAL CENTER\" \u2014 the hospital names are distinct, and the low token overlap score (0.40) reflects this mismatch despite the observed location agreement.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2089,
+        "output_tokens": 124,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "8eebda49-e8b6-55fb-81f3-26af24277bef",
+      "vendor": "meditech",
+      "name_observed": "Steward Health Care System LLC",
+      "candidates": [
+        {
+          "ccn": "458653",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "671943",
+          "name": "COMMUNITY HEALTH CARE CENTER",
+          "city": "WICHITA FALLS",
+          "state": "TX",
+          "zip5": "76301",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "678573",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MOUNT PLEASANT",
+          "state": "TX",
+          "zip5": "75455",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Steward Health Care System LLC' is a health system parent organization, not a specific hospital facility. All four candidates are small community care centers with no meaningful name or location overlap to 'Steward Health Care System' or Dallas TX 75201. This endpoint is likely a system-level FHIR service, not a Medicare-certified hospital.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2223,
+        "output_tokens": 143,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "b01155b1-611e-42a7-bcc9-0017b726ff16",
+      "vendor": "meditech",
+      "name_observed": "Tyrone Hospital",
+      "candidates": [
+        {
+          "ccn": "392825",
+          "name": "TYRONE DIALYSIS",
+          "city": "TYRONE",
+          "state": "PA",
+          "zip5": "16686",
+          "score": 0.5,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name 'Tyrone Hospital' suggests a hospital, but the only candidate is 'TYRONE DIALYSIS', a specialized dialysis facility, not a Medicare-certified hospital. The name mismatch and different organization type indicate this endpoint does not match any hospital candidate.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2086,
+        "output_tokens": 124,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "e73e9d76-5237-55fb-b1f1-3a9c1fc39271",
+      "vendor": "meditech",
+      "name_observed": "Unity Health",
+      "candidates": [
+        {
+          "ccn": "040164",
+          "name": "UNITY HEALTH - JACKSONVILLE",
+          "city": "JACKSONVILLE",
+          "state": "AR",
+          "zip5": "72076",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "041332",
+          "name": "UNITY HEALTH - NEWPORT",
+          "city": "NEWPORT",
+          "state": "AR",
+          "zip5": "72112",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The observed endpoint location (SEARCY, AR 72143) does not match either candidate hospital (Jacksonville or Newport). Neither candidate is in Searcy, and the endpoint address suggests a Unity Health central/parent system endpoint rather than a specific hospital facility.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2129,
+        "output_tokens": 117,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "b0c68d1e-2c8f-57e1-a265-165540a7bbb3",
+      "vendor": "meditech",
+      "name_observed": "North Country Healthcare",
+      "candidates": [
+        {
+          "ccn": "303988",
+          "name": "NORTH COUNTRY PRIMARY CARE",
+          "city": "LITTLETON",
+          "state": "NH",
+          "zip5": "03561",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name is \"North Country Healthcare\" but the only candidate is \"NORTH COUNTRY PRIMARY CARE,\" which is explicitly a primary care organization (not a Medicare-certified hospital). The endpoint organization type does not match the hospital context of this task.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2085,
+        "output_tokens": 116,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "fa86195d-9543-4cb6-8c13-577d32c42db5",
+      "vendor": "meditech",
+      "name_observed": "Millcreek Community Hospital",
+      "candidates": [
+        {
+          "ccn": "392822",
+          "name": "MILLCREEK DIALYSIS",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        },
+        {
+          "ccn": "396072",
+          "name": "MILLCREEK MANOR",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        },
+        {
+          "ccn": "39L624",
+          "name": "MILLCREEK COMMUNITY HOSPITAL PRTF",
+          "city": "ERIE",
+          "state": "PA",
+          "zip5": "16509",
+          "score": 0.5,
+          "category_code": "06",
+          "category_label": "End-Stage Renal Disease Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "None of the candidates are Medicare-certified hospitals. The candidates are a dialysis center, a residential care facility, and a post-acute care facility (PRTF) \u2014 all non-hospital provider types. The endpoint name \"Millcreek Community Hospital\" suggests a hospital, but no acute-care hospital candidate exists in the list.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2181,
+        "output_tokens": 136,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "abd35e9a-e010-5df8-969b-b135a71b974a",
+      "vendor": "meditech",
+      "name_observed": "Manati Medical Center",
+      "candidates": [
+        {
+          "ccn": "402533",
+          "name": "THE RENAL CENTRE OF MANATI",
+          "city": "ALT DE LUCHETTI",
+          "state": "PR",
+          "zip5": "00674",
+          "score": 0.5,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name 'Manati Medical Center' suggests a general hospital, but the only candidate 'THE RENAL CENTRE OF MANATI' is a specialty renal clinic, not a Medicare-certified hospital. The mismatch in organization type (general medical center vs. renal specialty centre) and the low token overlap score (0.50) indicate this is not a plausible match.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2091,
+        "output_tokens": 150,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "0122f247-6ee7-5228-8314-266e3b223102",
+      "vendor": "meditech",
+      "name_observed": "Steward Health Care System LLC",
+      "candidates": [
+        {
+          "ccn": "458653",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "671943",
+          "name": "COMMUNITY HEALTH CARE CENTER",
+          "city": "WICHITA FALLS",
+          "state": "TX",
+          "zip5": "76301",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "678573",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MOUNT PLEASANT",
+          "state": "TX",
+          "zip5": "75455",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Steward Health Care System LLC' is a large regional health system, not a specific Medicare-certified hospital. None of the four candidates (all small community care centers in rural TX towns) match the endpoint name or observed Dallas location, and the token overlap is incidental.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2220,
+        "output_tokens": 125,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "1b200e22-fa36-54b7-bb86-2eb04c92448b",
+      "vendor": "meditech",
+      "name_observed": "Steward Health Care System LLC",
+      "candidates": [
+        {
+          "ccn": "458653",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "671943",
+          "name": "COMMUNITY HEALTH CARE CENTER",
+          "city": "WICHITA FALLS",
+          "state": "TX",
+          "zip5": "76301",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "678573",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MOUNT PLEASANT",
+          "state": "TX",
+          "zip5": "75455",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Steward Health Care System LLC' is a large multi-hospital health system, not a specific Medicare-certified hospital. All four candidates are small rural facilities with minimal token overlap to 'Steward' and geographic mismatch (observed Dallas, TX 75201 vs. candidates in Mineral Wells, Wichita Falls, Mount Pleasant, and Seminole). This endpoint is a system-level FHIR registry, not a hospital-specific endpoint.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2222,
+        "output_tokens": 168,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "4a369bb0-f17e-5ff7-97e0-7a3c96347018",
+      "vendor": "meditech",
+      "name_observed": "Steward Health Care System LLC",
+      "candidates": [
+        {
+          "ccn": "458653",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "671943",
+          "name": "COMMUNITY HEALTH CARE CENTER",
+          "city": "WICHITA FALLS",
+          "state": "TX",
+          "zip5": "76301",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "678573",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MOUNT PLEASANT",
+          "state": "TX",
+          "zip5": "75455",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Steward Health Care System LLC' is a large health system management organization, not a Medicare-certified hospital. All candidates are small community care centers with no name overlap with the endpoint, and none are located in Dallas, TX 75201 where the endpoint is observed.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2224,
+        "output_tokens": 125,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "590c967b-5e58-54aa-8637-e3a70dc4062e",
+      "vendor": "meditech",
+      "name_observed": "Steward Health Care System LLC",
+      "candidates": [
+        {
+          "ccn": "458653",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "671943",
+          "name": "COMMUNITY HEALTH CARE CENTER",
+          "city": "WICHITA FALLS",
+          "state": "TX",
+          "zip5": "76301",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "678573",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MOUNT PLEASANT",
+          "state": "TX",
+          "zip5": "75455",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name \"Steward Health Care System LLC\" is a health system parent organization, not a specific hospital. None of the four candidates (all small community care centers in rural TX towns) share \"Steward\" in their names, and the observed Dallas location does not match any candidate city. This endpoint is likely a system-level FHIR registry rather than a single Medicare-certified hospital.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2222,
+        "output_tokens": 148,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "8111ea06-faeb-5e7e-9e5b-302d84adb5a2",
+      "vendor": "meditech",
+      "name_observed": "Steward Health Care System LLC",
+      "candidates": [
+        {
+          "ccn": "458653",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MINERAL WELLS",
+          "state": "TX",
+          "zip5": "76067",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "671943",
+          "name": "COMMUNITY HEALTH CARE CENTER",
+          "city": "WICHITA FALLS",
+          "state": "TX",
+          "zip5": "76301",
+          "score": 0.5,
+          "category_code": "21",
+          "category_label": "Ambulatory Surgical Center (alt)"
+        },
+        {
+          "ccn": "678573",
+          "name": "COMMUNITY CARE CENTER",
+          "city": "MOUNT PLEASANT",
+          "state": "TX",
+          "zip5": "75455",
+          "score": 0.5,
+          "category_code": "12",
+          "category_label": "Ambulatory Surgical Center"
+        },
+        {
+          "ccn": "745055",
+          "name": "MEMORIAL HEALTH CARE CENTER",
+          "city": "SEMINOLE",
+          "state": "TX",
+          "zip5": "79360",
+          "score": 0.5,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'Steward Health Care System LLC' is a large regional health system, not a specific hospital. None of the four candidates (small community care centers in Mineral Wells, Wichita Falls, Mount Pleasant, and Seminole) match the Steward system name, and the observed Dallas location does not correspond to any candidate city.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2225,
+        "output_tokens": 139,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "0966695d-8166-4e8b-a2ee-a262f4b7d5b2",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint address domain 'christushealth.org' and name 'CHRISTUS Health' indicate a health system corporate/umbrella entity serving multiple facilities, not a specific Medicare-certified hospital. The observed location (Irving, TX) does not match the only candidate (Jasper, TX), and the low token-overlap score (0.50) reflects this mismatch.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2088,
+        "output_tokens": 146,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "0b52beb4-d822-4d63-9308-fd2f66ba2f94",
+      "vendor": "meditech",
+      "name_observed": "St. Vincent Charity Medical Center",
+      "candidates": [
+        {
+          "ccn": "360112",
+          "name": "MERCY HEALTH ST VINCENT MEDICAL CENTER",
+          "city": "TOLEDO",
+          "state": "OH",
+          "zip5": "43608",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "362314",
+          "name": "MERCY HEALTH ST VINCENT MEDICAL CENTER ESRD",
+          "city": "TOLEDO",
+          "state": "OH",
+          "zip5": "43608",
+          "score": 0.4,
+          "category_code": "09",
+          "category_label": "Comprehensive Outpatient Rehab Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name and observed location (Cleveland, OH 44115) do not match either candidate, which are both St. Vincent facilities in Toledo, OH. The endpoint is likely a different St. Vincent hospital or a MEDITECH implementation serving multiple independent facilities under the same vendor platform.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2137,
+        "output_tokens": 122,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "41cd14aa-fcf8-5c9e-ab87-fa2977115ff0",
+      "vendor": "meditech",
+      "name_observed": "St. Margaret's Health",
+      "candidates": [
+        {
+          "ccn": "141336",
+          "name": "ST JOSEPH'S HOSPITAL",
+          "city": "HIGHLAND",
+          "state": "IL",
+          "zip5": "62249",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "140155",
+          "name": "ST. MARY'S HOSPITAL-KANKAKEE",
+          "city": "KANKAKEE",
+          "state": "IL",
+          "zip5": "60901",
+          "score": 0.4,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "140187",
+          "name": "HSHS ST ELIZABETH'S HOSPITAL",
+          "city": "O FALLON",
+          "state": "IL",
+          "zip5": "62269",
+          "score": 0.4,
+          "category_code": "01",
+          "category_label": "Hospital"
+        },
+        {
+          "ccn": "146122",
+          "name": "ST PAUL'S SENIOR COMMUNITY",
+          "city": "BELLEVILLE",
+          "state": "IL",
+          "zip5": "62220",
+          "score": 0.4,
+          "category_code": "02",
+          "category_label": "Skilled Nursing Facility"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name \"St. Margaret's Health\" does not match any of the four candidates (St. Joseph's, St. Mary's, St. Elizabeth's, St. Paul's). The observed location (Spring Valley, IL 61362) matches none of the candidate cities/zips, and no candidate name contains \"Margaret's\" or similar variant.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2230,
+        "output_tokens": 138,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "b690a3f7-71a1-46b3-9c71-73dd4bb55ba9",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint is a system-level FHIR registry (\"CHRISTUS Health\") managed from Irving, TX; the sole candidate (Jasper Memorial Hospital in Jasper, TX 75951) is a different city/zip. The endpoint name and observed address suggest a regional health system organization endpoint, not a Medicare-certified hospital facility.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2086,
+        "output_tokens": 136,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "211b49da-b7b8-4f3b-9331-b83998da5dcc",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint organization name 'CHRISTUS Health' is a large health system, not a specific hospital facility. The observed location (Irving, TX 75038) does not match the only candidate (Jasper, TX 75951), and the endpoint appears to be a system-level FHIR service rather than a Medicare-certified hospital endpoint.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2086,
+        "output_tokens": 138,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "9aee0368-c30d-4baa-9f74-ec979f68d480",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "The endpoint name 'CHRISTUS Health' is a large Texas health system holding company, not a specific hospital. The observed location (Irving, TX 75038) does not match the single candidate (Jasper, TX 75951), and the endpoint likely represents a system-level FHIR registry rather than a specific Medicare-certified hospital facility.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2085,
+        "output_tokens": 139,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    },
+    {
+      "endpoint_id": "4a4efa96-0851-48d4-b374-4f64c1ca0243",
+      "vendor": "meditech",
+      "name_observed": "CHRISTUS Health",
+      "candidates": [
+        {
+          "ccn": "450573",
+          "name": "CHRISTUS JASPER MEMORIAL HOSPITAL",
+          "city": "JASPER",
+          "state": "TX",
+          "zip5": "75951",
+          "score": 0.5,
+          "category_code": "01",
+          "category_label": "Hospital"
+        }
+      ],
+      "ccn": "",
+      "confidence": "none",
+      "reason": "Endpoint name 'CHRISTUS Health' is a system name, not a specific hospital facility. The observed location (Irving, TX 75038) does not match the only candidate (Jasper, TX 75951), and a system-level FHIR endpoint should not be force-matched to a single member hospital without stronger evidence of affiliation.",
+      "model": "claude-haiku-4-5",
+      "usage": {
+        "input_tokens": 2086,
+        "output_tokens": 140,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 0
+      },
+      "validation_failed": false
+    }
+  ]
+}

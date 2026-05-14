@@ -1,0 +1,33 @@
+{
+  "npd_release": "2026-05-07",
+  "generated_at": "2026-05-12T20:37:49+00:00",
+  "vendors": [
+    {
+      "vendor": "epic",
+      "total_endpoints": 555,
+      "with_npi": 233,
+      "with_ccn": 241,
+      "with_both": 81,
+      "with_neither": 162,
+      "state_conflicts": 0
+    },
+    {
+      "vendor": "cerner",
+      "total_endpoints": 2903,
+      "with_npi": 542,
+      "with_ccn": 369,
+      "with_both": 1,
+      "with_neither": 1993,
+      "state_conflicts": 0
+    },
+    {
+      "vendor": "meditech",
+      "total_endpoints": 334,
+      "with_npi": 0,
+      "with_ccn": 244,
+      "with_both": 0,
+      "with_neither": 90,
+      "state_conflicts": 0
+    }
+  ]
+}

@@ -25,6 +25,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -33,6 +34,49 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 EHRS_DIR = REPO_ROOT / "ehrs"
 GOLDEN_FLEET = REPO_ROOT / "tests" / "golden" / "production-fleet"
 US_CORE_BASELINE_PATH = REPO_ROOT / "us-core" / "us-core-6.1-baseline.json"
+
+# Suffixes that mark a name as a legal-entity registration rather than a
+# brand: "ACUMEN PHYSICIAN SOLUTIONS, LLC", "ARIZONA COMMUNITY PHYSICIANS PC".
+# Anchored at end-of-string, after optional trailing punctuation.
+LEGAL_ENTITY_SUFFIX_RE = re.compile(
+    r"(?:\b|,\s*)(LLC|INC|LTD|CORP|PA|PC|PLLC|LLP|LP|PLC|MD|DDS|DO)\.?\s*$",
+    re.IGNORECASE,
+)
+# Words that mark a name as a recognizable healthcare brand. Whole-word match
+# avoids false-positives like "MEMORIAL HERMANN" — kept simple on purpose.
+HEALTHCARE_KEYWORD_RE = re.compile(
+    r"\b(HOSPITAL|MEDICAL\s+CENTER|HEALTHCARE|HEALTH\s+SYSTEM|CHILDREN|MEMORIAL|UNIVERSITY|REGIONAL|CLINIC)\b",
+    re.IGNORECASE,
+)
+
+
+def _brand_quality(name: str) -> int:
+    """Score a name's value as a 'hospital you'd recognize' label. Higher = better.
+
+    Why this exists: NPD's NPPES-derived names are uppercase legal-entity strings
+    ("ACUMEN PHYSICIAN SOLUTIONS, LLC"); vendor brands bundles use curated
+    mixed-case ("Akron Children's Hospital"). When ranking singletons in a
+    cluster's recognizable_members list, alphabetical-first would have made
+    "Acumen Physician Solutions, LLC" the headline — exactly the anti-pattern
+    the squishy-meerkat DX plan called out. This score pushes brand-quality
+    names to the front of the tiebreaker so cluster pages headline what
+    a reader would actually recognize.
+    """
+    if not name:
+        return -10
+    s = name.strip().rstrip(".,")
+    score = 0
+    if LEGAL_ENTITY_SUFFIX_RE.search(s):
+        score -= 2
+    if HEALTHCARE_KEYWORD_RE.search(s):
+        score += 2
+    if any(c.islower() for c in s) and any(c.isupper() for c in s):
+        score += 1
+    return score
+NPD_OVERLAY_DIR = REPO_ROOT / "data" / "hospital-overlays"
+NPPES_OVERLAY_DIR = REPO_ROOT / "data" / "hospital-overlays"
+POS_OVERLAY_DIR = REPO_ROOT / "data" / "hospital-overrides"
+PECOS_INDEX_DIR = REPO_ROOT / "data" / "cms-pecos"
 
 VERIFIED_VIA = {
     "epic": "epic_production_fleet",
@@ -125,6 +169,173 @@ def iter_endpoints(snapshot_dir: Path):
         yield sub.name, cap, sm
 
 
+# ─────────────────── overlay loading (NPD + POS + NPPES) ───────────────────
+def _load_overlays(ehr: str) -> dict[str, dict]:
+    """Build a per-endpoint enrichment lookup keyed by normalized address.
+
+    Three overlay sources, layered with this precedence:
+      - NPD overlay        (data/hospital-overlays/{ehr}-npd.json):
+                           authoritative for NPI when matched. Sets the floor
+                           for NPI / state / city / parent_org_name.
+      - POS overlay        (data/hospital-overrides/{ehr}-pos.json):
+                           authoritative for CCN. Fills state/city/name when
+                           NPD missed (MEDITECH on-prem fleets, mostly).
+      - NPPES overlay      (data/hospital-overlays/{ehr}-nppes.json):
+                           backfills NPI for the long tail NPD didn't index.
+                           NPPES has 8M registered providers vs NPD's 100K
+                           FHIR-publishing orgs. ALSO sets taxonomy (NPD's
+                           NDH publication doesn't carry it).
+
+    The three overlay families use different `endpoint_id` conventions, so we
+    key by normalize_address(endpoint_address) — the universal join. Returns
+    `{addr_norm: {npi, ccn, pac_id, org_name_canonical, state, city, taxonomy,
+                  parent_org_name, parent_org_npi, identity_sources}}`.
+
+    `identity_sources` is a tuple of the overlay names that contributed a
+    field — useful for downstream UI: "NPI from NPD, CCN from POS, taxonomy
+    from NPPES" gives a citable provenance trail.
+    """
+    from tools.luxera_endpoint_discovery import normalize_address  # local import; avoids cycle
+
+    out: dict[str, dict] = {}
+
+    def _record_source(slot: dict, source: str) -> None:
+        srcs = slot.setdefault("identity_sources", [])
+        if source not in srcs:
+            srcs.append(source)
+
+    npd_path = NPD_OVERLAY_DIR / f"{ehr}-npd.json"
+    if npd_path.exists():
+        npd = json.loads(npd_path.read_text())
+        for m in npd.get("matches") or []:
+            a = normalize_address(m.get("endpoint_address") or "")
+            if not a:
+                continue
+            slot = out.setdefault(a, {})
+            if m.get("npi"):
+                slot["npi"] = m["npi"]
+                slot["org_name_canonical"] = m.get("org_name_npd")
+                slot["state"] = m.get("state")
+                slot["city"] = m.get("city")
+                if m.get("parent_org_name"):
+                    slot["parent_org_name"] = m["parent_org_name"]
+                if m.get("parent_org_npi"):
+                    slot["parent_org_npi"] = m["parent_org_npi"]
+                _record_source(slot, "npd")
+
+    pos_path = POS_OVERLAY_DIR / f"{ehr}-pos.json"
+    if pos_path.exists():
+        pos = json.loads(pos_path.read_text())
+        for e in pos.get("endpoints") or []:
+            a = normalize_address(e.get("endpoint_address") or "")
+            if not a:
+                continue
+            slot = out.setdefault(a, {})
+            if e.get("ccn"):
+                slot["ccn"] = e["ccn"]
+                _record_source(slot, "pos")
+            # POS supplies state/city for many MEDITECH endpoints NPD misses
+            if not slot.get("state") and e.get("state"):
+                slot["state"] = e["state"]
+            if not slot.get("city") and e.get("city"):
+                slot["city"] = e["city"]
+            # POS name_pos is the catalog-canonical hospital name; only used
+            # as a fallback when NPD didn't supply one.
+            if not slot.get("org_name_canonical") and e.get("name_pos"):
+                slot["org_name_canonical"] = e["name_pos"]
+
+    # Second POS layer: NPPES-address-augmented matches. Tier-3 enrichment
+    # for endpoints whose brands-bundle address was empty so the first POS
+    # pass skipped them — these used NPPES's practice address as the join
+    # key instead. Different verified_via, same CCN field.
+    pos_aug_path = POS_OVERLAY_DIR / f"{ehr}-pos-nppes-augmented.json"
+    if pos_aug_path.exists():
+        pos_aug = json.loads(pos_aug_path.read_text())
+        for e in pos_aug.get("endpoints") or []:
+            a = normalize_address(e.get("endpoint_address") or "")
+            if not a:
+                continue
+            slot = out.setdefault(a, {})
+            # Don't overwrite an existing CCN from the first POS pass — that
+            # one had brand-bundle address evidence which is stronger.
+            if not slot.get("ccn") and e.get("ccn"):
+                slot["ccn"] = e["ccn"]
+                _record_source(slot, "pos_via_nppes")
+
+    nppes_path = NPPES_OVERLAY_DIR / f"{ehr}-nppes.json"
+    if nppes_path.exists():
+        nppes = json.loads(nppes_path.read_text())
+        for m in nppes.get("matches") or []:
+            a = normalize_address(m.get("endpoint_address") or "")
+            if not a:
+                continue
+            slot = out.setdefault(a, {})
+            if not m.get("npi"):
+                continue
+            # Don't overwrite NPD's authoritative NPI — NPPES is a backfill
+            # source for the long tail NPD doesn't index. NPD wins ties because
+            # its endpoint→org join is the registered FHIR identity; NPPES
+            # joins via name+state which is weaker.
+            if not slot.get("npi"):
+                slot["npi"] = m["npi"]
+                _record_source(slot, "nppes")
+                if not slot.get("org_name_canonical"):
+                    slot["org_name_canonical"] = m.get("org_name_nppes")
+            elif slot["npi"] == m["npi"]:
+                # Confirmation — NPD and NPPES agree. Record but don't
+                # downgrade confidence.
+                _record_source(slot, "nppes")
+            # NPPES uniquely supplies taxonomy. Always take it if not set.
+            if not slot.get("taxonomy") and m.get("taxonomy"):
+                slot["taxonomy"] = m["taxonomy"]
+            # State/city: NPPES fills when not already supplied.
+            if not slot.get("state") and m.get("state"):
+                slot["state"] = m["state"]
+            if not slot.get("city") and m.get("city"):
+                slot["city"] = m["city"]
+
+    # PECOS layer — enriches existing slots with PAC ID + provider type
+    # description. PECOS is keyed by NPI and only adds value to endpoints
+    # that already have an NPI from one of the prior layers. The PAC ID
+    # is stable across NPI changes (longitudinal join key); the provider
+    # type description ("HOSPITAL", "FQHC", "AMBULATORY SURGICAL CENTER")
+    # is a CMS-canonical category complementing NPPES's NUCC taxonomy code.
+    pecos_index = _load_pecos_index_if_present()
+    if pecos_index:
+        for slot in out.values():
+            npi = slot.get("npi")
+            if not npi:
+                continue
+            rec = pecos_index.get(npi)
+            if not rec:
+                continue
+            if rec.get("pac"):
+                slot["pac_id"] = rec["pac"]
+                _record_source(slot, "pecos")
+            if rec.get("type_desc") and not slot.get("medicare_provider_type"):
+                slot["medicare_provider_type"] = rec["type_desc"]
+
+    return out
+
+
+_pecos_cache: dict | None = None
+
+
+def _load_pecos_index_if_present() -> dict[str, dict]:
+    """Lazy-load the latest PECOS enrollment index. Returns {} if no index
+    is built — PECOS enrichment is then a no-op, not an error."""
+    global _pecos_cache
+    if _pecos_cache is not None:
+        return _pecos_cache
+    candidates = sorted(PECOS_INDEX_DIR.glob("enrollment-*.json")) if PECOS_INDEX_DIR.exists() else []
+    if not candidates:
+        _pecos_cache = {}
+        return _pecos_cache
+    payload = json.loads(candidates[-1].read_text())
+    _pecos_cache = payload.get("npis") or {}
+    return _pecos_cache
+
+
 # ─────────────────── per-snapshot loading ────────────────────────────────────
 def _load_snapshot(harvest_slug: str, captured_date: str | None) -> tuple[Path, dict, dict[str, dict], dict[str, dict], dict[str, dict]]:
     """Load one harvest snapshot. Returns (snapshot_dir, summary, slug_to_meta,
@@ -144,7 +355,10 @@ def _load_snapshot(harvest_slug: str, captured_date: str | None) -> tuple[Path, 
 
 # ─────────────────── analysis ────────────────────────────────────────────────
 def analyze(ehr: str, captured_date: str | None) -> dict:
+    from tools.luxera_endpoint_discovery import normalize_address  # local; avoid cycle
+
     bundle_specs = MULTI_BUNDLE_VENDORS.get(ehr, [(ehr, None)])
+    overlay_by_addr = _load_overlays(ehr)
 
     # Load every harvest snapshot that contributes to this ehr.
     snapshots: list[dict] = []
@@ -226,12 +440,59 @@ def analyze(ehr: str, captured_date: str | None) -> dict:
             cluster_eps: list[dict] = []
             for s in slugs:
                 m = snap_slug_to_meta.get(s, {})
-                cluster_eps.append({
+                addr = m.get("address")
+                ovl = overlay_by_addr.get(normalize_address(addr or ""), {})
+                ep_entry: dict = {
                     "endpoint_id": s,
-                    "address": m.get("address"),
+                    "address": addr,
                     "managing_organization_name": m.get("name"),
-                })
+                }
+                # Layer NPD+POS+NPPES+PECOS enrichment, only emitting keys that
+                # have values so the output stays tidy for endpoints with no
+                # overlay hit.
+                for key in ("npi", "ccn", "pac_id", "state", "city",
+                            "taxonomy", "medicare_provider_type",
+                            "parent_org_name", "parent_org_npi", "identity_sources"):
+                    v = ovl.get(key)
+                    if v:
+                        ep_entry[key] = v
+                cluster_eps.append(ep_entry)
             cluster_eps.sort(key=lambda e: (e.get("managing_organization_name") or "").lower())
+
+            state_dist = Counter(ep.get("state") for ep in cluster_eps if ep.get("state"))
+            # Recognizable members: surface up to 10 names per cluster, ranked
+            # so the headline of any cluster page reads like "names a clinician
+            # would recognize." Tier 1: parents catalogued in NPD (strongest
+            # signal — explicit "X has facilities here"). Tier 2: mgmt names
+            # repeating across endpoints (vendor bundles list the same brand
+            # for sibling tenants). Tier 3: singletons, ranked by _brand_quality
+            # so curated names beat legal-entity strings.
+            parent_counts: Counter = Counter(
+                ep.get("parent_org_name") for ep in cluster_eps if ep.get("parent_org_name")
+            )
+            mgmt_counts: Counter = Counter(
+                ep.get("managing_organization_name") for ep in cluster_eps if ep.get("managing_organization_name")
+            )
+            # Distinct endpoint count per name: an endpoint contributes once
+            # even if its parent_org_name and managing_organization_name are
+            # the same string. Avoids double-counting in the displayed count.
+            name_to_eps: dict[str, set[int]] = {}
+            for i, ep in enumerate(cluster_eps):
+                for name in {ep.get("parent_org_name"), ep.get("managing_organization_name")}:
+                    if name:
+                        name_to_eps.setdefault(name, set()).add(i)
+
+            def _rank_key(n: str, pc: Counter = parent_counts, mc: Counter = mgmt_counts) -> tuple[int, int, int, str]:
+                p = pc.get(n, 0)
+                m = mc.get(n, 0)
+                return (-p, -m, -_brand_quality(n), (n or "").lower())
+
+            candidates = [n for n in (set(parent_counts) | set(mgmt_counts)) if n]
+            recognizable_members = [
+                {"name": n, "endpoint_count": len(name_to_eps.get(n, ()))}
+                for n in sorted(candidates, key=_rank_key)[:10]
+            ]
+
             cluster: dict = {
                 "cluster_id": cluster_id,
                 "modal": idx == 0,
@@ -244,6 +505,10 @@ def analyze(ehr: str, captured_date: str | None) -> dict:
                 "example_endpoint_address": ex_meta.get("address"),
                 "endpoints": cluster_eps,
             }
+            if state_dist:
+                cluster["state_distribution"] = dict(state_dist.most_common(10))
+            if recognizable_members:
+                cluster["recognizable_members"] = recognizable_members
             if access_scope is not None:
                 cluster["access_scope"] = access_scope
             capstmt_shape_clusters.append(cluster)

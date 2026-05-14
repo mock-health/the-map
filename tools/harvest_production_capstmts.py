@@ -245,10 +245,60 @@ def latest_brands_file(stem: str) -> Path | None:
     return candidates[-1] if candidates else None
 
 
+def build_endpoint_name_lookup(bundle: dict) -> dict[str, str]:
+    """Resolve `endpoint_id → organization_name` from bundle-internal references.
+
+    Three brands-bundle linking conventions ship in the wild — each vendor's HTI-1
+    §170.404 publication picked a different one:
+
+    - Epic: `Endpoint.name` is populated directly; bundle ships no Organization
+      resources. This lookup is empty; callers fall back to `Endpoint.name`.
+    - Cerner / Oracle Health: `Endpoint.name` is null. `Organization.id` =
+      `"O" + Endpoint.id`. Verified 1,451/1,451 provider + 1,359/1,359 patient.
+    - MEDITECH: `Endpoint.name` is null. `Organization.endpoint[].reference`
+      (`urn:uuid:X`) points to `Bundle.entry.fullUrl` (`urn:uuid:X`). Verified
+      673/673 refs resolve.
+
+    First-match-wins when multiple Orgs reference the same Endpoint (rare).
+    """
+    fullurl_to_endpoint_id: dict[str, str] = {}
+    for entry in bundle.get("entry", []):
+        if not isinstance(entry, dict):
+            continue
+        r = entry.get("resource") or {}
+        if r.get("resourceType") != "Endpoint":
+            continue
+        ep_id = r.get("id")
+        full = entry.get("fullUrl")
+        if ep_id and full:
+            fullurl_to_endpoint_id[full] = ep_id
+
+    endpoint_id_to_name: dict[str, str] = {}
+    for entry in bundle.get("entry", []):
+        if not isinstance(entry, dict):
+            continue
+        r = entry.get("resource") or {}
+        if r.get("resourceType") != "Organization":
+            continue
+        name = r.get("name")
+        if not name:
+            continue
+        org_id = r.get("id") or ""
+        if org_id.startswith("O") and len(org_id) > 1:
+            endpoint_id_to_name.setdefault(org_id[1:], name)
+        for ref_obj in r.get("endpoint") or []:
+            ref = (ref_obj or {}).get("reference") or ""
+            mapped = fullurl_to_endpoint_id.get(ref)
+            if mapped:
+                endpoint_id_to_name.setdefault(mapped, name)
+    return endpoint_id_to_name
+
+
 def load_endpoints(bundle_path: Path) -> tuple[list[dict], dict]:
     """Returns (endpoint_list, source_metadata).
     Each endpoint is {"address": str, "id": str, "managing_org": str|None}."""
     bundle = json.loads(bundle_path.read_text())
+    name_lookup = build_endpoint_name_lookup(bundle)
     endpoints: list[dict] = []
     for entry in bundle.get("entry", []):
         r = entry.get("resource", {}) if isinstance(entry, dict) else {}
@@ -257,11 +307,11 @@ def load_endpoints(bundle_path: Path) -> tuple[list[dict], dict]:
         addr = r.get("address")
         if not addr or not addr.startswith(("http://", "https://")):
             continue
-        # name may live in resource.name (Epic) or be derived from managingOrganization (others)
-        name = r.get("name")
+        ep_id = r.get("id") or ""
+        name = r.get("name") or name_lookup.get(ep_id)
         endpoints.append({
             "address": addr,
-            "id": r.get("id") or "",
+            "id": ep_id,
             "name": name,
             "managing_organization": (r.get("managingOrganization") or {}).get("reference"),
         })

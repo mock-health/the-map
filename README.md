@@ -85,7 +85,22 @@ python -m tools.harvest_production_capstmts epic --max-endpoints=20
 python -m tools.analyze_fleet_drift epic --print
 ```
 
-The whole catalog can be re-derived from these primitives. Phase A and Phase F are spec-mandated public per [FHIR R4 §C.0.0](http://hl7.org/fhir/R4/http.html#capabilities) and [SMART STU 2.2 brands](https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html); no vendor relationship required.
+For the CMS-enriched overlays (per-endpoint NPI/CCN, parent organization, geography):
+
+```bash
+# Pull every CMS dataset the pipeline needs (NPD, NPPES, POS, PECOS).
+# Plan for 30+ minutes on residential broadband — NPPES is ~7 GB compressed.
+make fetch-all-cms
+
+# Rebuild every derived index + overlay from those raw inputs.
+make rebuild-overlays
+
+# Compare the regenerated overlays against the committed ones; writes a
+# Markdown drift report under data/verification/.
+make verify-overlay-refresh
+```
+
+Each raw download under `data/raw/{dataset}/{date}/` carries a `.provenance.json` with the upstream URL, release date, file size, and SHA-256, so any committed overlay can be traced back to the exact CMS snapshot it was derived from. The whole catalog can be re-derived from these primitives. Phase A and Phase F are spec-mandated public per [FHIR R4 §C.0.0](http://hl7.org/fhir/R4/http.html#capabilities) and [SMART STU 2.2 brands](https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html); no vendor relationship required.
 
 ---
 

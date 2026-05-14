@@ -1,0 +1,64 @@
+{
+  "harvest_slug": "meditech",
+  "luxera_vendor_id": "meditech",
+  "host_filter": null,
+  "captured_date": "2026-05-07",
+  "official_bundle": "tests/golden/cross-vendor/meditech-brands-2026-04-27.json",
+  "official_endpoint_count": 515,
+  "luxera_matched_count": 217,
+  "overlap_count": 210,
+  "net_new_count": 7,
+  "only_in_official_count": 305,
+  "sample_net_new": [
+    {
+      "address": "https://api.nh.hca.meditech.cloud/v1/uscore/R4",
+      "organization": "HCA - NEW HAMPSHIRE UNIVERSE"
+    },
+    {
+      "address": "https://cmhospapi.m/v1/uscore/R4",
+      "organization": "Community Mem Hosp MaaS Pod 001 08"
+    },
+    {
+      "address": "https://henry/v1/uscore/R4",
+      "organization": "Henry County Hospital MaaS Pod 001 04"
+    },
+    {
+      "address": "https://mtrestapis-live.codyregionalhealth.org:443/v1/uscore/R4",
+      "organization": "Cody Regional Health 6.1 (Hosted by NTTDATA)"
+    },
+    {
+      "address": "https://mtrestapis-live02.nahospital.org:443/v1/uscore/R4",
+      "organization": "Humboldt Park Health Expanse"
+    },
+    {
+      "address": "https://null/v1/uscore/R4",
+      "organization": "East Ohio Regional Hospital 6.15 (Tegria Hosted)"
+    },
+    {
+      "address": "https://tv-mtrestapis-live.phelpsmemorial.com:443/v1/uscore/R4",
+      "organization": "Phelps Mem Hlth Ctr Expanse"
+    }
+  ],
+  "sample_only_in_official": [
+    "https://alhambrnetapi.meditech.cloud/v1/uscore/R4",
+    "https://altapi.christushealth.org/v1/uscore/R4",
+    "https://api01.fresnosurgicalhospital.com/v1/uscore/R4",
+    "https://apicap-va.exp.hca.cloud/v1/uscore/R4",
+    "https://apicap-vb.exp.hca.cloud/v1/uscore/R4",
+    "https://apicap.exp.hca.cloud/v1/uscore/R4",
+    "https://apiefl-efl.exp.hca.cloud/v1/uscore/R4",
+    "https://apigcd-gc.exp.hca.cloud/v1/uscore/R4",
+    "https://apinfl-ncfl.exp.hca.cloud/v1/uscore/R4",
+    "https://apinfl-orl.exp.hca.cloud/v1/uscore/R4",
+    "https://apinfl-pan.exp.hca.cloud/v1/uscore/R4",
+    "https://apisad-san.exp.hca.cloud/v1/uscore/R4",
+    "https://apitri-tna.exp.hca.cloud/v1/uscore/R4",
+    "https://apolive.meditech5.api.catholichealth.net/v1/uscore/R4",
+    "https://applinghospitalapi.meditech.cloud/v1/uscore/R4",
+    "https://bbghapi.meditech.cloud/v1/uscore/R4",
+    "https://bcchospitalapi.meditech.cloud/v1/uscore/R4",
+    "https://bcmedapi.meditech.cloud/v1/uscore/R4",
+    "https://bcmedsvcsapi.meditech.cloud/v1/uscore/R4",
+    "https://bellmtrestapis-live01.lifepointhealth.net/v1/uscore/R4"
+  ]
+}
