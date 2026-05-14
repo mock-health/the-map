@@ -2,7 +2,7 @@
   "ehr": "cerner",
   "ehr_display_name": "Oracle Health (formerly Cerner)",
   "ehr_version_validated": "Oracle Health Millennium (sandbox tenant ec2458f2)",
-  "capability_statement_fetched_date": "2026-04-26",
+  "capability_statement_fetched_date": "2026-05-11",
   "capability_statement_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/metadata",
   "sandbox_base_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
   "sandbox_secure_base_url": "https://fhir-ehr.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
