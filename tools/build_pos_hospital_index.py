@@ -1,17 +1,23 @@
-"""Build a hospital-only index from CMS Provider-of-Services (POS) CSV.
+"""Build a Medicare-facility CCN catalog from CMS POS / iQIES extracts.
 
-CMS publishes a quarterly POS file at https://data.cms.gov/provider-characteristics/
-hospitals-and-other-facilities/provider-of-services-file-hospital-non-hospital-facilities
-listing every Medicare-certified facility — hospitals, SNFs, HHAs, ESRDs, etc. —
-keyed by CMS Certification Number (CCN, the field is `PRVDR_NUM`).
+CMS publishes Provider-of-Services data quarterly through three source systems:
+* QIES (Hospital_and_other.DATA.QX_YYYY.csv): hospitals + ambulatory facilities
+  with UPPERCASE column names and the classic ``PRVDR_CTGRY_CD`` taxonomy.
+* iQIES (POS_File_iQIES_QX_YYYY.csv): post-acute / long-term-care providers
+  (SNFs, HHAs, hospices, IRFs, LTCHs) with ``lowercase_snake_case`` columns
+  and a different ``prvdr_type_id`` taxonomy.
+* Clinical Labs: out of scope here.
 
-This tool streams the CSV, filters to *active hospitals* (`PRVDR_CTGRY_CD == "01"`
-AND `PGM_TRMNTN_CD == "00"`), and emits a compact JSON catalog under
-`data/cms-pos/hospitals-{captured_date}.json`. Downstream
-`tools.resolve_endpoints_to_pos` joins each FHIR brand-bundle endpoint against
-this catalog to attach a CCN + normalized address to every endpoint.
+This tool detects each CSV's format by header inspection, projects rows into a
+single canonical schema, and emits a compact JSON catalog under
+``data/cms-pos/hospitals-{captured_date}.json`` (hospitals only — back-compat)
+or ``data/cms-pos/providers-{captured_date}.json`` (broader categories).
+Downstream ``tools.resolve_endpoints_to_pos`` joins each FHIR brand-bundle
+endpoint against this catalog to attach a CCN + normalized address.
 
-The CSV is ~168 MB and external to the repo. The filtered output is ~3-4 MB.
+The QIES CSV is ~30 MB; iQIES is ~175 MB. When both are present in the same
+dated source directory, ``build_index`` unions them; iQIES rows are tagged
+with the synthetic category code ``iqies``.
 
 Usage:
     # autodiscover the newest POS_File_*.zip in ~/back/data/pos/
@@ -57,9 +63,21 @@ POS_ZIP_PATTERN = re.compile(
 # quarter. The data-as-of date is encoded in the catalog distribution
 # title — preserved in the sibling ``.provenance.json``.
 POS_CSV_PATTERN = re.compile(r"Hospital_and_other\.DATA\.Q(\d)_(\d{4})\.csv$")
+# iQIES source system: same dated subdir alongside the QIES file. Different
+# filename, different column schema (see ``_detect_format``).
+IQIES_CSV_PATTERN = re.compile(r"POS_File_iQIES_Q(\d)_(\d{4})\.csv$")
 
 HOSPITAL_CATEGORY = "01"
 ACTIVE_TERMINATION_CODE = "00"
+
+# Synthetic category code that tags iQIES (post-acute / LTC) rows. iQIES uses
+# a different taxonomy (``prvdr_type_id`` integers — 1=SNF, 3=HHA, 12=hospice,
+# 20=ALF, etc.) that doesn't map cleanly onto the QIES PRVDR_CTGRY_CD set.
+# Rather than guess a mapping, we lump every iQIES facility under one synthetic
+# label so the resolver can opt into post-acute coverage via the
+# ``providers-*`` catalog while leaving hospital-mode (PRVDR_CTGRY_CD="01")
+# untouched.
+IQIES_SYNTHETIC_CATEGORY = "iqies"
 
 # CMS Provider-of-Services facility categories (PRVDR_CTGRY_CD).
 # Source: POS Data Dictionary, code 21 reserved/internal-use only — exclude.
@@ -84,6 +102,7 @@ FHIR_RELEVANT_CATEGORIES: dict[str, str] = {
     "17": "Specialty Hospital (subset of 01)",
     "21": "Ambulatory Surgical Center (alt)",
     "23": "Religious Non-Medical Health Care Institution",
+    IQIES_SYNTHETIC_CATEGORY: "iQIES (LTC / post-acute)",
 }
 
 PROJECTED_FIELDS = [
@@ -108,7 +127,32 @@ PROJECTED_FIELDS = [
 
 
 def _pos_filename_matches(name: str) -> bool:
-    return bool(POS_ZIP_PATTERN.search(name) or POS_CSV_PATTERN.search(name))
+    return bool(
+        POS_ZIP_PATTERN.search(name)
+        or POS_CSV_PATTERN.search(name)
+        or IQIES_CSV_PATTERN.search(name)
+    )
+
+
+def _detect_format(fieldnames: list[str] | None) -> str:
+    """Return 'qies' or 'iqies' based on header casing.
+
+    The two CMS source systems use disjoint header conventions —
+    UPPERCASE for QIES, lowercase for iQIES — so the first row's
+    ``PRVDR_NUM`` vs ``prvdr_num`` field is an unambiguous signal.
+    Raises ``ValueError`` if neither marker is present.
+    """
+    if not fieldnames:
+        raise ValueError("POS CSV has no header row")
+    fields = set(fieldnames)
+    if "PRVDR_NUM" in fields:
+        return "qies"
+    if "prvdr_num" in fields:
+        return "iqies"
+    raise ValueError(
+        f"Unrecognised POS CSV header: missing both PRVDR_NUM and prvdr_num "
+        f"(first 8 columns: {fieldnames[:8]})"
+    )
 
 
 def discover_input(explicit: str | None) -> Path:
@@ -242,6 +286,41 @@ def project_row(row: dict) -> dict:
         "cbsa_code": row.get("CBSA_CD", "").strip(),
         "certification_date": normalize_iso_date(row.get("CRTFCTN_DT", "")),
         "termination_code": row["PGM_TRMNTN_CD"].strip(),
+        "source_system": "qies",
+    }
+
+
+def project_row_iqies(row: dict) -> dict:
+    """iQIES row → canonical dict.
+
+    iQIES stores termination as a *date* (``trmntn_exprtn_dt``) rather than
+    QIES's two-letter code, and lowercases every column. Provider type codes
+    (``prvdr_type_id``) live in a different value space — see
+    ``IQIES_SYNTHETIC_CATEGORY``. ``certification_date`` already arrives in
+    ISO format (no normalisation needed).
+    """
+    return {
+        "ccn": row["prvdr_num"].strip(),
+        "name": row["fac_name"].strip(),
+        "address_line": row.get("st_adr", "").strip(),
+        "city": row.get("city_name", "").strip(),
+        "state": row.get("state_cd", "").strip(),
+        "zip": normalize_zip(row.get("zip_cd", "")),
+        "phone": normalize_phone(row.get("phne_num", "")),
+        "category_code": IQIES_SYNTHETIC_CATEGORY,
+        "category_label": FHIR_RELEVANT_CATEGORIES[IQIES_SYNTHETIC_CATEGORY],
+        "fac_subtype_code": row.get("prvdr_sbtyp_id", "").strip(),
+        "bed_count": _parse_int(row.get("bed_cnt")),
+        "urban_rural": row.get("cbsa_urbn_rrl_ind", "").strip(),
+        "fips_state": row.get("fips_state_cd", "").strip(),
+        "fips_county": row.get("fips_cnty_cd", "").strip(),
+        "cbsa_code": row.get("cbsa_cd", "").strip(),
+        "certification_date": row.get("crtfctn_dt", "").strip(),
+        # No QIES-equivalent code; preserve the raw date for downstream filters.
+        "termination_code": ACTIVE_TERMINATION_CODE,
+        "termination_expiration_date": row.get("trmntn_exprtn_dt", "").strip(),
+        "prvdr_type_id": row.get("prvdr_type_id", "").strip(),
+        "source_system": "iqies",
     }
 
 
@@ -257,43 +336,117 @@ def _parse_int(s: str | None) -> int | None:
         return None
 
 
-def build_index(
+def _build_index_one(
     input_path: Path,
     *,
     include_terminated: bool,
-    categories: set[str] | None = None,
+    categories: set[str],
+    today_iso: str,
 ) -> tuple[list[dict], int]:
-    """Build a CCN catalog from one POS CSV.
+    """Build a CCN catalog from one POS or iQIES CSV.
 
-    categories: filter to these PRVDR_CTGRY_CD codes. None => hospitals only
-    (back-compat). Pass `set(FHIR_RELEVANT_CATEGORIES)` for the broader
-    provider catalog (FQHCs, ASCs, RHCs, SNFs, etc.).
+    Format is detected from the header row (UPPERCASE → QIES,
+    lowercase → iQIES). For iQIES rows, "active" means
+    ``trmntn_exprtn_dt`` is empty or in the future relative to
+    ``today_iso``. iQIES rows are tagged with the synthetic category code
+    so callers requesting just hospitals don't inadvertently get the
+    post-acute world.
     """
-    if categories is None:
-        categories = {HOSPITAL_CATEGORY}
     text, handle = open_csv_stream(input_path)
     try:
         reader = csv.DictReader(text)
+        fmt = _detect_format(list(reader.fieldnames) if reader.fieldnames else None)
         out: list[dict] = []
         scanned = 0
         for row in reader:
             scanned += 1
-            if row.get("PRVDR_CTGRY_CD", "").strip() not in categories:
-                continue
-            if (
-                not include_terminated
-                and row.get("PGM_TRMNTN_CD", "").strip() != ACTIVE_TERMINATION_CODE
-            ):
-                continue
-            try:
-                out.append(project_row(row))
-            except KeyError as e:
-                sys.exit(f"ERROR: POS CSV missing expected column {e!s}")
+            if fmt == "qies":
+                if row.get("PRVDR_CTGRY_CD", "").strip() not in categories:
+                    continue
+                if (
+                    not include_terminated
+                    and row.get("PGM_TRMNTN_CD", "").strip() != ACTIVE_TERMINATION_CODE
+                ):
+                    continue
+                try:
+                    out.append(project_row(row))
+                except KeyError as e:
+                    sys.exit(f"ERROR: POS CSV missing expected column {e!s} in {input_path.name}")
+            else:  # iqies
+                if IQIES_SYNTHETIC_CATEGORY not in categories:
+                    continue
+                if not include_terminated:
+                    trmn = row.get("trmntn_exprtn_dt", "").strip()
+                    if trmn and trmn <= today_iso:
+                        continue
+                try:
+                    out.append(project_row_iqies(row))
+                except KeyError as e:
+                    sys.exit(f"ERROR: iQIES CSV missing expected column {e!s} in {input_path.name}")
         return out, scanned
     finally:
         text.close()
         if handle is not None:
             handle.close()
+
+
+def build_index(
+    input_path: Path | list[Path],
+    *,
+    include_terminated: bool,
+    categories: set[str] | None = None,
+) -> tuple[list[dict], int]:
+    """Build a CCN catalog from one or more POS / iQIES CSVs.
+
+    Multiple inputs (e.g. the QIES Hospital_and_other CSV plus the iQIES
+    LTC/post-acute CSV from the same dated dir) are concatenated. Output
+    rows from different source systems carry a ``source_system`` field so
+    downstream consumers can re-stratify.
+
+    categories: filter rows by ``category_code``. ``None`` defaults to
+    hospitals-only ({"01"}, back-compat). Pass
+    ``set(FHIR_RELEVANT_CATEGORIES)`` for the broader catalog including
+    iQIES.
+    """
+    if categories is None:
+        categories = {HOSPITAL_CATEGORY}
+    paths = [input_path] if isinstance(input_path, Path) else list(input_path)
+    if not paths:
+        return [], 0
+    import datetime as _dt
+    today_iso = _dt.date.today().isoformat()
+
+    all_rows: list[dict] = []
+    total_scanned = 0
+    for p in paths:
+        rows, scanned = _build_index_one(
+            p,
+            include_terminated=include_terminated,
+            categories=categories,
+            today_iso=today_iso,
+        )
+        all_rows.extend(rows)
+        total_scanned += scanned
+    return all_rows, total_scanned
+
+
+def discover_all_inputs(primary: Path) -> list[Path]:
+    """Given the primary POS input, return every sibling POS/iQIES CSV in
+    its parent dir (e.g. ``Hospital_and_other.DATA.Q1_2026.csv`` paired with
+    ``POS_File_iQIES_Q1_2026.csv``). Returned list is sorted by name and
+    always contains the primary input first.
+    """
+    if not primary.parent.is_dir() or primary.suffix.lower() == ".zip":
+        return [primary]
+    siblings = []
+    for f in primary.parent.iterdir():
+        if not f.is_file():
+            continue
+        if f == primary:
+            continue
+        if POS_CSV_PATTERN.search(f.name) or IQIES_CSV_PATTERN.search(f.name):
+            siblings.append(f)
+    return [primary, *sorted(siblings)]
 
 
 def main() -> int:
@@ -308,8 +461,9 @@ def main() -> int:
         "--categories",
         default="hospitals",
         help="'hospitals' (default; PRVDR_CTGRY_CD=01 only), 'all' (every "
-        "FHIR-publishing-eligible category — FQHCs, ASCs, RHCs, SNFs, ESRD, "
-        "hospice, …), or a comma-separated code list (e.g., '01,12,15').",
+        "FHIR-publishing-eligible category — QIES FQHCs/ASCs/RHCs + iQIES "
+        "SNFs/HHAs/hospices/IRFs), or a comma-separated code list "
+        "(e.g., '01,12,15' or '01,iqies').",
     )
     ap.add_argument(
         "--captured-date",
@@ -329,10 +483,23 @@ def main() -> int:
         catalog_label = "providers" if categories != {HOSPITAL_CATEGORY} else "hospitals"
 
     input_path = discover_input(args.input)
-    print(f"Input: {input_path}")
+    # In providers mode, union every POS/iQIES CSV sitting in the same dated
+    # source dir so the catalog covers QIES + iQIES. Hospitals mode stays
+    # single-file — iQIES has no PRVDR_CTGRY_CD="01" rows anyway.
+    if catalog_label == "providers":
+        inputs = discover_all_inputs(input_path)
+        if len(inputs) > 1:
+            print(f"Inputs ({len(inputs)}):")
+            for p in inputs:
+                print(f"  {p}")
+        else:
+            print(f"Input: {input_path}")
+    else:
+        inputs = [input_path]
+        print(f"Input: {input_path}")
 
     rows, scanned = build_index(
-        input_path,
+        inputs,
         include_terminated=args.include_terminated,
         categories=categories,
     )

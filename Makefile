@@ -13,7 +13,7 @@ EHRS := $(notdir $(wildcard ehrs/*))
 QUARTER := $(shell date +%Y)-q$(shell echo $$(( ($$(date +%-m) - 1) / 3 + 1 )))
 EXPORT_DIR := dist/data/the-map
 
-.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index pos-providers-index resolve-pos resolve-pos-llm fetch-npd fetch-nppes fetch-pos fetch-pecos fetch-all-cms nppes-index resolve-nppes pecos-index rebuild-overlays verify-overlay-refresh
+.PHONY: help install validate render render-all synthesize fetch-all-anonymous discover-luxera test lint typecheck export clean clean-render pos-index pos-providers-index resolve-pos resolve-pos-llm fetch-npd fetch-nppes fetch-pos fetch-pos-iqies fetch-pecos fetch-all-cms nppes-index resolve-nppes pecos-index rebuild-overlays verify-overlay-refresh
 
 help:
 	@echo "The Map — developer tasks"
@@ -29,7 +29,8 @@ help:
 	@echo "  Phase G — CMS dataset reproducibility (~30 min for fetch-all-cms)"
 	@echo "  make fetch-npd            CMS National Provider Directory (weekly, ~40 MB)"
 	@echo "  make fetch-nppes          CMS NPPES monthly Data Dissemination (~7 GB)"
-	@echo "  make fetch-pos            CMS Provider-of-Services (quarterly CSV)"
+	@echo "  make fetch-pos            CMS POS — QIES (hospital + ambulatory, quarterly CSV)"
+	@echo "  make fetch-pos-iqies      CMS POS — iQIES (LTC/post-acute, quarterly CSV)"
 	@echo "  make fetch-pecos          CMS Medicare Public Provider Enrollment (~400 MB)"
 	@echo "  make fetch-all-cms        all four CMS sources, in order"
 	@echo "  make rebuild-overlays     fetch-all-cms + every index builder + resolver"
@@ -161,6 +162,13 @@ fetch-nppes:
 fetch-pos:
 	$(PY) -m tools.fetch_cms_pos $(FETCH_ARGS)
 
+# iQIES extract — LTC / post-acute providers (SNFs, HHAs, hospices, IRFs,
+# LTCHs). Different source system, different schema; downloaded into the
+# same data/raw/cms-pos/{date}/ subdir alongside the QIES extract. The
+# pos-providers-index builder unions both files automatically.
+fetch-pos-iqies:
+	$(PY) -m tools.fetch_cms_pos --source iqies $(FETCH_ARGS)
+
 # Phase G.6 — CMS Medicare Public Provider Enrollment File (PPEF / PECOS).
 # Quarterly CSV from the data.cms.gov DCAT catalog. Downloaded to
 # <repo>/data/raw/cms-pecos/ (override with $THE_MAP_PECOS_DIR). ~400 MB.
@@ -169,7 +177,7 @@ fetch-pecos:
 
 # fetch-all-cms: prime every CMS dataset the reproducibility pipeline needs.
 # Expect this to take 30+ minutes on residential broadband — NPPES dominates.
-fetch-all-cms: fetch-npd fetch-nppes fetch-pos fetch-pecos
+fetch-all-cms: fetch-npd fetch-nppes fetch-pos fetch-pos-iqies fetch-pecos
 	@echo "All CMS source files refreshed under data/raw/."
 
 # Index builders — turn raw CMS source files into compact JSON indexes that
