@@ -1,47 +1,49 @@
 {
   "ehr": "epic",
-  "captured_date": "2026-04-27",
+  "captured_date": "2026-05-14",
   "brands_bundle_source_url": "tests/golden/cross-vendor/epic-r4-endpoints-npd-augmented-2026-05-12.json",
   "brands_bundle_total_endpoints": 739,
   "harvest_summary": {
     "endpoints_attempted": 739,
-    "capstmt_fetched_ok": 585,
-    "capstmt_fetch_failed": 154,
-    "smart_config_fetched_ok": 589,
-    "smart_config_fetch_failed": 150,
+    "capstmt_fetched_ok": 584,
+    "capstmt_fetch_failed": 155,
+    "smart_config_fetched_ok": 588,
+    "smart_config_fetch_failed": 151,
     "failure_categories": {
-      "http_4xx_404": 121,
-      "dns": 78,
+      "http_4xx_404": 123,
+      "dns": 82,
       "http_5xx_503": 50,
       "other": 17,
-      "tls": 4,
-      "http_4xx_400": 2,
-      "non_json": 2,
-      "connection": 1
+      "connection": 16,
+      "http_4xx_400": 6,
+      "tls": 6,
+      "http_5xx_502": 2,
+      "timeout": 2,
+      "non_json": 2
     },
-    "wall_clock_seconds": 42.5,
+    "wall_clock_seconds": 139.8,
     "concurrency": 20
   },
   "software_distribution": {
-    "Epic November 2025": 220,
-    "Epic August 2025": 167,
-    "Epic May 2025": 100,
-    "Epic February 2025": 35,
-    "Epic February 2026": 26,
+    "Epic November 2025": 293,
+    "Epic August 2025": 133,
+    "Epic May 2025": 54,
+    "Epic February 2026": 43,
+    "Epic February 2025": 24,
     "Epic February 2023": 2,
     "Epic May 2024": 2,
     "Epic May 2022": 2,
     "Epic February 2024": 1
   },
   "fhir_version_distribution": {
-    "4.0.1": 553,
+    "4.0.1": 552,
     "4.0.0": 2
   },
   "capstmt_shape_clusters": [
     {
       "cluster_id": "epic-cluster-A",
       "modal": true,
-      "endpoint_count": 387,
+      "endpoint_count": 426,
       "shape_hash": "sha256:26d8252510918342",
       "resources_advertised": [
         "Account",
@@ -215,11 +217,6 @@
         {
           "endpoint_id": "epicproxy.et0970.epichosted.com_FHIRProxy_HOME_api_FHIR_R4",
           "address": "https://epicproxy.et0970.epichosted.com/FHIRProxy/HOME/api/FHIR/R4",
-          "managing_organization_name": null
-        },
-        {
-          "endpoint_id": "epicproxy.et1024.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1024.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": null
         },
         {
@@ -398,6 +395,11 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1123.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1123.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "AltaMed"
+        },
+        {
           "endpoint_id": "epicsoap.altru.org_fhir_api_FHIR_R4",
           "address": "https://epicsoap.altru.org/fhir/api/FHIR/R4/",
           "managing_organization_name": "Altru Health System",
@@ -497,6 +499,42 @@
           ]
         },
         {
+          "endpoint_id": "epicmobile.asante.org_FHIR-PRD_api_FHIR_R4",
+          "address": "https://epicmobile.asante.org/FHIR-PRD/api/FHIR/R4/",
+          "managing_organization_name": "Asante Health Systems",
+          "npi": "1063458313",
+          "ccn": "380018",
+          "state": "OR",
+          "city": "MEDFORD",
+          "taxonomy": "3336H0001X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "stofo.providence-waco.org_FHIRProxy_api_FHIR_R4",
+          "address": "https://stofo.providence-waco.org/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Ascension Providence",
+          "npi": "1093708679",
+          "ccn": "450042",
+          "pac_id": "7517878549",
+          "state": "TX",
+          "city": "WACO",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "eprescribe.wfhc.org_FHIRproxy_api_FHIR_R4",
+          "address": "https://eprescribe.wfhc.org/FHIRproxy/api/FHIR/R4/",
+          "managing_organization_name": "Ascension Wisconsin"
+        },
+        {
           "endpoint_id": "epicproxy.et1254.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1254.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Aspen Valley Hospital",
@@ -569,17 +607,6 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Baptist Health - Northeast Florida",
-          "ccn": "104007",
-          "state": "FL",
-          "city": "MACCLENNY",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
           "endpoint_id": "epicproxy.bhsi.com_PRD-FHIR_api_FHIR_R4",
           "address": "https://epicproxy.bhsi.com/PRD-FHIR/api/FHIR/R4/",
           "managing_organization_name": "Baptist Health \u2013 KY & IN"
@@ -647,11 +674,6 @@
           "managing_organization_name": "BayCare Clinic - myBayCare"
         },
         {
-          "endpoint_id": "fhir.clinical.bcm.edu_stage1fhir_api_FHIR_R4",
-          "address": "https://fhir.clinical.bcm.edu/stage1fhir/api/FHIR/R4/",
-          "managing_organization_name": "Baylor College of Medicine"
-        },
-        {
           "endpoint_id": "epicproxy.bswhealth.org_FHIR-PRD_BSW_api_FHIR_R4",
           "address": "https://epicproxy.bswhealth.org/FHIR-PRD/BSW/api/FHIR/R4/",
           "managing_organization_name": "Baylor Scott & White",
@@ -675,14 +697,14 @@
           ]
         },
         {
-          "endpoint_id": "arr.thedacare.org_FHIR_BLN_api_FHIR_R4",
-          "address": "https://arr.thedacare.org/FHIR/BLN/api/FHIR/R4/",
-          "managing_organization_name": "Bellin Health",
-          "npi": "1992808166",
-          "ccn": "520049",
-          "state": "WI",
-          "city": "GREEN BAY",
-          "taxonomy": "261QP2000X",
+          "endpoint_id": "epicproxy.et1334.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1334.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Benefis Health System",
+          "npi": "1528214434",
+          "ccn": "270012",
+          "state": "MT",
+          "city": "GREAT FALLS",
+          "taxonomy": "314000000X",
           "identity_sources": [
             "pos",
             "nppes"
@@ -736,6 +758,11 @@
           ]
         },
         {
+          "endpoint_id": "chperx.health-partners.org_Proxy-FHIR_api_FHIR_R4",
+          "address": "https://chperx.health-partners.org/Proxy-FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Bon Secours Mercy Health"
+        },
+        {
           "endpoint_id": "epicproxy.et1351.epichosted.com_APIProxyPRD_HOME_api_FHIR_R4",
           "address": "https://epicproxy.et1351.epichosted.com/APIProxyPRD/HOME/api/FHIR/R4",
           "managing_organization_name": "BOSTON CHILDREN'S HOSPITAL",
@@ -743,6 +770,7 @@
           "ccn": "223302",
           "state": "MA",
           "city": "BOSTON",
+          "taxonomy": "281PC2000X",
           "identity_sources": [
             "npd",
             "pos"
@@ -809,23 +837,6 @@
           ]
         },
         {
-          "endpoint_id": "hygieia.bronsonhg.org_FHIRProxy_api_FHIR_R4",
-          "address": "https://hygieia.bronsonhg.org/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Bronson Healthcare Group",
-          "npi": "1376524090",
-          "pac_id": "9032022967",
-          "state": "MI",
-          "city": "BATTLE CREEK",
-          "taxonomy": "207R00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
-          "parent_org_name": "BRONSON BATTLE CREEK HOSPITAL",
-          "parent_org_npi": "1083644579",
-          "identity_sources": [
-            "npd",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "epicproxy.bhsala.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.bhsala.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Brookwood Baptist Health",
@@ -878,6 +889,34 @@
           "taxonomy": "282N00000X",
           "identity_sources": [
             "npd",
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1031.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1031.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Bryan Health",
+          "npi": "1023465671",
+          "ccn": "280003",
+          "state": "NE",
+          "city": "LINCOLN",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "epicmobile.challiance.org_Interconnect-oauth2_api_FHIR_R4",
+          "address": "https://epicmobile.challiance.org/Interconnect-oauth2/api/FHIR/R4/",
+          "managing_organization_name": "Cambridge Health Alliance",
+          "npi": "1508863986",
+          "ccn": "220011",
+          "state": "MA",
+          "city": "CAMBRIDGE",
+          "taxonomy": "302F00000X",
+          "identity_sources": [
             "pos",
             "nppes"
           ]
@@ -974,6 +1013,18 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1144.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1144.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Catholic Health System (Buffalo)",
+          "npi": "1013284389",
+          "state": "NY",
+          "city": "Buffalo",
+          "taxonomy": "302R00000X",
+          "identity_sources": [
+            "npd"
+          ]
+        },
+        {
           "endpoint_id": "cslinkmobile.csmc.edu_fhirproxy_api_FHIR_R4",
           "address": "https://cslinkmobile.csmc.edu/fhirproxy/api/FHIR/R4/",
           "managing_organization_name": "Cedars-Sinai Health System",
@@ -990,6 +1041,11 @@
           "endpoint_id": "epicmobile.centracare.com_fhir_api_FHIR_R4",
           "address": "https://epicmobile.centracare.com/fhir/api/FHIR/R4/",
           "managing_organization_name": "CentraCare Health and Affiliates"
+        },
+        {
+          "endpoint_id": "rp-prd.copcp.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://rp-prd.copcp.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Central Ohio Primary Care Physicians"
         },
         {
           "endpoint_id": "soap.crmcwy.org_fhirproxy_api_FHIR_R4",
@@ -1068,23 +1124,6 @@
           ]
         },
         {
-          "endpoint_id": "epicnsproxy.chop.edu_fhir_api_FHIR_R4",
-          "address": "https://epicnsproxy.chop.edu/fhir/api/FHIR/R4/",
-          "managing_organization_name": "Children's Hospital of Philadelphia",
-          "npi": "1215921457",
-          "ccn": "393303",
-          "pac_id": "1254324122",
-          "state": "PA",
-          "city": "PHILADELPHIA",
-          "taxonomy": "261Q00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "epicproxy.et1246.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1246.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Children's of Alabama",
@@ -1125,6 +1164,18 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1380.epichosted.com_APIPROXYPRD_api_FHIR_R4",
+          "address": "https://epicproxy.et1380.epichosted.com/APIPROXYPRD/api/FHIR/R4",
+          "managing_organization_name": "CHOCTAW NATION OF OKLAHOMA",
+          "npi": "1104344027",
+          "state": "OK",
+          "city": "Talihina",
+          "taxonomy": "261QP0904X",
+          "identity_sources": [
+            "npd"
+          ]
+        },
+        {
           "endpoint_id": "proxy.christushealth.org_FHIRPRD_api_FHIR_R4",
           "address": "https://proxy.christushealth.org/FHIRPRD/api/FHIR/R4/",
           "managing_organization_name": "CHRISTUS Health"
@@ -1133,6 +1184,20 @@
           "endpoint_id": "epicarr.healthcare.cigna.com_FHIR-PRD_api_FHIR_R4",
           "address": "https://epicarr.healthcare.cigna.com/FHIR-PRD/api/FHIR/R4/",
           "managing_organization_name": "Cigna Medical Group"
+        },
+        {
+          "endpoint_id": "boomer.cchmc.org_fhir_api_fhir_R4",
+          "address": "https://boomer.cchmc.org/fhir/api/fhir/R4/",
+          "managing_organization_name": "Cincinnati Children's Hospital Medical Center",
+          "npi": "1669195418",
+          "ccn": "363300",
+          "state": "OH",
+          "city": "CINCINNATI",
+          "taxonomy": "390200000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
         },
         {
           "endpoint_id": "epicproxy.et1447.epichosted.com_APIProxyPRD_api_FHIR_R4",
@@ -1227,6 +1292,20 @@
           ]
         },
         {
+          "endpoint_id": "esp.ecommunity.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://esp.ecommunity.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Community Health Network",
+          "npi": "1023600178",
+          "ccn": "153043",
+          "state": "IN",
+          "city": "Greenwood",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et1031.epichosted.com_FHIRProxy_CMC_api_FHIR_R4",
           "address": "https://epicproxy.et1031.epichosted.com/FHIRProxy/CMC/api/FHIR/R4",
           "managing_organization_name": "COMMUNITY MEDICAL CENTER",
@@ -1249,6 +1328,11 @@
           "identity_sources": [
             "npd"
           ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1290.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1290.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Community Technology Cooperative"
         },
         {
           "endpoint_id": "epicproxy.et1164.epichosted.com_FHIRproxy_api_FHIR_R4",
@@ -1368,6 +1452,20 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1356.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
+          "address": "https://epicproxy.et1356.epichosted.com/FHIRProxyPRD/api/FHIR/R4/",
+          "managing_organization_name": "County of San Mateo",
+          "npi": "1053367854",
+          "ccn": "050113",
+          "state": "CA",
+          "city": "SAN MATEO",
+          "taxonomy": "251S00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epichaiku.chs-mi.com_FHIRPROXY_api_FHIR_R4",
           "address": "https://epichaiku.chs-mi.com/FHIRPROXY/api/FHIR/R4/",
           "managing_organization_name": "Covenant HealthCare",
@@ -1454,6 +1552,23 @@
           "state": "CO",
           "city": "DENVER",
           "medicare_provider_type": "ORDER AND REFERRING ONLY - GENERAL SURGERY",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "fhir.dchstx.org_FHIR-External_api_FHIR_R4",
+          "address": "https://fhir.dchstx.org/FHIR-External/api/FHIR/R4/",
+          "managing_organization_name": "Driscoll Children's Hospital",
+          "npi": "1548286172",
+          "ccn": "459823",
+          "pac_id": "4688642960",
+          "state": "TX",
+          "city": "CORPUS CHRISTI",
+          "taxonomy": "235Z00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
             "nppes",
@@ -1585,6 +1700,25 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1126.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1126.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Exact Sciences"
+        },
+        {
+          "endpoint_id": "sfd.fairview.org_FHIR_api_FHIR_R4",
+          "address": "https://sfd.fairview.org/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Fairview Health Services",
+          "npi": "1487649331",
+          "ccn": "360077",
+          "state": "OH",
+          "city": "CLEVELAND",
+          "taxonomy": "332BX2000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.fcn.net_Fhir_api_FHIR_R4",
           "address": "https://epicproxy.fcn.net/Fhir/api/FHIR/R4/",
           "managing_organization_name": "Family Care Network"
@@ -1609,6 +1743,11 @@
           "identity_sources": [
             "npd"
           ]
+        },
+        {
+          "endpoint_id": "external.fastmed.com_FHIRproxy_api_FHIR_R4",
+          "address": "https://external.fastmed.com/FHIRproxy/api/FHIR/R4/",
+          "managing_organization_name": "FastMed"
         },
         {
           "endpoint_id": "epicproxy.et0927.epichosted.com_fhirproxy_api_fhir_r4",
@@ -1644,25 +1783,6 @@
           "managing_organization_name": "Franciscan Missionaries of Our Lady Health System"
         },
         {
-          "endpoint_id": "epicservicegw.froedtert.com_FHIRProxyPRD_api_FHIR_R4",
-          "address": "https://epicserviceGW.froedtert.com/FHIRProxyPRD/api/FHIR/R4/",
-          "managing_organization_name": "Froedtert Health",
-          "npi": "1003831132",
-          "ccn": "520213",
-          "pac_id": "9537071196",
-          "state": "WI",
-          "city": "KENOSHA",
-          "taxonomy": "333600000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "parent_org_name": "FROEDTERT SOUTH INC",
-          "parent_org_npi": "1558305284",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "epic.garnethealth.org_FHIR_api_FHIR_R4",
           "address": "https://epic.garnethealth.org/FHIR/api/FHIR/R4/",
           "managing_organization_name": "Garnet Health",
@@ -1676,6 +1796,24 @@
           "identity_sources": [
             "pos",
             "nppes",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "fhir.genesishcs.org_api_FHIR_R4",
+          "address": "https://fhir.genesishcs.org/api/FHIR/R4/",
+          "managing_organization_name": "Genesis Healthcare System",
+          "npi": "1144267972",
+          "ccn": "360039",
+          "pac_id": "1759279953",
+          "state": "OH",
+          "city": "SOMERSET",
+          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
+          "parent_org_name": "GENESIS HEALTHCARE SYSTEM",
+          "parent_org_npi": "1548203631",
+          "identity_sources": [
+            "npd",
+            "pos",
             "pecos"
           ]
         },
@@ -1699,19 +1837,6 @@
             "pos",
             "nppes",
             "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "surescripts.gmh.edu_OAuth2PRD_api_FHIR_R4",
-          "address": "https://surescripts.gmh.edu/OAuth2PRD/api/FHIR/R4/",
-          "managing_organization_name": "Grady Health System",
-          "npi": "1013523828",
-          "ccn": "110079",
-          "state": "GA",
-          "city": "ATLANTA",
-          "identity_sources": [
-            "pos",
-            "nppes"
           ]
         },
         {
@@ -2111,11 +2236,17 @@
           "endpoint_id": "fhir.jefferson.edu_FHIRProxy_api_FHIR_R4",
           "address": "https://fhir.jefferson.edu/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Jefferson Health",
+          "npi": "1801963343",
           "ccn": "390265",
+          "pac_id": "5294628236",
           "state": "PA",
           "city": "JEFFERSON HILLS",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
-            "pos"
+            "pos",
+            "nppes",
+            "pecos"
           ]
         },
         {
@@ -2155,6 +2286,11 @@
           "managing_organization_name": "Kaiser Permanente - California - Northern"
         },
         {
+          "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_212_api_FHIR_R4",
+          "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/212/api/FHIR/R4/",
+          "managing_organization_name": "Kaiser Permanente - California - Southern"
+        },
+        {
           "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_140_api_FHIR_R4",
           "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/140/api/FHIR/R4/",
           "managing_organization_name": "Kaiser Permanente - Colorado",
@@ -2183,6 +2319,23 @@
           "identity_sources": [
             "pos",
             "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_130_api_FHIR_R4",
+          "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/130/api/FHIR/R4/",
+          "managing_organization_name": "Kaiser Permanente Hawaii / Maui Health System"
+        },
+        {
+          "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_200_api_FHIR_R4",
+          "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/200/api/FHIR/R4/",
+          "managing_organization_name": "Kaiser Permanente \u2013 Georgia",
+          "npi": "1033437629",
+          "state": "GA",
+          "city": "Lawrenceville",
+          "taxonomy": "291U00000X",
+          "identity_sources": [
+            "npd"
           ]
         },
         {
@@ -2241,6 +2394,23 @@
           "managing_organization_name": "KeyCare"
         },
         {
+          "endpoint_id": "soapprod.multicare.org_FHIRProxy_KH_api_FHIR_R4",
+          "address": "https://soapprod.multicare.org/FHIRProxy/KH/api/FHIR/R4/",
+          "managing_organization_name": "Kootenai Health",
+          "npi": "1992798409",
+          "ccn": "130049",
+          "pac_id": "1355792276",
+          "state": "ID",
+          "city": "COEUR D'ALENE",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.bswhealth.org_FHIR-PRD_CONNECT_api_FHIR_R4",
           "address": "https://epicproxy.bswhealth.org/FHIR-PRD/CONNECT/api/FHIR/R4/",
           "managing_organization_name": "Lacy C Kessler, MD, PA"
@@ -2292,6 +2462,21 @@
           "identity_sources": [
             "npd",
             "pos"
+          ]
+        },
+        {
+          "endpoint_id": "lhspdxfhirprd.lhs.org_FHIR_api_FHIR_R4",
+          "address": "https://lhspdxfhirprd.lhs.org/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Legacy Health",
+          "npi": "1720537111",
+          "ccn": "380007",
+          "state": "OR",
+          "city": "Portland",
+          "taxonomy": "247200000X",
+          "identity_sources": [
+            "npd",
+            "pos",
+            "nppes"
           ]
         },
         {
@@ -2392,6 +2577,18 @@
           ]
         },
         {
+          "endpoint_id": "epicarr.aahs.org_FHIR_api_FHIR_R4",
+          "address": "https://epicarr.aahs.org/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Luminis Health",
+          "npi": "1013786433",
+          "state": "MD",
+          "city": "Annapolis",
+          "taxonomy": "2085R0202X",
+          "identity_sources": [
+            "npd"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et1007.epichosted.com_FHIRProxy_LAUNCH_api_FHIR_R4",
           "address": "https://epicproxy.et1007.epichosted.com/FHIRProxy/LAUNCH/api/FHIR/R4",
           "managing_organization_name": "MAIN LINE HEALTH",
@@ -2407,6 +2604,20 @@
           "endpoint_id": "epicproxy.et1007.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1007.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Main Line Health"
+        },
+        {
+          "endpoint_id": "fhir.mainehealth.org_FHIRPRD_api_FHIR_R4",
+          "address": "https://fhir.mainehealth.org/FHIRPRD/api/FHIR/R4/",
+          "managing_organization_name": "MaineHealth",
+          "npi": "1003113127",
+          "ccn": "200009",
+          "state": "ME",
+          "city": "Portland",
+          "taxonomy": "314000000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
         },
         {
           "endpoint_id": "epicproxy.et1055.epichosted.com_FHIRProxy_api_FHIR_R4",
@@ -2436,6 +2647,11 @@
             "pos",
             "nppes"
           ]
+        },
+        {
+          "endpoint_id": "ws-interconnect-fhir.partners.org_Interconnect-FHIR-MU-PRD_api_FHIR_R4",
+          "address": "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/R4/",
+          "managing_organization_name": "Mass General Brigham"
         },
         {
           "endpoint_id": "emrproxy.mcfarlandclinic.com_FHIRProxy_api_FHIR_R4",
@@ -2570,11 +2786,6 @@
           "managing_organization_name": "Mercy Health (Arkansas, Louisiana, Mississippi and Texas)"
         },
         {
-          "endpoint_id": "chperx.health-partners.org_Proxy-FHIR_api_FHIR_R4",
-          "address": "https://chperx.health-partners.org/Proxy-FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Mercy Health - OH, KY"
-        },
-        {
           "endpoint_id": "epicproxy.et0876.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
           "address": "https://epicproxy.et0876.epichosted.com/FHIRProxyPRD/api/FHIR/R4",
           "managing_organization_name": "MERCY HEALTH SERVICES",
@@ -2582,6 +2793,7 @@
           "ccn": "525414",
           "state": "WI",
           "city": "MILWAUKEE",
+          "taxonomy": "251B00000X",
           "identity_sources": [
             "npd",
             "pos"
@@ -2601,25 +2813,6 @@
           "identity_sources": [
             "npd",
             "pos_via_nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "eproxy.mercycare.org_oauth2_api_FHIR_R4",
-          "address": "https://eproxy.mercycare.org/oauth2/api/FHIR/R4/",
-          "managing_organization_name": "Mercy Medical Center",
-          "npi": "1033159769",
-          "ccn": "050444",
-          "pac_id": "4183535271",
-          "state": "IA",
-          "city": "HIAWATHA",
-          "taxonomy": "333600000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPICE",
-          "parent_org_name": "MERCY MEDICAL CENTER",
-          "parent_org_npi": "1114923513",
-          "identity_sources": [
-            "npd",
-            "pos",
             "pecos"
           ]
         },
@@ -2733,6 +2926,20 @@
           "managing_organization_name": "Midwestern University"
         },
         {
+          "endpoint_id": "fhir.mvhealthsystem.org_FHIRproxy_api_FHIR_R4",
+          "address": "https://fhir.mvhealthsystem.org/FHIRproxy/api/FHIR/R4/",
+          "managing_organization_name": "Mohawk Valley Health System",
+          "npi": "1730371584",
+          "ccn": "334021",
+          "state": "NY",
+          "city": "UTICA",
+          "taxonomy": "302R00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et1058.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1058.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Montage Health",
@@ -2817,6 +3024,11 @@
           ]
         },
         {
+          "endpoint_id": "soapprod.multicare.org_FHIRProxy_api_FHIR_R4",
+          "address": "https://soapprod.multicare.org/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "MultiCare Health System"
+        },
+        {
           "endpoint_id": "epicproxy.et1221.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1221.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Muscogee - Creek Nation Department of Health",
@@ -2845,11 +3057,6 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1233.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1233.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "NCH Healthcare System"
-        },
-        {
           "endpoint_id": "ocsoapprd.nebraskamed.com_FHIR-PRD_api_FHIR_R4",
           "address": "https://ocsoapprd.nebraskamed.com/FHIR-PRD/api/FHIR/R4/",
           "managing_organization_name": "Nebraska Medicine",
@@ -2869,13 +3076,7 @@
         {
           "endpoint_id": "iconnect.nemours.org_fhir_api_FHIR_R4",
           "address": "https://iconnect.nemours.org/fhir/api/FHIR/R4/",
-          "managing_organization_name": "Nemours",
-          "ccn": "102342",
-          "state": "FL",
-          "city": "ORLANDO",
-          "identity_sources": [
-            "pos"
-          ]
+          "managing_organization_name": "Nemours"
         },
         {
           "endpoint_id": "epicproxy.et1153.epichosted.com_FHIRProxy_api_FHIR_R4",
@@ -2921,6 +3122,20 @@
           "state": "MN",
           "city": "Maple Grove",
           "taxonomy": "282N00000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
+          "endpoint_id": "eiclbext.nmhs.net_interconnect-generaloauth2services-prd_api_FHIR_R4",
+          "address": "https://eiclbext.nmhs.net/interconnect-generaloauth2services-prd/api/FHIR/R4/",
+          "managing_organization_name": "North Mississippi Health Services",
+          "npi": "1073879029",
+          "ccn": "250004",
+          "state": "MS",
+          "city": "Tupelo",
+          "taxonomy": "320600000X",
           "identity_sources": [
             "npd",
             "pos"
@@ -3008,6 +3223,19 @@
           "managing_organization_name": "Novant Health"
         },
         {
+          "endpoint_id": "epicproxypda.nychhc.org_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxypda.nychhc.org/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "NYC Health + Hospitals",
+          "npi": "1326653684",
+          "ccn": "571108",
+          "state": "NY",
+          "city": "BAYCHESTER",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicfhir.nyumc.org_FHIRPRD_api_FHIR_R4",
           "address": "https://epicfhir.nyumc.org/FHIRPRD/api/FHIR/R4/",
           "managing_organization_name": "NYU Langone Medical Center",
@@ -3057,6 +3285,23 @@
           "endpoint_id": "ccpintconfg.ohiohealth.com_Interconnect-PRD-MUAPI_api_FHIR_R4",
           "address": "https://ccpintconfg.ohiohealth.com/Interconnect-PRD-MUAPI/api/FHIR/R4/",
           "managing_organization_name": "OhioHealth"
+        },
+        {
+          "endpoint_id": "epicrp.okheart.com_Oauth2Proxy_api_FHIR_R4",
+          "address": "https://epicrp.okheart.com/Oauth2Proxy/api/FHIR/R4/",
+          "managing_organization_name": "Oklahoma Heart Hospital",
+          "npi": "1083617005",
+          "ccn": "370215",
+          "pac_id": "7113817248",
+          "state": "OK",
+          "city": "OKLAHOMA CITY",
+          "taxonomy": "261QA1903X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
         },
         {
           "endpoint_id": "epicproxy.ardenthealth.com_fhir_OHI_api_FHIR_R4",
@@ -3124,6 +3369,16 @@
           "managing_organization_name": "Optum Care Washington"
         },
         {
+          "endpoint_id": "epicarr.optum.com_FHIR_api_FHIR_R4",
+          "address": "https://epicarr.optum.com/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "OptumCare East"
+        },
+        {
+          "endpoint_id": "epicpnwarr.optum.com_FHIR_api_FHIR_R4",
+          "address": "https://epicpnwarr.optum.com/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "OptumCare West"
+        },
+        {
           "endpoint_id": "epicproxy.et1131.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1131.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Orlando Health",
@@ -3143,11 +3398,6 @@
           "managing_organization_name": "OrthoCarolina"
         },
         {
-          "endpoint_id": "epicproxy.et1015.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1015.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "OrthoVirginia"
-        },
-        {
           "endpoint_id": "epicproxy.et1221.epichosted.com_FHIRProxy_OSAGE_api_FHIR_R4",
           "address": "https://epicproxy.et1221.epichosted.com/FHIRProxy/OSAGE/api/FHIR/R4",
           "managing_organization_name": "OSAGE NATION SI-SI A-PE-TXA",
@@ -3157,25 +3407,6 @@
           "taxonomy": "261QD0000X",
           "identity_sources": [
             "npd"
-          ]
-        },
-        {
-          "endpoint_id": "ssproxy.osfhealthcare.org_fhir-proxy_api_FHIR_R4",
-          "address": "https://ssproxy.osfhealthcare.org/fhir-proxy/api/FHIR/R4/",
-          "managing_organization_name": "OSF HealthCare",
-          "npi": "1184783425",
-          "ccn": "148549",
-          "pac_id": "0840195277",
-          "state": "IL",
-          "city": "SALEM",
-          "taxonomy": "314000000X",
-          "medicare_provider_type": "PART A PROVIDER - CRITICAL ACCESS HOSPITAL",
-          "parent_org_name": "SALEM TOWNSHIP HOSPITAL",
-          "parent_org_npi": "1295739548",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "pecos"
           ]
         },
         {
@@ -3268,6 +3499,23 @@
           "identity_sources": [
             "npd",
             "pos"
+          ]
+        },
+        {
+          "endpoint_id": "soapproxy.peacehealth.org_FHIRProxy_api_FHIR_R4",
+          "address": "https://soapproxy.peacehealth.org/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "PeaceHealth",
+          "npi": "1689677320",
+          "ccn": "501329",
+          "pac_id": "9537073960",
+          "state": "WA",
+          "city": "SEDRO WOOLLEY",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
           ]
         },
         {
@@ -3378,6 +3626,11 @@
           "identity_sources": [
             "npd"
           ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1052.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1052.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Premise Health"
         },
         {
           "endpoint_id": "epicproxy.et1052.epichosted.com_FHIRProxy_PREMISE_api_FHIR_R4",
@@ -3505,11 +3758,14 @@
           "endpoint_id": "ep-rpfg.rivhs.com_Interconnect-FHIR-PRD_api_FHIR_R4",
           "address": "https://ep-rpfg.rivhs.com/Interconnect-FHIR-PRD/api/FHIR/R4/",
           "managing_organization_name": "Riverside Health System (Newport News, VA)",
+          "npi": "1588605380",
           "ccn": "492640",
           "state": "VA",
           "city": "HAMPTON",
+          "taxonomy": "314000000X",
           "identity_sources": [
-            "pos"
+            "pos",
+            "nppes"
           ]
         },
         {
@@ -3527,6 +3783,11 @@
           ]
         },
         {
+          "endpoint_id": "sf1.rmcps.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://sf1.rmcps.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Riverside Medical Clinic"
+        },
+        {
           "endpoint_id": "epic-fhir.mercy.net_PRDFHIRSTL_RVH_api_FHIR_R4",
           "address": "https://epic-fhir.mercy.net/PRDFHIRSTL/RVH/api/FHIR/R4/",
           "managing_organization_name": "Riverview Health",
@@ -3535,6 +3796,20 @@
           "state": "IN",
           "city": "NOBLESVILLE",
           "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "epicarr.rochesterregional.org_FHIR_api_FHIR_R4",
+          "address": "https://epicarr.rochesterregional.org/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Rochester Regional Health",
+          "npi": "1588525109",
+          "ccn": "330125",
+          "state": "NY",
+          "city": "ROCHESTER",
+          "taxonomy": "251S00000X",
           "identity_sources": [
             "pos",
             "nppes"
@@ -3562,28 +3837,17 @@
           "managing_organization_name": "RWJBarnabas Health"
         },
         {
-          "endpoint_id": "eprdsoap000.saintfrancis.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://eprdsoap000.saintfrancis.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Saint Francis Health System",
-          "npi": "1063681104",
-          "ccn": "370091",
-          "state": "OK",
-          "city": "Stillwater",
-          "taxonomy": "251J00000X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
           "endpoint_id": "reverseproxy.sfmc.net_fhirproxyprd_api_FHIR_R4",
           "address": "https://reverseproxy.sfmc.net/fhirproxyprd/api/FHIR/R4/",
           "managing_organization_name": "Saint Francis Healthcare System (Manual)",
+          "npi": "1861144636",
           "ccn": "370091",
           "state": "OK",
           "city": "TULSA",
+          "taxonomy": "207R00000X",
           "identity_sources": [
-            "pos"
+            "pos",
+            "nppes"
           ]
         },
         {
@@ -3663,6 +3927,20 @@
           ]
         },
         {
+          "endpoint_id": "scvhhsfhir.sccgov.org_interconnect-fhir_api_FHIR_R4",
+          "address": "https://scvhhsfhir.sccgov.org/interconnect-fhir/api/FHIR/R4/",
+          "managing_organization_name": "Santa Clara Valley Medical Center Hospitals and Clinics",
+          "npi": "1467699702",
+          "ccn": "050038",
+          "state": "CA",
+          "city": "SAN JOSE",
+          "taxonomy": "283Q00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et0905.epichosted.com_FHIRproxy_SCOTMYCHART_api_FHIR_R4",
           "address": "https://epicproxy.et0905.epichosted.com/FHIRproxy/SCOTMYCHART/api/FHIR/R4/",
           "managing_organization_name": "Scotland Health Care System",
@@ -3712,14 +3990,22 @@
           "managing_organization_name": "Seattle Children's Hospital",
           "npi": "1245342153",
           "ccn": "503300",
+          "pac_id": "9032021050",
           "state": "WA",
           "city": "Seattle",
           "taxonomy": "3336C0003X",
+          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "npd",
             "pos",
-            "nppes"
+            "nppes",
+            "pecos"
           ]
+        },
+        {
+          "endpoint_id": "epicproxy.et0948.epichosted.com_FhirProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et0948.epichosted.com/FhirProxy/api/FHIR/R4/",
+          "managing_organization_name": "Select Medical"
         },
         {
           "endpoint_id": "epicproxy.et1235.epichosted.com_FHIRProxy_api_FHIR_R4",
@@ -3812,9 +4098,9 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1024.epichosted.com_APIPROXYPRD_api_FHIR_R4",
-          "address": "https://epicproxy.et1024.epichosted.com/APIPROXYPRD/api/FHIR/R4/",
-          "managing_organization_name": "South Georgia Medical Center"
+          "endpoint_id": "epicproxyprd.solutionhealth.org_FHIR_PROD_api_FHIR_R4",
+          "address": "https://epicproxyprd.solutionhealth.org/FHIR_PROD/api/FHIR/R4/",
+          "managing_organization_name": "SolutionHealth"
         },
         {
           "endpoint_id": "sshic.southshorehealth.org_FHIR_api_FHIR_R4",
@@ -3907,6 +4193,23 @@
           ]
         },
         {
+          "endpoint_id": "rp.stjude.org_oauth2-prd_api_FHIR_R4",
+          "address": "https://rp.stjude.org/oauth2-prd/api/FHIR/R4/",
+          "managing_organization_name": "St. Jude Children's Research Hospital",
+          "npi": "1033112230",
+          "ccn": "443302",
+          "pac_id": "7315133444",
+          "state": "TN",
+          "city": "MEMPHIS",
+          "taxonomy": "3336C0002X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et0905.epichosted.com_FHIRproxy_STLUMYCHART_api_FHIR_R4",
           "address": "https://epicproxy.et0905.epichosted.com/FHIRproxy/STLUMYCHART/api/FHIR/R4/",
           "managing_organization_name": "St. Luke's Hospital (North Carolina)"
@@ -3955,6 +4258,11 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et0857.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et0857.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Stanford Children's Health"
+        },
+        {
           "endpoint_id": "epicsoap.stormontvail.org_FHIRproxy_api_FHIR_R4",
           "address": "https://epicsoap.stormontvail.org/FHIRproxy/api/FHIR/R4/",
           "managing_organization_name": "Stormont Vail Health",
@@ -3972,9 +4280,18 @@
           ]
         },
         {
-          "endpoint_id": "epicsoap.bmctotalcare.com_fhir_api_FHIR_R4",
-          "address": "https://epicsoap.bmctotalcare.com/fhir/api/FHIR/R4/",
-          "managing_organization_name": "Summit Health"
+          "endpoint_id": "epicproxy.et1289.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1289.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Summa Health",
+          "npi": "1326597063",
+          "ccn": "360020",
+          "state": "OH",
+          "city": "Barberton",
+          "taxonomy": "251E00000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
         },
         {
           "endpoint_id": "epicedge.upstate.edu_fhir_api_FHIR_R4",
@@ -4004,14 +4321,14 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et0761.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et0761.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Tampa General Hospital",
-          "npi": "1124558929",
-          "ccn": "100128",
+          "endpoint_id": "epicproxy.et1387.epichosted.com_FHIRProxyPRD_HOME_api_FHIR_R4",
+          "address": "https://epicproxy.et1387.epichosted.com/FHIRProxyPRD/HOME/api/FHIR/R4",
+          "managing_organization_name": "TALLAHASSEE MEMORIAL HEALTHCARE",
+          "npi": "1013145341",
+          "ccn": "100135",
           "state": "FL",
-          "city": "Tampa",
-          "taxonomy": "282N00000X",
+          "city": "Tallahassee",
+          "taxonomy": "208000000X",
           "identity_sources": [
             "npd",
             "pos"
@@ -4086,21 +4403,6 @@
           ]
         },
         {
-          "endpoint_id": "fhir.guthrie.org_FHIR-PRD_api_FHIR_R4",
-          "address": "https://fhir.guthrie.org/FHIR-PRD/api/FHIR/R4/",
-          "managing_organization_name": "The Guthrie Clinic",
-          "npi": "1033117635",
-          "pac_id": "6002714177",
-          "state": "NY",
-          "city": "CORTLAND",
-          "taxonomy": "332B00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "npd",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "ihismufhir.osumc.edu_fhir-prd_api_FHIR_R4",
           "address": "https://ihismufhir.osumc.edu/fhir-prd/api/FHIR/R4/",
           "managing_organization_name": "The Ohio State University Wexner Medical Center",
@@ -4145,23 +4447,6 @@
           "managing_organization_name": "The Vancouver Clinic"
         },
         {
-          "endpoint_id": "arr.thedacare.org_FHIR_TC_api_FHIR_R4",
-          "address": "https://arr.thedacare.org/FHIR/TC/api/FHIR/R4/",
-          "managing_organization_name": "ThedaCare",
-          "npi": "1548260839",
-          "ccn": "520160",
-          "pac_id": "5890605836",
-          "state": "WI",
-          "city": "APPLETON",
-          "taxonomy": "282NC0060X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "fhir.tmcaz.com_FHIRProxy_api_FHIR_R4",
           "address": "https://fhir.tmcaz.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "TMC HealthCare",
@@ -4177,6 +4462,26 @@
           "identity_sources": [
             "npd",
             "pos",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "intconfg-p.well-net.org_PRD-OAUTH2_api_FHIR_R4",
+          "address": "https://intconfg-p.well-net.org/PRD-OAUTH2/api/FHIR/R4/",
+          "managing_organization_name": "Tufts Medicine",
+          "npi": "1225825458",
+          "ccn": "220116",
+          "pac_id": "3870665268",
+          "state": "NH",
+          "city": "NORTH HAMPTON",
+          "taxonomy": "251E00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
+          "parent_org_name": "TUFTS MEDICINE CARE AT HOME INC",
+          "parent_org_npi": "1356338529",
+          "identity_sources": [
+            "npd",
+            "pos",
+            "nppes",
             "pecos"
           ]
         },
@@ -4227,6 +4532,18 @@
           ]
         },
         {
+          "endpoint_id": "epic-soap.uchealth.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epic-soap.uchealth.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "UC Health",
+          "npi": "1750859807",
+          "state": "OH",
+          "city": "Mason",
+          "taxonomy": "261QP2300X",
+          "identity_sources": [
+            "npd"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et1448.epichosted.com_APIProxyPRD_api_FHIR_R4",
           "address": "https://epicproxy.et1448.epichosted.com/APIProxyPRD/api/FHIR/R4/",
           "managing_organization_name": "UC IRVINE",
@@ -4255,6 +4572,20 @@
           ]
         },
         {
+          "endpoint_id": "interconapps.uchospitals.edu_PRD-FHIR-Proxy_api_FHIR_R4",
+          "address": "https://interconapps.uchospitals.edu/PRD-FHIR-Proxy/api/FHIR/R4/",
+          "managing_organization_name": "UChicago Medicine",
+          "npi": "1164427126",
+          "ccn": "140122",
+          "state": "IL",
+          "city": "HINSDALE",
+          "taxonomy": "207R00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "arrprox.mednet.ucla.edu_FHIRPRD_api_FHIR_R4",
           "address": "https://arrprox.mednet.ucla.edu/FHIRPRD/api/FHIR/R4/",
           "managing_organization_name": "UCLA Medical Center"
@@ -4273,6 +4604,20 @@
           ]
         },
         {
+          "endpoint_id": "unified-api.ucsf.edu_clinical_apex_api_FHIR_R4",
+          "address": "https://unified-api.ucsf.edu/clinical/apex/api/FHIR/R4/",
+          "managing_organization_name": "UCSF Health",
+          "npi": "1164977237",
+          "ccn": "050454",
+          "state": "CA",
+          "city": "San Francisco",
+          "taxonomy": "363LA2100X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "epicsoap.shands.ufl.edu_FHIR_api_FHIR_R4",
           "address": "https://epicsoap.shands.ufl.edu/FHIR/api/FHIR/R4/",
           "managing_organization_name": "UF Health",
@@ -4284,6 +4629,20 @@
           "identity_sources": [
             "npd",
             "pos"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1130.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1130.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "UHS San Antonio",
+          "npi": "1568168482",
+          "ccn": "454011",
+          "state": "TX",
+          "city": "SAN ANTONIO",
+          "taxonomy": "207PE0004X",
+          "identity_sources": [
+            "pos",
+            "nppes"
           ]
         },
         {
@@ -4356,6 +4715,25 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1127.epichosted.com_FHIRproxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/FHIR/R4/",
+          "managing_organization_name": "United Health Services New York (NYUHS)",
+          "npi": "1518998699",
+          "ccn": "330394",
+          "pac_id": "5193610533",
+          "state": "NY",
+          "city": "APALACHIN",
+          "taxonomy": "3336I0012X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "parent_org_name": "UNITED HEALTH SERVICES HOSPITALS INC",
+          "parent_org_npi": "1114959327",
+          "identity_sources": [
+            "npd",
+            "pos_via_nppes",
+            "pecos"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et1096.epichosted.com_FHIRProxy_api_fhir_r4",
           "address": "https://epicproxy.et1096.epichosted.com/FHIRProxy/api/fhir/r4/",
           "managing_organization_name": "United Regional Health Care System",
@@ -4398,6 +4776,17 @@
           "taxonomy": "261Q00000X",
           "identity_sources": [
             "npd"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et0434.epichosted.com_APIProxyPRD_UHNJ_api_FHIR_R4",
+          "address": "https://epicproxy.et0434.epichosted.com/APIProxyPRD/UHNJ/api/FHIR/R4",
+          "managing_organization_name": "UNIVERSITY HOSPITAL",
+          "ccn": "310119",
+          "state": "NJ",
+          "city": "NEWARK",
+          "identity_sources": [
+            "pos"
           ]
         },
         {
@@ -4525,6 +4914,23 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et1193.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1193.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "University of Louisville Physicians",
+          "npi": "1861413098",
+          "ccn": "180141",
+          "pac_id": "2264480615",
+          "state": "KY",
+          "city": "LOUISVILLE",
+          "taxonomy": "122300000X",
+          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
           "endpoint_id": "fhir.umm.edu_fhir_api_FHIR_R4",
           "address": "https://fhir.umm.edu/fhir/api/FHIR/R4/",
           "managing_organization_name": "University of Maryland Medical System",
@@ -4570,6 +4976,21 @@
           "city": "DALLAS",
           "taxonomy": "367500000X",
           "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "icon.utoledo.edu_ic-oa2-prd_api_FHIR_R4",
+          "address": "https://icon.utoledo.edu/ic-oa2-prd/api/FHIR/R4/",
+          "managing_organization_name": "University of Toledo",
+          "npi": "1063639243",
+          "ccn": "360048",
+          "state": "OH",
+          "city": "Toledo",
+          "taxonomy": "261QS1000X",
+          "identity_sources": [
+            "npd",
             "pos",
             "nppes"
           ]
@@ -4681,17 +5102,20 @@
           ]
         },
         {
-          "endpoint_id": "prd-proxy.vidanthealth.com_FHIR_api_FHIR_R4",
-          "address": "https://prd-proxy.vidanthealth.com/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Vidant Health",
-          "npi": "1518461334",
-          "ccn": "349801",
-          "state": "NC",
-          "city": "GREENVILLE",
-          "taxonomy": "261QU0200X",
+          "endpoint_id": "common.virginiahospitalcenter.com_FHIRPRD_api_FHIR_R4",
+          "address": "https://common.virginiahospitalcenter.com/FHIRPRD/api/FHIR/R4/",
+          "managing_organization_name": "Virginia Hospital Center",
+          "npi": "1790785996",
+          "ccn": "490050",
+          "pac_id": "8820065022",
+          "state": "VA",
+          "city": "ARLINGTON",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes"
+            "nppes",
+            "pecos"
           ]
         },
         {
@@ -4748,6 +5172,19 @@
           ]
         },
         {
+          "endpoint_id": "interconnect.wellspan.org_interconnect-prd-oauth2_api_FHIR_R4",
+          "address": "https://interconnect.wellspan.org/interconnect-prd-oauth2/api/FHIR/R4/",
+          "managing_organization_name": "WellSpan Health",
+          "npi": "1083918122",
+          "state": "PA",
+          "city": "York",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "npd",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicsoap.wellstar.org_fhirproxy_api_FHIR_R4",
           "address": "https://epicsoap.wellstar.org/fhirproxy/api/FHIR/R4/",
           "managing_organization_name": "WellStar",
@@ -4756,6 +5193,23 @@
           "city": "Marietta",
           "identity_sources": [
             "npd"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1243.epichosted.com_OAuth2-PRD_api_FHIR_R4",
+          "address": "https://epicproxy.et1243.epichosted.com/OAuth2-PRD/api/FHIR/R4/",
+          "managing_organization_name": "West Tennessee Healthcare",
+          "npi": "1720635188",
+          "pac_id": "1951735521",
+          "state": "TN",
+          "city": "BOLIVAR",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
+          "parent_org_name": "JACKSON-MADISON COUNTY GENERAL HOSPITAL",
+          "parent_org_npi": "1720160708",
+          "identity_sources": [
+            "npd",
+            "pecos"
           ]
         },
         {
@@ -4770,6 +5224,23 @@
           "identity_sources": [
             "npd",
             "pos"
+          ]
+        },
+        {
+          "endpoint_id": "hygieia.bronsonhg.org_FHIRProxy_api_FHIR_R4",
+          "address": "https://hygieia.bronsonhg.org/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Western Michigan University School of Medicine",
+          "npi": "1376524090",
+          "pac_id": "9032022967",
+          "state": "MI",
+          "city": "BATTLE CREEK",
+          "taxonomy": "207R00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
+          "parent_org_name": "BRONSON BATTLE CREEK HOSPITAL",
+          "parent_org_npi": "1083644579",
+          "identity_sources": [
+            "npd",
+            "pecos"
           ]
         },
         {
@@ -4818,7 +5289,7 @@
           "state": "AZ",
           "city": "YUMA",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
             "nppes",
@@ -4827,16 +5298,16 @@
         }
       ],
       "state_distribution": {
-        "CA": 28,
-        "TX": 19,
-        "OK": 13,
-        "OH": 13,
-        "NY": 13,
-        "FL": 12,
+        "CA": 31,
+        "TX": 22,
+        "OH": 19,
+        "NY": 17,
+        "OK": 14,
         "IL": 11,
-        "GA": 10,
-        "IN": 10,
-        "WA": 10
+        "IN": 11,
+        "WA": 11,
+        "FL": 10,
+        "GA": 10
       },
       "recognizable_members": [
         {
@@ -4884,7 +5355,7 @@
     {
       "cluster_id": "epic-cluster-B",
       "modal": false,
-      "endpoint_count": 135,
+      "endpoint_count": 78,
       "shape_hash": "sha256:ff28bdd6ad43772b",
       "resources_advertised": [
         "Account",
@@ -5004,11 +5475,14 @@
           "endpoint_id": "eprescribing.accesscommunityhealth.net_FHIR_api_FHIR_R4",
           "address": "https://eprescribing.accesscommunityhealth.net/FHIR/api/FHIR/R4/",
           "managing_organization_name": "Access Community Health Network",
+          "npi": "1912944125",
           "ccn": "141029",
           "state": "IL",
           "city": "CHICAGO",
+          "taxonomy": "261QF0400X",
           "identity_sources": [
-            "pos"
+            "pos",
+            "nppes"
           ]
         },
         {
@@ -5046,53 +5520,6 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1123.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1123.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "AltaMed"
-        },
-        {
-          "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_ARMC_api_FHIR_R4",
-          "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/ARMC/api/FHIR/R4",
-          "managing_organization_name": "ARROWHEAD REGIONAL MEDICAL CENTER",
-          "npi": "1003088345",
-          "ccn": "050245",
-          "state": "CA",
-          "city": "Colton",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/api/FHIR/R4/",
-          "managing_organization_name": "Arrowhead Regional Medical Center",
-          "npi": "1790781169",
-          "ccn": "050245",
-          "state": "CA",
-          "city": "COLTON",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epicmobile.asante.org_FHIR-PRD_api_FHIR_R4",
-          "address": "https://epicmobile.asante.org/FHIR-PRD/api/FHIR/R4/",
-          "managing_organization_name": "Asante Health Systems",
-          "npi": "1063458313",
-          "ccn": "380018",
-          "state": "OR",
-          "city": "MEDFORD",
-          "taxonomy": "3336H0001X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "epicmobile.presencehealth.org_fhirPRD_api_FHIR_R4",
           "address": "https://epicmobile.presencehealth.org/fhirPRD/api/FHIR/R4/",
           "managing_organization_name": "Ascension Illinois",
@@ -5107,28 +5534,6 @@
             "pos_via_nppes",
             "pecos"
           ]
-        },
-        {
-          "endpoint_id": "stofo.providence-waco.org_FHIRProxy_api_FHIR_R4",
-          "address": "https://stofo.providence-waco.org/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Ascension Providence",
-          "npi": "1093708679",
-          "ccn": "450042",
-          "pac_id": "7517878549",
-          "state": "TX",
-          "city": "WACO",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "eprescribe.wfhc.org_FHIRproxy_api_FHIR_R4",
-          "address": "https://eprescribe.wfhc.org/FHIRproxy/api/FHIR/R4/",
-          "managing_organization_name": "Ascension Wisconsin"
         },
         {
           "endpoint_id": "erx.aspirus.org_FHIR_api_FHIR_R4",
@@ -5162,51 +5567,9 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1334.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1334.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Benefis Health System",
-          "npi": "1528214434",
-          "ccn": "270012",
-          "state": "MT",
-          "city": "GREAT FALLS",
-          "taxonomy": "314000000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1031.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1031.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Bryan Health",
-          "npi": "1023465671",
-          "ccn": "280003",
-          "state": "NE",
-          "city": "LINCOLN",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "fhir.buffalomedicalgroup.com_fhir-arr_api_FHIR_R4",
           "address": "https://fhir.buffalomedicalgroup.com/fhir-arr/api/FHIR/R4/",
           "managing_organization_name": "Buffalo Medical Group"
-        },
-        {
-          "endpoint_id": "epicmobile.challiance.org_Interconnect-oauth2_api_FHIR_R4",
-          "address": "https://epicmobile.challiance.org/Interconnect-oauth2/api/FHIR/R4/",
-          "managing_organization_name": "Cambridge Health Alliance",
-          "npi": "1508863986",
-          "ccn": "220011",
-          "state": "MA",
-          "city": "CAMBRIDGE",
-          "taxonomy": "302F00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
         },
         {
           "endpoint_id": "epicproxy.et1149.epichosted.com_FHIRProxy_HOME_api_FHIR_R4",
@@ -5251,23 +5614,6 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1144.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1144.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Catholic Health System (Buffalo)",
-          "npi": "1013284389",
-          "state": "NY",
-          "city": "Buffalo",
-          "taxonomy": "302R00000X",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
-          "endpoint_id": "rp-prd.copcp.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://rp-prd.copcp.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Central Ohio Primary Care Physicians"
-        },
-        {
           "endpoint_id": "epic-p-mobile.centura.org_prd-fhir_api_FHIR_R4",
           "address": "https://epic-p-mobile.centura.org/prd-fhir/api/FHIR/R4/",
           "managing_organization_name": "Centura Health"
@@ -5290,6 +5636,11 @@
           "identity_sources": [
             "npd"
           ]
+        },
+        {
+          "endpoint_id": "rp.chihealth.com_fhir_api_FHIR_R4",
+          "address": "https://rp.chihealth.com/fhir/api/FHIR/R4/",
+          "managing_organization_name": "CHI Health"
         },
         {
           "endpoint_id": "rp.chihealth.com_fhir_FHIRSTA_api_FHIR_R4",
@@ -5316,51 +5667,6 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1380.epichosted.com_APIPROXYPRD_api_FHIR_R4",
-          "address": "https://epicproxy.et1380.epichosted.com/APIPROXYPRD/api/FHIR/R4",
-          "managing_organization_name": "CHOCTAW NATION OF OKLAHOMA",
-          "npi": "1104344027",
-          "state": "OK",
-          "city": "Talihina",
-          "taxonomy": "261QP0904X",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
-          "endpoint_id": "boomer.cchmc.org_fhir_api_fhir_R4",
-          "address": "https://boomer.cchmc.org/fhir/api/fhir/R4/",
-          "managing_organization_name": "Cincinnati Children's Hospital Medical Center",
-          "npi": "1669195418",
-          "ccn": "363300",
-          "state": "OH",
-          "city": "CINCINNATI",
-          "taxonomy": "390200000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "esp.ecommunity.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://esp.ecommunity.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Community Health Network",
-          "npi": "1023600178",
-          "ccn": "153043",
-          "state": "IN",
-          "city": "Greenwood",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1290.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1290.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Community Technology Cooperative"
-        },
-        {
           "endpoint_id": "fhir.conemaugh.org_arr-fhir-prd_api_FHIR_R4",
           "address": "https://fhir.conemaugh.org/arr-fhir-prd/api/FHIR/R4/",
           "managing_organization_name": "Conemaugh Health System",
@@ -5375,20 +5681,6 @@
             "pos",
             "nppes",
             "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1356.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
-          "address": "https://epicproxy.et1356.epichosted.com/FHIRProxyPRD/api/FHIR/R4/",
-          "managing_organization_name": "County of San Mateo",
-          "npi": "1053367854",
-          "ccn": "050113",
-          "state": "CA",
-          "city": "SAN MATEO",
-          "taxonomy": "251S00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
           ]
         },
         {
@@ -5410,23 +5702,6 @@
           "identity_sources": [
             "npd",
             "pos_via_nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "fhir.dchstx.org_FHIR-External_api_FHIR_R4",
-          "address": "https://fhir.dchstx.org/FHIR-External/api/FHIR/R4/",
-          "managing_organization_name": "Driscoll Children's Hospital",
-          "npi": "1548286172",
-          "ccn": "459823",
-          "pac_id": "4688642960",
-          "state": "TX",
-          "city": "CORPUS CHRISTI",
-          "taxonomy": "235Z00000X",
-          "medicare_provider_type": "PART A PROVIDER - END-STAGE RENAL DISEASE FACILITY (ESRD)",
-          "identity_sources": [
-            "pos",
-            "nppes",
             "pecos"
           ]
         },
@@ -5461,30 +5736,6 @@
             "pos",
             "nppes"
           ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1126.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1126.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Exact Sciences"
-        },
-        {
-          "endpoint_id": "sfd.fairview.org_FHIR_api_FHIR_R4",
-          "address": "https://sfd.fairview.org/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Fairview Health Services",
-          "npi": "1487649331",
-          "ccn": "360077",
-          "state": "OH",
-          "city": "CLEVELAND",
-          "taxonomy": "332BX2000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "external.fastmed.com_FHIRproxy_api_FHIR_R4",
-          "address": "https://external.fastmed.com/FHIRproxy/api/FHIR/R4/",
-          "managing_organization_name": "FastMed"
         },
         {
           "endpoint_id": "epicproxy-pub.et1089.epichosted.com_FHIRproxy_api_FHIR_R4",
@@ -5555,24 +5806,6 @@
           ]
         },
         {
-          "endpoint_id": "fhir.genesishcs.org_api_FHIR_R4",
-          "address": "https://fhir.genesishcs.org/api/FHIR/R4/",
-          "managing_organization_name": "Genesis Healthcare System",
-          "npi": "1144267972",
-          "ccn": "360039",
-          "pac_id": "1759279953",
-          "state": "OH",
-          "city": "SOMERSET",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
-          "parent_org_name": "GENESIS HEALTHCARE SYSTEM",
-          "parent_org_npi": "1548203631",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "eportal.gbmc.org_fhir_api_FHIR_R4",
           "address": "https://eportal.gbmc.org/fhir/api/FHIR/R4/",
           "managing_organization_name": "Greater Baltimore Medical Center",
@@ -5596,20 +5829,6 @@
           "taxonomy": "111N00000X",
           "identity_sources": [
             "npd"
-          ]
-        },
-        {
-          "endpoint_id": "epicscripts.trihealth.com_fhirproxy_api_FHIR_R4",
-          "address": "https://epicscripts.trihealth.com/fhirproxy/api/FHIR/R4/",
-          "managing_organization_name": "Highland District Hospital",
-          "npi": "1154857340",
-          "ccn": "361332",
-          "state": "OH",
-          "city": "Montgomery",
-          "taxonomy": "261QR1300X",
-          "identity_sources": [
-            "npd",
-            "pos"
           ]
         },
         {
@@ -5644,28 +5863,6 @@
           ]
         },
         {
-          "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_212_api_FHIR_R4",
-          "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/212/api/FHIR/R4/",
-          "managing_organization_name": "Kaiser Permanente - California - Southern"
-        },
-        {
-          "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_130_api_FHIR_R4",
-          "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/130/api/FHIR/R4/",
-          "managing_organization_name": "Kaiser Permanente Hawaii / Maui Health System"
-        },
-        {
-          "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_200_api_FHIR_R4",
-          "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/200/api/FHIR/R4/",
-          "managing_organization_name": "Kaiser Permanente \u2013 Georgia",
-          "npi": "1033437629",
-          "state": "GA",
-          "city": "Lawrenceville",
-          "taxonomy": "291U00000X",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
           "endpoint_id": "arrprd.kdmc.net_fhir_api_FHIR_R4",
           "address": "https://arrprd.kdmc.net/fhir/api/FHIR/R4/",
           "managing_organization_name": "King's Daughters Medical Center",
@@ -5680,72 +5877,9 @@
           ]
         },
         {
-          "endpoint_id": "soapprod.multicare.org_FHIRProxy_KH_api_FHIR_R4",
-          "address": "https://soapprod.multicare.org/FHIRProxy/KH/api/FHIR/R4/",
-          "managing_organization_name": "Kootenai Health",
-          "npi": "1992798409",
-          "ccn": "130049",
-          "pac_id": "1355792276",
-          "state": "ID",
-          "city": "COEUR D'ALENE",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "lhspdxfhirprd.lhs.org_FHIR_api_FHIR_R4",
-          "address": "https://lhspdxfhirprd.lhs.org/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Legacy Health",
-          "npi": "1720537111",
-          "ccn": "380007",
-          "state": "OR",
-          "city": "Portland",
-          "taxonomy": "247200000X",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "lsepprdsoap.lifespan.org_fhirproxy_api_FHIR_R4",
           "address": "https://lsepprdsoap.lifespan.org/fhirproxy/api/FHIR/R4/",
           "managing_organization_name": "Lifespan"
-        },
-        {
-          "endpoint_id": "epicarr.aahs.org_FHIR_api_FHIR_R4",
-          "address": "https://epicarr.aahs.org/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Luminis Health",
-          "npi": "1013786433",
-          "state": "MD",
-          "city": "Annapolis",
-          "taxonomy": "2085R0202X",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
-          "endpoint_id": "fhir.mainehealth.org_FHIRPRD_api_FHIR_R4",
-          "address": "https://fhir.mainehealth.org/FHIRPRD/api/FHIR/R4/",
-          "managing_organization_name": "MaineHealth",
-          "npi": "1003113127",
-          "ccn": "200009",
-          "state": "ME",
-          "city": "Portland",
-          "taxonomy": "314000000X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "ws-interconnect-fhir.partners.org_Interconnect-FHIR-MU-PRD_api_FHIR_R4",
-          "address": "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/R4/",
-          "managing_organization_name": "Mass General Brigham"
         },
         {
           "endpoint_id": "arrprd.mhhcc.org_OAuth2_api_FHIR_R4",
@@ -5784,20 +5918,6 @@
           ]
         },
         {
-          "endpoint_id": "fhir.mvhealthsystem.org_FHIRproxy_api_FHIR_R4",
-          "address": "https://fhir.mvhealthsystem.org/FHIRproxy/api/FHIR/R4/",
-          "managing_organization_name": "Mohawk Valley Health System",
-          "npi": "1730371584",
-          "ccn": "334021",
-          "state": "NY",
-          "city": "UTICA",
-          "taxonomy": "302R00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "epicproxy.et1057.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1057.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Molina Care Connections",
@@ -5811,11 +5931,6 @@
             "npd",
             "pecos"
           ]
-        },
-        {
-          "endpoint_id": "soapprod.multicare.org_FHIRProxy_api_FHIR_R4",
-          "address": "https://soapprod.multicare.org/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "MultiCare Health System"
         },
         {
           "endpoint_id": "arrprod.midmichigan.net_ProdFHIR_api_FHIR_R4",
@@ -5833,94 +5948,6 @@
           "identity_sources": [
             "npd",
             "pos",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy-pub.et1089.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "New York-Presbyterian",
-          "npi": "1881659274",
-          "ccn": "330101",
-          "pac_id": "5294921649",
-          "state": "NY",
-          "city": "NEW YORK",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "eiclbext.nmhs.net_interconnect-generaloauth2services-prd_api_FHIR_R4",
-          "address": "https://eiclbext.nmhs.net/interconnect-generaloauth2services-prd/api/FHIR/R4/",
-          "managing_organization_name": "North Mississippi Health Services",
-          "npi": "1073879029",
-          "ccn": "250004",
-          "state": "MS",
-          "city": "Tupelo",
-          "taxonomy": "320600000X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxypda.nychhc.org_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxypda.nychhc.org/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "NYC Health + Hospitals",
-          "npi": "1326653684",
-          "ccn": "571108",
-          "state": "NY",
-          "city": "BAYCHESTER",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epicrp.okheart.com_Oauth2Proxy_api_FHIR_R4",
-          "address": "https://epicrp.okheart.com/Oauth2Proxy/api/FHIR/R4/",
-          "managing_organization_name": "Oklahoma Heart Hospital",
-          "npi": "1083617005",
-          "ccn": "370215",
-          "pac_id": "7113817248",
-          "state": "OK",
-          "city": "OKLAHOMA CITY",
-          "taxonomy": "261QA1903X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicarr.optum.com_FHIR_api_FHIR_R4",
-          "address": "https://epicarr.optum.com/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "OptumCare East"
-        },
-        {
-          "endpoint_id": "epicpnwarr.optum.com_FHIR_api_FHIR_R4",
-          "address": "https://epicpnwarr.optum.com/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "OptumCare West"
-        },
-        {
-          "endpoint_id": "soapproxy.peacehealth.org_FHIRProxy_api_FHIR_R4",
-          "address": "https://soapproxy.peacehealth.org/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "PeaceHealth",
-          "npi": "1689677320",
-          "ccn": "501329",
-          "pac_id": "9537073960",
-          "state": "WA",
-          "city": "SEDRO WOOLLEY",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
             "pecos"
           ]
         },
@@ -5981,11 +6008,6 @@
           ]
         },
         {
-          "endpoint_id": "epicproxy.et1052.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1052.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Premise Health"
-        },
-        {
           "endpoint_id": "phsfhir.primehealthcare.com_PHS-PRD-FHIR_api_FHIR_R4",
           "address": "https://phsfhir.primehealthcare.com/PHS-PRD-FHIR/api/FHIR/R4/",
           "managing_organization_name": "Prime Healthcare",
@@ -6019,20 +6041,6 @@
           "managing_organization_name": "Reliant Medical Group"
         },
         {
-          "endpoint_id": "epicarr.rochesterregional.org_FHIR_api_FHIR_R4",
-          "address": "https://epicarr.rochesterregional.org/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Rochester Regional Health",
-          "npi": "1588525109",
-          "ccn": "330125",
-          "state": "NY",
-          "city": "ROCHESTER",
-          "taxonomy": "251S00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "epicproxy.et1146.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1146.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Salinas Valley Memorial Healthcare Systems",
@@ -6052,20 +6060,6 @@
           "managing_organization_name": "Sansum Clinic"
         },
         {
-          "endpoint_id": "scvhhsfhir.sccgov.org_interconnect-fhir_api_FHIR_R4",
-          "address": "https://scvhhsfhir.sccgov.org/interconnect-fhir/api/FHIR/R4/",
-          "managing_organization_name": "Santa Clara Valley Medical Center Hospitals and Clinics",
-          "npi": "1467699702",
-          "ccn": "050038",
-          "state": "CA",
-          "city": "SAN JOSE",
-          "taxonomy": "283Q00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "sbhepicrevprox.barnabas.network_FHIRProxy_api_FHIR_R4",
           "address": "https://sbhepicrevprox.barnabas.network/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "SBH Health System",
@@ -6073,11 +6067,6 @@
           "identity_sources": [
             "npd"
           ]
-        },
-        {
-          "endpoint_id": "epicproxy.et0948.epichosted.com_FhirProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et0948.epichosted.com/FhirProxy/api/FHIR/R4/",
-          "managing_organization_name": "Select Medical"
         },
         {
           "endpoint_id": "epicproxy.et1275.epichosted.com_fhirproxy_api_FHIR_R4",
@@ -6105,25 +6094,6 @@
           "city": "MOUNT VERNON",
           "identity_sources": [
             "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxyprd.solutionhealth.org_FHIR_PROD_api_FHIR_R4",
-          "address": "https://epicproxyprd.solutionhealth.org/FHIR_PROD/api/FHIR/R4/",
-          "managing_organization_name": "SolutionHealth"
-        },
-        {
-          "endpoint_id": "epicpproxy.southcoast.org_FHIR_api_FHIR_R4",
-          "address": "https://epicpproxy.southcoast.org/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Southcoast Health",
-          "npi": "1720644826",
-          "ccn": "220074",
-          "state": "MA",
-          "city": "FALL RIVER",
-          "taxonomy": "251E00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
           ]
         },
         {
@@ -6159,36 +6129,12 @@
           "address": "https://haiku.sparrow.org/fhir-prd/api/FHIR/R4/",
           "managing_organization_name": "Sparrow Health System",
           "npi": "1003097882",
-          "ccn": "231118",
           "state": "MI",
           "city": "Charlotte",
           "taxonomy": "261QX0100X",
           "identity_sources": [
-            "npd",
-            "pos"
+            "npd"
           ]
-        },
-        {
-          "endpoint_id": "rp.stjude.org_oauth2-prd_api_FHIR_R4",
-          "address": "https://rp.stjude.org/oauth2-prd/api/FHIR/R4/",
-          "managing_organization_name": "St. Jude Children's Research Hospital",
-          "npi": "1033112230",
-          "ccn": "443302",
-          "pac_id": "7315133444",
-          "state": "TN",
-          "city": "MEMPHIS",
-          "taxonomy": "3336C0002X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et0857.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et0857.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Stanford Children's Health"
         },
         {
           "endpoint_id": "sfd.stanfordmed.org_FHIR_api_FHIR_R4",
@@ -6205,34 +6151,6 @@
             "npd",
             "pos",
             "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1289.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1289.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Summa Health",
-          "npi": "1326597063",
-          "ccn": "360020",
-          "state": "OH",
-          "city": "Barberton",
-          "taxonomy": "251E00000X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1387.epichosted.com_FHIRProxyPRD_HOME_api_FHIR_R4",
-          "address": "https://epicproxy.et1387.epichosted.com/FHIRProxyPRD/HOME/api/FHIR/R4",
-          "managing_organization_name": "TALLAHASSEE MEMORIAL HEALTHCARE",
-          "npi": "1013145341",
-          "ccn": "100135",
-          "state": "FL",
-          "city": "Tallahassee",
-          "taxonomy": "208000000X",
-          "identity_sources": [
-            "npd",
-            "pos"
           ]
         },
         {
@@ -6326,93 +6244,23 @@
           ]
         },
         {
+          "endpoint_id": "epicscripts.trihealth.com_fhirproxy_api_FHIR_R4",
+          "address": "https://epicscripts.trihealth.com/fhirproxy/api/FHIR/R4/",
+          "managing_organization_name": "TriHealth",
+          "npi": "1154857340",
+          "ccn": "361332",
+          "state": "OH",
+          "city": "Montgomery",
+          "taxonomy": "261QR1300X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "epic-ext.trinity-health.org_FHIR_api_FHIR_R4",
           "address": "https://epic-ext.trinity-health.org/FHIR/api/FHIR/R4/",
           "managing_organization_name": "Trinity Health"
-        },
-        {
-          "endpoint_id": "intconfg-p.well-net.org_PRD-OAUTH2_api_FHIR_R4",
-          "address": "https://intconfg-p.well-net.org/PRD-OAUTH2/api/FHIR/R4/",
-          "managing_organization_name": "Tufts Medicine",
-          "npi": "1225825458",
-          "ccn": "220116",
-          "state": "NH",
-          "city": "NORTH HAMPTON",
-          "taxonomy": "251E00000X",
-          "parent_org_name": "TUFTS MEDICINE CARE AT HOME INC",
-          "parent_org_npi": "1356338529",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epic-soap.uchealth.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epic-soap.uchealth.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "UC Health",
-          "npi": "1750859807",
-          "state": "OH",
-          "city": "Mason",
-          "taxonomy": "261QP2300X",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
-          "endpoint_id": "interconapps.uchospitals.edu_PRD-FHIR-Proxy_api_FHIR_R4",
-          "address": "https://interconapps.uchospitals.edu/PRD-FHIR-Proxy/api/FHIR/R4/",
-          "managing_organization_name": "UChicago Medicine",
-          "ccn": "140122",
-          "state": "IL",
-          "city": "HINSDALE",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "unified-api.ucsf.edu_clinical_apex_api_FHIR_R4",
-          "address": "https://unified-api.ucsf.edu/clinical/apex/api/FHIR/R4/",
-          "managing_organization_name": "UCSF Health",
-          "npi": "1164977237",
-          "ccn": "050454",
-          "state": "CA",
-          "city": "San Francisco",
-          "taxonomy": "363LA2100X",
-          "identity_sources": [
-            "npd",
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1130.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1130.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "UHS San Antonio",
-          "ccn": "454011",
-          "state": "TX",
-          "city": "SAN ANTONIO",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1127.epichosted.com_FHIRproxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/FHIR/R4/",
-          "managing_organization_name": "United Health Services New York (NYUHS)",
-          "npi": "1518998699",
-          "ccn": "330394",
-          "pac_id": "5193610533",
-          "state": "NY",
-          "city": "APALACHIN",
-          "taxonomy": "3336I0012X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "parent_org_name": "UNITED HEALTH SERVICES HOSPITALS INC",
-          "parent_org_npi": "1114959327",
-          "identity_sources": [
-            "npd",
-            "pos_via_nppes",
-            "pecos"
-          ]
         },
         {
           "endpoint_id": "epicproxy.et1432.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
@@ -6450,23 +6298,6 @@
           "identity_sources": [
             "pos",
             "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1193.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et1193.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "University of Louisville Physicians",
-          "npi": "1861413098",
-          "ccn": "180141",
-          "pac_id": "2264480615",
-          "state": "KY",
-          "city": "LOUISVILLE",
-          "taxonomy": "122300000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
           ]
         },
         {
@@ -6511,21 +6342,6 @@
           ]
         },
         {
-          "endpoint_id": "icon.utoledo.edu_ic-oa2-prd_api_FHIR_R4",
-          "address": "https://icon.utoledo.edu/ic-oa2-prd/api/FHIR/R4/",
-          "managing_organization_name": "University of Toledo",
-          "npi": "1063639243",
-          "ccn": "360048",
-          "state": "OH",
-          "city": "Toledo",
-          "taxonomy": "261QS1000X",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "epic-arr.pinnaclehealth.org_PRD-FHIR-ARR_api_FHIR_R4",
           "address": "https://Epic-Arr.pinnaclehealth.org/PRD-FHIR-ARR/api/FHIR/R4/",
           "managing_organization_name": "UPMC Central PA"
@@ -6547,23 +6363,6 @@
           "identity_sources": [
             "pos",
             "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "common.virginiahospitalcenter.com_FHIRPRD_api_FHIR_R4",
-          "address": "https://common.virginiahospitalcenter.com/FHIRPRD/api/FHIR/R4/",
-          "managing_organization_name": "Virginia Hospital Center",
-          "npi": "1790785996",
-          "ccn": "490050",
-          "pac_id": "8820065022",
-          "state": "VA",
-          "city": "ARLINGTON",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
           ]
         },
         {
@@ -6613,32 +6412,19 @@
           ]
         },
         {
-          "endpoint_id": "interconnect.wellspan.org_interconnect-prd-oauth2_api_FHIR_R4",
-          "address": "https://interconnect.wellspan.org/interconnect-prd-oauth2/api/FHIR/R4/",
-          "managing_organization_name": "WellSpan Health",
-          "npi": "1083918122",
-          "state": "PA",
-          "city": "York",
+          "endpoint_id": "epicproxy-pub.et1089.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Weill Cornell Medicine",
+          "npi": "1881659274",
+          "ccn": "330101",
+          "pac_id": "5294921649",
+          "state": "NY",
+          "city": "NEW YORK",
           "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
-            "npd",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et1243.epichosted.com_OAuth2-PRD_api_FHIR_R4",
-          "address": "https://epicproxy.et1243.epichosted.com/OAuth2-PRD/api/FHIR/R4/",
-          "managing_organization_name": "West Tennessee Healthcare",
-          "npi": "1720635188",
-          "pac_id": "1951735521",
-          "state": "TN",
-          "city": "BOLIVAR",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
-          "parent_org_name": "JACKSON-MADISON COUNTY GENERAL HOSPITAL",
-          "parent_org_npi": "1720160708",
-          "identity_sources": [
-            "npd",
+            "pos",
+            "nppes",
             "pecos"
           ]
         },
@@ -6658,16 +6444,16 @@
         }
       ],
       "state_distribution": {
-        "CA": 12,
-        "TX": 8,
-        "OH": 8,
-        "NY": 7,
-        "MA": 5,
-        "PA": 5,
+        "CA": 7,
+        "TX": 5,
         "MI": 5,
-        "IL": 4,
-        "WA": 4,
-        "IN": 3
+        "PA": 4,
+        "IL": 3,
+        "MA": 3,
+        "WA": 3,
+        "NY": 2,
+        "MD": 2,
+        "IN": 2
       },
       "recognizable_members": [
         {
@@ -6675,15 +6461,7 @@
           "endpoint_count": 1
         },
         {
-          "name": "GENESIS HEALTHCARE SYSTEM",
-          "endpoint_count": 1
-        },
-        {
           "name": "HELEN NEWBERRY JOY HOSPITAL",
-          "endpoint_count": 1
-        },
-        {
-          "name": "JACKSON-MADISON COUNTY GENERAL HOSPITAL",
           "endpoint_count": 1
         },
         {
@@ -6699,23 +6477,31 @@
           "endpoint_count": 1
         },
         {
-          "name": "TUFTS MEDICINE CARE AT HOME INC",
-          "endpoint_count": 1
-        },
-        {
-          "name": "UNITED HEALTH SERVICES HOSPITALS INC",
-          "endpoint_count": 1
-        },
-        {
           "name": "FHIR URL",
           "endpoint_count": 4
+        },
+        {
+          "name": "Albany Med Health System",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Bayhealth Medical Center",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Cape Cod Healthcare",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Conemaugh Health System",
+          "endpoint_count": 1
         }
       ]
     },
     {
       "cluster_id": "epic-cluster-C",
       "modal": false,
-      "endpoint_count": 22,
+      "endpoint_count": 42,
       "shape_hash": "sha256:d3e0436ad1455a5b",
       "resources_advertised": [
         "Account",
@@ -6828,9 +6614,14 @@
         "us-core-specimen",
         "us-core-vital-signs"
       ],
-      "example_endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_BHJ_api_FHIR_R4",
-      "example_endpoint_address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/BHJ/api/FHIR/R4",
+      "example_endpoint_id": "arr.thedacare.org_FHIR_BLN_api_FHIR_R4",
+      "example_endpoint_address": "https://arr.thedacare.org/FHIR/BLN/api/FHIR/R4/",
       "endpoints": [
+        {
+          "endpoint_id": "epicproxy.et1024.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1024.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": null
+        },
         {
           "endpoint_id": "epicproxy.et4001.epichosted.com_APIProxyPRD_BWM_api_FHIR_R4",
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/BWM/api/FHIR/R4",
@@ -6877,6 +6668,48 @@
           "managing_organization_name": null
         },
         {
+          "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_ARMC_api_FHIR_R4",
+          "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/ARMC/api/FHIR/R4",
+          "managing_organization_name": "ARROWHEAD REGIONAL MEDICAL CENTER",
+          "npi": "1003088345",
+          "ccn": "050245",
+          "state": "CA",
+          "city": "Colton",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/api/FHIR/R4/",
+          "managing_organization_name": "Arrowhead Regional Medical Center",
+          "npi": "1790781169",
+          "ccn": "050245",
+          "state": "CA",
+          "city": "COLTON",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Baptist Health - Northeast Florida",
+          "npi": "1336406578",
+          "ccn": "104007",
+          "state": "FL",
+          "city": "MACCLENNY",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_BHJ_api_FHIR_R4",
           "address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/BHJ/api/FHIR/R4",
           "managing_organization_name": "BAPTIST HEALTH OF NORTHEAST FLORIDA",
@@ -6886,6 +6719,25 @@
           "taxonomy": "282N00000X",
           "identity_sources": [
             "npd",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "fhir.clinical.bcm.edu_stage1fhir_api_FHIR_R4",
+          "address": "https://fhir.clinical.bcm.edu/stage1fhir/api/FHIR/R4/",
+          "managing_organization_name": "Baylor College of Medicine"
+        },
+        {
+          "endpoint_id": "arr.thedacare.org_FHIR_BLN_api_FHIR_R4",
+          "address": "https://arr.thedacare.org/FHIR/BLN/api/FHIR/R4/",
+          "managing_organization_name": "Bellin Health",
+          "npi": "1992808166",
+          "ccn": "520049",
+          "state": "WI",
+          "city": "GREEN BAY",
+          "taxonomy": "261QP2000X",
+          "identity_sources": [
+            "pos",
             "nppes"
           ]
         },
@@ -6917,6 +6769,20 @@
           ]
         },
         {
+          "endpoint_id": "epicproxy.et4001.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et4001.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Coastal Carolina Health Care",
+          "npi": "1114811031",
+          "ccn": "420101",
+          "state": "SC",
+          "city": "HARDEEVILLE",
+          "taxonomy": "343900000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et4001.epichosted.com_APIProxyPRD_DMA_api_FHIR_R4",
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/DMA/api/FHIR/R4",
           "managing_organization_name": "DICKSON MEDICAL ASSOCIATES PC",
@@ -6944,17 +6810,6 @@
             "npd",
             "nppes",
             "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicproxy.et4001.epichosted.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://epicproxy.et4001.epichosted.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "East Cascades Women's Group",
-          "ccn": "420101",
-          "state": "SC",
-          "city": "HARDEEVILLE",
-          "identity_sources": [
-            "pos"
           ]
         },
         {
@@ -7003,6 +6858,25 @@
           ]
         },
         {
+          "endpoint_id": "epicservicegw.froedtert.com_FHIRProxyPRD_api_FHIR_R4",
+          "address": "https://epicserviceGW.froedtert.com/FHIRProxyPRD/api/FHIR/R4/",
+          "managing_organization_name": "Froedtert Health",
+          "npi": "1003831132",
+          "ccn": "520213",
+          "pac_id": "9537071196",
+          "state": "WI",
+          "city": "KENOSHA",
+          "taxonomy": "333600000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "parent_org_name": "FROEDTERT SOUTH INC",
+          "parent_org_npi": "1558305284",
+          "identity_sources": [
+            "npd",
+            "pos",
+            "pecos"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et4001.epichosted.com_APIProxyPRD_MDN_api_FHIR_R4",
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/MDN/api/FHIR/R4",
           "managing_organization_name": "GOOD HEALTH MEDICAL PLLC",
@@ -7014,6 +6888,22 @@
             "npd",
             "nppes"
           ]
+        },
+        {
+          "endpoint_id": "proxy.healthpartners.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://proxy.healthpartners.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "HealthPartners",
+          "npi": "1699838557",
+          "state": "TX",
+          "city": "Houston",
+          "identity_sources": [
+            "npd"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1233.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1233.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "NCH Healthcare System"
         },
         {
           "endpoint_id": "epicproxy.et4001.epichosted.com_APIProxyPRD_BKT_api_FHIR_R4",
@@ -7031,9 +6921,145 @@
           ]
         },
         {
+          "endpoint_id": "haiku.northshore.org_Interconnect-FHIR_api_FHIR_R4",
+          "address": "https://haiku.northshore.org/Interconnect-FHIR/api/FHIR/R4/",
+          "managing_organization_name": "NorthShore University Health System",
+          "npi": "1053367375",
+          "state": "CA",
+          "city": "Greenbrae",
+          "taxonomy": "314000000X",
+          "parent_org_name": "ENDEAVOR HEALTH CLINICAL OPERATIONS",
+          "parent_org_npi": "1770527236",
+          "identity_sources": [
+            "npd"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1015.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et1015.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "OrthoVirginia"
+        },
+        {
+          "endpoint_id": "ssproxy.osfhealthcare.org_fhir-proxy_api_FHIR_R4",
+          "address": "https://ssproxy.osfhealthcare.org/fhir-proxy/api/FHIR/R4/",
+          "managing_organization_name": "OSF HealthCare",
+          "npi": "1184783425",
+          "ccn": "148549",
+          "pac_id": "0840195277",
+          "state": "IL",
+          "city": "SALEM",
+          "taxonomy": "314000000X",
+          "medicare_provider_type": "PART A PROVIDER - CRITICAL ACCESS HOSPITAL",
+          "parent_org_name": "SALEM TOWNSHIP HOSPITAL",
+          "parent_org_npi": "1295739548",
+          "identity_sources": [
+            "npd",
+            "pos",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "eprdsoap000.saintfrancis.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://eprdsoap000.saintfrancis.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Saint Francis Health System",
+          "npi": "1063681104",
+          "ccn": "370091",
+          "state": "OK",
+          "city": "Stillwater",
+          "taxonomy": "251J00000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
+          "endpoint_id": "epicproxy.et1024.epichosted.com_APIPROXYPRD_api_FHIR_R4",
+          "address": "https://epicproxy.et1024.epichosted.com/APIPROXYPRD/api/FHIR/R4/",
+          "managing_organization_name": "South Georgia Medical Center"
+        },
+        {
+          "endpoint_id": "epicpproxy.southcoast.org_FHIR_api_FHIR_R4",
+          "address": "https://epicpproxy.southcoast.org/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Southcoast Health",
+          "npi": "1720644826",
+          "ccn": "220074",
+          "state": "MA",
+          "city": "FALL RIVER",
+          "taxonomy": "251E00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "epicsoap.bmctotalcare.com_fhir_api_FHIR_R4",
+          "address": "https://epicsoap.bmctotalcare.com/fhir/api/FHIR/R4/",
+          "managing_organization_name": "Summit Health"
+        },
+        {
+          "endpoint_id": "epicproxy.et0761.epichosted.com_FHIRProxy_api_FHIR_R4",
+          "address": "https://epicproxy.et0761.epichosted.com/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Tampa General Hospital",
+          "npi": "1124558929",
+          "ccn": "100128",
+          "state": "FL",
+          "city": "Tampa",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "npd",
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "epicproxy.et4006.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
           "address": "https://epicproxy.et4006.epichosted.com/FHIRProxyPRD/api/FHIR/R4/",
           "managing_organization_name": "The Center"
+        },
+        {
+          "endpoint_id": "fhir.guthrie.org_FHIR-PRD_api_FHIR_R4",
+          "address": "https://fhir.guthrie.org/FHIR-PRD/api/FHIR/R4/",
+          "managing_organization_name": "The Guthrie Clinic",
+          "npi": "1033117635",
+          "pac_id": "6002714177",
+          "state": "NY",
+          "city": "CORTLAND",
+          "taxonomy": "332B00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "npd",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "arr.thedacare.org_FHIR_TC_api_FHIR_R4",
+          "address": "https://arr.thedacare.org/FHIR/TC/api/FHIR/R4/",
+          "managing_organization_name": "ThedaCare",
+          "npi": "1548260839",
+          "ccn": "520160",
+          "pac_id": "5890605836",
+          "state": "WI",
+          "city": "APPLETON",
+          "taxonomy": "282NC0060X",
+          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "prd-proxy.vidanthealth.com_FHIR_api_FHIR_R4",
+          "address": "https://prd-proxy.vidanthealth.com/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Vidant Health",
+          "npi": "1518461334",
+          "ccn": "349801",
+          "state": "NC",
+          "city": "GREENVILLE",
+          "taxonomy": "261QU0200X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
         },
         {
           "endpoint_id": "epicproxy.et4001.epichosted.com_APIProxyPRD_WBFM_api_FHIR_R4",
@@ -7054,12 +7080,15 @@
       ],
       "state_distribution": {
         "OR": 5,
+        "CA": 3,
+        "FL": 3,
+        "WI": 3,
+        "NC": 2,
         "AZ": 2,
-        "FL": 1,
-        "NC": 1,
-        "TN": 1,
         "SC": 1,
-        "UT": 1
+        "TN": 1,
+        "UT": 1,
+        "TX": 1
       },
       "recognizable_members": [
         {
@@ -7071,35 +7100,35 @@
           "endpoint_count": 1
         },
         {
-          "name": "East Cascades Women's Group",
+          "name": "SALEM TOWNSHIP HOSPITAL",
           "endpoint_count": 1
         },
         {
-          "name": "El Rio Health",
+          "name": "ENDEAVOR HEALTH CLINICAL OPERATIONS",
           "endpoint_count": 1
         },
         {
-          "name": "The Center",
+          "name": "FROEDTERT SOUTH INC",
           "endpoint_count": 1
         },
         {
-          "name": "BAPTIST HEALTH OF NORTHEAST FLORIDA",
+          "name": "Arrowhead Regional Medical Center",
           "endpoint_count": 1
         },
         {
-          "name": "COASTAL CAROLINA HEALTH CARE",
+          "name": "NCH Healthcare System",
           "endpoint_count": 1
         },
         {
-          "name": "EAST CASCADE WOMENS GROUP P C",
+          "name": "NorthShore University Health System",
           "endpoint_count": 1
         },
         {
-          "name": "NEIGHBORHOOD FAMILY MEDICINE",
+          "name": "OSF HealthCare",
           "endpoint_count": 1
         },
         {
-          "name": "WEST BEND FAMILY MEDICINE",
+          "name": "Saint Francis Health System",
           "endpoint_count": 1
         }
       ]
@@ -7107,7 +7136,217 @@
     {
       "cluster_id": "epic-cluster-D",
       "modal": false,
-      "endpoint_count": 4,
+      "endpoint_count": 2,
+      "shape_hash": "sha256:2eda1513ac6c36a5",
+      "resources_advertised": [
+        "Account",
+        "AdverseEvent",
+        "AllergyIntolerance",
+        "Appointment",
+        "Binary",
+        "BodyStructure",
+        "CarePlan",
+        "CareTeam",
+        "Communication",
+        "ConceptMap",
+        "Condition",
+        "Consent",
+        "Coverage",
+        "Device",
+        "DeviceRequest",
+        "DeviceUseStatement",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Endpoint",
+        "EpisodeOfCare",
+        "ExplanationOfBenefit",
+        "FamilyMemberHistory",
+        "Flag",
+        "Goal",
+        "Group",
+        "ImagingStudy",
+        "Immunization",
+        "ImmunizationRecommendation",
+        "List",
+        "Location",
+        "Measure",
+        "MeasureReport",
+        "Medication",
+        "MedicationAdministration",
+        "MedicationDispense",
+        "MedicationRequest",
+        "NutritionOrder",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "Questionnaire",
+        "QuestionnaireResponse",
+        "RelatedPerson",
+        "RequestGroup",
+        "ResearchStudy",
+        "ResearchSubject",
+        "ServiceRequest",
+        "Specimen",
+        "Substance",
+        "Task",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 0,
+      "supported_profiles": [],
+      "example_endpoint_id": "epicprdext.stfranciscare.org_FhirProxy_api_FHIR_R4",
+      "example_endpoint_address": "https://epicprdext.stfranciscare.org/FhirProxy/api/FHIR/R4/",
+      "endpoints": [
+        {
+          "endpoint_id": "w1soap.wakehealth.edu_fhirproxy_api_FHIR_R4",
+          "address": "https://w1soap.wakehealth.edu/fhirproxy/api/FHIR/R4/",
+          "managing_organization_name": "Atrium Health Wake Forest Baptist",
+          "npi": "1962798165",
+          "ccn": "349803",
+          "state": "NC",
+          "city": "WINSTON SALEM",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "epicprdext.stfranciscare.org_FhirProxy_api_FHIR_R4",
+          "address": "https://epicprdext.stfranciscare.org/FhirProxy/api/FHIR/R4/",
+          "managing_organization_name": "Trinity Health of New England"
+        }
+      ],
+      "state_distribution": {
+        "NC": 1
+      },
+      "recognizable_members": [
+        {
+          "name": "Atrium Health Wake Forest Baptist",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Trinity Health of New England",
+          "endpoint_count": 1
+        }
+      ]
+    },
+    {
+      "cluster_id": "epic-cluster-E",
+      "modal": false,
+      "endpoint_count": 2,
+      "shape_hash": "sha256:5f1961f919b38584",
+      "resources_advertised": [
+        "Account",
+        "AdverseEvent",
+        "AllergyIntolerance",
+        "Appointment",
+        "Binary",
+        "BodyStructure",
+        "CarePlan",
+        "CareTeam",
+        "Claim",
+        "Communication",
+        "ConceptMap",
+        "Condition",
+        "Consent",
+        "Contract",
+        "Coverage",
+        "Device",
+        "DeviceRequest",
+        "DeviceUseStatement",
+        "DiagnosticReport",
+        "DocumentReference",
+        "Encounter",
+        "Endpoint",
+        "EpisodeOfCare",
+        "ExplanationOfBenefit",
+        "FamilyMemberHistory",
+        "Flag",
+        "Goal",
+        "Group",
+        "ImagingStudy",
+        "Immunization",
+        "ImmunizationRecommendation",
+        "List",
+        "Location",
+        "Measure",
+        "MeasureReport",
+        "Media",
+        "Medication",
+        "MedicationAdministration",
+        "MedicationDispense",
+        "MedicationRequest",
+        "NutritionOrder",
+        "Observation",
+        "Organization",
+        "Patient",
+        "Practitioner",
+        "PractitionerRole",
+        "Procedure",
+        "Provenance",
+        "Questionnaire",
+        "QuestionnaireResponse",
+        "RelatedPerson",
+        "RequestGroup",
+        "ResearchStudy",
+        "ResearchSubject",
+        "ServiceRequest",
+        "Specimen",
+        "Substance",
+        "Task",
+        "ValueSet"
+      ],
+      "supported_profiles_total": 0,
+      "supported_profiles": [],
+      "example_endpoint_id": "fhir.mah.org_prd-fhir_api_FHIR_R4",
+      "example_endpoint_address": "https://fhir.mah.org/prd-fhir/api/FHIR/R4/",
+      "endpoints": [
+        {
+          "endpoint_id": "fhir.mah.org_prd-fhir_api_FHIR_R4",
+          "address": "https://fhir.mah.org/prd-fhir/api/FHIR/R4/",
+          "managing_organization_name": "Mount Auburn Hospital",
+          "npi": "1689670259",
+          "ccn": "220002",
+          "pac_id": "2668364183",
+          "state": "MA",
+          "city": "CAMBRIDGE",
+          "taxonomy": "282N00000X",
+          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
+          "identity_sources": [
+            "pos",
+            "nppes",
+            "pecos"
+          ]
+        },
+        {
+          "endpoint_id": "tpc-shield.tpcllp.com_FHIR_api_FHIR_R4",
+          "address": "https://tpc-shield.tpcllp.com/FHIR/api/FHIR/R4/",
+          "managing_organization_name": "The Portland Clinic"
+        }
+      ],
+      "state_distribution": {
+        "MA": 1
+      },
+      "recognizable_members": [
+        {
+          "name": "Mount Auburn Hospital",
+          "endpoint_count": 1
+        },
+        {
+          "name": "The Portland Clinic",
+          "endpoint_count": 1
+        }
+      ]
+    },
+    {
+      "cluster_id": "epic-cluster-F",
+      "modal": false,
+      "endpoint_count": 1,
       "shape_hash": "sha256:4070fb49cb856448",
       "resources_advertised": [
         "Account",
@@ -7224,45 +7463,6 @@
       "example_endpoint_address": "https://epicprdproxy.nch.org/prd-fhir/api/FHIR/R4/",
       "endpoints": [
         {
-          "endpoint_id": "fhirprd.edward.org_fhirprd_EEHOAUTH_api_FHIR_R4",
-          "address": "https://fhirprd.edward.org/fhirprd/EEHOAUTH/api/FHIR/R4/",
-          "managing_organization_name": "Edward-Elmhurst Healthcare",
-          "npi": "1861697443",
-          "ccn": "140231",
-          "state": "IL",
-          "city": "NAPERVILLE",
-          "taxonomy": "207L00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "proxy.healthpartners.com_FHIRProxy_api_FHIR_R4",
-          "address": "https://proxy.healthpartners.com/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "HealthPartners",
-          "npi": "1699838557",
-          "state": "TX",
-          "city": "Houston",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
-          "endpoint_id": "haiku.northshore.org_Interconnect-FHIR_api_FHIR_R4",
-          "address": "https://haiku.northshore.org/Interconnect-FHIR/api/FHIR/R4/",
-          "managing_organization_name": "NorthShore University Health System",
-          "npi": "1053367375",
-          "state": "CA",
-          "city": "Greenbrae",
-          "taxonomy": "314000000X",
-          "parent_org_name": "ENDEAVOR HEALTH CLINICAL OPERATIONS",
-          "parent_org_npi": "1770527236",
-          "identity_sources": [
-            "npd"
-          ]
-        },
-        {
           "endpoint_id": "epicprdproxy.nch.org_prd-fhir_api_FHIR_R4",
           "address": "https://epicprdproxy.nch.org/prd-fhir/api/FHIR/R4/",
           "managing_organization_name": "Northwest Community Hospital",
@@ -7275,240 +7475,11 @@
         }
       ],
       "state_distribution": {
-        "IL": 1,
-        "TX": 1,
-        "CA": 1,
         "AR": 1
       },
       "recognizable_members": [
         {
-          "name": "ENDEAVOR HEALTH CLINICAL OPERATIONS",
-          "endpoint_count": 1
-        },
-        {
-          "name": "Edward-Elmhurst Healthcare",
-          "endpoint_count": 1
-        },
-        {
-          "name": "NorthShore University Health System",
-          "endpoint_count": 1
-        },
-        {
           "name": "Northwest Community Hospital",
-          "endpoint_count": 1
-        },
-        {
-          "name": "HealthPartners",
-          "endpoint_count": 1
-        }
-      ]
-    },
-    {
-      "cluster_id": "epic-cluster-E",
-      "modal": false,
-      "endpoint_count": 2,
-      "shape_hash": "sha256:2eda1513ac6c36a5",
-      "resources_advertised": [
-        "Account",
-        "AdverseEvent",
-        "AllergyIntolerance",
-        "Appointment",
-        "Binary",
-        "BodyStructure",
-        "CarePlan",
-        "CareTeam",
-        "Communication",
-        "ConceptMap",
-        "Condition",
-        "Consent",
-        "Coverage",
-        "Device",
-        "DeviceRequest",
-        "DeviceUseStatement",
-        "DiagnosticReport",
-        "DocumentReference",
-        "Encounter",
-        "Endpoint",
-        "EpisodeOfCare",
-        "ExplanationOfBenefit",
-        "FamilyMemberHistory",
-        "Flag",
-        "Goal",
-        "Group",
-        "ImagingStudy",
-        "Immunization",
-        "ImmunizationRecommendation",
-        "List",
-        "Location",
-        "Measure",
-        "MeasureReport",
-        "Medication",
-        "MedicationAdministration",
-        "MedicationDispense",
-        "MedicationRequest",
-        "NutritionOrder",
-        "Observation",
-        "Organization",
-        "Patient",
-        "Practitioner",
-        "PractitionerRole",
-        "Procedure",
-        "Provenance",
-        "Questionnaire",
-        "QuestionnaireResponse",
-        "RelatedPerson",
-        "RequestGroup",
-        "ResearchStudy",
-        "ResearchSubject",
-        "ServiceRequest",
-        "Specimen",
-        "Substance",
-        "Task",
-        "ValueSet"
-      ],
-      "supported_profiles_total": 0,
-      "supported_profiles": [],
-      "example_endpoint_id": "epicprdext.stfranciscare.org_FhirProxy_api_FHIR_R4",
-      "example_endpoint_address": "https://epicprdext.stfranciscare.org/FhirProxy/api/FHIR/R4/",
-      "endpoints": [
-        {
-          "endpoint_id": "w1soap.wakehealth.edu_fhirproxy_api_FHIR_R4",
-          "address": "https://w1soap.wakehealth.edu/fhirproxy/api/FHIR/R4/",
-          "managing_organization_name": "Atrium Health Wake Forest Baptist",
-          "npi": "1962798165",
-          "ccn": "349803",
-          "state": "NC",
-          "city": "WINSTON SALEM",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "epicprdext.stfranciscare.org_FhirProxy_api_FHIR_R4",
-          "address": "https://epicprdext.stfranciscare.org/FhirProxy/api/FHIR/R4/",
-          "managing_organization_name": "Trinity Health of New England"
-        }
-      ],
-      "state_distribution": {
-        "NC": 1
-      },
-      "recognizable_members": [
-        {
-          "name": "Atrium Health Wake Forest Baptist",
-          "endpoint_count": 1
-        },
-        {
-          "name": "Trinity Health of New England",
-          "endpoint_count": 1
-        }
-      ]
-    },
-    {
-      "cluster_id": "epic-cluster-F",
-      "modal": false,
-      "endpoint_count": 2,
-      "shape_hash": "sha256:5f1961f919b38584",
-      "resources_advertised": [
-        "Account",
-        "AdverseEvent",
-        "AllergyIntolerance",
-        "Appointment",
-        "Binary",
-        "BodyStructure",
-        "CarePlan",
-        "CareTeam",
-        "Claim",
-        "Communication",
-        "ConceptMap",
-        "Condition",
-        "Consent",
-        "Contract",
-        "Coverage",
-        "Device",
-        "DeviceRequest",
-        "DeviceUseStatement",
-        "DiagnosticReport",
-        "DocumentReference",
-        "Encounter",
-        "Endpoint",
-        "EpisodeOfCare",
-        "ExplanationOfBenefit",
-        "FamilyMemberHistory",
-        "Flag",
-        "Goal",
-        "Group",
-        "ImagingStudy",
-        "Immunization",
-        "ImmunizationRecommendation",
-        "List",
-        "Location",
-        "Measure",
-        "MeasureReport",
-        "Media",
-        "Medication",
-        "MedicationAdministration",
-        "MedicationDispense",
-        "MedicationRequest",
-        "NutritionOrder",
-        "Observation",
-        "Organization",
-        "Patient",
-        "Practitioner",
-        "PractitionerRole",
-        "Procedure",
-        "Provenance",
-        "Questionnaire",
-        "QuestionnaireResponse",
-        "RelatedPerson",
-        "RequestGroup",
-        "ResearchStudy",
-        "ResearchSubject",
-        "ServiceRequest",
-        "Specimen",
-        "Substance",
-        "Task",
-        "ValueSet"
-      ],
-      "supported_profiles_total": 0,
-      "supported_profiles": [],
-      "example_endpoint_id": "fhir.mah.org_prd-fhir_api_FHIR_R4",
-      "example_endpoint_address": "https://fhir.mah.org/prd-fhir/api/FHIR/R4/",
-      "endpoints": [
-        {
-          "endpoint_id": "fhir.mah.org_prd-fhir_api_FHIR_R4",
-          "address": "https://fhir.mah.org/prd-fhir/api/FHIR/R4/",
-          "managing_organization_name": "Mount Auburn Hospital",
-          "npi": "1689670259",
-          "ccn": "220002",
-          "pac_id": "2668364183",
-          "state": "MA",
-          "city": "CAMBRIDGE",
-          "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
-          "identity_sources": [
-            "pos",
-            "nppes",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "tpc-shield.tpcllp.com_FHIR_api_FHIR_R4",
-          "address": "https://tpc-shield.tpcllp.com/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "The Portland Clinic"
-        }
-      ],
-      "state_distribution": {
-        "MA": 1
-      },
-      "recognizable_members": [
-        {
-          "name": "Mount Auburn Hospital",
-          "endpoint_count": 1
-        },
-        {
-          "name": "The Portland Clinic",
           "endpoint_count": 1
         }
       ]
@@ -7755,8 +7726,8 @@
   ],
   "smart_config_drift": {
     "grant_types_supported_distribution": {
-      "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\"]": 526,
-      "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\", \"urn:ietf:params:oauth:grant-type:token-exchange\"]": 26,
+      "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\"]": 507,
+      "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\", \"urn:ietf:params:oauth:grant-type:token-exchange\"]": 44,
       "[]": 7
     },
     "capabilities_modal_set": [
@@ -7779,32 +7750,32 @@
       "sso-openid-connect"
     ],
     "capabilities_distribution": {
-      "launch-ehr": 559,
-      "launch-standalone": 559,
-      "client-public": 559,
-      "client-confidential-symmetric": 559,
-      "context-banner": 559,
-      "context-style": 559,
-      "context-ehr-patient": 559,
-      "context-ehr-encounter": 559,
-      "context-standalone-patient": 559,
-      "permission-offline": 559,
-      "permission-patient": 559,
-      "permission-user": 559,
-      "sso-openid-connect": 559,
-      "client-confidential-asymmetric": 552,
-      "permission-v1": 552,
-      "permission-v2": 552,
-      "authorize-post": 552
+      "launch-ehr": 558,
+      "launch-standalone": 558,
+      "client-public": 558,
+      "client-confidential-symmetric": 558,
+      "context-banner": 558,
+      "context-style": 558,
+      "context-ehr-patient": 558,
+      "context-ehr-encounter": 558,
+      "context-standalone-patient": 558,
+      "permission-offline": 558,
+      "permission-patient": 558,
+      "permission-user": 558,
+      "sso-openid-connect": 558,
+      "client-confidential-asymmetric": 551,
+      "permission-v1": 551,
+      "permission-v2": 551,
+      "authorize-post": 551
     },
     "scope_count_distribution": {
-      "1-99": 559
+      "1-99": 558
     },
     "token_endpoint_auth_methods_distribution": {
-      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 559
+      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 558
     },
     "code_challenge_methods_distribution": {
-      "[\"S256\"]": 552,
+      "[\"S256\"]": 551,
       "[]": 7
     }
   },
@@ -7812,352 +7783,352 @@
     {
       "profile_id": "us-core-allergyintolerance",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-blood-pressure",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-bmi",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-height",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-temperature",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-weight",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careplan",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careteam",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition-encounter-diagnosis",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition-problems-health-concerns",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-coverage",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-note",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-documentreference",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-encounter",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-goal",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-head-circumference",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-heart-rate",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-immunization",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-implantable-device",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medication",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationdispense",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationrequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-clinical-result",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-occupation",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-pregnancyintent",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-pregnancystatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-screening-assessment",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-sexual-orientation",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-organization",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-patient",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitioner",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitionerrole",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-procedure",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-provenance",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-pulse-oximetry",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-relatedperson",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-respiratory-rate",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-servicerequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-simple-observation",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-smokingstatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-specimen",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-vital-signs",
       "in_us_core_baseline": true,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
@@ -8165,7 +8136,7 @@
       "profile_id": "us-core-location",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 555,
+      "customers_with_capstmt": 554,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -8173,31 +8144,31 @@
       "profile_id": "us-core-questionnaireresponse",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 555,
+      "customers_with_capstmt": 554,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
     {
       "profile_id": "head-occipital-frontal-circumference-percentile",
       "in_us_core_baseline": false,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-bmi-for-age",
       "in_us_core_baseline": false,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-weight-for-height",
       "in_us_core_baseline": false,
-      "customers_advertising": 548,
-      "customers_with_capstmt": 555,
+      "customers_advertising": 547,
+      "customers_with_capstmt": 554,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     }
@@ -8239,30 +8210,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "boomer.cchmc.org_fhir_api_fhir_R4",
-      "address": "https://boomer.cchmc.org/fhir/api/fhir/R4/",
-      "managing_organization_name": "Cincinnati Children's Hospital Medical Center",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "common.virginiahospitalcenter.com_FHIRPRD_api_FHIR_R4",
-      "address": "https://common.virginiahospitalcenter.com/FHIRPRD/api/FHIR/R4/",
-      "managing_organization_name": "Virginia Hospital Center",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "edhwebportal.hitchcock.org_FHIRProxy_api_FHIR_R4",
       "address": "https://edhwebportal.hitchcock.org/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "Dartmouth-Hitchcock",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "eiclbext.nmhs.net_interconnect-generaloauth2services-prd_api_FHIR_R4",
-      "address": "https://eiclbext.nmhs.net/interconnect-generaloauth2services-prd/api/FHIR/R4/",
-      "managing_organization_name": "North Mississippi Health Services",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8316,51 +8266,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epic-soap.uchealth.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epic-soap.uchealth.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "UC Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicarr.aahs.org_FHIR_api_FHIR_R4",
-      "address": "https://epicarr.aahs.org/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "Luminis Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicarr.emc.org_EMC_FHIR_PRD_api_FHIR_R4",
       "address": "https://epicarr.emc.org/EMC_FHIR_PRD/api/FHIR/R4/",
       "managing_organization_name": "Eisenhower Medical Center",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicarr.optum.com_FHIR_api_FHIR_R4",
-      "address": "https://epicarr.optum.com/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "OptumCare East",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicarr.rochesterregional.org_FHIR_api_FHIR_R4",
-      "address": "https://epicarr.rochesterregional.org/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "Rochester Regional Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicmobile.asante.org_FHIR-PRD_api_FHIR_R4",
-      "address": "https://epicmobile.asante.org/FHIR-PRD/api/FHIR/R4/",
-      "managing_organization_name": "Asante Health Systems",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicmobile.challiance.org_Interconnect-oauth2_api_FHIR_R4",
-      "address": "https://epicmobile.challiance.org/Interconnect-oauth2/api/FHIR/R4/",
-      "managing_organization_name": "Cambridge Health Alliance",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8372,23 +8280,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicpnwarr.optum.com_FHIR_api_FHIR_R4",
-      "address": "https://epicpnwarr.optum.com/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "OptumCare West",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicpproxy.southcoast.org_FHIR_api_FHIR_R4",
-      "address": "https://epicpproxy.southcoast.org/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "Southcoast Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy-pub.et1089.epichosted.com_FHIRProxy_api_FHIR_R4",
       "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "New York-Presbyterian",
+      "managing_organization_name": "Weill Cornell Medicine",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8421,23 +8315,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxy.et0857.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et0857.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Stanford Children's Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy.et0909.epichosted.com_APIProxyPRD_api_FHIR_R4",
       "address": "https://epicproxy.et0909.epichosted.com/APIProxyPRD/api/FHIR/R4/",
       "managing_organization_name": "UNIV OF TEXAS MD ANDERSON CANCER CENTER",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et0948.epichosted.com_FhirProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et0948.epichosted.com/FhirProxy/api/FHIR/R4/",
-      "managing_organization_name": "Select Medical",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8477,20 +8357,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxy.et1031.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1031.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Bryan Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1052.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1052.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Premise Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy.et1057.epichosted.com_FHIRProxy_api_FHIR_R4",
       "address": "https://epicproxy.et1057.epichosted.com/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "Molina Care Connections",
@@ -8505,44 +8371,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxy.et1123.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1123.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "AltaMed",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1126.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1126.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Exact Sciences",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1127.epichosted.com_FHIRproxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1127.epichosted.com/FHIRproxy/api/FHIR/R4/",
-      "managing_organization_name": "United Health Services New York (NYUHS)",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1130.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1130.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "UHS San Antonio",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy.et1138.epichosted.com_FHIRProxy_api_FHIR_R4",
       "address": "https://epicproxy.et1138.epichosted.com/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "Altais",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1144.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1144.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Catholic Health System (Buffalo)",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8568,30 +8399,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_ARMC_api_FHIR_R4",
-      "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/ARMC/api/FHIR/R4",
-      "managing_organization_name": "ARROWHEAD REGIONAL MEDICAL CENTER",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/api/FHIR/R4/",
-      "managing_organization_name": "Arrowhead Regional Medical Center",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy.et1154.epichosted.com_FHIRProxy_api_FHIR_R4",
       "address": "https://epicproxy.et1154.epichosted.com/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "Planned Parenthood",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1193.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1193.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "University of Louisville Physicians",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8603,13 +8413,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxy.et1243.epichosted.com_OAuth2-PRD_api_FHIR_R4",
-      "address": "https://epicproxy.et1243.epichosted.com/OAuth2-PRD/api/FHIR/R4/",
-      "managing_organization_name": "West Tennessee Healthcare",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy.et1275.epichosted.com_fhirproxy_api_FHIR_R4",
       "address": "https://epicproxy.et1275.epichosted.com/fhirproxy/api/FHIR/R4/",
       "managing_organization_name": "Sharp HealthCare",
@@ -8617,51 +8420,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxy.et1289.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1289.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Summa Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1290.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1290.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Community Technology Cooperative",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicproxy.et1299.epichosted.com_FHIRProxy_api_FHIR_R4",
       "address": "https://epicproxy.et1299.epichosted.com/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "Albany Med Health System",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1334.epichosted.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxy.et1334.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Benefis Health System",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1356.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
-      "address": "https://epicproxy.et1356.epichosted.com/FHIRProxyPRD/api/FHIR/R4/",
-      "managing_organization_name": "County of San Mateo",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1380.epichosted.com_APIPROXYPRD_api_FHIR_R4",
-      "address": "https://epicproxy.et1380.epichosted.com/APIPROXYPRD/api/FHIR/R4",
-      "managing_organization_name": "CHOCTAW NATION OF OKLAHOMA",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxy.et1387.epichosted.com_FHIRProxyPRD_HOME_api_FHIR_R4",
-      "address": "https://epicproxy.et1387.epichosted.com/FHIRProxyPRD/HOME/api/FHIR/R4",
-      "managing_organization_name": "TALLAHASSEE MEMORIAL HEALTHCARE",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8694,20 +8455,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicproxypda.nychhc.org_FHIRProxy_api_FHIR_R4",
-      "address": "https://epicproxypda.nychhc.org/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "NYC Health + Hospitals",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "epicproxyprd.solutionhealth.org_FHIR_PROD_api_FHIR_R4",
-      "address": "https://epicproxyprd.solutionhealth.org/FHIR_PROD/api/FHIR/R4/",
-      "managing_organization_name": "SolutionHealth",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicrp.firsthealth.org_FHIR-PRD_api_FHIR_R4",
       "address": "https://epicrp.firsthealth.org/FHIR-PRD/api/FHIR/R4/",
       "managing_organization_name": "FirstHealth of the Carolinas",
@@ -8715,16 +8462,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicrp.okheart.com_Oauth2Proxy_api_FHIR_R4",
-      "address": "https://epicrp.okheart.com/Oauth2Proxy/api/FHIR/R4/",
-      "managing_organization_name": "Oklahoma Heart Hospital",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "epicscripts.trihealth.com_fhirproxy_api_FHIR_R4",
       "address": "https://epicscripts.trihealth.com/fhirproxy/api/FHIR/R4/",
-      "managing_organization_name": "Highland District Hospital",
+      "managing_organization_name": "TriHealth",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8750,13 +8490,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "eprescribe.wfhc.org_FHIRproxy_api_FHIR_R4",
-      "address": "https://eprescribe.wfhc.org/FHIRproxy/api/FHIR/R4/",
-      "managing_organization_name": "Ascension Wisconsin",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "eprescribing.accesscommunityhealth.net_FHIR_api_FHIR_R4",
       "address": "https://eprescribing.accesscommunityhealth.net/FHIR/api/FHIR/R4/",
       "managing_organization_name": "Access Community Health Network",
@@ -8778,23 +8511,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "esp.ecommunity.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://esp.ecommunity.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Community Health Network",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "eweb.peninsula.org_FHIRProxy_api_FHIR_R4",
       "address": "https://eweb.peninsula.org/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "TidalHealth",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "external.fastmed.com_FHIRproxy_api_FHIR_R4",
-      "address": "https://external.fastmed.com/FHIRproxy/api/FHIR/R4/",
-      "managing_organization_name": "FastMed",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8813,51 +8532,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "fhir.dchstx.org_FHIR-External_api_FHIR_R4",
-      "address": "https://fhir.dchstx.org/FHIR-External/api/FHIR/R4/",
-      "managing_organization_name": "Driscoll Children's Hospital",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "fhir.epic.medical.washington.edu_FHIR-Proxy_api_FHIR_R4",
       "address": "https://fhir.epic.medical.washington.edu/FHIR-Proxy/api/FHIR/R4/",
       "managing_organization_name": "UW Medicine (Washington)",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "fhir.genesishcs.org_api_FHIR_R4",
-      "address": "https://fhir.genesishcs.org/api/FHIR/R4/",
-      "managing_organization_name": "Genesis Healthcare System",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_130_api_FHIR_R4",
-      "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/130/api/FHIR/R4/",
-      "managing_organization_name": "Kaiser Permanente Hawaii / Maui Health System",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_200_api_FHIR_R4",
-      "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/200/api/FHIR/R4/",
-      "managing_organization_name": "Kaiser Permanente \u2013 Georgia",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "fhir.kp.org_service_ptnt_care_EpicEdiFhirRoutingSvc_v2014_esb-envlbl_212_api_FHIR_R4",
-      "address": "https://fhir.kp.org/service/ptnt_care/EpicEdiFhirRoutingSvc/v2014/esb-envlbl/212/api/FHIR/R4/",
-      "managing_organization_name": "Kaiser Permanente - California - Southern",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "fhir.mainehealth.org_FHIRPRD_api_FHIR_R4",
-      "address": "https://fhir.mainehealth.org/FHIRPRD/api/FHIR/R4/",
-      "managing_organization_name": "MaineHealth",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8872,13 +8549,6 @@
       "endpoint_id": "fhir.metrohealth.org_fhir_prd_api_FHIR_R4",
       "address": "https://fhir.metrohealth.org/fhir_prd/api/FHIR/R4/",
       "managing_organization_name": "MetroHealth - OH",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "fhir.mvhealthsystem.org_FHIRproxy_api_FHIR_R4",
-      "address": "https://fhir.mvhealthsystem.org/FHIRproxy/api/FHIR/R4/",
-      "managing_organization_name": "Mohawk Valley Health System",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -8918,44 +8588,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "icon.utoledo.edu_ic-oa2-prd_api_FHIR_R4",
-      "address": "https://icon.utoledo.edu/ic-oa2-prd/api/FHIR/R4/",
-      "managing_organization_name": "University of Toledo",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "intconfg-p.well-net.org_PRD-OAUTH2_api_FHIR_R4",
-      "address": "https://intconfg-p.well-net.org/PRD-OAUTH2/api/FHIR/R4/",
-      "managing_organization_name": "Tufts Medicine",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "interconapps.uchospitals.edu_PRD-FHIR-Proxy_api_FHIR_R4",
-      "address": "https://interconapps.uchospitals.edu/PRD-FHIR-Proxy/api/FHIR/R4/",
-      "managing_organization_name": "UChicago Medicine",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "interconnect.carelonhealth.com_Interconnect-PRD-OAuth2_api_FHIR_R4",
       "address": "https://interconnect.carelonhealth.com/Interconnect-PRD-OAuth2/api/FHIR/R4/",
       "managing_organization_name": "Carelon",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "interconnect.wellspan.org_interconnect-prd-oauth2_api_FHIR_R4",
-      "address": "https://interconnect.wellspan.org/interconnect-prd-oauth2/api/FHIR/R4/",
-      "managing_organization_name": "WellSpan Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "lhspdxfhirprd.lhs.org_FHIR_api_FHIR_R4",
-      "address": "https://lhspdxfhirprd.lhs.org/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "Legacy Health",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9016,13 +8651,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "rp-prd.copcp.com_FHIRProxy_api_FHIR_R4",
-      "address": "https://rp-prd.copcp.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Central Ohio Primary Care Physicians",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "rp.catholichealth.net_fhir_api_FHIR_R4",
       "address": "https://rp.catholichealth.net/fhir/api/FHIR/R4/",
       "managing_organization_name": "Virginia Mason Franciscan Health",
@@ -9037,9 +8665,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "rp.stjude.org_oauth2-prd_api_FHIR_R4",
-      "address": "https://rp.stjude.org/oauth2-prd/api/FHIR/R4/",
-      "managing_organization_name": "St. Jude Children's Research Hospital",
+      "endpoint_id": "rp.chihealth.com_fhir_api_FHIR_R4",
+      "address": "https://rp.chihealth.com/fhir/api/FHIR/R4/",
+      "managing_organization_name": "CHI Health",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9058,20 +8686,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "scvhhsfhir.sccgov.org_interconnect-fhir_api_FHIR_R4",
-      "address": "https://scvhhsfhir.sccgov.org/interconnect-fhir/api/FHIR/R4/",
-      "managing_organization_name": "Santa Clara Valley Medical Center Hospitals and Clinics",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "sfd.fairview.org_FHIR_api_FHIR_R4",
-      "address": "https://sfd.fairview.org/FHIR/api/FHIR/R4/",
-      "managing_organization_name": "Fairview Health Services",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "sfd.stanfordmed.org_FHIR_api_FHIR_R4",
       "address": "https://sfd.stanfordmed.org/FHIR/api/FHIR/R4/",
       "managing_organization_name": "Stanford Health Care",
@@ -9079,44 +8693,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "soapprod.multicare.org_FHIRProxy_KH_api_FHIR_R4",
-      "address": "https://soapprod.multicare.org/FHIRProxy/KH/api/FHIR/R4/",
-      "managing_organization_name": "Kootenai Health",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "soapprod.multicare.org_FHIRProxy_api_FHIR_R4",
-      "address": "https://soapprod.multicare.org/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "MultiCare Health System",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "soapproxy.peacehealth.org_FHIRProxy_api_FHIR_R4",
-      "address": "https://soapproxy.peacehealth.org/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "PeaceHealth",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "soapproxy.umc.edu_FHIRProxy_api_FHIR_R4",
       "address": "https://soapproxy.umc.edu/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "University of Mississippi Medical Center",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "stofo.providence-waco.org_FHIRProxy_api_FHIR_R4",
-      "address": "https://stofo.providence-waco.org/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Ascension Providence",
-      "cluster_id": "epic-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "unified-api.ucsf.edu_clinical_apex_api_FHIR_R4",
-      "address": "https://unified-api.ucsf.edu/clinical/apex/api/FHIR/R4/",
-      "managing_organization_name": "UCSF Health",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9142,16 +8721,86 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "ws-interconnect-fhir.partners.org_Interconnect-FHIR-MU-PRD_api_FHIR_R4",
-      "address": "https://ws-interconnect-fhir.partners.org/Interconnect-FHIR-MU-PRD/api/FHIR/R4/",
-      "managing_organization_name": "Mass General Brigham",
-      "cluster_id": "epic-cluster-B",
+      "endpoint_id": "arr.thedacare.org_FHIR_BLN_api_FHIR_R4",
+      "address": "https://arr.thedacare.org/FHIR/BLN/api/FHIR/R4/",
+      "managing_organization_name": "Bellin Health",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "arr.thedacare.org_FHIR_TC_api_FHIR_R4",
+      "address": "https://arr.thedacare.org/FHIR/TC/api/FHIR/R4/",
+      "managing_organization_name": "ThedaCare",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicpproxy.southcoast.org_FHIR_api_FHIR_R4",
+      "address": "https://epicpproxy.southcoast.org/FHIR/api/FHIR/R4/",
+      "managing_organization_name": "Southcoast Health",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et0761.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "address": "https://epicproxy.et0761.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "managing_organization_name": "Tampa General Hospital",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1015.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "address": "https://epicproxy.et1015.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "managing_organization_name": "OrthoVirginia",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1024.epichosted.com_APIPROXYPRD_api_FHIR_R4",
+      "address": "https://epicproxy.et1024.epichosted.com/APIPROXYPRD/api/FHIR/R4/",
+      "managing_organization_name": "South Georgia Medical Center",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1024.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "address": "https://epicproxy.et1024.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "managing_organization_name": null,
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_ARMC_api_FHIR_R4",
+      "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/ARMC/api/FHIR/R4",
+      "managing_organization_name": "ARROWHEAD REGIONAL MEDICAL CENTER",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1152.epichosted.com_fhirproxy_api_FHIR_R4",
+      "address": "https://epicproxy.et1152.epichosted.com/fhirproxy/api/FHIR/R4/",
+      "managing_organization_name": "Arrowhead Regional Medical Center",
+      "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
     {
       "endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_BHJ_api_FHIR_R4",
       "address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/BHJ/api/FHIR/R4",
       "managing_organization_name": "BAPTIST HEALTH OF NORTHEAST FLORIDA",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1206.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "address": "https://epicproxy.et1206.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "managing_organization_name": "Baptist Health - Northeast Florida",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "epicproxy.et1233.epichosted.com_FHIRProxy_api_FHIR_R4",
+      "address": "https://epicproxy.et1233.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "managing_organization_name": "NCH Healthcare System",
       "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9291,7 +8940,7 @@
     {
       "endpoint_id": "epicproxy.et4001.epichosted.com_FHIRProxy_api_FHIR_R4",
       "address": "https://epicproxy.et4001.epichosted.com/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "East Cascades Women's Group",
+      "managing_organization_name": "Coastal Carolina Health Care",
       "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9303,60 +8952,102 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "epicprdproxy.nch.org_prd-fhir_api_FHIR_R4",
-      "address": "https://epicprdproxy.nch.org/prd-fhir/api/FHIR/R4/",
-      "managing_organization_name": "Northwest Community Hospital",
-      "cluster_id": "epic-cluster-D",
+      "endpoint_id": "epicservicegw.froedtert.com_FHIRProxyPRD_api_FHIR_R4",
+      "address": "https://epicserviceGW.froedtert.com/FHIRProxyPRD/api/FHIR/R4/",
+      "managing_organization_name": "Froedtert Health",
+      "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "fhirprd.edward.org_fhirprd_EEHOAUTH_api_FHIR_R4",
-      "address": "https://fhirprd.edward.org/fhirprd/EEHOAUTH/api/FHIR/R4/",
-      "managing_organization_name": "Edward-Elmhurst Healthcare",
-      "cluster_id": "epic-cluster-D",
+      "endpoint_id": "epicsoap.bmctotalcare.com_fhir_api_FHIR_R4",
+      "address": "https://epicsoap.bmctotalcare.com/fhir/api/FHIR/R4/",
+      "managing_organization_name": "Summit Health",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "eprdsoap000.saintfrancis.com_FHIRProxy_api_FHIR_R4",
+      "address": "https://eprdsoap000.saintfrancis.com/FHIRProxy/api/FHIR/R4/",
+      "managing_organization_name": "Saint Francis Health System",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "fhir.clinical.bcm.edu_stage1fhir_api_FHIR_R4",
+      "address": "https://fhir.clinical.bcm.edu/stage1fhir/api/FHIR/R4/",
+      "managing_organization_name": "Baylor College of Medicine",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "fhir.guthrie.org_FHIR-PRD_api_FHIR_R4",
+      "address": "https://fhir.guthrie.org/FHIR-PRD/api/FHIR/R4/",
+      "managing_organization_name": "The Guthrie Clinic",
+      "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
     {
       "endpoint_id": "haiku.northshore.org_Interconnect-FHIR_api_FHIR_R4",
       "address": "https://haiku.northshore.org/Interconnect-FHIR/api/FHIR/R4/",
       "managing_organization_name": "NorthShore University Health System",
-      "cluster_id": "epic-cluster-D",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "prd-proxy.vidanthealth.com_FHIR_api_FHIR_R4",
+      "address": "https://prd-proxy.vidanthealth.com/FHIR/api/FHIR/R4/",
+      "managing_organization_name": "Vidant Health",
+      "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
     {
       "endpoint_id": "proxy.healthpartners.com_FHIRProxy_api_FHIR_R4",
       "address": "https://proxy.healthpartners.com/FHIRProxy/api/FHIR/R4/",
       "managing_organization_name": "HealthPartners",
-      "cluster_id": "epic-cluster-D",
+      "cluster_id": "epic-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "ssproxy.osfhealthcare.org_fhir-proxy_api_FHIR_R4",
+      "address": "https://ssproxy.osfhealthcare.org/fhir-proxy/api/FHIR/R4/",
+      "managing_organization_name": "OSF HealthCare",
+      "cluster_id": "epic-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
     {
       "endpoint_id": "epicprdext.stfranciscare.org_FhirProxy_api_FHIR_R4",
       "address": "https://epicprdext.stfranciscare.org/FhirProxy/api/FHIR/R4/",
       "managing_organization_name": "Trinity Health of New England",
-      "cluster_id": "epic-cluster-E",
+      "cluster_id": "epic-cluster-D",
       "deviation_summary": "missing 47: head-occipital-frontal-circumference-percentile, pediatric-bmi-for-age, pediatric-weight-for-height\u2026"
     },
     {
       "endpoint_id": "w1soap.wakehealth.edu_fhirproxy_api_FHIR_R4",
       "address": "https://w1soap.wakehealth.edu/fhirproxy/api/FHIR/R4/",
       "managing_organization_name": "Atrium Health Wake Forest Baptist",
-      "cluster_id": "epic-cluster-E",
+      "cluster_id": "epic-cluster-D",
       "deviation_summary": "missing 47: head-occipital-frontal-circumference-percentile, pediatric-bmi-for-age, pediatric-weight-for-height\u2026"
     },
     {
       "endpoint_id": "fhir.mah.org_prd-fhir_api_FHIR_R4",
       "address": "https://fhir.mah.org/prd-fhir/api/FHIR/R4/",
       "managing_organization_name": "Mount Auburn Hospital",
-      "cluster_id": "epic-cluster-F",
+      "cluster_id": "epic-cluster-E",
       "deviation_summary": "missing 47: head-occipital-frontal-circumference-percentile, pediatric-bmi-for-age, pediatric-weight-for-height\u2026"
     },
     {
       "endpoint_id": "tpc-shield.tpcllp.com_FHIR_api_FHIR_R4",
       "address": "https://tpc-shield.tpcllp.com/FHIR/api/FHIR/R4/",
       "managing_organization_name": "The Portland Clinic",
-      "cluster_id": "epic-cluster-F",
+      "cluster_id": "epic-cluster-E",
       "deviation_summary": "missing 47: head-occipital-frontal-circumference-percentile, pediatric-bmi-for-age, pediatric-weight-for-height\u2026"
+    },
+    {
+      "endpoint_id": "epicprdproxy.nch.org_prd-fhir_api_FHIR_R4",
+      "address": "https://epicprdproxy.nch.org/prd-fhir/api/FHIR/R4/",
+      "managing_organization_name": "Northwest Community Hospital",
+      "cluster_id": "epic-cluster-F",
+      "deviation_summary": "shape differs but profile sets match"
     },
     {
       "endpoint_id": "mobileproxy.sjhsyr.org_FHIR_api_FHIR_R4",
@@ -9381,9 +9072,9 @@
     }
   ],
   "verification": {
-    "source_url": "tests/golden/production-fleet/epic/2026-04-27",
-    "source_quote": "Aggregated from 555 CapabilityStatements harvested under tests/golden/production-fleet/epic/2026-04-27/",
+    "source_url": "tests/golden/production-fleet/epic/2026-05-14",
+    "source_quote": "Aggregated from 554 CapabilityStatements harvested under tests/golden/production-fleet/epic/2026-05-14/",
     "verified_via": "epic_production_fleet",
-    "verified_date": "2026-04-27"
+    "verified_date": "2026-05-14"
   }
 }
