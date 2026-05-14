@@ -1,0 +1,155 @@
+{
+  "harvest_slug": "epic",
+  "captured_date": "2026-05-12",
+  "npd_release": "2026-05-07",
+  "input_bundle": "tests/golden/cross-vendor/epic-r4-endpoints-2026-04-27.json",
+  "input_endpoint_count": 451,
+  "npd_matched_count": 399,
+  "overlap_count": 141,
+  "net_new_count": 258,
+  "only_in_official_count": 310,
+  "sample_net_new": [
+    {
+      "address": "https://epicoxy.et0764.epichosted.com/FHIRProxy/api/FHIR/Rpr4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicporxy-pub.et1089.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicpoxy-pub.et1089.epichosted.com/FHIRProxy/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub-et1089.epichosted.com/FHIRProxy/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.ef1089.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.el1089.epichosted.com/FHIRProxy/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et.1089.epichosted.com/FHIRProxy/api/FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com./FHIRProxy/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com.FHIRProxy/api/FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIPRroxy/api/FHIR/R4",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIProxy/api/FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIR/R4",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRPROXY/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRPoxy/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxi/api/FHIR/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy?api/FHIR/DSTU2/",
+      "name": "IPT MEDICAL PC",
+      "npi": "1417387028",
+      "state": "NY"
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy/DSTU2/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy/api?FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    },
+    {
+      "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRProxy/api.FHIR/R4/",
+      "name": null,
+      "npi": null,
+      "state": null
+    }
+  ],
+  "sample_only_in_official": [
+    "https://api.baptist-health.org/Interconnect-FHIR/api/FHIR/R4",
+    "https://api.ccf.org/mu/api/FHIR/R4",
+    "https://api.valleyhealth.org/fhirproxy/api/FHIR/R4",
+    "https://apiservices.sutterhealth.org/ifs/api/FHIR/R4",
+    "https://appprd.childrensdayton.org/interconnect-prd-fhir/api/FHIR/R4",
+    "https://apps.mywvuchart.com/fhirproxy/api/FHIR/R4",
+    "https://arr.mysrhs.com/FHIR/api/FHIR/R4",
+    "https://arr.thedacare.org/FHIR/BLN/api/FHIR/R4",
+    "https://arr.thedacare.org/FHIR/TC/api/FHIR/R4",
+    "https://arr01.service.vumc.org/FHIR-PRD/api/FHIR/R4",
+    "https://arrprd.kdmc.net/fhir/api/FHIR/R4",
+    "https://arrprd.metrohealth.net/fhir/api/FHIR/R4",
+    "https://arrprd.mhhcc.org/OAuth2/api/FHIR/R4",
+    "https://arrprd.southeasthealth.org/FHIR/api/FHIR/R4",
+    "https://arrprod.midmichigan.net/ProdFHIR/api/FHIR/R4",
+    "https://arrprox.mednet.ucla.edu/FHIRPRD/api/FHIR/R4",
+    "https://boomer.cchmc.org/fhir/api/fhir/R4",
+    "https://ccpintconfg.ohiohealth.com/Interconnect-PRD-MUAPI/api/FHIR/R4",
+    "https://chperx.health-partners.org/Proxy-FHIR/api/FHIR/R4",
+    "https://cnesp001.carene.org/FHIR/api/FHIR/R4"
+  ]
+}

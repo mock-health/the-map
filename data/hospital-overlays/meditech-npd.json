@@ -1,0 +1,14 @@
+{
+  "vendor": "meditech",
+  "generated_at": "2026-05-14T16:23:40+00:00",
+  "source_npd_release": "2026-05-07",
+  "source_npd_index": "data/cms-npd/endpoint-identity-2026-05-07.json",
+  "summary": {
+    "fleet_total": 334,
+    "matched": 0,
+    "matched_with_npi": 0,
+    "unmatched": 334,
+    "by_strategy": {}
+  },
+  "matches": []
+}

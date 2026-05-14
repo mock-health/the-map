@@ -97,7 +97,37 @@
               "properties": {
                 "endpoint_id": { "type": "string" },
                 "address": { "type": ["string", "null"], "format": "uri" },
-                "managing_organization_name": { "type": ["string", "null"] }
+                "managing_organization_name": { "type": ["string", "null"] },
+                "npi": { "type": ["string", "null"], "description": "10-digit National Provider Identifier. Resolved from CMS NPD endpoint→Organization join (authoritative when present) with NPPES name+state fallback for the long tail. See identity_sources for provenance." },
+                "ccn": { "type": ["string", "null"], "description": "CMS Certification Number, from POS hospital catalog name+address Jaccard. Authoritative for hospitals; absent for non-facility providers." },
+                "pac_id": { "type": ["string", "null"], "description": "PECOS Associate Control ID. Stable across NPI changes — useful as a longitudinal join key. Filled from CMS PPEF enrollment extract when the endpoint's NPI is enrolled in Medicare." },
+                "state": { "type": ["string", "null"], "description": "2-letter state. Provenance order: NPD Org.address > POS hospital record > NPPES practice location." },
+                "city": { "type": ["string", "null"] },
+                "taxonomy": { "type": ["string", "null"], "description": "NUCC Healthcare Provider Taxonomy Code (e.g., '282N00000X' = Acute Care Hospital). Currently sourced from NPPES; characterizes the org's primary specialty/facility type." },
+                "medicare_provider_type": { "type": ["string", "null"], "description": "CMS-canonical Medicare provider-type description from PECOS PPEF (e.g., 'HOSPITAL', 'FQHC', 'AMBULATORY SURGICAL CENTER'). Complementary to NUCC taxonomy: this one's the Medicare billing category, taxonomy is the clinical specialty. Only populated when the endpoint's org NPI is actively enrolled in Medicare." },
+                "parent_org_name": { "type": ["string", "null"], "description": "From NPD OrganizationAffiliation hierarchy. Picks the most-recognizable system name (e.g., 'AdventHealth' over 'AdventHealth Tampa-FL Facility 22')." },
+                "parent_org_npi": { "type": ["string", "null"] },
+                "identity_sources": {
+                  "type": "array",
+                  "description": "Which overlay sources contributed to this endpoint's identity. Order reflects layering: npd / pos / nppes / pos_via_nppes / pecos. Useful for citation and confidence inspection.",
+                  "items": { "type": "string", "enum": ["npd", "pos", "nppes", "pos_via_nppes", "pecos"] }
+                }
+              }
+            }
+          },
+          "state_distribution": {
+            "type": "object",
+            "description": "Top states represented in this cluster, derived from per-endpoint state attribution.",
+            "additionalProperties": { "type": "integer", "minimum": 0 }
+          },
+          "recognizable_members": {
+            "type": "array",
+            "description": "Up to 10 distinct organization names in this cluster, ranked so a cluster page headline reads like names a clinician would recognize: (1) NPD-catalogued parents first (strongest 'these facilities roll up to this system' signal), (2) names repeating across endpoints, (3) singletons ranked by brand-quality heuristic (penalize legal-entity suffixes like LLC/PA/INC, reward healthcare keywords Hospital/Medical Center/Children's, reward mixed-case curated names). Tied entries break alphabetically. endpoint_count is the distinct count of endpoints in this cluster that reference the name (as parent_org_name or managing_organization_name).",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": { "type": "string" },
+                "endpoint_count": { "type": "integer", "minimum": 1 }
               }
             }
           }
