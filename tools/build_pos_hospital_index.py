@@ -182,9 +182,18 @@ def discover_input(explicit: str | None) -> Path:
             "or run `python -m tools.fetch_cms_pos` to download.\n"
             "Searched:\n  " + "\n  ".join(str(d) for d in DEFAULT_GLOB_DIRS)
         )
-    # Newest by mtime so we follow the latest fetch automatically. Lexical
-    # sort would break across naming conventions (zip vs csv).
-    return max(candidates, key=lambda p: p.stat().st_mtime)
+
+    # Preference: QIES first (it carries PRVDR_CTGRY_CD=01 hospital rows and is
+    # the canonical "primary" file), then legacy zip, then iQIES last. Within a
+    # tier, newest by mtime wins so contributors always follow the latest fetch.
+    def _tier(p: Path) -> int:
+        if POS_CSV_PATTERN.search(p.name):
+            return 0
+        if POS_ZIP_PATTERN.search(p.name):
+            return 1
+        return 2  # iQIES — no hospital rows; only useful as a sibling input
+
+    return min(candidates, key=lambda p: (_tier(p), -p.stat().st_mtime))
 
 
 def _quarter_start_date(quarter: int, year: int) -> str:
@@ -196,28 +205,33 @@ def captured_date_from_filename(p: Path) -> str:
     """Best-effort data-as-of date for a POS input file.
 
     Order of preference:
-      1. ``release_date`` from a sibling ``.provenance.json`` (canonical,
-         written by ``tools.fetch_cms_pos`` from the DCAT distribution title).
+      1. ``release_date`` from a sibling provenance JSON
+         (``.provenance.json``, ``.provenance-qies.json``, or
+         ``.provenance-iqies.json``) — canonical, written by
+         ``tools.fetch_cms_pos`` from the DCAT distribution title.
       2. Legacy zip filename ``..._YYYYMMDD.zip``.
-      3. New CSV filename ``Hospital_and_other.DATA.QX_YYYY.csv`` → first
-         day of quarter.
+      3. QIES CSV ``Hospital_and_other.DATA.QX_YYYY.csv`` or
+         iQIES CSV ``POS_File_iQIES_QX_YYYY.csv`` → first day of quarter.
     """
-    provenance = p.parent / ".provenance.json"
-    if provenance.is_file():
+    for prov_name in (".provenance.json", ".provenance-qies.json", ".provenance-iqies.json"):
+        provenance = p.parent / prov_name
+        if not provenance.is_file():
+            continue
         try:
             record = json.loads(provenance.read_text())
             release = record.get("release_date")
             if isinstance(release, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", release):
                 return release
         except (OSError, ValueError):
-            pass
+            continue
     m_zip = POS_ZIP_PATTERN.search(p.name)
     if m_zip:
         ymd = m_zip.group(1)
         return f"{ymd[:4]}-{ymd[4:6]}-{ymd[6:8]}"
-    m_csv = POS_CSV_PATTERN.search(p.name)
-    if m_csv:
-        return _quarter_start_date(int(m_csv.group(1)), int(m_csv.group(2)))
+    for csv_pattern in (POS_CSV_PATTERN, IQIES_CSV_PATTERN):
+        m_csv = csv_pattern.search(p.name)
+        if m_csv:
+            return _quarter_start_date(int(m_csv.group(1)), int(m_csv.group(2)))
     return ""
 
 
