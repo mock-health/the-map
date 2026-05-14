@@ -51,6 +51,18 @@ data/cms-nppes/orgs-*.jsonl
 data/cms-nppes/fhir-endpoints-*.json
 data/cms-pecos/enrollment-*.json
 
+# --- Raw CMS source files fetched by tools.fetch_cms_* ---
+# Multi-GB upstream archives (NPPES monthly zips, POS quarterly CSVs, PECOS
+# PPEF extracts, NPD weekly NDJSON.zst). Regenerable from CMS via
+# `make fetch-all-cms`; each dated subdir carries a .provenance.json with
+# source URL + sha256.
+/data/raw/
+
+# --- Verification reports (regenerable from `make verify-overlay-refresh`) ---
+# Timestamped per-run drift reports comparing committed overlays to a fresh
+# rebuild. Useful as evidence in a PR description; not a long-term artifact.
+/data/verification/
+
 # --- IDE ---
 .vscode/
 .idea/

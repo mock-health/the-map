@@ -15,8 +15,8 @@ alongside the downloads so the same parquet/json indexes can be rebuilt later.
 Default skips Practitioner (18GB compressed, no use case for the-map's
 endpoint→hospital identity work). Pass --all to include it.
 
-Storage layout (out-of-repo, parallels ~/back/data/pos/ for the POS pipeline):
-    $THE_MAP_CMS_NPD_DIR/  (default: ~/back/data/cms-npd/)
+Storage layout (in-repo, gitignored under ``/data/raw/``):
+    data/raw/cms-npd/
       {release_date}/
         manifest.json
         Endpoint.ndjson.zst
@@ -24,7 +24,10 @@ Storage layout (out-of-repo, parallels ~/back/data/pos/ for the POS pipeline):
         OrganizationAffiliation.ndjson.zst
         Location.ndjson.zst
         PractitionerRole.ndjson.zst
-        .download_complete
+        .provenance.json
+
+Set ``$THE_MAP_CMS_NPD_DIR`` to redirect the bucket location (useful if you
+already have an external ``~/back/data/cms-npd/`` cache from a prior version).
 
 Usage:
     python -m tools.fetch_cms_npd                          # default 5 files
@@ -36,33 +39,31 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
-import time
 from pathlib import Path
 
 import requests
 
+from tools._fetch import (
+    USER_AGENT,
+    archive_provenance,
+    dated_storage_dir,
+    format_bytes,
+    storage_root,
+    stream_download,
+)
+
 MANIFEST_URL = "https://directory.cms.gov/downloads/manifest.json"
 FILE_URL_TEMPLATE = "https://directory.cms.gov/downloads/{name}.zst"
+DATASET = "cms-npd"
+ENV_VAR = "THE_MAP_CMS_NPD_DIR"
 
 # Default fetch set. Practitioner (18GB compressed, ~5.5M records of individual
 # clinicians) is excluded by default: the-map cares about endpoint→organization
 # identity, not individual provider directories. --all includes it.
 DEFAULT_RESOURCES = ("Endpoint", "Organization", "OrganizationAffiliation", "Location", "PractitionerRole")
 ALL_RESOURCES = (*DEFAULT_RESOURCES, "Practitioner")
-
-USER_AGENT = (
-    "mockhealth-map/0.1 (+https://mock.health; nate@mock.health) cms-npd-fetcher"
-)
-
-
-def default_storage_dir() -> Path:
-    env = os.environ.get("THE_MAP_CMS_NPD_DIR")
-    if env:
-        return Path(env).expanduser()
-    return Path("~/back/data/cms-npd").expanduser()
 
 
 def _resource_from_filename(filename: str) -> str:
@@ -84,56 +85,12 @@ def fetch_manifest() -> dict:
     return r.json()
 
 
-def _format_bytes(n: int) -> str:
-    if n < 1024:
-        return f"{n} B"
-    if n < 1024 * 1024:
-        return f"{n / 1024:.1f} KB"
-    if n < 1024 * 1024 * 1024:
-        return f"{n / 1024 / 1024:.1f} MB"
-    return f"{n / 1024 / 1024 / 1024:.2f} GB"
-
-
-def stream_download(url: str, dest: Path, expected_bytes: int) -> None:
-    """Atomic download via .partial sidecar. No resume — re-fetch on failure
-    is cheap relative to dealing with stale signed URLs and Range edge cases."""
-    tmp = dest.with_suffix(dest.suffix + ".partial")
-    headers = {"User-Agent": USER_AGENT}
-    chunk_size = 1024 * 1024  # 1 MB
-
-    print(f"  Downloading {dest.name}  ({_format_bytes(expected_bytes)} expected)")
-    t0 = time.monotonic()
-    downloaded = 0
-    with requests.get(url, headers=headers, stream=True, timeout=300, allow_redirects=True) as resp:
-        resp.raise_for_status()
-        with tmp.open("wb") as f:
-            for chunk in resp.iter_content(chunk_size=chunk_size):
-                if not chunk:
-                    continue
-                f.write(chunk)
-                downloaded += len(chunk)
-                elapsed = time.monotonic() - t0
-                if elapsed > 0:
-                    mbps = downloaded / 1024 / 1024 / elapsed
-                    pct = 100 * downloaded / expected_bytes if expected_bytes else 0
-                    sys.stdout.write(
-                        f"\r    {_format_bytes(downloaded):>10s} / {_format_bytes(expected_bytes):<10s}"
-                        f"  ({pct:5.1f}%, {mbps:5.1f} MB/s)   "
-                    )
-                    sys.stdout.flush()
-    sys.stdout.write("\n")
-    sys.stdout.flush()
-
-    actual = tmp.stat().st_size
-    if expected_bytes and actual != expected_bytes:
-        tmp.unlink(missing_ok=True)
-        raise RuntimeError(
-            f"size mismatch for {dest.name}: got {actual} bytes, expected {expected_bytes}"
-        )
-    tmp.replace(dest)
-
-
-def fetch(resources: tuple[str, ...], storage_dir: Path, *, release_override: str | None = None) -> Path:
+def fetch(
+    resources: tuple[str, ...],
+    storage_dir: Path | None = None,
+    *,
+    release_override: str | None = None,
+) -> Path:
     print(f"Fetching manifest from {MANIFEST_URL}")
     manifest = fetch_manifest()
     files: dict[str, dict] = manifest.get("files") or {}
@@ -148,8 +105,11 @@ def fetch(resources: tuple[str, ...], storage_dir: Path, *, release_override: st
             f"CMS only publishes the current release; historical snapshots aren't backfetched."
         )
 
-    out_dir = storage_dir / release_date
-    out_dir.mkdir(parents=True, exist_ok=True)
+    if storage_dir is not None:
+        out_dir = storage_dir / release_date
+        out_dir.mkdir(parents=True, exist_ok=True)
+    else:
+        out_dir = dated_storage_dir(DATASET, release_date, env_var=ENV_VAR)
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 
     print(f"Release: {release_date}")
@@ -169,19 +129,30 @@ def fetch(resources: tuple[str, ...], storage_dir: Path, *, release_override: st
         plan.append((filename, info))
         total_bytes += info.get("compressed_bytes") or 0
 
-    print(f"Files to fetch: {len(plan)} ({_format_bytes(total_bytes)} compressed)")
+    print(f"Files to fetch: {len(plan)} ({format_bytes(total_bytes)} compressed)")
 
+    written: list[Path] = [out_dir / "manifest.json"]
     for filename, info in plan:
         resource = _resource_from_filename(filename)
         dest = out_dir / f"{resource}.ndjson.zst"
         expected = info.get("compressed_bytes") or 0
         if dest.exists() and (not expected or dest.stat().st_size == expected):
-            print(f"  {dest.name} already present ({_format_bytes(dest.stat().st_size)}), skipping")
+            print(f"  {dest.name} already present ({format_bytes(dest.stat().st_size)}), skipping")
+            written.append(dest)
             continue
         url = FILE_URL_TEMPLATE.format(name=filename)
-        stream_download(url, dest, expected)
+        stream_download(url, dest, expected_size=expected or None)
+        written.append(dest)
 
-    (out_dir / ".download_complete").write_text(release_date + "\n")
+    archive_provenance(
+        out_dir,
+        dataset=DATASET,
+        source_url=MANIFEST_URL,
+        release_date=release_date,
+        tool="tools/fetch_cms_npd.py",
+        files=written,
+        extra={"resources": list(resources)},
+    )
     print(f"\nDone. {len(plan)} files written to {out_dir}")
     return out_dir
 
@@ -190,7 +161,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--dir",
-        help="Storage directory (default: $THE_MAP_CMS_NPD_DIR or ~/back/data/cms-npd)",
+        help=f"Storage bucket directory (default: ${ENV_VAR} or <repo>/data/raw/{DATASET})",
     )
     ap.add_argument(
         "--files",
@@ -208,8 +179,12 @@ def main() -> int:
     )
     args = ap.parse_args()
 
-    storage_dir = Path(args.dir).expanduser() if args.dir else default_storage_dir()
+    if args.dir:
+        storage_dir: Path | None = Path(args.dir).expanduser()
+    else:
+        storage_dir = storage_root(DATASET, env_var=ENV_VAR)
 
+    resources: tuple[str, ...]
     if args.all:
         resources = ALL_RESOURCES
     elif args.files:
