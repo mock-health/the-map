@@ -157,10 +157,341 @@
     "notes": "Pending Phase B unblock."
   },
   "transport_findings": {
-    "notes": "Phase B authenticated transport measurement pending — blocked at consent. Phase F harvest of 542 production customer endpoints captured connection-rate findings: 64% reachable; gap is dominated by smaller-hospital infra (146 connection failures + 94 DNS + 55 TLS). See production_fleet.json:harvest_outcomes."
+    "notes": "Phase B authenticated transport measurement pending \u2014 blocked at consent. Phase F harvest of 542 production customer endpoints captured connection-rate findings: 64% reachable; gap is dominated by smaller-hospital infra (146 connection failures + 94 DNS + 55 TLS). See production_fleet.json:harvest_outcomes."
   },
   "search_param_observations": {},
-  "element_deviations": [],
+  "element_deviations": [
+    {
+      "profile_id": "us-core-allergyintolerance",
+      "path": "AllergyIntolerance.code",
+      "deviation_category": "nonstandard-system",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "nonstandard-system observed in 2 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): allergyintolerance-65bbbb92-a7fa-5063-a1b4-3dccd695a8e5.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "allergyintolerance-65bbbb92-a7fa-5063-a1b4-3dccd695a8e5.json",
+          "allergyintolerance-bundle.json"
+        ]
+      },
+      "row_id": "2e44c09f6a13"
+    },
+    {
+      "profile_id": "us-core-allergyintolerance",
+      "path": "AllergyIntolerance.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 2 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): allergyintolerance-65bbbb92-a7fa-5063-a1b4-3dccd695a8e5.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "allergyintolerance-65bbbb92-a7fa-5063-a1b4-3dccd695a8e5.json",
+          "allergyintolerance-bundle.json"
+        ]
+      },
+      "row_id": "d41b79a1100e"
+    },
+    {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "path": "Condition.code",
+      "deviation_category": "missing-coding",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-coding observed in 2 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): condition-5454cff8-a700-5686-8abd-bd80691402b8.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "condition-5454cff8-a700-5686-8abd-bd80691402b8.json",
+          "condition-bundle.json"
+        ]
+      },
+      "row_id": "695ffb4f2c4f"
+    },
+    {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "path": "Condition.code",
+      "deviation_category": "nonstandard-system",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "nonstandard-system observed in 13 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): condition-bundle.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json"
+        ]
+      },
+      "row_id": "5a1bcde3cb52"
+    },
+    {
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "path": "Condition.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 15 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): condition-5454cff8-a700-5686-8abd-bd80691402b8.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "condition-5454cff8-a700-5686-8abd-bd80691402b8.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json",
+          "condition-bundle.json"
+        ]
+      },
+      "row_id": "82b469e02e58"
+    },
+    {
+      "profile_id": "us-core-encounter",
+      "path": "Encounter.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 10 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): encounter-b51f59be-8422-56a0-afd9-f402f7f53802.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "encounter-b51f59be-8422-56a0-afd9-f402f7f53802.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json",
+          "encounter-bundle.json"
+        ]
+      },
+      "row_id": "82d931566e0c"
+    },
+    {
+      "profile_id": "us-core-observation-lab",
+      "path": "Observation.code",
+      "deviation_category": "missing-coding",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-coding observed in 3 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): observation-lab-LA.8435b4ea-30f5-5061-a294-f605af48f206.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "observation-lab-LA.8435b4ea-30f5-5061-a294-f605af48f206.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json"
+        ]
+      },
+      "row_id": "a11cf2a3961c"
+    },
+    {
+      "profile_id": "us-core-observation-lab",
+      "path": "Observation.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 21 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): observation-lab-LA.8435b4ea-30f5-5061-a294-f605af48f206.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "observation-lab-LA.8435b4ea-30f5-5061-a294-f605af48f206.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json",
+          "observation-lab-bundle.json"
+        ]
+      },
+      "row_id": "87dd9d3c79be"
+    },
+    {
+      "profile_id": "us-core-patient",
+      "path": "Patient.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 1 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): patient-9bec5771-4796-5189-a54e-352c571a44c8.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "patient-9bec5771-4796-5189-a54e-352c571a44c8.json"
+        ]
+      },
+      "row_id": "72c453786681"
+    },
+    {
+      "profile_id": "us-core-smokingstatus",
+      "path": "Observation.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 3 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): observation-social-history-SS.7ad7fbe0-47f5-51b5-809e-b2e473559043.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "observation-social-history-SS.7ad7fbe0-47f5-51b5-809e-b2e473559043.json",
+          "observation-social-history-bundle.json",
+          "observation-social-history-bundle.json"
+        ]
+      },
+      "row_id": "1e32b94a392d"
+    },
+    {
+      "profile_id": "us-core-vital-signs",
+      "path": "Observation.code",
+      "deviation_category": "duplicate-coding",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "duplicate-coding observed in 9 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): observation-vital-signs-VS.614e0902-b440-5057-a564-f3a37f97d938.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "observation-vital-signs-VS.614e0902-b440-5057-a564-f3a37f97d938.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json"
+        ]
+      },
+      "row_id": "3831106ec214"
+    },
+    {
+      "profile_id": "us-core-vital-signs",
+      "path": "Observation.meta",
+      "deviation_category": "missing-meta",
+      "expected_per_us_core": "USCDI requirement / US Core binding \u2014 see profile spec",
+      "observed_in_ehr": "missing-meta observed in 21 fixture(s) under tests/golden/meditech/phase-b-2026-04-28/",
+      "verification": {
+        "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/R4/",
+        "source_quote": "Observed in fixture(s): observation-vital-signs-VS.614e0902-b440-5057-a564-f3a37f97d938.json",
+        "verified_via": "meditech_greenfield_phase_b",
+        "verified_date": "2026-04-28"
+      },
+      "multi_patient_evidence": {
+        "category": "single-patient-canonical",
+        "fixtures_observed_in": [
+          "observation-vital-signs-VS.614e0902-b440-5057-a564-f3a37f97d938.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json",
+          "observation-vital-signs-bundle.json"
+        ]
+      },
+      "row_id": "a399c9e2e646"
+    }
+  ],
   "compatibility_statement": "MEDITECH Greenfield Workspace publishes a US Core STU6 v2.0.0 implementation (dated 2023-05-25) that is anonymous-readable for CapabilityStatement and SMART configuration. Authenticated probing is gated by an authorization_code flow with PKCE S256 and `client_secret_post`; identity is bound to a single operator-provisioned Google ID per client_id with no self-service management. As of 2026-04-27 the consent step rejects developer Google identities at Greenfield's user-to-client allowlist with a bare `error=access_denied` and no diagnostic body; the only documented recovery path is an email round-trip with greenfieldinfo@meditech.com. The Greenfield sandbox runs a US Core version (STU6) in use by almost no MEDITECH production customer per Phase F's harvest of 542 customer endpoints \u2014 most customers remain on the frozen R4 v1.0.0 baseline from 2021.",
   "pagination": {
     "link_relations": [
