@@ -161,5 +161,62 @@
   },
   "search_param_observations": {},
   "element_deviations": [],
-  "compatibility_statement": "MEDITECH Greenfield Workspace publishes a US Core STU6 v2.0.0 implementation (dated 2023-05-25) that is anonymous-readable for CapabilityStatement and SMART configuration. Authenticated probing is gated by an authorization_code flow with PKCE S256 and `client_secret_post`; identity is bound to a single operator-provisioned Google ID per client_id with no self-service management. As of 2026-04-27 the consent step rejects developer Google identities at Greenfield's user-to-client allowlist with a bare `error=access_denied` and no diagnostic body; the only documented recovery path is an email round-trip with greenfieldinfo@meditech.com. The Greenfield sandbox runs a US Core version (STU6) in use by almost no MEDITECH production customer per Phase F's harvest of 542 customer endpoints \u2014 most customers remain on the frozen R4 v1.0.0 baseline from 2021."
+  "compatibility_statement": "MEDITECH Greenfield Workspace publishes a US Core STU6 v2.0.0 implementation (dated 2023-05-25) that is anonymous-readable for CapabilityStatement and SMART configuration. Authenticated probing is gated by an authorization_code flow with PKCE S256 and `client_secret_post`; identity is bound to a single operator-provisioned Google ID per client_id with no self-service management. As of 2026-04-27 the consent step rejects developer Google identities at Greenfield's user-to-client allowlist with a bare `error=access_denied` and no diagnostic body; the only documented recovery path is an email round-trip with greenfieldinfo@meditech.com. The Greenfield sandbox runs a US Core version (STU6) in use by almost no MEDITECH production customer per Phase F's harvest of 542 customer endpoints \u2014 most customers remain on the frozen R4 v1.0.0 baseline from 2021.",
+  "pagination": {
+    "link_relations": [
+      "next",
+      "self"
+    ],
+    "next_url_format": "vendor-custom",
+    "default_page_size": 20,
+    "max_page_size_observed": 44,
+    "per_resource_page_overrides": {},
+    "per_resource_single_page_max": {
+      "AllergyIntolerance": 1,
+      "CarePlan": 2,
+      "CareTeam": 1,
+      "Condition": 14,
+      "DocumentReference": 7,
+      "Encounter": 9,
+      "Goal": 1,
+      "Immunization": 2,
+      "MedicationRequest": 16,
+      "Observation": 2,
+      "ServiceRequest": 44
+    },
+    "empty_bundle_shape": "unobserved",
+    "total_semantics": {
+      "label": "reflects_returned_match_count",
+      "evidence_fixture": "tests/golden/meditech/phase-b-2026-04-28/allergyintolerance-bundle.json",
+      "quote": "All 15 captured bundles with a Bundle.total have total==match_entry_count (e.g. tests/golden/meditech/phase-b-2026-04-28/allergyintolerance-bundle.json: total=1, matches=1)."
+    },
+    "token_stability": {
+      "label": "ttl_unknown_continue_cursor_is_resource_typed",
+      "evidence_fixture": "tests/golden/meditech/phase-b-2026-04-28/diagnosticreport-bundle.json",
+      "quote": "MEDITECH next URL uses `continue=<RESOURCETYPE-prefix>.<UUID>` (e.g. VS./LA./B76C...). No timestamp, no documented TTL."
+    },
+    "self_link_canonicalization_distribution": {
+      "echo_normalized": 15
+    },
+    "fixture_count_probed": 15,
+    "fixtures_with_next_link": 4,
+    "sample_next_urls": [
+      "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=F21A3E95-324B-48B8-A99C-BD0C3CB87BDC",
+      "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory&continue=LA.0878558F-C87D-4F89-B9C3-533FE13040BD",
+      "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=vital-signs&continue=VS.4EF43488-23EC-411D-8348-56BE9075308D",
+      "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=B76C6745-B501-4D63-8DE2-12CE8A81F0A3"
+    ],
+    "verification": {
+      "source_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
+      "source_quote": "Walked 15 Bundle fixtures under tests/golden/meditech/; 4 carried rel=next. Sample: tests/golden/meditech/phase-b-2026-04-28/diagnosticreport-bundle.json",
+      "verified_via": "meditech_public_sandbox",
+      "verified_date": "2026-05-15"
+    },
+    "probe_metadata": {
+      "verified_via_tool": "probe_pagination.py",
+      "verified_date": "2026-05-15",
+      "fixture_corpus_root": "tests/golden/meditech/"
+    },
+    "vital_signs_page_size_observed": 20
+  }
 }
