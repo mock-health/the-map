@@ -1,0 +1,1595 @@
+{
+  "kata": "KATA-CAPTURE-BUNDLE-LINK-SEMANTICS",
+  "kata_issue": 136,
+  "generated": "2026-05-15",
+  "per_vendor": {
+    "cerner": {
+      "vendor": "cerner",
+      "verified_date": "2026-05-15",
+      "verified_via": "cerner_public_sandbox",
+      "observations": [
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/allergyintolerance-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12724066",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 115,
+          "raw_entry_count": 115,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12724066",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/allergyintolerance-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12742399",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 76,
+          "raw_entry_count": 76,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12742399",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/condition-problems-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12724066&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 1623,
+          "raw_entry_count": 1623,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12724066&category=problem-list-item",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/condition-problems-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12742399&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 831,
+          "raw_entry_count": 831,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12742399&category=problem-list-item",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/condition-problems-12744580.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12744580&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 1,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12744580&category=problem-list-item",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/diagnosticreport-lab-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport?patient=12724066&category=LAB",
+          "resource_type": "DiagnosticReport",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 4,
+          "raw_entry_count": 4,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport?patient=12724066&category=LAB",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/diagnosticreport-lab-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport?patient=12742399&category=LAB",
+          "resource_type": "DiagnosticReport",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 2,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DiagnosticReport?patient=12742399&category=LAB",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/documentreference-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 10,
+          "raw_entry_count": 10,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066&-pageContext=eJxljb0KwjAURt_lriaQ22qtBRfdlOKgIJ1Kmh-rhKQ0CSql7251Kjh-H-dwBhAu2gAFMgJSaR7NNAYQsfeuhwL2h3SB1_K8e96rx_FUJZdyCwRa7murXhMb-qgIdPymauFs-H2gJcsEckZXuMnpskGk-TrNKMeEIWoldNbASMCHyZN11769dGIettGYeUZz4_86X2gcPwRdQIc%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/documentreference-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 10,
+          "raw_entry_count": 10,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399&-pageContext=eJxljcsKwjAUBf_lrhNoTFttwY2Cu-pC9-U2DyvEpORBldJ_t7oquDyHGWYC4ZKNULOMgFQak1nGBCL54DzUcDxjx57N9TA-7qO_nPit2QOBHkNr1Wtho0-KwIB31Qpn4-8DxjjfFl1OZck7muuM012lCyq05llZVSg3CDOBEBdPtkP_DtKJddgmY9YZjSb8db7QPH8Acn9BTA%3D%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/documentreference-12752183.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12752183",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 10,
+          "raw_entry_count": 10,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12752183",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12752183&-pageContext=eJxljb0KwjAURt_lriaQtDbVgotOCp0UxKncpolVQlKaBH9K393qVHD8Ps7hDCBdtAEKzgg0SmM00xhAxt67HgrYHd53fi6P28dtv7ikkp_KDRBo0VdWPSc29FER6PCqKuls-H2gVinjGUtohhrpUoic1onOqFgzRMnzTNQpjAR8mLym6tqXb5ych200Zp7RaPxf5wuN4wcZPUCS&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/encounter-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12724066",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 10,
+          "raw_entry_count": 10,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12724066",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12724066&-pageContext=af16655e-fbec-4a4a-a281-2814a69222a9&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/encounter-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12742399",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 10,
+          "raw_entry_count": 10,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12742399",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12742399&-pageContext=2ddcc8d7-9270-4fe0-afc0-b3ee2511977b&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/encounter-12752183.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12752183",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12752183",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/immunization-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization?patient=12742399",
+          "resource_type": "Immunization",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 24,
+          "match_entry_count": 24,
+          "raw_entry_count": 24,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Immunization?patient=12742399",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/medicationrequest-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724066",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 25,
+          "raw_entry_count": 25,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724066",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12724066&-pageContext=T3BlblBsYXRmb3JtRmhpckNvbnRleHQ9dHJ1ZSZwYWdlQ29udGV4dD04MDUxOTA2OTNfODA1MTkwNjk0XzEyNzI0MDY2XzFfMSZjb25jZXB0PWNoYXJ0ZWQ%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/medicationrequest-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12742399",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 25,
+          "raw_entry_count": 25,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12742399",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/MedicationRequest?patient=12742399&-pageContext=T3BlblBsYXRmb3JtRmhpckNvbnRleHQ9dHJ1ZSZwYWdlQ29udGV4dD04MDUxOTA3MDJfODA1MTkwNzAzXzEyNzQyMzk5XzFfMSZjb25jZXB0PWNoYXJ0ZWQ%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/observation-lab-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=laboratory",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 50,
+          "raw_entry_count": 50,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=laboratory",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=laboratory&-pageContext=eJxljc0KgkAURt_lbp2BRsdfaFNtXNSmB5CrzlVkGGN-KBLfPWsltPw-zuEs0M3BeKjSA4NeEQa9jQW6YN1soYLzNZvecX0_PadBRNHNXOojMBjRNUa9NtbboBg8cFBNNxv_-6BNyyQhJJ7lRFwKoXhBWPCSpBJ5KWNMe1gZOL95faOx3UdN0HqfINTur_GF1vUDOEQ_XQ%3D%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/observation-lab-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=laboratory",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 50,
+          "raw_entry_count": 50,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=laboratory",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=laboratory&-pageContext=eJxljbEOgjAURf_lzW2CUlohcdHBEAcHP4C8lgdiajG0DUbCv4tOJI735pycCUwfXYAiSxjU1GC0y5jAxMH3AxRwvFCbnsrrYbyP3fkh47vcA4Mb-srRa2HDEInBE1uqTO_C74OdMJnSmeTSCOQCU-K5VpKjyBXpJFebZgszAx8Wr64s6nXURWvXiQat_2t8oXn-AIYmP8E%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/observation-vital-signs-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 50,
+          "raw_entry_count": 50,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=vital-signs",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12724066&category=vital-signs&-pageContext=eJxljcEKgkAURf_lrWdgGg1TaFOLILBN7YfnczRhGMM3k5H471kroeW9nMOZgProAxRbJaC2DUa3jAkoDtwPUMDx8j5vTuX1MHbtjr0eb-UeBNyRjbevhQ1DtAIe2FpDvQ-_D2xaIWmdSUsZytRSInNFSuZ5ralKNCWZglkAh8WrzbML6Ax3red13Efn1qkGHf-1vtA8fwC7WUNl&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/observation-vital-signs-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 50,
+          "raw_entry_count": 50,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=vital-signs",
+          "next_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12742399&category=vital-signs&-pageContext=eJxljcsKwjAUBf_lrhOwNDGk4EZ3haKi4DKkSfqQmEoeKpb-u9VVweU5zDAjqCG5CAVdIdCmkcnOYwSVfBg8FLAr94f3pTptn9fjLXrVnasNIOhkEM68Zjb6ZBDcZWuEGlz8fcBVxmiTc7ymrMYkyyXmmhBcK024MVpTxmBCEOLsafHoo7Qi9K0Ly7hL1i5TjbThr_WFpukD3otDoA%3D%3D&-pageDirection=NEXT",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/observation-vital-signs-12752183.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12752183&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 1,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Observation?patient=12752183&category=vital-signs",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/procedure-12724066.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12724066",
+          "resource_type": "Procedure",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 535,
+          "raw_entry_count": 535,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12724066",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/cerner/phase-b-2026-04-27/procedure-12742399.json",
+          "request_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12742399",
+          "resource_type": "Procedure",
+          "vital_signs": false,
+          "bundle_total_field_present": false,
+          "bundle_total_value": null,
+          "match_entry_count": 37,
+          "raw_entry_count": 37,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Procedure?patient=12742399",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        }
+      ],
+      "fixture_count": 23,
+      "fixtures_with_next_link": 11,
+      "link_relations_observed": [
+        "next",
+        "self"
+      ],
+      "link_relations_distribution": {
+        "self": 23,
+        "next": 11
+      },
+      "next_url_format_distribution": {
+        "vendor-custom": 11
+      },
+      "self_link_canonicalization_distribution": {
+        "echo_exact": 23
+      },
+      "empty_bundle_shape_distribution": {},
+      "bundle_total_present_count": 2,
+      "bundle_total_omitted_count": 21,
+      "next_url_format": "vendor-custom",
+      "default_page_size": 10,
+      "max_page_size_observed": 1623,
+      "per_resource_page_overrides": {
+        "MedicationRequest": 25,
+        "Observation": 50
+      },
+      "per_resource_single_page_max": {
+        "AllergyIntolerance": 115,
+        "Condition": 1623,
+        "DiagnosticReport": 4,
+        "Encounter": 1,
+        "Immunization": 24,
+        "Observation": 1,
+        "Procedure": 535
+      },
+      "vital_signs_page_size_observed": 50,
+      "empty_bundle_shape": "unobserved",
+      "total_semantics": {
+        "label": "absent_in_most_captures",
+        "evidence_fixture": "tests/golden/cerner/phase-b-2026-04-27/allergyintolerance-12724066.json",
+        "quote": "21/23 captured Cerner bundles omit Bundle.total entirely (no `total` key); the remaining 2 include a total that matches match_entry_count (e.g. immunization-12742399.json: total=24, matches=24)."
+      },
+      "token_stability": {
+        "label": "ttl_unknown_no_timestamp_in_token",
+        "evidence_fixture": "tests/golden/cerner/phase-b-2026-04-27/documentreference-12724066.json",
+        "quote": "Cerner next URL embeds an opaque pageContext (UUID/base64). No timestamp component, no documented TTL in measured fixtures."
+      },
+      "sample_next_urls": [
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066&-pageContext=eJxljb0KwjAURt_lriaQ22qtBRfdlOKgIJ1Kmh-rhKQ0CSql7251Kjh-H-dwBhAu2gAFMgJSaR7NNAYQsfeuhwL2h3SB1_K8e96rx_FUJZdyCwRa7murXhMb-qgIdPymauFs-H2gJcsEckZXuMnpskGk-TrNKMeEIWoldNbASMCHyZN11769dGIettGYeUZz4_86X2gcPwRdQIc%3D&-pageDirection=NEXT",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399&-pageContext=eJxljcsKwjAUBf_lrhNoTFttwY2Cu-pC9-U2DyvEpORBldJ_t7oquDyHGWYC4ZKNULOMgFQak1nGBCL54DzUcDxjx57N9TA-7qO_nPit2QOBHkNr1Wtho0-KwIB31Qpn4-8DxjjfFl1OZck7muuM012lCyq05llZVSg3CDOBEBdPtkP_DtKJddgmY9YZjSb8db7QPH8Acn9BTA%3D%3D&-pageDirection=NEXT",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12752183&-pageContext=eJxljb0KwjAURt_lriaQtDbVgotOCp0UxKncpolVQlKaBH9K393qVHD8Ps7hDCBdtAEKzgg0SmM00xhAxt67HgrYHd53fi6P28dtv7ikkp_KDRBo0VdWPSc29FER6PCqKuls-H2gVinjGUtohhrpUoic1onOqFgzRMnzTNQpjAR8mLym6tqXb5ych200Zp7RaPxf5wuN4wcZPUCS&-pageDirection=NEXT",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12724066&-pageContext=af16655e-fbec-4a4a-a281-2814a69222a9&-pageDirection=NEXT",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12742399&-pageContext=2ddcc8d7-9270-4fe0-afc0-b3ee2511977b&-pageDirection=NEXT"
+      ],
+      "sample_self_urls": [
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12724066",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/AllergyIntolerance?patient=12742399",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12724066&category=problem-list-item",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12742399&category=problem-list-item",
+        "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Condition?patient=12744580&category=problem-list-item"
+      ]
+    },
+    "epic": {
+      "vendor": "epic",
+      "verified_date": "2026-05-15",
+      "verified_via": "epic_public_sandbox",
+      "observations": [
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/allergyintolerance-e0w0LEDCYtfckT6N.CkJKCw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 3,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/allergyintolerance-eD.LxhDyX35TntF77l7etUA3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eD.LxhDyX35TntF77l7etUA3",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 3,
+          "match_entry_count": 3,
+          "raw_entry_count": 4,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eD.LxhDyX35TntF77l7etUA3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/allergyintolerance-eq081-VQEgP8drUUqCWzHfw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/allergyintolerance.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-encounter-diag-eD.LxhDyX35TntF77l7etUA3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eD.LxhDyX35TntF77l7etUA3&category=encounter-diagnosis",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=encounter-diagnosis&patient=eD.LxhDyX35TntF77l7etUA3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-encounter-diag-eq081-VQEgP8drUUqCWzHfw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eq081-VQEgP8drUUqCWzHfw3&category=encounter-diagnosis",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=encounter-diagnosis&patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-encounter-diag-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=erXuFYUfucBZaryVksYEcMg3&category=encounter-diagnosis",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 6,
+          "match_entry_count": 6,
+          "raw_entry_count": 7,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=encounter-diagnosis&patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-health-concern.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eq081-VQEgP8drUUqCWzHfw3&category=health-concern",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 0,
+          "match_entry_count": 0,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=health-concern&patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": "mode_outcome_entry",
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-problems-eD.LxhDyX35TntF77l7etUA3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eD.LxhDyX35TntF77l7etUA3&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 7,
+          "match_entry_count": 7,
+          "raw_entry_count": 8,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=problem-list-item&patient=eD.LxhDyX35TntF77l7etUA3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-problems-eIXesllypH3M9tAA5WdJftQ3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eIXesllypH3M9tAA5WdJftQ3&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 3,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=problem-list-item&patient=eIXesllypH3M9tAA5WdJftQ3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-problems-evYS76EX6LLeCX2PlRLhvwg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=evYS76EX6LLeCX2PlRLhvwg3&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 4,
+          "match_entry_count": 4,
+          "raw_entry_count": 5,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=problem-list-item&patient=evYS76EX6LLeCX2PlRLhvwg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/condition-problems.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?patient=eq081-VQEgP8drUUqCWzHfw3&category=problem-list-item",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=problem-list-item&patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/diagnosticreport-lab-e0w0LEDCYtfckT6N.CkJKCw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?patient=e0w0LEDCYtfckT6N.CkJKCw3&category=LAB",
+          "resource_type": "DiagnosticReport",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?category=LAB&patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/diagnosticreport-lab-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?patient=erXuFYUfucBZaryVksYEcMg3&category=LAB",
+          "resource_type": "DiagnosticReport",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 4,
+          "match_entry_count": 4,
+          "raw_entry_count": 5,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DiagnosticReport?category=LAB&patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/documentreference-e0w0LEDCYtfckT6N.CkJKCw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 18,
+          "match_entry_count": 18,
+          "raw_entry_count": 18,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/documentreference-eq081-VQEgP8drUUqCWzHfw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 20,
+          "match_entry_count": 20,
+          "raw_entry_count": 20,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/documentreference-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=erXuFYUfucBZaryVksYEcMg3",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 70,
+          "match_entry_count": 70,
+          "raw_entry_count": 70,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/DocumentReference?patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/encounter-eD.LxhDyX35TntF77l7etUA3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eD.LxhDyX35TntF77l7etUA3",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 3,
+          "match_entry_count": 3,
+          "raw_entry_count": 4,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eD.LxhDyX35TntF77l7etUA3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/encounter-eq081-VQEgP8drUUqCWzHfw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/encounter-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=erXuFYUfucBZaryVksYEcMg3",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 10,
+          "match_entry_count": 10,
+          "raw_entry_count": 11,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/encounter.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Encounter?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/immunization-eAB3mDIBBcyUKviyzrxsnAw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=eAB3mDIBBcyUKviyzrxsnAw3",
+          "resource_type": "Immunization",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 7,
+          "match_entry_count": 7,
+          "raw_entry_count": 8,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=eAB3mDIBBcyUKviyzrxsnAw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/immunization-eD.LxhDyX35TntF77l7etUA3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=eD.LxhDyX35TntF77l7etUA3",
+          "resource_type": "Immunization",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 3,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=eD.LxhDyX35TntF77l7etUA3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/immunization-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=erXuFYUfucBZaryVksYEcMg3",
+          "resource_type": "Immunization",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Immunization?patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/medicationrequest-eAB3mDIBBcyUKviyzrxsnAw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=eAB3mDIBBcyUKviyzrxsnAw3",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 3,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=eAB3mDIBBcyUKviyzrxsnAw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/medicationrequest-eD.LxhDyX35TntF77l7etUA3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=eD.LxhDyX35TntF77l7etUA3",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 9,
+          "match_entry_count": 9,
+          "raw_entry_count": 10,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=eD.LxhDyX35TntF77l7etUA3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/medicationrequest-evYS76EX6LLeCX2PlRLhvwg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=evYS76EX6LLeCX2PlRLhvwg3",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 5,
+          "match_entry_count": 5,
+          "raw_entry_count": 6,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=evYS76EX6LLeCX2PlRLhvwg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/medicationrequest.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/MedicationRequest?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-lab-e0w0LEDCYtfckT6N.CkJKCw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=e0w0LEDCYtfckT6N.CkJKCw3&category=laboratory",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=laboratory&patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-lab-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=erXuFYUfucBZaryVksYEcMg3&category=laboratory",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 5,
+          "match_entry_count": 5,
+          "raw_entry_count": 6,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=laboratory&patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-lab.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=eq081-VQEgP8drUUqCWzHfw3&category=laboratory",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 0,
+          "match_entry_count": 0,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=laboratory&patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": "mode_outcome_entry",
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-eAB3mDIBBcyUKviyzrxsnAw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=eAB3mDIBBcyUKviyzrxsnAw3&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 388,
+          "match_entry_count": 388,
+          "raw_entry_count": 389,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=vital-signs&patient=eAB3mDIBBcyUKviyzrxsnAw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-eq081-VQEgP8drUUqCWzHfw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=eq081-VQEgP8drUUqCWzHfw3&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1000,
+          "match_entry_count": 1000,
+          "raw_entry_count": 1000,
+          "link_relations": [
+            "next",
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=vital-signs&patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?sessionID=16-AB6401F741B911F1BE0E005056BECC4A",
+          "next_url_format": "opaque-base64",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=erXuFYUfucBZaryVksYEcMg3&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 245,
+          "match_entry_count": 245,
+          "raw_entry_count": 246,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=vital-signs&patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/observation-vitals.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?patient=eq081-VQEgP8drUUqCWzHfw3&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1000,
+          "match_entry_count": 1000,
+          "raw_entry_count": 1000,
+          "link_relations": [
+            "next",
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?category=vital-signs&patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?sessionID=16-E90EE22641B311F1BE0E005056BECC4A",
+          "next_url_format": "opaque-base64",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/procedure-e0w0LEDCYtfckT6N.CkJKCw3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "resource_type": "Procedure",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/procedure-erXuFYUfucBZaryVksYEcMg3.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=erXuFYUfucBZaryVksYEcMg3",
+          "resource_type": "Procedure",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 3,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=erXuFYUfucBZaryVksYEcMg3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_exact"
+        },
+        {
+          "fixture": "tests/golden/epic/phase-b-2026-04-26/procedure.json",
+          "request_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "resource_type": "Procedure",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 0,
+          "match_entry_count": 0,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Procedure?patient=eq081-VQEgP8drUUqCWzHfw3",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": "mode_outcome_entry",
+          "self_link_canonicalization": "echo_exact"
+        }
+      ],
+      "fixture_count": 38,
+      "fixtures_with_next_link": 2,
+      "link_relations_observed": [
+        "next",
+        "self"
+      ],
+      "link_relations_distribution": {
+        "self": 38,
+        "next": 2
+      },
+      "next_url_format_distribution": {
+        "opaque-base64": 2
+      },
+      "self_link_canonicalization_distribution": {
+        "echo_exact": 21,
+        "echo_normalized": 17
+      },
+      "empty_bundle_shape_distribution": {
+        "mode_outcome_entry": 3
+      },
+      "bundle_total_present_count": 38,
+      "bundle_total_omitted_count": 0,
+      "next_url_format": "opaque-base64",
+      "default_page_size": 1000,
+      "max_page_size_observed": 1000,
+      "per_resource_page_overrides": {},
+      "per_resource_single_page_max": {
+        "AllergyIntolerance": 3,
+        "Condition": 7,
+        "DiagnosticReport": 4,
+        "DocumentReference": 70,
+        "Encounter": 10,
+        "Immunization": 7,
+        "MedicationRequest": 9,
+        "Observation": 388,
+        "Procedure": 2
+      },
+      "vital_signs_page_size_observed": 1000,
+      "empty_bundle_shape": "mode_outcome_entry",
+      "total_semantics": {
+        "label": "reflects_page_size_when_count_set",
+        "evidence_fixture": "tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-paginated-with-total-2026-05-02.json",
+        "quote": "page_count_5: bundle_total=5 entry_count=5; page_count_1000: bundle_total=1000 entry_count=1000 — Bundle.total tracks the page payload, not the unbounded match set."
+      },
+      "token_stability": {
+        "label": "stable_within_session_offline_observation",
+        "evidence_fixture": "ehrs/epic/overlay.json:pagination_overlay.next_token_stable_across_pages",
+        "quote": "next_token_stable_across_pages: true (walked 2 pages; URLs did not duplicate or drift). TTL unmeasured offline."
+      },
+      "sample_next_urls": [
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?sessionID=16-AB6401F741B911F1BE0E005056BECC4A",
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?sessionID=16-E90EE22641B311F1BE0E005056BECC4A"
+      ],
+      "sample_self_urls": [
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=e0w0LEDCYtfckT6N.CkJKCw3",
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eD.LxhDyX35TntF77l7etUA3",
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eq081-VQEgP8drUUqCWzHfw3",
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/AllergyIntolerance?patient=eq081-VQEgP8drUUqCWzHfw3",
+        "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Condition?category=encounter-diagnosis&patient=eD.LxhDyX35TntF77l7etUA3"
+      ]
+    },
+    "meditech": {
+      "vendor": "meditech",
+      "verified_date": "2026-05-15",
+      "verified_via": "meditech_public_sandbox",
+      "observations": [
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/allergyintolerance-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/AllergyIntolerance?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "AllergyIntolerance",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/AllergyIntolerance?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/careplan-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CarePlan?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "CarePlan",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CarePlan?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/careteam-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/CareTeam?_id=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "CareTeam",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CareTeam?_id=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/condition-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Condition?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "Condition",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 14,
+          "match_entry_count": 14,
+          "raw_entry_count": 14,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/diagnosticreport-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "DiagnosticReport",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 20,
+          "match_entry_count": 20,
+          "raw_entry_count": 20,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=F21A3E95-324B-48B8-A99C-BD0C3CB87BDC",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/documentreference-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/DocumentReference?patient.identifier=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "DocumentReference",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 7,
+          "match_entry_count": 7,
+          "raw_entry_count": 7,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DocumentReference?patient.identifier=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/encounter-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Encounter?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "Encounter",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 9,
+          "match_entry_count": 9,
+          "raw_entry_count": 9,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Encounter?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/goal-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Goal?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "Goal",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 1,
+          "match_entry_count": 1,
+          "raw_entry_count": 1,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Goal?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/immunization-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Immunization?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "Immunization",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Immunization?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/medicationrequest-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/MedicationRequest?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "MedicationRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 16,
+          "match_entry_count": 16,
+          "raw_entry_count": 16,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/MedicationRequest?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/observation-lab-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 20,
+          "match_entry_count": 20,
+          "raw_entry_count": 20,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory",
+          "next_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory&continue=LA.0878558F-C87D-4F89-B9C3-533FE13040BD",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/observation-social-history-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=social-history",
+          "resource_type": "Observation",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 2,
+          "match_entry_count": 2,
+          "raw_entry_count": 2,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=social-history",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/observation-vital-signs-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=vital-signs",
+          "resource_type": "Observation",
+          "vital_signs": true,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 20,
+          "match_entry_count": 20,
+          "raw_entry_count": 20,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=vital-signs",
+          "next_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=vital-signs&continue=VS.4EF43488-23EC-411D-8348-56BE9075308D",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/procedure-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "Procedure",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 20,
+          "match_entry_count": 20,
+          "raw_entry_count": 20,
+          "link_relations": [
+            "self",
+            "next"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=B76C6745-B501-4D63-8DE2-12CE8A81F0A3",
+          "next_url_format": "vendor-custom",
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        },
+        {
+          "fixture": "tests/golden/meditech/phase-b-2026-04-28/servicerequest-bundle.json",
+          "request_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/ServiceRequest?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "resource_type": "ServiceRequest",
+          "vital_signs": false,
+          "bundle_total_field_present": true,
+          "bundle_total_value": 44,
+          "match_entry_count": 44,
+          "raw_entry_count": 44,
+          "link_relations": [
+            "self"
+          ],
+          "self_url": "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/ServiceRequest?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+          "next_url": null,
+          "next_url_format": null,
+          "empty_bundle_shape": null,
+          "self_link_canonicalization": "echo_normalized"
+        }
+      ],
+      "fixture_count": 15,
+      "fixtures_with_next_link": 4,
+      "link_relations_observed": [
+        "next",
+        "self"
+      ],
+      "link_relations_distribution": {
+        "self": 15,
+        "next": 4
+      },
+      "next_url_format_distribution": {
+        "vendor-custom": 4
+      },
+      "self_link_canonicalization_distribution": {
+        "echo_normalized": 15
+      },
+      "empty_bundle_shape_distribution": {},
+      "bundle_total_present_count": 15,
+      "bundle_total_omitted_count": 0,
+      "next_url_format": "vendor-custom",
+      "default_page_size": 20,
+      "max_page_size_observed": 44,
+      "per_resource_page_overrides": {},
+      "per_resource_single_page_max": {
+        "AllergyIntolerance": 1,
+        "CarePlan": 2,
+        "CareTeam": 1,
+        "Condition": 14,
+        "DocumentReference": 7,
+        "Encounter": 9,
+        "Goal": 1,
+        "Immunization": 2,
+        "MedicationRequest": 16,
+        "Observation": 2,
+        "ServiceRequest": 44
+      },
+      "vital_signs_page_size_observed": 20,
+      "empty_bundle_shape": "unobserved",
+      "total_semantics": {
+        "label": "reflects_returned_match_count",
+        "evidence_fixture": "tests/golden/meditech/phase-b-2026-04-28/allergyintolerance-bundle.json",
+        "quote": "All 15 captured bundles with a Bundle.total have total==match_entry_count (e.g. tests/golden/meditech/phase-b-2026-04-28/allergyintolerance-bundle.json: total=1, matches=1)."
+      },
+      "token_stability": {
+        "label": "ttl_unknown_continue_cursor_is_resource_typed",
+        "evidence_fixture": "tests/golden/meditech/phase-b-2026-04-28/diagnosticreport-bundle.json",
+        "quote": "MEDITECH next URL uses `continue=<RESOURCETYPE-prefix>.<UUID>` (e.g. VS./LA./B76C...). No timestamp, no documented TTL."
+      },
+      "sample_next_urls": [
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=F21A3E95-324B-48B8-A99C-BD0C3CB87BDC",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=laboratory&continue=LA.0878558F-C87D-4F89-B9C3-533FE13040BD",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Observation?patient=9bec5771-4796-5189-a54e-352c571a44c8&category=vital-signs&continue=VS.4EF43488-23EC-411D-8348-56BE9075308D",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Procedure?patient=9bec5771-4796-5189-a54e-352c571a44c8&continue=B76C6745-B501-4D63-8DE2-12CE8A81F0A3"
+      ],
+      "sample_self_urls": [
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/AllergyIntolerance?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CarePlan?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/CareTeam?_id=9bec5771-4796-5189-a54e-352c571a44c8",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/Condition?patient=9bec5771-4796-5189-a54e-352c571a44c8",
+        "https://greenfield-prod-apis.meditech.com:443/v2/uscore/STU6/DiagnosticReport?patient=9bec5771-4796-5189-a54e-352c571a44c8"
+      ]
+    }
+  }
+}

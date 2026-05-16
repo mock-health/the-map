@@ -6817,5 +6817,62 @@
       "verified_via": "cerner_public_sandbox",
       "verified_date": "2026-04-27"
     }
+  },
+  "pagination": {
+    "link_relations": [
+      "next",
+      "self"
+    ],
+    "next_url_format": "vendor-custom",
+    "default_page_size": 10,
+    "max_page_size_observed": 1623,
+    "per_resource_page_overrides": {
+      "MedicationRequest": 25,
+      "Observation": 50
+    },
+    "per_resource_single_page_max": {
+      "AllergyIntolerance": 115,
+      "Condition": 1623,
+      "DiagnosticReport": 4,
+      "Encounter": 1,
+      "Immunization": 24,
+      "Observation": 1,
+      "Procedure": 535
+    },
+    "empty_bundle_shape": "unobserved",
+    "total_semantics": {
+      "label": "absent_in_most_captures",
+      "evidence_fixture": "tests/golden/cerner/phase-b-2026-04-27/allergyintolerance-12724066.json",
+      "quote": "21/23 captured Cerner bundles omit Bundle.total entirely (no `total` key); the remaining 2 include a total that matches match_entry_count (e.g. immunization-12742399.json: total=24, matches=24)."
+    },
+    "token_stability": {
+      "label": "ttl_unknown_no_timestamp_in_token",
+      "evidence_fixture": "tests/golden/cerner/phase-b-2026-04-27/documentreference-12724066.json",
+      "quote": "Cerner next URL embeds an opaque pageContext (UUID/base64). No timestamp component, no documented TTL in measured fixtures."
+    },
+    "self_link_canonicalization_distribution": {
+      "echo_exact": 23
+    },
+    "fixture_count_probed": 23,
+    "fixtures_with_next_link": 11,
+    "sample_next_urls": [
+      "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12724066&-pageContext=eJxljb0KwjAURt_lriaQ22qtBRfdlOKgIJ1Kmh-rhKQ0CSql7251Kjh-H-dwBhAu2gAFMgJSaR7NNAYQsfeuhwL2h3SB1_K8e96rx_FUJZdyCwRa7murXhMb-qgIdPymauFs-H2gJcsEckZXuMnpskGk-TrNKMeEIWoldNbASMCHyZN11769dGIettGYeUZz4_86X2gcPwRdQIc%3D&-pageDirection=NEXT",
+      "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12742399&-pageContext=eJxljcsKwjAUBf_lrhNoTFttwY2Cu-pC9-U2DyvEpORBldJ_t7oquDyHGWYC4ZKNULOMgFQak1nGBCL54DzUcDxjx57N9TA-7qO_nPit2QOBHkNr1Wtho0-KwIB31Qpn4-8DxjjfFl1OZck7muuM012lCyq05llZVSg3CDOBEBdPtkP_DtKJddgmY9YZjSb8db7QPH8Acn9BTA%3D%3D&-pageDirection=NEXT",
+      "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/DocumentReference?patient=12752183&-pageContext=eJxljb0KwjAURt_lriaQtDbVgotOCp0UxKncpolVQlKaBH9K393qVHD8Ps7hDCBdtAEKzgg0SmM00xhAxt67HgrYHd53fi6P28dtv7ikkp_KDRBo0VdWPSc29FER6PCqKuls-H2gVinjGUtohhrpUoic1onOqFgzRMnzTNQpjAR8mLym6tqXb5ych200Zp7RaPxf5wuN4wcZPUCS&-pageDirection=NEXT",
+      "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12724066&-pageContext=af16655e-fbec-4a4a-a281-2814a69222a9&-pageDirection=NEXT",
+      "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d/Encounter?patient=12742399&-pageContext=2ddcc8d7-9270-4fe0-afc0-b3ee2511977b&-pageDirection=NEXT"
+    ],
+    "verification": {
+      "source_url": "https://fhir-open.cerner.com/r4/ec2458f2-1e24-41c8-b71b-0e701af7583d",
+      "source_quote": "Walked 23 Bundle fixtures under tests/golden/cerner/; 11 carried rel=next. Sample: tests/golden/cerner/phase-b-2026-04-27/documentreference-12724066.json",
+      "verified_via": "cerner_public_sandbox",
+      "verified_date": "2026-05-15"
+    },
+    "probe_metadata": {
+      "verified_via_tool": "probe_pagination.py",
+      "verified_date": "2026-05-15",
+      "fixture_corpus_root": "tests/golden/cerner/"
+    },
+    "vital_signs_page_size_observed": 50
   }
 }

@@ -8824,5 +8824,59 @@
       "verified_via": "epic_public_sandbox",
       "verified_date": "2026-04-26"
     }
+  },
+  "pagination": {
+    "link_relations": [
+      "next",
+      "self"
+    ],
+    "next_url_format": "opaque-base64",
+    "default_page_size": 1000,
+    "max_page_size_observed": 1000,
+    "per_resource_page_overrides": {},
+    "per_resource_single_page_max": {
+      "AllergyIntolerance": 3,
+      "Condition": 7,
+      "DiagnosticReport": 4,
+      "DocumentReference": 70,
+      "Encounter": 10,
+      "Immunization": 7,
+      "MedicationRequest": 9,
+      "Observation": 388,
+      "Procedure": 2
+    },
+    "empty_bundle_shape": "mode_outcome_entry",
+    "total_semantics": {
+      "label": "reflects_page_size_when_count_set",
+      "evidence_fixture": "tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-paginated-with-total-2026-05-02.json",
+      "quote": "page_count_5: bundle_total=5 entry_count=5; page_count_1000: bundle_total=1000 entry_count=1000 — Bundle.total tracks the page payload, not the unbounded match set."
+    },
+    "token_stability": {
+      "label": "stable_within_session_offline_observation",
+      "evidence_fixture": "ehrs/epic/overlay.json:pagination_overlay.next_token_stable_across_pages",
+      "quote": "next_token_stable_across_pages: true (walked 2 pages; URLs did not duplicate or drift). TTL unmeasured offline."
+    },
+    "self_link_canonicalization_distribution": {
+      "echo_exact": 21,
+      "echo_normalized": 17
+    },
+    "fixture_count_probed": 38,
+    "fixtures_with_next_link": 2,
+    "sample_next_urls": [
+      "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?sessionID=16-AB6401F741B911F1BE0E005056BECC4A",
+      "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/Observation?sessionID=16-E90EE22641B311F1BE0E005056BECC4A"
+    ],
+    "verification": {
+      "source_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4",
+      "source_quote": "Walked 38 Bundle fixtures under tests/golden/epic/; 2 carried rel=next. Sample: tests/golden/epic/phase-b-2026-04-26/observation-vital-signs-eq081-VQEgP8drUUqCWzHfw3.json",
+      "verified_via": "epic_public_sandbox",
+      "verified_date": "2026-05-15"
+    },
+    "probe_metadata": {
+      "verified_via_tool": "probe_pagination.py",
+      "verified_date": "2026-05-15",
+      "fixture_corpus_root": "tests/golden/epic/"
+    },
+    "vital_signs_page_size_observed": 1000
   }
 }
