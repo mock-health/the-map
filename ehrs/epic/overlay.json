@@ -1,8 +1,8 @@
 {
   "ehr": "epic",
   "ehr_display_name": "Epic",
-  "ehr_version_validated": "Epic February 2026",
-  "capability_statement_fetched_date": "2026-05-11",
+  "ehr_version_validated": "Epic May 2026",
+  "capability_statement_fetched_date": "2026-06-08",
   "capability_statement_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/metadata",
   "sandbox_base_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4",
   "sandbox_canonical_patient_id": "eq081-VQEgP8drUUqCWzHfw3",
