@@ -130,6 +130,7 @@
               "value-set-narrowed", "value-set-mismatch", "value-set-unverified-locally",
               "cardinality-deviation", "cardinality-min-violated", "cardinality-max-violated",
               "format-deviation", "format-violation", "type-mismatch",
+              "missing-coding", "nonstandard-system", "duplicate-coding", "missing-meta",
               "bug"
             ]
           },
@@ -271,6 +272,7 @@
             "veradigm_public_sandbox",
             "nextgen_public_sandbox",
             "meditech_public_sandbox",
+            "meditech_greenfield_phase_b",
             "customer_evidence",
             "community_report",
             "vendor_pr"
