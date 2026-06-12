@@ -31,6 +31,7 @@ reports/*/html/
 
 # --- tooling state ---
 .gstack/
+.claude/
 .DS_Store
 
 # --- internal planning notes (not part of the documentation product) ---
@@ -38,6 +39,7 @@ reports/*/html/
 # integrations, etc.) live in PLAN.md and are intentionally local-only.
 # The repo is the published map+drift artifact; planning notes aren't.
 PLAN.md
+plans/
 
 # --- LLM disambiguation cache (regenerable; one Anthropic API call per row) ---
 data/hospital-overrides/.cache/
