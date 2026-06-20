@@ -114,6 +114,11 @@ def _token_request_kwargs(*, body: dict, client_id: str, client_secret: str, aut
         body["client_secret"] = client_secret
     elif auth_method == "client_secret_basic":
         headers["Authorization"] = _basic_auth_header(client_id, client_secret)
+    elif auth_method == "none":
+        # Public client (PKCE): client_id in the body, no secret, no Basic header.
+        # The code_verifier is the proof-of-possession. (Epic public patient app —
+        # UNC advertises client-public + S256 in its smart-configuration.)
+        pass
     else:
         sys.exit(f"unknown token_endpoint_auth_method {auth_method!r}")
     return {"data": body, "headers": headers, "timeout": 30}
@@ -217,7 +222,8 @@ def _prompt_paste_callback(expected_state: str) -> tuple[str | None, str | None]
 def _walk_consent(*, ehr: str, cfg: dict) -> dict:
     """Run the browser consent flow end-to-end. Returns the token-response dict."""
     client_id = os.environ[cfg["client_id_var"]]
-    client_secret = os.environ[cfg["client_secret_var"]]
+    # Public clients (token_endpoint_auth_method="none") carry no secret.
+    client_secret = os.environ.get(cfg["client_secret_var"]) if cfg.get("client_secret_var") else None
     token_url = _resolve_url(cfg, "token_url")
     authorize_url = _resolve_url(cfg, "authorize_url")
     redirect_uri = cfg["redirect_uri"]
@@ -314,7 +320,7 @@ def get_token_auth_code_meta(ehr: str, cfg: dict, *, force_refresh: bool = False
     # Cache present but expired and refreshable: try refresh
     if cached and cached.get("refresh_token") and not force_refresh:
         client_id = os.environ[cfg["client_id_var"]]
-        client_secret = os.environ[cfg["client_secret_var"]]
+        client_secret = os.environ.get(cfg["client_secret_var"]) if cfg.get("client_secret_var") else None
         token_url = _resolve_url(cfg, "token_url")
         refreshed = _refresh_access_token(
             token_url=token_url,

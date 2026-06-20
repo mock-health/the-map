@@ -1,5 +1,9 @@
 # --- secrets ---
 .tokens/
+# Real patient PHI from production cross-check pulls (tools/crosscheck_production.py).
+# Raw resources + PHI-bearing findings/candidate rows NEVER get committed; only the
+# REDACTED report under reports/ is tracked. Default --phi-out lives here.
+.phi/
 .env
 .env.local
 .env.*.local
