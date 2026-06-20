@@ -70,6 +70,47 @@ EHR_CONFIG: dict[str, dict] = {
         "phase_b_base_var": "CERNER_NONPROD_FHIR_OPEN_BASE",
         "phase_b_no_auth": True,
     },
+    "epic_unc": {
+        # PRODUCTION patient-access (SMART standalone launch) against UNC Health's
+        # deployed Epic — NOT a sandbox. The first non-sandbox Epic signal for the
+        # Map: UNC sits in epic-cluster-A (the modal Epic shape, 426/554 reachable
+        # endpoints), so observed-instance evidence here speaks to the most common
+        # Epic deployment shape, not an outlier.
+        #
+        # UNC advertises client-public + launch-standalone + S256 PKCE in its
+        # /.well-known/smart-configuration (harvested 2026-05-14, public metadata),
+        # so this is a PUBLIC client with no secret — PKCE is the proof.
+        "flow": "auth_code",
+        "token_endpoint_auth_method": "none",  # public client; no client_secret
+        "client_id_var": "EPIC_UNC_PATIENT_CLIENT_ID",  # from fhir.epic.com app registration
+        # No client_secret_var — public client.
+        # UNC's published OAuth2 + FHIR endpoints (override-first; no sibling .env).
+        "authorize_url_override": "https://epicfe.unch.unc.edu/FHIR/oauth2/authorize",
+        "token_url_override": "https://epicfe.unch.unc.edu/FHIR/oauth2/token",
+        "fhir_base_override": "https://epicfe.unch.unc.edu/FHIR/api/FHIR/R4",
+        # Epic REQUIRES `aud` on the authorize request (= the FHIR base). Do NOT set
+        # omit_aud (that's a MEDITECH Greenfield quirk).
+        "use_pkce": True,
+        # Patient-standalone scopes. Epic grants per-resource patient scopes from the
+        # app's registration; request the US Core resource set the Map measures so the
+        # pull covers the same profiles the sandbox sweep does.
+        "default_scope": (
+            "launch/patient openid fhirUser offline_access "
+            "patient/Patient.read patient/Condition.read patient/Observation.read "
+            "patient/MedicationRequest.read patient/AllergyIntolerance.read "
+            "patient/Immunization.read patient/Procedure.read patient/Encounter.read "
+            "patient/DiagnosticReport.read patient/DocumentReference.read "
+            "patient/CarePlan.read patient/CareTeam.read patient/Goal.read "
+            "patient/Device.read patient/Coverage.read"
+        ),
+        # Paste-callback (hosted redirect) — same proven path as MEDITECH. Register
+        # this exact redirect_uri on the Epic app; after consent, paste the browser's
+        # post-redirect URL back to the CLI. Swap to an http://localhost:PORT/callback
+        # redirect + callback_port if you registered a localhost URI instead.
+        "redirect_uri": "https://oauth.pstmn.io/v1/callback",
+        "callback_port": None,
+        # The patient id arrives in the token response (launch/patient) — drives the sweep.
+    },
     "meditech": {
         # Greenfield Workspace — MEDITECH's vendor-managed sandbox. Centralized
         # (single tenant for all developers), unlike Phase F's 542 customer
