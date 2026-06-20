@@ -501,7 +501,8 @@
           "erXuFYUfucBZaryVksYEcMg3"
         ]
       },
-      "row_id": "efdfc66c4206"
+      "row_id": "efdfc66c4206",
+      "notes": "CORRECTION (2026-06-19): a de-identified production Epic capture (community_report; jmandel/ehi-to-fhir@e86e00c) shows this element PRESENT — see row 5eeac0027ee6. The sandbox absence reflects the thin 3-patient open.epic cohort, not confirmed vendor omission; treat the vendor-implementation-gap classification as unconfirmed."
     },
     {
       "profile_id": "us-core-patient",
@@ -1978,7 +1979,8 @@
           "evYS76EX6LLeCX2PlRLhvwg3"
         ]
       },
-      "row_id": "d395ee0c7cec"
+      "row_id": "d395ee0c7cec",
+      "notes": "CORRECTION (2026-06-19): a de-identified production Epic capture (community_report; jmandel/ehi-to-fhir@e86e00c) shows this element PRESENT — see row 9a941539e578. The sandbox absence reflects the thin 3-patient open.epic cohort, not confirmed vendor omission; treat the vendor-implementation-gap classification as unconfirmed."
     },
     {
       "profile_id": "us-core-condition-problems-health-concerns",
@@ -2372,7 +2374,8 @@
           "erXuFYUfucBZaryVksYEcMg3"
         ]
       },
-      "row_id": "941040b3882b"
+      "row_id": "941040b3882b",
+      "notes": "CORRECTION (2026-06-19): a de-identified production Epic capture (community_report; jmandel/ehi-to-fhir@e86e00c) shows this element PRESENT — see row 78bf74405b1e. The sandbox absence reflects the thin 3-patient open.epic cohort, not confirmed vendor omission; treat the vendor-implementation-gap classification as unconfirmed."
     },
     {
       "profile_id": "us-core-condition-encounter-diagnosis",
@@ -3588,7 +3591,8 @@
           "evYS76EX6LLeCX2PlRLhvwg3"
         ]
       },
-      "row_id": "abca4e40ff39"
+      "row_id": "abca4e40ff39",
+      "notes": "CORRECTION (2026-06-19): a de-identified production Epic capture (community_report; jmandel/ehi-to-fhir@e86e00c) shows this element PRESENT — see row 3b31554d17fe. The sandbox absence reflects the thin 3-patient open.epic cohort, not confirmed vendor omission; treat the vendor-implementation-gap classification as unconfirmed."
     },
     {
       "profile_id": "us-core-medicationrequest",
@@ -4353,7 +4357,8 @@
           "erXuFYUfucBZaryVksYEcMg3"
         ]
       },
-      "row_id": "3449129060c8"
+      "row_id": "3449129060c8",
+      "notes": "CORRECTION (2026-06-19): a de-identified production Epic capture (community_report; jmandel/ehi-to-fhir@e86e00c) shows this element PRESENT — see row 3bd43c78210b. The sandbox absence reflects the thin 3-patient open.epic cohort, not confirmed vendor omission; treat the vendor-implementation-gap classification as unconfirmed. This row is superseded by 3bd43c78210b and is excluded from the rendered conformance matrix."
     },
     {
       "profile_id": "us-core-encounter",
@@ -5637,6 +5642,141 @@
         "patients_absent_in": []
       },
       "row_id": "7200a17b7027"
+    },
+    {
+      "row_id": "5eeac0027ee6",
+      "previous_row_ids": ["efdfc66c4206"],
+      "profile_id": "us-core-patient",
+      "path": "Patient.extension(us-core-genderIdentity)",
+      "deviation_category": "matches",
+      "expected_per_us_core": "USCDI requirement, cardinality 0..*, type Extension",
+      "observed_in_ehr": "present: Patient.extension includes the US Core genderIdentity extension",
+      "deviation": "Real production Epic emits Patient.extension(us-core-genderIdentity). Corrects sandbox row efdfc66c4206, which recorded 'missing'/vendor-implementation-gap across 3 thin open.epic test patients — the absence was a sandbox-cohort coverage limitation, not confirmed vendor omission.",
+      "multi_patient_evidence": {
+        "category": "production-single-record-community",
+        "patients_swept": [
+          "jmandel-epic"
+        ],
+        "patients_present_in": [
+          "jmandel-epic"
+        ],
+        "patients_absent_in": []
+      },
+      "notes": "De-identified third-party capture; presence/coding/cardinality unaffected by redaction. Site is an undisclosed Epic org (no CapabilityStatement shipped), so its cluster is unknown.",
+      "verification": {
+        "source_url": "https://github.com/jmandel/ehi-to-fhir/blob/e86e00ca322174c520d4e682457a20dd913033cb/fhir-target/Patient.json",
+        "source_quote": "fhir-target/Patient.json: Patient.extension includes http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity (and http://hl7.org/fhir/StructureDefinition/patient-genderIdentity).",
+        "verified_via": "community_report",
+        "verified_date": "2026-06-19"
+      }
+    },
+    {
+      "row_id": "9a941539e578",
+      "previous_row_ids": ["d395ee0c7cec"],
+      "profile_id": "us-core-condition-problems-health-concerns",
+      "path": "Condition.abatement[x]",
+      "deviation_category": "matches",
+      "expected_per_us_core": "MUST-SUPPORT, USCDI requirement, cardinality 0..1, type dateTime | Age | Period | Range | string",
+      "observed_in_ehr": "present: abatementDateTime on a resolved condition (1 of 53)",
+      "deviation": "Real production Epic emits Condition.abatement[x]. Corrects sandbox row d395ee0c7cec, which recorded 'missing'/vendor-implementation-gap across 3 thin open.epic test patients — the absence was a sandbox-cohort coverage limitation, not confirmed vendor omission.",
+      "multi_patient_evidence": {
+        "category": "production-single-record-community",
+        "patients_swept": [
+          "jmandel-epic"
+        ],
+        "patients_present_in": [
+          "jmandel-epic"
+        ],
+        "patients_absent_in": []
+      },
+      "notes": "De-identified third-party capture; presence/coding/cardinality unaffected by redaction. Site is an undisclosed Epic org (no CapabilityStatement shipped), so its cluster is unknown.",
+      "verification": {
+        "source_url": "https://github.com/jmandel/ehi-to-fhir/blob/e86e00ca322174c520d4e682457a20dd913033cb/fhir-target/Condition.json",
+        "source_quote": "fhir-target/Condition.json: abatementDateTime present on a resolved condition (1 of 53 Conditions).",
+        "verified_via": "community_report",
+        "verified_date": "2026-06-19"
+      }
+    },
+    {
+      "row_id": "78bf74405b1e",
+      "previous_row_ids": ["941040b3882b"],
+      "profile_id": "us-core-condition-encounter-diagnosis",
+      "path": "Condition.abatement[x]",
+      "deviation_category": "matches",
+      "expected_per_us_core": "MUST-SUPPORT, USCDI requirement, cardinality 0..1, type dateTime | Age | Period | Range | string",
+      "observed_in_ehr": "present: abatementDateTime on a resolved condition (1 of 53)",
+      "deviation": "Real production Epic emits Condition.abatement[x]. Corrects sandbox row 941040b3882b, which recorded 'missing'/vendor-implementation-gap across 3 thin open.epic test patients — the absence was a sandbox-cohort coverage limitation, not confirmed vendor omission.",
+      "multi_patient_evidence": {
+        "category": "production-single-record-community",
+        "patients_swept": [
+          "jmandel-epic"
+        ],
+        "patients_present_in": [
+          "jmandel-epic"
+        ],
+        "patients_absent_in": []
+      },
+      "notes": "De-identified third-party capture; presence/coding/cardinality unaffected by redaction. Site is an undisclosed Epic org (no CapabilityStatement shipped), so its cluster is unknown.",
+      "verification": {
+        "source_url": "https://github.com/jmandel/ehi-to-fhir/blob/e86e00ca322174c520d4e682457a20dd913033cb/fhir-target/Condition.json",
+        "source_quote": "fhir-target/Condition.json: abatementDateTime present on a resolved condition (1 of 53 Conditions).",
+        "verified_via": "community_report",
+        "verified_date": "2026-06-19"
+      }
+    },
+    {
+      "row_id": "3b31554d17fe",
+      "previous_row_ids": ["abca4e40ff39"],
+      "profile_id": "us-core-medicationrequest",
+      "path": "MedicationRequest.reasonCode",
+      "deviation_category": "matches",
+      "expected_per_us_core": "USCDI requirement, cardinality 0..*, type CodeableConcept, binding extensible → us-core-condition-code",
+      "observed_in_ehr": "present: reasonCode on 6 of 18 requests (ICD-10-CM / ICD-9-CM / SNOMED CT). The extensible binding permits these external code systems, so this is conformant (not a value-set narrowing).",
+      "deviation": "Real production Epic emits MedicationRequest.reasonCode. Corrects sandbox row abca4e40ff39, which recorded 'missing'/vendor-implementation-gap across 3 thin open.epic test patients — the absence was a sandbox-cohort coverage limitation, not confirmed vendor omission.",
+      "multi_patient_evidence": {
+        "category": "production-single-record-community",
+        "patients_swept": [
+          "jmandel-epic"
+        ],
+        "patients_present_in": [
+          "jmandel-epic"
+        ],
+        "patients_absent_in": []
+      },
+      "notes": "De-identified third-party capture; presence/coding/cardinality unaffected by redaction. Site is an undisclosed Epic org (no CapabilityStatement shipped), so its cluster is unknown.",
+      "verification": {
+        "source_url": "https://github.com/jmandel/ehi-to-fhir/blob/e86e00ca322174c520d4e682457a20dd913033cb/fhir-target/MedicationRequest.json",
+        "source_quote": "fhir-target/MedicationRequest.json: reasonCode present on 6 of 18 MedicationRequests; coding systems observed: http://hl7.org/fhir/sid/icd-10-cm, http://hl7.org/fhir/sid/icd-9-cm, http://snomed.info/sct.",
+        "verified_via": "community_report",
+        "verified_date": "2026-06-19"
+      }
+    },
+    {
+      "row_id": "3bd43c78210b",
+      "previous_row_ids": ["3449129060c8"],
+      "profile_id": "us-core-encounter",
+      "path": "Encounter.hospitalization.dischargeDisposition",
+      "deviation_category": "matches",
+      "expected_per_us_core": "MUST-SUPPORT, USCDI requirement, cardinality 0..1, type CodeableConcept, binding preferred → us-core-discharge-disposition",
+      "observed_in_ehr": "present on 2 of 34 encounters; coded with an Epic-internal OID rather than the US Core value set. US Core's binding here is preferred (not required), so an alternate code system is conformant.",
+      "deviation": "Real production Epic emits Encounter.hospitalization.dischargeDisposition. Corrects sandbox row 3449129060c8, which recorded 'missing'/vendor-implementation-gap across 3 thin open.epic test patients — the absence was a sandbox-cohort coverage limitation, not confirmed vendor omission. Epic emits the element; the coding uses an Epic-internal OID, which the preferred (non-required) binding permits — informational, not a conformance gap.",
+      "multi_patient_evidence": {
+        "category": "production-single-record-community",
+        "patients_swept": [
+          "jmandel-epic"
+        ],
+        "patients_present_in": [
+          "jmandel-epic"
+        ],
+        "patients_absent_in": []
+      },
+      "notes": "De-identified third-party capture; presence/coding/cardinality unaffected by redaction. Site is an undisclosed Epic org (no CapabilityStatement shipped), so its cluster is unknown.",
+      "verification": {
+        "source_url": "https://github.com/jmandel/ehi-to-fhir/blob/e86e00ca322174c520d4e682457a20dd913033cb/fhir-target/Encounter.json",
+        "source_quote": "fhir-target/Encounter.json: hospitalization.dischargeDisposition present on 2 of 34 Encounters, coded under the Epic asset-OID arc urn:oid:1.2.840.114350.1.13.* (org-specific nodes redacted) rather than the US Core discharge-disposition value set.",
+        "verified_via": "community_report",
+        "verified_date": "2026-06-19"
+      }
     }
   ],
   "search_param_observations": {

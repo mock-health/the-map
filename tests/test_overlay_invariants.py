@@ -202,6 +202,12 @@ def test_element_deviation_patient_id_in_sandbox(ehr: str) -> None:
     devs = ov.get("element_deviations", []) or []
     referenced: set[str] = set()
     for d in devs:
+        # Only sandbox-sourced rows must reference sandbox patient ids. Non-sandbox
+        # evidence tiers (production_patient_smart, community_report, customer_evidence)
+        # legitimately reference real-world patient labels not in sandbox_patients.json.
+        via = (d.get("verification") or {}).get("verified_via", "")
+        if not (via.endswith("_public_sandbox") or via == "meditech_greenfield_phase_b"):
+            continue
         if d.get("patient_id"):
             referenced.add(d["patient_id"])
         mpe = d.get("multi_patient_evidence") or {}
@@ -215,3 +221,36 @@ def test_element_deviation_patient_id_in_sandbox(ehr: str) -> None:
     assert not unknown, (
         f"{ehr}: element_deviations reference patient_ids not in sandbox_patients.json: {sorted(unknown)}"
     )
+
+
+@pytest.mark.parametrize("ehr", EHRS)
+def test_non_sandbox_rows_patient_evidence_self_consistent(ehr: str) -> None:
+    """Non-sandbox tiers (community_report, production_patient_smart, customer_evidence)
+    are exempt from the sandbox-roster check above, so they have no external roster to
+    validate against. Guard them another way: multi_patient_evidence must be internally
+    consistent — every patient labeled present/absent must also appear in patients_swept,
+    and patients_swept must be non-empty. Without this, a typo'd label (e.g. 'jmndel-epic'
+    vs 'jmandel-epic') passes silently now that the sandbox check skips these rows.
+    """
+    ov = _load_overlay(ehr)
+    devs = ov.get("element_deviations", []) or []
+    checked = 0
+    for d in devs:
+        via = (d.get("verification") or {}).get("verified_via", "")
+        if via.endswith("_public_sandbox") or via == "meditech_greenfield_phase_b":
+            continue  # covered by test_element_deviation_patient_id_in_sandbox
+        mpe = d.get("multi_patient_evidence") or {}
+        if not mpe:
+            continue
+        rid = d.get("row_id", "?")
+        swept = set(mpe.get("patients_swept", []) or [])
+        assert swept, f"{ehr} row {rid}: non-sandbox row has empty patients_swept"
+        for key in ("patients_present_in", "patients_absent_in", "patients_with_this_category"):
+            stray = set(mpe.get(key, []) or []) - swept
+            assert not stray, (
+                f"{ehr} row {rid}: multi_patient_evidence.{key} references patients "
+                f"not in patients_swept: {sorted(stray)}"
+            )
+        checked += 1
+    if checked == 0:
+        pytest.skip(f"{ehr}: no non-sandbox element_deviations to check")
