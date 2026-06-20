@@ -19,7 +19,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from tools.crosscheck_production import (
     correct_n1_gaps,
     diff_against_sandbox,
+    evidence_descriptor,
     load_resources,
+    resolve_verified_via,
     write_phi_outputs,
     write_report,
 )
@@ -45,6 +47,7 @@ def _empty_buckets() -> dict:
     return {
         "confirmed_deviations": [],
         "confirmed_matches": [],
+        "coverage_gaps_n1": [],
         "divergent": [],
         "novel_deviations": [],
         "absent_types": [],
@@ -159,6 +162,21 @@ def test_diff_against_sandbox_buckets_each_finding() -> None:
     assert [r["path"] for r in b["untested"]] == ["Encounter.status", "Goal.lifecycleStatus"]
 
 
+def test_diff_n1_absence_is_coverage_gap_not_confirmed_deviation() -> None:
+    """A prod row that hits a sandbox 'missing' row by row_id but whose own evidence
+    is a single-patient absence (patient-data-gap-n1) must land in coverage_gaps_n1,
+    NOT confirmed_deviations — otherwise the headline 'confirmed' count is inflated by
+    absences n=1 cannot attribute to the vendor (T7)."""
+    sandbox = {"element_deviations": [_dev("us-core-goal", "Goal.target", "missing")]}
+    # Same (profile, path, category) → same row_id as the sandbox row, but the prod
+    # evidence is an n=1 absence (as correct_n1_gaps would have relabeled it).
+    prod = [_dev("us-core-goal", "Goal.target", "missing",
+                 multi_patient_evidence={"category": "patient-data-gap-n1"})]
+    b = diff_against_sandbox(prod, sandbox)
+    assert [r["path"] for r in b["coverage_gaps_n1"]] == ["Goal.target"]
+    assert b["confirmed_deviations"] == []
+
+
 # --- write_phi_outputs: the wire/ehi gate + tier placeholder ---------------
 
 
@@ -200,12 +218,45 @@ def test_write_phi_outputs_ehi_emits_no_candidates(tmp_path: Path) -> None:
     [
         ("wire", "community_report", "de-identified + published by a third party"),
         ("wire", "production_patient_smart", "genuine production wire bytes"),
-        ("ehi", "production_patient_smart", "corroboration only"),
+        ("ehi", None, "corroboration only"),
     ],
 )
-def test_write_report_tier_wording(tmp_path: Path, source: str, verified_via: str, expected: str) -> None:
+def test_write_report_tier_wording(tmp_path: Path, source: str, verified_via, expected: str) -> None:
     out = tmp_path / "report.md"
     write_report(out, source=source, endpoint="https://x/FHIR", n_resources=1,
                  resource_types={"Patient": 1}, buckets=_empty_buckets(),
                  patient_label="t", verified_via=verified_via, cite=None)
     assert expected in out.read_text()
+
+
+# --- T6: (source, verified_via) coherence + unambiguous title --------------
+
+
+def test_resolve_verified_via_wire_defaults_to_smart() -> None:
+    assert resolve_verified_via("wire", None) == "production_patient_smart"
+    assert resolve_verified_via("wire", "community_report") == "community_report"
+
+
+def test_resolve_verified_via_ehi_must_be_unset() -> None:
+    assert resolve_verified_via("ehi", None) is None
+    with pytest.raises(SystemExit):
+        resolve_verified_via("ehi", "production_patient_smart")
+
+
+def test_evidence_descriptor_never_calls_third_party_capture_wire_tier() -> None:
+    """The old title rendered '(wire tier, community_report)' — 'wire tier' read as
+    odd for a published GitHub capture. The descriptor must be self-explanatory."""
+    third_party = evidence_descriptor("wire", "community_report")
+    assert "third-party published" in third_party
+    assert "tier" not in third_party
+    assert evidence_descriptor("ehi", None).startswith("ehi-to-fhir reconstruction")
+    assert "first-party" in evidence_descriptor("wire", "production_patient_smart")
+
+
+def test_write_report_title_uses_descriptor(tmp_path: Path) -> None:
+    out = tmp_path / "r.md"
+    write_report(out, source="wire", endpoint="https://x/FHIR", n_resources=1,
+                 resource_types={"Patient": 1}, buckets=_empty_buckets(),
+                 patient_label="t", verified_via="community_report", cite=None)
+    first_line = out.read_text().splitlines()[0]
+    assert "third-party published" in first_line and "wire tier" not in first_line
