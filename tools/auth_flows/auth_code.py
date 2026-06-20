@@ -124,6 +124,27 @@ def _token_request_kwargs(*, body: dict, client_id: str, client_secret: str, aut
     return {"data": body, "headers": headers, "timeout": 30}
 
 
+def _resolve_client_secret(cfg: dict) -> str | None:
+    """Resolve the client secret for a config's auth method.
+
+    Public clients (token_endpoint_auth_method="none") carry no secret → None.
+    Every other method REQUIRES one, so read it strictly: an unset env var fails
+    fast and locally, naming the variable, instead of silently sending no secret
+    and getting an opaque 401 back from the token endpoint. (Default auth method
+    is client_secret_basic, so a config without the key is treated as secret-based.)
+    """
+    auth_method = cfg.get("token_endpoint_auth_method", "client_secret_basic")
+    if auth_method == "none":
+        return None
+    var = cfg.get("client_secret_var")
+    if not var:
+        sys.exit(f"config error: token_endpoint_auth_method={auth_method!r} requires a client_secret_var")
+    try:
+        return os.environ[var]
+    except KeyError:
+        sys.exit(f"missing required env var {var} (token_endpoint_auth_method={auth_method!r})")
+
+
 def _exchange_code_for_token(*, token_url: str, client_id: str, client_secret: str, code: str, redirect_uri: str, code_verifier: str | None = None, auth_method: str = "client_secret_basic") -> dict:
     body = {
         "grant_type": "authorization_code",
@@ -222,8 +243,7 @@ def _prompt_paste_callback(expected_state: str) -> tuple[str | None, str | None]
 def _walk_consent(*, ehr: str, cfg: dict) -> dict:
     """Run the browser consent flow end-to-end. Returns the token-response dict."""
     client_id = os.environ[cfg["client_id_var"]]
-    # Public clients (token_endpoint_auth_method="none") carry no secret.
-    client_secret = os.environ.get(cfg["client_secret_var"]) if cfg.get("client_secret_var") else None
+    client_secret = _resolve_client_secret(cfg)
     token_url = _resolve_url(cfg, "token_url")
     authorize_url = _resolve_url(cfg, "authorize_url")
     redirect_uri = cfg["redirect_uri"]
@@ -320,7 +340,7 @@ def get_token_auth_code_meta(ehr: str, cfg: dict, *, force_refresh: bool = False
     # Cache present but expired and refreshable: try refresh
     if cached and cached.get("refresh_token") and not force_refresh:
         client_id = os.environ[cfg["client_id_var"]]
-        client_secret = os.environ.get(cfg["client_secret_var"]) if cfg.get("client_secret_var") else None
+        client_secret = _resolve_client_secret(cfg)
         token_url = _resolve_url(cfg, "token_url")
         refreshed = _refresh_access_token(
             token_url=token_url,
