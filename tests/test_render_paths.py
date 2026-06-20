@@ -200,3 +200,61 @@ def test_render_real_epic_produces_expected_path_structure(tmp_path: Path, repo_
     # The element page must contain the element path text (escaped) — citable URL
     page_html = expected.read_text()
     assert html.escape(element["path"]) in page_html
+
+
+def test_superseded_rows_excluded_from_conformance_matrix(repo_root: Path) -> None:
+    """A row listed in another row's previous_row_ids is corrected history: it stays in
+    overlay.json for the audit trail but must NOT appear in the rendered matrix or
+    category_summary. Otherwise a sandbox 'missing' row and its community_report 'matches'
+    correction both render in the same cell and the gap is double-counted. Regression
+    guard for the 2026-06-19 Epic corrections."""
+    import json as _json
+
+    from tools.synthesize import conformance_matrix
+
+    overlay_path = repo_root / "ehrs" / "epic" / "overlay.json"
+    if not overlay_path.exists():
+        pytest.skip("epic overlay not present in this checkout")
+    devs = _json.loads(overlay_path.read_text()).get("element_deviations", []) or []
+    superseded = {rid for d in devs for rid in (d.get("previous_row_ids") or [])}
+    if not superseded:
+        pytest.skip("epic overlay has no superseded rows")
+    by_id = {d.get("row_id"): d for d in devs}
+
+    ehr_view = conformance_matrix("epic")
+    cells = {(p["profile_id"], e["path"]): e for p in ehr_view["profiles"] for e in p["elements"]}
+
+    for sid in superseded:
+        old = by_id.get(sid)
+        assert old is not None, f"previous_row_ids references a missing row {sid}"
+        cell = cells.get((old["profile_id"], old["path"]))
+        if cell is None:
+            continue  # path is not a MUST-SUPPORT baseline element; nothing rendered
+        live = [
+            d
+            for d in devs
+            if d["profile_id"] == old["profile_id"]
+            and d["path"] == old["path"]
+            and d.get("row_id") not in superseded
+        ]
+        assert cell["deviation_count"] == len(live), (
+            f"superseded row {sid} leaked into rendered cell "
+            f"({old['profile_id']}, {old['path']}): count {cell['deviation_count']} != live {len(live)}"
+        )
+
+
+def test_no_conformance_cell_is_both_matches_and_missing(repo_root: Path) -> None:
+    """A single element path cannot be simultaneously present-and-conformant ('matches')
+    and absent ('missing') in one EHR. Both categories in one cell means a correction was
+    added without superseding the contradicted row — the exact bug previous_row_ids fixes."""
+    from tools.synthesize import conformance_matrix
+
+    if not (repo_root / "ehrs" / "epic" / "overlay.json").exists():
+        pytest.skip("epic overlay not present in this checkout")
+    ehr_view = conformance_matrix("epic")
+    for p in ehr_view["profiles"]:
+        for e in p["elements"]:
+            cats = set(e["deviation_categories"])
+            assert not {"matches", "missing"} <= cats, (
+                f"{p['profile_id']} {e['path']} renders as both matches and missing: {sorted(cats)}"
+            )
