@@ -154,6 +154,10 @@ def diff_against_sandbox(prod_rows: list[dict], overlay: dict) -> dict:
     by background agreement:
       confirmed_deviations — production reproduced a sandbox DEVIATION (row_id hit, not 'matches')
       confirmed_matches    — production matched spec where the sandbox also matched (row_id hit, 'matches')
+      coverage_gaps_n1     — row_id hit a sandbox 'missing' row, but this single record
+                             also just lacks the element (mpe category patient-data-gap-n1).
+                             n=1 can't attribute that to the vendor, so it is NOT a reproduced
+                             deviation — kept separate so it doesn't inflate confirmed_deviations.
       divergent            — same (profile,path), DIFFERENT behavior than the sandbox recorded
       novel_deviations     — a deviation at a (profile,path) the sandbox never recorded
       absent_types         — whole resource types missing from this record (n=1 coverage, not a finding)
@@ -167,6 +171,7 @@ def diff_against_sandbox(prod_rows: list[dict], overlay: dict) -> dict:
         paths_cats.setdefault((d.get("profile_id"), d.get("path")), set()).add(d.get("deviation_category"))
 
     confirmed_deviations, confirmed_matches, divergent, novel_deviations, absent_types = [], [], [], [], []
+    coverage_gaps_n1: list[dict] = []
     benign_untracked_matches = 0
     prod_rowids = set()
     for row in prod_rows:
@@ -177,13 +182,23 @@ def diff_against_sandbox(prod_rows: list[dict], overlay: dict) -> dict:
         cat = row.get("deviation_category")
         key = (row.get("profile_id"), path)
         is_match = cat == "matches"
+        mpe_cat = (row.get("multi_patient_evidence") or {}).get("category")
         # Element paths contain a '.'; a bare token (e.g. "Immunization") is a
         # resource-type presence row from evaluate_one when the type was absent.
         if "." not in path:
             absent_types.append(row)
             continue
         if rid in by_rowid:
-            (confirmed_matches if is_match else confirmed_deviations).append(row)
+            if is_match:
+                confirmed_matches.append(row)
+            elif mpe_cat == "patient-data-gap-n1":
+                # The sandbox flagged this path 'missing' and this single record also
+                # lacks it — but a lone patient legitimately lacks elements, so this is
+                # a coverage gap, not a reproduced VENDOR deviation. Don't inflate the
+                # confirmed-deviations headline with it.
+                coverage_gaps_n1.append(row)
+            else:
+                confirmed_deviations.append(row)
         elif key in paths_cats:
             row["_sandbox_categories"] = sorted(paths_cats[key])
             divergent.append(row)
@@ -196,6 +211,7 @@ def diff_against_sandbox(prod_rows: list[dict], overlay: dict) -> dict:
     return {
         "confirmed_deviations": confirmed_deviations,
         "confirmed_matches": confirmed_matches,
+        "coverage_gaps_n1": coverage_gaps_n1,
         "divergent": divergent,
         "novel_deviations": novel_deviations,
         "absent_types": absent_types,
@@ -205,7 +221,7 @@ def diff_against_sandbox(prod_rows: list[dict], overlay: dict) -> dict:
 
 
 def write_phi_outputs(phi_out: Path, prod_rows: list[dict], buckets: dict, source: str,
-                      endpoint: str, verified_via: str, cite: str) -> None:
+                      endpoint: str, verified_via: str | None, cite: str | None) -> None:
     """Full, PHI-bearing artifacts — local only, never committed.
 
     `verified_via` is the iron-rule evidence tier stamped on candidate rows; `cite`
@@ -265,9 +281,37 @@ def _verdict_table(rows: list[dict], extra_col: str | None = None) -> str:
     return "\n".join(lines) + "\n"
 
 
+def resolve_verified_via(source: str, verified_via: str | None) -> str | None:
+    """Validate the (source, verified_via) pair; return the tier candidate rows carry.
+
+    wire  → an overlay-eligible tier (defaults to production_patient_smart).
+    ehi   → report-only, emits no overlay rows, so verified_via must NOT be set;
+            passing one is a category error (the reconstructed shape can never become
+            an overlay row regardless of tier). Returns None.
+    """
+    if source == "ehi":
+        if verified_via is not None:
+            sys.exit("--verified-via does not apply to --source ehi "
+                     "(report-only: reconstructed shape is never promoted to overlay rows)")
+        return None
+    return verified_via or "production_patient_smart"
+
+
+def evidence_descriptor(source: str, verified_via: str | None) -> str:
+    """Unambiguous one-line evidence label for the report title — never the bare
+    '{source} tier' (which read as 'wire tier' even for a third-party published capture)."""
+    if source == "ehi":
+        return "ehi-to-fhir reconstruction — corroboration only"
+    if verified_via == "community_report":
+        return "production wire — third-party published, de-identified capture"
+    if verified_via == "customer_evidence":
+        return "production wire — customer-provided"
+    return "production wire — first-party SMART patient-access pull"
+
+
 def write_report(report_path: Path, *, source: str, endpoint: str, n_resources: int,
                  resource_types: dict[str, int], buckets: dict, patient_label: str,
-                 verified_via: str = "production_patient_smart", cite: str | None = None) -> None:
+                 verified_via: str | None = "production_patient_smart", cite: str | None = None) -> None:
     """REDACTED report — structural facts only. Safe to commit."""
     today = datetime.date.today().isoformat()
     if source == "ehi":
@@ -277,7 +321,7 @@ def write_report(report_path: Path, *, source: str, endpoint: str, n_resources: 
     else:
         tier = "genuine production wire bytes (SMART patient-access pull)"
     type_summary = ", ".join(f"{t}×{n}" for t, n in sorted(resource_types.items()))
-    md = f"""# Production cross-check — Epic ({source} tier, {verified_via})
+    md = f"""# Production cross-check — Epic ({evidence_descriptor(source, verified_via)})
 
 **Date:** {today}
 **Source:** {endpoint}
@@ -301,8 +345,9 @@ runs on sandbox golden fixtures — then diffed against the sandbox-derived
 
 | bucket | count | meaning |
 |---|---|---|
-| **confirmed deviations** | {len(buckets['confirmed_deviations'])} | production REPRODUCED a sandbox deviation (row_id hit) → strongest signal; confidence upgrade |
+| **confirmed deviations** | {len(buckets['confirmed_deviations'])} | production REPRODUCED a sandbox deviation, excluding n=1 absences (row_id hit, not a coverage gap) → strongest signal; confidence upgrade |
 | **confirmed matches** | {len(buckets['confirmed_matches'])} | production matched spec where the sandbox also matched → background agreement |
+| **coverage gaps (n=1)** | {len(buckets['coverage_gaps_n1'])} | row_id hit a sandbox 'missing' row, but this single record also just lacks the element → NOT a reproduced vendor deviation (n=1 can't attribute absence to the vendor) |
 | **divergent** | {len(buckets['divergent'])} | same path, *different* behavior than the sandbox recorded → sandbox claim may be sandbox-specific |
 | **novel deviations** | {len(buckets['novel_deviations'])} | a deviation the sandbox never recorded → potential new row |
 | **absent types** | {len(buckets['absent_types'])} | whole resource types not in this record (n=1 coverage, not a finding) |
@@ -352,12 +397,15 @@ def main() -> int:
     ap.add_argument("--endpoint", default=UNC_ENDPOINT, help="FHIR base the data came from (for citation)")
     ap.add_argument("--overlay", default=DEFAULT_OVERLAY, type=Path, help="sandbox overlay to diff against")
     ap.add_argument("--patient-label", default="unc-self", help="de-identified label for the single patient")
-    ap.add_argument("--verified-via", default="production_patient_smart",
+    ap.add_argument("--verified-via", default=None,
                     choices=["production_patient_smart", "community_report", "customer_evidence"],
-                    help="iron-rule evidence tier for candidate rows (community_report for a third party's published capture)")
+                    help="iron-rule evidence tier for candidate rows (wire only; defaults to "
+                         "production_patient_smart; community_report for a third party's published "
+                         "capture). Must be omitted for --source ehi (report-only).")
     ap.add_argument("--cite", default=None,
                     help="source_url for candidate rows (e.g. repo/commit URL); defaults to --endpoint")
     args = ap.parse_args()
+    verified_via = resolve_verified_via(args.source, args.verified_via)
 
     resources = load_resources(args.in_path)
     resource_types: dict[str, int] = {}
@@ -372,16 +420,17 @@ def main() -> int:
     overlay = json.loads(args.overlay.read_text())
     buckets = diff_against_sandbox(prod_rows, overlay)
     print(f"diff: confirmed_deviations={len(buckets['confirmed_deviations'])} "
-          f"confirmed_matches={len(buckets['confirmed_matches'])} divergent={len(buckets['divergent'])} "
+          f"confirmed_matches={len(buckets['confirmed_matches'])} "
+          f"coverage_gaps_n1={len(buckets['coverage_gaps_n1'])} divergent={len(buckets['divergent'])} "
           f"novel_deviations={len(buckets['novel_deviations'])} absent_types={len(buckets['absent_types'])} "
           f"untested={len(buckets['untested'])}")
 
     write_phi_outputs(args.phi_out, prod_rows, buckets, args.source, args.endpoint,
-                      args.verified_via, args.cite)
+                      verified_via, args.cite)
     write_report(args.report, source=args.source, endpoint=args.endpoint,
                  n_resources=len(resources), resource_types=resource_types,
                  buckets=buckets, patient_label=args.patient_label,
-                 verified_via=args.verified_via, cite=args.cite)
+                 verified_via=verified_via, cite=args.cite)
     print(f"wrote PHI artifacts -> {args.phi_out}")
     print(f"wrote redacted report -> {args.report}")
     if args.source == "wire":
