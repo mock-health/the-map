@@ -248,6 +248,17 @@ def conformance_matrix(ehr: str) -> dict:
     for d in overlay.get("element_deviations", []) or []:
         deviations_by_pp.setdefault((d["profile_id"], d["path"]), []).append(d)
 
+    # A row another row supersedes (its row_id appears in some row's
+    # previous_row_ids) is corrected history: it stays in overlay.json for the
+    # audit trail, but is excluded from the rendered matrix and category_summary
+    # so the Map reflects the current finding, not the superseded one. Without
+    # this, a sandbox "missing" row and its community_report "matches" correction
+    # both render in the same cell and category_summary double-counts the gap.
+    superseded_ids: set[str] = set()
+    for d in overlay.get("element_deviations", []) or []:
+        for rid in d.get("previous_row_ids", []) or []:
+            superseded_ids.add(rid)
+
     profiles_out: list[dict] = []
     summary_counts: dict[str, int] = {}
     for pid, baseline_profile in baseline_profiles.items():
@@ -255,7 +266,10 @@ def conformance_matrix(ehr: str) -> dict:
             continue
         elements: list[dict] = []
         for ms in baseline_profile["must_support"]:
-            cell_devs = deviations_by_pp.get((pid, ms["path"]), [])
+            cell_devs = [
+                d for d in deviations_by_pp.get((pid, ms["path"]), [])
+                if d.get("row_id") not in superseded_ids
+            ]
             categories = sorted({d["deviation_category"] for d in cell_devs})
             cell = {
                 "path": ms["path"],
