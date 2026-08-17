@@ -3,7 +3,7 @@
   "ehr_display_name": "MEDITECH (Greenfield Workspace + production fleet)",
   "ehr_version_validated": "Interoperability Services: US Core STU6 FHIR R4 2.0.0",
   "capability_statement_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6/metadata",
-  "capability_statement_fetched_date": "2026-06-15",
+  "capability_statement_fetched_date": "2026-08-17",
   "sandbox_base_url": "https://greenfield-prod-apis.meditech.com/v2/uscore/STU6",
   "sandbox_canonical_patient_id": "0218f2d0-968b-5888-976f-68a554670f6e",
   "auth_overlay": {
