@@ -1,8 +1,8 @@
 {
   "ehr": "epic",
   "ehr_display_name": "Epic",
-  "ehr_version_validated": "Epic May 2026",
-  "capability_statement_fetched_date": "2026-06-08",
+  "ehr_version_validated": "Epic August 2026",
+  "capability_statement_fetched_date": "2026-08-17",
   "capability_statement_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4/metadata",
   "sandbox_base_url": "https://fhir.epic.com/interconnect-fhir-oauth/api/FHIR/R4",
   "sandbox_canonical_patient_id": "eq081-VQEgP8drUUqCWzHfw3",
@@ -5645,7 +5645,9 @@
     },
     {
       "row_id": "5eeac0027ee6",
-      "previous_row_ids": ["efdfc66c4206"],
+      "previous_row_ids": [
+        "efdfc66c4206"
+      ],
       "profile_id": "us-core-patient",
       "path": "Patient.extension(us-core-genderIdentity)",
       "deviation_category": "matches",
@@ -5672,7 +5674,9 @@
     },
     {
       "row_id": "9a941539e578",
-      "previous_row_ids": ["d395ee0c7cec"],
+      "previous_row_ids": [
+        "d395ee0c7cec"
+      ],
       "profile_id": "us-core-condition-problems-health-concerns",
       "path": "Condition.abatement[x]",
       "deviation_category": "matches",
@@ -5699,7 +5703,9 @@
     },
     {
       "row_id": "78bf74405b1e",
-      "previous_row_ids": ["941040b3882b"],
+      "previous_row_ids": [
+        "941040b3882b"
+      ],
       "profile_id": "us-core-condition-encounter-diagnosis",
       "path": "Condition.abatement[x]",
       "deviation_category": "matches",
@@ -5726,7 +5732,9 @@
     },
     {
       "row_id": "3b31554d17fe",
-      "previous_row_ids": ["abca4e40ff39"],
+      "previous_row_ids": [
+        "abca4e40ff39"
+      ],
       "profile_id": "us-core-medicationrequest",
       "path": "MedicationRequest.reasonCode",
       "deviation_category": "matches",
@@ -5753,7 +5761,9 @@
     },
     {
       "row_id": "3bd43c78210b",
-      "previous_row_ids": ["3449129060c8"],
+      "previous_row_ids": [
+        "3449129060c8"
+      ],
       "profile_id": "us-core-encounter",
       "path": "Encounter.hospitalization.dischargeDisposition",
       "deviation_category": "matches",
