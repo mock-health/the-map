@@ -1,0 +1,121 @@
+name: refresh-fleet
+
+on:
+  schedule:
+    # Mondays at 12:00 UTC — two hours before refresh-capstmts, and weekly so
+    # a fleet PR always lands well inside the 14-day launch gate
+    # (THE_MAP_LAUNCH_GATE in validate.yml fails pushes to main when
+    # production_fleet.captured_date is older than 14 days). A missed week
+    # still leaves 7 days of slack to merge.
+    #
+    # Each snapshot adds ~400 MB of Git LFS evidence (~20 GB/year at this
+    # cadence) — budget LFS storage accordingly, or add a retention policy
+    # that prunes weekly snapshots down to quarterly keepers.
+    - cron: "0 12 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # Never overlap two harvests — politeness budgets are per-run.
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    name: harvest production fleet + open PR
+    runs-on: ubuntu-latest
+    # Harvest is ~45 min wall clock (bounded by the 1,451-endpoint Oracle
+    # Health provider tier at per-host concurrency 2) + LFS upload.
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          # Old snapshots stay as LFS pointers — the harvest only writes a new
+          # {today}/ snapshot dir and the drift analysis only reads it.
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: install (with dev deps — we verify in-job)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .[dev]
+
+      - name: harvest production CapStmts (all fleets)
+        # Sequential on purpose: each run has its own ≤10 RPS politeness
+        # budget, and cerner/cerner-patient share Oracle-hosted infra.
+        run: |
+          for slug in epic meditech cerner cerner-patient; do
+            python -m tools.harvest_production_capstmts "$slug"
+          done
+
+      - name: rebuild ehrs/*/production_fleet.json
+        run: |
+          for ehr in epic cerner meditech; do
+            python -m tools.analyze_fleet_drift "$ehr"
+          done
+
+      - name: verify (gated validate + full test suite)
+        # PRs opened with GITHUB_TOKEN don't reliably trigger the validate
+        # workflow, so the refresh proves itself green here before pushing.
+        run: |
+          THE_MAP_LAUNCH_GATE=1 python -m tools.validate
+          pytest -q
+          THE_MAP_LAUNCH_GATE=1 pytest -q tests/test_production_fleet_invariants.py
+
+      - name: commit, push, open PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%Y-%m-%d)
+          BRANCH="fleet-refresh/$DATE"
+
+          # LFS hooks must be installed in this clone or `git push` would
+          # upload pointer files without their objects.
+          git lfs install --local
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "$BRANCH"
+          git add ehrs/*/production_fleet.json "tests/golden/production-fleet/epic/$DATE" \
+            "tests/golden/production-fleet/meditech/$DATE" \
+            "tests/golden/production-fleet/cerner/$DATE" \
+            "tests/golden/production-fleet/cerner-patient/$DATE"
+          git commit -m "chore(fleet): refresh production-fleet snapshots ($DATE)"
+          git push -u origin "$BRANCH"
+
+          # Reachability table for the PR body, straight from the harvest summaries.
+          {
+            echo "Weekly production-fleet harvest. Keeps \`production_fleet.captured_date\` inside the 14-day launch gate on main."
+            echo
+            echo "| fleet | capstmt OK | smart-config OK |"
+            echo "|---|---|---|"
+            for slug in epic meditech cerner cerner-patient; do
+              python -c "
+          import json
+          d = json.load(open('tests/golden/production-fleet/$slug/$DATE/_summary.json'))
+          print(f\"| $slug | {d['capstmt_fetched_ok']}/{d['endpoints_attempted']} | {d['smart_config_fetched_ok']}/{d['endpoints_attempted']} |\")
+          "
+            done
+            echo
+            echo "Verified in the refresh job before this PR was opened:"
+            echo '- `THE_MAP_LAUNCH_GATE=1 python -m tools.validate` — 0 errors'
+            echo '- `pytest` + gated fleet invariants — green'
+            echo
+            echo 'Triggered by `.github/workflows/refresh-fleet.yml` on a weekly cron.'
+          } > /tmp/pr-body.md
+
+          gh label create fleet-refresh --description "weekly production-fleet snapshot refresh" --color 0e8a16 2>/dev/null || true
+          gh pr create \
+            --title "chore(fleet): refresh production-fleet snapshots ($DATE)" \
+            --body-file /tmp/pr-body.md \
+            --label fleet-refresh
