@@ -1,17 +1,17 @@
 {
   "ehr": "epic",
-  "captured_date": "2026-08-24",
+  "captured_date": "2026-08-31",
   "brands_bundle_source_url": "tests/golden/cross-vendor/epic-r4-endpoints-npd-augmented-2026-05-12.json",
   "brands_bundle_total_endpoints": 739,
   "harvest_summary": {
     "endpoints_attempted": 739,
-    "capstmt_fetched_ok": 586,
-    "capstmt_fetch_failed": 153,
-    "smart_config_fetched_ok": 588,
-    "smart_config_fetch_failed": 151,
+    "capstmt_fetched_ok": 585,
+    "capstmt_fetch_failed": 154,
+    "smart_config_fetched_ok": 587,
+    "smart_config_fetch_failed": 152,
     "failure_categories": {
       "http_4xx_404": 127,
-      "dns": 84,
+      "dns": 86,
       "http_5xx_503": 48,
       "other": 17,
       "connection": 12,
@@ -19,14 +19,14 @@
       "http_4xx_400": 6,
       "non_json": 2
     },
-    "wall_clock_seconds": 84.4,
+    "wall_clock_seconds": 131.4,
     "concurrency": 20
   },
   "software_distribution": {
-    "Epic November 2025": 251,
-    "Epic February 2026": 190,
+    "Epic November 2025": 250,
+    "Epic February 2026": 189,
     "Epic August 2025": 46,
-    "Epic May 2026": 44,
+    "Epic May 2026": 45,
     "Epic February 2025": 14,
     "Epic May 2025": 4,
     "Epic February 2023": 2,
@@ -35,14 +35,14 @@
     "Epic February 2024": 1
   },
   "fhir_version_distribution": {
-    "4.0.1": 554,
+    "4.0.1": 553,
     "4.0.0": 2
   },
   "capstmt_shape_clusters": [
     {
       "cluster_id": "epic-cluster-A",
       "modal": true,
-      "endpoint_count": 297,
+      "endpoint_count": 296,
       "shape_hash": "sha256:26d8252510918342",
       "resources_advertised": [
         "Account",
@@ -253,15 +253,12 @@
           "address": "https://epicproxy.ardenthealth.com/fhir/UPC/api/FHIR/R4",
           "managing_organization_name": "AHS OKLAHOMA PHYSICIAN GROUP LLC",
           "npi": "1235182775",
-          "pac_id": "9436122496",
           "state": "OK",
           "city": "BARTLESVILLE",
           "taxonomy": "207Y00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -284,15 +281,12 @@
           "managing_organization_name": "Albany Med Health System",
           "npi": "1013944941",
           "ccn": "330013",
-          "pac_id": "1951407808",
           "state": "NY",
           "city": "ALBANY",
           "taxonomy": "333600000X",
-          "medicare_provider_type": "PART B SUPPLIER - PHARMACY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -301,15 +295,12 @@
           "managing_organization_name": "Allina Health System",
           "npi": "1760446124",
           "ccn": "240071",
-          "pac_id": "4587573613",
           "state": "MN",
           "city": "FARIBAULT",
           "taxonomy": "3336C0002X",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -347,15 +338,12 @@
           "managing_organization_name": "Altru Health System",
           "npi": "1154346161",
           "ccn": "350019",
-          "pac_id": "1355251604",
           "state": "ND",
           "city": "GRAND FORKS",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -397,14 +385,11 @@
           "managing_organization_name": "Ascension Illinois",
           "npi": "1013017839",
           "ccn": "144031",
-          "pac_id": "9537062138",
           "state": "IL",
           "city": "CRYSTAL LAKE",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "npd",
-            "pos_via_nppes",
-            "pecos"
+            "pos_via_nppes"
           ]
         },
         {
@@ -413,15 +398,12 @@
           "managing_organization_name": "Ascension Providence",
           "npi": "1093708679",
           "ccn": "450042",
-          "pac_id": "7517878549",
           "state": "TX",
           "city": "WACO",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -435,15 +417,12 @@
           "managing_organization_name": "Aspen Valley Hospital",
           "npi": "1518960814",
           "ccn": "061324",
-          "pac_id": "9234123266",
           "state": "CO",
           "city": "ASPEN",
           "taxonomy": "282NC0060X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -493,15 +472,12 @@
           "address": "https://epicproxy.et1030.epichosted.com/FHIRProxy/SCHS/api/FHIR/R4",
           "managing_organization_name": "BAY CLINIC",
           "npi": "1538174958",
-          "pac_id": "9638164874",
           "state": "OR",
           "city": "COOS BAY",
           "taxonomy": "174400000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -587,15 +563,12 @@
           "managing_organization_name": "Bozeman Health",
           "npi": "1740387661",
           "ccn": "270057",
-          "pac_id": "4688984164",
           "state": "MT",
           "city": "BOZEMAN",
           "taxonomy": "333600000X",
-          "medicare_provider_type": "PART B SUPPLIER - PHARMACY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -721,13 +694,10 @@
           "address": "https://interconnect.carelonhealth.com/Interconnect-PRD-OAuth2/api/FHIR/R4/",
           "managing_organization_name": "Carelon",
           "npi": "1124443403",
-          "pac_id": "9931332111",
           "state": "NM",
           "city": "ALBUQUERQUE",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -749,14 +719,11 @@
           "address": "https://epx1.chsli.org/FHIR/api/FHIR/R4/",
           "managing_organization_name": "Catholic Health (Long Island NY)",
           "npi": "1043259997",
-          "pac_id": "6204749153",
           "state": "NY",
           "city": "BUFFALO",
           "taxonomy": "251F00000X",
-          "medicare_provider_type": "PART A PROVIDER - SKILLED NURSING FACILITY",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -847,15 +814,12 @@
           "managing_organization_name": "Children's Hospital of Philadelphia",
           "npi": "1215921457",
           "ccn": "393303",
-          "pac_id": "1254324122",
           "state": "PA",
           "city": "PHILADELPHIA",
           "taxonomy": "261Q00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -899,6 +863,11 @@
           ]
         },
         {
+          "endpoint_id": "epicarr.healthcare.cigna.com_FHIR-PRD_api_FHIR_R4",
+          "address": "https://epicarr.healthcare.cigna.com/FHIR-PRD/api/FHIR/R4/",
+          "managing_organization_name": "Cigna Medical Group"
+        },
+        {
           "endpoint_id": "boomer.cchmc.org_fhir_api_fhir_R4",
           "address": "https://boomer.cchmc.org/fhir/api/fhir/R4/",
           "managing_organization_name": "Cincinnati Children's Hospital Medical Center",
@@ -931,16 +900,13 @@
           "address": "https://epicproxy.et1430.epichosted.com/APIPROXYPRD/api/FHIR/R4",
           "managing_organization_name": "CLINICA SIERRA VISTA",
           "npi": "1003818444",
-          "pac_id": "3870407505",
           "state": "CA",
           "city": "MC FARLAND",
           "taxonomy": "261QF0400X",
-          "medicare_provider_type": "PART A PROVIDER - FEDERALLY QUALIFIED HEALTH CENTER (FQHC)",
           "parent_org_name": "CLINICA SIERRA VISTA",
           "parent_org_npi": "1518969211",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -1009,16 +975,13 @@
           "address": "https://epicproxy.connecticutchildrens.org/FHIR/api/FHIR/R4/",
           "managing_organization_name": "Connecticut Children's Medical Center",
           "npi": "1134271661",
-          "pac_id": "7618031907",
           "state": "CT",
           "city": "DANBURY",
           "taxonomy": "282NC2000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "parent_org_name": "HARTFORD HOSPITAL",
           "parent_org_npi": "1861652604",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -1069,15 +1032,12 @@
           "managing_organization_name": "CREEK NATION HOSPITAL CLINICS",
           "npi": "1033229992",
           "ccn": "371333",
-          "pac_id": "5698786226",
           "state": "OK",
           "city": "OKEMAH",
           "taxonomy": "261QH0100X",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -1098,15 +1058,12 @@
           "managing_organization_name": "Driscoll Children's Hospital",
           "npi": "1548286172",
           "ccn": "459823",
-          "pac_id": "4688642960",
           "state": "TX",
           "city": "CORPUS CHRISTI",
           "taxonomy": "235Z00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1156,15 +1113,12 @@
           "managing_organization_name": "Enloe Health",
           "npi": "1740922426",
           "ccn": "050039",
-          "pac_id": "3678946282",
           "state": "CA",
           "city": "CHICO",
           "taxonomy": "261QP2300X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1173,17 +1127,14 @@
           "managing_organization_name": "ENLOE MEDICAL CENTER",
           "npi": "1023420726",
           "ccn": "050039",
-          "pac_id": "9739092388",
           "state": "CA",
           "city": "CHICO",
           "taxonomy": "341600000X",
-          "medicare_provider_type": "PART B SUPPLIER - HOSPITAL DEPARTMENT(S)",
           "parent_org_name": "ENLOE MEDICAL CENTER",
           "parent_org_npi": "1912949538",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -1231,11 +1182,6 @@
             "pos",
             "nppes"
           ]
-        },
-        {
-          "endpoint_id": "epicarr.healthcare.cigna.com_FHIR-PRD_api_FHIR_R4",
-          "address": "https://epicarr.healthcare.cigna.com/FHIR-PRD/api/FHIR/R4/",
-          "managing_organization_name": "Evernorth"
         },
         {
           "endpoint_id": "epicproxy.et1126.epichosted.com_FHIRProxy_api_FHIR_R4",
@@ -1286,15 +1232,12 @@
           "managing_organization_name": "Garnet Health",
           "npi": "1609875772",
           "ccn": "330126",
-          "pac_id": "1456269828",
           "state": "NY",
           "city": "MIDDLETOWN",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1303,16 +1246,13 @@
           "managing_organization_name": "Genesis Healthcare System",
           "npi": "1144267972",
           "ccn": "360039",
-          "pac_id": "1759279953",
           "state": "OH",
           "city": "SOMERSET",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "parent_org_name": "GENESIS HEALTHCARE SYSTEM",
           "parent_org_npi": "1548203631",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -1321,15 +1261,12 @@
           "managing_organization_name": "Golden Valley Health Centers",
           "npi": "1912016916",
           "ccn": "260175",
-          "pac_id": "4981681467",
           "state": "MO",
           "city": "CLINTON",
           "taxonomy": "111N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1380,15 +1317,12 @@
           "managing_organization_name": "Hartford HealthCare",
           "npi": "1265431647",
           "ccn": "070025",
-          "pac_id": "8426057415",
           "state": "CT",
           "city": "HARTFORD",
           "taxonomy": "314000000X",
-          "medicare_provider_type": "PART A PROVIDER - SKILLED NURSING FACILITY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1434,14 +1368,11 @@
           "address": "https://epicproxy.et1426.epichosted.com/FHIRProxyPRD/api/FHIR/R4",
           "managing_organization_name": "HEALTH FIRST",
           "npi": "1134316219",
-          "pac_id": "7416035977",
           "state": "GA",
           "city": "DILLARD",
           "taxonomy": "261QR1300X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -1476,15 +1407,12 @@
           "managing_organization_name": "Hennepin Healthcare",
           "npi": "1407897309",
           "ccn": "240004",
-          "pac_id": "4789684861",
           "state": "MN",
           "city": "MINNEAPOLIS",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1493,17 +1421,28 @@
           "managing_organization_name": "Henry Ford Health System",
           "npi": "1003989690",
           "ccn": "230053",
-          "pac_id": "0547178311",
           "state": "MI",
           "city": "ALLEN PARK",
           "taxonomy": "332BX2000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "parent_org_name": "HENRY FORD HEALTH SYSTEM",
           "parent_org_npi": "1508942525",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
+          ]
+        },
+        {
+          "endpoint_id": "epicscripts.trihealth.com_fhirproxy_api_FHIR_R4",
+          "address": "https://epicscripts.trihealth.com/fhirproxy/api/FHIR/R4/",
+          "managing_organization_name": "Highland District Hospital",
+          "npi": "1154857340",
+          "ccn": "361332",
+          "state": "OH",
+          "city": "Montgomery",
+          "taxonomy": "261QR1300X",
+          "identity_sources": [
+            "npd",
+            "pos"
           ]
         },
         {
@@ -1572,15 +1511,12 @@
           "managing_organization_name": "John Muir Health",
           "npi": "1740215219",
           "ccn": "050496",
-          "pac_id": "2264338409",
           "state": "CA",
           "city": "CONCORD",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1669,15 +1605,12 @@
           "managing_organization_name": "Kootenai Health",
           "npi": "1992798409",
           "ccn": "130049",
-          "pac_id": "1355792276",
           "state": "ID",
           "city": "COEUR D'ALENE",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1750,15 +1683,12 @@
           "managing_organization_name": "Lehigh Valley Health Network",
           "npi": "1073510616",
           "ccn": "390133",
-          "pac_id": "8921167073",
           "state": "PA",
           "city": "ALLENTOWN",
           "taxonomy": "3416L0300X",
-          "medicare_provider_type": "PART B SUPPLIER - AMBULANCE SERVICE SUPPLIER",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1815,28 +1745,13 @@
           "managing_organization_name": "LOVELACE HEALTH SYSTEMS INC",
           "npi": "1205846037",
           "ccn": "320009",
-          "pac_id": "2769494046",
           "state": "OK",
           "city": "OWASSO",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "parent_org_name": "DIAGNOSTIC IMAGING ASSOCIATES INC",
           "parent_org_npi": "1427049956",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicarr.aahs.org_FHIR_api_FHIR_R4",
-          "address": "https://epicarr.aahs.org/FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Luminis Health",
-          "npi": "1013786433",
-          "state": "MD",
-          "city": "Annapolis",
-          "taxonomy": "2085R0202X",
-          "identity_sources": [
-            "npd"
+            "pos"
           ]
         },
         {
@@ -1905,14 +1820,11 @@
           "managing_organization_name": "MemorialCare",
           "npi": "1043279722",
           "ccn": "050603",
-          "pac_id": "2365446655",
           "state": "CA",
           "city": "LAGUNA HILLS",
-          "medicare_provider_type": "PRACTITIONER - OBSTETRICS/GYNECOLOGY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -1934,17 +1846,14 @@
           "managing_organization_name": "Mercy Medical Center",
           "npi": "1033159769",
           "ccn": "050444",
-          "pac_id": "4183535271",
           "state": "IA",
           "city": "HIAWATHA",
           "taxonomy": "333600000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPICE",
           "parent_org_name": "MERCY MEDICAL CENTER",
           "parent_org_npi": "1114923513",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -1994,14 +1903,11 @@
           "address": "https://mcproxyprd.med.umich.edu/FHIR-PRD/api/FHIR/R4/",
           "managing_organization_name": "Michigan Medicine",
           "npi": "1447205307",
-          "pac_id": "4981626736",
           "state": "MI",
           "city": "BAD AXE",
           "taxonomy": "207VM0101X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -2096,15 +2002,12 @@
           "managing_organization_name": "Nebraska Medicine",
           "npi": "1538163092",
           "ccn": "280013",
-          "pac_id": "8123077518",
           "state": "NE",
           "city": "OMAHA",
           "taxonomy": "207X00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2150,14 +2053,11 @@
           "managing_organization_name": "North Oaks",
           "npi": "1386647899",
           "ccn": "190015",
-          "pac_id": "0547173460",
           "state": "LA",
           "city": "HAMMOND",
-          "medicare_provider_type": "PRACTITIONER - CERTIFIED REGISTERED NURSE ANESTHETIST (CRNA)",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2203,15 +2103,12 @@
           "managing_organization_name": "Oklahoma Heart Hospital",
           "npi": "1083617005",
           "ccn": "370215",
-          "pac_id": "7113817248",
           "state": "OK",
           "city": "OKLAHOMA CITY",
           "taxonomy": "261QA1903X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2249,15 +2146,12 @@
           "managing_organization_name": "Olmsted Medical Center",
           "npi": "1538112131",
           "ccn": "240006",
-          "pac_id": "8527970060",
           "state": "MN",
           "city": "ROCHESTER",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2391,15 +2285,12 @@
           "managing_organization_name": "PeaceHealth",
           "npi": "1689677320",
           "ccn": "501329",
-          "pac_id": "9537073960",
           "state": "WA",
           "city": "SEDRO WOOLLEY",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2447,15 +2338,12 @@
           "managing_organization_name": "Pine Rest Christian Mental Health Services",
           "npi": "1982672762",
           "ccn": "234006",
-          "pac_id": "4981506508",
           "state": "MI",
           "city": "GRAND RAPIDS",
           "taxonomy": "207R00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2520,14 +2408,11 @@
           "managing_organization_name": "ProMedica Health System",
           "npi": "1952925331",
           "ccn": "230099",
-          "pac_id": "1658729066",
           "state": "MI",
           "city": "MONROE",
-          "medicare_provider_type": "PRACTITIONER - CLINICAL PSYCHOLOGIST",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2635,15 +2520,12 @@
           "managing_organization_name": "Scottish Rite for Children",
           "npi": "1760628184",
           "ccn": "453314",
-          "pac_id": "0446422844",
           "state": "TX",
           "city": "DALLAS",
           "taxonomy": "261QC0050X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2665,16 +2547,13 @@
           "managing_organization_name": "Seattle Children's Hospital",
           "npi": "1245342153",
           "ccn": "503300",
-          "pac_id": "9032021050",
           "state": "WA",
           "city": "Seattle",
           "taxonomy": "3336C0003X",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "npd",
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2688,15 +2567,12 @@
           "managing_organization_name": "Sentara Healthcare",
           "npi": "1053475004",
           "ccn": "490007",
-          "pac_id": "3274424924",
           "state": "VA",
           "city": "SUFFOLK",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -2719,15 +2595,12 @@
           "managing_organization_name": "Sharp HealthCare",
           "npi": "1154304475",
           "ccn": "050100",
-          "pac_id": "9638063530",
           "state": "CA",
           "city": "SAN DIEGO",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2815,15 +2688,12 @@
           "managing_organization_name": "St. Jude Children's Research Hospital",
           "npi": "1033112230",
           "ccn": "443302",
-          "pac_id": "7315133444",
           "state": "TN",
           "city": "MEMPHIS",
           "taxonomy": "3336C0002X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2837,15 +2707,12 @@
           "managing_organization_name": "Stanford Health Care",
           "npi": "1053835595",
           "ccn": "050441",
-          "pac_id": "6709797491",
           "state": "CA",
           "city": "MOUNTAIN VIEW",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -2919,15 +2786,12 @@
           "managing_organization_name": "The Brooklyn Hospital Center",
           "npi": "1811212848",
           "ccn": "330056",
-          "pac_id": "5698805083",
           "state": "NY",
           "city": "BROOKLYN",
           "taxonomy": "261Q00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -2964,15 +2828,12 @@
           "managing_organization_name": "The University of Vermont Health Network",
           "npi": "1851343586",
           "ccn": "470003",
-          "pac_id": "0648299065",
           "state": "VT",
           "city": "BURLINGTON",
           "taxonomy": "251K00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -2995,15 +2856,12 @@
           "managing_organization_name": "TidalHealth",
           "npi": "1780689463",
           "ccn": "210019",
-          "pac_id": "3072509702",
           "state": "MD",
           "city": "SALISBURY",
           "taxonomy": "291U00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3012,28 +2870,11 @@
           "managing_organization_name": "TMC HealthCare",
           "npi": "1174512792",
           "ccn": "451370",
-          "pac_id": "4284527227",
           "state": "AZ",
           "city": "TUCSON",
           "taxonomy": "111N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "parent_org_name": "TUCSON MEDICAL CENTER",
           "parent_org_npi": "1972876563",
-          "identity_sources": [
-            "npd",
-            "pos",
-            "pecos"
-          ]
-        },
-        {
-          "endpoint_id": "epicscripts.trihealth.com_fhirproxy_api_FHIR_R4",
-          "address": "https://epicscripts.trihealth.com/fhirproxy/api/FHIR/R4/",
-          "managing_organization_name": "TriHealth",
-          "npi": "1154857340",
-          "ccn": "361332",
-          "state": "OH",
-          "city": "Montgomery",
-          "taxonomy": "261QR1300X",
           "identity_sources": [
             "npd",
             "pos"
@@ -3045,18 +2886,15 @@
           "managing_organization_name": "Tufts Medicine",
           "npi": "1225825458",
           "ccn": "220116",
-          "pac_id": "3870665268",
           "state": "NH",
           "city": "NORTH HAMPTON",
           "taxonomy": "251E00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
           "parent_org_name": "TUFTS MEDICINE CARE AT HOME INC",
           "parent_org_npi": "1356338529",
           "identity_sources": [
             "npd",
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3065,16 +2903,13 @@
           "managing_organization_name": "TULSA SPINE SPECIALTY HOSPITAL",
           "npi": "1033185293",
           "ccn": "370216",
-          "pac_id": "5092623157",
           "state": "OK",
           "city": "TULSA",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "npd",
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3206,17 +3041,14 @@
           "managing_organization_name": "United Health Services New York (NYUHS)",
           "npi": "1518998699",
           "ccn": "330394",
-          "pac_id": "5193610533",
           "state": "NY",
           "city": "APALACHIN",
           "taxonomy": "3336I0012X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "parent_org_name": "UNITED HEALTH SERVICES HOSPITALS INC",
           "parent_org_npi": "1114959327",
           "identity_sources": [
             "npd",
-            "pos_via_nppes",
-            "pecos"
+            "pos_via_nppes"
           ]
         },
         {
@@ -3263,15 +3095,12 @@
           "managing_organization_name": "University Hospital (New Jersey)",
           "npi": "1215998323",
           "ccn": "310073",
-          "pac_id": "5294636874",
           "state": "NJ",
           "city": "NEPTUNE",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3294,15 +3123,12 @@
           "managing_organization_name": "University of Arkansas for Medical Sciences",
           "npi": "1831193531",
           "ccn": "049803",
-          "pac_id": "4082528955",
           "state": "AR",
           "city": "LITTLE ROCK",
           "taxonomy": "261QC1500X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3311,15 +3137,12 @@
           "managing_organization_name": "University of California Irvine",
           "npi": "1568493922",
           "ccn": "059811",
-          "pac_id": "5395658181",
           "state": "CA",
           "city": "SAN DIEGO",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3357,15 +3180,12 @@
           "managing_organization_name": "University of Louisville Physicians",
           "npi": "1861413098",
           "ccn": "180141",
-          "pac_id": "2264480615",
           "state": "KY",
           "city": "LOUISVILLE",
           "taxonomy": "122300000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3534,15 +3354,12 @@
           "managing_organization_name": "Virginia Hospital Center",
           "npi": "1790785996",
           "ccn": "490050",
-          "pac_id": "8820065022",
           "state": "VA",
           "city": "ARLINGTON",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -3551,15 +3368,12 @@
           "managing_organization_name": "Virtua Health",
           "npi": "1053316844",
           "ccn": "310061",
-          "pac_id": "2668380866",
           "state": "NJ",
           "city": "BORDENTOWN",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -3624,16 +3438,13 @@
           "address": "https://epicproxy.et1243.epichosted.com/OAuth2-PRD/api/FHIR/R4/",
           "managing_organization_name": "West Tennessee Healthcare",
           "npi": "1720635188",
-          "pac_id": "1951735521",
           "state": "TN",
           "city": "BOLIVAR",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "parent_org_name": "JACKSON-MADISON COUNTY GENERAL HOSPITAL",
           "parent_org_npi": "1720160708",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -3689,15 +3500,12 @@
           "managing_organization_name": "Yuma Regional Medical Center",
           "npi": "1194706655",
           "ccn": "030013",
-          "pac_id": "2062314826",
           "state": "AZ",
           "city": "YUMA",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         }
       ],
@@ -4049,15 +3857,12 @@
           "address": "https://epicproxy.et1186.epichosted.com/FHIRProxyPRD/api/FHIR/R4",
           "managing_organization_name": "ARIZONA COMMUNITY PHYSICIANS PC",
           "npi": "1205871076",
-          "pac_id": "4587560552",
           "state": "AZ",
           "city": "GREEN VALLEY",
           "taxonomy": "207QG0300X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4066,15 +3871,12 @@
           "managing_organization_name": "Arkansas Children's",
           "npi": "1194776757",
           "ccn": "043300",
-          "pac_id": "2769477744",
           "state": "AR",
           "city": "LITTLE ROCK",
           "taxonomy": "261QC0050X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4082,15 +3884,12 @@
           "address": "https://epicproxy.et1036.epichosted.com/APIProxyPRD/AC/api/FHIR/R4",
           "managing_organization_name": "ARKANSAS CHILDRENS NORTHWEST INC",
           "npi": "1255875746",
-          "pac_id": "3072872365",
           "state": "AR",
           "city": "SPRINGDALE",
           "taxonomy": "282NC2000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4268,18 +4067,20 @@
           "managing_organization_name": "BJC & Washington University",
           "npi": "1003824061",
           "ccn": "260163",
-          "pac_id": "1951219237",
           "state": "MO",
           "city": "FARMINGTON",
           "taxonomy": "261QM1300X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "parent_org_name": "MISSOURI BAPTIST MEDICAL CENTER",
           "parent_org_npi": "1487663506",
           "identity_sources": [
             "npd",
-            "pos_via_nppes",
-            "pecos"
+            "pos_via_nppes"
           ]
+        },
+        {
+          "endpoint_id": "chperx.health-partners.org_Proxy-FHIR_api_FHIR_R4",
+          "address": "https://chperx.health-partners.org/Proxy-FHIR/api/FHIR/R4/",
+          "managing_organization_name": "Bon Secours Mercy Health"
         },
         {
           "endpoint_id": "epicproxy.et1351.epichosted.com_APIProxyPRD_HOME_api_FHIR_R4",
@@ -4315,15 +4116,12 @@
           "managing_organization_name": "Boston Medical Center",
           "npi": "1114918950",
           "ccn": "220031",
-          "pac_id": "0547222051",
           "state": "MA",
           "city": "BOSTON",
           "taxonomy": "3336L0003X",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4402,15 +4200,12 @@
           "managing_organization_name": "Cheyenne Regional Medical Center",
           "npi": "1366209645",
           "ccn": "530014",
-          "pac_id": "3870030471",
           "state": "WY",
           "city": "CHEYENNE",
           "taxonomy": "251B00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -4433,15 +4228,12 @@
           "managing_organization_name": "Children's Hospital Colorado",
           "npi": "1336245828",
           "ccn": "063301",
-          "pac_id": "3274447925",
           "state": "CO",
           "city": "AURORA",
           "taxonomy": "251C00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4467,16 +4259,13 @@
           "managing_organization_name": "CITIZEN POTAWATOMI NATION",
           "npi": "1194752949",
           "ccn": "371825",
-          "pac_id": "3375511488",
           "state": "OK",
           "city": "SHAWNEE",
           "taxonomy": "261QF0400X",
-          "medicare_provider_type": "PART A PROVIDER - FEDERALLY QUALIFIED HEALTH CENTER (FQHC)",
           "identity_sources": [
             "npd",
             "pos_via_nppes",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4485,15 +4274,12 @@
           "managing_organization_name": "City of Hope",
           "npi": "1609026806",
           "ccn": "030138",
-          "pac_id": "2264593474",
           "state": "AZ",
           "city": "GOODYEAR",
           "taxonomy": "175F00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4610,15 +4396,12 @@
           "managing_organization_name": "Dartmouth-Hitchcock",
           "npi": "1003803495",
           "ccn": "301305",
-          "pac_id": "6103737531",
           "state": "NH",
           "city": "LEBANON",
           "taxonomy": "208000000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "pos_via_nppes",
-            "pecos"
+            "pos_via_nppes"
           ]
         },
         {
@@ -4626,16 +4409,13 @@
           "address": "https://epicproxy.et1087.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "DaVita Physician Solutions",
           "npi": "1346997996",
-          "pac_id": "8022382662",
           "state": "CO",
           "city": "LITTLETON",
           "taxonomy": "261QE0700X",
-          "medicare_provider_type": "PART A PROVIDER - END-STAGE RENAL DISEASE FACILITY (ESRD)",
           "parent_org_name": "TOTAL RENAL CARE INC",
           "parent_org_npi": "1720055312",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -4644,15 +4424,12 @@
           "managing_organization_name": "Deaconess Health System",
           "npi": "1306897335",
           "ccn": "150082",
-          "pac_id": "9537078027",
           "state": "IN",
           "city": "EVANSVILLE",
           "taxonomy": "261QA1903X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4661,14 +4438,11 @@
           "managing_organization_name": "Denver Health",
           "npi": "1346983087",
           "ccn": "060011",
-          "pac_id": "0547645152",
           "state": "CO",
           "city": "DENVER",
-          "medicare_provider_type": "ORDER AND REFERRING ONLY - GENERAL SURGERY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4695,15 +4469,12 @@
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/ECWG/api/FHIR/R4",
           "managing_organization_name": "EAST CASCADE WOMENS GROUP P C",
           "npi": "1770541609",
-          "pac_id": "9638166796",
           "state": "OR",
           "city": "BEND",
           "taxonomy": "207V00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4726,15 +4497,12 @@
           "managing_organization_name": "Eisenhower Medical Center",
           "npi": "1013981554",
           "ccn": "050573",
-          "pac_id": "5890689657",
           "state": "CA",
           "city": "RANCHO MIRAGE",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4743,15 +4511,12 @@
           "managing_organization_name": "El Camino Hospital",
           "npi": "1093712374",
           "ccn": "050308",
-          "pac_id": "0042239238",
           "state": "CA",
           "city": "MOUNTAIN VIEW",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4776,15 +4541,12 @@
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/FCIM/api/FHIR/R4",
           "managing_organization_name": "FALL CREEK INTERNAL MEDICINE LLP",
           "npi": "1518005222",
-          "pac_id": "7810980497",
           "state": "OR",
           "city": "BEND",
           "taxonomy": "207R00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4809,11 +4571,8 @@
           "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRproxy/api/FHIR/R4/",
           "managing_organization_name": "FHIR URL",
           "npi": "1235221300",
-          "pac_id": "2365670130",
-          "medicare_provider_type": "PRACTITIONER - PEDIATRIC MEDICINE",
           "identity_sources": [
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4821,11 +4580,8 @@
           "address": "https://epicproxy-pub.et1089.epichosted.com/FHIRproxy/api/fhir/r4/",
           "managing_organization_name": "FHIR URL",
           "npi": "1689094815",
-          "pac_id": "4284971698",
-          "medicare_provider_type": "PRACTITIONER - EMERGENCY MEDICINE",
           "identity_sources": [
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4833,11 +4589,8 @@
           "address": "https://epicproxy-pub.et1089.epichosted.com/fhirProxy/api/FHIR/R4/",
           "managing_organization_name": "FHIR URL",
           "npi": "1265544639",
-          "pac_id": "4385795871",
-          "medicare_provider_type": "PRACTITIONER - CRITICAL CARE (INTENSIVISTS)",
           "identity_sources": [
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4845,11 +4598,8 @@
           "address": "https://epicproxy-pub.et1089.epichosted.com/fhirproxy/api/fhir/r4/",
           "managing_organization_name": "FHIR URL",
           "npi": "1659369791",
-          "pac_id": "2264476852",
-          "medicare_provider_type": "PRACTITIONER - CARDIOVASCULAR DISEASE (CARDIOLOGY)",
           "identity_sources": [
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -4871,16 +4621,13 @@
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/FFC/api/FHIR/R4",
           "managing_organization_name": "FOOTHILL CLINIC LLC",
           "npi": "1265513964",
-          "pac_id": "9931003795",
           "state": "UT",
           "city": "SALT LAKE CITY",
           "taxonomy": "207Q00000X",
-          "medicare_provider_type": "DME SUPPLIER - PHYSICIAN - FAMILY PRACTICE",
           "parent_org_name": "FOOTHILL CLINIC LLC",
           "parent_org_npi": "1407947005",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -4903,17 +4650,14 @@
           "managing_organization_name": "Froedtert Health",
           "npi": "1003831132",
           "ccn": "520213",
-          "pac_id": "9537071196",
           "state": "WI",
           "city": "KENOSHA",
           "taxonomy": "333600000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "parent_org_name": "FROEDTERT SOUTH INC",
           "parent_org_npi": "1558305284",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -4993,14 +4737,11 @@
           "address": "https://mepic.hmhn.org/fhir/api/FHIR/R4/",
           "managing_organization_name": "Hackensack Meridian Health",
           "npi": "1336203538",
-          "pac_id": "7911003330",
           "state": "NJ",
           "city": "ASBURY PARK",
           "taxonomy": "208000000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -5073,15 +4814,12 @@
           "managing_organization_name": "Hoag Memorial Hospital Presbyterian",
           "npi": "1518951300",
           "ccn": "050224",
-          "pac_id": "5799677860",
           "state": "CA",
           "city": "NEWPORT BEACH",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -5115,15 +4853,12 @@
           "managing_organization_name": "Hospital for Special Surgery",
           "npi": "1598703019",
           "ccn": "330270",
-          "pac_id": "6901888700",
           "state": "NY",
           "city": "NEW YORK",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -5192,15 +4927,12 @@
           "managing_organization_name": "Jefferson Health",
           "npi": "1801963343",
           "ccn": "390265",
-          "pac_id": "5294628236",
           "state": "PA",
           "city": "JEFFERSON HILLS",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -5289,15 +5021,12 @@
           "managing_organization_name": "Mary Greeley Medical Center (Iowa)",
           "npi": "1174602908",
           "ccn": "160030",
-          "pac_id": "1254244239",
           "state": "IA",
           "city": "AMES",
           "taxonomy": "261QM1300X",
-          "medicare_provider_type": "PART B SUPPLIER - INDEPENDENT CLINICAL LABORATORY",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -5392,11 +5121,6 @@
           "managing_organization_name": "Mercy Health (Arkansas, Louisiana, Mississippi and Texas)"
         },
         {
-          "endpoint_id": "chperx.health-partners.org_Proxy-FHIR_api_FHIR_R4",
-          "address": "https://chperx.health-partners.org/Proxy-FHIR/api/FHIR/R4/",
-          "managing_organization_name": "Mercy Health - OH, KY"
-        },
-        {
           "endpoint_id": "epicproxy.et0876.epichosted.com_FHIRProxyPRD_api_FHIR_R4",
           "address": "https://epicproxy.et0876.epichosted.com/FHIRProxyPRD/api/FHIR/R4",
           "managing_organization_name": "MERCY HEALTH SERVICES",
@@ -5416,15 +5140,12 @@
           "managing_organization_name": "Mercy Health System - WI",
           "npi": "1144790791",
           "ccn": "140239",
-          "pac_id": "1850299967",
           "state": "IL",
           "city": "ROCKFORD",
           "taxonomy": "3336C0003X",
-          "medicare_provider_type": "DME SUPPLIER - PHARMACY",
           "identity_sources": [
             "npd",
-            "pos_via_nppes",
-            "pecos"
+            "pos_via_nppes"
           ]
         },
         {
@@ -5433,17 +5154,14 @@
           "managing_organization_name": "Meritus",
           "npi": "1437844917",
           "ccn": "210001",
-          "pac_id": "0547238479",
           "state": "MD",
           "city": "HAGERSTOWN",
           "taxonomy": "251E00000X",
-          "medicare_provider_type": "DME SUPPLIER - MEDICAL SUPPLY COMPANY WITH RESPIRATORY THERAPIST",
           "parent_org_name": "MERITUS MEDICAL CENTER INC",
           "parent_org_npi": "1396980405",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -5486,14 +5204,11 @@
           "address": "https://epicproxy.et1057.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Molina Care Connections",
           "npi": "1619486396",
-          "pac_id": "8224395041",
           "state": "UT",
           "city": "MIDVALE",
           "taxonomy": "1041C0700X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -5502,15 +5217,12 @@
           "managing_organization_name": "Montefiore Medical Center",
           "npi": "1063525152",
           "ccn": "330059",
-          "pac_id": "3779496021",
           "state": "NY",
           "city": "BRONX",
           "taxonomy": "207X00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -5528,17 +5240,14 @@
           "managing_organization_name": "Mosaic Life Care",
           "npi": "1093289431",
           "ccn": "260006",
-          "pac_id": "3678813896",
           "state": "MO",
           "city": "SAVANNAH",
           "taxonomy": "253Z00000X",
-          "medicare_provider_type": "PART A PROVIDER - RURAL HEALTH CLINIC",
           "parent_org_name": "MOSAIC MEDICAL CENTER - MARYVILLE",
           "parent_org_npi": "1568936995",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -5547,17 +5256,14 @@
           "managing_organization_name": "MyMichigan Health",
           "npi": "1033266002",
           "ccn": "230222",
-          "pac_id": "5799671285",
           "state": "MI",
           "city": "ENGADINE",
           "taxonomy": "251J00000X",
-          "medicare_provider_type": "PART A PROVIDER - RURAL HEALTH CLINIC",
           "parent_org_name": "HELEN NEWBERRY JOY HOSPITAL",
           "parent_org_npi": "1073636239",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -5586,23 +5292,6 @@
           "managing_organization_name": "Nemours"
         },
         {
-          "endpoint_id": "hygieia.bronsonhg.org_FHIRProxy_api_FHIR_R4",
-          "address": "https://hygieia.bronsonhg.org/FHIRProxy/api/FHIR/R4/",
-          "managing_organization_name": "Nephrology Center - Southwest Michigan",
-          "npi": "1376524090",
-          "pac_id": "9032022967",
-          "state": "MI",
-          "city": "BATTLE CREEK",
-          "taxonomy": "207R00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
-          "parent_org_name": "BRONSON BATTLE CREEK HOSPITAL",
-          "parent_org_npi": "1083644579",
-          "identity_sources": [
-            "npd",
-            "pecos"
-          ]
-        },
-        {
           "endpoint_id": "epicproxy.et1153.epichosted.com_FHIRProxy_api_FHIR_R4",
           "address": "https://epicproxy.et1153.epichosted.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "New Jersey Urology",
@@ -5620,15 +5309,12 @@
           "managing_organization_name": "New York-Presbyterian",
           "npi": "1881659274",
           "ccn": "330101",
-          "pac_id": "5294921649",
           "state": "NY",
           "city": "NEW YORK",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -5651,15 +5337,12 @@
           "managing_organization_name": "Northeast Georgia Health System",
           "npi": "1598784720",
           "ccn": "110029",
-          "pac_id": "8729076740",
           "state": "GA",
           "city": "GAINESVILLE",
           "taxonomy": "2084P0800X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -5773,17 +5456,14 @@
           "managing_organization_name": "OSF HealthCare",
           "npi": "1184783425",
           "ccn": "148549",
-          "pac_id": "0840195277",
           "state": "IL",
           "city": "SALEM",
           "taxonomy": "314000000X",
-          "medicare_provider_type": "PART A PROVIDER - CRITICAL ACCESS HOSPITAL",
           "parent_org_name": "SALEM TOWNSHIP HOSPITAL",
           "parent_org_npi": "1295739548",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -5920,14 +5600,11 @@
           "address": "https://haikuwa.providence.org/fhirproxy/api/FHIR/R4/",
           "managing_organization_name": "Providence Health & Services - Washington/Montana",
           "npi": "1508118555",
-          "pac_id": "0840279758",
           "state": "WA",
           "city": "SPOKANE",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -5948,15 +5625,12 @@
           "managing_organization_name": "Reid Health",
           "npi": "1205308822",
           "ccn": "150048",
-          "pac_id": "7012240971",
           "state": "IN",
           "city": "RICHMOND",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART B SUPPLIER - AMBULANCE SERVICE SUPPLIER",
           "identity_sources": [
             "npd",
-            "pos",
-            "pecos"
+            "pos"
           ]
         },
         {
@@ -5998,14 +5672,11 @@
           "managing_organization_name": "Rush University Medical Center",
           "npi": "1154066827",
           "ccn": "140119",
-          "pac_id": "4981086808",
           "state": "IL",
           "city": "CHICAGO",
-          "medicare_provider_type": "PRACTITIONER - FAMILY PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6042,15 +5713,12 @@
           "managing_organization_name": "Salem Health",
           "npi": "1245237486",
           "ccn": "380051",
-          "pac_id": "7810804630",
           "state": "OR",
           "city": "SALEM",
           "taxonomy": "275N00000X",
-          "medicare_provider_type": "PART A PROVIDER - CRITICAL ACCESS HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6113,16 +5781,13 @@
           "managing_organization_name": "Self Regional Healthcare",
           "npi": "1023046612",
           "ccn": "420071",
-          "pac_id": "4082527742",
           "state": "SC",
           "city": "GREENWOOD",
           "taxonomy": "273R00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "npd",
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6306,15 +5971,12 @@
           "managing_organization_name": "Stormont Vail Health",
           "npi": "1952018608",
           "ccn": "170086",
-          "pac_id": "9032587472",
           "state": "KS",
           "city": "TOPEKA",
           "taxonomy": "261QR1300X",
-          "medicare_provider_type": "PART A PROVIDER - RURAL HEALTH CLINIC",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6333,15 +5995,12 @@
           "managing_organization_name": "Tahoe Forest Health System",
           "npi": "1013935915",
           "ccn": "051328",
-          "pac_id": "4385533579",
           "state": "CA",
           "city": "TRUCKEE",
           "taxonomy": "261QC1500X",
-          "medicare_provider_type": "PART A PROVIDER - FEDERALLY QUALIFIED HEALTH CENTER (FQHC)",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6387,14 +6046,11 @@
           "address": "https://fhir.guthrie.org/FHIR-PRD/api/FHIR/R4/",
           "managing_organization_name": "The Guthrie Clinic",
           "npi": "1033117635",
-          "pac_id": "6002714177",
           "state": "NY",
           "city": "CORTLAND",
           "taxonomy": "332B00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         },
         {
@@ -6447,15 +6103,12 @@
           "managing_organization_name": "ThedaCare",
           "npi": "1548260839",
           "ccn": "520160",
-          "pac_id": "5890605836",
           "state": "WI",
           "city": "APPLETON",
           "taxonomy": "282NC0060X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6557,15 +6210,12 @@
           "managing_organization_name": "United Regional Health Care System",
           "npi": "1023013448",
           "ccn": "450010",
-          "pac_id": "7315846813",
           "state": "TX",
           "city": "WICHITA FALLS",
           "taxonomy": "261QM1300X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6573,15 +6223,12 @@
           "address": "https://epicproxy.et1096.epichosted.com/FHIRProxy/URMYCHART/api/FHIR/R4",
           "managing_organization_name": "UNITED REGIONAL PHYSICIAN GROUP",
           "npi": "1407890775",
-          "pac_id": "2163417478",
           "state": "TX",
           "city": "BOWIE",
           "taxonomy": "207R00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6590,14 +6237,11 @@
           "managing_organization_name": "University of Colorado Health",
           "npi": "1174163232",
           "ccn": "060024",
-          "pac_id": "9830528835",
           "state": "CO",
           "city": "AURORA",
-          "medicare_provider_type": "PRACTITIONER - ANESTHESIOLOGY ASSISTANT",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6634,15 +6278,12 @@
           "managing_organization_name": "University of Maryland Medical System",
           "npi": "1508807355",
           "ccn": "210002",
-          "pac_id": "7113914771",
           "state": "MD",
           "city": "BALTIMORE",
           "taxonomy": "367500000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6707,15 +6348,12 @@
           "managing_organization_name": "WakeMed Health and Hospitals",
           "npi": "1467435842",
           "ccn": "340069",
-          "pac_id": "7315937612",
           "state": "NC",
           "city": "RALEIGH",
           "taxonomy": "251E00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOME HEALTH AGENCY",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -6723,15 +6361,26 @@
           "address": "https://epicproxy.et4001.epichosted.com/APIProxyPRD/WBFM/api/FHIR/R4",
           "managing_organization_name": "WEST BEND FAMILY MEDICINE",
           "npi": "1316060163",
-          "pac_id": "0143311225",
           "state": "OR",
           "city": "BEND",
           "taxonomy": "207Q00000X",
-          "medicare_provider_type": "PART B SUPPLIER - CLINIC/GROUP PRACTICE",
           "identity_sources": [
             "npd",
-            "nppes",
-            "pecos"
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "hygieia.bronsonhg.org_FHIRProxy_api_FHIR_R4",
+          "address": "https://hygieia.bronsonhg.org/FHIRProxy/api/FHIR/R4/",
+          "managing_organization_name": "Western Michigan University School of Medicine",
+          "npi": "1376524090",
+          "state": "MI",
+          "city": "BATTLE CREEK",
+          "taxonomy": "207R00000X",
+          "parent_org_name": "BRONSON BATTLE CREEK HOSPITAL",
+          "parent_org_npi": "1083644579",
+          "identity_sources": [
+            "npd"
           ]
         },
         {
@@ -6995,15 +6644,12 @@
           "managing_organization_name": "Memorial Hospital and Health Care Center",
           "npi": "1356320469",
           "ccn": "150115",
-          "pac_id": "8123923281",
           "state": "IN",
           "city": "JASPER",
           "taxonomy": "275N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -7098,16 +6744,13 @@
           "address": "https://epic-arr.watsonclinicad.com/FHIRProxy/api/FHIR/R4/",
           "managing_organization_name": "Watson Clinic",
           "npi": "1124166574",
-          "pac_id": "1456258979",
           "state": "FL",
           "city": "LAKELAND",
           "taxonomy": "207RC0000X",
-          "medicare_provider_type": "DME SUPPLIER - MULTI-SPECIALTY - PHYSICIAN",
           "parent_org_name": "WATSON CLINIC LLP",
           "parent_org_npi": "1437297892",
           "identity_sources": [
-            "npd",
-            "pecos"
+            "npd"
           ]
         }
       ],
@@ -7344,15 +6987,12 @@
           "managing_organization_name": "Mount Auburn Hospital",
           "npi": "1689670259",
           "ccn": "220002",
-          "pac_id": "2668364183",
           "state": "MA",
           "city": "CAMBRIDGE",
           "taxonomy": "282N00000X",
-          "medicare_provider_type": "PART A PROVIDER - HOSPITAL",
           "identity_sources": [
             "pos",
-            "nppes",
-            "pecos"
+            "nppes"
           ]
         },
         {
@@ -7617,7 +7257,7 @@
   ],
   "smart_config_drift": {
     "grant_types_supported_distribution": {
-      "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\"]": 317,
+      "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\"]": 316,
       "[\"authorization_code\", \"client_credentials\", \"refresh_token\", \"urn:ietf:params:oauth:grant-type:jwt-bearer\", \"urn:ietf:params:oauth:grant-type:token-exchange\"]": 234,
       "[]": 7
     },
@@ -7641,32 +7281,32 @@
       "sso-openid-connect"
     ],
     "capabilities_distribution": {
-      "launch-ehr": 558,
-      "launch-standalone": 558,
-      "client-public": 558,
-      "client-confidential-symmetric": 558,
-      "context-banner": 558,
-      "context-style": 558,
-      "context-ehr-patient": 558,
-      "context-ehr-encounter": 558,
-      "context-standalone-patient": 558,
-      "permission-offline": 558,
-      "permission-patient": 558,
-      "permission-user": 558,
-      "sso-openid-connect": 558,
-      "client-confidential-asymmetric": 551,
-      "permission-v1": 551,
-      "permission-v2": 551,
-      "authorize-post": 551
+      "launch-ehr": 557,
+      "launch-standalone": 557,
+      "client-public": 557,
+      "client-confidential-symmetric": 557,
+      "context-banner": 557,
+      "context-style": 557,
+      "context-ehr-patient": 557,
+      "context-ehr-encounter": 557,
+      "context-standalone-patient": 557,
+      "permission-offline": 557,
+      "permission-patient": 557,
+      "permission-user": 557,
+      "sso-openid-connect": 557,
+      "client-confidential-asymmetric": 550,
+      "permission-v1": 550,
+      "permission-v2": 550,
+      "authorize-post": 550
     },
     "scope_count_distribution": {
-      "1-99": 558
+      "1-99": 557
     },
     "token_endpoint_auth_methods_distribution": {
-      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 558
+      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 557
     },
     "code_challenge_methods_distribution": {
-      "[\"S256\"]": 551,
+      "[\"S256\"]": 550,
       "[]": 7
     }
   },
@@ -7674,352 +7314,352 @@
     {
       "profile_id": "us-core-allergyintolerance",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-blood-pressure",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-bmi",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-height",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-temperature",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-weight",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careplan",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careteam",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition-encounter-diagnosis",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition-problems-health-concerns",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-coverage",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-note",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-documentreference",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-encounter",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-goal",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-head-circumference",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-heart-rate",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-immunization",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-implantable-device",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medication",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationdispense",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationrequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-clinical-result",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-occupation",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-pregnancyintent",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-pregnancystatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-screening-assessment",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-sexual-orientation",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-organization",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-patient",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitioner",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitionerrole",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-procedure",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-provenance",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-pulse-oximetry",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-relatedperson",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-respiratory-rate",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-servicerequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-simple-observation",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-smokingstatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-specimen",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-vital-signs",
       "in_us_core_baseline": true,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
@@ -8027,7 +7667,7 @@
       "profile_id": "us-core-location",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 556,
+      "customers_with_capstmt": 555,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -8035,31 +7675,31 @@
       "profile_id": "us-core-questionnaireresponse",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 556,
+      "customers_with_capstmt": 555,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
     {
       "profile_id": "head-occipital-frontal-circumference-percentile",
       "in_us_core_baseline": false,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-bmi-for-age",
       "in_us_core_baseline": false,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-weight-for-height",
       "in_us_core_baseline": false,
-      "customers_advertising": 549,
-      "customers_with_capstmt": 556,
+      "customers_advertising": 548,
+      "customers_with_capstmt": 555,
       "fraction": 0.9874,
       "absent_in_modal_cluster": false
     }
@@ -8110,7 +7750,7 @@
     {
       "endpoint_id": "chperx.health-partners.org_Proxy-FHIR_api_FHIR_R4",
       "address": "https://chperx.health-partners.org/Proxy-FHIR/api/FHIR/R4/",
-      "managing_organization_name": "Mercy Health - OH, KY",
+      "managing_organization_name": "Bon Secours Mercy Health",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9405,7 +9045,7 @@
     {
       "endpoint_id": "hygieia.bronsonhg.org_FHIRProxy_api_FHIR_R4",
       "address": "https://hygieia.bronsonhg.org/FHIRProxy/api/FHIR/R4/",
-      "managing_organization_name": "Nephrology Center - Southwest Michigan",
+      "managing_organization_name": "Western Michigan University School of Medicine",
       "cluster_id": "epic-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -9880,9 +9520,9 @@
     }
   ],
   "verification": {
-    "source_url": "tests/golden/production-fleet/epic/2026-08-24",
-    "source_quote": "Aggregated from 556 CapabilityStatements harvested under tests/golden/production-fleet/epic/2026-08-24/",
+    "source_url": "tests/golden/production-fleet/epic/2026-08-31",
+    "source_quote": "Aggregated from 555 CapabilityStatements harvested under tests/golden/production-fleet/epic/2026-08-31/",
     "verified_via": "epic_production_fleet",
-    "verified_date": "2026-08-24"
+    "verified_date": "2026-08-31"
   }
 }
