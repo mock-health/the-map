@@ -1,34 +1,33 @@
 {
   "ehr": "cerner",
-  "captured_date": "2026-08-31",
+  "captured_date": "2026-09-07",
   "brands_bundle_source_url": "tests/golden/cross-vendor/oracle-health-provider-r4-endpoints-npd-augmented-2026-05-12.json\ntests/golden/cross-vendor/oracle-health-patient-r4-endpoints-npd-augmented-2026-05-12.json",
   "brands_bundle_total_endpoints": 2908,
   "harvest_summary": {
     "endpoints_attempted": 2908,
-    "capstmt_fetched_ok": 2905,
-    "capstmt_fetch_failed": 3,
+    "capstmt_fetched_ok": 2906,
+    "capstmt_fetch_failed": 2,
     "smart_config_fetched_ok": 2906,
     "smart_config_fetch_failed": 2,
     "failure_categories": {
       "http_4xx_401": 2,
-      "http_5xx_502": 1,
       "http_4xx_404": 1,
       "http_4xx_406": 1
     },
-    "wall_clock_seconds": 2644.9,
+    "wall_clock_seconds": 1769.6,
     "concurrency": 20
   },
   "software_distribution": {
-    "unknown": 2905
+    "unknown": 2906
   },
   "fhir_version_distribution": {
-    "4.0.1": 2905
+    "4.0.1": 2906
   },
   "capstmt_shape_clusters": [
     {
       "cluster_id": "cerner-patient-cluster-A",
       "modal": true,
-      "endpoint_count": 1450,
+      "endpoint_count": 1451,
       "shape_hash": "sha256:46e1c15f2221570b",
       "resources_advertised": [
         "AllergyIntolerance",
@@ -3704,6 +3703,11 @@
           "endpoint_id": "fhir-myrecord.cerner.com_r4_7d7f9694-46c9-4670-abeb-9400514e3b75",
           "address": "https://fhir-myrecord.cerner.com/r4/7d7f9694-46c9-4670-abeb-9400514e3b75/",
           "managing_organization_name": "Dr. Sonny Park"
+        },
+        {
+          "endpoint_id": "fhir-myrecord.cerner.com_r4_045b627f-46d4-4a3f-ac6b-f056b251cd0e",
+          "address": "https://fhir-myrecord.cerner.com/r4/045b627f-46d4-4a3f-ac6b-f056b251cd0e/",
+          "managing_organization_name": "Dr. Suganthini Umakanthan, MD"
         },
         {
           "endpoint_id": "fhir-myrecord.cerner.com_r4_f7ee1b9a-ee95-47a7-b4a5-4902951fcb85",
@@ -30752,336 +30756,336 @@
     {
       "profile_id": "us-core-allergyintolerance",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careplan",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careteam",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition-encounter-diagnosis",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition-problems-health-concerns",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-coverage",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-documentreference",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-encounter",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-goal",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-immunization",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-implantable-device",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-location",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationdispense",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationrequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-organization",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-patient",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitioner",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-procedure",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-provenance",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-pulse-oximetry",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-relatedperson",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-servicerequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-smokingstatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-specimen",
       "in_us_core_baseline": true,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-blood-pressure",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-bmi",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-height",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-temperature",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-body-weight",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-note",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-head-circumference",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-heart-rate",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-clinical-result",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-occupation",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-pregnancyintent",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-pregnancystatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-screening-assessment",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-sexual-orientation",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-respiratory-rate",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-vital-signs",
       "in_us_core_baseline": true,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
@@ -31089,7 +31093,7 @@
       "profile_id": "us-core-medication",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -31097,7 +31101,7 @@
       "profile_id": "us-core-practitionerrole",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -31105,7 +31109,7 @@
       "profile_id": "us-core-questionnaireresponse",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -31113,55 +31117,55 @@
       "profile_id": "us-core-simple-observation",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
     {
       "profile_id": "head-occipital-frontal-circumference-percentile",
       "in_us_core_baseline": false,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-bmi-for-age",
       "in_us_core_baseline": false,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-weight-for-height",
       "in_us_core_baseline": false,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition",
       "in_us_core_baseline": false,
-      "customers_advertising": 2904,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9997,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-sdoh-assessment",
       "in_us_core_baseline": false,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-survey",
       "in_us_core_baseline": false,
-      "customers_advertising": 2899,
-      "customers_with_capstmt": 2905,
+      "customers_advertising": 2900,
+      "customers_with_capstmt": 2906,
       "fraction": 0.9979,
       "absent_in_modal_cluster": false
     },
@@ -31169,7 +31173,7 @@
       "profile_id": "bodyheight",
       "in_us_core_baseline": false,
       "customers_advertising": 5,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0017,
       "absent_in_modal_cluster": true
     },
@@ -31177,7 +31181,7 @@
       "profile_id": "bodytemp",
       "in_us_core_baseline": false,
       "customers_advertising": 5,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0017,
       "absent_in_modal_cluster": true
     },
@@ -31185,7 +31189,7 @@
       "profile_id": "bodyweight",
       "in_us_core_baseline": false,
       "customers_advertising": 5,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0017,
       "absent_in_modal_cluster": true
     },
@@ -31193,7 +31197,7 @@
       "profile_id": "bp",
       "in_us_core_baseline": false,
       "customers_advertising": 5,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0017,
       "absent_in_modal_cluster": true
     },
@@ -31201,7 +31205,7 @@
       "profile_id": "heartrate",
       "in_us_core_baseline": false,
       "customers_advertising": 5,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0017,
       "absent_in_modal_cluster": true
     },
@@ -31209,7 +31213,7 @@
       "profile_id": "resprate",
       "in_us_core_baseline": false,
       "customers_advertising": 5,
-      "customers_with_capstmt": 2905,
+      "customers_with_capstmt": 2906,
       "fraction": 0.0017,
       "absent_in_modal_cluster": true
     }
@@ -31259,9 +31263,9 @@
     }
   ],
   "verification": {
-    "source_url": "tests/golden/production-fleet/cerner/2026-08-31\ntests/golden/production-fleet/cerner-patient/2026-08-31",
-    "source_quote": "Aggregated from 2905 CapabilityStatements across 2 access scopes (provider=1451, patient=1454) harvested under tests/golden/production-fleet/cerner/2026-08-31, tests/golden/production-fleet/cerner-patient/2026-08-31/",
+    "source_url": "tests/golden/production-fleet/cerner/2026-09-07\ntests/golden/production-fleet/cerner-patient/2026-09-07",
+    "source_quote": "Aggregated from 2906 CapabilityStatements across 2 access scopes (provider=1451, patient=1455) harvested under tests/golden/production-fleet/cerner/2026-09-07, tests/golden/production-fleet/cerner-patient/2026-09-07/",
     "verified_via": "cerner_production_fleet",
-    "verified_date": "2026-08-31"
+    "verified_date": "2026-09-07"
   }
 }
