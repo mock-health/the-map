@@ -1,6 +1,6 @@
 {
   "ehr": "cerner",
-  "captured_date": "2026-09-21",
+  "captured_date": "2026-10-12",
   "brands_bundle_source_url": "tests/golden/cross-vendor/oracle-health-provider-r4-endpoints-npd-augmented-2026-05-12.json\ntests/golden/cross-vendor/oracle-health-patient-r4-endpoints-npd-augmented-2026-05-12.json",
   "brands_bundle_total_endpoints": 2908,
   "harvest_summary": {
@@ -14,7 +14,7 @@
       "http_4xx_404": 1,
       "http_4xx_406": 1
     },
-    "wall_clock_seconds": 3263.7,
+    "wall_clock_seconds": 2181.5,
     "concurrency": 20
   },
   "software_distribution": {
@@ -31263,9 +31263,9 @@
     }
   ],
   "verification": {
-    "source_url": "tests/golden/production-fleet/cerner/2026-09-21\ntests/golden/production-fleet/cerner-patient/2026-09-21",
-    "source_quote": "Aggregated from 2906 CapabilityStatements across 2 access scopes (provider=1451, patient=1455) harvested under tests/golden/production-fleet/cerner/2026-09-21, tests/golden/production-fleet/cerner-patient/2026-09-21/",
+    "source_url": "tests/golden/production-fleet/cerner/2026-10-12\ntests/golden/production-fleet/cerner-patient/2026-10-12",
+    "source_quote": "Aggregated from 2906 CapabilityStatements across 2 access scopes (provider=1451, patient=1455) harvested under tests/golden/production-fleet/cerner/2026-10-12, tests/golden/production-fleet/cerner-patient/2026-10-12/",
     "verified_via": "cerner_production_fleet",
-    "verified_date": "2026-09-21"
+    "verified_date": "2026-10-12"
   }
 }
