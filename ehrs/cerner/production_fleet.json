@@ -1,20 +1,21 @@
 {
   "ehr": "cerner",
-  "captured_date": "2026-09-21",
+  "captured_date": "2026-10-26",
   "brands_bundle_source_url": "tests/golden/cross-vendor/oracle-health-provider-r4-endpoints-npd-augmented-2026-05-12.json\ntests/golden/cross-vendor/oracle-health-patient-r4-endpoints-npd-augmented-2026-05-12.json",
   "brands_bundle_total_endpoints": 2908,
   "harvest_summary": {
     "endpoints_attempted": 2908,
     "capstmt_fetched_ok": 2906,
     "capstmt_fetch_failed": 2,
-    "smart_config_fetched_ok": 2906,
-    "smart_config_fetch_failed": 2,
+    "smart_config_fetched_ok": 2904,
+    "smart_config_fetch_failed": 4,
     "failure_categories": {
+      "timeout": 2,
       "http_4xx_401": 2,
       "http_4xx_404": 1,
       "http_4xx_406": 1
     },
-    "wall_clock_seconds": 3263.7,
+    "wall_clock_seconds": 3508.8,
     "concurrency": 20
   },
   "software_distribution": {
@@ -30696,7 +30697,7 @@
   ],
   "smart_config_drift": {
     "grant_types_supported_distribution": {
-      "[\"authorization_code\", \"client_credentials\"]": 2906
+      "[\"authorization_code\", \"client_credentials\"]": 2904
     },
     "capabilities_modal_set": [
       "authorize-post",
@@ -30719,36 +30720,36 @@
       "sso-openid-connect"
     ],
     "capabilities_distribution": {
-      "authorize-post": 2906,
-      "launch-ehr": 2906,
-      "launch-standalone": 2906,
-      "client-public": 2906,
-      "client-confidential-asymmetric": 2906,
-      "client-confidential-symmetric": 2906,
-      "sso-openid-connect": 2906,
-      "context-banner": 2906,
-      "context-style": 2906,
-      "context-ehr-patient": 2906,
-      "permission-patient": 2906,
-      "permission-user": 2906,
-      "permission-offline": 2906,
-      "permission-online": 2906,
-      "permission-v1": 2906,
-      "permission-v2": 2906,
-      "health-cards": 2906,
+      "authorize-post": 2904,
+      "launch-ehr": 2904,
+      "launch-standalone": 2904,
+      "client-public": 2904,
+      "client-confidential-asymmetric": 2904,
+      "client-confidential-symmetric": 2904,
+      "sso-openid-connect": 2904,
+      "context-banner": 2904,
+      "context-style": 2904,
+      "context-ehr-patient": 2904,
+      "permission-patient": 2904,
+      "permission-user": 2904,
+      "permission-offline": 2904,
+      "permission-online": 2904,
+      "permission-v1": 2904,
+      "permission-v2": 2904,
+      "health-cards": 2904,
       "context-standalone-patient": 1455,
-      "context-ehr-encounter": 1451
+      "context-ehr-encounter": 1449
     },
     "scope_count_distribution": {
-      "200-399": 1451,
+      "200-399": 1449,
       "100-199": 1454,
       "1-99": 1
     },
     "token_endpoint_auth_methods_distribution": {
-      "[\"client_secret_basic\", \"private_key_jwt\"]": 2906
+      "[\"client_secret_basic\", \"private_key_jwt\"]": 2904
     },
     "code_challenge_methods_distribution": {
-      "[\"S256\"]": 2281,
+      "[\"S256\"]": 2279,
       "[]": 625
     }
   },
@@ -31263,9 +31264,9 @@
     }
   ],
   "verification": {
-    "source_url": "tests/golden/production-fleet/cerner/2026-09-21\ntests/golden/production-fleet/cerner-patient/2026-09-21",
-    "source_quote": "Aggregated from 2906 CapabilityStatements across 2 access scopes (provider=1451, patient=1455) harvested under tests/golden/production-fleet/cerner/2026-09-21, tests/golden/production-fleet/cerner-patient/2026-09-21/",
+    "source_url": "tests/golden/production-fleet/cerner/2026-10-26\ntests/golden/production-fleet/cerner-patient/2026-10-26",
+    "source_quote": "Aggregated from 2906 CapabilityStatements across 2 access scopes (provider=1451, patient=1455) harvested under tests/golden/production-fleet/cerner/2026-10-26, tests/golden/production-fleet/cerner-patient/2026-10-26/",
     "verified_via": "cerner_production_fleet",
-    "verified_date": "2026-09-21"
+    "verified_date": "2026-10-26"
   }
 }
