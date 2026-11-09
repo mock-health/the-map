@@ -1,41 +1,41 @@
 {
   "ehr": "meditech",
-  "captured_date": "2026-11-02",
+  "captured_date": "2026-11-09",
   "brands_bundle_source_url": "tests/golden/cross-vendor/meditech-brands-luxera-augmented-2026-05-07.json",
   "brands_bundle_total_endpoints": 549,
   "harvest_summary": {
     "endpoints_attempted": 549,
-    "capstmt_fetched_ok": 351,
-    "capstmt_fetch_failed": 198,
-    "smart_config_fetched_ok": 347,
-    "smart_config_fetch_failed": 202,
+    "capstmt_fetched_ok": 339,
+    "capstmt_fetch_failed": 210,
+    "smart_config_fetched_ok": 342,
+    "smart_config_fetch_failed": 207,
     "failure_categories": {
-      "connection": 151,
+      "connection": 171,
       "dns": 120,
-      "tls": 50,
-      "http_4xx_403": 36,
-      "http_4xx_400": 12,
-      "http_5xx_503": 12,
-      "http_4xx_404": 10,
+      "tls": 52,
+      "http_4xx_403": 35,
+      "http_5xx_503": 14,
+      "http_4xx_400": 9,
+      "http_4xx_404": 6,
       "http_5xx_502": 4,
       "http_5xx_500": 3,
       "http_5xx_526": 2
     },
-    "wall_clock_seconds": 229.0,
+    "wall_clock_seconds": 270.5,
     "concurrency": 20
   },
   "software_distribution": {
-    "Interoperability Services: US Core FHIR R4 1.0.0": 325,
+    "Interoperability Services: US Core FHIR R4 1.0.0": 313,
     "Interoperability Services: US Core FHIR R4 1.0": 7
   },
   "fhir_version_distribution": {
-    "4.0.1": 332
+    "4.0.1": 320
   },
   "capstmt_shape_clusters": [
     {
       "cluster_id": "meditech-cluster-A",
       "modal": true,
-      "endpoint_count": 185,
+      "endpoint_count": 190,
       "shape_hash": "sha256:4741eedbf08f2d3e",
       "resources_advertised": [
         "AllergyIntolerance",
@@ -387,18 +387,6 @@
           ]
         },
         {
-          "endpoint_id": "chmc-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://chmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Centinela Hospital Medical Center",
-          "npi": "1134493463",
-          "state": "CA",
-          "city": "Ontario",
-          "taxonomy": "282E00000X",
-          "identity_sources": [
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "neuroskillsapi.meditech.cloud_v1_uscore_R4",
           "address": "https://neuroskillsapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "Centre for Neuro Skills",
@@ -637,16 +625,16 @@
           ]
         },
         {
-          "endpoint_id": "dvh-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://dvh-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Desert Valley Hospital",
-          "npi": "1851396576",
-          "ccn": "050709",
-          "state": "CA",
-          "city": "Ontario",
-          "taxonomy": "282N00000X",
+          "endpoint_id": "mtrestapis-live01.dcmh.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.dcmh.net:443/v1/uscore/R4",
+          "managing_organization_name": "Decatur County Memorial Hospital",
+          "npi": "1093712887",
+          "ccn": "151332",
+          "state": "IN",
+          "city": "GREENSBURG",
+          "taxonomy": "261QP2300X",
           "identity_sources": [
-            "pos_via_nppes",
+            "pos",
             "nppes"
           ]
         },
@@ -778,17 +766,6 @@
           ]
         },
         {
-          "endpoint_id": "api01.fresnosurgicalhospital.com_v1_uscore_R4",
-          "address": "https://api01.fresnosurgicalhospital.com:443/v1/uscore/R4",
-          "managing_organization_name": "Fresno Surgical Hospital",
-          "ccn": "050708",
-          "state": "CA",
-          "city": "FRESNO",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
           "endpoint_id": "georgeregionalapi.meditech.cloud_v1_uscore_R4",
           "address": "https://georgeregionalapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "George Regional Health System",
@@ -797,6 +774,32 @@
           "state": "MS",
           "city": "LUCEDALE",
           "taxonomy": "314000000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "gibsonhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://gibsonhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Gibson Area Hospital & Health Services",
+          "npi": "1205970712",
+          "state": "IL",
+          "city": "Gibson City",
+          "taxonomy": "251E00000X",
+          "identity_sources": [
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "giffordhealthcareapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://giffordhealthcareapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Gifford Medical Center",
+          "npi": "1730199647",
+          "ccn": "471301",
+          "state": "VT",
+          "city": "RANDOLPH",
+          "taxonomy": "282NC0060X",
           "identity_sources": [
             "pos",
             "nppes"
@@ -859,6 +862,20 @@
           ]
         },
         {
+          "endpoint_id": "gmhapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://gmhapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Grady Memorial Hospital",
+          "npi": "1538169198",
+          "ccn": "370054",
+          "state": "UT",
+          "city": "West Jordan",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "gprmcapi.meditech.cloud_v1_uscore_R4",
           "address": "https://gprmcapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "Great Plains Regional Medical Center",
@@ -897,18 +914,6 @@
           "taxonomy": "3336C0004X",
           "identity_sources": [
             "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "hmc-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://hmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Harlingen Medical Center",
-          "npi": "1831302272",
-          "state": "CA",
-          "city": "Ontario",
-          "taxonomy": "174400000X",
-          "identity_sources": [
             "nppes"
           ]
         },
@@ -1067,6 +1072,20 @@
           ]
         },
         {
+          "endpoint_id": "hugginshospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://hugginshospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Huggins Hospital",
+          "npi": "1881689354",
+          "ccn": "301312",
+          "state": "NH",
+          "city": "WOLFEBORO",
+          "taxonomy": "207V00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "mtrestapis-live02.hph.care_v1_uscore_R4",
           "address": "https://mtrestapis-live02.hph.care:443/v1/uscore/R4",
           "managing_organization_name": "Humboldt Park Health",
@@ -1162,6 +1181,17 @@
           ]
         },
         {
+          "endpoint_id": "lapazhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://lapazhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "La Paz Regional Hospital",
+          "ccn": "031317",
+          "state": "AZ",
+          "city": "PARKER",
+          "identity_sources": [
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "labettehealthapi.meditech.cloud_v1_uscore_R4",
           "address": "https://labettehealthapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "Labette County Medical Center, d/b/a Labette Health",
@@ -1216,6 +1246,17 @@
           ]
         },
         {
+          "endpoint_id": "mtrestapis-live01.regionalcare.net_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.regionalcare.net:443/v1/uscore/R4",
+          "managing_organization_name": "Lifepoint Corporate Services, General Partnership",
+          "ccn": "010006",
+          "state": "AL",
+          "city": "FLORENCE",
+          "identity_sources": [
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "mtrestapis-live01.limamemorial.org_v1_uscore_R4",
           "address": "https://mtrestapis-live01.limamemorial.org:443/v1/uscore/R4",
           "managing_organization_name": "Lima Memorial Health System",
@@ -1258,26 +1299,23 @@
           ]
         },
         {
-          "endpoint_id": "gmhapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://gmhapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "MaaS MEDITECH Hosted Pod 010",
-          "npi": "1538169198",
-          "ccn": "370054",
-          "state": "UT",
-          "city": "West Jordan",
-          "taxonomy": "282N00000X",
+          "endpoint_id": "applinghospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://applinghospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "MaaS MEDITECH Hosted Pod 009",
+          "ccn": "110071",
+          "state": "MA",
+          "city": "Westwood",
           "identity_sources": [
-            "pos",
-            "nppes"
+            "pos"
           ]
         },
         {
-          "endpoint_id": "lapazhospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://lapazhospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "MaaS MEDITECH Hosted Pod 010",
-          "ccn": "031317",
-          "state": "AZ",
-          "city": "PARKER",
+          "endpoint_id": "bcchospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://bcchospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "MaaS MEDITECH Hosted Pod 009",
+          "ccn": "491300",
+          "state": "VA",
+          "city": "HOT SPRINGS",
           "identity_sources": [
             "pos"
           ]
@@ -1395,6 +1433,17 @@
           ]
         },
         {
+          "endpoint_id": "medinahospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://medinahospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Medina Regional Hospital",
+          "ccn": "451330",
+          "state": "MA",
+          "city": "Westwood",
+          "identity_sources": [
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "mtrestapis-live01.mhcs.us_v1_uscore_R4",
           "address": "https://mtrestapis-live01.mhcs.us:443/v1/uscore/R4",
           "managing_organization_name": "Memorial Health Care Systems",
@@ -1447,18 +1496,6 @@
           "taxonomy": "282NC0060X",
           "identity_sources": [
             "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "mrtx-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://mrtx-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Mission Regional Medical Center",
-          "npi": "1992752315",
-          "state": "CA",
-          "city": "Ontario",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
             "nppes"
           ]
         },
@@ -1789,20 +1826,6 @@
           ]
         },
         {
-          "endpoint_id": "pvh-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://pvh-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Paradise Valley Hospital",
-          "npi": "1598756710",
-          "ccn": "050024",
-          "state": "CA",
-          "city": "Ontario",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "pos_via_nppes",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "mtapi-live01.pellahealth.org_v1_uscore_R4",
           "address": "https://mtapi-live01.pellahealth.org/v1/uscore/R4",
           "managing_organization_name": "Pella Regional Health Center",
@@ -1878,31 +1901,6 @@
           "city": "SHAWNEE",
           "taxonomy": "333600000X",
           "identity_sources": [
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "prmc-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://prmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Prime Healthcare Services, Inc.",
-          "ccn": "170146",
-          "state": "KS",
-          "city": "KANSAS CITY",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
-          "endpoint_id": "srmc-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://srmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Prime Healthcare Services, Inc.",
-          "npi": "1992721161",
-          "ccn": "050764",
-          "state": "CA",
-          "city": "REDDING",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "pos",
             "nppes"
           ]
         },
@@ -2013,6 +2011,17 @@
           ]
         },
         {
+          "endpoint_id": "russellmedcenterapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://russellmedcenterapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Russell Medical Center",
+          "ccn": "010065",
+          "state": "MA",
+          "city": "Westwood",
+          "identity_sources": [
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "hryderapi.meditech.cloud_v1_uscore_R4",
           "address": "https://hryderapi.meditech.cloud/v1/uscore/R4",
           "managing_organization_name": "Ryder Memorial Hospital",
@@ -2108,6 +2117,13 @@
           ]
         },
         {
+          "endpoint_id": "sacentreapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://sacentreapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Schroeder Ambulatory Centre",
+          "state": "ON",
+          "city": "Richmond Hills"
+        },
+        {
           "endpoint_id": "seviercountymedicalapi.meditech.cloud_v1_uscore_R4",
           "address": "https://seviercountymedicalapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "Sevier County Medical Center",
@@ -2133,6 +2149,31 @@
           "identity_sources": [
             "pos",
             "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "silverhillhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://silverhillhospitalapi.meditech.cloud/v1/uscore/R4",
+          "managing_organization_name": "Silver Hill Hospital",
+          "npi": "1982658035",
+          "ccn": "074014",
+          "state": "CT",
+          "city": "NEW CANAAN",
+          "taxonomy": "283Q00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "schhsapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://schhsapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "South County Ambulatory",
+          "ccn": "410008",
+          "state": "MA",
+          "city": "Westwood",
+          "identity_sources": [
+            "pos"
           ]
         },
         {
@@ -2183,20 +2224,6 @@
           "state": "AK",
           "city": "SITKA",
           "taxonomy": "213E00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "mtrestapis-live01.somc.org_v1_uscore_R4",
-          "address": "https://mtrestapis-live01.somc.org:443/v1/uscore/R4",
-          "managing_organization_name": "Southern Ohio Medical Center",
-          "npi": "1093751984",
-          "ccn": "360008",
-          "state": "OH",
-          "city": "PORTSMOUTH",
-          "taxonomy": "3336S0011X",
           "identity_sources": [
             "pos",
             "nppes"
@@ -2294,6 +2321,17 @@
           ]
         },
         {
+          "endpoint_id": "thebellevuehospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://thebellevuehospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "The Bellevue Hospital",
+          "ccn": "360107",
+          "state": "OH",
+          "city": "BELLEVUE",
+          "identity_sources": [
+            "pos"
+          ]
+        },
+        {
           "endpoint_id": "bethanychildrensapi.meditech.cloud_v1_uscore_R4",
           "address": "https://bethanychildrensapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "The Children's Center, Inc. d/b/a Bethany Children's Health Center",
@@ -2361,6 +2399,17 @@
           "identity_sources": [
             "pos",
             "nppes"
+          ]
+        },
+        {
+          "endpoint_id": "townsenhospitalapi.meditech.cloud_v1_uscore_R4",
+          "address": "https://townsenhospitalapi.meditech.cloud:443/v1/uscore/R4",
+          "managing_organization_name": "Townsen Memorial Health System LLC",
+          "ccn": "670266",
+          "state": "MA",
+          "city": "Westwood",
+          "identity_sources": [
+            "pos"
           ]
         },
         {
@@ -2537,7 +2586,7 @@
         }
       ],
       "state_distribution": {
-        "CA": 16,
+        "CA": 9,
         "OK": 8,
         "MO": 8,
         "WA": 8,
@@ -2545,8 +2594,8 @@
         "OH": 8,
         "PR": 7,
         "NE": 7,
-        "KS": 7,
-        "AZ": 6
+        "IL": 7,
+        "MA": 6
       },
       "recognizable_members": [
         {
@@ -2562,11 +2611,7 @@
           "endpoint_count": 2
         },
         {
-          "name": "MaaS MEDITECH Hosted Pod 010",
-          "endpoint_count": 2
-        },
-        {
-          "name": "Prime Healthcare Services, Inc.",
+          "name": "MaaS MEDITECH Hosted Pod 009",
           "endpoint_count": 2
         },
         {
@@ -2588,13 +2633,17 @@
         {
           "name": "Bartlett Regional Hospital",
           "endpoint_count": 1
+        },
+        {
+          "name": "Beauregard Health System",
+          "endpoint_count": 1
         }
       ]
     },
     {
       "cluster_id": "meditech-cluster-B",
       "modal": false,
-      "endpoint_count": 44,
+      "endpoint_count": 39,
       "shape_hash": "sha256:401d772a1b3570e9",
       "resources_advertised": [
         "AllergyIntolerance",
@@ -2658,8 +2707,8 @@
         "us-core-pulse-oximetry",
         "us-core-smokingstatus"
       ],
-      "example_endpoint_id": "api01.myfhn.org_v1_uscore_R4",
-      "example_endpoint_address": "https://api01.myfhn.org:443/v1/uscore/R4",
+      "example_endpoint_id": "ehimtrestapi-live.hhsc.org_v1_uscore_R4",
+      "example_endpoint_address": "https://ehimtrestapi-live.hhsc.org:443/v1/uscore/R4",
       "endpoints": [
         {
           "endpoint_id": "mtrestapis-live01.amccares.org_v1_uscore_R4",
@@ -2710,32 +2759,6 @@
           ]
         },
         {
-          "endpoint_id": "ohh-mtapislive.trinityhealth.com_v1_uscore_R4",
-          "address": "https://ohh-mtapislive.trinityhealth.com:443/v1/uscore/R4",
-          "managing_organization_name": "Catholic Health Initiatives - Corporate",
-          "npi": "1053894063",
-          "ccn": "365777",
-          "state": "OH",
-          "city": "BEAVERCREEK",
-          "taxonomy": "251C00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "cvmc-mapilive.primehealthcare.com_v1_uscore_R4",
-          "address": "https://cvmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
-          "managing_organization_name": "Chino Valley Medical Center",
-          "npi": "1265708572",
-          "state": "CA",
-          "city": "Ontario",
-          "taxonomy": "261QP2300X",
-          "identity_sources": [
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "mtrestapis-live01.crmcinc.org_v1_uscore_R4",
           "address": "https://mtrestapis-live01.crmcinc.org:443/v1/uscore/R4",
           "managing_organization_name": "Coffeyville Regional Medical Center",
@@ -2756,20 +2779,6 @@
           "city": "BENNINGTON",
           "identity_sources": [
             "pos"
-          ]
-        },
-        {
-          "endpoint_id": "mtrestapis-live01.dcmh.net_v1_uscore_R4",
-          "address": "https://mtrestapis-live01.dcmh.net:443/v1/uscore/R4",
-          "managing_organization_name": "Decatur County Memorial Hospital",
-          "npi": "1093712887",
-          "ccn": "151332",
-          "state": "IN",
-          "city": "GREENSBURG",
-          "taxonomy": "261QP2300X",
-          "identity_sources": [
-            "pos",
-            "nppes"
           ]
         },
         {
@@ -2823,34 +2832,6 @@
           "state": "MA",
           "city": "W CONCORD",
           "taxonomy": "282NR1301X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "api01.myfhn.org_v1_uscore_R4",
-          "address": "https://api01.myfhn.org:443/v1/uscore/R4",
-          "managing_organization_name": "FHN Memorial Hospital",
-          "npi": "1851390132",
-          "ccn": "140160",
-          "state": "IL",
-          "city": "FREEPORT",
-          "taxonomy": "207PE0004X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "mtrestapis-live01.grhd.org_v1_uscore_R4",
-          "address": "https://mtrestapis-live01.grhd.org:443/v1/uscore/R4",
-          "managing_organization_name": "Grand River Hospital District",
-          "npi": "1124074042",
-          "ccn": "061317",
-          "state": "CO",
-          "city": "RIFLE",
-          "taxonomy": "261QP2300X",
           "identity_sources": [
             "pos",
             "nppes"
@@ -3153,17 +3134,6 @@
           "city": "HINSDALE"
         },
         {
-          "endpoint_id": "russellmedcenterapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://russellmedcenterapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Russell Medical Center",
-          "ccn": "010065",
-          "state": "MA",
-          "city": "Westwood",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
           "endpoint_id": "mtrestapis-live01.sampsonrmc.org_v1_uscore_R4",
           "address": "https://mtrestapis-live01.sampsonrmc.org:443/v1/uscore/R4",
           "managing_organization_name": "Sampson Regional Medical Center",
@@ -3201,6 +3171,20 @@
           ]
         },
         {
+          "endpoint_id": "mtrestapi-live01.upmc.edu_v1_uscore_R4",
+          "address": "https://mtrestapi-live01.upmc.edu:443/v1/uscore/R4",
+          "managing_organization_name": "UPMC Cole",
+          "npi": "1467535344",
+          "ccn": "390101",
+          "state": "PA",
+          "city": "YORK",
+          "taxonomy": "282N00000X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
+        },
+        {
           "endpoint_id": "mtrestapis-live01.urmc.org_v1_uscore_R4",
           "address": "https://mtrestapis-live01.urmc.org:443/v1/uscore/R4",
           "managing_organization_name": "Upson Regional Medical Center",
@@ -3216,16 +3200,16 @@
         }
       ],
       "state_distribution": {
-        "CA": 5,
         "TX": 4,
-        "MA": 4,
-        "IL": 4,
+        "PA": 4,
+        "CA": 4,
         "KS": 3,
-        "PA": 3,
-        "IN": 2,
+        "MA": 3,
+        "IL": 3,
         "NC": 2,
         "WA": 2,
-        "NY": 1
+        "NY": 1,
+        "VT": 1
       },
       "recognizable_members": [
         {
@@ -3245,15 +3229,7 @@
           "endpoint_count": 1
         },
         {
-          "name": "Chino Valley Medical Center",
-          "endpoint_count": 1
-        },
-        {
           "name": "Coffeyville Regional Medical Center",
-          "endpoint_count": 1
-        },
-        {
-          "name": "Decatur County Memorial Hospital",
           "endpoint_count": 1
         },
         {
@@ -3267,13 +3243,21 @@
         {
           "name": "Elmwood Hills Healthcare Center",
           "endpoint_count": 1
+        },
+        {
+          "name": "Emerson Hospital",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Granville Health System",
+          "endpoint_count": 1
         }
       ]
     },
     {
       "cluster_id": "meditech-cluster-C",
       "modal": false,
-      "endpoint_count": 37,
+      "endpoint_count": 36,
       "shape_hash": "sha256:e0b59cee6ff82efd",
       "resources_advertised": [
         "AllergyIntolerance",
@@ -3695,11 +3679,18 @@
           ]
         },
         {
-          "endpoint_id": "sacentreapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://sacentreapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Schroeder Ambulatory Centre",
-          "state": "ON",
-          "city": "Richmond Hills"
+          "endpoint_id": "mtrestapis-live01.somc.org_v1_uscore_R4",
+          "address": "https://mtrestapis-live01.somc.org:443/v1/uscore/R4",
+          "managing_organization_name": "Southern Ohio Medical Center",
+          "npi": "1093751984",
+          "ccn": "360008",
+          "state": "OH",
+          "city": "PORTSMOUTH",
+          "taxonomy": "3336S0011X",
+          "identity_sources": [
+            "pos",
+            "nppes"
+          ]
         },
         {
           "endpoint_id": "mtrestapis-live01.steward.org_v1_uscore_R4",
@@ -3718,13 +3709,6 @@
         {
           "endpoint_id": "mtrestapis-live03.steward.org_v1_uscore_R4",
           "address": "https://mtrestapis-live03.steward.org:443/v1/uscore/R4",
-          "managing_organization_name": "Steward Health Care System LLC",
-          "state": "TX",
-          "city": "Dallas"
-        },
-        {
-          "endpoint_id": "mtrestapis-live04.steward.org_v1_uscore_R4",
-          "address": "https://mtrestapis-live04.steward.org:443/v1/uscore/R4",
           "managing_organization_name": "Steward Health Care System LLC",
           "state": "TX",
           "city": "Dallas"
@@ -3784,13 +3768,13 @@
         }
       ],
       "state_distribution": {
-        "TX": 7,
+        "TX": 6,
         "OK": 3,
         "MT": 3,
+        "OH": 3,
         "KS": 2,
         "CT": 2,
         "PR": 2,
-        "OH": 2,
         "NH": 1,
         "IA": 1,
         "FL": 1
@@ -3798,7 +3782,7 @@
       "recognizable_members": [
         {
           "name": "Steward Health Care System LLC",
-          "endpoint_count": 6
+          "endpoint_count": 5
         },
         {
           "name": "Logan Health",
@@ -4342,7 +4326,7 @@
     {
       "cluster_id": "meditech-cluster-E",
       "modal": false,
-      "endpoint_count": 28,
+      "endpoint_count": 17,
       "shape_hash": "sha256:ddfad6b7f537e411",
       "resources_advertised": [
         "AllergyIntolerance",
@@ -4406,20 +4390,9 @@
         "us-core-pulse-oximetry",
         "us-core-smokingstatus"
       ],
-      "example_endpoint_id": "applinghospitalapi.meditech.cloud_v1_uscore_R4",
-      "example_endpoint_address": "https://applinghospitalapi.meditech.cloud:443/v1/uscore/R4",
+      "example_endpoint_id": "bbghapi.meditech.cloud_v1_uscore_R4",
+      "example_endpoint_address": "https://bbghapi.meditech.cloud:443/v1/uscore/R4",
       "endpoints": [
-        {
-          "endpoint_id": "applinghospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://applinghospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Appling Hospital",
-          "ccn": "110071",
-          "state": "MA",
-          "city": "Westwood",
-          "identity_sources": [
-            "pos"
-          ]
-        },
         {
           "endpoint_id": "mtrestapis-np.app.medcity.net_v1_uscore_R4",
           "address": "https://mtrestapis-np.app.medcity.net:443/v1/uscore/R4",
@@ -4430,17 +4403,6 @@
           "taxonomy": "282N00000X",
           "identity_sources": [
             "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "bcchospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://bcchospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Bath Community Hospital",
-          "ccn": "491300",
-          "state": "VA",
-          "city": "HOT SPRINGS",
-          "identity_sources": [
-            "pos"
           ]
         },
         {
@@ -4486,32 +4448,6 @@
           ]
         },
         {
-          "endpoint_id": "gibsonhospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://gibsonhospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Gibson Area Hospital & Health Services",
-          "npi": "1205970712",
-          "state": "IL",
-          "city": "Gibson City",
-          "taxonomy": "251E00000X",
-          "identity_sources": [
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "giffordhealthcareapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://giffordhealthcareapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Gifford Medical Center",
-          "npi": "1730199647",
-          "ccn": "471301",
-          "state": "VT",
-          "city": "RANDOLPH",
-          "taxonomy": "282NC0060X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
           "endpoint_id": "hcchospitalapi.meditech.cloud_v1_uscore_R4",
           "address": "https://hcchospitalapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "Harrison County Community Hospital",
@@ -4526,31 +4462,6 @@
           ]
         },
         {
-          "endpoint_id": "hugginshospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://hugginshospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Huggins Hospital",
-          "npi": "1881689354",
-          "ccn": "301312",
-          "state": "NH",
-          "city": "WOLFEBORO",
-          "taxonomy": "207V00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "thebellevuehospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://thebellevuehospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "MaaS MEDITECH Hosted Pod 009",
-          "ccn": "360107",
-          "state": "OH",
-          "city": "BELLEVUE",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
           "endpoint_id": "manhattansurgicalapi.meditech.cloud_v1_uscore_R4",
           "address": "https://manhattansurgicalapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "Manhattan Surgical Hospital, LLC",
@@ -4562,17 +4473,6 @@
           "identity_sources": [
             "pos",
             "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "medinahospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://medinahospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Medina Regional Hospital",
-          "ccn": "451330",
-          "state": "MA",
-          "city": "Westwood",
-          "identity_sources": [
-            "pos"
           ]
         },
         {
@@ -4694,31 +4594,6 @@
           ]
         },
         {
-          "endpoint_id": "silverhillhospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://silverhillhospitalapi.meditech.cloud/v1/uscore/R4",
-          "managing_organization_name": "Silver Hill Hospital",
-          "npi": "1982658035",
-          "ccn": "074014",
-          "state": "CT",
-          "city": "NEW CANAAN",
-          "taxonomy": "283Q00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "schhsapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://schhsapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "South County Ambulatory",
-          "ccn": "410008",
-          "state": "MA",
-          "city": "Westwood",
-          "identity_sources": [
-            "pos"
-          ]
-        },
-        {
           "endpoint_id": "stbhapi.meditech.cloud_v1_uscore_R4",
           "address": "https://stbhapi.meditech.cloud:443/v1/uscore/R4",
           "managing_organization_name": "St. Bernard Hospital and Health Care Center",
@@ -4730,31 +4605,6 @@
           "identity_sources": [
             "pos",
             "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "mtrestapis-live01.smedok.com_v1_uscore_R4",
-          "address": "https://mtrestapis-live01.smedok.com:443/v1/uscore/R4",
-          "managing_organization_name": "Summit Medical Center",
-          "npi": "1356574560",
-          "ccn": "370225",
-          "state": "OK",
-          "city": "EDMOND",
-          "taxonomy": "282N00000X",
-          "identity_sources": [
-            "pos",
-            "nppes"
-          ]
-        },
-        {
-          "endpoint_id": "townsenhospitalapi.meditech.cloud_v1_uscore_R4",
-          "address": "https://townsenhospitalapi.meditech.cloud:443/v1/uscore/R4",
-          "managing_organization_name": "Townsen Memorial Health System LLC",
-          "ccn": "670266",
-          "state": "MA",
-          "city": "Westwood",
-          "identity_sources": [
-            "pos"
           ]
         },
         {
@@ -4773,28 +4623,20 @@
         }
       ],
       "state_distribution": {
-        "IL": 5,
-        "MA": 4,
+        "IL": 4,
         "NE": 2,
-        "VT": 2,
         "KS": 2,
         "PA": 1,
-        "VA": 1,
+        "VT": 1,
         "IA": 1,
         "MO": 1,
-        "NH": 1
+        "MI": 1,
+        "TX": 1,
+        "NC": 1
       },
       "recognizable_members": [
         {
-          "name": "Appling Hospital",
-          "endpoint_count": 1
-        },
-        {
           "name": "Armstrong County Memorial Hospital",
-          "endpoint_count": 1
-        },
-        {
-          "name": "Bath Community Hospital",
           "endpoint_count": 1
         },
         {
@@ -4806,23 +4648,31 @@
           "endpoint_count": 1
         },
         {
-          "name": "Gibson Area Hospital & Health Services",
-          "endpoint_count": 1
-        },
-        {
-          "name": "Gifford Medical Center",
-          "endpoint_count": 1
-        },
-        {
           "name": "Harrison County Community Hospital",
           "endpoint_count": 1
         },
         {
-          "name": "Huggins Hospital",
+          "name": "Memorial Healthcare Center",
           "endpoint_count": 1
         },
         {
-          "name": "Medina Regional Hospital",
+          "name": "Moore County Hospital District",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Morrison Community Hospital",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Northern Hospital District of Surry County",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Pender Community Hospital",
+          "endpoint_count": 1
+        },
+        {
+          "name": "Pinckneyville Community Hospital",
           "endpoint_count": 1
         }
       ]
@@ -5092,7 +4942,7 @@
   ],
   "smart_config_drift": {
     "grant_types_supported_distribution": {
-      "[\"authorization_code\", \"client_credentials\", \"refresh_token\"]": 328
+      "[\"authorization_code\", \"client_credentials\", \"refresh_token\"]": 323
     },
     "capabilities_modal_set": [
       "authorize-post",
@@ -5115,211 +4965,211 @@
       "sso-openid-connect"
     ],
     "capabilities_distribution": {
-      "launch-standalone": 328,
-      "launch-ehr": 328,
-      "client-public": 328,
-      "client-confidential-symmetric": 328,
-      "client-confidential-asymmetric": 328,
-      "sso-openid-connect": 328,
-      "context-banner": 328,
-      "context-style": 328,
-      "context-standalone-encounter": 328,
-      "context-standalone-patient": 328,
-      "context-ehr-encounter": 328,
-      "context-ehr-patient": 328,
-      "permission-offline": 328,
-      "permission-patient": 328,
-      "permission-user": 328,
-      "authorize-post": 316,
-      "permission-v1": 316,
-      "permission-v2": 316
+      "launch-standalone": 323,
+      "launch-ehr": 323,
+      "client-public": 323,
+      "client-confidential-symmetric": 323,
+      "client-confidential-asymmetric": 323,
+      "sso-openid-connect": 323,
+      "context-banner": 323,
+      "context-style": 323,
+      "context-standalone-encounter": 323,
+      "context-standalone-patient": 323,
+      "context-ehr-encounter": 323,
+      "context-ehr-patient": 323,
+      "permission-offline": 323,
+      "permission-patient": 323,
+      "permission-user": 323,
+      "authorize-post": 311,
+      "permission-v1": 311,
+      "permission-v2": 311
     },
     "scope_count_distribution": {
-      "400-599": 315,
-      "0": 12,
-      "600+": 1
+      "400-599": 299,
+      "600+": 12,
+      "0": 12
     },
     "token_endpoint_auth_methods_distribution": {
-      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 328
+      "[\"client_secret_basic\", \"client_secret_post\", \"private_key_jwt\"]": 323
     },
     "code_challenge_methods_distribution": {
-      "[\"S256\"]": 328
+      "[\"S256\"]": 323
     }
   },
   "us_core_profile_support_rate": [
     {
       "profile_id": "us-core-allergyintolerance",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careplan",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-careteam",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-diagnosticreport-note",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-documentreference",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-encounter",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-goal",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-immunization",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-implantable-device",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-location",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-medicationrequest",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-observation-lab",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-organization",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-patient",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitioner",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-practitionerrole",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-procedure",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-provenance",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-pulse-oximetry",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-smokingstatus",
       "in_us_core_baseline": true,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-blood-pressure",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5327,7 +5177,7 @@
       "profile_id": "us-core-bmi",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5335,7 +5185,7 @@
       "profile_id": "us-core-body-height",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5343,7 +5193,7 @@
       "profile_id": "us-core-body-temperature",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5351,7 +5201,7 @@
       "profile_id": "us-core-body-weight",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5359,7 +5209,7 @@
       "profile_id": "us-core-condition-encounter-diagnosis",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5367,7 +5217,7 @@
       "profile_id": "us-core-condition-problems-health-concerns",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5375,7 +5225,7 @@
       "profile_id": "us-core-coverage",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5383,7 +5233,7 @@
       "profile_id": "us-core-head-circumference",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5391,7 +5241,7 @@
       "profile_id": "us-core-heart-rate",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5399,7 +5249,7 @@
       "profile_id": "us-core-medication",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5407,7 +5257,7 @@
       "profile_id": "us-core-medicationdispense",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5415,7 +5265,7 @@
       "profile_id": "us-core-observation-clinical-result",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5423,7 +5273,7 @@
       "profile_id": "us-core-observation-occupation",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5431,7 +5281,7 @@
       "profile_id": "us-core-observation-pregnancyintent",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5439,7 +5289,7 @@
       "profile_id": "us-core-observation-pregnancystatus",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5447,7 +5297,7 @@
       "profile_id": "us-core-observation-screening-assessment",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5455,7 +5305,7 @@
       "profile_id": "us-core-observation-sexual-orientation",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5463,7 +5313,7 @@
       "profile_id": "us-core-questionnaireresponse",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5471,7 +5321,7 @@
       "profile_id": "us-core-relatedperson",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5479,7 +5329,7 @@
       "profile_id": "us-core-respiratory-rate",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5487,7 +5337,7 @@
       "profile_id": "us-core-servicerequest",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5495,7 +5345,7 @@
       "profile_id": "us-core-simple-observation",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5503,7 +5353,7 @@
       "profile_id": "us-core-specimen",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
@@ -5511,146 +5361,132 @@
       "profile_id": "us-core-vital-signs",
       "in_us_core_baseline": true,
       "customers_advertising": 0,
-      "customers_with_capstmt": 332,
+      "customers_with_capstmt": 320,
       "fraction": 0.0,
       "absent_in_modal_cluster": true
     },
     {
       "profile_id": "bmi",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "bodyheight",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "bodytemp",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "bodyweight",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "bp",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "head-occipital-frontal-circumference-percentile",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "headcircum",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "heartrate",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "oxygensat",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-bmi-for-age",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "pediatric-weight-for-height",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "resprate",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "shareablevalueset",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "us-core-condition",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     },
     {
       "profile_id": "vitalspanel",
       "in_us_core_baseline": false,
-      "customers_advertising": 325,
-      "customers_with_capstmt": 332,
-      "fraction": 0.9789,
+      "customers_advertising": 313,
+      "customers_with_capstmt": 320,
+      "fraction": 0.9781,
       "absent_in_modal_cluster": false
     }
   ],
   "outlier_endpoints": [
-    {
-      "endpoint_id": "api01.myfhn.org_v1_uscore_R4",
-      "address": "https://api01.myfhn.org:443/v1/uscore/R4",
-      "managing_organization_name": "FHN Memorial Hospital",
-      "cluster_id": "meditech-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "cvmc-mapilive.primehealthcare.com_v1_uscore_R4",
-      "address": "https://cvmc-mapilive.primehealthcare.com:443/v1/uscore/R4",
-      "managing_organization_name": "Chino Valley Medical Center",
-      "cluster_id": "meditech-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
     {
       "endpoint_id": "ehimtrestapi-live.hhsc.org_v1_uscore_R4",
       "address": "https://ehimtrestapi-live.hhsc.org:443/v1/uscore/R4",
@@ -5669,6 +5505,13 @@
       "endpoint_id": "hcahealthcareapi.meditech-uk.cloud_v1_uscore_R4",
       "address": "https://hcahealthcareapi.meditech-uk.cloud:443/v1/uscore/R4",
       "managing_organization_name": "HCA Healthcare UK (MTSA GCP)",
+      "cluster_id": "meditech-cluster-B",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
+      "endpoint_id": "mtrestapi-live01.upmc.edu_v1_uscore_R4",
+      "address": "https://mtrestapi-live01.upmc.edu:443/v1/uscore/R4",
+      "managing_organization_name": "UPMC Cole",
       "cluster_id": "meditech-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -5708,13 +5551,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "mtrestapis-live01.dcmh.net_v1_uscore_R4",
-      "address": "https://mtrestapis-live01.dcmh.net:443/v1/uscore/R4",
-      "managing_organization_name": "Decatur County Memorial Hospital",
-      "cluster_id": "meditech-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "mtrestapis-live01.dh.org_v1_uscore_R4",
       "address": "https://mtrestapis-live01.dh.org:443/v1/uscore/R4",
       "managing_organization_name": "Doylestown Hospital",
@@ -5732,13 +5568,6 @@
       "endpoint_id": "mtrestapis-live01.granvillemedical.com_v1_uscore_R4",
       "address": "https://mtrestapis-live01.granvillemedical.com:443/v1/uscore/R4",
       "managing_organization_name": "Granville Health System",
-      "cluster_id": "meditech-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "mtrestapis-live01.grhd.org_v1_uscore_R4",
-      "address": "https://mtrestapis-live01.grhd.org:443/v1/uscore/R4",
-      "managing_organization_name": "Grand River Hospital District",
       "cluster_id": "meditech-cluster-B",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -5932,20 +5761,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "ohh-mtapislive.trinityhealth.com_v1_uscore_R4",
-      "address": "https://ohh-mtapislive.trinityhealth.com:443/v1/uscore/R4",
-      "managing_organization_name": "Catholic Health Initiatives - Corporate",
-      "cluster_id": "meditech-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "russellmedcenterapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://russellmedcenterapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Russell Medical Center",
-      "cluster_id": "meditech-cluster-B",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "mtapi-live01.southwoodshealth.com_v1_uscore_R4",
       "address": "https://mtapi-live01.southwoodshealth.com:443/v1/uscore/R4",
       "managing_organization_name": "Surgical Hospital at Southwoods",
@@ -6135,6 +5950,13 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
+      "endpoint_id": "mtrestapis-live01.somc.org_v1_uscore_R4",
+      "address": "https://mtrestapis-live01.somc.org:443/v1/uscore/R4",
+      "managing_organization_name": "Southern Ohio Medical Center",
+      "cluster_id": "meditech-cluster-C",
+      "deviation_summary": "shape differs but profile sets match"
+    },
+    {
       "endpoint_id": "mtrestapis-live01.steward.org_v1_uscore_R4",
       "address": "https://mtrestapis-live01.steward.org:443/v1/uscore/R4",
       "managing_organization_name": "Steward Health Care System LLC",
@@ -6177,13 +5999,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "mtrestapis-live04.steward.org_v1_uscore_R4",
-      "address": "https://mtrestapis-live04.steward.org:443/v1/uscore/R4",
-      "managing_organization_name": "Steward Health Care System LLC",
-      "cluster_id": "meditech-cluster-C",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "mtrestapis-live05.steward.org_v1_uscore_R4",
       "address": "https://mtrestapis-live05.steward.org:443/v1/uscore/R4",
       "managing_organization_name": "Steward Health Care System LLC",
@@ -6194,13 +6009,6 @@
       "endpoint_id": "mtrestapis-live06.steward.org_v1_uscore_R4",
       "address": "https://mtrestapis-live06.steward.org:443/v1/uscore/R4",
       "managing_organization_name": "Steward Health Care System LLC",
-      "cluster_id": "meditech-cluster-C",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "sacentreapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://sacentreapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Schroeder Ambulatory Centre",
       "cluster_id": "meditech-cluster-C",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -6415,23 +6223,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "applinghospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://applinghospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Appling Hospital",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "bbghapi.meditech.cloud_v1_uscore_R4",
       "address": "https://bbghapi.meditech.cloud:443/v1/uscore/R4",
       "managing_organization_name": "Box Butte General Hospital",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "bcchospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://bcchospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Bath Community Hospital",
       "cluster_id": "meditech-cluster-E",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -6450,30 +6244,9 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "gibsonhospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://gibsonhospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Gibson Area Hospital & Health Services",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "giffordhealthcareapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://giffordhealthcareapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Gifford Medical Center",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "hcchospitalapi.meditech.cloud_v1_uscore_R4",
       "address": "https://hcchospitalapi.meditech.cloud:443/v1/uscore/R4",
       "managing_organization_name": "Harrison County Community Hospital",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "hugginshospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://hugginshospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Huggins Hospital",
       "cluster_id": "meditech-cluster-E",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -6499,13 +6272,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "medinahospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://medinahospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Medina Regional Hospital",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "mtrestapis-explive01.nhsc.org_v1_uscore_R4",
       "address": "https://mtrestapis-explive01.nhsc.org:443/v1/uscore/R4",
       "managing_organization_name": "Northern Hospital District of Surry County",
@@ -6523,13 +6289,6 @@
       "endpoint_id": "mtrestapis-live01.sierra-view.com_v1_uscore_R4",
       "address": "https://mtrestapis-live01.sierra-view.com:443/v1/uscore/R4",
       "managing_organization_name": "Sierra View Local Health Care District dba Sierra View Medical Center",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "mtrestapis-live01.smedok.com_v1_uscore_R4",
-      "address": "https://mtrestapis-live01.smedok.com:443/v1/uscore/R4",
-      "managing_organization_name": "Summit Medical Center",
       "cluster_id": "meditech-cluster-E",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -6569,20 +6328,6 @@
       "deviation_summary": "shape differs but profile sets match"
     },
     {
-      "endpoint_id": "schhsapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://schhsapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "South County Ambulatory",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "silverhillhospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://silverhillhospitalapi.meditech.cloud/v1/uscore/R4",
-      "managing_organization_name": "Silver Hill Hospital",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
       "endpoint_id": "slr-facamtrestapis-01.srhc.net_v1_uscore_R4",
       "address": "https://slr-facamtrestapis-01.srhc.net:443/v1/uscore/R4",
       "managing_organization_name": "Salina Regional Health Center",
@@ -6593,20 +6338,6 @@
       "endpoint_id": "stbhapi.meditech.cloud_v1_uscore_R4",
       "address": "https://stbhapi.meditech.cloud:443/v1/uscore/R4",
       "managing_organization_name": "St. Bernard Hospital and Health Care Center",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "thebellevuehospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://thebellevuehospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "MaaS MEDITECH Hosted Pod 009",
-      "cluster_id": "meditech-cluster-E",
-      "deviation_summary": "shape differs but profile sets match"
-    },
-    {
-      "endpoint_id": "townsenhospitalapi.meditech.cloud_v1_uscore_R4",
-      "address": "https://townsenhospitalapi.meditech.cloud:443/v1/uscore/R4",
-      "managing_organization_name": "Townsen Memorial Health System LLC",
       "cluster_id": "meditech-cluster-E",
       "deviation_summary": "shape differs but profile sets match"
     },
@@ -6668,9 +6399,9 @@
     }
   ],
   "verification": {
-    "source_url": "tests/golden/production-fleet/meditech/2026-11-02",
-    "source_quote": "Aggregated from 332 CapabilityStatements harvested under tests/golden/production-fleet/meditech/2026-11-02/",
+    "source_url": "tests/golden/production-fleet/meditech/2026-11-09",
+    "source_quote": "Aggregated from 320 CapabilityStatements harvested under tests/golden/production-fleet/meditech/2026-11-09/",
     "verified_via": "meditech_production_fleet",
-    "verified_date": "2026-11-02"
+    "verified_date": "2026-11-09"
   }
 }
