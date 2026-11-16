@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "status": "active",
   "experimental": true,
-  "date": "2026-08-17T14:13:07Z",
+  "date": "2026-11-16T23:05:02Z",
   "copyright": "Copyright Epic 1979-2026",
   "kind": "instance",
   "instantiates": [
@@ -11,8 +11,8 @@
   ],
   "software": {
     "name": "Epic",
-    "version": "August 2026",
-    "releaseDate": "2026-08-10"
+    "version": "November 2026",
+    "releaseDate": "2026-11-09"
   },
   "implementation": {
     "description": "FHIR Sandbox FHIR Server",
@@ -3562,7 +3562,7 @@
             {
               "name": "category",
               "type": "token",
-              "documentation": "Refine a search for Observation resources by category or SNOMED code. Epic categories are laboratory, vital-signs, social-history, core-characteristics, LDA, LDA-property, LDA-assessment, functional-mental-status, periodontal, labor-delivery, newborn-delivery, obstetrics-gynecology, survey, sdoh, and imaging. Supported SNOMED codes include 384821006, 118228005, 252275004, 275711006, 68793005, 395124008, 314076009, 19851009, and 405825005."
+              "documentation": "Refine a search for Observation resources by category or SNOMED code. Epic categories are laboratory, vital-signs, social-history, core-characteristics, LDA, LDA-property, LDA-assessment, functional-mental-status, periodontal, labor-delivery, newborn-delivery, obstetrics-gynecology, survey, sdoh, imaging, and care-experience-preference. Supported SNOMED codes include 384821006, 118228005, 252275004, 275711006, 68793005, 395124008, 314076009, 19851009, and 405825005."
             },
             {
               "name": "code",
