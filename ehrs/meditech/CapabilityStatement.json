@@ -23,6 +23,17 @@
   "rest": [
     {
       "mode": "server",
+      "extension": [
+        {
+          "url": "http://fhircast.hl7.org/StructureDefinition/fhircast-configuration-extension",
+          "extension": [
+            {
+              "url": "hub.url",
+              "valueUrl": "https://greenfield-prod-fhircast.meditech.com"
+            }
+          ]
+        }
+      ],
       "security": {
         "extension": [
           {
